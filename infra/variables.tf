@@ -13,7 +13,7 @@ variable "location" {
 variable "resource_group_name" {
   description = "Resource group name"
   type        = string
-  default     = "secular-hub-rg"
+  default     = "secular-hub-app-rg"
 }
 
 variable "app_service_plan_name" {

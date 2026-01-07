@@ -11,4 +11,5 @@ output "app_service_name" {
 output "app_insights_instrumentation_key" {
   value       = try(azurerm_application_insights.ai[0].instrumentation_key, "")
   description = "Instrumentation key for App Insights (if created)"
+  sensitive    = true
 }

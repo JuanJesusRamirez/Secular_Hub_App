@@ -37,6 +37,23 @@ jobs:
         with:
           name: app-zip
           path: ./
+      - name: Validate AZURE_CREDENTIALS secret
+        run: |
+          python - <<'PY'
+          import os,sys,json
+          s=os.environ.get('AZURE_CREDENTIALS')
+          if not s:
+              print('AZURE_CREDENTIALS secret is not set')
+              sys.exit(1)
+          try:
+              json.loads(s)
+          except Exception as e:
+              print('AZURE_CREDENTIALS is not valid JSON:', e)
+              sys.exit(1)
+          print('AZURE_CREDENTIALS is valid JSON')
+          PY
+        env:
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
       - name: Login to Azure
         uses: azure/login@v1
         with:

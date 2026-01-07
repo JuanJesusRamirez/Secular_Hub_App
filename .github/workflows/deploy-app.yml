@@ -37,27 +37,35 @@ jobs:
         with:
           name: app-zip
           path: ./
-      - name: Validate AZURE_CREDENTIALS secret
+      - name: Prepare AZURE credentials
+        id: prepare_creds
         run: |
-          python - <<'PY'
-          import os,sys,json
-          s=os.environ.get('AZURE_CREDENTIALS')
-          if not s:
-              print('AZURE_CREDENTIALS secret is not set')
-              sys.exit(1)
-          try:
-              json.loads(s)
-          except Exception as e:
-              print('AZURE_CREDENTIALS is not valid JSON:', e)
-              sys.exit(1)
-          print('AZURE_CREDENTIALS is valid JSON')
-          PY
+          set -euo pipefail
+          if [ -n "${AZURE_CREDENTIALS:-}" ]; then
+            if printf '%s' "$AZURE_CREDENTIALS" | jq -e . >/dev/null 2>&1; then
+              echo "creds=$AZURE_CREDENTIALS" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          fi
+
+          if [ -n "${AZURE_CLIENT_ID:-}" ] && [ -n "${AZURE_CLIENT_SECRET:-}" ] && [ -n "${AZURE_TENANT_ID:-}" ] && [ -n "${AZURE_SUBSCRIPTION_ID:-}" ]; then
+            creds=$(jq -n --arg clientId "$AZURE_CLIENT_ID" --arg clientSecret "$AZURE_CLIENT_SECRET" --arg tenantId "$AZURE_TENANT_ID" --arg subscriptionId "$AZURE_SUBSCRIPTION_ID" '{clientId:$clientId, clientSecret:$clientSecret, tenantId:$tenantId, subscriptionId:$subscriptionId}')
+            echo "creds=$creds" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "AZURE_CREDENTIALS is not valid JSON and individual AZURE_* secrets are missing" >&2
+          exit 1
         env:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ steps.prepare_creds.outputs.creds }}
       - name: Deploy to Web App (zip)
         run: |
           az webapp deployment source config-zip \

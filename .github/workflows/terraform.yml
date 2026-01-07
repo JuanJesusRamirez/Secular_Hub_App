@@ -36,14 +36,21 @@ jobs:
       - name: Terraform Format Check
         run: terraform fmt -check -recursive
 
-      - name: Terraform Init (local state for validation)
-        run: terraform init -backend=false
+      - name: Disable backend for PR validation
+        run: mv backend.tf backend.tf.disabled || true
+
+      - name: Terraform Init (local state)
+        run: terraform init
 
       - name: Terraform Validate
         run: terraform validate
 
-      - name: Terraform Plan (dry-run, no backend)
+      - name: Terraform Plan (dry-run, local state)
         run: terraform plan -var-file=example.tfvars -input=false
+
+      - name: Restore backend.tf
+        if: always()
+        run: mv backend.tf.disabled backend.tf || true
 
   apply:
     name: Terraform Apply

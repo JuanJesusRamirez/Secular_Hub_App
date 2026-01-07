@@ -11,6 +11,9 @@ jobs:
   plan:
     name: Terraform Plan (PR)
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: infra
     if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v4
@@ -35,6 +38,9 @@ jobs:
   apply:
     name: Terraform Apply (main)
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: infra
     needs: plan
     if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
     environment: production

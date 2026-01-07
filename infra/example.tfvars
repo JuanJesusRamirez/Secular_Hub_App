@@ -1,6 +1,6 @@
 project_name          = "secular-hub"
 location              = "eastus"
-resource_group_name   = "secular-hub-rg"
+resource_group_name   = "secular-hub-app-rg"
 app_service_plan_name = "secular-hub-plan"
 app_service_name      = "secular-hub-app"
 sku_tier              = "Standard"

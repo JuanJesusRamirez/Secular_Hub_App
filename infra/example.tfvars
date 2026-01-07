@@ -1,0 +1,8 @@
+project_name          = "secular-hub"
+location              = "eastus"
+resource_group_name   = "secular-hub-rg"
+app_service_plan_name = "secular-hub-plan"
+app_service_name      = "secular-hub-app"
+sku_tier              = "Standard"
+sku_size              = "S1"
+node_version          = "18.x"

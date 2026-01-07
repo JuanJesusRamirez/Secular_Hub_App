@@ -17,36 +17,8 @@ jobs:
     if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v4
-      - name: Prepare AZURE credentials
-        id: prepare_creds
-        run: |
-          set -euo pipefail
-          # Try to parse AZURE_CREDENTIALS; if invalid, build from individual secrets
-          if [ -n "${AZURE_CREDENTIALS:-}" ]; then
-            if printf '%s' "$AZURE_CREDENTIALS" | jq -e . >/dev/null 2>&1; then
-              echo "creds=$AZURE_CREDENTIALS" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
-          fi
-
-          if [ -n "${AZURE_CLIENT_ID:-}" ] && [ -n "${AZURE_CLIENT_SECRET:-}" ] && [ -n "${AZURE_TENANT_ID:-}" ] && [ -n "${AZURE_SUBSCRIPTION_ID:-}" ]; then
-            creds=$(jq -n --arg clientId "$AZURE_CLIENT_ID" --arg clientSecret "$AZURE_CLIENT_SECRET" --arg tenantId "$AZURE_TENANT_ID" --arg subscriptionId "$AZURE_SUBSCRIPTION_ID" '{clientId:$clientId, clientSecret:$clientSecret, tenantId:$tenantId, subscriptionId:$subscriptionId}')
-            echo "creds=$creds" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          echo "AZURE_CREDENTIALS is not valid JSON and individual AZURE_* secrets are missing" >&2
-          exit 1
-        env:
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
-          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-      - name: Login to Azure
-        uses: azure/login@v1
-        with:
-          creds: ${{ steps.prepare_creds.outputs.creds }}
+      - name: Terraform Init (no backend for PR)
+        run: terraform init -backend=false
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
         with:

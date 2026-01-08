@@ -17,7 +17,7 @@ permissions:
   contents: read
 
 env:
-  REGISTRY_NAME: secularhubreg
+  ACR_NAME: secularhubreg
   IMAGE_NAME: secular-hub-app
 
 jobs:
@@ -26,18 +26,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Use Node.js 18
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'npm'
-      
-      - name: Install dependencies
-        run: npm ci
-      
-      - name: Build
-        run: npm run build
-      
       - name: Login to Azure using OIDC
         uses: azure/login@v2
         with:
@@ -45,40 +33,21 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
-      - name: Get ACR credentials
-        id: acr
+      - name: Build and push image to ACR
         run: |
-          ACR_USERNAME=$(az acr credential show \
-            --resource-group "secular-hub-app-rg" \
-            --name "${{ env.REGISTRY_NAME }}" \
-            --query "username" -o tsv)
-          ACR_PASSWORD=$(az acr credential show \
-            --resource-group "secular-hub-app-rg" \
-            --name "${{ env.REGISTRY_NAME }}" \
-            --query "passwords[0].value" -o tsv)
-          ACR_LOGIN_SERVER=$(az acr show \
-            --resource-group "secular-hub-app-rg" \
-            --name "${{ env.REGISTRY_NAME }}" \
-            --query "loginServer" -o tsv)
-          echo "username=$ACR_USERNAME" >> $GITHUB_OUTPUT
-          echo "password=$ACR_PASSWORD" >> $GITHUB_OUTPUT
-          echo "login_server=$ACR_LOGIN_SERVER" >> $GITHUB_OUTPUT
-      
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          registry: ${{ steps.acr.outputs.login_server }}
-          username: ${{ steps.acr.outputs.username }}
-          password: ${{ steps.acr.outputs.password }}
-          tags: |
-            ${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:latest
-            ${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          az acr build \
+            --registry "${{ env.ACR_NAME }}" \
+            --image "${{ env.IMAGE_NAME }}:latest" \
+            --image "${{ env.IMAGE_NAME }}:${{ github.sha }}" \
+            --file Dockerfile .
       
       - name: Deploy to Container App
         run: |
+          ACR_LOGIN_SERVER=$(az acr show \
+            --name "${{ env.ACR_NAME }}" \
+            --query loginServer -o tsv)
+          
           az containerapp update \
             --name "secular-hub-app" \
             --resource-group "secular-hub-app-rg" \
-            --image "${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
+            --image "$ACR_LOGIN_SERVER/${{ env.IMAGE_NAME }}:${{ github.sha }}"

@@ -18,10 +18,10 @@ resource "azurerm_app_service" "app" {
   app_service_plan_id = azurerm_service_plan.asp.id
 
   app_settings = {
-    "WEBSITE_RUN_FROM_PACKAGE"     = "1"
-    "WEBSITE_NODE_DEFAULT_VERSION" = var.node_version
-    "WEBSITE_WELCOME_PAGE"         = "public/index.html"
-    "PORT"                         = "3000"
+    "WEBSITE_RUN_FROM_PACKAGE"       = "1"
+    "WEBSITE_NODE_DEFAULT_VERSION"   = var.node_version
+    "WEBSITE_WELCOME_PAGE"           = "public/index.html"
+    "PORT"                           = "3000"
     "SCM_DO_BUILD_DURING_DEPLOYMENT" = "false"
   }
 

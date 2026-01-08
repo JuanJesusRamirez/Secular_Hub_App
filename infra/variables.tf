@@ -28,6 +28,19 @@ variable "container_registry_name" {
   default     = "secularhubreg"
 }
 
+variable "container_registry_name_dev" {
+  description = "Container Registry name for the third app (must be globally unique)"
+  type        = string
+  default     = "secularhubregdev"
+}
+
+variable "service_principal_object_id" {
+  description = "Object ID of the Service Principal that needs access to ACR"
+  type        = string
+  default     = ""
+}
+
+
 variable "node_version" {
   description = "Node.js version for Container (example: 18)"
   type        = string

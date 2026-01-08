@@ -23,3 +23,17 @@ output "app_insights_instrumentation_key" {
   description = "Instrumentation key for App Insights (if created)"
   sensitive   = true
 }
+
+output "dev_fqdn" {
+  value = azurerm_container_app.app_dev.latest_revision_fqdn
+}
+
+output "container_registry_login_server_dev" {
+  value       = azurerm_container_registry.acr_dev.login_server
+  description = "Login server of the dev Container Registry"
+}
+
+output "container_registry_name_dev" {
+  value       = azurerm_container_registry.acr_dev.name
+  description = "Container Registry name (dev)"
+}

@@ -44,6 +44,38 @@ copy prisma\dev.db.backup prisma\dev.db
 
 - Si quieres empezar con la base de datos vacía, basta con `npx prisma db push` (crea las tablas en `prisma/dev.db`).
 
+## Añadir una tercera Container App (dev)
+
+El proyecto incluye infraestructura Terraform para `prd` y `uat`. Para crear una tercera app (por ejemplo `dev`) provisionada en Azure se añadió:
+
+- Un ACR adicional: variable `container_registry_name_dev`.
+- Un `container_app_environment` nuevo: `env_dev`.
+- Un `azurerm_container_app` nuevo: `app_dev`.
+- Un `azurerm_role_assignment` para entregar el rol `AcrPush` al Service Principal cuya `object id` se configure en la variable `service_principal_object_id`.
+
+Pasos rápidos para construir y push de la imagen al registro dev (local / PowerShell):
+
+```powershell
+# Obtener login server desde terraform outputs (tras `terraform apply`)
+ $registry = "<login-server>.azurecr.io"
+
+# Login ACR (opcional, si usas admin-enabled)
+az acr login --name <registryName>
+
+# Construir y pushear
+.\scripts\build-and-push.ps1 -RegistryLoginServer $registry -ImageName "secular-hub-app" -Tag "dev"
+```
+
+Luego aplica Terraform para crear recursos:
+
+```powershell
+cd infra
+terraform init
+terraform apply -var "service_principal_object_id=<OBJECT_ID>" -auto-approve
+```
+
+Esto devolverá el `container_registry_login_server_dev` en los outputs; úsalo para pushear la imagen.
+
 NOTA: No encontré un script automático de seed en el repo; si necesitas que escriba un script para poblar datos demo, puedo crearlo.
 
 ## Prisma

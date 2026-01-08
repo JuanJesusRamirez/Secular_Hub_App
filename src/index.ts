@@ -11,8 +11,9 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.get('/api/info', (req: Request, res: Response) => {
     res.json({
         message: "¡Hola desde TypeScript!",
-        status: "Running on Azure App Service ready mode",
-        timestamp: new Date().toISOString()
+        status: "Running on Azure Container Apps - Production Mode",
+        timestamp: new Date().toISOString(),
+        version: "1.0.0"
     });
 });
 

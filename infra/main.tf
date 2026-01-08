@@ -27,8 +27,8 @@ resource "azurerm_container_app" "app" {
     container {
       name   = "secular-hub"
       image  = "${azurerm_container_registry.acr.login_server}/secular-hub-app:latest"
-      cpu    = 0.25
-      memory = "0.5Gi"
+      cpu    = 0.5
+      memory = "1Gi"
 
       env {
         name  = "PORT"

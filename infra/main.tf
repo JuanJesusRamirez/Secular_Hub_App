@@ -17,8 +17,8 @@ resource "azurerm_container_app_environment" "env" {
   resource_group_name = azurerm_resource_group.rg.name
 }
 
-resource "azurerm_container_app" "app" {
-  name                         = var.app_service_name
+resource "azurerm_container_app" "app_prd" {
+  name                         = "${var.app_service_name}-prd"
   container_app_environment_id = azurerm_container_app_environment.env.id
   resource_group_name          = azurerm_resource_group.rg.name
   revision_mode                = "Single"
@@ -26,7 +26,7 @@ resource "azurerm_container_app" "app" {
   template {
     container {
       name   = "secular-hub"
-      image  = "${azurerm_container_registry.acr.login_server}/secular-hub-app:latest"
+      image  = "${azurerm_container_registry.acr.login_server}/secular-hub-app:prod"
       cpu    = 0.25
       memory = "0.5Gi"
 
@@ -51,11 +51,56 @@ resource "azurerm_container_app" "app" {
   registry {
     server               = azurerm_container_registry.acr.login_server
     username             = azurerm_container_registry.acr.admin_username
-    password_secret_name = "acr-password"
+    password_secret_name = "acr-password-prd"
   }
 
   secret {
-    name  = "acr-password"
+    name  = "acr-password-prd"
+    value = azurerm_container_registry.acr.admin_password
+  }
+
+  depends_on = [azurerm_container_app_environment.env]
+}
+
+resource "azurerm_container_app" "app_uat" {
+  name                         = "${var.app_service_name}-uat"
+  container_app_environment_id = azurerm_container_app_environment.env.id
+  resource_group_name          = azurerm_resource_group.rg.name
+  revision_mode                = "Single"
+
+  template {
+    container {
+      name   = "secular-hub"
+      image  = "${azurerm_container_registry.acr.login_server}/secular-hub-app:uat"
+      cpu    = 0.25
+      memory = "0.5Gi"
+
+      env {
+        name  = "PORT"
+        value = "3000"
+      }
+    }
+  }
+
+  ingress {
+    allow_insecure_connections = false
+    external_enabled           = true
+    target_port                = 3000
+
+    traffic_weight {
+      percentage      = 100
+      latest_revision = true
+    }
+  }
+
+  registry {
+    server               = azurerm_container_registry.acr.login_server
+    username             = azurerm_container_registry.acr.admin_username
+    password_secret_name = "acr-password-uat"
+  }
+
+  secret {
+    name  = "acr-password-uat"
     value = azurerm_container_registry.acr.admin_password
   }
 
@@ -68,4 +113,12 @@ resource "azurerm_application_insights" "ai" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   application_type    = "web"
+}
+
+output "uat_fqdn" {
+  value = azurerm_container_app.app_uat.latest_revision_fqdn
+}
+
+output "prd_fqdn" {
+  value = azurerm_container_app.app_prd.latest_revision_fqdn
 }

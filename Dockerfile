@@ -1,26 +1,26 @@
-FROM node:18-alpine
-
+FROM node:18-alpine AS builder
 WORKDIR /app
 
-# Copy package files
+# Copy package files and install deps for build
 COPY package*.json ./
-
-# Install all dependencies (including dev for build)
 RUN npm ci
 
-# Copy source code
-COPY src ./src
-COPY tsconfig.json ./
-
-# Compile TypeScript to JavaScript
+# Copy full source and build Next.js
+COPY . .
 RUN npm run build
 
-# Remove dev dependencies
+FROM node:18-alpine AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+
+# Install production deps
+COPY package*.json ./
 RUN npm ci --only=production
 
-# Copy public assets
-COPY public ./public
+# Copy build artifacts and public assets from builder
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
 
 EXPOSE 3000
 
-CMD ["node", "dist/index.js"]
+CMD ["npm", "start"]

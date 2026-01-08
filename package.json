@@ -1,24 +1,66 @@
 {
   "name": "secular_hub_app",
   "version": "1.0.0",
+  "description": "Bloomberg Investment Outlooks Analysis Platform",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon --exec ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanJesusRamirez/Secular_Hub_App.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/JuanJesusRamirez/Secular_Hub_App/issues"
+  },
+  "homepage": "https://github.com/JuanJesusRamirez/Secular_Hub_App#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "@huggingface/inference": "^4.13.5",
+    "@prisma/client": "^5.19.1",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-switch": "^1.2.6",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "@visx/scale": "^3.12.0",
+    "@visx/text": "^3.12.0",
+    "@visx/wordcloud": "^3.12.0",
+    "autoprefixer": "^10.4.23",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "compromise": "^14.14.5",
+    "lru-cache": "^11.2.4",
+    "lucide-react": "^0.562.0",
+    "natural": "^8.1.0",
+    "next": "^14.2.35",
+    "openai": "^6.15.0",
+    "postcss": "^8.5.6",
+    "prisma": "^5.19.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^3.6.0",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7",
+    "xlsx": "^0.18.5",
+    "zod": "^4.3.4"
   },
   "devDependencies": {
-    "@types/express": "^5.0.6",
     "@types/node": "^25.0.3",
-    "nodemon": "^3.1.11",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }

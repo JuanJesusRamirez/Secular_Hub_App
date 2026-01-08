@@ -51,7 +51,7 @@ jobs:
 
       - name: Terraform Init
         working-directory: infra
-        run: terraform init -input=false
+        run: terraform init -reconfigure -input=false
 
       - name: Terraform Apply (dev)
         working-directory: infra

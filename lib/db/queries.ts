@@ -163,10 +163,15 @@ export async function getHomeStats() {
 
   // Find peak year (most views)
   const yearsWithCounts = years.map(y => ({ year: y.year, count: Number(y._count.year) }));
-  const peakYearData = yearsWithCounts.reduce((max, y) => y.count > max.count ? y : max, yearsWithCounts[0]);
+
+  // Safely compute peak year and current year when DB is empty
+  let peakYearData = { year: new Date().getFullYear(), count: 0 };
+  if (yearsWithCounts.length > 0) {
+    peakYearData = yearsWithCounts.reduce((max, y) => (y.count > max.count ? y : max), yearsWithCounts[0]);
+  }
 
   // Get current year institutions count (most recent year)
-  const currentYear = Math.max(...yearsWithCounts.map(y => y.year));
+  const currentYear = yearsWithCounts.length > 0 ? Math.max(...yearsWithCounts.map(y => y.year)) : new Date().getFullYear();
 
   return {
     totalViews: Number(total),
@@ -189,8 +194,8 @@ export async function getHomeStats() {
       medium: convictionMap.get('medium') || 0,
       low: convictionMap.get('low') || 0,
     },
-    avgViewsPerYear: Math.round(Number(total) / years.length),
-    avgViewsPerInstitution: Math.round(Number(total) / institutions.length),
+    avgViewsPerYear: years.length > 0 ? Math.round(Number(total) / years.length) : 0,
+    avgViewsPerInstitution: institutions.length > 0 ? Math.round(Number(total) / institutions.length) : 0,
     peakYear: peakYearData.year,
     peakYearViews: peakYearData.count,
     currentYear,

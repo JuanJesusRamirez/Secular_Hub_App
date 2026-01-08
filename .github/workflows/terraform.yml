@@ -41,7 +41,7 @@ jobs:
         run: terraform fmt -check -recursive
 
       - name: Terraform Init (no backend, no provider auth)
-        run: terraform init -backend=false -input=false -no-color
+        run: terraform init -backend=false -input=false -no-color -reconfigure
         env:
           TF_LOG: INFO
 

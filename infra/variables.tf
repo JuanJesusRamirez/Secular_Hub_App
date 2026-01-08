@@ -16,34 +16,22 @@ variable "resource_group_name" {
   default     = "secular-hub-app-rg"
 }
 
-variable "app_service_plan_name" {
-  description = "App Service Plan name"
-  type        = string
-  default     = "secular-hub-plan"
-}
-
 variable "app_service_name" {
-  description = "App Service (WebApp) name"
+  description = "Container App name"
   type        = string
   default     = "secular-hub-app"
 }
 
-variable "sku_tier" {
-  description = "App Service plan tier"
+variable "container_registry_name" {
+  description = "Container Registry name (must be globally unique, alphanumeric only)"
   type        = string
-  default     = "Standard"
-}
-
-variable "sku_size" {
-  description = "App Service plan size"
-  type        = string
-  default     = "S1"
+  default     = "secularhubreg"
 }
 
 variable "node_version" {
-  description = "Node.js version for App Service (example: 18.x)"
+  description = "Node.js version for Container (example: 18)"
   type        = string
-  default     = "18.x"
+  default     = "18"
 }
 
 variable "enable_app_insights" {

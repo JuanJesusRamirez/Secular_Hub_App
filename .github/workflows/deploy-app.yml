@@ -1,4 +1,4 @@
-name: Build and Deploy Node App to Azure App Service
+name: Build and Deploy Container App to Azure
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
       - 'public/**'
       - 'package.json'
       - 'tsconfig.json'
+      - 'Dockerfile'
       - '.github/workflows/deploy-app.yml'
   workflow_dispatch: {}
 
@@ -15,11 +16,13 @@ permissions:
   id-token: write
   contents: read
 
+env:
+  REGISTRY_NAME: secularhubreg
+  IMAGE_NAME: secular-hub-app
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    outputs:
-      artifact-path: ${{ steps.archive.outputs.artifact }}
     steps:
       - uses: actions/checkout@v4
       
@@ -35,28 +38,6 @@ jobs:
       - name: Build
         run: npm run build
       
-      - name: Archive build
-        id: archive
-        run: |
-          # Include dist folder, public folder, package.json, and node_modules
-          zip -r app.zip dist/ public/ package.json node_modules/ -x "node_modules/.bin/*" "node_modules/*/test/*" "node_modules/*/tests/*"
-      
-      - uses: actions/upload-artifact@v4
-        with:
-          name: app-zip
-          path: app.zip
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      - uses: actions/download-artifact@v4
-        with:
-          name: app-zip
-          path: ./
-      
       - name: Login to Azure using OIDC
         uses: azure/login@v2
         with:
@@ -64,9 +45,40 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
-      - name: Deploy to Azure App Service
+      - name: Get ACR credentials
+        id: acr
         run: |
-          az webapp deployment source config-zip \
+          ACR_USERNAME=$(az acr credential show \
             --resource-group "secular-hub-app-rg" \
+            --name "${{ env.REGISTRY_NAME }}" \
+            --query "username" -o tsv)
+          ACR_PASSWORD=$(az acr credential show \
+            --resource-group "secular-hub-app-rg" \
+            --name "${{ env.REGISTRY_NAME }}" \
+            --query "passwords[0].value" -o tsv)
+          ACR_LOGIN_SERVER=$(az acr show \
+            --resource-group "secular-hub-app-rg" \
+            --name "${{ env.REGISTRY_NAME }}" \
+            --query "loginServer" -o tsv)
+          echo "username=$ACR_USERNAME" >> $GITHUB_OUTPUT
+          echo "password=$ACR_PASSWORD" >> $GITHUB_OUTPUT
+          echo "login_server=$ACR_LOGIN_SERVER" >> $GITHUB_OUTPUT
+      
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          registry: ${{ steps.acr.outputs.login_server }}
+          username: ${{ steps.acr.outputs.username }}
+          password: ${{ steps.acr.outputs.password }}
+          tags: |
+            ${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:latest
+            ${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+      
+      - name: Deploy to Container App
+        run: |
+          az containerapp update \
             --name "secular-hub-app" \
-            --src app.zip
+            --resource-group "secular-hub-app-rg" \
+            --image "${{ steps.acr.outputs.login_server }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"

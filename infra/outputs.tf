@@ -1,10 +1,10 @@
 output "app_service_default_site_hostname" {
-  value       = azurerm_app_service.app.default_site_hostname
+  value       = azurerm_windows_web_app.app.default_hostname
   description = "Hostname of the deployed App Service"
 }
 
 output "app_service_name" {
-  value       = azurerm_app_service.app.name
+  value       = azurerm_windows_web_app.app.name
   description = "App Service name"
 }
 

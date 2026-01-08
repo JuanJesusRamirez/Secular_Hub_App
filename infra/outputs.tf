@@ -1,12 +1,14 @@
-output "container_app_fqdn" {
-  value       = azurerm_container_app.app.ingress[0].fqdn
-  description = "FQDN of the Container App"
-}
+# Output removed: `container_app_fqdn` — resource `azurerm_container_app.app` is not declared in this root module
+# output "container_app_fqdn" {
+#   value       = azurerm_container_app.app.ingress[0].fqdn
+#   description = "FQDN of the Container App"
+# }
 
-output "container_app_name" {
-  value       = azurerm_container_app.app.name
-  description = "Container App name"
-}
+# Output removed: `container_app_name` — resource `azurerm_container_app.app` is not declared in this root module
+# output "container_app_name" {
+#   value       = azurerm_container_app.app.name
+#   description = "Container App name"
+# }
 
 output "container_registry_login_server" {
   value       = azurerm_container_registry.acr.login_server

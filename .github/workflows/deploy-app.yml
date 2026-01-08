@@ -18,13 +18,19 @@ permissions:
 
 env:
   ACR_NAME: secularhubreg
+  ACR_REGISTRY: secularhubreg.azurecr.io
   IMAGE_NAME: secular-hub-app
+  CONTAINER_APP_NAME: secular-hub-app
+  RESOURCE_GROUP: secular-hub-app-rg
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
       
       - name: Login to Azure using OIDC
         uses: azure/login@v2
@@ -33,21 +39,32 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
-      - name: Build and push image to ACR
+      - name: Get ACR credentials and login to Docker
         run: |
-          az acr build \
-            --registry "${{ env.ACR_NAME }}" \
-            --image "${{ env.IMAGE_NAME }}:latest" \
-            --image "${{ env.IMAGE_NAME }}:${{ github.sha }}" \
-            --file Dockerfile .
+          ACR_TOKEN=$(az acr login --name ${{ env.ACR_NAME }} --expose-token --output tsv --query accessToken)
+          echo $ACR_TOKEN | docker login ${{ env.ACR_REGISTRY }} -u 00000000-0000-0000-0000-000000000000 --password-stdin
       
-      - name: Deploy to Container App
+      - name: Build Docker image
         run: |
-          ACR_LOGIN_SERVER=$(az acr show \
-            --name "${{ env.ACR_NAME }}" \
-            --query loginServer -o tsv)
-          
+          docker build -t ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest .
+          docker tag ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+      
+      - name: Push to Azure Container Registry
+        run: |
+          docker push ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          docker push ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+      
+      - name: Update Container App
+        run: |
           az containerapp update \
-            --name "secular-hub-app" \
-            --resource-group "secular-hub-app-rg" \
-            --image "$ACR_LOGIN_SERVER/${{ env.IMAGE_NAME }}:${{ github.sha }}"
+            --name ${{ env.CONTAINER_APP_NAME }} \
+            --resource-group ${{ env.RESOURCE_GROUP }} \
+            --image "${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
+      
+      - name: Get Container App URL
+        run: |
+          FQDN=$(az containerapp show \
+            --name ${{ env.CONTAINER_APP_NAME }} \
+            --resource-group ${{ env.RESOURCE_GROUP }} \
+            --query properties.configuration.ingress.fqdn -o tsv)
+          echo "Container App deployed at: https://$FQDN"

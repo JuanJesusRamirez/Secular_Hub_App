@@ -1,6 +1,5 @@
 # Auto-detect text files and perform LF/CRLF normalization
 * text=auto
-
 # Custom mappings for source files to ensure consistency
 *.ts text
 *.tsx text

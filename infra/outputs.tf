@@ -1,11 +1,21 @@
-output "container_app_fqdn" {
-  value       = azurerm_container_app.app.ingress[0].fqdn
-  description = "FQDN of the Container App"
+output "uat_fqdn" {
+  value       = azurerm_container_app.app_uat.latest_revision_fqdn
+  description = "FQDN of the UAT Container App"
 }
 
-output "container_app_name" {
-  value       = azurerm_container_app.app.name
-  description = "Container App name"
+output "uat_name" {
+  value       = azurerm_container_app.app_uat.name
+  description = "UAT Container App name"
+}
+
+output "prd_fqdn" {
+  value       = azurerm_container_app.app_prd.latest_revision_fqdn
+  description = "FQDN of the PRD Container App"
+}
+
+output "prd_name" {
+  value       = azurerm_container_app.app_prd.name
+  description = "PRD Container App name"
 }
 
 output "container_registry_login_server" {

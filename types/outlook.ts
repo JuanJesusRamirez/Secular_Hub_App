@@ -1,6 +1,7 @@
-import { OutlookCall } from '@prisma/client';
+import { OutlookCall, Prisma } from '@prisma/client';
 
 export type { OutlookCall };
+export type { Prisma };
 
 export interface PaginatedResponse<T> {
   data: T[];

@@ -41,8 +41,8 @@ export async function GET() {
     `;
 
     // Format coverage data
-    const coverage = coverageByYear.map(row => {
-      const aiStats = aiGenerationStats.find(a => a.year === row.year);
+    const coverage = coverageByYear.map((row: { year: number; total: number | string; withSubTheme: number | string; withSectionDesc: number | string; withBoth: number | string }) => {
+      const aiStats = aiGenerationStats.find((a: { year: number; aiSubTheme: number; aiSectionDesc: number }) => a.year === row.year);
       return {
         year: row.year,
         total: Number(row.total),
@@ -65,7 +65,10 @@ export async function GET() {
 
     // Calculate overall stats
     const totals = coverageByYear.reduce(
-      (acc, row) => ({
+      (
+        acc: { total: number; withSubTheme: number; withSectionDesc: number; withBoth: number },
+        row: { total: number | string; withSubTheme: number | string; withSectionDesc: number | string; withBoth: number | string }
+      ) => ({
         total: acc.total + Number(row.total),
         withSubTheme: acc.withSubTheme + Number(row.withSubTheme),
         withSectionDesc: acc.withSectionDesc + Number(row.withSectionDesc),

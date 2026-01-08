@@ -82,7 +82,7 @@ export default function WordCloudPage() {
 
     setSentimentLoading(true);
     try {
-      const terms = words.map(w => w.text);
+      const terms = words.map((w: WordData) => w.text);
       const res = await fetch('/api/stats/sentiment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

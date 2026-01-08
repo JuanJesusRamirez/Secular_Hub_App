@@ -1,5 +1,6 @@
 import { prisma } from './client';
 import { Prisma } from '@prisma/client';
+import type { OutlookCall } from '@/types/outlook';
 import { getYearlyBriefing, AVAILABLE_YEARS } from '@/lib/data/yearly-briefings';
 
 export type OutlookFilter = {
@@ -209,7 +210,7 @@ export async function getBaseCasesByYear() {
     orderBy: { year: 'desc' },
   });
 
-  return baseCases.map(bc => ({
+  return baseCases.map((bc: { year: number; subTheme: string | null; sectionDescription: string | null }) => ({
     year: bc.year,
     baseCase: bc.subTheme || 'Market Outlook',
     description: bc.sectionDescription || '',
@@ -376,7 +377,7 @@ export async function getThemeRankings(startYear: number = 2019, endYear: number
     const seen = new Set<string>();
     const orderedThemes: { theme: string; category: string; type: 'MACRO' | 'THEMATIC' }[] = [];
 
-    calls.forEach(c => {
+    calls.forEach((c: { theme: string; themeCategory: string; rank: number | null }) => {
       if (!seen.has(c.theme)) {
         seen.add(c.theme);
         orderedThemes.push({
@@ -389,11 +390,11 @@ export async function getThemeRankings(startYear: number = 2019, endYear: number
 
     // Count calls per theme
     const counts: Record<string, number> = {};
-    calls.forEach(c => { counts[c.theme] = (counts[c.theme] || 0) + 1; });
+    calls.forEach((c: { theme: string; themeCategory: string; rank: number | null }) => { counts[c.theme] = (counts[c.theme] || 0) + 1; });
 
     // Build rankings (BASE CASE is always rank 0)
     let position = 0;
-    orderedThemes.slice(0, topN + 1).forEach(t => {
+    orderedThemes.slice(0, topN + 1).forEach((t: { theme: string; category: string; type: 'MACRO' | 'THEMATIC' }) => {
       const rank = t.theme === 'BASE CASE' ? 0 : ++position;
       rankings.push({
         year,
@@ -415,7 +416,7 @@ export async function getThemeRankings(startYear: number = 2019, endYear: number
     orderBy: { year: 'asc' }
   });
 
-  const baseCases = baseCasesRaw.map(bc => ({
+  const baseCases = baseCasesRaw.map((bc: { year: number; subTheme: string | null }) => ({
     year: bc.year,
     subtitle: bc.subTheme || 'Market Outlook'
   }));

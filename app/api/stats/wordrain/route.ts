@@ -58,11 +58,11 @@ function calculateTfIdfForYear(documents: string[]): Map<string, number> {
   const tfidf = new TfIdf();
   const termScores = new Map<string, number>();
 
-  documents.forEach(doc => {
+  documents.forEach((doc: string) => {
     tfidf.addDocument(extractWords(doc).join(' '));
   });
 
-  documents.forEach((_, docIndex) => {
+  documents.forEach((_, docIndex: number) => {
     tfidf.listTerms(docIndex).forEach((item: { term: string; tfidf: number }) => {
       const currentScore = termScores.get(item.term) || 0;
       termScores.set(item.term, currentScore + item.tfidf);
@@ -125,9 +125,9 @@ async function getSemanticPositions(words: string[]): Promise<Map<string, number
 function getFallbackPositions(words: string[]): Map<string, number> {
   const positions = new Map<string, number>();
 
-  words.forEach(word => {
+  words.forEach((word: string) => {
     // Simple hash-based positioning
-    const hash = word.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    const hash = word.split('').reduce((acc: number, char: string) => acc + char.charCodeAt(0), 0);
     const position = (hash % 1000) / 1000;
     positions.set(word, position);
   });
@@ -152,8 +152,8 @@ export async function GET(request: Request) {
     orderBy: { year: 'asc' },
   });
   const availableYears = yearsRaw
-    .map(y => y.year)
-    .filter(y => y >= startYear && y <= endYear);
+    .map((y: { year: number }) => y.year)
+    .filter((y: number) => y >= startYear && y <= endYear);
 
   // Fetch documents for each year
   const yearlyData = new Map<number, { docs: string[]; tfidf: Map<string, number> }>();
@@ -164,7 +164,7 @@ export async function GET(request: Request) {
       select: { callText: true },
     });
 
-    const docs = calls.map(c => c.callText || '').filter(t => t.length > 0);
+    const docs = calls.map((c: { callText: string | null }) => c.callText || '').filter((t: string) => t.length > 0);
     const tfidf = calculateTfIdfForYear(docs);
 
     yearlyData.set(year, { docs, tfidf });
@@ -183,18 +183,18 @@ export async function GET(request: Request) {
   }
 
   // Build response data
-  const words: WordRainWord[] = topWords.map(word => {
+  const words: WordRainWord[] = topWords.map((word: string) => {
     const yearData: Record<number, WordYearData> = {};
     let totalTfidf = 0;
     let yearCount = 0;
 
-    availableYears.forEach(year => {
+    availableYears.forEach((year: number) => {
       const data = yearlyData.get(year);
       if (data) {
         const tfidfScore = data.tfidf.get(word) || 0;
-        const frequency = data.docs.reduce((count, doc) => {
+        const frequency = data.docs.reduce((count: number, doc: string) => {
           const words = extractWords(doc);
-          return count + words.filter(w => w === word).length;
+          return count + words.filter((w: string) => w === word).length;
         }, 0);
 
         if (frequency > 0 || tfidfScore > 0) {

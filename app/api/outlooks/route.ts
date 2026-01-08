@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
 
     // Optionally include AI generation metadata
     const responseData = includeMetadata
-      ? result.data.map(call => ({
+      ? result.data.map((call: typeof result.data[number]) => ({
           ...call,
           _metadata: {
             subThemeGenerated: call.subThemeGenerated,

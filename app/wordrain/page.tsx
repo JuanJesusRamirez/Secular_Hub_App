@@ -82,7 +82,7 @@ export default function WordRainPage() {
 
     setSentimentLoading(true);
     try {
-      const terms = words.map(w => w.text);
+      const terms = words.map((w: WordRainWord) => w.text);
       const res = await fetch('/api/stats/sentiment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -119,7 +119,7 @@ export default function WordRainPage() {
   }, [data?.words, fetchSentiment]);
 
   // Find peak word (highest average TF-IDF)
-  const peakWord = data?.words?.reduce((max, w) =>
+  const peakWord = data?.words?.reduce((max: WordRainWord | undefined, w: WordRainWord) =>
     w.avgTfidf > (max?.avgTfidf || 0) ? w : max
   , data?.words?.[0]);
 

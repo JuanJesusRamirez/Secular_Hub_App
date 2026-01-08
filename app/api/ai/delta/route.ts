@@ -24,14 +24,14 @@ export async function POST(request: Request) {
     // Format stats for prompt
     const emerged = stats.themes_emerged.slice(0, 10).join(', ');
     const extinct = stats.themes_extinct.slice(0, 10).join(', ');
-    const grew = stats.themes_grew.slice(0, 5).map(t => `${t.theme} (+${t.delta})`).join(', ');
-    const declined = stats.themes_declined.slice(0, 5).map(t => `${t.theme} (${t.delta})`).join(', ');
+    const grew = stats.themes_grew.slice(0, 5).map((t: { theme: string; delta: number }) => `${t.theme} (+${t.delta})`).join(', ');
+    const declined = stats.themes_declined.slice(0, 5).map((t: { theme: string; delta: number }) => `${t.theme} (${t.delta})`).join(', ');
 
     // We also need "top themes" for context, which getCompareStats doesn't fully give in a simple list
     // We can infer them from grew/declined or fetch separately. 
     // For simplicity, we'll use the grew/declined lists as proxies for active themes.
-    const year1_themes = stats.themes_declined.map(t => t.theme).slice(0, 10).join(', ');
-    const year2_themes = stats.themes_grew.map(t => t.theme).slice(0, 10).join(', ');
+    const year1_themes = stats.themes_declined.map((t: { theme: string }) => t.theme).slice(0, 10).join(', ');
+    const year2_themes = stats.themes_grew.map((t: { theme: string }) => t.theme).slice(0, 10).join(', ');
 
 
     const promptText = await loadPrompt('delta-narrative', {

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && next build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "prisma generate",

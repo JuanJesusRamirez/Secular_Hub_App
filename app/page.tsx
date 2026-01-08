@@ -21,11 +21,11 @@ export default async function Home() {
   ]);
 
   // Merge base cases with year stats
-  const yearsData = baseCases.map(bc => ({
+  const yearsData = baseCases.map((bc: { year: number; baseCase: string; description: string }) => ({
     year: bc.year,
     baseCase: bc.baseCase,
     description: bc.description,
-    callCount: stats.years.find(y => y.year === bc.year)?.count || 0,
+    callCount: stats.years.find((y: { year: number; count: number }) => y.year === bc.year)?.count || 0,
   }));
 
   return (
@@ -205,7 +205,7 @@ export default async function Home() {
         </p>
 
         <div className="grid gap-3">
-          {yearsData.map((yearData, index) => (
+          {yearsData.map((yearData: typeof yearsData[number], index: number) => (
             <Link
               key={yearData.year}
               href={`/snapshot?year=${yearData.year}`}

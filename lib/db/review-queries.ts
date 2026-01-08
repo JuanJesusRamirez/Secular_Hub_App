@@ -51,7 +51,7 @@ export async function getReviewQueue(options: ReviewQueueOptions): Promise<{
 
   // Fetch related outlook calls
   const enrichedItems = await Promise.all(
-    items.map(async (item) => {
+    items.map(async (item: { outlookCallId: string; [key: string]: any }) => {
       const outlookCall = await prisma.outlookCall.findUnique({
         where: { id: item.outlookCallId },
         select: {

@@ -127,7 +127,7 @@ function calculateTfIdf(documents: string[], mode: 'words' | 'phrases'): Map<str
   const termScores = new Map<string, number>();
 
   // Add each document to TF-IDF
-  documents.forEach(doc => {
+  documents.forEach((doc: string) => {
     if (mode === 'words') {
       tfidf.addDocument(extractWords(doc).join(' '));
     } else {
@@ -136,7 +136,7 @@ function calculateTfIdf(documents: string[], mode: 'words' | 'phrases'): Map<str
   });
 
   // Calculate aggregate TF-IDF scores across all documents
-  documents.forEach((_, docIndex) => {
+  documents.forEach((_, docIndex: number) => {
     tfidf.listTerms(docIndex).forEach((item: { term: string; tfidf: number }) => {
       const currentScore = termScores.get(item.term) || 0;
       termScores.set(item.term, currentScore + item.tfidf);
@@ -185,7 +185,7 @@ export async function GET(request: Request) {
           by: ['year'],
           orderBy: { year: 'desc' },
         });
-        const availableYears = yearsRaw.map(y => y.year);
+        const availableYears = yearsRaw.map((y: { year: number }) => y.year);
 
         const words = JSON.parse(cached.data);
 
@@ -222,7 +222,7 @@ export async function GET(request: Request) {
 
   if (scoring === 'importance') {
     // Use TF-IDF scoring
-    const documents = calls.map(c => c.callText || '').filter(t => t.length > 0);
+    const documents = calls.map((c: { callText: string | null }) => c.callText || '').filter((t: string) => t.length > 0);
     const tfIdfScores = calculateTfIdf(documents, mode);
 
     sortedWords = Array.from(tfIdfScores.entries())
@@ -239,14 +239,14 @@ export async function GET(request: Request) {
     // Use frequency counting
     const termCounts = new Map<string, number>();
 
-    calls.forEach(call => {
+    calls.forEach((call: { callText: string | null }) => {
       if (!call.callText) return;
 
       const terms = mode === 'words'
         ? extractWords(call.callText)
         : extractPhrases(call.callText);
 
-      terms.forEach(term => {
+      terms.forEach((term: string) => {
         termCounts.set(term, (termCounts.get(term) || 0) + 1);
       });
     });
@@ -269,7 +269,7 @@ export async function GET(request: Request) {
     }),
   ]);
 
-  const availableYears = yearsRaw.map(y => y.year);
+  const availableYears = yearsRaw.map((y: { year: number }) => y.year);
   const uniqueInstitutions = institutionsRaw.length;
 
   // Save to cache for next time

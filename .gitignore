@@ -50,6 +50,7 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+.terraform.bak/
 
 # Python
 __pycache__/

@@ -157,6 +157,53 @@ az ad app federated-credential create `
 
 ---
 
+### **PASO 2.1: Crear Federated Credentials para UAT y PRD**
+
+Si tu workflow necesita ejecutar `terraform apply` en ramas `uat` y `prd`, debes crear credenciales federadas adicionales:
+
+```powershell
+$clientId = "0f9e7724-7a9f-445b-b394-3bc391a2978d"
+$repo = "JuanJesusRamirez/Secular_Hub_App"
+
+# Crear credencial para rama UAT
+az ad app federated-credential create `
+  --id $clientId `
+  --parameters '{
+    "name": "github-uat",
+    "issuer": "https://token.actions.githubusercontent.com",
+    "subject": "repo:'$repo':ref:refs/heads/uat",
+    "audiences": ["api://AzureADTokenExchange"]
+  }'
+
+# Crear credencial para rama PRD
+az ad app federated-credential create `
+  --id $clientId `
+  --parameters '{
+    "name": "github-prd",
+    "issuer": "https://token.actions.githubusercontent.com",
+    "subject": "repo:'$repo':ref:refs/heads/prd",
+    "audiences": ["api://AzureADTokenExchange"]
+  }'
+```
+
+**Verificar todas las credenciales:**
+```powershell
+az ad app federated-credential list --id $clientId -o table
+```
+
+**Output esperado:**
+```
+Name              Subject
+────────────────  ─────────────────────────────────────────────────────
+github-main       repo:JuanJesusRamirez/Secular_Hub_App:ref:refs/heads/main
+github-uat        repo:JuanJesusRamirez/Secular_Hub_App:ref:refs/heads/uat
+github-prd        repo:JuanJesusRamirez/Secular_Hub_App:ref:refs/heads/prd
+```
+
+> ⚠️ **Nota:** Azure AD tiene un límite de 20 federated credentials por App Registration.
+
+---
+
 ### **PASO 3: Configurar secrets en GitHub**
 
 Necesitas **solo 3 secrets** (sin contraseña):

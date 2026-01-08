@@ -40,3 +40,29 @@ outlook_calls.json
 
 # System/Corrupted files
 nul
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+ENV/
+build/
+dist/
+pip-wheel-metadata/
+*.egg-info/
+*.egg

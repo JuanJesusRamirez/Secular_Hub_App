@@ -115,10 +115,3 @@ resource "azurerm_application_insights" "ai" {
   application_type    = "web"
 }
 
-output "uat_fqdn" {
-  value = azurerm_container_app.app_uat.latest_revision_fqdn
-}
-
-output "prd_fqdn" {
-  value = azurerm_container_app.app_prd.latest_revision_fqdn
-}

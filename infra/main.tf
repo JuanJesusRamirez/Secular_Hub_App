@@ -11,22 +11,25 @@ resource "azurerm_service_plan" "asp" {
   sku_name            = var.sku_size
 }
 
-resource "azurerm_app_service" "app" {
+resource "azurerm_windows_web_app" "app" {
   name                = var.app_service_name
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  app_service_plan_id = azurerm_service_plan.asp.id
+  service_plan_id     = azurerm_service_plan.asp.id
+
+  site_config {
+    application_stack {
+      node_version = "18-lts"
+    }
+    always_on         = false
+    use_32_bit_worker = false
+  }
 
   app_settings = {
     "WEBSITE_RUN_FROM_PACKAGE"       = "1"
     "WEBSITE_NODE_DEFAULT_VERSION"   = var.node_version
-    "WEBSITE_WELCOME_PAGE"           = "public/index.html"
     "PORT"                           = "3000"
     "SCM_DO_BUILD_DURING_DEPLOYMENT" = "false"
-  }
-
-  lifecycle {
-    ignore_changes = [app_settings]
   }
 
   depends_on = [azurerm_service_plan.asp]

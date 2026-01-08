@@ -17,8 +17,8 @@ permissions:
   contents: read
 
 env:
-  ACR_NAME: secularhubreg
-  ACR_REGISTRY: secularhubreg.azurecr.io
+  ACR_NAME: secularhubregprd
+  ACR_REGISTRY: secularhubregprd.azurecr.io
   IMAGE_NAME: secular-hub-app
   CONTAINER_APP_NAME: secular-hub-app-prd
   RESOURCE_GROUP: secular-hub-app-rg

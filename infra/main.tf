@@ -3,36 +3,63 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 }
 
-resource "azurerm_service_plan" "asp" {
-  name                = var.app_service_plan_name
-  location            = azurerm_resource_group.rg.location
+resource "azurerm_container_registry" "acr" {
+  name                = var.container_registry_name
   resource_group_name = azurerm_resource_group.rg.name
-  os_type             = "Windows"
-  sku_name            = var.sku_size
+  location            = azurerm_resource_group.rg.location
+  sku                 = "Basic"
+  admin_enabled       = true
 }
 
-resource "azurerm_windows_web_app" "app" {
-  name                = var.app_service_name
+resource "azurerm_container_app_environment" "env" {
+  name                = "${var.project_name}-env"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  service_plan_id     = azurerm_service_plan.asp.id
+}
 
-  site_config {
-    application_stack {
-      node_version = "~18"
+resource "azurerm_container_app" "app" {
+  name                         = var.app_service_name
+  container_app_environment_id = azurerm_container_app_environment.env.id
+  resource_group_name          = azurerm_resource_group.rg.name
+  revision_mode                = "Single"
+
+  template {
+    container {
+      name   = "secular-hub"
+      image  = "${azurerm_container_registry.acr.login_server}/secular-hub-app:latest"
+      cpu    = 0.25
+      memory = "0.5Gi"
+
+      env {
+        name  = "PORT"
+        value = "3000"
+      }
     }
-    always_on         = false
-    use_32_bit_worker = false
   }
 
-  app_settings = {
-    "WEBSITE_RUN_FROM_PACKAGE"       = "1"
-    "WEBSITE_NODE_DEFAULT_VERSION"   = var.node_version
-    "PORT"                           = "3000"
-    "SCM_DO_BUILD_DURING_DEPLOYMENT" = "false"
+  ingress {
+    allow_insecure_connections = false
+    external_enabled           = true
+    target_port                = 3000
+
+    traffic_weight {
+      percentage      = 100
+      latest_revision = true
+    }
   }
 
-  depends_on = [azurerm_service_plan.asp]
+  registry {
+    server              = azurerm_container_registry.acr.login_server
+    username            = azurerm_container_registry.acr.admin_username
+    password_secret_ref = "acr-password"
+  }
+
+  secret {
+    name  = "acr-password"
+    value = azurerm_container_registry.acr.admin_password
+  }
+
+  depends_on = [azurerm_container_app_environment.env]
 }
 
 resource "azurerm_application_insights" "ai" {

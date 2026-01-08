@@ -1,11 +1,21 @@
-output "app_service_default_site_hostname" {
-  value       = azurerm_windows_web_app.app.default_hostname
-  description = "Hostname of the deployed App Service"
+output "container_app_fqdn" {
+  value       = azurerm_container_app.app.ingress[0].fqdn
+  description = "FQDN of the Container App"
 }
 
-output "app_service_name" {
-  value       = azurerm_windows_web_app.app.name
-  description = "App Service name"
+output "container_app_name" {
+  value       = azurerm_container_app.app.name
+  description = "Container App name"
+}
+
+output "container_registry_login_server" {
+  value       = azurerm_container_registry.acr.login_server
+  description = "Login server of the Container Registry"
+}
+
+output "container_registry_name" {
+  value       = azurerm_container_registry.acr.name
+  description = "Container Registry name"
 }
 
 output "app_insights_instrumentation_key" {

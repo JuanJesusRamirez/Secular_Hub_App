@@ -3,7 +3,17 @@ name: Build and Deploy Node App to Azure App Service
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'package.json'
+      - 'tsconfig.json'
+      - '.github/workflows/deploy-app.yml'
   workflow_dispatch: {}
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   build:
@@ -12,18 +22,25 @@ jobs:
       artifact-path: ${{ steps.archive.outputs.artifact }}
     steps:
       - uses: actions/checkout@v4
+      
       - name: Use Node.js 18
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
+      
       - name: Install dependencies
         run: npm ci
+      
       - name: Build
-        run: npm run build --if-present
+        run: npm run build
+      
       - name: Archive build
         id: archive
         run: |
-          if [ -d "build" ]; then zip -r app.zip build; else zip -r app.zip .; fi
+          # Include dist folder, public folder, package.json, and node_modules
+          zip -r app.zip dist/ public/ package.json node_modules/ -x "node_modules/.bin/*" "node_modules/*/test/*" "node_modules/*/tests/*"
+      
       - uses: actions/upload-artifact@v4
         with:
           name: app-zip
@@ -33,42 +50,23 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      
       - uses: actions/download-artifact@v4
         with:
           name: app-zip
           path: ./
-      - name: Prepare AZURE credentials
-        id: prepare_creds
-        run: |
-          set -euo pipefail
-          if [ -n "${AZURE_CREDENTIALS:-}" ]; then
-            if printf '%s' "$AZURE_CREDENTIALS" | jq -e . >/dev/null 2>&1; then
-              echo "creds=$AZURE_CREDENTIALS" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
-          fi
-
-          if [ -n "${AZURE_CLIENT_ID:-}" ] && [ -n "${AZURE_CLIENT_SECRET:-}" ] && [ -n "${AZURE_TENANT_ID:-}" ] && [ -n "${AZURE_SUBSCRIPTION_ID:-}" ]; then
-            creds=$(jq -n --arg clientId "$AZURE_CLIENT_ID" --arg clientSecret "$AZURE_CLIENT_SECRET" --arg tenantId "$AZURE_TENANT_ID" --arg subscriptionId "$AZURE_SUBSCRIPTION_ID" '{clientId:$clientId, clientSecret:$clientSecret, tenantId:$tenantId, subscriptionId:$subscriptionId}')
-            echo "creds=$creds" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          echo "AZURE_CREDENTIALS is not valid JSON and individual AZURE_* secrets are missing" >&2
-          exit 1
-        env:
-          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
-          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-      - name: Login to Azure
-        uses: azure/login@v1
+      
+      - name: Login to Azure using OIDC
+        uses: azure/login@v2
         with:
-          creds: ${{ steps.prepare_creds.outputs.creds }}
-      - name: Deploy to Web App (zip)
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      
+      - name: Deploy to Azure App Service
         run: |
           az webapp deployment source config-zip \
-            --resource-group "${{ secrets.AZURE_RESOURCE_GROUP }}" \
-            --name "${{ secrets.AZURE_APP_NAME }}" \
+            --resource-group "secular-hub-app-rg" \
+            --name "secular-hub-app" \
             --src app.zip

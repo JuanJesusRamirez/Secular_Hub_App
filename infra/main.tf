@@ -19,7 +19,7 @@ resource "azurerm_windows_web_app" "app" {
 
   site_config {
     application_stack {
-      node_version = "18-lts"
+      node_version = "~18"
     }
     always_on         = false
     use_32_bit_worker = false

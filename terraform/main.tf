@@ -50,12 +50,6 @@ resource "azurerm_container_app" "app_dev" {
     }
   }
 
-  registry {
-    server               = azurerm_container_registry.acr.login_server
-    username             = azurerm_container_registry.acr.admin_username
-    password_secret_name = "acr-admin-password"
-  }
-
   ingress {
     allow_insecure_connections = false
     external_enabled           = true
@@ -67,7 +61,7 @@ resource "azurerm_container_app" "app_dev" {
     }
   }
 
-  depends_on = [azurerm_container_app_environment.env_dev]
+  depends_on = [azurerm_container_app_environment.env_dev, azurerm_role_assignment.acr_pull]
 }
 
 # Assign AcrPull role to Container App's Managed Identity

@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getReviewQueue, getReviewStats } from '@/lib/db/review-queries';
 
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/review
  * Get review queue items or stats

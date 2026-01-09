@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/db/client';
 
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/migration/status
  * Get migration progress and data coverage statistics

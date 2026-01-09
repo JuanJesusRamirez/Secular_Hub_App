@@ -4,6 +4,7 @@ on:
   push:
     branches: [ dev ]
     paths:
+      - 'app/**'
       - 'src/**'
       - 'public/**'
       - 'package.json'

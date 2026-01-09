@@ -51,6 +51,9 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 .terraform.bak/
+# Ignore terraform plan output
+terraform/tfplan
+terraform/*.tfplan
 
 # Python
 __pycache__/

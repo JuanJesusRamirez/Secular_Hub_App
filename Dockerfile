@@ -1,4 +1,4 @@
-FROM node:18-slim AS builder
+FROM node:24-slim AS builder
 WORKDIR /app
 
 # Install system dependencies required by Prisma
@@ -19,7 +19,7 @@ RUN npm run build
 # Ensure public directory exists
 RUN mkdir -p /app/public
 
-FROM node:18-slim AS runner
+FROM node:24-slim AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 

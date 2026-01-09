@@ -3,13 +3,6 @@ name: Build and Push Image
 on:
   push:
     branches: [ dev ]
-    paths:
-      - 'app/**'
-      - 'src/**'
-      - 'public/**'
-      - 'package.json'
-      - 'Dockerfile'
-      - '.github/workflows/build-and-push-image.yml'
   workflow_dispatch:
 
 permissions:

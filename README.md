@@ -2,7 +2,7 @@
 
 Plataforma de análisis de Bloomberg Investment Outlooks construida con Next.js, TypeScript, Prisma y SQLite.
 
-## 📋 Requisitos Previos
+## 📋 Requisitos
 
 Antes de comenzar, asegúrate de tener instalado:
 

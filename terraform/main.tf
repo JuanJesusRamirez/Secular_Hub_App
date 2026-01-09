@@ -23,7 +23,7 @@ resource "azurerm_container_registry" "acr" {
   resource_group_name = azurerm_resource_group.dev.name
   location            = azurerm_resource_group.dev.location
   sku                 = "Standard"
-  admin_enabled       = false
+  admin_enabled       = true
 }
 
 resource "azurerm_container_app" "app_dev" {
@@ -48,6 +48,12 @@ resource "azurerm_container_app" "app_dev" {
         value = "3000"
       }
     }
+  }
+
+  registry {
+    server               = azurerm_container_registry.acr.login_server
+    username             = azurerm_container_registry.acr.admin_username
+    password_secret_name = "acr-admin-password"
   }
 
   ingress {

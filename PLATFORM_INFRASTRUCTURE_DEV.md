@@ -13,11 +13,11 @@ Implementamos el patrón **BUILD ONCE – DEPLOY MANY** con los siguientes compo
 ### 2. Recursos DEV (RG Separado)
 - **Resource Group**: `rg-secular-hub-dev`
 - **Log Analytics Workspace**: `law-dev` (30 días de retención)
-- **Container Apps Environment**: `dev-env`
+- **Container Apps Environment**: `cae-secular-hub-api-dev`
 - **Azure Container Registry (ACR)**: `acrsecularhub.azurecr.io` (UN SOLO ACR para todo el proyecto)
   - SKU: Standard
   - `admin_enabled = false` (sin admin credentials)
-- **Container App**: `secular-hub-api-dev-dev`
+- **Container App**: `ca-secular-hub-api-dev`
   - Ingress externo habilitado en puerto 3000
   - Managed Identity (SystemAssigned)
   - Revisión única (Single revision mode)

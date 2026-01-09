@@ -12,7 +12,7 @@ resource "azurerm_log_analytics_workspace" "law" {
 }
 
 resource "azurerm_container_app_environment" "env_dev" {
-  name                = "${var.env}-env"
+  name                = "cae-${var.container_app_name}-${var.env}"
   location            = azurerm_resource_group.dev.location
   resource_group_name = azurerm_resource_group.dev.name
 }
@@ -27,7 +27,7 @@ resource "azurerm_container_registry" "acr" {
 }
 
 resource "azurerm_container_app" "app_dev" {
-  name                         = "${var.container_app_name}-dev"
+  name                         = "ca-${var.container_app_name}-${var.env}"
   container_app_environment_id = azurerm_container_app_environment.env_dev.id
   resource_group_name          = azurerm_resource_group.dev.name
   revision_mode                = "Single"

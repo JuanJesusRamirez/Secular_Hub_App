@@ -1,103 +1,155 @@
 # Secular Hub App
 
-Pequeña guía para instalar y ejecutar la aplicación localmente.
+Plataforma de análisis de Bloomberg Investment Outlooks construida con Next.js, TypeScript, Prisma y SQLite.
 
-## Resumen
-Proyecto Next.js para análisis de Bloomberg Investment Outlooks. Usa Prisma con SQLite (archivo `prisma/dev.db`).
+## 📋 Requisitos Previos
 
-## Requisitos
-- Node.js (recomendado LTS: 18.16+ o 20+)
-- npm (incluido con Node)
+Antes de comenzar, asegúrate de tener instalado:
 
-## Instalación rápida
-Desde la raíz del repositorio:
+- **Node.js** versión recomendada -> 24+
+  - Verifica tu versión: `node --version`
+  - Descarga desde: https://nodejs.org/
+- **npm** (incluido con Node.js)
+  - Verifica tu versión: `npm --version`
+- **Git** (para clonar el repositorio)
+  - Verifica: `git --version`
 
-```powershell
+## 🚀 Instalación Paso a Paso
+
+### 1️⃣ Clonar el Repositorio
+
+```bash
+git clone https://github.com/JuanJesusRamirez/Secular_Hub_App.git
+cd Secular_Hub_App
+```
+
+### 2️⃣ Instalar Dependencias
+
+```bash
 npm install
+```
+
+Este comando instalará todas las dependencias necesarias (Next.js, React, Prisma, etc.). Puede tardar unos minutos.
+
+### 3️⃣ Configurar la Base de Datos
+
+Ejecuta los siguientes comandos para configurar Prisma y crear las tablas de la base de datos:
+
+```bash
 npx prisma generate
 npx prisma db push
 ```
 
-Si no existe `.env.local`, crea uno con:
+**Nota:** Si el servidor de desarrollo está corriendo, deténlo antes de ejecutar estos comandos (presiona `Ctrl+C` en la terminal).
 
-```text
-DATABASE_URL="file:./prisma/dev.db"
-```
+### 4️⃣ Iniciar el Servidor de Desarrollo
 
-(O ya existe en el repo si usaste el asistente.)
-
-## Ejecutar en desarrollo
-
-```powershell
+```bash
 npm run dev
 ```
 
-Next arrancará en `http://localhost:3000` por defecto; si el puerto está en uso intentará puertos alternativos.
+El servidor se iniciará en: **http://localhost:3000**
 
-## Restaurar o usar datos de ejemplo
-- Hay un backup local: `prisma/dev.db.backup`.
-  - Para restaurarlo simplemente copia el archivo sobre `prisma/dev.db`:
+¡Listo! Abre tu navegador y accede a la aplicación.
 
+## 🛠️ Comandos Útiles
+
+### Desarrollo
+- `npm run dev` - Iniciar servidor de desarrollo
+- `npm run build` - Crear build de producción
+- `npm start` - Iniciar servidor en modo producción (requiere build previo)
+- `npm run lint` - Ejecutar linter
+- `npm run typecheck` - Verificar tipos de TypeScript
+
+### Base de Datos (Prisma)
+- `npm run db:generate` - Generar cliente de Prisma
+- `npm run db:push` - Sincronizar esquema con la base de datos
+- `npm run db:studio` - Abrir Prisma Studio (interfaz visual de la BD)
+
+## 📁 Estructura del Proyecto
+
+```
+Secular_Hub_App/
+├── app/               # Páginas y rutas de Next.js (App Router)
+├── components/        # Componentes React reutilizables
+├── lib/              # Utilidades, queries de BD, y helpers
+├── prisma/           # Esquema y archivos de base de datos
+├── public/           # Archivos estáticos
+├── types/            # Definiciones de tipos TypeScript
+└── ...
+```
+
+## 🗄️ Base de Datos
+
+El proyecto usa **SQLite** con **Prisma ORM**. La base de datos se encuentra en `prisma/dev.db`.
+
+### Restaurar Datos de Ejemplo
+
+Si existe un backup con datos de ejemplo (`prisma/dev.db.backup`), puedes restaurarlo:
+
+**Windows (PowerShell):**
 ```powershell
 copy prisma\dev.db.backup prisma\dev.db
 ```
 
-- Si quieres empezar con la base de datos vacía, basta con `npx prisma db push` (crea las tablas en `prisma/dev.db`).
-
-## Añadir una tercera Container App (dev)
-
-El proyecto incluye infraestructura Terraform para `prd` y `uat`. Para crear una tercera app (por ejemplo `dev`) provisionada en Azure se añadió:
-
-- Un ACR adicional: variable `container_registry_name_dev`.
-- Un `container_app_environment` nuevo: `env_dev`.
-- Un `azurerm_container_app` nuevo: `app_dev`.
-- Un `azurerm_role_assignment` para entregar el rol `AcrPush` al Service Principal cuya `object id` se configure en la variable `service_principal_object_id`.
-
-Pasos rápidos para construir y push de la imagen al registro dev (local / PowerShell):
-
-```powershell
-# Obtener login server desde terraform outputs (tras `terraform apply`)
- $registry = "<login-server>.azurecr.io"
-
-# Login ACR (opcional, si usas admin-enabled)
-az acr login --name <registryName>
-
-# Construir y pushear
-.\scripts\build-and-push.ps1 -RegistryLoginServer $registry -ImageName "secular-hub-app" -Tag "dev"
+**Mac/Linux:**
+```bash
+cp prisma/dev.db.backup prisma/dev.db
 ```
 
-Luego aplica Terraform para crear recursos:
+### Explorar la Base de Datos
 
-```powershell
-cd infra
-terraform init
-terraform apply -var "service_principal_object_id=<OBJECT_ID>" -auto-approve
+Para ver y editar los datos visualmente:
+
+```bash
+npm run db:studio
 ```
 
-Esto devolverá el `container_registry_login_server_dev` en los outputs; úsalo para pushear la imagen.
+Esto abrirá Prisma Studio en tu navegador.
 
-NOTA: No encontré un script automático de seed en el repo; si necesitas que escriba un script para poblar datos demo, puedo crearlo.
+## ⚠️ Solución de Problemas Comunes
 
-## Prisma
-- Generar el cliente: `npx prisma generate`
-- Aplicar esquema: `npx prisma db push`
-- Abrir Prisma Studio: `npm run db:studio`
+### Error: "next no se reconoce como un comando..."
 
-## Comandos útiles
-- `npm run typecheck` — Ejecuta `tsc --noEmit` para revisar tipos.
-- `npm run build` — Typecheck + `next build`.
-- `npm start` — Iniciar build de producción (requiere `npm run build`).
+**Solución:** Instala las dependencias primero:
+```bash
+npm install
+```
 
-## Variables de entorno importantes
-- `DATABASE_URL` — ruta a la base de datos SQLite (por ejemplo `file:./prisma/dev.db`).
-- Revisa `README-AI.md` para variables relacionadas con servicios AI (OpenAI/Azure/HuggingFace).
+### Error: "The table main.outlook_calls does not exist..."
 
-## Problemas comunes
-- Puerto en uso: Next intentará puertos siguientes (3001, 3002...).
-- Si ves errores de Prisma similares a "table does not exist": asegúrate de haber ejecutado `npx prisma db push` y que `DATABASE_URL` apunte al archivo correcto.
+**Solución:** Sincroniza la base de datos. Si el servidor está corriendo, deténlo primero (`Ctrl+C`):
+```bash
+npx prisma db push
+npm run dev
+```
 
-## ¿Qué hice en este entorno?
-- Instalé dependencias (`npm install`).
+### El puerto 3000 está en uso
+
+Next.js automáticamente intentará usar puertos alternativos (3001, 3002, etc.). Verás el puerto asignado en la terminal.
+
+### Error de permisos con Prisma en Windows
+
+Si `npx prisma generate` falla, detén el servidor de desarrollo primero y vuelve a intentarlo.
+
+## 📚 Documentación Adicional
+
+- [README-AI.md](README-AI.md) - Configuración de servicios de AI
+- [README-FRONTEND.md](README-FRONTEND.md) - Detalles del frontend
+- [README-BACKEND.md](README-BACKEND.md) - Detalles del backend
+- [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) - Guía de despliegue
+
+## 🌐 Despliegue
+
+Para información sobre despliegue en Azure Container Apps, consulta la documentación de Terraform en la carpeta `terraform/`.
+
+## 🤝 Contribuir
+
+Si encuentras algún problema o tienes sugerencias, por favor abre un issue en el repositorio.
+
+## 📄 Licencia
+
+ISC
 - Generé cliente Prisma y apliqué esquema (`npx prisma generate` / `npx prisma db push`).
 - Creé `.env.local` apuntando a `prisma/dev.db` (si no existía).
 - Parcheé una protección en `lib/db/queries.ts` para evitar excepciones cuando la DB está vacía.

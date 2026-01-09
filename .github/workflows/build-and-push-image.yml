@@ -9,6 +9,7 @@ on:
       - 'package.json'
       - 'Dockerfile'
       - '.github/workflows/build-and-push-image.yml'
+  workflow_dispatch:
 
 permissions:
   id-token: write

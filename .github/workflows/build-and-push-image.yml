@@ -59,3 +59,29 @@ jobs:
           az acr repository show \
             --name ${{ env.ACR_NAME }} \
             --image ${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+      - name: Tag and push image as 'latest'
+        run: |
+          docker tag ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          docker push ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+
+      - name: Update Container App (dev)
+        if: github.ref == 'refs/heads/dev'
+        run: |
+          set -e
+          echo "Updating Container App to use image ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
+          az containerapp update --name ca-secular-hub-api-dev --resource-group rg-secular-hub-dev --image ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          # Ensure the managed identity has AcrPull on the registry
+          PRINCIPAL_ID=$(az containerapp show -n ca-secular-hub-api-dev -g rg-secular-hub-dev --query "identity.principalId" -o tsv)
+          ACR_ID=$(az acr show -n ${{ env.ACR_NAME }} --query "id" -o tsv)
+          if [ -z "$PRINCIPAL_ID" ]; then
+            echo "No principal id found for Container App; skipping role assignment"
+          else
+            echo "Assigning AcrPull role to principal $PRINCIPAL_ID on $ACR_ID (idempotent)"
+            az role assignment create --assignee $PRINCIPAL_ID --role AcrPull --scope $ACR_ID || echo "role assignment may already exist"
+          fi
+
+      - name: Confirm image in ACR (post-push)
+        run: |
+          az acr repository show --name ${{ env.ACR_NAME }} --image ${{ env.IMAGE_NAME }}:${{ github.sha }}
+          az acr repository show --name ${{ env.ACR_NAME }} --image ${{ env.IMAGE_NAME }}:latest

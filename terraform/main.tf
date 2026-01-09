@@ -50,6 +50,17 @@ resource "azurerm_container_app" "app_dev" {
     }
   }
 
+  registry {
+    server               = azurerm_container_registry.acr.login_server
+    username             = azurerm_container_registry.acr.admin_username
+    password_secret_name = "acr-admin-password"
+  }
+
+  secret {
+    name  = "acr-admin-password"
+    value = azurerm_container_registry.acr.admin_password
+  }
+
   ingress {
     allow_insecure_connections = false
     external_enabled           = true

@@ -60,8 +60,6 @@ resource "azurerm_container_app" "app_dev" {
       latest_revision = true
     }
   }
-
-  depends_on = [azurerm_container_app_environment.env_dev, azurerm_role_assignment.acr_pull]
 }
 
 # Assign AcrPull role to Container App's Managed Identity

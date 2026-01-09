@@ -4,12 +4,12 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
-      - 'infra/**'
+      - 'terraform/**'
       - '.github/workflows/terraform.yml'
   push:
     branches: [main, dev, uat, prd]
     paths:
-      - 'infra/**'
+      - 'terraform/**'
       - '.github/workflows/terraform.yml'
   workflow_dispatch: {}
 
@@ -19,7 +19,7 @@ permissions:
 
 env:
   TF_VERSION: "1.5.7"
-  WORKING_DIR: infra
+  WORKING_DIR: terraform
 
 jobs:
   plan:
@@ -73,7 +73,12 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Terraform Init (with backend)
-        run: terraform init
+        run: |
+          terraform init \
+            -backend-config="resource_group_name=rg-secular-hub-tfstate" \
+            -backend-config="storage_account_name=secularhubtfst20260108" \
+            -backend-config="container_name=tfstate" \
+            -reconfigure
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
@@ -81,7 +86,7 @@ jobs:
           ARM_USE_OIDC: true
 
       - name: Terraform Plan
-        run: terraform plan -var-file=example.tfvars -input=false -out=tfplan
+        run: terraform plan -var-file=../envs/dev.tfvars -input=false -out=tfplan
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}

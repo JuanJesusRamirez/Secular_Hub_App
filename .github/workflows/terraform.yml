@@ -86,7 +86,7 @@ jobs:
           ARM_USE_OIDC: true
 
       - name: Terraform Plan
-        run: terraform plan -var-file=../envs/dev.tfvars -input=false -out=tfplan
+        run: terraform plan -var-file=../envs/dev.tfvars -var="image_tag=${{ github.sha }}" -input=false -out=tfplan
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}

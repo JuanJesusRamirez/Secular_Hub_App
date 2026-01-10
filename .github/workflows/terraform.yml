@@ -62,15 +62,23 @@ jobs:
     runs-on: ubuntu-latest
     needs: plan
     if: |
-      (github.event_name == 'pull_request' || github.event_name == 'push') && 
-      (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/user_acceptante_testing') ||
-      github.event_name == 'workflow_dispatch'
+      (github.event_name == 'push' && (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/user_acceptante_testing')) ||
+      (github.event_name == 'pull_request' && (github.event.pull_request.base.ref == 'dev' || github.event.pull_request.base.ref == 'user_acceptante_testing')) ||
+      (github.event_name == 'workflow_dispatch' && (github.event.inputs.branch == 'dev' || github.event.inputs.branch == 'user_acceptante_testing'))
     defaults:
       run:
         working-directory: ${{ env.WORKING_DIR }}
     env:
       ENVIRONMENT: ${{ github.ref_name }}
     steps:
+      - name: Apply Debug Info
+        run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "Ref Name: ${{ github.ref_name }}"
+          echo "PR base ref: ${{ github.event.pull_request.base.ref }}"
+          echo "Dispatch input.branch: ${{ github.event.inputs.branch }}"
+
       - name: Checkout code
         uses: actions/checkout@v4
 

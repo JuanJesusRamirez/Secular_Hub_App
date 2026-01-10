@@ -1,0 +1,5 @@
+env = "uat"
+location = "eastus"
+resource_group_name = "rg-secular-hub-uat"
+acr_name = "acrsecularhub"
+container_app_name = "secular-hub-api"

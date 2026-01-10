@@ -1,26 +1,11 @@
 name: Terraform
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-    paths:
-      - 'terraform/**'
-      - '.github/workflows/terraform.yml'
   push:
-    branches: [dev, user_acceptance_testing]
+    branches: [dev]
     paths:
       - 'terraform/**'
       - '.github/workflows/terraform.yml'
-  workflow_dispatch:
-    inputs:
-      branch:
-        description: 'Branch to deploy'
-        required: true
-        default: 'dev'
-        type: choice
-        options:
-          - dev
-          - user_acceptance_testing
 
 permissions:
   id-token: write
@@ -61,26 +46,15 @@ jobs:
     name: Terraform Apply
     runs-on: ubuntu-latest
     needs: plan
-    if: |
-      (github.event_name == 'push' && (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/user_acceptance_testing')) ||
-      (github.event_name == 'pull_request' && (github.event.pull_request.base.ref == 'dev' || github.event.pull_request.base.ref == 'user_acceptance_testing' || github.event.pull_request.head.ref == 'dev' || github.event.pull_request.head.ref == 'user_acceptance_testing')) ||
-      (github.event_name == 'workflow_dispatch' && (github.event.inputs.branch == 'dev' || github.event.inputs.branch == 'user_acceptance_testing'))
+    if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
     defaults:
       run:
         working-directory: ${{ env.WORKING_DIR }}
     env:
-      ENVIRONMENT: ${{ github.ref_name }}
+      ENVIRONMENT: dev
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Apply Debug Info
-        run: |
-          echo "Event: ${{ github.event_name }}"
-          echo "Ref: ${{ github.ref }}"
-          echo "Ref Name: ${{ github.ref_name }}"
-          echo "PR base ref: ${{ github.event.pull_request.base.ref }}"
-          echo "Dispatch input.branch: ${{ github.event.inputs.branch }}"
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
@@ -93,30 +67,6 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Clean up stale Terraform state locks
-        run: |
-          # Determine which environment/lock to clean based on branch
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            BRANCH="${{ github.event.pull_request.base.ref }}"
-          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            BRANCH="${{ github.event.inputs.branch }}"
-          else
-            BRANCH="${{ github.ref_name }}"
-          fi
-          
-          LOCK_PATH="tfstate/secular-hub/$BRANCH/infra.tfstate.lock"
-          
-          # Attempt to delete stale lock file (continue if it doesn't exist)
-          az storage blob delete \
-            --account-name secularhubtfst20260108 \
-            --container-name tfstate \
-            --name "$LOCK_PATH" \
-            --auth-mode login \
-            2>/dev/null || true
-          
-          echo "Cleaned up lock: $LOCK_PATH"
-        continue-on-error: true
 
       - name: Terraform Init (with backend)
         run: |
@@ -133,22 +83,8 @@ jobs:
 
       - name: Terraform Plan
         run: |
-          # Determine the target branch based on the event type
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            BRANCH="${{ github.event.pull_request.base.ref }}"
-          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            BRANCH="${{ github.event.inputs.branch }}"
-          else
-            BRANCH="${{ github.ref_name }}"
-          fi
-          
-          if [ "$BRANCH" = "user_acceptance_testing" ]; then
-            ENV_FILE="uat"
-          else
-            ENV_FILE="$BRANCH"
-          fi
           terraform plan \
-            -var-file=../envs/${ENV_FILE}.tfvars \
+            -var-file=../envs/dev.tfvars \
             -var="image_tag=${{ github.sha }}" \
             -input=false \
             -out=tfplan

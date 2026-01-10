@@ -100,8 +100,35 @@ jobs:
           name: tfplan
           path: tfplan
 
-      - name: Terraform Apply
+      - name: Terraform Apply (DEV)
         run: terraform apply -auto-approve tfplan
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: true
+
+      - name: Terraform Plan (UAT)
+        run: |
+          terraform plan \
+            -var-file=../envs/uat.tfvars \
+            -var="image_tag=${{ github.sha }}" \
+            -input=false \
+            -out=tfplan-uat
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: true
+
+      - name: Upload UAT tfplan artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tfplan-uat
+          path: tfplan-uat
+
+      - name: Terraform Apply (UAT)
+        run: terraform apply -auto-approve tfplan-uat
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}

@@ -63,7 +63,7 @@ jobs:
     needs: plan
     if: |
       (github.event_name == 'push' && (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/user_acceptante_testing')) ||
-      (github.event_name == 'pull_request' && (github.event.pull_request.base.ref == 'dev' || github.event.pull_request.base.ref == 'user_acceptante_testing')) ||
+      (github.event_name == 'pull_request' && (github.event.pull_request.base.ref == 'dev' || github.event.pull_request.base.ref == 'user_acceptante_testing' || github.event.pull_request.head.ref == 'dev' || github.event.pull_request.head.ref == 'user_acceptante_testing')) ||
       (github.event_name == 'workflow_dispatch' && (github.event.inputs.branch == 'dev' || github.event.inputs.branch == 'user_acceptante_testing'))
     defaults:
       run:

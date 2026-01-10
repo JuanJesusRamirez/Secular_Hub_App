@@ -71,6 +71,9 @@ jobs:
     env:
       ENVIRONMENT: ${{ github.ref_name }}
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Apply Debug Info
         run: |
           echo "Event: ${{ github.event_name }}"
@@ -78,9 +81,6 @@ jobs:
           echo "Ref Name: ${{ github.ref_name }}"
           echo "PR base ref: ${{ github.event.pull_request.base.ref }}"
           echo "Dispatch input.branch: ${{ github.event.inputs.branch }}"
-
-      - name: Checkout code
-        uses: actions/checkout@v4
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3

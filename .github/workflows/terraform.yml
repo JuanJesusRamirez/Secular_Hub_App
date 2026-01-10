@@ -94,6 +94,30 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
+      - name: Clean up stale Terraform state locks
+        run: |
+          # Determine which environment/lock to clean based on branch
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH="${{ github.event.pull_request.base.ref }}"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            BRANCH="${{ github.event.inputs.branch }}"
+          else
+            BRANCH="${{ github.ref_name }}"
+          fi
+          
+          LOCK_PATH="tfstate/secular-hub/$BRANCH/infra.tfstate.lock"
+          
+          # Attempt to delete stale lock file (continue if it doesn't exist)
+          az storage blob delete \
+            --account-name secularhubtfst20260108 \
+            --container-name tfstate \
+            --name "$LOCK_PATH" \
+            --auth-mode login \
+            2>/dev/null || true
+          
+          echo "Cleaned up lock: $LOCK_PATH"
+        continue-on-error: true
+
       - name: Terraform Init (with backend)
         run: |
           terraform init \

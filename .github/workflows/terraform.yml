@@ -109,7 +109,15 @@ jobs:
 
       - name: Terraform Plan
         run: |
-          BRANCH="${{ github.ref_name }}"
+          # Determine the target branch based on the event type
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH="${{ github.event.pull_request.base.ref }}"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            BRANCH="${{ github.event.inputs.branch }}"
+          else
+            BRANCH="${{ github.ref_name }}"
+          fi
+          
           if [ "$BRANCH" = "user_acceptante_testing" ]; then
             ENV_FILE="uat"
           else

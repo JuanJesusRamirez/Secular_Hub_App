@@ -31,18 +31,46 @@ npm install
 
 Este comando instalará todas las dependencias necesarias (Next.js, React, Prisma, etc.). Puede tardar unos minutos.
 
-### 3️⃣ Configurar la Base de Datos
+### 3️⃣ Configurar Variables de Entorno
 
-Ejecuta los siguientes comandos para configurar Prisma y crear las tablas de la base de datos:
+**IMPORTANTE:** Solicita el archivo `.env.local` al equipo de desarrollo. Este archivo contiene la configuración de conexión a la base de datos PostgreSQL:
+
+```env
+DATABASE_URL="postgres://usuario:password@servidor.postgres.database.azure.com:5432/nombre_db"
+```
+
+Coloca el archivo `.env.local` en la raíz del proyecto (mismo nivel que `package.json`).
+
+⚠️ **Nota de Seguridad:** El archivo `.env.local` contiene credenciales sensibles y **no debe ser compartido públicamente** ni subido a Git.
+
+### 4️⃣ Configurar la Base de Datos
+
+Una vez que tengas el archivo `.env.local`, ejecuta los siguientes comandos para generar el cliente de Prisma:
 
 ```bash
 npx prisma generate
-npx prisma db push
 ```
 
-**Nota:** Si el servidor de desarrollo está corriendo, deténlo antes de ejecutar estos comandos (presiona `Ctrl+C` en la terminal).
+**Importante:** Si el servidor de desarrollo está corriendo, deténlo antes de ejecutar este comando (presiona `Ctrl+C` en la terminal).
 
-### 4️⃣ Iniciar el Servidor de Desarrollo
+**¿Qué hace este comando?**
+- Genera el cliente TypeScript de Prisma que permite comunicarse con PostgreSQL
+- Lee el esquema de `prisma/schema.prisma` y crea las interfaces de TypeScript
+- Es **necesario ejecutarlo** cada vez que se actualiza el esquema de la base de datos
+
+**Nota:** No necesitas ejecutar `prisma db push` ya que las tablas ya existen en la base de datos PostgreSQL en Azure.
+
+### 5️⃣ Verificar la Conexión a la Base de Datos (Opcional)
+
+Puedes verificar que la conexión a PostgreSQL funciona correctamente:
+
+```bash
+node test-db-connection.js
+```
+
+Deberías ver un mensaje confirmando la conexión y el número de registros en la base de datos.
+
+### 6️⃣ Iniciar el Servidor de Desarrollo
 
 ```bash
 npm run dev
@@ -50,7 +78,7 @@ npm run dev
 
 El servidor se iniciará en: **http://localhost:3000**
 
-¡Listo! Abre tu navegador y accede a la aplicación.
+¡Listo! Abre tu navegador y accede a la aplicación. Deberías ver los datos cargados desde PostgreSQL.
 
 ## 🛠️ Comandos Útiles
 
@@ -71,21 +99,23 @@ El servidor se iniciará en: **http://localhost:3000**
 ```
 Secular_Hub_App/
 ├── app/               # Páginas y rutas de Next.js (App Router)
-├── components/        # Componentes React reutilizables
-├── lib/              # Utilidades, queries de BD, y helpers
-├── prisma/           # Esquema y archivos de base de datos
-├── public/           # Archivos estáticos
-├── types/            # Definiciones de tipos TypeScript
-└── ...
+├── components/   PostgreSQL** en **Azure Database** con **Prisma ORM** como cliente de base de datos.
+
+### Conexión a PostgreSQL
+
+La aplicación se conecta a una base de datos PostgreSQL alojada en Azure. La configuración de conexión está definida en el archivo `.env.local` (ver paso 3 de instalación).
+
+**Esquema:** El esquema de la base de datos se encuentra en `prisma/schema.prisma`
+
+### Migración desde SQLite (Solo para Referencia)
+
+El proyecto originalmente usaba SQLite (`prisma/dev.db`). Si necesitas migrar datos desde SQLite a PostgreSQL, existe un script:
+
+```bash
+python scripts/migrate_sqlite_to_pg.py
 ```
 
-## 🗄️ Base de Datos
-
-El proyecto usa **SQLite** con **Prisma ORM**. La base de datos se encuentra en `prisma/dev.db`.
-
-### Restaurar Datos de Ejemplo
-
-Si existe un backup con datos de ejemplo (`prisma/dev.db.backup`), puedes restaurarlo:
+**Nota:** Este paso ya fue completado. Los datos ya están en PostgreSQL.existe un backup con datos de ejemplo (`prisma/dev.db.backup`), puedes restaurarlo:
 
 **Windows (PowerShell):**
 ```powershell
@@ -114,13 +144,44 @@ Esto abrirá Prisma Studio en tu navegador.
 **Solución:** Instala las dependencias primero:
 ```bash
 npm install
-```
+```No se muestran datos en la aplicación
 
-### Error: "The table main.outlook_calls does not exist..."
+**Posibles causas:**
 
-**Solución:** Sincroniza la base de datos. Si el servidor está corriendo, deténlo primero (`Ctrl+C`):
-```bash
-npx prisma db push
+1. **No has ejecutado `npx prisma generate`**
+   ```bash
+   npx prisma generate
+   npm run dev
+   ```
+
+2. **Falta el archivo `.env.local`**
+   - Solicita el archivo al equipo de desarrollo
+   - Verifica que esté en la raíz del proyecto
+
+3. **Error de conexión a Postg con "EPERM: operation not permitted":
+
+1. Detén todos los procesos de Node:
+   ```powershell
+   taskkill /F /IM node.exe
+   ```
+
+2. Espera 2 segundos y vuelve a ejecutar:
+   ```bash
+   npx prisma generate
+   ```
+
+### Error: "Environment variable not found: DATABASE_URL"
+
+**Solución:** Falta el archivo `.env.local` o la variable no está definida correctamente.
+
+1. Verifica que existe el archivo `.env.local` en la raíz del proyecto
+2. Asegúrate que contiene la línea:
+   ```env
+   DATABASE_URL="postgres://..."
+   ```
+3. Reinicia el servidor después de agregar/modificar el archivo
+   - Ejecuta `node test-db-connection.js` para verificar la conexión
+   - Revisa que el `DATABASE_URL` en `.env.local` sea correcto prisma db push
 npm run dev
 ```
 

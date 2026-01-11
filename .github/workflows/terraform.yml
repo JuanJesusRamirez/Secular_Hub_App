@@ -25,9 +25,6 @@ jobs:
   deploy:
     name: Deploy Infrastructure
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        environment: [dev, uat]
     defaults:
       run:
         working-directory: ${{ env.WORKING_DIR }}
@@ -62,10 +59,9 @@ jobs:
           ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           ARM_USE_OIDC: true
 
-      - name: Deploy ${{ matrix.environment }}
+      - name: Deploy Infrastructure
         run: |
           terraform apply -auto-approve \
-            -var-file=../envs/${{ matrix.environment }}.tfvars \
             -var="resource_group_suffix=${RG_SUFFIX}" \
             -var="image_tag=${{ github.sha }}"
         env:

@@ -19,6 +19,11 @@ variable "resource_group_suffix" {
   default     = ""
 }
 
+variable "acr_name" {
+  type        = string
+  description = "Name for the Azure Container Registry (must be globally unique)"
+}
+
 variable "container_app_name" {
   type        = string
   description = "Container App name"

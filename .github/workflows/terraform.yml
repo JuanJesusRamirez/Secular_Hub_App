@@ -25,6 +25,9 @@ jobs:
   deploy:
     name: Deploy Infrastructure
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        environment: [dev, uat]
     defaults:
       run:
         working-directory: ${{ env.WORKING_DIR }}
@@ -46,14 +49,11 @@ jobs:
 
       - name: Terraform init
         run: |
-          # Compute optional key suffix when `resource_group_suffix` is provided
-          KEY_SUFFIX=${RG_SUFFIX:+-$RG_SUFFIX}
-
           terraform init \
             -backend-config="resource_group_name=rg-secular-hub-tfstate" \
             -backend-config="storage_account_name=secularhubtfst20260108" \
             -backend-config="container_name=tfstate" \
-            -backend-config="key=secular-hub/infra-v3.tfstate" \
+            -backend-config="key=secular-hub/infra-v5.tfstate" \
             -reconfigure
         env:
           RG_SUFFIX: ${{ github.event.inputs.resource_group_suffix }}
@@ -62,25 +62,10 @@ jobs:
           ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           ARM_USE_OIDC: true
 
-      # DEV Environment
-      - name: Deploy DEV
+      - name: Deploy ${{ matrix.environment }}
         run: |
           terraform apply -auto-approve \
-            -var-file=../envs/dev.tfvars \
-            -var="resource_group_suffix=${RG_SUFFIX}" \
-            -var="image_tag=${{ github.sha }}"
-        env:
-          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          ARM_USE_OIDC: true
-          RG_SUFFIX: ${{ github.event.inputs.resource_group_suffix }}
-
-      # UAT Environment
-      - name: Deploy UAT
-        run: |
-          terraform apply -auto-approve \
-            -var-file=../envs/uat.tfvars \
+            -var-file=../envs/${{ matrix.environment }}.tfvars \
             -var="resource_group_suffix=${RG_SUFFIX}" \
             -var="image_tag=${{ github.sha }}"
         env:

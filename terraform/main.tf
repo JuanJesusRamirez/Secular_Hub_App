@@ -89,6 +89,12 @@ resource "azurerm_container_app" "main" {
   resource_group_name          = azurerm_resource_group.main[each.key].name
   revision_mode                = "Single"
 
+  lifecycle {
+    ignore_changes = [
+      "template[0].container[0].image",
+    ]
+  }
+
   # Store ACR password in a secret inside the app
   secret {
     name  = "acr-password"

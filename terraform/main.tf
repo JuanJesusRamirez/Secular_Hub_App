@@ -1,30 +1,15 @@
 # =============================================================================
-# RESOURCE GROUPS
+# RESOURCE GROUPS & DATA
 # =============================================================================
 
-# Resource Group específico para este ambiente (dev o uat)
 resource "azurerm_resource_group" "main" {
-  name     = local.rg_name
+  name     = var.resource_group_name
   location = var.location
 }
 
-# Resource Group compartido (contiene el ACR)
-data "azurerm_resource_group" "shared" {
-  name = "secular-hub-app-rg"
-}
-
-
-# =============================================================================
-# AZURE CONTAINER REGISTRY (ACR) - COMPARTIDO
-# =============================================================================
-
-# ACR compartido (creado fuera de este terraform)
-# El ACR debe existir en el resource group `secular-hub-app-rg`.
-# Ambos ambientes (dev/uat/prod) lo referencian mediante este data source.
-
 data "azurerm_container_registry" "acr" {
   name                = var.acr_name
-  resource_group_name = data.azurerm_resource_group.shared.name
+  resource_group_name = "secular-hub-app-rg"
 }
 
 
@@ -33,7 +18,7 @@ data "azurerm_container_registry" "acr" {
 # =============================================================================
 
 resource "azurerm_log_analytics_workspace" "law" {
-  name                = "law-${var.env}${local.name_suffix}"
+  name                = "law-${var.env}"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   sku                 = "PerGB2018"
@@ -46,36 +31,32 @@ resource "azurerm_log_analytics_workspace" "law" {
 # =============================================================================
 
 resource "azurerm_container_app_environment" "main" {
-  name                = "cae-${var.container_app_name}-${var.env}${local.name_suffix}"
+  name                = "cae-${var.container_app_name}"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
 }
 
 
 # =============================================================================
-# IDENTITY
-# =============================================================================
-
-resource "azurerm_user_assigned_identity" "containerapp" {
-  name                = "id-${var.container_app_name}-${var.env}${local.name_suffix}"
-  location            = azurerm_resource_group.main.location
-  resource_group_name = azurerm_resource_group.main.name
-}
-
-
-# =============================================================================
-# CONTAINER APP
+# CONTAINER APP (Bypass RBAC with Admin Credentials)
 # =============================================================================
 
 resource "azurerm_container_app" "main" {
-  name                         = "ca-${var.container_app_name}-${var.env}${local.name_suffix}"
+  name                         = "ca-${var.container_app_name}"
   container_app_environment_id = azurerm_container_app_environment.main.id
   resource_group_name          = azurerm_resource_group.main.name
   revision_mode                = "Single"
 
-  identity {
-    type         = "SystemAssigned, UserAssigned"
-    identity_ids = [azurerm_user_assigned_identity.containerapp.id]
+  # Store ACR password in a secret inside the app
+  secret {
+    name  = "acr-password"
+    value = data.azurerm_container_registry.acr.admin_password
+  }
+
+  registry {
+    server               = data.azurerm_container_registry.acr.login_server
+    username             = data.azurerm_container_registry.acr.admin_username
+    password_secret_name = "acr-password"
   }
 
   template {
@@ -92,18 +73,8 @@ resource "azurerm_container_app" "main" {
     }
 
     min_replicas = 1
-    max_replicas = 3
+    max_replicas = 1
   }
-
-  registry {
-    server   = data.azurerm_container_registry.acr.login_server
-    identity = azurerm_user_assigned_identity.containerapp.id
-  }
-
-  depends_on = [
-    time_sleep.wait_for_rbac,
-    azurerm_user_assigned_identity.containerapp
-  ]
 
   ingress {
     allow_insecure_connections = false
@@ -115,22 +86,4 @@ resource "azurerm_container_app" "main" {
       latest_revision = true
     }
   }
-}
-
-
-# =============================================================================
-# PERMISOS
-# =============================================================================
-
-# Permiso para que el Container App pueda descargar imágenes del ACR
-resource "azurerm_role_assignment" "acr_pull" {
-  scope                = data.azurerm_container_registry.acr.id
-  role_definition_name = "AcrPull"
-  principal_id         = azurerm_user_assigned_identity.containerapp.principal_id
-}
-
-# Pequeña espera para asegurar que el permiso se propague en Azure AD (Entra ID)
-resource "time_sleep" "wait_for_rbac" {
-  depends_on      = [azurerm_role_assignment.acr_pull]
-  create_duration  = "30s"
 }

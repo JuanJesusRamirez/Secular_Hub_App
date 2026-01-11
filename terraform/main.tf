@@ -1,59 +1,84 @@
 # =============================================================================
+# ENVIRONMENTS CONFIG
+# =============================================================================
+
+locals {
+  environments = {
+    dev = {
+      env                   = "dev"
+      location              = "eastus"
+      resource_group_name   = "rg-secular-hub-dev-v3"
+      container_app_name    = "secular-hub-api-dev-v3"
+      acr_name              = "acrsecularhubshared"
+      image_tag             = "latest"  # Change as needed
+    }
+    uat = {
+      env                   = "uat"
+      location              = "eastus"
+      resource_group_name   = "rg-secular-hub-uat-v3"
+      container_app_name    = "secular-hub-api-uat-v3"
+      acr_name              = "acrsecularhubshared"
+      image_tag             = "latest"  # Change as needed
+    }
+  }
+}
+
+# =============================================================================
 # RESOURCE GROUPS & DATA
 # =============================================================================
 
-# Usar terraform.workspace para soportar múltiples ambientes (dev, uat, prod)
-locals {
-  workspace_env = terraform.workspace
-}
-
 resource "azurerm_resource_group" "main" {
-  name     = var.resource_group_name
-  location = var.location
-  
+  for_each = local.environments
+
+  name     = each.value.resource_group_name
+  location = each.value.location
+
   tags = {
-    environment = local.workspace_env
+    environment = each.key
   }
 }
 
 data "azurerm_container_registry" "acr" {
-  name                = var.acr_name
+  name                = "acrsecularhubshared"
   resource_group_name = "secular-hub-app-rg"
 }
-
 
 # =============================================================================
 # MONITORING
 # =============================================================================
 
 resource "azurerm_log_analytics_workspace" "law" {
-  name                = "law-${var.env}"
-  location            = azurerm_resource_group.main.location
-  resource_group_name = azurerm_resource_group.main.name
+  for_each = local.environments
+
+  name                = "law-${each.key}"
+  location            = azurerm_resource_group.main[each.key].location
+  resource_group_name = azurerm_resource_group.main[each.key].name
   sku                 = "PerGB2018"
   retention_in_days   = 30
 }
-
 
 # =============================================================================
 # CONTAINER APP ENVIRONMENT
 # =============================================================================
 
 resource "azurerm_container_app_environment" "main" {
-  name                = "cae-${var.container_app_name}"
-  location            = azurerm_resource_group.main.location
-  resource_group_name = azurerm_resource_group.main.name
-}
+  for_each = local.environments
 
+  name                = "cae-${each.value.container_app_name}"
+  location            = azurerm_resource_group.main[each.key].location
+  resource_group_name = azurerm_resource_group.main[each.key].name
+}
 
 # =============================================================================
 # CONTAINER APP (Bypass RBAC with Admin Credentials)
 # =============================================================================
 
 resource "azurerm_container_app" "main" {
-  name                         = "ca-${var.container_app_name}"
-  container_app_environment_id = azurerm_container_app_environment.main.id
-  resource_group_name          = azurerm_resource_group.main.name
+  for_each = local.environments
+
+  name                         = "ca-${each.value.container_app_name}"
+  container_app_environment_id = azurerm_container_app_environment.main[each.key].id
+  resource_group_name          = azurerm_resource_group.main[each.key].name
   revision_mode                = "Single"
 
   # Store ACR password in a secret inside the app
@@ -71,7 +96,7 @@ resource "azurerm_container_app" "main" {
   template {
     container {
       name   = "secular-hub"
-      image  = "${data.azurerm_container_registry.acr.login_server}/secular-hub:${var.image_tag}"
+      image  = "${data.azurerm_container_registry.acr.login_server}/secular-hub:${each.value.image_tag}"
       cpu    = 0.25
       memory = "0.5Gi"
 

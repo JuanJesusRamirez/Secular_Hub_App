@@ -7,16 +7,16 @@ locals {
     dev = {
       env                   = "dev"
       location              = "eastus"
-      resource_group_name   = "rg-secular-hub-dev-v3"
-      container_app_name    = "secular-hub-api-dev-v3"
+      resource_group_name   = "rg-secular-hub-dev-v4"
+      container_app_name    = "secular-hub-api-dev-v4"
       acr_name              = "acrsecularhubshared"
       image_tag             = "latest"  # Change as needed
     }
     uat = {
       env                   = "uat"
       location              = "eastus"
-      resource_group_name   = "rg-secular-hub-uat-v3"
-      container_app_name    = "secular-hub-api-uat-v3"
+      resource_group_name   = "rg-secular-hub-uat-v4"
+      container_app_name    = "secular-hub-api-uat-v4"
       acr_name              = "acrsecularhubshared"
       image_tag             = "latest"  # Change as needed
     }

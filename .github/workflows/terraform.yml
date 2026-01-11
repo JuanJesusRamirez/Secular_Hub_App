@@ -6,6 +6,12 @@ on:
     paths:
       - 'terraform/**'
       - '.github/workflows/terraform.yml'
+  workflow_dispatch:
+    inputs:
+      resource_group_suffix:
+        description: 'Suffix to append to resource group name (e.g. fresh)'
+        required: false
+        default: ''
 
 permissions:
   id-token: write
@@ -38,40 +44,48 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      # DEV Environment
-      - name: Deploy DEV
+      - name: Terraform init
         run: |
+          # Compute optional key suffix when `resource_group_suffix` is provided
+          KEY_SUFFIX=${RG_SUFFIX:+-$RG_SUFFIX}
+
           terraform init \
             -backend-config="resource_group_name=rg-secular-hub-tfstate" \
             -backend-config="storage_account_name=secularhubtfst20260108" \
             -backend-config="container_name=tfstate" \
-            -backend-config="key=secular-hub/dev/infra.tfstate" \
+            -backend-config="key=secular-hub/infra${KEY_SUFFIX}.tfstate" \
             -reconfigure
-          
-          terraform apply -auto-approve \
-            -var-file=../envs/dev.tfvars \
-            -var="image_tag=${{ github.sha }}"
         env:
+          RG_SUFFIX: ${{ github.event.inputs.resource_group_suffix }}
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
           ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           ARM_USE_OIDC: true
 
-      # UAT Environment
-      - name: Deploy UAT
+      # DEV Environment
+      - name: Deploy DEV
         run: |
-          terraform init \
-            -backend-config="resource_group_name=rg-secular-hub-tfstate" \
-            -backend-config="storage_account_name=secularhubtfst20260108" \
-            -backend-config="container_name=tfstate" \
-            -backend-config="key=secular-hub/uat/infra.tfstate" \
-            -reconfigure
-          
           terraform apply -auto-approve \
-            -var-file=../envs/uat.tfvars \
+            -var-file=../envs/dev.tfvars \
+            -var="resource_group_suffix=${RG_SUFFIX}" \
             -var="image_tag=${{ github.sha }}"
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
           ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           ARM_USE_OIDC: true
+          RG_SUFFIX: ${{ github.event.inputs.resource_group_suffix }}
+
+      # UAT Environment
+      - name: Deploy UAT
+        run: |
+          terraform apply -auto-approve \
+            -var-file=../envs/uat.tfvars \
+            -var="resource_group_suffix=${RG_SUFFIX}" \
+            -var="image_tag=${{ github.sha }}"
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: true
+          RG_SUFFIX: ${{ github.event.inputs.resource_group_suffix }}

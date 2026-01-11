@@ -13,6 +13,12 @@ variable "resource_group_name" {
   description = "Resource Group for DEV resources"
 }
 
+variable "resource_group_suffix" {
+  type        = string
+  description = "Optional suffix appended to the resource group name to create isolated deployments (e.g. 'fresh')"
+  default     = ""
+}
+
 variable "acr_name" {
   type        = string
   description = "Name for the Azure Container Registry (must be globally unique)"

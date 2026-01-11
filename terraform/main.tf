@@ -4,7 +4,7 @@
 
 # Resource Group específico para este ambiente (dev o uat)
 resource "azurerm_resource_group" "main" {
-  name     = var.resource_group_name
+  name     = local.rg_name
   location = var.location
 }
 

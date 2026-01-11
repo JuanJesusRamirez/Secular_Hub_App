@@ -16,3 +16,4 @@ variable "microsoft_provider_authentication_secret" {
   sensitive   = true
 }
 
+

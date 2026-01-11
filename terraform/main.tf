@@ -101,7 +101,7 @@ resource "azurerm_container_app" "main" {
   }
 
   depends_on = [
-    azurerm_role_assignment.acr_pull,
+    time_sleep.wait_for_rbac,
     azurerm_user_assigned_identity.containerapp
   ]
 
@@ -127,4 +127,10 @@ resource "azurerm_role_assignment" "acr_pull" {
   scope                = data.azurerm_container_registry.acr.id
   role_definition_name = "AcrPull"
   principal_id         = azurerm_user_assigned_identity.containerapp.principal_id
+}
+
+# Pequeña espera para asegurar que el permiso se propague en Azure AD (Entra ID)
+resource "time_sleep" "wait_for_rbac" {
+  depends_on      = [azurerm_role_assignment.acr_pull]
+  create_duration  = "30s"
 }

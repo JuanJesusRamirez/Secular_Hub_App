@@ -33,3 +33,9 @@ variable "image_tag" {
   type        = string
   description = "Immutable image tag to deploy (commit SHA)"
 }
+
+variable "override_image" {
+  type        = string
+  description = "Full image reference to use instead of the ACR image (use a public image for the initial bootstrap). If empty, the image from the ACR will be used."
+  default     = ""
+}

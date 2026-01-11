@@ -69,7 +69,8 @@ resource "azurerm_container_app" "main" {
   template {
     container {
       name   = "secular-hub"
-      image  = "${data.azurerm_container_registry.acr.login_server}/secular-hub:${var.image_tag}"
+      # Use `override_image` when provided (public image for bootstrap). Otherwise use the ACR image.
+      image  = var.override_image != "" ? var.override_image : "${data.azurerm_container_registry.acr.login_server}/secular-hub:${var.image_tag}"
       cpu    = 0.25
       memory = "0.5Gi"
 
@@ -83,8 +84,12 @@ resource "azurerm_container_app" "main" {
     max_replicas = 3
   }
 
-  registry {
-    server = data.azurerm_container_registry.acr.login_server
+  # Only include the registry block when not overriding the image (i.e. when using the private ACR)
+  dynamic "registry" {
+    for_each = var.override_image == "" ? [1] : []
+    content {
+      server = data.azurerm_container_registry.acr.login_server
+    }
   }
 
   ingress {

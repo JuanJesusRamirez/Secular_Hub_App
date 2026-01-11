@@ -116,8 +116,8 @@ resource "azurerm_container_app" "main" {
     container {
       name   = "secular-hub"
       image  = "${data.azurerm_container_registry.acr.login_server}/secular-hub:${each.value.image_tag}"
-      cpu    = 0.25
-      memory = "0.5Gi"
+      cpu    = 2
+      memory = "4Gi"
 
       env {
         name  = "PORT"

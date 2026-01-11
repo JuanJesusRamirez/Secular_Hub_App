@@ -2,9 +2,18 @@
 # RESOURCE GROUPS & DATA
 # =============================================================================
 
+# Usar terraform.workspace para soportar múltiples ambientes (dev, uat, prod)
+locals {
+  workspace_env = terraform.workspace
+}
+
 resource "azurerm_resource_group" "main" {
   name     = var.resource_group_name
   location = var.location
+  
+  tags = {
+    environment = local.workspace_env
+  }
 }
 
 data "azurerm_container_registry" "acr" {

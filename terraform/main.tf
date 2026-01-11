@@ -92,6 +92,8 @@ resource "azurerm_container_app" "main" {
   lifecycle {
     ignore_changes = [
       "template[0].container[0].image",
+      secret,
+      "template[0].container[0].env",
     ]
   }
 
@@ -104,6 +106,11 @@ resource "azurerm_container_app" "main" {
   secret {
     name  = "database-url"
     value = var.database_url
+  }
+
+  secret {
+    name  = "microsoft-provider-authentication-secret"
+    value = var.microsoft_provider_authentication_secret
   }
 
   registry {
@@ -127,6 +134,11 @@ resource "azurerm_container_app" "main" {
       env {
         name        = "DATABASE_URL"
         secret_name = "database-url"
+      }
+
+      env {
+        name        = "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET"
+        secret_name = "microsoft-provider-authentication-secret"
       }
     }
 

@@ -62,6 +62,7 @@ jobs:
       - name: Deploy Infrastructure
         run: |
           terraform apply -auto-approve \
+            -var="acr_name=acrsecularhubshared" \
             -var="resource_group_suffix=${RG_SUFFIX}" \
             -var="image_tag=${{ github.sha }}"
         env:

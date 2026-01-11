@@ -3,6 +3,11 @@ resource "azurerm_resource_group" "dev" {
   location = var.location
 }
 
+# Reference to shared resource group for ACR
+data "azurerm_resource_group" "shared" {
+  name = "secular-hub-app-rg"
+}
+
 resource "azurerm_log_analytics_workspace" "law" {
   name                = "law-${var.env}"
   location            = azurerm_resource_group.dev.location
@@ -17,13 +22,21 @@ resource "azurerm_container_app_environment" "env_dev" {
   resource_group_name = azurerm_resource_group.dev.name
 }
 
-# Single ACR for the entire project (not per-environment)
+# Single ACR for the entire project (created only once in shared resource group)
 resource "azurerm_container_registry" "acr" {
+  count               = var.env == "dev" ? 1 : 0
   name                = var.acr_name
-  resource_group_name = azurerm_resource_group.dev.name
-  location            = azurerm_resource_group.dev.location
+  resource_group_name = data.azurerm_resource_group.shared.name
+  location            = data.azurerm_resource_group.shared.location
   sku                 = "Standard"
   admin_enabled       = true
+}
+
+# Data source to reference existing ACR in non-dev environments
+data "azurerm_container_registry" "acr_ref" {
+  count               = var.env != "dev" ? 1 : 0
+  name                = var.acr_name
+  resource_group_name = data.azurerm_resource_group.shared.name
 }
 
 resource "azurerm_container_app" "app_dev" {

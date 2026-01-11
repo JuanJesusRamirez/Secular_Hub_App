@@ -75,3 +75,17 @@ jobs:
           ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           ARM_USE_OIDC: true
           RG_SUFFIX: ${{ github.event.inputs.resource_group_suffix }}
+
+      # UAT Environment
+      - name: Deploy UAT
+        run: |
+          terraform apply -auto-approve \
+            -var-file=../envs/uat.tfvars \
+            -var="resource_group_suffix=${RG_SUFFIX}" \
+            -var="image_tag=${{ github.sha }}"
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: true
+          RG_SUFFIX: ${{ github.event.inputs.resource_group_suffix }}

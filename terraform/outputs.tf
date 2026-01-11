@@ -1,14 +1,19 @@
-output "container_app_fqdn" {
-  description = "FQDN of the Container App"
-  value       = azurerm_container_app.app_dev.latest_revision_fqdn
+output "container_app_url" {
+  description = "URL del Container App"
+  value       = "https://${azurerm_container_app.main.latest_revision_fqdn}"
 }
 
 output "acr_login_server" {
-  description = "Login server for the Azure Container Registry"
-  value       = azurerm_container_registry.acr.login_server
+  description = "ACR Login Server"
+  value       = data.azurerm_container_registry.acr.login_server
 }
 
-output "resource_group_dev" {
-  description = "Resource Group for DEV resources"
-  value       = azurerm_resource_group.dev.name
+output "resource_group_name" {
+  description = "Nombre del Resource Group"
+  value       = azurerm_resource_group.main.name
+}
+
+output "environment" {
+  description = "Ambiente desplegado"
+  value       = var.env
 }

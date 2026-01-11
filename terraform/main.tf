@@ -100,6 +100,11 @@ resource "azurerm_container_app" "main" {
     identity = azurerm_user_assigned_identity.containerapp.id
   }
 
+  depends_on = [
+    azurerm_role_assignment.acr_pull,
+    azurerm_user_assigned_identity.containerapp
+  ]
+
   ingress {
     allow_insecure_connections = false
     external_enabled           = true

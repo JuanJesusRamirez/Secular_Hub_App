@@ -33,7 +33,7 @@ data "azurerm_container_registry" "acr" {
 # =============================================================================
 
 resource "azurerm_log_analytics_workspace" "law" {
-  name                = "law-${var.env}"
+  name                = "law-${var.env}${local.name_suffix}"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   sku                 = "PerGB2018"
@@ -46,7 +46,7 @@ resource "azurerm_log_analytics_workspace" "law" {
 # =============================================================================
 
 resource "azurerm_container_app_environment" "main" {
-  name                = "cae-${var.container_app_name}-${var.env}"
+  name                = "cae-${var.container_app_name}-${var.env}${local.name_suffix}"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
 }
@@ -57,7 +57,7 @@ resource "azurerm_container_app_environment" "main" {
 # =============================================================================
 
 resource "azurerm_container_app" "main" {
-  name                         = "ca-${var.container_app_name}-${var.env}"
+  name                         = "ca-${var.container_app_name}-${var.env}${local.name_suffix}"
   container_app_environment_id = azurerm_container_app_environment.main.id
   resource_group_name          = azurerm_resource_group.main.name
   revision_mode                = "Single"
@@ -106,6 +106,8 @@ resource "azurerm_container_app" "main" {
 
 # Permiso para que el Container App pueda descargar imágenes del ACR
 resource "azurerm_role_assignment" "acr_pull" {
+  depends_on = [azurerm_container_app.main]
+
   scope                = data.azurerm_container_registry.acr.id
   role_definition_name = "AcrPull"
   principal_id         = azurerm_container_app.main.identity[0].principal_id

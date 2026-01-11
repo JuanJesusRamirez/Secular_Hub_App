@@ -95,6 +95,11 @@ resource "azurerm_container_app" "main" {
     value = data.azurerm_container_registry.acr.admin_password
   }
 
+  secret {
+    name  = "database-url"
+    value = var.database_url
+  }
+
   registry {
     server               = data.azurerm_container_registry.acr.login_server
     username             = data.azurerm_container_registry.acr.admin_username
@@ -111,6 +116,11 @@ resource "azurerm_container_app" "main" {
       env {
         name  = "PORT"
         value = "3000"
+      }
+
+      env {
+        name        = "DATABASE_URL"
+        secret_name = "database-url"
       }
     }
 

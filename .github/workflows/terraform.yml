@@ -61,7 +61,8 @@ jobs:
       - name: Deploy Infrastructure
         run: |
           terraform apply -auto-approve \
-            -var="image_tag=${{ github.sha }}"
+            -var="image_tag=${{ github.sha }}" \
+            -var="database_url=${{ secrets.DATABASE_URL }}"
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}

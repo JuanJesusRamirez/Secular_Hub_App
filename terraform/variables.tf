@@ -4,3 +4,9 @@ variable "image_tag" {
   default     = "latest"
 }
 
+variable "database_url" {
+  type        = string
+  description = "Database connection string (secret)"
+  sensitive   = true
+}
+

@@ -6,7 +6,7 @@ terraform {
   backend "azurerm" {
     resource_group_name = "rg-secular-hub-tfstate"
     container_name      = "tfstate"
-    key                 = "secular-hub/infra-v5.tfstate"
+    key                 = "secular-hub/infrav5.tfstate"
     # supply `storage_account_name` via `terraform init -backend-config="storage_account_name=<name>"`
   }
 } 

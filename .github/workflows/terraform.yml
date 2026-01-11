@@ -1,80 +1,70 @@
-name: Build and Push Image
+name: Terraform
 
 on:
   push:
-    branches: [ dev ]
+    branches: [uat]
+    paths:
+      - 'terraform/**'
+      - '.github/workflows/terraform.yml'
   workflow_dispatch:
+    inputs:
+      resource_group_suffix:
+        description: 'Suffix to append to resource group name (e.g. fresh)'
+        required: false
+        default: ''
 
 permissions:
   id-token: write
   contents: read
 
 env:
-  ACR_NAME: acrsecularhubshared
-  ACR_REGISTRY: acrsecularhubshared.azurecr.io
-  IMAGE_NAME: secular-hub
+  TF_VERSION: "1.5.7"
+  WORKING_DIR: terraform
 
 jobs:
-  build-and-push:
+  deploy:
+    name: Deploy Infrastructure
     runs-on: ubuntu-latest
-    outputs:
-      image-tag: ${{ github.sha }}
-      
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-      
-      - name: Azure Login (OIDC)
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+
+      - name: Login to Azure
         uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-      
-      - name: Login to ACR
-        run: |
-          ACR_TOKEN=$(az acr login --name ${{ env.ACR_NAME }} --expose-token --output tsv --query accessToken)
-          echo $ACR_TOKEN | docker login ${{ env.ACR_REGISTRY }} -u 00000000-0000-0000-0000-000000000000 --password-stdin
-      
-      - name: Build Docker image with immutable tag (commit SHA)
-        run: |
-          docker build -t ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} .
-      
-      - name: Push image to ACR
-        run: |
-          docker push ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
-      
-      - name: Verify image in ACR
-        run: |
-          az acr repository show \
-            --name ${{ env.ACR_NAME }} \
-            --image ${{ env.IMAGE_NAME }}:${{ github.sha }}
 
-      - name: Tag and push image as 'latest'
+      - name: Terraform init
         run: |
-          docker tag ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          docker push ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          terraform init \
+            -backend-config="resource_group_name=rg-secular-hub-tfstate" \
+            -backend-config="storage_account_name=secularhubtfst20260108" \
+            -backend-config="container_name=tfstate" \
+            -backend-config="key=secular-hub/infra-v11.tfstate" \
+            -reconfigure
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: true
 
-      - name: Update Container App (dev)
-        if: github.ref == 'refs/heads/dev'
+      - name: Deploy Infrastructure
         run: |
-          set -e
-          echo "Updating Container App to use image ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
-          az containerapp update --name ca-secular-hub-api-dev --resource-group rg-secular-hub-dev --image ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
-          # Ensure the managed identity has AcrPull on the registry
-          PRINCIPAL_ID=$(az containerapp show -n ca-secular-hub-api-dev -g rg-secular-hub-dev --query "identity.principalId" -o tsv)
-          ACR_ID=$(az acr show -n ${{ env.ACR_NAME }} --query "id" -o tsv)
-          if [ -z "$PRINCIPAL_ID" ]; then
-            echo "No principal id found for Container App; skipping role assignment"
-          else
-            echo "Assigning AcrPull role to principal $PRINCIPAL_ID on $ACR_ID (idempotent)"
-            az role assignment create --assignee $PRINCIPAL_ID --role AcrPull --scope $ACR_ID || echo "role assignment may already exist"
-          fi
-
-      - name: Confirm image in ACR (post-push)
-        run: |
-          az acr repository show --name ${{ env.ACR_NAME }} --image ${{ env.IMAGE_NAME }}:${{ github.sha }}
-          az acr repository show --name ${{ env.ACR_NAME }} --image ${{ env.IMAGE_NAME }}:latest
+          terraform apply -auto-approve \
+            -var="image_tag=${{ github.sha }}" \
+            -var="database_url=${{ secrets.DATABASE_URL }}"
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: true

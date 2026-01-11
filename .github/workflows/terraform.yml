@@ -1,17 +1,17 @@
 name: Terraform
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-    paths:
-      - 'terraform/**'
-      - '.github/workflows/terraform.yml'
   push:
-    branches: [dev, user_acceptante_testing]
+    branches: [uat]
     paths:
       - 'terraform/**'
       - '.github/workflows/terraform.yml'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      resource_group_suffix:
+        description: 'Suffix to append to resource group name (e.g. fresh)'
+        required: false
+        default: ''
 
 permissions:
   id-token: write
@@ -22,44 +22,14 @@ env:
   WORKING_DIR: terraform
 
 jobs:
-  plan:
-    name: Terraform Plan
+  deploy:
+    name: Deploy Infrastructure
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ${{ env.WORKING_DIR }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
-        with:
-          terraform_version: ${{ env.TF_VERSION }}
-
-      - name: Terraform Format Check
-        run: terraform fmt -check -recursive
-
-      - name: Terraform Init (no backend, no provider auth)
-        run: terraform init -backend=false -input=false -no-color -reconfigure
-        env:
-          TF_LOG: INFO
-
-      - name: Terraform Validate (syntax check only)
-        run: terraform validate -no-color
-
-  apply:
-    name: Terraform Apply
-    runs-on: ubuntu-latest
-    needs: plan
-    if: (github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/user_acceptante_testing') && (github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request')
-    defaults:
-      run:
-        working-directory: ${{ env.WORKING_DIR }}
-    env:
-      ENVIRONMENT: ${{ github.ref_name }}
-    steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Terraform
@@ -74,12 +44,13 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-      - name: Terraform Init (with backend)
+      - name: Terraform init
         run: |
           terraform init \
             -backend-config="resource_group_name=rg-secular-hub-tfstate" \
             -backend-config="storage_account_name=secularhubtfst20260108" \
             -backend-config="container_name=tfstate" \
+            -backend-config="key=secular-hub/infra-v11.tfstate" \
             -reconfigure
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
@@ -87,33 +58,11 @@ jobs:
           ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           ARM_USE_OIDC: true
 
-      - name: Terraform Plan
+      - name: Deploy Infrastructure
         run: |
-          BRANCH="${{ github.ref_name }}"
-          if [ "$BRANCH" = "user_acceptante_testing" ]; then
-            ENV_FILE="uat"
-          else
-            ENV_FILE="$BRANCH"
-          fi
-          terraform plan \
-            -var-file=../envs/${ENV_FILE}.tfvars \
+          terraform apply -auto-approve \
             -var="image_tag=${{ github.sha }}" \
-            -input=false \
-            -out=tfplan
-        env:
-          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          ARM_USE_OIDC: true
-
-      - name: Upload tfplan artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: tfplan
-          path: tfplan
-
-      - name: Terraform Apply
-        run: terraform apply -auto-approve tfplan
+            -var="database_url=${{ secrets.DATABASE_URL }}"
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}

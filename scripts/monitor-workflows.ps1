@@ -21,7 +21,7 @@ Write-Host "Repo: $Owner/$Repo (branch: $Branch)" -ForegroundColor Gray
 Write-Host ""
 
 $startTime = Get-Date
-$acrName = "acrsecularhub"
+$acrName = "acrsecularhubshared"
 $imageName = "secular-hub"
 
 # Function to get workflow runs

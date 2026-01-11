@@ -12,7 +12,7 @@ echo 1. build-and-push-image.yml (Build Docker image and push to ACR)
 echo 2. deploy-dev.yml (Deploy to DEV using Terraform)
 echo.
 echo Checking ACR for latest images...
-az acr repository show-manifests --name acrsecularhub --repository secular-hub --orderby time_desc -o table
+az acr repository show-manifests --name acrsecularhubshared --repository secular-hub --orderby time_desc -o table
 echo.
 echo Checking Container App status...
 az containerapp show -n secular-hub-api-dev-dev -g rg-secular-hub-dev --query "properties.runningStatus" -o tsv

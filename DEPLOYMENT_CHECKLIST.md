@@ -12,7 +12,7 @@
 #### Recursos DEV (RG Separado: `rg-secular-hub-dev`)
 - ✅ **Log Analytics Workspace**: `law-dev` (30 días retención)
 - ✅ **Container Apps Environment**: `dev-env`
-- ✅ **Azure Container Registry**: `acrsecularhub.azurecr.io`
+- ✅ **Azure Container Registry**: `acrsecularhubshared.azurecr.io`
   - SKU: Standard
   - ❌ `admin_enabled = false` (sin credenciales admin)
 - ✅ **Container App**: `secular-hub-api-dev-dev`
@@ -53,7 +53,7 @@ terraform apply -var-file=envs/dev.tfvars -var="image_tag=<commit-sha>"
 **Archivo**: `.github/workflows/build-and-push-image.yml`
 - Dispara: `push` a `dev` (cambios en `src/`, `Dockerfile`, etc.)
 - ✅ Build imagen Docker con tag `<commit-sha>`
-- ✅ Push a `acrsecularhub.azurecr.io/secular-hub:<sha>`
+- ✅ Push a `acrsecularhubshared.azurecr.io/secular-hub:<sha>`
 - ✅ Sin usar tag `latest` (imagen inmutable)
 - ✅ Autenticación: OIDC (sin secrets de ACR)
 
@@ -112,7 +112,7 @@ AZURE_SUBSCRIPTION_ID = 4730c31d-4c41-46bc-83aa-b4975fe8e80a
    ↓
 2. GitHub Actions: build-and-push-image.yml
    ├─ Build Docker: secular-hub:<commit-sha>
-   ├─ Push a acrsecularhub.azurecr.io/secular-hub:<sha>
+   ├─ Push a acrsecularhubshared.azurecr.io/secular-hub:<sha>
    └─ Workflow completa ✅
    ↓
 3. GitHub Actions: deploy-dev.yml (automático)
@@ -137,7 +137,7 @@ AZURE_SUBSCRIPTION_ID = 4730c31d-4c41-46bc-83aa-b4975fe8e80a
 ```bash
 # Verifica que la imagen existe en ACR
 az acr repository show-manifests \
-  --name acrsecularhub \
+  --name acrsecularhubshared \
   --repository secular-hub
 
 # Verifica que el Container App está ejecutando
@@ -155,7 +155,7 @@ cd terraform
 terraform output
 
 # Output esperado:
-# acr_login_server = "acrsecularhub.azurecr.io"
+# acr_login_server = "acrsecularhubshared.azurecr.io"
 # container_app_fqdn = "secular-hub-api-dev-dev--XXXXX.azurecontainerapps.io"
 # resource_group_dev = "rg-secular-hub-dev"
 ```
@@ -167,7 +167,7 @@ terraform output
 Este diseño está **listo para escalar a UAT/PRD sin refactor**:
 
 ### Hoy (DEV)
-- 1 imagen: `acrsecularhub.azurecr.io/secular-hub:<commit-sha>`
+- 1 imagen: `acrsecularhubshared.azurecr.io/secular-hub:<commit-sha>`
 - 1 Container App: `secular-hub-api-dev-dev`
 - 1 RG: `rg-secular-hub-dev`
 - 1 ACR compartido
@@ -205,7 +205,7 @@ No hay refactor de infraestructura — el diseño es extensible.
 - [ ] Verifica que `build-and-push-image` completa exitosamente
 - [ ] Verifica que `deploy-dev` se ejecuta automáticamente
 - [ ] Accede a la URL del Container App (`https://<fqdn>:3000`)
-- [ ] Confirma que la imagen está en ACR: `az acr repository show-manifests --name acrsecularhub --repository secular-hub`
+- [ ] Confirma que la imagen está en ACR: `az acr repository show-manifests --name acrsecularhubshared --repository secular-hub`
 
 ---
 

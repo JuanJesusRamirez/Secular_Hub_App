@@ -1,45 +1,121 @@
-resource "azurerm_resource_group" "dev" {
-  name     = var.resource_group_name
-  location = var.location
+# =============================================================================
+# ENVIRONMENTS CONFIG
+# =============================================================================
+
+locals {
+  environments = {
+    dev = {
+      env                   = "dev"
+      location              = "eastus"
+      resource_group_name   = "rg-secular-hub-dev-v11"
+      container_app_name    = "secular-hub-api-dev-v11"
+      acr_name              = "acrsecularhubshared"
+      image_tag             = "latest"  # Change as needed
+    }
+    uat = {
+      env                   = "uat"
+      location              = "eastus"
+      resource_group_name   = "rg-secular-hub-uat-v11"
+      container_app_name    = "secular-hub-api-uat-v11"
+      acr_name              = "acrsecularhubshared"
+      image_tag             = "latest"  # Change as needed
+    }
+    prd = {
+      env                   = "prd"
+      location              = "eastus"
+      resource_group_name   = "rg-secular-hub-prd-v11"
+      container_app_name    = "secular-hub-api-prd-v11"
+      acr_name              = "acrsecularhubshared"
+      image_tag             = "latest"
+    }
+  }
 }
 
+# =============================================================================
+# RESOURCE GROUPS & DATA
+# =============================================================================
+
+resource "azurerm_resource_group" "main" {
+  for_each = local.environments
+
+  name     = each.value.resource_group_name
+  location = each.value.location
+
+  tags = {
+    environment = each.key
+  }
+}
+
+data "azurerm_container_registry" "acr" {
+  name                = "acrsecularhubshared"
+  resource_group_name = "secular-hub-app-rg"
+}
+
+# =============================================================================
+# MONITORING
+# =============================================================================
+
 resource "azurerm_log_analytics_workspace" "law" {
-  name                = "law-${var.env}"
-  location            = azurerm_resource_group.dev.location
-  resource_group_name = azurerm_resource_group.dev.name
+  for_each = local.environments
+
+  name                = "law-${each.key}"
+  location            = azurerm_resource_group.main[each.key].location
+  resource_group_name = azurerm_resource_group.main[each.key].name
   sku                 = "PerGB2018"
   retention_in_days   = 30
 }
 
-resource "azurerm_container_app_environment" "env_dev" {
-  name                = "cae-${var.container_app_name}-${var.env}"
-  location            = azurerm_resource_group.dev.location
-  resource_group_name = azurerm_resource_group.dev.name
+# =============================================================================
+# CONTAINER APP ENVIRONMENT
+# =============================================================================
+
+resource "azurerm_container_app_environment" "main" {
+  for_each = local.environments
+
+  name                = "cae-${each.value.container_app_name}"
+  location            = azurerm_resource_group.main[each.key].location
+  resource_group_name = azurerm_resource_group.main[each.key].name
 }
 
-# Single ACR for the entire project (not per-environment)
-resource "azurerm_container_registry" "acr" {
-  name                = var.acr_name
-  resource_group_name = azurerm_resource_group.dev.name
-  location            = azurerm_resource_group.dev.location
-  sku                 = "Standard"
-  admin_enabled       = true
-}
+# =============================================================================
+# CONTAINER APP (Bypass RBAC with Admin Credentials)
+# =============================================================================
 
-resource "azurerm_container_app" "app_dev" {
-  name                         = "ca-${var.container_app_name}-${var.env}"
-  container_app_environment_id = azurerm_container_app_environment.env_dev.id
-  resource_group_name          = azurerm_resource_group.dev.name
+resource "azurerm_container_app" "main" {
+  for_each = local.environments
+
+  name                         = "ca-${each.value.container_app_name}"
+  container_app_environment_id = azurerm_container_app_environment.main[each.key].id
+  resource_group_name          = azurerm_resource_group.main[each.key].name
   revision_mode                = "Single"
 
-  identity {
-    type = "SystemAssigned"
+  lifecycle {
+    ignore_changes = [
+      "template[0].container[0].image",
+    ]
+  }
+
+  # Store ACR password in a secret inside the app
+  secret {
+    name  = "acr-password"
+    value = data.azurerm_container_registry.acr.admin_password
+  }
+
+  secret {
+    name  = "database-url"
+    value = var.database_url
+  }
+
+  registry {
+    server               = data.azurerm_container_registry.acr.login_server
+    username             = data.azurerm_container_registry.acr.admin_username
+    password_secret_name = "acr-password"
   }
 
   template {
     container {
       name   = "secular-hub"
-      image  = "${azurerm_container_registry.acr.login_server}/secular-hub:${var.image_tag}"
+      image  = "${data.azurerm_container_registry.acr.login_server}/secular-hub:${each.value.image_tag}"
       cpu    = 0.25
       memory = "0.5Gi"
 
@@ -47,18 +123,15 @@ resource "azurerm_container_app" "app_dev" {
         name  = "PORT"
         value = "3000"
       }
+
+      env {
+        name        = "DATABASE_URL"
+        secret_name = "database-url"
+      }
     }
-  }
 
-  registry {
-    server               = azurerm_container_registry.acr.login_server
-    username             = azurerm_container_registry.acr.admin_username
-    password_secret_name = "acr-admin-password"
-  }
-
-  secret {
-    name  = "acr-admin-password"
-    value = azurerm_container_registry.acr.admin_password
+    min_replicas = 1
+    max_replicas = 1
   }
 
   ingress {
@@ -71,26 +144,4 @@ resource "azurerm_container_app" "app_dev" {
       latest_revision = true
     }
   }
-}
-
-# Assign AcrPull role to Container App's Managed Identity
-resource "azurerm_role_assignment" "acr_pull" {
-  scope                = azurerm_container_registry.acr.id
-  role_definition_name = "AcrPull"
-  principal_id         = azurerm_container_app.app_dev.identity[0].principal_id
-
-  depends_on = [azurerm_container_app.app_dev, azurerm_container_registry.acr]
-}
-
-# Set min/max replicas via az CLI (post-provisioning)
-resource "null_resource" "set_scale" {
-  provisioner "local-exec" {
-    command = "az containerapp update -n ${azurerm_container_app.app_dev.name} -g ${azurerm_resource_group.dev.name} --set template.scale.minReplicas=1 template.scale.maxReplicas=3"
-  }
-
-  triggers = {
-    image_tag = var.image_tag
-  }
-
-  depends_on = [azurerm_container_app.app_dev]
 }

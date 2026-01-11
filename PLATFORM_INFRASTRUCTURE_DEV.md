@@ -14,7 +14,7 @@ Implementamos el patrón **BUILD ONCE – DEPLOY MANY** con los siguientes compo
 - **Resource Group**: `rg-secular-hub-dev`
 - **Log Analytics Workspace**: `law-dev` (30 días de retención)
 - **Container Apps Environment**: `cae-secular-hub-api-dev`
-- **Azure Container Registry (ACR)**: `acrsecularhub.azurecr.io` (UN SOLO ACR para todo el proyecto)
+- **Azure Container Registry (ACR)**: `acrsecularhubshared.azurecr.io` (UN SOLO ACR para todo el proyecto)
   - SKU: Standard
   - `admin_enabled = false` (sin admin credentials)
 - **Container App**: `ca-secular-hub-api-dev`
@@ -39,7 +39,7 @@ Implementamos el patrón **BUILD ONCE – DEPLOY MANY** con los siguientes compo
 - Acciones:
   1. Login a Azure via OIDC
   2. Build imagen Docker con tag `<commit-sha>`
-  3. Push a `acrsecularhub.azurecr.io/secular-hub:<commit-sha>`
+  3. Push a `acrsecularhubshared.azurecr.io/secular-hub:<commit-sha>`
   4. Verifica imagen en ACR
 
 **Output**: `image_tag = <commit-sha>`
@@ -128,7 +128,7 @@ terraform apply `
 terraform output
 
 # Output esperado:
-# acr_login_server = "acrsecularhub.azurecr.io"
+# acr_login_server = "acrsecularhubshared.azurecr.io"
 # container_app_fqdn = "secular-hub-api-dev-dev--XXXXX.azurecontainerapps.io"
 # resource_group_dev = "rg-secular-hub-dev"
 
@@ -160,7 +160,7 @@ Este diseño permite escalar a **UAT y PRD sin refactor**:
    - Resource Group separado
    - Container App separado (p.ej., `secular-hub-api-uat-uat`, `secular-hub-api-prd-prd`)
    - Terraform state separado (key: `secular-hub/uat/infra.tfstate`, etc.)
-3. El ACR es **compartido** (un solo `acrsecularhub.azurecr.io`).
+3. El ACR es **compartido** (un solo `acrsecularhubshared.azurecr.io`).
 4. Los workflows simplemente varían el `image_tag` y el `environment` (DEV/UAT/PRD).
 
 ---

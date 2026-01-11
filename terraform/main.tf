@@ -106,6 +106,11 @@ resource "azurerm_container_app" "main" {
     value = var.database_url
   }
 
+  secret {
+    name  = "microsoft-provider-authentication-secret"
+    value = var.microsoft_provider_authentication_secret
+  }
+
   registry {
     server               = data.azurerm_container_registry.acr.login_server
     username             = data.azurerm_container_registry.acr.admin_username
@@ -127,6 +132,11 @@ resource "azurerm_container_app" "main" {
       env {
         name        = "DATABASE_URL"
         secret_name = "database-url"
+      }
+
+      env {
+        name        = "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET"
+        secret_name = "microsoft-provider-authentication-secret"
       }
     }
 

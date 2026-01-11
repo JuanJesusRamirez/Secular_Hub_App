@@ -10,3 +10,9 @@ variable "database_url" {
   sensitive   = true
 }
 
+variable "microsoft_provider_authentication_secret" {
+  type        = string
+  description = "Microsoft provider authentication secret"
+  sensitive   = true
+}
+

@@ -53,6 +53,17 @@ resource "azurerm_container_app_environment" "main" {
 
 
 # =============================================================================
+# IDENTITY
+# =============================================================================
+
+resource "azurerm_user_assigned_identity" "containerapp" {
+  name                = "id-${var.container_app_name}-${var.env}${local.name_suffix}"
+  location            = azurerm_resource_group.main.location
+  resource_group_name = azurerm_resource_group.main.name
+}
+
+
+# =============================================================================
 # CONTAINER APP
 # =============================================================================
 
@@ -63,7 +74,8 @@ resource "azurerm_container_app" "main" {
   revision_mode                = "Single"
 
   identity {
-    type = "SystemAssigned"
+    type         = "SystemAssigned, UserAssigned"
+    identity_ids = [azurerm_user_assigned_identity.containerapp.id]
   }
 
   template {
@@ -85,7 +97,7 @@ resource "azurerm_container_app" "main" {
 
   registry {
     server   = data.azurerm_container_registry.acr.login_server
-    identity = "system"
+    identity = azurerm_user_assigned_identity.containerapp.id
   }
 
   ingress {
@@ -107,9 +119,7 @@ resource "azurerm_container_app" "main" {
 
 # Permiso para que el Container App pueda descargar imágenes del ACR
 resource "azurerm_role_assignment" "acr_pull" {
-  depends_on = [azurerm_container_app.main]
-
   scope                = data.azurerm_container_registry.acr.id
   role_definition_name = "AcrPull"
-  principal_id         = azurerm_container_app.main.identity[0].principal_id
+  principal_id         = azurerm_user_assigned_identity.containerapp.principal_id
 }

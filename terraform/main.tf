@@ -84,7 +84,8 @@ resource "azurerm_container_app" "main" {
   }
 
   registry {
-    server = data.azurerm_container_registry.acr.login_server
+    server   = data.azurerm_container_registry.acr.login_server
+    identity = "system"
   }
 
   ingress {

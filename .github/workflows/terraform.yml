@@ -81,7 +81,21 @@ jobs:
           ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           ARM_USE_OIDC: true
 
-      - name: Terraform Plan
+      - name: Terraform Init DEV (with backend)
+        run: |
+          terraform init \
+            -backend-config="resource_group_name=rg-secular-hub-tfstate" \
+            -backend-config="storage_account_name=secularhubtfst20260108" \
+            -backend-config="container_name=tfstate" \
+            -backend-config="key=secular-hub/dev/infra.tfstate" \
+            -reconfigure
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: true
+
+      - name: Terraform Plan (DEV)
         run: |
           terraform plan \
             -var-file=../envs/dev.tfvars \
@@ -102,6 +116,20 @@ jobs:
 
       - name: Terraform Apply (DEV)
         run: terraform apply -auto-approve tfplan
+        env:
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ARM_USE_OIDC: true
+
+      - name: Terraform Init UAT (with backend)
+        run: |
+          terraform init \
+            -backend-config="resource_group_name=rg-secular-hub-tfstate" \
+            -backend-config="storage_account_name=secularhubtfst20260108" \
+            -backend-config="container_name=tfstate" \
+            -backend-config="key=secular-hub/uat/infra.tfstate" \
+            -reconfigure
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}

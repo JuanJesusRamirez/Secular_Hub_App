@@ -20,6 +20,14 @@ locals {
       acr_name              = "acrsecularhubshared"
       image_tag             = "latest"  # Change as needed
     }
+    prd = {
+      env                   = "prd"
+      location              = "eastus"
+      resource_group_name   = "rg-secular-hub-prd-v11"
+      container_app_name    = "secular-hub-api-prd-v11"
+      acr_name              = "acrsecularhubshared"
+      image_tag             = "latest"
+    }
   }
 }
 

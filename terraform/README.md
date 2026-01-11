@@ -18,6 +18,9 @@ When using a suffix, the Terraform backend key will be stored at the top-level p
 ## GitHub Actions
 This repository's `terraform` workflow supports manual dispatch with an optional `resource_group_suffix` input. When you need to deploy a fresh environment via Actions, use the workflow dispatch input `resource_group_suffix=fresh`.
 
+### Bootstrapping with a public image
+When creating a fresh environment and the Container App needs to be bootstrapped before the Managed Identity can pull from a private ACR, you can pass an `override_image` input to the workflow with a public image (for example `mcr.microsoft.com/library/nginx:latest`). The workflow will pass that value into Terraform as the `override_image` variable for the initial apply.
+
 ## Notes
 - Using a suffix creates duplicate resources (extra cost).
 - Always back up your Terraform state before destructive operations:

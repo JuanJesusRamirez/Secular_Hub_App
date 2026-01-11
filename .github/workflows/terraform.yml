@@ -53,7 +53,7 @@ jobs:
             -backend-config="resource_group_name=rg-secular-hub-tfstate" \
             -backend-config="storage_account_name=secularhubtfst20260108" \
             -backend-config="container_name=tfstate" \
-            -backend-config="key=secular-hub/infra-v8.tfstate" \
+            -backend-config="key=secular-hub/infra-v10.tfstate" \
             -reconfigure
         env:
           RG_SUFFIX: ${{ github.event.inputs.resource_group_suffix }}

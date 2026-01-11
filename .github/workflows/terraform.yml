@@ -7,11 +7,7 @@ on:
       - 'terraform/**'
       - '.github/workflows/terraform.yml'
   workflow_dispatch:
-    inputs:
-      resource_group_suffix:
-        description: 'Suffix to append to resource group name (e.g. fresh)'
-        required: false
-        default: ''
+    
 
 permissions:
   id-token: write

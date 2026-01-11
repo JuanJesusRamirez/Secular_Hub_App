@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 env:
-  ACR_NAME: acrsecularhub
+  ACR_NAME: acrsecularhubshared
   TERRAFORM_DIR: terraform
   TFSTATE_RG: rg-secular-hub-tfstate
   TFSTATE_SA: secularhubtfst20260108

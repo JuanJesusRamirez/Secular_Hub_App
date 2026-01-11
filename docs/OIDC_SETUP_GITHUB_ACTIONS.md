@@ -82,7 +82,7 @@ AZURE_SUBSCRIPTION_ID = 4730c31d-4c41-46bc-83aa-b4975fe8e80a
    ↓
 3. Azure Login vía OIDC (sin secrets)
    ↓
-4. Docker build + push a acrsecularhub.azurecr.io/secular-hub:<sha>
+4. Docker build + push a acrsecularhubshared.azurecr.io/secular-hub:<sha>
    ↓
 5. Workflow completa
    ↓
@@ -120,7 +120,7 @@ Para verificar que todo está configurado correctamente:
 Esto debería:
 - ✅ Loguear en Azure
 - ✅ Mostrar ACRs disponibles
-- ✅ Confirmar que puedes hacer push a `acrsecularhub.azurecr.io`
+- ✅ Confirmar que puedes hacer push a `acrsecularhubshared.azurecr.io`
 
 ---
 
@@ -161,7 +161,7 @@ az role assignment create \
 ```bash
 # Verifica que el role assignment existe:
 az role assignment list \
-  --scope "/subscriptions/4730c31d-4c41-46bc-83aa-b4975fe8e80a/resourceGroups/rg-secular-hub-dev/providers/Microsoft.ContainerRegistry/registries/acrsecularhub" \
+  --scope "/subscriptions/4730c31d-4c41-46bc-83aa-b4975fe8e80a/resourceGroups/rg-secular-hub-dev/providers/Microsoft.ContainerRegistry/registries/acrsecularhubshared" \
   --all
 ```
 

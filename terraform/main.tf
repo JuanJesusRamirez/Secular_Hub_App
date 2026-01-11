@@ -1,16 +1,37 @@
-# Resource Group para este ambiente (dev o uat)
+# =============================================================================
+# RESOURCE GROUPS
+# =============================================================================
+
+# Resource Group específico para este ambiente (dev o uat)
 resource "azurerm_resource_group" "main" {
   name     = var.resource_group_name
   location = var.location
 }
 
-# ACR compartido (ya existe en secular-hub-app-rg)
-data "azurerm_container_registry" "acr" {
-  name                = var.acr_name
-  resource_group_name = "secular-hub-app-rg"
+# Resource Group compartido (contiene el ACR)
+data "azurerm_resource_group" "shared" {
+  name = "secular-hub-app-rg"
 }
 
-# Log Analytics Workspace
+
+# =============================================================================
+# AZURE CONTAINER REGISTRY (ACR) - COMPARTIDO
+# =============================================================================
+
+# ACR compartido (creado fuera de este terraform)
+# El ACR debe existir en el resource group `secular-hub-app-rg`.
+# Ambos ambientes (dev/uat/prod) lo referencian mediante este data source.
+
+data "azurerm_container_registry" "acr" {
+  name                = var.acr_name
+  resource_group_name = data.azurerm_resource_group.shared.name
+}
+
+
+# =============================================================================
+# MONITORING
+# =============================================================================
+
 resource "azurerm_log_analytics_workspace" "law" {
   name                = "law-${var.env}"
   location            = azurerm_resource_group.main.location
@@ -19,14 +40,22 @@ resource "azurerm_log_analytics_workspace" "law" {
   retention_in_days   = 30
 }
 
-# Container App Environment
+
+# =============================================================================
+# CONTAINER APP ENVIRONMENT
+# =============================================================================
+
 resource "azurerm_container_app_environment" "main" {
   name                = "cae-${var.container_app_name}-${var.env}"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
 }
 
-# Container App (dev o uat)
+
+# =============================================================================
+# CONTAINER APP
+# =============================================================================
+
 resource "azurerm_container_app" "main" {
   name                         = "ca-${var.container_app_name}-${var.env}"
   container_app_environment_id = azurerm_container_app_environment.main.id
@@ -71,7 +100,12 @@ resource "azurerm_container_app" "main" {
   }
 }
 
-# Assign AcrPull role al Managed Identity del Container App
+
+# =============================================================================
+# PERMISOS
+# =============================================================================
+
+# Permiso para que el Container App pueda descargar imágenes del ACR
 resource "azurerm_role_assignment" "acr_pull" {
   scope                = data.azurerm_container_registry.acr.id
   role_definition_name = "AcrPull"

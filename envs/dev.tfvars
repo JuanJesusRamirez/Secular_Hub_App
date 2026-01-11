@@ -1,5 +1,5 @@
 env = "dev"
 location = "eastus"
 resource_group_name = "rg-secular-hub-dev"
-acr_name = "acrsecularhub"
+acr_name = "acrsecularhubshared"
 container_app_name = "secular-hub-api"

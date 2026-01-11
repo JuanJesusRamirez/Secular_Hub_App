@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 env:
-  ACR_NAME: acrsecularhub
-  ACR_REGISTRY: acrsecularhub.azurecr.io
+  ACR_NAME: acrsecularhubshared
+  ACR_REGISTRY: acrsecularhubshared.azurecr.io
   IMAGE_NAME: secular-hub
 
 jobs:

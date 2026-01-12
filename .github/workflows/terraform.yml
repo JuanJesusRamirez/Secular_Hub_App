@@ -2,7 +2,7 @@ name: Terraform
 
 on:
   push:
-    branches: [dev]
+    branches: [uat_v1]
     paths:
       - 'terraform/**'
       - '.github/workflows/terraform.yml'
@@ -58,7 +58,8 @@ jobs:
         run: |
           terraform apply -auto-approve \
             -var="image_tag=${{ github.sha }}" \
-            -var="database_url=${{ secrets.DATABASE_URL }}"
+            -var="database_url=${{ secrets.DATABASE_URL }}" \
+            -var="microsoft_provider_authentication_secret=${{ secrets.MICROSOFT_PROVIDER_AUTHENTICATION_SECRET }}"
         env:
           ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}

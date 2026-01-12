@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Wordcloud from '@visx/wordcloud/lib/Wordcloud';
 import { Text } from '@visx/text';
-import { scaleLog } from '@visx/scale';
+import { scaleLog, scaleLinear } from '@visx/scale';
 
 export interface WordData {
   text: string;
@@ -132,8 +132,18 @@ export function WordCloud({
     const minValue = Math.min(...values);
     const maxValue = Math.max(...values);
 
+    // If values are very small (like TF-IDF scores < 1), scaleLog needs special handling or use scaleLinear
+    const isSmallValues = maxValue < 1;
+
+    if (isSmallValues) {
+      return scaleLinear({
+        domain: [minValue, maxValue],
+        range: [14, 72],
+      });
+    }
+
     return scaleLog({
-      domain: [Math.max(minValue, 1), Math.max(maxValue, minValue + 1)],
+      domain: [Math.max(minValue, 0.1), Math.max(maxValue, 1)],
       range: [14, 72],
     });
   }, [words]);

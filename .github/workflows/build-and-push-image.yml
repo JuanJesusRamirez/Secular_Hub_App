@@ -3,6 +3,19 @@ name: Build and Push Image
 on:
   push:
     branches: [ dev ]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - 'prisma/**'
+      - 'public/**'
+      - 'types/**'
+      - 'Dockerfile'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'next.config.mjs'
+      - 'tsconfig.json'
+      - '.github/workflows/build-and-push-image.yml'
   workflow_dispatch:
 
 permissions:

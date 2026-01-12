@@ -2,7 +2,7 @@ name: Terraform
 
 on:
   push:
-    branches: [uat]
+    branches: [uat_v1]
     paths:
       - 'terraform/**'
       - '.github/workflows/terraform.yml'

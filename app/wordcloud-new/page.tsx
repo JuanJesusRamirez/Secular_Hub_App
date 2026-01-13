@@ -192,7 +192,7 @@ export default function WordCloudNewPage() {
             <div className="grid gap-4 md:grid-cols-3">
                 <Card>
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">Unique Words</CardTitle>
+                        <CardTitle className="text-sm font-medium">{mode === 'phrases' ? 'Unique Phrases' : 'Unique Terms'}</CardTitle>
                         <FileText className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
@@ -207,14 +207,13 @@ export default function WordCloudNewPage() {
                                     <SelectValue />
                                 </SelectTrigger>
                                 <SelectContent>
-                                    <SelectItem value="50">50 words</SelectItem>
-                                    <SelectItem value="100">100 words</SelectItem>
-                                    <SelectItem value="200">200 words</SelectItem>
-                                    <SelectItem value="300">300 words</SelectItem>
+                                    <SelectItem value="50">50 {mode === 'phrases' ? 'phrases' : 'terms'}</SelectItem>
+                                    <SelectItem value="100">100 {mode === 'phrases' ? 'phrases' : 'terms'}</SelectItem>
+                                    <SelectItem value="200">200 {mode === 'phrases' ? 'phrases' : 'terms'}</SelectItem>
                                 </SelectContent>
                             </Select>
                         </div>
-                        <p className="text-xs text-muted-foreground mt-1">distinct terms analyzed</p>
+                        <p className="text-xs text-muted-foreground mt-1">distinct {mode === 'phrases' ? 'phrases' : 'terms'} analyzed</p>
                     </CardContent>
                 </Card>
 
@@ -233,7 +232,7 @@ export default function WordCloudNewPage() {
 
                 <Card>
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">Top Term</CardTitle>
+                        <CardTitle className="text-sm font-medium">Top {mode === 'phrases' ? 'Phrase' : 'Term'}</CardTitle>
                         <TrendingUp className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
@@ -245,7 +244,11 @@ export default function WordCloudNewPage() {
                             </div>
                         )}
                         <p className="text-xs text-muted-foreground">
-                            {data?.words?.[0]?.value ? data.words[0].value.toFixed(4) : 0} TF-IDF score
+                            {data?.words?.[0]?.value
+                                ? (scoring === 'frequency'
+                                    ? `${Math.round(data.words[0].value)} Mentions`
+                                    : `${(data.words[0].value * 1000).toFixed(1)} TF-IDF Score`)
+                                : "0 score"}
                         </p>
                     </CardContent>
                 </Card>
@@ -415,7 +418,8 @@ export default function WordCloudNewPage() {
                                     words={data.words}
                                     width={dimensions.width}
                                     height={dimensions.height}
-                                    title="Word Rain - WordCloud"
+                                    title=""
+                                    downloadFileName={`Word Cloud - ${selectedYear} - ${mode.charAt(0).toUpperCase() + mode.slice(1)}${sentimentEnabled ? ' - Sentiment' : ''}`}
                                     onWordClick={handleWordClick}
                                     sentimentData={sentimentData}
                                     showSentiment={sentimentEnabled && Object.keys(sentimentData).length > 0}
@@ -448,6 +452,9 @@ export default function WordCloudNewPage() {
                                     panelWidth={dimensions.width}
                                     panelHeight={600}
                                     layout={layout}
+                                    title=""
+                                    downloadFileName={`Word Rain - ${selectedYear} - ${mode.charAt(0).toUpperCase() + mode.slice(1)} - ${layout === 'free' ? 'Drop' : 'Lanes'}`}
+                                    scoring={scoring}
                                 />
                             ) : (
                                 <p className="text-muted-foreground text-center min-h-[500px] flex items-center justify-center">
@@ -463,10 +470,17 @@ export default function WordCloudNewPage() {
             {!loading && data?.words && data.words.length > 0 && (
                 <Card>
                     <CardHeader className="pb-3 border-b mb-4">
-                        <CardTitle className="text-base flex items-center justify-between">
-                            Detailed Breakdown (CSV)
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <CardTitle className="text-base">Top {wordLimit} {mode === 'phrases' ? 'Phrases' : 'Terms'}</CardTitle>
+                                <p className="text-xs text-muted-foreground mt-1">
+                                    {scoring === 'frequency'
+                                        ? 'Scale: Mentions (counts)'
+                                        : 'Scale: Importance (TF-IDF Score x 1000)'}
+                                </p>
+                            </div>
                             <Badge variant="outline">{data.words.length} {mode === 'phrases' ? 'phrases' : 'terms'}</Badge>
-                        </CardTitle>
+                        </div>
                     </CardHeader>
                     <CardContent>
                         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
@@ -477,6 +491,10 @@ export default function WordCloudNewPage() {
                                     if (sentiment > 0.1) sentimentColor = 'bg-green-50 border-green-200';
                                     else if (sentiment < -0.1) sentimentColor = 'bg-red-50 border-red-200';
                                 }
+
+                                const displayValue = scoring === 'frequency'
+                                    ? Math.round(word.value).toString()
+                                    : (word.value * 1000).toFixed(1);
 
                                 return (
                                     <div
@@ -489,7 +507,7 @@ export default function WordCloudNewPage() {
                                     >
                                         <span className="font-medium capitalize truncate group-hover:text-primary">{word.text}</span>
                                         <Badge variant="outline" className="ml-2 flex-shrink-0 text-[10px] px-1 h-5">
-                                            {word.value.toFixed(3)}
+                                            {displayValue}
                                         </Badge>
                                     </div>
                                 );

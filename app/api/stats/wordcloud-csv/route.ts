@@ -6,8 +6,8 @@ export async function GET(request: Request) {
     try {
         const { searchParams } = new URL(request.url);
         const scoring = searchParams.get('scoring') || 'importance';
-        const limitParam = searchParams.get('limit') || '150';
-        const limit = parseInt(limitParam, 10) || 150;
+        const limitParam = searchParams.get('limit') || '200';
+        const limit = parseInt(limitParam, 10) || 200;
         const mode = searchParams.get('mode') || 'words';
         const yearParam = searchParams.get('year') || '2022';
 

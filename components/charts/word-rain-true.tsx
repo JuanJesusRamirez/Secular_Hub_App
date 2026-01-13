@@ -1,6 +1,10 @@
 "use client";
 
 import { useMemo, useState } from 'react';
+import { Download } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 interface WordData {
   text: string;
@@ -212,13 +216,15 @@ function WordRainPanel({
   width,
   height,
   title,
-  layout = 'free'
+  layout = 'free',
+  scoring = 'importance'
 }: {
   words: WordData[];
   width: number;
   height: number;
   title?: string;
   layout?: 'free' | 'lanes';
+  scoring?: string;
 }) {
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
 
@@ -237,7 +243,7 @@ function WordRainPanel({
   const wordZoneStart = titleHeight + barZoneHeight;
 
   return (
-    <svg width={width} height={height} className="overflow-visible">
+    <svg width={width} height={height} className="overflow-visible word-rain-svg">
       <style>{animationStyles}</style>
 
       {/* Background with Neutral base */}
@@ -353,7 +359,10 @@ function WordRainPanel({
               {hoveredWord}
             </text>
             <text x={18} y={44} fontSize={10} fill="#64748b">
-              TF-IDF: {wordData?.tfidf.toFixed(1)}
+              {scoring === 'frequency' ? 'Mentions: ' : 'Importance: '}
+              {scoring === 'frequency'
+                ? Math.round(wordData?.tfidf || 0)
+                : ((wordData?.tfidf || 0) * 1000).toFixed(1)}
             </text>
           </g>
         );
@@ -376,6 +385,9 @@ export interface TrueWordRainProps {
   panelHeight?: number;
   columns?: number;
   layout?: 'free' | 'lanes';
+  title?: string;
+  downloadFileName?: string;
+  scoring?: string;
 }
 
 export function TrueWordRain({
@@ -383,7 +395,10 @@ export function TrueWordRain({
   years,
   panelWidth = 900,
   panelHeight = 750,
-  layout = 'free'
+  layout = 'free',
+  title,
+  downloadFileName,
+  scoring = 'importance'
 }: TrueWordRainProps) {
   const isAllYears = years.length > 1;
 
@@ -398,8 +413,7 @@ export function TrueWordRain({
           yearData: word.yearData
         }))
         .filter(w => w.tfidf > 0)
-        .sort((a, b) => b.tfidf - a.tfidf)
-        .slice(0, 300);
+        .sort((a, b) => b.tfidf - a.tfidf);
     } else {
       const year = years[0];
       return words
@@ -413,53 +427,97 @@ export function TrueWordRain({
           };
         })
         .filter(w => w.tfidf > 0)
-        .sort((a, b) => b.tfidf - a.tfidf)
-        .slice(0, 300);
+        .sort((a, b) => b.tfidf - a.tfidf);
     }
   }, [words, years, isAllYears]);
 
-  const title = isAllYears
-    ? `Wall Street Narratives (${years[0]}-${years[years.length - 1]})`
-    : `Wall Street Narratives ${years[0]}`;
+  const handleDownload = () => {
+    const svg = document.querySelector('.word-rain-svg');
+    if (!svg) return;
+
+    // Create a temporary canvas to convert SVG to PNG
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+
+    // Get the actual height of the SVG content or use the height of the canvas
+    const svgHeight = Math.max(panelHeight * 1.5, 1000);
+    const svgWidth = panelWidth - 16;
+
+    const svgData = new XMLSerializer().serializeToString(svg);
+    const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+    const url = URL.createObjectURL(svgBlob);
+
+    img.onload = () => {
+      canvas.width = svgWidth * 2;
+      canvas.height = svgHeight * 2;
+      if (ctx) {
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.scale(2, 2);
+        ctx.drawImage(img, 0, 0);
+
+        const pngUrl = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = pngUrl;
+        link.download = `${downloadFileName || title || 'WordRain'}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+      URL.revokeObjectURL(url);
+    };
+    img.src = url;
+  };
 
   return (
-    <div className="flex flex-col items-center space-y-4">
-      {/* Legend */}
-      <div className="flex items-center gap-6 text-sm text-muted-foreground">
-        <div className="flex items-center gap-2">
-          <div className="w-24 h-3 rounded" style={{
-            background: 'linear-gradient(to right, rgb(80, 140, 200), rgb(120, 220, 170), rgb(250, 100, 255))'
-          }} />
-          <span>Semantic axis</span>
+    <div className="flex flex-col items-center space-y-4 w-full">
+      {/* Legend & Controls */}
+      <div className="flex flex-wrap items-center justify-between w-full gap-4 px-2">
+        <div className="flex items-center gap-6 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <div className="w-24 h-3 rounded" style={{
+              background: 'linear-gradient(to right, rgb(80, 140, 200), rgb(120, 220, 170), rgb(250, 100, 255))'
+            }} />
+            <span>Semantic axis</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <svg width="20" height="30" className="overflow-visible">
+              <line x1="10" y1="28" x2="10" y2="6" stroke="#94a3b8" strokeWidth="0.8" />
+              <circle cx="10" cy="6" r="1.5" fill="#94a3b8" />
+            </svg>
+            <span>Bar height = TF-IDF</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="text-xl font-semibold text-slate-500">A</span>
+            <span className="text-xs text-slate-400">a</span>
+            <span className="ml-1">Font size = prominence</span>
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          <svg width="20" height="30" className="overflow-visible">
-            <line x1="10" y1="28" x2="10" y2="6" stroke="#94a3b8" strokeWidth="0.8" />
-            <circle cx="10" cy="6" r="1.5" fill="#94a3b8" />
-          </svg>
-          <span>Bar height = TF-IDF</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <span className="text-xl font-semibold text-slate-500">A</span>
-          <span className="text-xs text-slate-400">a</span>
-          <span className="ml-1">Font size = prominence</span>
-        </div>
+
+        <Button variant="outline" size="sm" onClick={handleDownload} className="flex items-center gap-2">
+          <Download className="h-4 w-4" />
+          Export PNG
+        </Button>
       </div>
 
       {/* Word Rain Panel */}
-      <div className="bg-white rounded-lg border shadow-sm overflow-hidden">
+      <div
+        className="bg-white rounded-lg border shadow-sm overflow-y-auto custom-scrollbar w-full"
+        style={{ maxHeight: panelHeight }}
+      >
         <WordRainPanel
           words={wordData}
-          width={panelWidth}
-          height={panelHeight}
-          title={title}
+          width={panelWidth - 16} // Adjust for scrollbar
+          height={Math.max(panelHeight * 2, 1500)} // Full spectrum height
           layout={layout}
+          scoring={scoring}
         />
       </div>
 
       {/* Info */}
       <div className="text-xs text-muted-foreground">
-        {wordData.length} terms • Hover for details
+        {wordData.length} terms • Hover for details • Scroll to see full spectrum
       </div>
     </div>
   );

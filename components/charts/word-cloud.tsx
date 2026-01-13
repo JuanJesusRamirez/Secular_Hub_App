@@ -27,6 +27,7 @@ interface WordCloudProps {
   className?: string;
   sentimentData?: SentimentData;
   showSentiment?: boolean;
+  downloadFileName?: string;
 }
 
 // Sentiment-based colors
@@ -79,7 +80,7 @@ function getWordColor(
   word: string,
   sentimentData?: SentimentData,
   showSentiment?: boolean
-): string {
+) {
   const lowerWord = word.toLowerCase();
 
   // Use sentiment-based colors if available
@@ -114,23 +115,44 @@ export function WordCloud({
   onWordClick,
   className,
   sentimentData,
-  showSentiment = false
+  showSentiment = false,
+  downloadFileName, // New prop
 }: WordCloudProps) {
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
 
   const handleDownload = () => {
     const svg = document.querySelector('.word-cloud-svg');
     if (!svg) return;
+
+    // Create a temporary canvas to convert SVG to PNG
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+
     const svgData = new XMLSerializer().serializeToString(svg);
     const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
     const url = URL.createObjectURL(svgBlob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `wordcloud-${new Date().getFullYear()}-${new Date().getTime()}.svg`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
+
+    img.onload = () => {
+      canvas.width = width * 2; // High resolution
+      canvas.height = height * 2;
+      if (ctx) {
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.scale(2, 2);
+        ctx.drawImage(img, 0, 0);
+
+        const pngUrl = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = pngUrl;
+        link.download = `${downloadFileName || title || 'WordCloud'}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+      URL.revokeObjectURL(url);
+    };
+    img.src = url;
   };
 
   // ... (keep fontScale useMemo)
@@ -191,7 +213,7 @@ export function WordCloud({
   return (
     <Card className={cn("flex flex-col", className)}>
       <CardHeader className="pb-2 flex flex-row items-center justify-between">
-        <CardTitle className="text-lg">{title || 'Word Narrative Distribution'}</CardTitle>
+        {title && <CardTitle className="text-lg">{title}</CardTitle>}
         <Button variant="ghost" size="icon" onClick={handleDownload} title="Download SVG">
           <Download className="h-4 w-4" />
         </Button>

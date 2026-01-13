@@ -36,6 +36,7 @@ interface WordCloudResponse {
     availableYears: number[];
     mode: 'words' | 'phrases';
     scoring: 'frequency' | 'importance';
+    analysisData?: any[];
 }
 
 interface SentimentResult {
@@ -60,7 +61,7 @@ export default function WordCloudNewPage() {
     const containerRef = useRef<HTMLDivElement>(null);
     const [dimensions, setDimensions] = useState({ width: 800, height: 500 });
 
-    // Fetch word cloud data from CSV
+    // Fetch word analysis data from Database
     const fetchData = useCallback(async (limit: string, s: string, m: 'words' | 'phrases', y: string) => {
         setLoading(true);
         setError(null);
@@ -72,18 +73,18 @@ export default function WordCloudNewPage() {
             params.set("year", y);
             const query = params.toString() ? `?${params.toString()}` : "";
 
-            const res = await fetch(`/api/stats/wordcloud-csv${query}`);
-            if (!res.ok) throw new Error("Failed to fetch word cloud data from CSV");
+            const res = await fetch(`/api/stats/analysis${query}`);
+            if (!res.ok) throw new Error("Failed to fetch word cloud data");
             const json = await res.json();
 
             if (json.error) throw new Error(json.error);
 
             setData(json);
 
-            // Extract sentiment data directly from the CSV response
-            if (json.csv_data) {
+            // Extract sentiment data directly from the response
+            if (json.analysisData) {
                 const newSentimentData: SentimentData = {};
-                json.csv_data.forEach((row: any) => {
+                json.analysisData.forEach((row: any) => {
                     if (row.text) {
                         newSentimentData[row.text.toLowerCase()] = row.adjustedSentiment;
                     }
@@ -97,36 +98,6 @@ export default function WordCloudNewPage() {
         }
     }, []);
 
-    // Fetch sentiment data from CSV
-    const fetchSentiment = useCallback(async (words: WordData[]) => {
-        if (words.length === 0) return;
-
-        setSentimentLoading(true);
-        try {
-            const terms = words.map((w: WordData) => w.text);
-            const res = await fetch('/api/stats/sentiment-csv', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ terms }),
-            });
-
-            if (!res.ok) throw new Error("Failed to fetch sentiment");
-
-            const json = await res.json();
-            const newSentimentData: SentimentData = {};
-
-            Object.entries(json.results).forEach(([term, result]) => {
-                const r = result as SentimentResult;
-                newSentimentData[term] = r.normalizedScore;
-            });
-
-            setSentimentData(newSentimentData);
-        } catch (err) {
-            console.error("Sentiment fetch error:", err);
-        } finally {
-            setSentimentLoading(false);
-        }
-    }, []);
 
     useEffect(() => {
         fetchData(wordLimit, scoring, mode, selectedYear);
@@ -165,13 +136,13 @@ export default function WordCloudNewPage() {
                             <Cloud className="h-6 w-6 text-primary" />
                             Word Cloud Analysis
                         </h1>
-                        <Badge variant="secondary" className="bg-blue-500 text-white hover:bg-blue-600 animate-pulse">
-                            <Sparkles className="h-3 w-3 mr-1" />
-                            NEW: From CSV
-                        </Badge>
+                        <CardTitle className="flex items-center gap-2">
+                            <Sparkles className="h-5 w-5 text-amber-500" />
+                            Pre-calculated Analysis
+                        </CardTitle>
                     </div>
-                    <p className="text-muted-foreground mt-1">
-                        Visualizing pre-calculated data from <code className="bg-muted px-1 rounded">{mode === 'phrases' ? `word_rain_phrases_data_${selectedYear}.csv` : `word_rain_data_${selectedYear}.csv`}</code>.
+                    <p className="text-sm text-muted-foreground mt-1">
+                        Visualizing semantic data from <code className="bg-muted px-1 rounded">PostgreSQL</code>.
                         <span className="hidden sm:inline"> {mode === 'phrases' ? 'Phrase' : 'Word'} size indicates importance (TF-IDF).</span>
                     </p>
                 </div>
@@ -223,9 +194,9 @@ export default function WordCloudNewPage() {
                         <Building2 className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
-                        <div className="text-2xl font-bold">CSV File</div>
+                        <div className="text-2xl font-bold">PostgreSQL</div>
                         <p className="text-xs text-muted-foreground">
-                            {mode === 'phrases' ? `word_rain_phrases_data_${selectedYear}.csv` : `word_rain_data_${selectedYear}.csv`}
+                            {mode === 'phrases' ? `phrase_analysis` : `word_analysis`} table
                         </p>
                     </CardContent>
                 </Card>
@@ -352,7 +323,7 @@ export default function WordCloudNewPage() {
                                     <TooltipContent side="bottom" className="max-w-xs">
                                         <p className="font-medium mb-1">Pre-calculated Sentiment</p>
                                         <p className="text-xs text-muted-foreground">
-                                            Colors are based on the <code className="bg-muted px-0.5">sentiment_label</code> field in the CSV.
+                                            Colors are based on the <code className="bg-muted px-0.5">sentiment_label</code> field in the database.
                                         </p>
                                     </TooltipContent>
                                 </Tooltip>
@@ -406,12 +377,13 @@ export default function WordCloudNewPage() {
                             {loading ? (
                                 <div className="flex flex-col items-center gap-4">
                                     <Skeleton className="h-[400px] w-full max-w-[700px] rounded-lg" />
-                                    <p className="text-sm text-muted-foreground">Rendering from CSV...</p>
+                                    <p className="text-sm text-muted-foreground">Rendering from Database...</p>
                                 </div>
                             ) : error ? (
-                                <div className="text-destructive text-center">
-                                    <p className="font-medium">Error loading CSV data</p>
-                                    <p className="text-sm">{error}</p>
+                                <div className="min-h-[500px] flex flex-col items-center justify-center gap-2 text-destructive">
+                                    <Info className="h-10 w-10" />
+                                    <p className="font-medium">Error loading analysis data</p>
+                                    <p className="text-sm opacity-80">{error}</p>
                                 </div>
                             ) : data?.words && data.words.length > 0 ? (
                                 <WordCloud
@@ -425,7 +397,7 @@ export default function WordCloudNewPage() {
                                     showSentiment={sentimentEnabled && Object.keys(sentimentData).length > 0}
                                 />
                             ) : (
-                                <p className="text-muted-foreground">No data found in CSV</p>
+                                <p className="text-muted-foreground">No analysis found</p>
                             )}
                         </CardContent>
                     </Card>
@@ -458,7 +430,7 @@ export default function WordCloudNewPage() {
                                 />
                             ) : (
                                 <p className="text-muted-foreground text-center min-h-[500px] flex items-center justify-center">
-                                    No semantic data found in CSV
+                                    No semantic data found in database
                                 </p>
                             )}
                         </CardContent>

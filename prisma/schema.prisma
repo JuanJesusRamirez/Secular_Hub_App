@@ -88,3 +88,35 @@ model SentimentCache {
 
   @@map("sentiment_cache")
 }
+
+model WordAnalysis {
+  id               Int      @id @default(autoincrement())
+  term             String
+  year             Int
+  tfidfScore       Float    @map("tfidf_score")
+  semanticPosition Float    @map("semantic_position")
+  frequency        Int
+  relativeFreq     Float    @map("relative_frequency")
+  sentimentLabel   String   @map("sentiment_label")
+  sentimentScore   Float    @map("sentiment_score")
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  @@unique([term, year])
+  @@map("word_analysis")
+}
+
+model PhraseAnalysis {
+  id               Int      @id @default(autoincrement())
+  term             String
+  year             Int
+  tfidfScore       Float    @map("tfidf_score")
+  semanticPosition Float    @map("semantic_position")
+  frequency        Int
+  relativeFreq     Float    @map("relative_frequency")
+  sentimentLabel   String   @map("sentiment_label")
+  sentimentScore   Float    @map("sentiment_score")
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  @@unique([term, year])
+  @@map("phrase_analysis")
+}

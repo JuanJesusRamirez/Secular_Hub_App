@@ -278,29 +278,7 @@ export default function WordCloudNewPage() {
 
                 {/* Sentiment & Layout Toggles */}
                 <div className="flex items-center gap-3 ml-auto">
-                    {view === 'rain' && (
-                        <div className="flex items-center gap-2 mr-4 border-r pr-4">
-                            <span className="text-sm text-muted-foreground">Layout:</span>
-                            <div className="flex rounded-lg border p-1 bg-background">
-                                <Button
-                                    variant={layout === 'free' ? 'secondary' : 'ghost'}
-                                    size="sm"
-                                    className="h-7 px-3 text-xs"
-                                    onClick={() => setLayout('free')}
-                                >
-                                    Drop
-                                </Button>
-                                <Button
-                                    variant={layout === 'lanes' ? 'secondary' : 'ghost'}
-                                    size="sm"
-                                    className="h-7 px-3 text-xs"
-                                    onClick={() => setLayout('lanes')}
-                                >
-                                    Lanes
-                                </Button>
-                            </div>
-                        </div>
-                    )}
+
 
                     {/* Sentiment Toggle - Only for Cloud View */}
                     {view === 'cloud' && (
@@ -428,7 +406,7 @@ export default function WordCloudNewPage() {
                                     panelHeight={600}
                                     layout={layout}
                                     title=""
-                                    downloadFileName={`Word Rain - ${selectedYear} - ${mode.charAt(0).toUpperCase() + mode.slice(1)} - ${layout === 'free' ? 'Drop' : 'Lanes'}`}
+                                    downloadFileName={`Word Rain - ${selectedYear} - ${mode.charAt(0).toUpperCase() + mode.slice(1)} - Drop`}
                                     scoring={scoring}
                                 />
                             ) : (

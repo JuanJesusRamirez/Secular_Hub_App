@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect, useRef } from 'react';
 import { Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -79,11 +79,11 @@ function placeWords(
 ): PlacedWord[] {
   // Zone definitions
   const titleHeight = 40;
-  const barZoneHeight = height * 0.22;
+  const barZoneHeight = 200;
   const wordZoneStart = titleHeight + barZoneHeight;
   const wordZoneHeight = height - wordZoneStart - 50;
 
-  const margin = { left: 80, right: 80 };
+  const margin = { left: 60, right: 60 };
   const innerWidth = width - margin.left - margin.right;
 
   const sortedWords = [...words].sort((a, b) => b.tfidf - a.tfidf);
@@ -93,119 +93,88 @@ function placeWords(
   const minFontSize = 14;
   const maxFontSize = Math.min(52, width / 18);
 
-  if (layout === 'lanes') {
-    // Original: 8 semantic lanes
-    const numLanes = 8;
-    const laneWidth = innerWidth / numLanes;
+  // Free layout with horizontal spreading priority
+  // Free layout with horizontal spreading priority
+  sortedWords.forEach((word, i) => {
+    const tfidfFactor = Math.log(word.tfidf + 1) / (Math.log(maxTfidf + 1) || 1);
+    // Increase font size contrast by using power function
+    const fontSize = minFontSize + Math.pow(tfidfFactor, 1.2) * (maxFontSize - minFontSize);
+    const charWidth = fontSize * 0.58;
+    const textWidth = word.text.length * charWidth;
+    const textHeight = fontSize * 1.25;
 
-    const lanes: WordData[][] = Array.from({ length: numLanes }, () => []);
-    for (const word of words) {
-      const laneIndex = Math.min(numLanes - 1, Math.floor(word.semanticX * numLanes));
-      lanes[laneIndex].push(word);
-    }
+    const targetX = margin.left + word.semanticX * innerWidth;
 
-    for (let i = 0; i < numLanes; i++) {
-      const laneX = margin.left + (i + 0.5) * laneWidth;
-      const laneWords = lanes[i].sort((a, b) => b.tfidf - a.tfidf);
-      let currentY = wordZoneStart + 15;
+    // Distribute words vertically by rank (i) to ensure "one is above the other"
+    const rankStep = 7;
+    const rankStartY = wordZoneStart + 5 + (i * rankStep);
 
-      for (const word of laneWords) {
-        const tfidfFactor = Math.log(word.tfidf + 1) / Math.log(maxTfidf + 1);
-        const fontSize = minFontSize + tfidfFactor * (maxFontSize - minFontSize);
-        const textHeight = fontSize * 1.3;
+    let bestX = targetX;
+    let bestY = height;
+    let found = false;
 
-        if (currentY + textHeight > height - 20) break;
+    // We try to keep it at its rank vertical position, but allow horizontal shifting
+    const horizontalOffsets = [0, -30, 30, -60, 60, -100, 100, -150, 150, -200, 200];
 
-        placedWords.push({
-          text: word.text,
-          x: laneX,
-          y: currentY,
-          barTop: titleHeight + 10 + (1 - tfidfFactor) * (barZoneHeight - 20),
-          fontSize,
-          color: getSemanticColor(word.semanticX)
-        });
+    for (const offset of horizontalOffsets) {
+      let x = targetX + offset;
+      x = Math.max(margin.left + textWidth / 2, Math.min(width - margin.right - textWidth / 2, x));
 
-        currentY += textHeight + 10;
-      }
-    }
-  } else {
-    // Free layout with horizontal spreading priority
-    for (const word of sortedWords) {
-      const tfidfFactor = Math.log(word.tfidf + 1) / (Math.log(maxTfidf + 1) || 1);
-      const fontSize = minFontSize + tfidfFactor * (maxFontSize - minFontSize);
-      const charWidth = fontSize * 0.58;
-      const textWidth = word.text.length * charWidth;
-      const textHeight = fontSize * 1.25;
+      let y = rankStartY;
+      let attempts = 0;
+      let collision = false;
 
-      const targetX = margin.left + word.semanticX * innerWidth;
-      const startY = wordZoneStart + 15;
+      // Vertical search starting from rank position
+      while (attempts < 40) {
+        const rect = {
+          x1: x - textWidth / 2 - 10,
+          y1: y - 4,
+          x2: x + textWidth / 2 + 10,
+          y2: y + textHeight + 4
+        };
 
-      let bestX = targetX;
-      let bestY = height;
-      let found = false;
+        const hasCollision = occupiedRects.some(occ =>
+          rect.x1 < occ.x2 && rect.x2 > occ.x1 && rect.y1 < occ.y2 && rect.y2 > occ.y1
+        );
 
-      const horizontalOffsets = [0, -40, 40, -80, 80, -120, 120, -180, 180];
+        if (!hasCollision) break;
 
-      for (const offset of horizontalOffsets) {
-        let x = targetX + offset;
-        x = Math.max(margin.left + textWidth / 2, Math.min(width - margin.right - textWidth / 2, x));
-
-        let y = startY;
-        let attempts = 0;
-        let collision = false;
-
-        while (attempts < 50) {
-          const rect = {
-            x1: x - textWidth / 2 - 12,
-            y1: y - 6,
-            x2: x + textWidth / 2 + 12,
-            y2: y + textHeight + 6
-          };
-
-          const hasCollision = occupiedRects.some(occ =>
-            rect.x1 < occ.x2 && rect.x2 > occ.x1 && rect.y1 < occ.y2 && rect.y2 > occ.y1
-          );
-
-          if (!hasCollision) break;
-
-          y += 15;
-          if (y > height - 40) {
-            collision = true;
-            break;
-          }
-          attempts++;
+        y += 12; // Search downwards if collision
+        if (y > height - 40) {
+          collision = true;
+          break;
         }
-
-        if (!collision) {
-          if (y < bestY) {
-            bestY = y;
-            bestX = x;
-            found = true;
-            if (y === startY) break;
-          }
-        }
+        attempts++;
       }
 
-      if (found) {
-        const barTop = titleHeight + 10 + (1 - tfidfFactor) * (barZoneHeight - 20);
-        placedWords.push({
-          text: word.text,
-          x: bestX,
-          y: bestY,
-          barTop,
-          fontSize,
-          color: getSemanticColor(word.semanticX),
-          sentiment: Object.values(word.yearData || {})[0]?.sentiment
-        });
-        occupiedRects.push({
-          x1: bestX - textWidth / 2 - 5,
-          y1: bestY - 2,
-          x2: bestX + textWidth / 2 + 5,
-          y2: bestY + textHeight + 2
-        });
+      if (!collision) {
+        bestY = y;
+        bestX = x;
+        found = true;
+        break; // Found a spot for this horizontal offset
       }
     }
-  }
+
+    if (found) {
+      // Increased range for barTop to make them stand out more vertically and longer
+      const barTop = titleHeight + 10 + (1 - Math.pow(tfidfFactor, 0.7)) * (barZoneHeight - 40);
+      placedWords.push({
+        text: word.text,
+        x: bestX,
+        y: bestY,
+        barTop,
+        fontSize,
+        color: getSemanticColor(word.semanticX),
+        sentiment: Object.values(word.yearData || {})[0]?.sentiment
+      });
+      occupiedRects.push({
+        x1: bestX - textWidth / 2 - 5,
+        y1: bestY - 2,
+        x2: bestX + textWidth / 2 + 5,
+        y2: bestY + textHeight + 2
+      });
+    }
+  });
 
   return placedWords;
 }
@@ -239,7 +208,7 @@ function WordRainPanel({
 
   // Zone boundaries for visual reference
   const titleHeight = 40;
-  const barZoneHeight = height * 0.22;
+  const barZoneHeight = 200;
   const wordZoneStart = titleHeight + barZoneHeight;
 
   return (
@@ -249,16 +218,15 @@ function WordRainPanel({
       {/* Background with Neutral base */}
       <rect x={0} y={0} width={width} height={height} fill="white" />
 
-      {/* Zone b/c separator line (subtle) */}
+      {/* Zone b/c separator line (solid origin) */}
       <line
         x1={30}
         x2={width - 30}
         y1={wordZoneStart}
         y2={wordZoneStart}
-        stroke="#e2e8f0"
-        strokeWidth={1}
-        strokeDasharray="4,4"
-        opacity={0.5}
+        stroke="#cbd5e1"
+        strokeWidth={0.8}
+        opacity={0.8}
       />
 
       {/* Title (Zone a) */}
@@ -275,41 +243,52 @@ function WordRainPanel({
         </text>
       )}
 
-      {/* Bars (Zone b) - modeled after ax.bar in user script */}
+      {/* Points and Stems (Zone b) */}
       {placedWords.map((word, i) => {
         const isHovered = hoveredWord === word.text;
         const dimmed = hoveredWord && !isHovered;
-        const barWidth = 14;
-        const barHeight = Math.max(4, wordZoneStart - word.barTop - 5);
+
+        // Dynamically size dots based on prominence (using fontSize as proxy)
+        const baseDotSize = word.fontSize / 12;
+        const dotSize = isHovered ? baseDotSize + 2 : baseDotSize;
 
         return (
-          <g key={`bar-${word.text}-${i}`} opacity={dimmed ? 0.2 : 1}>
-            {/* The "bar" at the top representing prominence */}
-            <rect
-              x={word.x - barWidth / 2}
-              y={word.barTop}
-              width={barWidth}
-              height={barHeight}
-              fill={word.color}
-              fillOpacity={0.4}
-              rx={1.5}
-            />
-
-            {/* Subtle connecting line down to the word */}
+          <g key={`stem-${word.text}-${i}`} opacity={dimmed ? 0.2 : 1}>
+            {/* Stem Segment Above Axis (High Intensity) */}
             <line
               x1={word.x}
               x2={word.x}
-              y1={word.barTop + barHeight}
+              y1={word.barTop}
+              y2={wordZoneStart}
+              stroke={word.color}
+              strokeWidth={isHovered ? 2 : 1.2}
+              strokeOpacity={isHovered ? 1 : 0.7}
+            />
+
+            {/* Stem Segment Below Axis (Clearer/Moderate Opacity) */}
+            <line
+              x1={word.x}
+              x2={word.x}
+              y1={wordZoneStart}
               y2={word.y}
               stroke={word.color}
-              strokeWidth={0.5}
-              strokeOpacity={0.15}
+              strokeWidth={isHovered ? 1 : 0.6}
+              strokeOpacity={isHovered ? 0.6 : 0.3}
+            />
+
+            {/* The point at the top */}
+            <circle
+              cx={word.x}
+              cy={word.barTop}
+              r={dotSize}
+              fill={word.color}
+              fillOpacity={isHovered ? 1 : 0.8}
             />
           </g>
         );
       })}
 
-      {/* Words (Zones c/d) */}
+      {/* Words (Zones c/d) - Drop Layout Only */}
       {placedWords.map((word, i) => {
         const isHovered = hoveredWord === word.text;
         const dimmed = hoveredWord && !isHovered;
@@ -431,44 +410,17 @@ export function TrueWordRain({
     }
   }, [words, years, isAllYears]);
 
-  const handleDownload = () => {
-    const svg = document.querySelector('.word-rain-svg');
-    if (!svg) return;
+  const calculatedHeight = Math.max(panelHeight, wordData.length * 7 + 280);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-    // Create a temporary canvas to convert SVG to PNG
-    const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');
-    const img = new Image();
+  // Force scroll to top when data changes
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = 0;
+    }
+  }, [wordData]);
 
-    // Get the actual height of the SVG content or use the height of the canvas
-    const svgHeight = Math.max(panelHeight * 1.5, 1000);
-    const svgWidth = panelWidth - 16;
 
-    const svgData = new XMLSerializer().serializeToString(svg);
-    const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
-    const url = URL.createObjectURL(svgBlob);
-
-    img.onload = () => {
-      canvas.width = svgWidth * 2;
-      canvas.height = svgHeight * 2;
-      if (ctx) {
-        ctx.fillStyle = 'white';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.scale(2, 2);
-        ctx.drawImage(img, 0, 0);
-
-        const pngUrl = canvas.toDataURL('image/png');
-        const link = document.createElement('a');
-        link.href = pngUrl;
-        link.download = `${downloadFileName || title || 'WordRain'}.png`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
-      URL.revokeObjectURL(url);
-    };
-    img.src = url;
-  };
 
   return (
     <div className="flex flex-col items-center space-y-4 w-full">
@@ -481,13 +433,15 @@ export function TrueWordRain({
             }} />
             <span>Semantic axis</span>
           </div>
+
           <div className="flex items-center gap-2">
             <svg width="20" height="30" className="overflow-visible">
-              <line x1="10" y1="28" x2="10" y2="6" stroke="#94a3b8" strokeWidth="0.8" />
-              <circle cx="10" cy="6" r="1.5" fill="#94a3b8" />
+              <line x1="10" y1="28" x2="10" y2="6" stroke="#94a3b8" strokeWidth="1" />
+              <circle cx="10" cy="6" r="2.5" fill="#94a3b8" />
             </svg>
-            <span>Bar height = TF-IDF</span>
+            <span>Stem & Dot = Prominence</span>
           </div>
+
           <div className="flex items-center gap-1">
             <span className="text-xl font-semibold text-slate-500">A</span>
             <span className="text-xs text-slate-400">a</span>
@@ -495,21 +449,19 @@ export function TrueWordRain({
           </div>
         </div>
 
-        <Button variant="outline" size="sm" onClick={handleDownload} className="flex items-center gap-2">
-          <Download className="h-4 w-4" />
-          Export PNG
-        </Button>
+
       </div>
 
       {/* Word Rain Panel */}
       <div
+        ref={scrollRef}
         className="bg-white rounded-lg border shadow-sm overflow-y-auto custom-scrollbar w-full"
         style={{ maxHeight: panelHeight }}
       >
         <WordRainPanel
           words={wordData}
           width={panelWidth - 16} // Adjust for scrollbar
-          height={Math.max(panelHeight * 2, 1500)} // Full spectrum height
+          height={calculatedHeight}
           layout={layout}
           scoring={scoring}
         />

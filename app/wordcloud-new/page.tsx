@@ -153,8 +153,10 @@ export default function WordCloudNewPage() {
                         <SelectValue placeholder="Select Year" />
                     </SelectTrigger>
                     <SelectContent>
-                        {(data?.availableYears || [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]).map(year => (
-                            <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
+                        {(data?.availableYears || [0, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]).map(year => (
+                            <SelectItem key={year} value={year === 0 ? "all" : year.toString()}>
+                                {year === 0 ? "All Years (2019-2026)" : year}
+                            </SelectItem>
                         ))}
                     </SelectContent>
                 </Select>

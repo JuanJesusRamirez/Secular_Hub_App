@@ -9,7 +9,13 @@ export async function GET(request: Request) {
         const limit = parseInt(limitParam, 10) || 200;
         const mode = searchParams.get('mode') || 'words';
         const yearParam = searchParams.get('year') || '2022';
-        const year = parseInt(yearParam, 10) || 2022;
+
+        let year: number;
+        if (yearParam === 'all') {
+            year = 0;
+        } else {
+            year = parseInt(yearParam, 10) || 2022;
+        }
 
         // 1. Try to fetch from Cache first
         const cacheKey = {
@@ -102,7 +108,7 @@ export async function GET(request: Request) {
         const uniqueYears = yearsRows.map(r => r.year);
 
         const responseData = {
-            year: year,
+            year: year === 0 ? 'all' : year,
             wordCount: processedData.length,
             totalDocuments: 1, // Placeholder
             uniqueInstitutions: 1, // Placeholder

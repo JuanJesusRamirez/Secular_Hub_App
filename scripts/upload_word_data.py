@@ -102,6 +102,9 @@ def main():
         ("word_rain_data_2025.csv", "word_analysis", 2025),
         ("word_rain_phrases_data_2022.csv", "phrase_analysis", 2022),
         ("word_rain_phrases_data_2025.csv", "phrase_analysis", 2025),
+        # Aggregated data (2019-2026) mapped to year 0 (Special value for 'All Years')
+        ("word_rain_data_2019_2026.csv", "word_analysis", 0),
+        ("word_rain_phrases_data_2019_2026.csv", "phrase_analysis", 0),
     ]
     
     for file, table, year in tasks:

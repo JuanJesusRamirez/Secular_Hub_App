@@ -4,8 +4,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { RefreshCw, Copy } from "lucide-react";
 import { useAiSummary } from "@/lib/hooks/use-ai-summary";
 
-export function ConsensusSummary() {
-  const { summary, loading, error, regenerate } = useAiSummary({ year: 2026 });
+interface ConsensusSummaryProps {
+  year?: number;
+}
+
+export function ConsensusSummary({ year = 2026 }: ConsensusSummaryProps) {
+  const { summary, loading, error, regenerate } = useAiSummary({ year });
 
   const handleCopy = () => {
     if (summary) {

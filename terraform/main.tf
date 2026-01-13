@@ -111,6 +111,11 @@ resource "azurerm_container_app" "main" {
     value = var.microsoft_provider_authentication_secret
   }
 
+  secret {
+    name  = "openai-api-key"
+    value = var.openai_api_key
+  }
+
   registry {
     server               = data.azurerm_container_registry.acr.login_server
     username             = data.azurerm_container_registry.acr.admin_username
@@ -137,6 +142,11 @@ resource "azurerm_container_app" "main" {
       env {
         name        = "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET"
         secret_name = "microsoft-provider-authentication-secret"
+      }
+
+      env {
+        name        = "OPENAI_API_KEY"
+        secret_name = "openai-api-key"
       }
     }
 

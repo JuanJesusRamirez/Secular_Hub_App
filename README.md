@@ -1,6 +1,6 @@
 # Secular Hub App
 
-Plataforma de análisis de Bloomberg Investment Outlooks construida con Next.js, TypeScript, Prisma y SQLite.
+Plataforma de análisis de Bloomberg Investment Outlooks construida con Next.js, TypeScript, Prisma y **PostgreSQL**.
 
 ## 📋 Requisitos
 

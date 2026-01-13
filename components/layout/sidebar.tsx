@@ -144,6 +144,13 @@ export function Sidebar() {
         )}
       </div>
 
+      {/* Version Info */}
+      {!collapsed && (
+        <div className="px-6 py-2 pb-4 text-[10px] text-primary-foreground/40 border-t border-primary-foreground/5">
+          v2.0.0 - PostgreSQL Powered
+        </div>
+      )}
+
       {/* Collapse Toggle Button */}
       <button
         onClick={toggle}

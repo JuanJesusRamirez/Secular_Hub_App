@@ -23,6 +23,7 @@ import {
   Sparkles,
   Cloud,
   CloudRain,
+  FileText,
 } from "lucide-react";
 
 interface NavigationItem {
@@ -35,6 +36,7 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", icon: LayoutDashboard },
   { name: "Executive", href: "/overview", icon: Briefcase },
+  { name: "Assets & Economics", href: "/assets", icon: FileText },
   { name: "Snapshot", href: "/snapshot", icon: PieChart },
   //  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
   { name: "Word Analysis", href: "/wordcloud-new", icon: CloudRain },

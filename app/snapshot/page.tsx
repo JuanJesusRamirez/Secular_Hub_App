@@ -13,9 +13,15 @@ import { FileText, Building2 } from "lucide-react";
 import SnapshotLoading from "./loading";
 import { fallbackSentimentData } from "@/lib/mock-data";
 
+import { useSearchParams } from "next/navigation";
+
 export default function SnapshotPage() {
-  const { themes, institutions, outlooks, stats, loading, error } = useSnapshotData(2026);
-  
+  const searchParams = useSearchParams();
+  const yearParam = searchParams.get('year');
+  const selectedYear = yearParam ? parseInt(yearParam, 10) : 2026;
+
+  const { themes, institutions, outlooks, stats, loading, error } = useSnapshotData(selectedYear);
+
   const [selectedInstitution, setSelectedInstitution] = useState<string | null>(null);
   const [selectedTheme, setSelectedTheme] = useState<string | null>(null);
   const [modalCalls, setModalCalls] = useState<OutlookCall[]>([]);
@@ -30,13 +36,13 @@ export default function SnapshotPage() {
     setLoadingModal(true);
     try {
       // Fetch calls specifically for this theme to ensure we have list
-      const query = new URLSearchParams({ 
-        year: '2026', 
+      const query = new URLSearchParams({
+        year: selectedYear.toString(),
         theme: theme,
         limit: '20'
       });
       if (selectedInstitution) query.append('institution', selectedInstitution);
-      
+
       const res = await fetch(`/api/outlooks?${query.toString()}`);
       const data = await res.json();
       setModalCalls(data.data || []);
@@ -60,27 +66,27 @@ export default function SnapshotPage() {
 
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
-      
+
       {/* Top Section: Summary & KPI */}
       <div className="grid gap-6 lg:grid-cols-3">
         {/* AI Summary - Spans 2 cols */}
         <div className="lg:col-span-2">
-          <ConsensusSummary />
+          <ConsensusSummary year={selectedYear} />
         </div>
 
         {/* KPI Grid - Spans 1 col, internal grid */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-          <StatCard 
-             title="Total Calls" 
-             value={stats?.total_records || 0} 
-             change={{ value: 26, direction: 'up' }}
-             icon={<FileText className="h-4 w-4 text-muted-foreground" />}
+          <StatCard
+            title="Total Calls"
+            value={stats?.total_records || 0}
+            change={{ value: 26, direction: 'up' }}
+            icon={<FileText className="h-4 w-4 text-muted-foreground" />}
           />
-          <StatCard 
-             title="Institutions" 
-             value={stats?.institutions?.length || 0} 
-             change={{ value: 12, direction: 'up' }}
-             icon={<Building2 className="h-4 w-4 text-muted-foreground" />}
+          <StatCard
+            title="Institutions"
+            value={stats?.institutions?.length || 0}
+            change={{ value: 12, direction: 'up' }}
+            icon={<Building2 className="h-4 w-4 text-muted-foreground" />}
           />
         </div>
       </div>
@@ -88,26 +94,26 @@ export default function SnapshotPage() {
       {/* Middle Section: Treemap & Sentiment */}
       <div className="grid gap-6 md:grid-cols-3">
         <div className="md:col-span-2">
-           <ThemeTreemap 
-             title="Theme Hierarchy" 
-             data={themes} 
-             onThemeClick={handleThemeClick} 
-             className="h-full"
-           />
+          <ThemeTreemap
+            title="Theme Hierarchy"
+            data={themes}
+            onThemeClick={handleThemeClick}
+            className="h-full"
+          />
         </div>
         <div className="md:col-span-1">
-           <SentimentDonut 
-             title="Sentiment Distribution" 
-             data={sentimentData} 
-             className="h-full"
-           />
+          <SentimentDonut
+            title="Sentiment Distribution"
+            data={sentimentData}
+            className="h-full"
+          />
         </div>
       </div>
 
       {/* Bottom Section: Institutions */}
       <div>
-        <InstitutionGrid 
-          institutions={institutions} 
+        <InstitutionGrid
+          institutions={institutions}
           onSelect={handleInstitutionSelect}
           selectedInstitution={selectedInstitution}
         />
@@ -115,9 +121,9 @@ export default function SnapshotPage() {
 
       {/* Modal */}
       {selectedTheme && (
-        <ThemeDetailModal 
-          isOpen={!!selectedTheme} 
-          onClose={() => setSelectedTheme(null)} 
+        <ThemeDetailModal
+          isOpen={!!selectedTheme}
+          onClose={() => setSelectedTheme(null)}
           theme={selectedTheme}
           calls={modalCalls}
         />

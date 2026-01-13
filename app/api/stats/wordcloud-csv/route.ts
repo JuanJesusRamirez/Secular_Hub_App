@@ -8,11 +8,19 @@ export async function GET(request: Request) {
         const scoring = searchParams.get('scoring') || 'importance';
         const limitParam = searchParams.get('limit') || '150';
         const limit = parseInt(limitParam, 10) || 150;
+        const mode = searchParams.get('mode') || 'words';
+        const yearParam = searchParams.get('year') || '2022';
 
-        const csvPath = path.join(process.cwd(), 'word_rain_data_2022.csv');
+        const year = parseInt(yearParam, 10) || 2022;
+
+        const csvFile = mode === 'phrases'
+            ? `word_rain_phrases_data_${year}.csv`
+            : `word_rain_data_${year}.csv`;
+
+        const csvPath = path.join(process.cwd(), csvFile);
 
         if (!fs.existsSync(csvPath)) {
-            return NextResponse.json({ error: 'CSV file not found' }, { status: 404 });
+            return NextResponse.json({ error: `CSV file not found: ${csvFile}` }, { status: 404 });
         }
 
         const fileContent = fs.readFileSync(csvPath, 'utf8');
@@ -27,56 +35,57 @@ export async function GET(request: Request) {
                 headers.forEach((header, i) => {
                     row[header] = values[i]?.trim();
                 });
-                return row;
-            })
-            .map(row => {
+
+                const text = row.word || row.text;
                 const tfidf = parseFloat(row.tfidf_score) || 0;
                 const freq = parseInt(row.frequency) || 0;
+                const semanticPosition = parseFloat(row.semantic_position) || 0.5;
+                const sentiment = row.sentiment_label?.toLowerCase();
+                const sentimentScore = parseFloat(row.sentiment_score) || 0;
+
+                let adjustedSentiment = sentimentScore;
+                if (sentiment === 'negative') adjustedSentiment = -sentimentScore;
+                else if (sentiment === 'neutral' || !sentiment) adjustedSentiment = 0;
+                else if (sentiment === 'positive') adjustedSentiment = sentimentScore;
+
                 return {
-                    text: row.word,
-                    tfidf: tfidf,
+                    text,
+                    tfidf,
                     frequency: freq,
-                    semanticPosition: row.semantic_position,
+                    semanticPosition,
                     value: scoring === 'frequency' ? freq : tfidf,
-                    sentiment: row.sentiment_label,
-                    sentimentScore: parseFloat(row.sentiment_score) || 0
+                    sentiment,
+                    sentimentScore,
+                    adjustedSentiment
                 };
             });
 
-        // Format for WordCloud component
         const sortedWords = words
             .sort((a, b) => b.value - a.value)
             .slice(0, limit);
 
-        // Prepare full data for Word Rain
-        const wordRainData = sortedWords.map(w => {
-            let adjustedScore = w.sentimentScore;
-            if (w.sentiment === 'Negative') adjustedScore = -w.sentimentScore;
-            else if (w.sentiment === 'Neutral') adjustedScore = 0; // neutral usually stays near 0
-
-            return {
-                text: w.text,
-                semanticX: parseFloat(w.semanticPosition) || 0.5,
-                avgTfidf: w.tfidf,
-                yearData: {
-                    2022: {
-                        frequency: w.frequency,
-                        tfidf: w.tfidf,
-                        sentiment: adjustedScore
-                    }
+        const wordRainData = sortedWords.map(w => ({
+            text: w.text,
+            semanticX: w.semanticPosition,
+            avgTfidf: w.tfidf,
+            yearData: {
+                [year]: {
+                    frequency: w.frequency,
+                    tfidf: w.tfidf,
+                    sentiment: w.adjustedSentiment
                 }
-            };
-        });
+            }
+        }));
 
         return NextResponse.json({
-            year: 2022,
+            year: year,
             wordCount: sortedWords.length,
             totalDocuments: 1,
             uniqueInstitutions: 1,
             words: sortedWords.map(w => ({ text: w.text, value: w.value })),
             wordRainWords: wordRainData,
-            availableYears: [2022],
-            mode: 'words',
+            availableYears: [year],
+            mode: mode,
             scoring: scoring,
             csv_data: sortedWords
         });

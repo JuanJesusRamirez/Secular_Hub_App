@@ -61,20 +61,35 @@ export default function WordCloudNewPage() {
     const [dimensions, setDimensions] = useState({ width: 800, height: 500 });
 
     // Fetch word cloud data from CSV
-    const fetchData = useCallback(async (limit: string, s: string) => {
+    const fetchData = useCallback(async (limit: string, s: string, m: 'words' | 'phrases', y: string) => {
         setLoading(true);
         setError(null);
         try {
             const params = new URLSearchParams();
             params.set("limit", limit);
             params.set("scoring", s);
+            params.set("mode", m);
+            params.set("year", y);
             const query = params.toString() ? `?${params.toString()}` : "";
 
-            // For this demo, we use the specific CSV endpoint
             const res = await fetch(`/api/stats/wordcloud-csv${query}`);
             if (!res.ok) throw new Error("Failed to fetch word cloud data from CSV");
             const json = await res.json();
+
+            if (json.error) throw new Error(json.error);
+
             setData(json);
+
+            // Extract sentiment data directly from the CSV response
+            if (json.csv_data) {
+                const newSentimentData: SentimentData = {};
+                json.csv_data.forEach((row: any) => {
+                    if (row.text) {
+                        newSentimentData[row.text.toLowerCase()] = row.adjustedSentiment;
+                    }
+                });
+                setSentimentData(newSentimentData);
+            }
         } catch (err) {
             setError(err instanceof Error ? err.message : "Unknown error");
         } finally {
@@ -114,17 +129,10 @@ export default function WordCloudNewPage() {
     }, []);
 
     useEffect(() => {
-        fetchData(wordLimit, scoring);
-    }, [wordLimit, scoring, fetchData]);
+        fetchData(wordLimit, scoring, mode, selectedYear);
+    }, [wordLimit, scoring, mode, selectedYear, fetchData]);
 
-    // Fetch sentiment when words change (only if enabled)
-    useEffect(() => {
-        if (data?.words && data.words.length > 0 && sentimentEnabled) {
-            fetchSentiment(data.words);
-        } else if (!sentimentEnabled) {
-            setSentimentData({});
-        }
-    }, [data?.words, fetchSentiment, sentimentEnabled]);
+
 
     // Responsive dimensions
     useEffect(() => {
@@ -163,19 +171,19 @@ export default function WordCloudNewPage() {
                         </Badge>
                     </div>
                     <p className="text-muted-foreground mt-1">
-                        Visualizing pre-calculated data from <code className="bg-muted px-1 rounded">word_rain_data_2022.csv</code>.
-                        <span className="hidden sm:inline"> Word size indicates importance (TF-IDF).</span>
+                        Visualizing pre-calculated data from <code className="bg-muted px-1 rounded">{mode === 'phrases' ? `word_rain_phrases_data_${selectedYear}.csv` : `word_rain_data_${selectedYear}.csv`}</code>.
+                        <span className="hidden sm:inline"> {mode === 'phrases' ? 'Phrase' : 'Word'} size indicates importance (TF-IDF).</span>
                     </p>
                 </div>
 
-                {/* Year Selector (Locked for demo) */}
-                <Select value={selectedYear} disabled>
+                <Select value={selectedYear} onValueChange={setSelectedYear}>
                     <SelectTrigger className="w-[150px]">
                         <Calendar className="h-4 w-4 mr-2" />
-                        <SelectValue placeholder="2022" />
+                        <SelectValue placeholder="Year" />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectItem value="2022">2022 (Static)</SelectItem>
+                        <SelectItem value="2022">2022</SelectItem>
+                        <SelectItem value="2025">2025</SelectItem>
                     </SelectContent>
                 </Select>
             </div>
@@ -218,7 +226,7 @@ export default function WordCloudNewPage() {
                     <CardContent>
                         <div className="text-2xl font-bold">CSV File</div>
                         <p className="text-xs text-muted-foreground">
-                            word_rain_data_2022.csv
+                            {mode === 'phrases' ? `word_rain_phrases_data_${selectedYear}.csv` : `word_rain_data_${selectedYear}.csv`}
                         </p>
                     </CardContent>
                 </Card>
@@ -247,7 +255,24 @@ export default function WordCloudNewPage() {
             <div className="flex flex-wrap gap-4 items-center">
                 <div className="flex items-center gap-2">
                     <span className="text-sm text-muted-foreground">Mode:</span>
-                    <Badge variant="outline">Words Only</Badge>
+                    <div className="flex rounded-lg border p-1 bg-background">
+                        <Button
+                            variant={mode === 'words' ? 'secondary' : 'ghost'}
+                            size="sm"
+                            className="h-7 px-3 text-xs"
+                            onClick={() => setMode('words')}
+                        >
+                            Words
+                        </Button>
+                        <Button
+                            variant={mode === 'phrases' ? 'secondary' : 'ghost'}
+                            size="sm"
+                            className="h-7 px-3 text-xs"
+                            onClick={() => setMode('phrases')}
+                        >
+                            Phrases
+                        </Button>
+                    </div>
                 </div>
 
                 {view === 'cloud' && (
@@ -419,7 +444,7 @@ export default function WordCloudNewPage() {
                             ) : data?.wordRainWords && data.wordRainWords.length > 0 ? (
                                 <TrueWordRain
                                     words={data.wordRainWords}
-                                    years={[2022]}
+                                    years={data.availableYears}
                                     panelWidth={dimensions.width}
                                     panelHeight={600}
                                     layout={layout}
@@ -440,13 +465,13 @@ export default function WordCloudNewPage() {
                     <CardHeader className="pb-3 border-b mb-4">
                         <CardTitle className="text-base flex items-center justify-between">
                             Detailed Breakdown (CSV)
-                            <Badge variant="outline">{data.words.length} terms</Badge>
+                            <Badge variant="outline">{data.words.length} {mode === 'phrases' ? 'phrases' : 'terms'}</Badge>
                         </CardTitle>
                     </CardHeader>
                     <CardContent>
                         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
                             {data.words.map((word) => {
-                                const sentiment = sentimentData[word.text];
+                                const sentiment = sentimentData[word.text.toLowerCase()];
                                 let sentimentColor = 'bg-slate-50';
                                 if (sentimentEnabled && sentiment !== undefined) {
                                     if (sentiment > 0.1) sentimentColor = 'bg-green-50 border-green-200';

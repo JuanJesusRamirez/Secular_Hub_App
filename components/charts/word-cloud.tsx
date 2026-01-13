@@ -85,8 +85,8 @@ function getWordColor(
   // Use sentiment-based colors if available
   if (showSentiment && sentimentData && sentimentData[lowerWord] !== undefined) {
     const sentiment = sentimentData[lowerWord];
-    if (sentiment > 0.3) return SENTIMENT_COLORS.bullish;
-    if (sentiment < -0.3) return SENTIMENT_COLORS.bearish;
+    if (sentiment > 0.1) return SENTIMENT_COLORS.bullish;
+    if (sentiment < -0.1) return SENTIMENT_COLORS.bearish;
     return SENTIMENT_COLORS.neutral;
   }
 
@@ -168,8 +168,8 @@ export function WordCloud({
     if (!showSentiment || !sentimentData) return null;
     const sentiment = sentimentData[word.toLowerCase()];
     if (sentiment === undefined) return null;
-    if (sentiment > 0.3) return 'bullish';
-    if (sentiment < -0.3) return 'bearish';
+    if (sentiment > 0.1) return 'bullish';
+    if (sentiment < -0.1) return 'bearish';
     return 'neutral';
   };
 

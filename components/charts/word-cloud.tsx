@@ -5,7 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Wordcloud from '@visx/wordcloud/lib/Wordcloud';
 import { Text } from '@visx/text';
-import { scaleLog } from '@visx/scale';
+import { scaleLog, scaleLinear } from '@visx/scale';
+import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export interface WordData {
   text: string;
@@ -25,6 +27,7 @@ interface WordCloudProps {
   className?: string;
   sentimentData?: SentimentData;
   showSentiment?: boolean;
+  downloadFileName?: string;
 }
 
 // Sentiment-based colors
@@ -33,20 +36,6 @@ const SENTIMENT_COLORS = {
   neutral: '#64748b',   // slate-500
   bearish: '#ef4444',   // red-500
 };
-
-// Financial-themed color palette (fallback when no sentiment)
-const COLORS = [
-  '#22c55e', // green-500 (growth)
-  '#3b82f6', // blue-500 (policy)
-  '#8b5cf6', // violet-500 (monetary)
-  '#f97316', // orange-500 (inflation)
-  '#06b6d4', // cyan-500 (rates)
-  '#ec4899', // pink-500 (markets)
-  '#eab308', // yellow-500 (slowdown)
-  '#14b8a6', // teal-500 (pivot)
-  '#6366f1', // indigo-500 (fiscal)
-  '#ef4444', // red-500 (risk)
-];
 
 // Words that should have specific colors based on their meaning (fallback)
 const SEMANTIC_COLORS: Record<string, string> = {
@@ -81,18 +70,24 @@ const SEMANTIC_COLORS: Record<string, string> = {
   valuations: '#8b5cf6',
 };
 
+// Vibrant palette common in classic density wordclouds
+const VIBRANT_COLORS = [
+  '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd',
+  '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'
+];
+
 function getWordColor(
   word: string,
   sentimentData?: SentimentData,
   showSentiment?: boolean
-): string {
+) {
   const lowerWord = word.toLowerCase();
 
   // Use sentiment-based colors if available
   if (showSentiment && sentimentData && sentimentData[lowerWord] !== undefined) {
     const sentiment = sentimentData[lowerWord];
-    if (sentiment > 0.3) return SENTIMENT_COLORS.bullish;
-    if (sentiment < -0.3) return SENTIMENT_COLORS.bearish;
+    if (sentiment > 0.1) return SENTIMENT_COLORS.bullish;
+    if (sentiment < -0.1) return SENTIMENT_COLORS.bearish;
     return SENTIMENT_COLORS.neutral;
   }
 
@@ -101,14 +96,14 @@ function getWordColor(
     return SEMANTIC_COLORS[lowerWord];
   }
 
-  // Use consistent color based on word hash
+  // Use consistent color based on word hash with vibrant palette
   const hash = lowerWord.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-  return COLORS[hash % COLORS.length];
+  return VIBRANT_COLORS[hash % VIBRANT_COLORS.length];
 }
 
 function getRotation(): number {
-  // Most words horizontal, some at slight angles
-  const rotations = [0, 0, 0, 0, -15, 15];
+  // Python WordCloud style: mostly horizontal, some vertical
+  const rotations = [0, 0, 0, 90];
   return rotations[Math.floor(Math.random() * rotations.length)];
 }
 
@@ -120,10 +115,47 @@ export function WordCloud({
   onWordClick,
   className,
   sentimentData,
-  showSentiment = false
+  showSentiment = false,
+  downloadFileName, // New prop
 }: WordCloudProps) {
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
 
+  const handleDownload = () => {
+    const svg = document.querySelector('.word-cloud-svg');
+    if (!svg) return;
+
+    // Create a temporary canvas to convert SVG to PNG
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+
+    const svgData = new XMLSerializer().serializeToString(svg);
+    const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+    const url = URL.createObjectURL(svgBlob);
+
+    img.onload = () => {
+      canvas.width = width * 2; // High resolution
+      canvas.height = height * 2;
+      if (ctx) {
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.scale(2, 2);
+        ctx.drawImage(img, 0, 0);
+
+        const pngUrl = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = pngUrl;
+        link.download = `${downloadFileName || title || 'WordCloud'}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+      URL.revokeObjectURL(url);
+    };
+    img.src = url;
+  };
+
+  // ... (keep fontScale useMemo)
   // Calculate font size scale based on word frequencies
   const fontScale = useMemo(() => {
     if (words.length === 0) return () => 16;
@@ -132,11 +164,24 @@ export function WordCloud({
     const minValue = Math.min(...values);
     const maxValue = Math.max(...values);
 
+    // Python wordclouds have very dramatic size differences and fill rectangles
+    const minFont = 10;
+    const maxFont = Math.min(140, width / 5);
+
+    const isSmallValues = maxValue < 1;
+
+    if (isSmallValues) {
+      return scaleLinear({
+        domain: [minValue, maxValue],
+        range: [minFont, maxFont],
+      });
+    }
+
     return scaleLog({
-      domain: [Math.max(minValue, 1), Math.max(maxValue, minValue + 1)],
-      range: [14, 72],
+      domain: [Math.max(minValue, 0.1), Math.max(maxValue, 1)],
+      range: [minFont, maxFont],
     });
-  }, [words]);
+  }, [words, width]);
 
   const fontSizeSetter = (datum: WordData) => fontScale(datum.value);
 
@@ -145,8 +190,8 @@ export function WordCloud({
     if (!showSentiment || !sentimentData) return null;
     const sentiment = sentimentData[word.toLowerCase()];
     if (sentiment === undefined) return null;
-    if (sentiment > 0.3) return 'bullish';
-    if (sentiment < -0.3) return 'bearish';
+    if (sentiment > 0.1) return 'bullish';
+    if (sentiment < -0.1) return 'bearish';
     return 'neutral';
   };
 
@@ -167,22 +212,24 @@ export function WordCloud({
 
   return (
     <Card className={cn("flex flex-col", className)}>
-      {title && (
-        <CardHeader className="pb-2">
-          <CardTitle className="text-lg">{title}</CardTitle>
-        </CardHeader>
-      )}
-      <CardContent className="flex-1 flex items-center justify-center p-4">
-        <svg width={width} height={height}>
+      <CardHeader className="pb-2 flex flex-row items-center justify-between">
+        {title && <CardTitle className="text-lg">{title}</CardTitle>}
+        <Button variant="ghost" size="icon" onClick={handleDownload} title="Download SVG">
+          <Download className="h-4 w-4" />
+        </Button>
+      </CardHeader>
+      <CardContent className="flex-1 flex items-center justify-center p-0 relative overflow-hidden bg-white">
+        <svg width={width} height={height} className="word-cloud-svg">
+          <rect width={width} height={height} fill="white" />
           <Wordcloud
             words={words}
             width={width}
             height={height}
             fontSize={fontSizeSetter}
             font="Inter, system-ui, sans-serif"
-            fontWeight={600}
-            padding={2}
-            spiral="archimedean"
+            fontWeight={800}
+            padding={1}
+            spiral="rectangular"
             rotate={getRotation}
             random={() => 0.5}
           >
@@ -199,7 +246,7 @@ export function WordCloud({
                     transform={`translate(${w.x}, ${w.y}) rotate(${w.rotate})`}
                     fontSize={w.size}
                     fontFamily={w.font}
-                    fontWeight={w.weight}
+                    fontWeight={800}
                     style={{
                       cursor: onWordClick ? 'pointer' : 'default',
                       opacity: hoveredWord && !isHovered ? 0.3 : 1,

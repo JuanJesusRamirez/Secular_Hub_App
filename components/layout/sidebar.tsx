@@ -29,8 +29,9 @@ const navigation = [
   { name: "Home", href: "/", icon: LayoutDashboard },
   { name: "Executive", href: "/overview", icon: Briefcase },
   { name: "Snapshot", href: "/snapshot", icon: PieChart },
-  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
-  { name: "Word Rain", href: "/wordrain", icon: CloudRain },
+  //  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
+  { name: "Word Analysis", href: "/wordcloud-new", icon: CloudRain },
+  //  { name: "Word Rain", href: "/wordrain", icon: CloudRain },
   { name: "Delta", href: "/delta", icon: TrendingUp },
   { name: "Historical", href: "/historical", icon: History },
   { name: "Narrative", href: "/narrative", icon: Sparkles },
@@ -89,6 +90,11 @@ export function Sidebar() {
                   )}>
                     {item.name}
                   </span>
+                  {item.badge && !collapsed && (
+                    <span className="ml-auto bg-blue-500 text-[10px] px-1.5 py-0.5 rounded-full text-white font-bold animate-pulse">
+                      {item.badge}
+                    </span>
+                  )}
                 </Link>
               </Button>
             );
@@ -137,6 +143,13 @@ export function Sidebar() {
           </Button>
         )}
       </div>
+
+      {/* Version Info */}
+      {!collapsed && (
+        <div className="px-6 py-2 pb-4 text-[10px] text-primary-foreground/40 border-t border-primary-foreground/5">
+          v2.0.0 - PostgreSQL Powered
+        </div>
+      )}
 
       {/* Collapse Toggle Button */}
       <button

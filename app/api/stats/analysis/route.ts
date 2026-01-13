@@ -8,13 +8,13 @@ export async function GET(request: Request) {
         const limitParam = searchParams.get('limit') || '200';
         const limit = parseInt(limitParam, 10) || 200;
         const mode = searchParams.get('mode') || 'words';
-        const yearParam = searchParams.get('year') || '2022';
+        const yearParam = searchParams.get('year') || '2026';
 
         let year: number;
         if (yearParam === 'all') {
             year = 0;
         } else {
-            year = parseInt(yearParam, 10) || 2022;
+            year = parseInt(yearParam, 10) || 2026;
         }
 
         // 1. Try to fetch from Cache first

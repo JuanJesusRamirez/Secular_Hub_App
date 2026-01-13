@@ -25,7 +25,14 @@ import {
   CloudRain,
 } from "lucide-react";
 
-const navigation = [
+interface NavigationItem {
+  name: string;
+  href: string;
+  icon: any;
+  badge?: string;
+}
+
+const navigation: NavigationItem[] = [
   { name: "Home", href: "/", icon: LayoutDashboard },
   { name: "Executive", href: "/overview", icon: Briefcase },
   { name: "Snapshot", href: "/snapshot", icon: PieChart },

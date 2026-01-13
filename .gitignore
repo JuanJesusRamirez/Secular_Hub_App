@@ -70,3 +70,4 @@ dist/
 pip-wheel-metadata/
 *.egg-info/
 *.egg
+docker.env

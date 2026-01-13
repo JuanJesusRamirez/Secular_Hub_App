@@ -201,7 +201,8 @@ export default function WordCloudNewPage() {
                                 <SelectContent>
                                     <SelectItem value="50">50 words</SelectItem>
                                     <SelectItem value="100">100 words</SelectItem>
-                                    <SelectItem value="150">150 words</SelectItem>
+                                    <SelectItem value="200">200 words</SelectItem>
+                                    <SelectItem value="300">300 words</SelectItem>
                                 </SelectContent>
                             </Select>
                         </div>
@@ -389,6 +390,7 @@ export default function WordCloudNewPage() {
                                     words={data.words}
                                     width={dimensions.width}
                                     height={dimensions.height}
+                                    title="Word Rain - WordCloud"
                                     onWordClick={handleWordClick}
                                     sentimentData={sentimentData}
                                     showSentiment={sentimentEnabled && Object.keys(sentimentData).length > 0}

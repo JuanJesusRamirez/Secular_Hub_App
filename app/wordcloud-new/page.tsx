@@ -46,7 +46,7 @@ interface SentimentResult {
 }
 
 export default function WordCloudNewPage() {
-    const [selectedYear, setSelectedYear] = useState<string>("2022");
+    const [selectedYear, setSelectedYear] = useState<string>("2026");
     const [wordLimit, setWordLimit] = useState<string>("100");
     const [mode, setMode] = useState<'words' | 'phrases'>('words');
     const [scoring, setScoring] = useState<'frequency' | 'importance'>('importance');

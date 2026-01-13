@@ -1,10 +1,11 @@
 {
   "name": "secular_hub_app",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Bloomberg Investment Outlooks Analysis Platform",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
+    "dev:wordcloud": "start http://localhost:3000/wordcloud && next dev",
     "typecheck": "tsc --noEmit",
     "build": "npm run typecheck && next build",
     "start": "next start",

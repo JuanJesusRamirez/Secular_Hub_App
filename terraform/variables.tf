@@ -15,5 +15,8 @@ variable "microsoft_provider_authentication_secret" {
   description = "Microsoft provider authentication secret"
   sensitive   = true
 }
-
-
+variable "openai_api_key" {
+  type        = string
+  description = "OpenAI API Key for analysis summaries"
+  sensitive   = true
+}

@@ -1,10 +1,12 @@
 import { useState, useCallback, useEffect } from 'react';
 
 interface UseAiSummaryProps {
+  year?: number;
+  themeCategory?: string;
   initialAutoFetch?: boolean;
 }
 
-export function useAiSummary({ initialAutoFetch = true }: UseAiSummaryProps = {}) {
+export function useAiSummary({ year = 2026, themeCategory, initialAutoFetch = true }: UseAiSummaryProps = {}) {
   const [summary, setSummary] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -17,8 +19,9 @@ export function useAiSummary({ initialAutoFetch = true }: UseAiSummaryProps = {}
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          prompt: "Generate a concise executive summary of the consensus application for 2026, highlighting key themes like inflation, growth, and monetary policy. Limit to 150 words.",
-          context: "snapshot_2026" 
+          year,
+          theme_category: themeCategory,
+          max_calls: 30
         }),
       });
 
@@ -27,9 +30,6 @@ export function useAiSummary({ initialAutoFetch = true }: UseAiSummaryProps = {}
       }
 
       const data = await response.json();
-      // Assuming API returns { result: string } or similar. Adjust based on actual API.
-      // If the API returns the string directly or in a different field, we'd adjust here.
-      // Based on common patterns:
       setSummary(data.summary || data.result || data.text || "Summary generated.");
     } catch (err) {
       console.error(err);

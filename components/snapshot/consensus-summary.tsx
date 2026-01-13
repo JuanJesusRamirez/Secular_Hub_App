@@ -4,8 +4,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { RefreshCw, Copy } from "lucide-react";
 import { useAiSummary } from "@/lib/hooks/use-ai-summary";
 
-export function ConsensusSummary() {
-  const { summary, loading, regenerate } = useAiSummary();
+interface ConsensusSummaryProps {
+  year?: number;
+}
+
+export function ConsensusSummary({ year = 2026 }: ConsensusSummaryProps) {
+  const { summary, loading, error, regenerate } = useAiSummary({ year });
 
   const handleCopy = () => {
     if (summary) {
@@ -35,6 +39,10 @@ export function ConsensusSummary() {
             <Skeleton className="h-4 w-full" />
             <Skeleton className="h-4 w-[90%]" />
             <Skeleton className="h-4 w-[80%]" />
+          </div>
+        ) : error ? (
+          <div className="text-destructive text-sm p-4 bg-destructive/10 rounded-md">
+            {error}. Make sure OpenAI/Azure environment variables are set.
           </div>
         ) : (
           <div className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground">

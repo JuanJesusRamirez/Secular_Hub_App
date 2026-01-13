@@ -23,11 +23,13 @@ import {
   Sparkles,
   Cloud,
   CloudRain,
+  FileText,
 } from "lucide-react";
 
 const navigation = [
   { name: "Home", href: "/", icon: LayoutDashboard },
   { name: "Executive", href: "/overview", icon: Briefcase },
+  { name: "Assets & Economics", href: "/assets", icon: FileText },
   { name: "Snapshot", href: "/snapshot", icon: PieChart },
   { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
   { name: "Word Rain", href: "/wordrain", icon: CloudRain },

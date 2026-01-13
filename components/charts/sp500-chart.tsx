@@ -53,15 +53,15 @@ export function SP500Chart() {
       try {
         const response = await fetch('/api/sp500');
         const result: SP500Response = await response.json();
-        
+
         // Prepare chart data
         const labels = result.data.map(d => d.date);
-        
+
         const datasets = [];
-        
+
         // Add SP500 actual data as solid line
         const sp500Data = result.data.map(d => d.SP500);
-        
+
         // Find the last non-null SP500 value and its index
         let lastSP500Value = null;
         let lastSP500Index = -1;
@@ -72,7 +72,7 @@ export function SP500Chart() {
             break;
           }
         }
-        
+
         datasets.push({
           label: 'S&P 500 (Actual)',
           data: sp500Data,
@@ -86,19 +86,19 @@ export function SP500Chart() {
             display: false
           }
         });
-        
+
         // Add firm projections as dashed lines
         const firms = result.headers.filter(h => h !== 'SP500');
-        
+
         // Group firms by their projection value
-        const firmsByValue: { [key: number]: string[] } = {};
-        const firmProjections: { [key: string]: { value: number, index: number } } = {};
-        
+        const firmsByValue: { [key: string]: string[] } = {};
+        const firmProjections: { [key: string]: { value: any, index: number } } = {};
+
         firms.forEach((firm) => {
           const firmData = result.data.map(d => d[firm]);
           let lastFirmValue = null;
           let lastFirmIndex = -1;
-          
+
           for (let i = firmData.length - 1; i >= 0; i--) {
             if (firmData[i] !== null) {
               lastFirmValue = firmData[i];
@@ -106,27 +106,27 @@ export function SP500Chart() {
               break;
             }
           }
-          
+
           if (lastFirmValue !== null && lastSP500Value !== null && lastFirmIndex > lastSP500Index) {
             firmProjections[firm] = { value: lastFirmValue, index: lastFirmIndex };
-            
+
             if (!firmsByValue[lastFirmValue]) {
               firmsByValue[lastFirmValue] = [];
             }
             firmsByValue[lastFirmValue].push(firm);
           }
         });
-        
+
         // Sort firmProjections by value (highest to lowest)
         const sortedFirms = Object.keys(firmProjections).sort((a, b) => {
           return firmProjections[b].value - firmProjections[a].value;
         });
-        
+
         // Create datasets with grouped labels, ordered by highest to lowest
         let colorIndex = 0;
         sortedFirms.forEach((firm) => {
           const { value: lastFirmValue, index: lastFirmIndex } = firmProjections[firm];
-          
+
           // Create data array that connects from last SP500 point to firm projection
           const projectionData = result.data.map((d, idx) => {
             if (idx === lastSP500Index) {
@@ -138,11 +138,11 @@ export function SP500Chart() {
             }
             return null;
           });
-          
+
           // Get all firms with same value for grouped label
           const groupedFirms = firmsByValue[lastFirmValue];
           const isFirstInGroup = groupedFirms[0] === firm;
-          
+
           datasets.push({
             label: firm,
             data: projectionData,
@@ -179,10 +179,10 @@ export function SP500Chart() {
               }
             }
           });
-          
+
           colorIndex++;
         });
-        
+
         setChartData({
           labels,
           datasets,
@@ -194,7 +194,7 @@ export function SP500Chart() {
         setLoading(false);
       }
     }
-    
+
     fetchData();
   }, []);
 
@@ -246,7 +246,7 @@ export function SP500Chart() {
         padding: 10,
         displayColors: true,
         callbacks: {
-          label: function(context: any) {
+          label: function (context: any) {
             let label = context.dataset.label || '';
             if (label) {
               label += ': ';
@@ -267,7 +267,7 @@ export function SP500Chart() {
         beginAtZero: false,
         grace: '5%',
         ticks: {
-          callback: function(value: any) {
+          callback: function (value: any) {
             return value.toLocaleString('en-US', {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0
@@ -340,7 +340,7 @@ export function SP500Chart() {
       <div className="w-full mb-8" style={{ height: '500px' }}>
         <Line data={chartData} options={options} />
       </div>
-      
+
       {/* Comments Section */}
       <div className="w-full">
         <h3 className="text-xl font-bold mb-6 text-gray-900">Comentarios de las Firmas</h3>
@@ -355,7 +355,7 @@ export function SP500Chart() {
             </div>
           ))}
         </div>
-        
+
         {/* Metodological Note */}
         <div className="mt-8 p-4 bg-gray-50 border-l-4 border-blue-500 rounded">
           <p className="text-xs text-gray-600 italic">

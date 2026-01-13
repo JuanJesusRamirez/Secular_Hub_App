@@ -85,8 +85,8 @@ export function FEDRateChart() {
         
         const firms = result.headers.filter(h => h !== 'DFEDTARU');
         
-        const firmsByValue: { [key: number]: string[] } = {};
-        const firmProjections: { [key: string]: { value: number, index: number } } = {};
+        const firmsByValue: { [key: string]: string[] } = {};
+        const firmProjections: { [key: string]: { value: any, index: number } } = {};
         
         firms.forEach((firm) => {
           const firmData = result.data.map(d => d[firm]);

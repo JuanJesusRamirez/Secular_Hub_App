@@ -53,12 +53,12 @@ export function XAUChart() {
       try {
         const response = await fetch('/api/xau');
         const result: XAUResponse = await response.json();
-        
+
         const labels = result.data.map(d => d.date);
         const datasets = [];
-        
+
         const xauData = result.data.map(d => d['AUX/USD']);
-        
+
         let lastXAUValue = null;
         let lastXAUIndex = -1;
         for (let i = xauData.length - 1; i >= 0; i--) {
@@ -68,7 +68,7 @@ export function XAUChart() {
             break;
           }
         }
-        
+
         datasets.push({
           label: 'XAU/USD (Actual)',
           data: xauData,
@@ -82,17 +82,17 @@ export function XAUChart() {
             display: false
           }
         });
-        
+
         const firms = result.headers.filter(h => h !== 'AUX/USD');
-        
-        const firmsByValue: { [key: number]: string[] } = {};
-        const firmProjections: { [key: string]: { value: number, index: number } } = {};
-        
+
+        const firmsByValue: { [key: string]: string[] } = {};
+        const firmProjections: { [key: string]: { value: any, index: number } } = {};
+
         firms.forEach((firm) => {
           const firmData = result.data.map(d => d[firm]);
           let lastFirmValue = null;
           let lastFirmIndex = -1;
-          
+
           for (let i = firmData.length - 1; i >= 0; i--) {
             if (firmData[i] !== null) {
               lastFirmValue = firmData[i];
@@ -100,25 +100,25 @@ export function XAUChart() {
               break;
             }
           }
-          
+
           if (lastFirmValue !== null && lastXAUValue !== null && lastFirmIndex > lastXAUIndex) {
             firmProjections[firm] = { value: lastFirmValue, index: lastFirmIndex };
-            
+
             if (!firmsByValue[lastFirmValue]) {
               firmsByValue[lastFirmValue] = [];
             }
             firmsByValue[lastFirmValue].push(firm);
           }
         });
-        
+
         const sortedFirms = Object.keys(firmProjections).sort((a, b) => {
           return firmProjections[b].value - firmProjections[a].value;
         });
-        
+
         let colorIndex = 0;
         sortedFirms.forEach((firm) => {
           const { value: lastFirmValue, index: lastFirmIndex } = firmProjections[firm];
-          
+
           const projectionData = result.data.map((d, idx) => {
             if (idx === lastXAUIndex) {
               return lastXAUValue;
@@ -129,10 +129,10 @@ export function XAUChart() {
             }
             return null;
           });
-          
+
           const groupedFirms = firmsByValue[lastFirmValue];
           const isFirstInGroup = groupedFirms[0] === firm;
-          
+
           datasets.push({
             label: firm,
             data: projectionData,
@@ -166,10 +166,10 @@ export function XAUChart() {
               }
             }
           });
-          
+
           colorIndex++;
         });
-        
+
         setChartData({
           labels,
           datasets,
@@ -181,7 +181,7 @@ export function XAUChart() {
         setLoading(false);
       }
     }
-    
+
     fetchData();
   }, []);
 
@@ -233,7 +233,7 @@ export function XAUChart() {
         padding: 10,
         displayColors: true,
         callbacks: {
-          label: function(context: any) {
+          label: function (context: any) {
             let label = context.dataset.label || '';
             if (label) {
               label += ': ';
@@ -254,7 +254,7 @@ export function XAUChart() {
         beginAtZero: false,
         grace: '5%',
         ticks: {
-          callback: function(value: any) {
+          callback: function (value: any) {
             return value.toLocaleString('en-US', {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0
@@ -326,7 +326,7 @@ export function XAUChart() {
       <div className="w-full mb-8" style={{ height: '500px' }}>
         <Line data={chartData} options={options} />
       </div>
-      
+
       <div className="w-full">
         <h3 className="text-xl font-bold mb-6 text-gray-900">Comentarios de las Firmas</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -340,7 +340,7 @@ export function XAUChart() {
             </div>
           ))}
         </div>
-        
+
         {/* Metodological Note */}
         <div className="mt-8 p-4 bg-gray-50 border-l-4 border-yellow-500 rounded">
           <p className="text-xs text-gray-600 italic">

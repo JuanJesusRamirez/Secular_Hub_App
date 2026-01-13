@@ -23,7 +23,7 @@ export async function GET(request: Request) {
             where: {
                 year_mode_scoring_wordLimit: cacheKey
             }
-        });
+        }).catch(() => null);
 
         // If cache exists and is less than 24 hours old, return it
         if (cached && (Date.now() - new Date(cached.updatedAt).getTime() < 24 * 60 * 60 * 1000)) {
@@ -33,18 +33,25 @@ export async function GET(request: Request) {
 
         console.log(`🔍 Cache Miss: Fetching from Database for ${year}-${mode}-${scoring}`);
 
-        // 2. Fetch from Database using Prisma
-        const analysisRows = mode === 'phrases'
-            ? await prisma.phraseAnalysis.findMany({
-                where: { year },
-                orderBy: scoring === 'frequency' ? { frequency: 'desc' } : { tfidfScore: 'desc' },
-                take: limit,
-            })
-            : await prisma.wordAnalysis.findMany({
-                where: { year },
-                orderBy: scoring === 'frequency' ? { frequency: 'desc' } : { tfidfScore: 'desc' },
-                take: limit,
-            });
+        // 2. Fetch from Database using Raw SQL to bypass outdated Prisma client types
+        const tableName = mode === 'phrases' ? 'phrase_analysis' : 'word_analysis';
+        const orderBy = scoring === 'frequency' ? 'frequency DESC' : 'tfidf_score DESC';
+
+        const analysisRows: any[] = await prisma.$queryRawUnsafe(`
+            SELECT 
+                term, 
+                year, 
+                tfidf_score as "tfidfScore", 
+                semantic_position as "semanticPosition", 
+                frequency, 
+                relative_frequency as "relativeFreq", 
+                sentiment_label as "sentimentLabel", 
+                sentiment_score as "sentimentScore"
+            FROM "${tableName}"
+            WHERE "year" = $1
+            ORDER BY ${orderBy}
+            LIMIT $2
+        `, year, limit);
 
         if (!analysisRows || analysisRows.length === 0) {
             return NextResponse.json({
@@ -88,12 +95,11 @@ export async function GET(request: Request) {
             }
         }));
 
-        // Fetch available years for the indicator
-        const availableYearsData = mode === 'phrases'
-            ? await prisma.phraseAnalysis.findMany({ select: { year: true }, distinct: ['year'] })
-            : await prisma.wordAnalysis.findMany({ select: { year: true }, distinct: ['year'] });
-
-        const availableYears = availableYearsData.map(y => y.year).sort();
+        // Fetch available years for the indicator using Raw SQL
+        const yearsRows: any[] = await prisma.$queryRawUnsafe(`
+            SELECT DISTINCT "year" FROM "${tableName}" ORDER BY "year" ASC
+        `);
+        const uniqueYears = yearsRows.map(r => r.year);
 
         const responseData = {
             year: year,
@@ -102,13 +108,14 @@ export async function GET(request: Request) {
             uniqueInstitutions: 1, // Placeholder
             words: processedData.map(w => ({ text: w.text, value: w.value })),
             wordRainWords: wordRainData,
-            availableYears: availableYears.length > 0 ? availableYears : [2022, 2025],
+            availableYears: uniqueYears.length > 0 ? uniqueYears : [2022, 2025],
             mode: mode,
             scoring: scoring,
-            analysisData: processedData // Renamed from csv_data
+            analysisData: processedData
         };
 
         // 3. Save to Cache for next time
+        // Note: WordCloudCache should exist in your DB since we did db push
         await prisma.wordCloudCache.upsert({
             where: {
                 year_mode_scoring_wordLimit: cacheKey
@@ -123,7 +130,7 @@ export async function GET(request: Request) {
                 totalDocs: 1,
                 uniqueInst: 1
             }
-        });
+        }).catch(err => console.error("Cache save error:", err));
 
         return NextResponse.json(responseData);
     } catch (error) {

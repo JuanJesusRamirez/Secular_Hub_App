@@ -13,10 +13,15 @@ export async function GET() {
     // Parse header (line 1)
     const headers = lines[0].split(';');
     
-    // Find the comments line - it should be line 257 (index 256)
+    // Find the comments line - it's at row 618 (index 617) which contains "2/01/2027"
     let commentsLine = null;
-    if (lines.length >= 257) {
-      commentsLine = lines[256]; // Line 257 (0-indexed)
+    for (let i = 0; i < lines.length; i++) {
+      const firstCol = lines[i].split(';')[0];
+      if (firstCol === '2/01/2027') {
+        commentsLine = lines[i];
+        console.log('Found comments line at index:', i);
+        break;
+      }
     }
     
     // Parse comments
@@ -29,6 +34,7 @@ export async function GET() {
           comments[header] = comment.trim();
         }
       });
+      console.log('Parsed comments:', Object.keys(comments));
     }
     
     // Parse data (exclude comment lines - only lines with dates)

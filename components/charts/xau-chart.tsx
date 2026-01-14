@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo, useRef, useCallback } from 'react';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -14,6 +14,7 @@ import {
   Filler,
 } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import type { ChartJSOrUndefined } from 'react-chartjs-2/dist/types';
 
 ChartJS.register(
   CategoryScale,
@@ -46,7 +47,10 @@ const FIRM_COLORS = [
 export function XAUChart() {
   const [chartData, setChartData] = useState<any>(null);
   const [comments, setComments] = useState<{ [key: string]: string }>({});
+  const [firmProjectionsList, setFirmProjectionsList] = useState<Array<{firm: string, value: number, color: string, dataIndex: number}>>([]);
   const [loading, setLoading] = useState(true);
+  const [labelPositions, setLabelPositions] = useState<Array<{firm: string, x: number, y: number, value: number, color: string}>>([]);
+  const chartRef = useRef<ChartJSOrUndefined<'line'>>(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -115,6 +119,7 @@ export function XAUChart() {
           return firmProjections[b].value - firmProjections[a].value;
         });
 
+        const projectionsList: Array<{firm: string, value: number, color: string, dataIndex: number}> = [];
         let colorIndex = 0;
         sortedFirms.forEach((firm) => {
           const { value: lastFirmValue, index: lastFirmIndex } = firmProjections[firm];
@@ -130,45 +135,37 @@ export function XAUChart() {
             return null;
           });
 
-          const groupedFirms = firmsByValue[lastFirmValue];
-          const isFirstInGroup = groupedFirms[0] === firm;
-
           datasets.push({
             label: firm,
             data: projectionData,
             borderColor: FIRM_COLORS[colorIndex % FIRM_COLORS.length],
-            backgroundColor: 'transparent',
+            backgroundColor: FIRM_COLORS[colorIndex % FIRM_COLORS.length],
             borderWidth: 2,
             borderDash: [5, 5],
-            pointRadius: 0,
-            pointHoverRadius: 6,
+            pointRadius: (context: any) => {
+              return context.dataIndex === lastFirmIndex ? 5 : 0;
+            },
+            pointHoverRadius: 8,
+            pointStyle: 'circle',
             tension: 0.1,
             fill: false,
             spanGaps: true,
             datalabels: {
-              align: 'right',
-              anchor: 'end',
-              offset: 4,
-              color: FIRM_COLORS[colorIndex % FIRM_COLORS.length],
-              font: {
-                size: 9,
-                weight: 'bold'
-              },
-              formatter: (value: any, context: any) => {
-                if (value !== null && context.dataIndex === lastFirmIndex && isFirstInGroup) {
-                  if (groupedFirms.length > 1) {
-                    return `${groupedFirms.join(', ')} ${Math.round(value).toLocaleString()}`;
-                  } else {
-                    return `${firm} ${Math.round(value).toLocaleString()}`;
-                  }
-                }
-                return '';
-              }
+              display: false
             }
+          });
+
+          projectionsList.push({
+            firm: firm,
+            value: lastFirmValue,
+            color: FIRM_COLORS[colorIndex % FIRM_COLORS.length],
+            dataIndex: lastFirmIndex
           });
 
           colorIndex++;
         });
+
+        setFirmProjectionsList(projectionsList);
 
         setChartData({
           labels,
@@ -185,13 +182,16 @@ export function XAUChart() {
     fetchData();
   }, []);
 
-  const options = {
+  const options = useMemo(() => ({
     responsive: true,
     maintainAspectRatio: false,
+    animation: {
+      duration: 300,
+    },
     layout: {
       padding: {
         top: 20,
-        right: 150,
+        right: 200,
         bottom: 10,
         left: 10
       }
@@ -202,7 +202,7 @@ export function XAUChart() {
     },
     plugins: {
       datalabels: {
-        display: true,
+        display: false,
         clip: false,
       },
       legend: {
@@ -221,32 +221,7 @@ export function XAUChart() {
         },
       },
       tooltip: {
-        enabled: true,
-        position: 'nearest' as const,
-        yAlign: 'center' as const,
-        xAlign: 'left' as const,
-        backgroundColor: 'rgba(0, 0, 0, 0.8)',
-        titleColor: '#fff',
-        bodyColor: '#fff',
-        borderColor: '#fff',
-        borderWidth: 1,
-        padding: 10,
-        displayColors: true,
-        callbacks: {
-          label: function (context: any) {
-            let label = context.dataset.label || '';
-            if (label) {
-              label += ': ';
-            }
-            if (context.parsed.y !== null) {
-              label += context.parsed.y.toLocaleString('en-US', {
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-              });
-            }
-            return label;
-          }
-        }
+        enabled: false
       }
     },
     scales: {
@@ -283,7 +258,7 @@ export function XAUChart() {
           maxRotation: 45,
           minRotation: 45,
           autoSkip: true,
-          maxTicksLimit: 15,
+          maxTicksLimit: 20,
           font: {
             size: 9,
           },
@@ -291,7 +266,7 @@ export function XAUChart() {
         },
         title: {
           display: true,
-          text: 'Fecha',
+          text: 'Fecha (Frecuencia Diaria)',
           font: {
             size: 12,
             weight: 'bold' as const,
@@ -300,10 +275,68 @@ export function XAUChart() {
         },
         grid: {
           color: 'rgba(0, 0, 0, 0.05)',
+          display: true
         }
       }
     }
-  };
+  }), []);
+
+  // Calculate label positions when chart updates
+  const updateLabelPositions = useCallback(() => {
+    if (chartRef.current && firmProjectionsList.length > 0) {
+      const chart = chartRef.current;
+      const positions: Array<{firm: string, x: number, y: number, value: number, color: string}> = [];
+      
+      // Group firms by value
+      const firmsByValue: { [key: number]: Array<{firm: string, color: string, dataIndex: number}> } = {};
+      firmProjectionsList.forEach(fp => {
+        if (!firmsByValue[fp.value]) {
+          firmsByValue[fp.value] = [];
+        }
+        firmsByValue[fp.value].push({ firm: fp.firm, color: fp.color, dataIndex: fp.dataIndex });
+      });
+      
+      // For each unique value, create one label position
+      Object.entries(firmsByValue).forEach(([value, firms]) => {
+        const firstFirm = firms[0];
+        const datasetIndex = chart.data.datasets.findIndex((ds: any) => ds.label === firstFirm.firm);
+        if (datasetIndex !== -1) {
+          const meta = chart.getDatasetMeta(datasetIndex);
+          const point = meta.data[firstFirm.dataIndex];
+          if (point) {
+            positions.push({
+              firm: firms.map(f => f.firm).join(', '),
+              x: point.x,
+              y: point.y,
+              value: parseFloat(value),
+              color: firstFirm.color
+            });
+          }
+        }
+      });
+      
+      setLabelPositions(positions);
+    }
+  }, [firmProjectionsList]);
+
+  useEffect(() => {
+    const timers = [
+      setTimeout(updateLabelPositions, 100),
+      setTimeout(updateLabelPositions, 300),
+      setTimeout(updateLabelPositions, 500),
+      setTimeout(updateLabelPositions, 1000),
+    ];
+    
+    const handleResize = () => {
+      setTimeout(updateLabelPositions, 100);
+    };
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      timers.forEach(t => clearTimeout(t));
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [chartData, updateLabelPositions]);
 
   if (loading) {
     return (
@@ -323,30 +356,57 @@ export function XAUChart() {
 
   return (
     <div className="w-full flex flex-col p-6">
-      <div className="w-full mb-8" style={{ height: '500px' }}>
-        <Line data={chartData} options={options} />
-      </div>
-
-      <div className="w-full">
-        <h3 className="text-xl font-bold mb-6 text-gray-900">Comentarios de las Firmas</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {Object.entries(comments).map(([firm, comment]) => (
+      <div className="w-full mb-8 relative" style={{ height: '500px' }}>
+        <Line 
+          ref={chartRef} 
+          data={chartData} 
+          options={options}
+        />
+        
+        {/* Interactive HTML labels for each firm */}
+        {labelPositions.map(({ firm, x, y, value, color }) => {
+          const firmsInGroup = firm.split(', ');
+          
+          return (
             <div
               key={firm}
-              className="border border-gray-200 rounded-lg p-5 bg-white shadow-sm hover:shadow-md transition-shadow"
+              className="absolute pointer-events-auto"
+              style={{
+                left: `${x + 8}px`,
+                top: `${y}px`,
+                transform: 'translateY(-50%)',
+                zIndex: 10
+              }}
             >
-              <h4 className="font-bold text-base mb-3 text-gray-900">{firm}</h4>
-              <p className="text-sm text-gray-700 leading-relaxed">{comment}</p>
+              <div className="flex flex-row items-center gap-1">
+                {firmsInGroup.map((singleFirm, idx) => (
+                  <div key={singleFirm} className="relative group">
+                    <div 
+                      className="text-[9px] font-bold cursor-pointer px-1 py-0.5 rounded whitespace-nowrap hover:bg-gray-100 transition-colors"
+                      style={{ color: color }}
+                    >
+                      {singleFirm}{idx === firmsInGroup.length - 1 ? ` ${Math.round(value).toLocaleString()}` : ','} 
+                    </div>
+                    
+                    {/* Tooltip */}
+                    {comments[singleFirm] && (
+                      <div className="absolute z-[100] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 left-full ml-2 top-1/2 -translate-y-1/2" style={{ width: '320px' }}>
+                        <div className="bg-gray-900 text-white text-xs rounded-lg p-4 shadow-2xl">
+                          <div className="font-bold mb-2 pb-2 border-b border-gray-600 flex justify-between items-center">
+                            <span>💬 {singleFirm}</span>
+                            <span className="text-gray-300">{Math.round(value).toLocaleString()}</span>
+                          </div>
+                          <p className="leading-relaxed mt-2 text-[11px]">{comments[singleFirm]}</p>
+                          <div className="absolute top-1/2 -translate-y-1/2 left-0 -translate-x-full border-8 border-transparent border-r-gray-900"></div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-
-        {/* Metodological Note */}
-        <div className="mt-8 p-4 bg-gray-50 border-l-4 border-yellow-500 rounded">
-          <p className="text-xs text-gray-600 italic">
-            <strong>Nota Metodológica:</strong> Se tomaron 10 firmas de las más reconocidas de manera aleatoria teniendo como criterio que tengan una cifra cerrada de expectativa del precio del asset para cierre de fin de año.
-          </p>
-        </div>
+          );
+        })}
       </div>
     </div>
   );

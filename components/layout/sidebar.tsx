@@ -24,6 +24,7 @@ import {
   Cloud,
   CloudRain,
   FileText,
+  BookOpen,
 } from "lucide-react";
 
 const navigation = [
@@ -35,6 +36,7 @@ const navigation = [
   { name: "Word Rain", href: "/wordrain", icon: CloudRain },
   { name: "Delta", href: "/delta", icon: TrendingUp },
   { name: "Historical", href: "/historical", icon: History },
+  { name: "Tesis", href: "/tesis", icon: BookOpen },
   { name: "Narrative", href: "/narrative", icon: Sparkles },
   { name: "Explorer", href: "/explorer", icon: Compass },
 ];

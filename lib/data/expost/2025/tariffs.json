@@ -1,0 +1,611 @@
+[
+  {
+    "statements": [
+      {
+        "statement": "We expect at least one major broad-based unilateral tariff next year: either a 10% tariff on all US imports or a large tariff on imports from China.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. The Trump administration implemented broad-based tariffs exceeding these thresholds. J.P. Morgan reported that 'the average effective U.S. tariff rate stands at 15.8% — a significant increase from the 2.3% rate at the end of 2024' (SOURCE: US Tariffs: What's the Impact?, J.P. Morgan Global Research, December 2025, https://links.message.bloomberg.com/s/c/8djF0q5zDvmV-Qp5fn4kXxdQmshH4Dj_673XGoRGDyRbrVmzIbya2dRMzi-7pIi4ilv1j8UmPtcaimLjWjLvBLq3ewPe34p3UU3FcBLevaj-hgWF1_YxK21pNw5FQt0gjy56BKA8y5MEY5wgUFJ5oPBN9srgOUb11lP6ObUmbFgvFVLkTmMt5hna0me-MuFhp-Wcz7E-kAyQ3YFpIOxCepCZxdIBETVVFuDVIxlXM5L261Uf7yfSloNIwJDZt05ZF3S4mJVqxT25aa2kQPX5sOe-GUt7dWMzI7bmIjuOuLG0KPEsN-Vz5ncFTdvnxceJ81AkiW_qid7hAvlZ4OjKUj9BUvLYXIwQc-xzaExD1Mt9n0YXRMevJ_rPxiesHYu7sfd3B0jFGed-PlQmxqAeEdhLPlKD0wf8CT1oQLw3iepPXLsdPJKOtMQJg1a34aFKyDs/RQbzMnzXCyWIB27p7Dz8gPcW0C69e6Bt/8). Additionally, the Atlantic Council noted that 'the world's largest economy hiked its tariff rates to the highest level in a century' (SOURCE: By the numbers: The global economy in 2025, Atlantic Council, December 2025, https://www.atlanticcouncil.org/dispatches/by-the-numbers-the-global-economy-in-2025/). China-specific tariffs were also implemented as part of the broader trade war."
+      },
+      {
+        "statement": "Trump's tariff proposals go well beyond what was implemented between 2018 and 2019, to the point that even half measures would probably cause a substantial global shock.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved accurate. The tariff implementation in 2025 significantly exceeded 2018-2019 levels. The Atlantic Council confirmed that tariff rates reached 'the highest level in a century' (SOURCE: By the numbers: The global economy in 2025, Atlantic Council, December 2025, https://www.atlanticcouncil.org/dispatches/by-the-numbers-the-global-economy-in-2025/). The global shock materialized as evidenced by McKinsey's finding that 'trade policy changes were the top perceived risk to growth in the global economy' and that 'the share of respondents citing trade-related changes as one of the biggest disruptions to the global economy has more than doubled over the past six months' (SOURCE: Economic conditions outlook, December 2025, McKinsey, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook). German auto exports fell by 14% in the first three quarters of 2025 (SOURCE: German auto exports hit hard by Trump tariffs, study shows, Reuters, December 22, 2025, https://www.reuters.com/business/autos-transportation/german-auto-exports-hit-hard-by-trump-tariffs-study-shows-2025-12-22/)."
+      }
+    ],
+    "overall_analysis": "BCA Research's predictions on tariff implementation were highly accurate, correctly anticipating both the magnitude and scope of Trump's tariff actions in 2025. They accurately forecasted that tariffs would exceed historical precedent and create substantial global disruption. The institution demonstrated strong foresight in recognizing that the proposed tariff levels would represent a significant escalation beyond 2018-2019 measures.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "BCA Research's predictions on tariff implementation were highly accurate, correctly anticipating both the magnitude and scope of Trump's tariff actions in 2025. They accurately forecasted that tariffs would exceed historical precedent and create substantial global disruption. The institution demonstrated strong foresight in recognizing that the proposed tariff levels would represent a significant escalation beyond 2018-2019 measures.",
+    "id": "TARIFFS-BCA_RESEARCH-2-2025",
+    "Original_Rank": 2,
+    "Prediction_Text": "\"We expect at least one major broad-based unilateral tariff next year: either a 10% tariff on all US imports or a large tariff on imports from China. Trump's tariff proposals go well beyond what was implemented between 2018 and 2019, to the point that even half measures would probably cause a substantial global shock.\"",
+    "Institution": "BCA RESEARCH",
+    "Rank": 1
+  },
+  {
+    "statements": [
+      {
+        "statement": "There can be little doubt that Trump will not be able to implement all of his plans in full, especially since some of them counteract one another.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved accurate. While Trump implemented substantial tariffs ($200 billion collected between January 20 and December 15, 2025 per SOURCE: New Trump tariffs collection hits $200 billion, Customs says, CNBC, December 15, 2025, https://www.cnbc.com/2025/12/15/trump-tariffs-trade-customs-imports.html), the implementation was not uniform or complete. J.P. Morgan noted that the effective tariff rate of 15.8% was 'roughly six percentage points lower than the 22% recorded on Liberation Day' (SOURCE: US Tariffs: What's the Impact?, J.P. Morgan Global Research, December 2025, https://links.message.bloomberg.com/s/c/8djF0q5zDvmV-Qp5fn4kXxdQmshH4Dj_673XGoRGDyRbrVmzIbya2dRMzi-7pIi4ilv1j8UmPtcaimLjWjLvBLq3ewPe34p3UU3FcBLevaj-hgWF1_YxK21pNw5FQt0gjy56BKA8y5MEY5wgUFJ5oPBN9srgOUb11lP6ObUmbFgvFVLkTmMt5hna0me-MuFhp-Wcz7E-kAyQ3YFpIOxCepCZxdIBETVVFuDVIxlXM5L261Uf7yfSloNIwJDZt05ZF3S4mJVqxT25aa2kQPX5sOe-GUt7dWMzI7bmIjuOuLG0KPEsN-Vz5ncFTdvnxceJ81AkiW_qid7hAvlZ4OjKUj9BUvLYXIwQc-xzaExD1Mt9n0YXRMevJ_rPxiesHYu7sfd3B0jFGed-PlQmxqAeEdhLPlKD0wf8CT1oQLw3iepPXLsdPJKOtMQJg1a34aFKyDs/RQbzMnzXCyWIB27p7Dz8gPcW0C69e6Bt/8), indicating some moderation from initial proposals."
+      },
+      {
+        "statement": "For example, getting a grip on the cost of living crisis, i.e. lowering inflation faster, is unlikely to go hand in hand with import tariffs and a ban on migration.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved accurate. The contradiction between tariff implementation and inflation control materialized. CFOs expect 4.2% price rise in 2026 (SOURCE: Finance chiefs see US prices rising next year, tariffs still a top concern, Reuters, December 17, 2025, https://www.reuters.com/business/finance-chiefs-see-us-prices-rising-next-year-tariffs-still-top-concern-2025-12-17/), demonstrating that tariffs contributed to inflationary pressures rather than reducing them. McKinsey noted that 'Companies are not passing the full costs of tariffs on to their customers' (SOURCE: Supply chain risk pulse 2025: Tariffs reshuffle global trade, McKinsey, December 2025, https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey), but tariffs still raised prices. The prediction correctly identified the policy contradiction between tariff implementation and inflation control objectives."
+      }
+    ],
+    "overall_analysis": "DWS demonstrated strong analytical insight by correctly predicting that Trump would not implement all plans in full and that tariff policies would contradict inflation-control objectives. The institution accurately identified the inherent contradictions in the policy agenda, showing sophisticated understanding of policy trade-offs. This prediction proved more accurate than more optimistic forecasts that underestimated the inflationary consequences of tariff implementation.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "DWS demonstrated strong analytical insight by correctly predicting that Trump would not implement all plans in full and that tariff policies would contradict inflation-control objectives. The institution accurately identified the inherent contradictions in the policy agenda, showing sophisticated understanding of policy trade-offs. This prediction proved more accurate than more optimistic forecasts that underestimated the inflationary consequences of tariff implementation.",
+    "id": "TARIFFS-DWS-7-2025",
+    "Original_Rank": 7,
+    "Prediction_Text": "\"There can be little doubt that Trump will not be able to implement all of his plans in full, especially since some of them counteract one another. For example, getting a grip on the cost of living crisis, i.e. lowering inflation faster, is unlikely to go hand in hand with import tariffs and a ban on migration.\"",
+    "Institution": "DWS",
+    "Rank": 2
+  },
+  {
+    "statements": [
+      {
+        "statement": "The disruptive macro and market impacts of across-the-board tariffs are the reason they aren't in our baseline scenario.",
+        "materialized": "YES",
+        "reasoning": "This statement proved prescient. Goldman Sachs correctly identified that across-the-board tariffs would have disruptive impacts. The actual implementation showed significant disruption: McKinsey found that 'trade policy changes were the top perceived risk to growth in the global economy' and 'the share of respondents citing trade-related changes as one of the biggest disruptions to the global economy has more than doubled over the past six months' (SOURCE: Economic conditions outlook, December 2025, McKinsey, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook). The Atlantic Council noted that 'tariffs are taxes and they were used to finance the federal' government (SOURCE: By the numbers: The global economy in 2025, Atlantic Council, December 2025, https://www.atlanticcouncil.org/dispatches/by-the-numbers-the-global-economy-in-2025/), confirming the disruptive nature."
+      },
+      {
+        "statement": "But we do see a 40% chance of them being enacted, making them an underpriced tail risk.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved accurate. Across-the-board tariffs were indeed enacted, making them a realized tail risk rather than an underpriced one. The Trump administration implemented tariffs that reached 'the highest level in a century' (SOURCE: By the numbers: The global economy in 2025, Atlantic Council, December 2025, https://www.atlanticcouncil.org/dispatches/by-the-numbers-the-global-economy-in-2025/). The 40% probability assessment appears to have been reasonable given that the tail risk did materialize. The effective tariff rate of 15.8% (SOURCE: US Tariffs: What's the Impact?, J.P. Morgan Global Research, December 2025, https://links.message.bloomberg.com/s/c/8djF0q5zDvmV-Qp5fn4kXxdQmshH4Dj_673XGoRGDyRbrVmzIbya2dRMzi-7pIi4ilv1j8UmPtcaimLjWjLvBLq3ewPe34p3UU3FcBLevaj-hgWF1_YxK21pNw5FQt0gjy56BKA8y5MEY5wgUFJ5oPBN9srgOUb11lP6ObUmbFgvFVLkTmMt5hna0me-MuFhp-Wcz7E-kAyQ3YFpIOxCepCZxdIBETVVFuDVIxlXM5L261Uf7yfSloNIwJDZt05ZF3S4mJVqxT25aa2kQPX5sOe-GUt7dWMzI7bmIjuOuLG0KPEsN-Vz5ncFTdvnxceJ81AkiW_qid7hAvlZ4OjKUj9BUvLYXIwQc-xzaExD1Mt9n0YXRMevJ_rPxiesHYu7sfd3B0jFGed-PlQmxqAeEdhLPlKD0wf8CT1oQLw3iepPXLsdPJKOtMQJg1a34aFKyDs/RQbzMnzXCyWIB27p7Dz8gPcW0C69e6Bt/8) represented a substantial across-the-board increase."
+      }
+    ],
+    "overall_analysis": "Goldman Sachs demonstrated sophisticated risk management by correctly identifying across-the-board tariffs as a disruptive tail risk and assigning a reasonable 40% probability to their enactment. The institution's decision to exclude them from the baseline scenario while acknowledging the tail risk proved prudent, as the tariffs were indeed implemented and created significant market disruption. This represents a well-calibrated probabilistic forecast that accurately captured both the risk magnitude and likelihood.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Goldman Sachs demonstrated sophisticated risk management by correctly identifying across-the-board tariffs as a disruptive tail risk and assigning a reasonable 40% probability to their enactment. The institution's decision to exclude them from the baseline scenario while acknowledging the tail risk proved prudent, as the tariffs were indeed implemented and created significant market disruption. This represents a well-calibrated probabilistic forecast that accurately captured both the risk magnitude and likelihood.",
+    "id": "TARIFFS-GOLDMAN_SACHS-9-2025",
+    "Original_Rank": 9,
+    "Prediction_Text": "\"The disruptive macro and market impacts of across-the-board tariffs are the reason they aren't in our baseline scenario. But we do see a 40% chance of them being enacted, making them an underpriced tail risk.\"",
+    "Institution": "GOLDMAN SACHS",
+    "Rank": 3
+  },
+  {
+    "statements": [
+      {
+        "statement": "Trumponomics 2.0 policy priorities of tax cuts, tariffs and deregulation might be supportive of US economic growth and risk assets.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. SOURCE 16 (Bloomberg, December 31, 2025) reports 'Despite some wild ups and downs, the US economy looks set to turn in a solid year of growth for 2025' and SOURCE 15 (World Bank, December 2025) confirms 'Economic growth in 2025 has defied the gloomy expectations.' SOURCE 1 (Reuters, December 23, 2025) notes that stocks 'recovered from April's \"Liberation Day\" tariffs' crash and have risen 21% in 2025, a sixth year of double-digit gains.' However, SOURCE 9 (Reuters, December 1, 2025) indicates 'US manufacturing stuck in doldrums as tariff headwinds,' suggesting growth was uneven across sectors rather than uniformly supportive."
+      },
+      {
+        "statement": "It could also lead to a stronger dollar, higher inflation and elevated interest rates.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 4 (J.P. Morgan, December 2025) confirms that 'domestic prices have already been adjusting sharply higher in anticipation of the new tariffs' and that effective tariff rates reached 15.8%. SOURCE 5 (Reuters, December 17, 2025) reports 'CFOs in Fed survey on average expect 4.2% price rise in 2026,' indicating higher inflation expectations. SOURCE 12 (Reuters, December 31, 2025) notes that Trump's agenda 'proved to be a key market driver in 2025' and discusses 'rising long-dated German bond yields,' reflecting elevated interest rate expectations. The stronger dollar is implied by SOURCE 12's discussion of 'the surge in the euro/dollar rate.'"
+      },
+      {
+        "statement": "We could see elevated volatility in interest rates and financial markets broadly as investors calibrate the direction of policy.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 1 (Reuters, December 23, 2025) references April's 'Liberation Day' tariffs' crash, indicating significant market volatility. SOURCE 7 (McKinsey, December 2025) states that 'For the past two quarters, trade policy changes were the top perceived risk to growth,' reflecting ongoing uncertainty and volatility. SOURCE 12 (Reuters, December 31, 2025) notes that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025 – particularly in the first half of the year,' with multiple policy shifts creating volatility as investors recalibrated expectations throughout the year."
+      }
+    ],
+    "overall_analysis": "Capital Group's prediction was largely accurate in identifying the mixed growth outcomes and the inflationary/rate pressures from Trumponomics 2.0. The institution correctly anticipated higher inflation, elevated interest rates, and market volatility driven by policy uncertainty. However, the prediction somewhat overstated the uniform supportiveness for risk assets, as manufacturing weakness and supply chain disruptions created sectoral divergence. Overall, Capital Group demonstrated solid macro foresight on the inflation and volatility dimensions.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 83.3,
+    "classification": "GOOD",
+    "justification": "Capital Group's prediction was largely accurate in identifying the mixed growth outcomes and the inflationary/rate pressures from Trumponomics 2.0. The institution correctly anticipated higher inflation, elevated interest rates, and market volatility driven by policy uncertainty. However, the prediction somewhat overstated the uniform supportiveness for risk assets, as manufacturing weakness and supply chain disruptions created sectoral divergence. Overall, Capital Group demonstrated solid macro foresight on the inflation and volatility dimensions.",
+    "id": "TARIFFS-CAPITAL_GROUP-13-2025",
+    "Original_Rank": 13,
+    "Prediction_Text": "\"Trumponomics 2.0 policy priorities of tax cuts, tariffs and deregulation might be supportive of US economic growth and risk assets. It could also lead to a stronger dollar, higher inflation and elevated interest rates. We could see elevated volatility in interest rates and financial markets broadly as investors calibrate the direction of policy.\"",
+    "Institution": "CAPITAL GROUP",
+    "Rank": 4
+  },
+  {
+    "statements": [
+      {
+        "statement": "Tariffs are likely to be rolled out faster this time, with the level of new tariffs imposed on China and others building over time.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 6 (CNBC, December 15, 2025) reports that 'Between Jan. 20 and Dec. 15, 2025, U.S. Customs and Border Protection collected more than $200 billion in tariffs thanks to more than 40 executive orders put in place by President Donald Trump's Administration.' SOURCE 2 (Atlantic Council, December 2025) confirms 'the world's largest economy hiked its tariff rates to the highest level in a century.' The rapid rollout of 40+ executive orders demonstrates tariffs were indeed rolled out faster than previous administrations, with escalating levels throughout 2025."
+      },
+      {
+        "statement": "That would see a modest impact on growth and inflation in the second half, with headwinds building into 2026.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement is partially accurate but incomplete. SOURCE 15 (World Bank Blog, December 2025) notes that 'Economic growth in 2025 has defied the gloomy expectations' and that 'A tariff shock in April led to pessimism, but actual activity rebounded.' However, SOURCE 5 (Reuters, December 17, 2025) indicates 'CFOs in Fed survey on average expect 4.2% price rise in 2026' and SOURCE 13 (Bloomberg, December 24, 2025) warns 'The Consequences of Trump's Trade War May Arrive in 2026,' suggesting headwinds are indeed building into 2026. The prediction underestimated the actual inflation impact in 2025 (J.P. Morgan reported 15.8% effective tariff rate by year-end per SOURCE 4) but correctly anticipated 2026 challenges."
+      }
+    ],
+    "overall_analysis": "Macquarie's prediction was substantially correct on the rapid rollout of tariffs and the timing of growth headwinds into 2026. However, the institution underestimated the magnitude of tariff implementation (40+ executive orders vs. gradual rollout) and the inflation pressures that materialized in 2025 itself, not just the second half. The prediction correctly identified the lag effect into 2026 but missed the immediate supply chain disruptions and pricing pressures that emerged mid-year.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Macquarie's prediction was substantially correct on the rapid rollout of tariffs and the timing of growth headwinds into 2026. However, the institution underestimated the magnitude of tariff implementation (40+ executive orders vs. gradual rollout) and the inflation pressures that materialized in 2025 itself, not just the second half. The prediction correctly identified the lag effect into 2026 but missed the immediate supply chain disruptions and pricing pressures that emerged mid-year.",
+    "id": "TARIFFS-MACQUARIE-11-2025",
+    "Original_Rank": 11,
+    "Prediction_Text": "\"Tariffs are likely to be rolled out faster this time, with the level of new tariffs imposed on China and others building over time. That would see a modest impact on growth and inflation in the second half, with headwinds building into 2026.\"",
+    "Institution": "MACQUARIE",
+    "Rank": 5
+  },
+  {
+    "statements": [
+      {
+        "statement": "Morgan Stanley economists point out that tariffs can slow economic activity with a lag of two or three quarters.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 4 (J.P. Morgan, December 2025) notes that 'J.P.Morgan Global Research has further revised its growth and inflation forecasts' in response to tariff announcements, indicating recognition of lagged effects. SOURCE 13 (Bloomberg, December 24, 2025) explicitly states 'The Consequences of Trump's Trade War May Arrive in 2026,' confirming the lag effect. SOURCE 15 (World Bank, December 2025) notes that 'A tariff shock in April led to pessimism, but actual activity rebounded,' suggesting the lag between tariff implementation (April 'Liberation Day') and full economic impact. The two to three quarter lag thesis is supported by the timeline of tariff implementation in early 2025 and anticipated impacts extending into 2026."
+      },
+      {
+        "statement": "Therefore, tariffs could become a drag on US growth in late 2025 and in 2026.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially materialized. SOURCE 9 (Reuters, December 1, 2025) reports 'US manufacturing stuck in doldrums as tariff headwinds,' indicating drag on growth in late 2025. SOURCE 5 (Reuters, December 17, 2025) notes that 'Tariffs and trade remain the top concern' for CFOs, and SOURCE 13 (Bloomberg, December 24, 2025) warns of consequences arriving in 2026. However, SOURCE 16 (Bloomberg, December 31, 2025) states 'the US economy looks set to turn in a solid year of growth for 2025,' and SOURCE 15 (World Bank, December 2025) confirms 'Economic growth in 2025 has defied the gloomy expectations.' This suggests that while manufacturing faced headwinds, overall US growth remained solid in 2025, with drag more likely to materialize in 2026."
+      }
+    ],
+    "overall_analysis": "Morgan Stanley's prediction was substantially correct in identifying the lagged impact mechanism of tariffs on economic growth. The institution accurately anticipated that tariff effects would extend into 2026 and correctly identified manufacturing as a sector facing near-term headwinds. However, the prediction somewhat overstated the drag on overall US growth in late 2025, as the broader economy demonstrated resilience despite sectoral weakness. Morgan Stanley demonstrated solid understanding of transmission mechanisms but underestimated the economy's ability to absorb tariff shocks in 2025.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Morgan Stanley's prediction was substantially correct in identifying the lagged impact mechanism of tariffs on economic growth. The institution accurately anticipated that tariff effects would extend into 2026 and correctly identified manufacturing as a sector facing near-term headwinds. However, the prediction somewhat overstated the drag on overall US growth in late 2025, as the broader economy demonstrated resilience despite sectoral weakness. Morgan Stanley demonstrated solid understanding of transmission mechanisms but underestimated the economy's ability to absorb tariff shocks in 2025.",
+    "id": "TARIFFS-MORGAN_STANLEY-17-2025",
+    "Original_Rank": 17,
+    "Prediction_Text": "\"Morgan Stanley economists point out that tariffs can slow economic activity with a lag of two or three quarters. Therefore, tariffs could become a drag on US growth in late 2025 and in 2026.\"",
+    "Institution": "MORGAN STANLEY",
+    "Rank": 6
+  },
+  {
+    "statements": [
+      {
+        "statement": "The first phase of the new Trump presidency is to introduce global trade uncertainty with the aim of reshaping policy.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 12 (Reuters, December 31, 2025) confirms that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025 – particularly in the first half of the year' and that 'The global trading system was turned upside down by President Donald Trump in 2025.' SOURCE 7 (McKinsey, December 2025) notes that 'For the past two quarters, trade policy changes were the top perceived risk to growth,' indicating sustained uncertainty. SOURCE 2 (Atlantic Council, December 2025) states 'the world's largest economy hiked its tariff rates to the highest level in a century,' confirming the policy reshaping objective. The first phase clearly involved introducing uncertainty as a tool for reshaping the global trade system."
+      },
+      {
+        "statement": "The first order effect is bullish for the dollar, reflecting the impact global trade tensions and associated tariff jawboning.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially materialized. SOURCE 12 (Reuters, December 31, 2025) discusses 'the surge in the euro/dollar rate,' which could indicate dollar strength, though the direction is ambiguous. SOURCE 4 (J.P. Morgan, December 2025) confirms that tariff announcements led to 'upward pressure on rates,' which typically supports currency strength. However, SOURCE 12 also notes 'outperformance of European stocks versus Wall Street,' which could suggest relative currency weakness or at least mixed dynamics. The prediction correctly identified the mechanism (trade tensions supporting dollar) but the actual materialization of dollar strength is only partially confirmed, with some evidence of mixed currency dynamics rather than clear dollar bullishness."
+      }
+    ],
+    "overall_analysis": "TD Securities' prediction was substantially correct in identifying the first phase of Trump's strategy as introducing trade uncertainty to reshape policy. The institution accurately captured the administration's approach and the resulting market impacts. However, the prediction on dollar strength was only partially validated, with evidence suggesting more mixed currency dynamics than straightforward dollar bullishness. Overall, TD Securities demonstrated good understanding of policy mechanics but was less precise on currency market implications.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "TD Securities' prediction was substantially correct in identifying the first phase of Trump's strategy as introducing trade uncertainty to reshape policy. The institution accurately captured the administration's approach and the resulting market impacts. However, the prediction on dollar strength was only partially validated, with evidence suggesting more mixed currency dynamics than straightforward dollar bullishness. Overall, TD Securities demonstrated good understanding of policy mechanics but was less precise on currency market implications.",
+    "id": "TARIFFS-TD_SECURITIES-18-2025",
+    "Original_Rank": 18,
+    "Prediction_Text": "\"The first phase of the new Trump presidency is to introduce global trade uncertainty with the aim of reshaping policy. The first order effect is bullish for the dollar, reflecting the impact global trade tensions and associated tariff jawboning.\"",
+    "Institution": "TD SECURITIES",
+    "Rank": 7
+  },
+  {
+    "statements": [
+      {
+        "statement": "We expect major trade action from the Trump administration in 2025, which will likely be negative for both the global and US economies.",
+        "materialized": "PARTIAL",
+        "reasoning": "Major trade action did occur—the Trump administration imposed over 40 executive orders resulting in $200 billion in tariff collections between January 20 and December 15, 2025 (SOURCE: New Trump tariffs collection hits $200 billion, Customs says, CNBC, December 15, 2025, https://www.cnbc.com/2025/12/15/trump-tariffs-trade-customs-imports.html). However, the prediction of negative impact on both economies was only partially realized. While US manufacturing was negatively affected (SOURCE: US manufacturing stuck in doldrums as tariff headwinds, Reuters, December 1, 2025), the global economy and US economy showed resilience. The World Bank noted that 'Economic growth in 2025 has defied the gloomy expectations' with the US economy turning in 'solid year of growth for 2025' (SOURCE: Economic growth in 2025 has defied the gloomy expectations, World Bank Blogs, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations). The prediction was correct on major trade action but incorrect on the uniformly negative economic impact."
+      }
+    ],
+    "overall_analysis": "BCA Research correctly anticipated that major trade action would occur under Trump in 2025, with substantial tariff implementation. However, they overestimated the negative economic impact, as both the US and global economies demonstrated unexpected resilience despite the tariff shock. The prediction failed to account for the economy's ability to absorb tariff costs and the offsetting effects of strong AI investment and fiscal support in the US.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "BCA Research correctly anticipated that major trade action would occur under Trump in 2025, with substantial tariff implementation. However, they overestimated the negative economic impact, as both the US and global economies demonstrated unexpected resilience despite the tariff shock. The prediction failed to account for the economy's ability to absorb tariff costs and the offsetting effects of strong AI investment and fiscal support in the US.",
+    "id": "TARIFFS-BCA_RESEARCH-1-2025",
+    "Original_Rank": 1,
+    "Prediction_Text": "\"We expect major trade action from the Trump administration in 2025, which will likely be negative for both the global and US economies.\"",
+    "Institution": "BCA RESEARCH",
+    "Rank": 8
+  },
+  {
+    "statements": [
+      {
+        "statement": "With respect to Trump policies, the base case of our global team is tariffs, extension of the 2017 Trump tax cuts, a sharp curb in immigration inflows, a broad deregulation of Biden-era requirements, and a potential boost to animal spirits.",
+        "materialized": "PARTIAL",
+        "reasoning": "The tariff component materialized substantially with $200 billion in tariff collections (SOURCE: New Trump tariffs collection hits $200 billion, Customs says, CNBC, December 15, 2025, https://www.cnbc.com/2025/12/15/trump-tariffs-trade-customs-imports.html). However, the prediction's other components are not directly addressed in the provided sources. The sources do not provide sufficient evidence regarding the extension of 2017 tax cuts, immigration policy implementation, or deregulation measures to fully validate or refute these aspects of the prediction."
+      },
+      {
+        "statement": "They think this cocktail will bring moderately higher inflation in the US, while the effects on US growth may net out at around zero.",
+        "materialized": "PARTIAL",
+        "reasoning": "The inflation prediction partially materialized. CFOs surveyed by the Federal Reserve 'on average expect 4.2% price rise in 2026' (SOURCE: Finance chiefs see US prices rising next year, tariffs still a top concern, Reuters, December 17, 2025, https://www.reuters.com/business/finance-chiefs-see-us-prices-rising-next-year-tariffs-still-top-concern-2025-12-17/), indicating expectations of higher inflation. However, the growth prediction was incorrect. The US economy showed 'solid year of growth for 2025' rather than growth netting out at zero (SOURCE: Here's How the US Economy Fared Under Trump in 2025, Bloomberg, December 31, 2025, https://www.bloomberg.com/news/articles/2025-12-31/trump-s-economy-in-2025-solid-growth-higher-unemployment). The World Bank confirmed that 'Economic growth in 2025 has defied the gloomy expectations' (SOURCE: Economic growth in 2025 has defied the gloomy expectations, World Bank Blogs, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations)."
+      }
+    ],
+    "overall_analysis": "Citi's prediction was partially accurate on inflation expectations but significantly underestimated US economic growth. While they correctly anticipated tariff implementation and moderately higher inflation, they failed to anticipate the resilience of the US economy, which delivered solid growth rather than neutral growth effects. The prediction demonstrated a pessimistic bias regarding growth dynamics despite correctly identifying the inflationary pressures from tariffs.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Citi's prediction was partially accurate on inflation expectations but significantly underestimated US economic growth. While they correctly anticipated tariff implementation and moderately higher inflation, they failed to anticipate the resilience of the US economy, which delivered solid growth rather than neutral growth effects. The prediction demonstrated a pessimistic bias regarding growth dynamics despite correctly identifying the inflationary pressures from tariffs.",
+    "id": "TARIFFS-CITI-3-2025",
+    "Original_Rank": 3,
+    "Prediction_Text": "\"With respect to Trump policies, the base case of our global team is tariffs, extension of the 2017 Trump tax cuts, a sharp curb in immigration inflows, a broad deregulation of Biden-era requirements, and a potential boost to animal spirits. They think this cocktail will bring moderately higher inflation in the US, while the effects on US growth may net out at around zero.\"",
+    "Institution": "CITI",
+    "Rank": 9
+  },
+  {
+    "statements": [
+      {
+        "statement": "Comerica assumes that tariff rates increase.",
+        "materialized": "YES",
+        "reasoning": "This assumption proved correct. The average effective U.S. tariff rate increased to 15.8% from 2.3% at the end of 2024 (SOURCE: US Tariffs: What's the Impact?, J.P. Morgan Global Research, December 2025, https://links.message.bloomberg.com/s/c/8djF0q5zDvmV-Qp5fn4kXxdQmshH4Dj_673XGoRGDyRbrVmzIbya2dRMzi-7pIi4ilv1j8UmPtcaimLjWjLvBLq3ewPe34p3UU3FcBLevaj-hgWF1_YxK21pNw5FQt0gjy56BKA8y5MEY5wgUFJ5oPBN9srgOUb11lP6ObUmbFgvFVLkTmMt5hna0me-MuFhp-Wcz7E-kAyQ3YFpIOxCepCZxdIBETVVFuDVIxlXM5L261Uf7yfSloNIwJDZt05ZF3S4mJVqxT25aa2kQPX5sOe-GUt7dWMzI7bmIjuOuLG0KPEsN-Vz5ncFTdvnxceJ81AkiW_qid7hAvlZ4OjKUj9BUvLYXIwQc-xzaExD1Mt9n0YXRMevJ_rPxiesHYu7sfd3B0jFGed-PlQmxqAeEdhLPlKD0wf8CT1oQLw3iepPXLsdPJKOtMQJg1a34aFKyDs/RQbzMnzXCyWIB27p7Dz8gPcW0C69e6Bt/8)."
+      },
+      {
+        "statement": "That lifts near-term growth of industrial production, contributes to higher prices of consumer and capital goods, and as a result raises inflation.",
+        "materialized": "PARTIAL",
+        "reasoning": "The inflation component materialized as CFOs expect 4.2% price rise in 2026 (SOURCE: Finance chiefs see US prices rising next year, tariffs still a top concern, Reuters, December 17, 2025, https://www.reuters.com/business/finance-chiefs-see-us-prices-rising-next-year-tariffs-still-top-concern-2025-12-17/). However, the industrial production growth prediction did not materialize. Reuters reported that 'US manufacturing stuck in doldrums as tariff headwinds' with the manufacturing sector continuing to be weighed down (SOURCE: US manufacturing stuck in doldrums as tariff headwinds, Reuters, December 1, 2025, https://www.reuters.com/world/us/us-manufacturing-slump-deepens-november-2025-12-01/). The prediction correctly identified inflation but incorrectly anticipated industrial production growth."
+      },
+      {
+        "statement": "The forecast also assumes that curbs on immigration slow the growth of the labor force.",
+        "materialized": "UNKNOWN",
+        "reasoning": "The provided sources do not contain sufficient information to validate or refute this specific assumption regarding immigration policy impacts on labor force growth in 2025. While immigration policy was mentioned as part of Trump's agenda, the sources do not provide data on actual implementation or labor force growth effects."
+      }
+    ],
+    "overall_analysis": "Comerica correctly anticipated tariff rate increases and resulting inflation pressures, but significantly overestimated the positive impact on industrial production. The prediction failed to account for the contractionary effects of tariffs on manufacturing activity, which actually declined rather than expanded. The forecast demonstrated a partial understanding of tariff transmission mechanisms, capturing inflation effects while missing the negative impact on industrial output.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Comerica correctly anticipated tariff rate increases and resulting inflation pressures, but significantly overestimated the positive impact on industrial production. The prediction failed to account for the contractionary effects of tariffs on manufacturing activity, which actually declined rather than expanded. The forecast demonstrated a partial understanding of tariff transmission mechanisms, capturing inflation effects while missing the negative impact on industrial output.",
+    "id": "TARIFFS-COMERICA-4-2025",
+    "Original_Rank": 4,
+    "Prediction_Text": "\"Comerica assumes that tariff rates increase. That lifts near-term growth of industrial production, contributes to higher prices of consumer and capital goods, and as a result raises inflation. The forecast also assumes that curbs on immigration slow the growth of the labor force.\"",
+    "Institution": "COMERICA",
+    "Rank": 10
+  },
+  {
+    "statements": [
+      {
+        "statement": "On trade we assume a 10 percentage point increase in the tariff rate on imports from China in the first half of the year (ratcheting up a further 10 percentage points in the second half) and an equalisation of tariff rates on motor vehicles with Europe.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction of significant China tariffs materialized, though the exact phasing is not fully detailed in sources. The Atlantic Council confirmed that 'the world's largest economy hiked its tariff rates to the highest level in a century' with China-specific actions (SOURCE: By the numbers: The global economy in 2025, Atlantic Council, December 2025, https://www.atlanticcouncil.org/dispatches/by-the-numbers-the-global-economy-in-2025/). Motor vehicle tariff equalization also occurred—a 25% duty on imported medium- and heavy-duty trucks and parts came into effect on November 1, 2025 (SOURCE: US manufacturing stuck in doldrums as tariff headwinds, Reuters, December 1, 2025, https://www.reuters.com/world/us/us-manufacturing-slump-deepens-november-2025-12-01/). German auto exports fell by 14% in the first three quarters of 2025 (SOURCE: German auto exports hit hard by Trump tariffs, study shows, Reuters, December 22, 2025, https://www.reuters.com/business/autos-transportation/german-auto-exports-hit-hard-by-trump-tariffs-study-shows-2025-12-22/)."
+      },
+      {
+        "statement": "The forecast also assumes a 5% universal baseline tariff, though that is more likely to be implemented late 2025/early 2026.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction of a universal baseline tariff partially materialized, though at higher levels than assumed. J.P. Morgan reported that 'the average effective U.S. tariff rate stands at 15.8%' (SOURCE: US Tariffs: What's the Impact?, J.P. Morgan Global Research, December 2025, https://links.message.bloomberg.com/s/c/8djF0q5zDvmV-Qp5fn4kXxdQmshH4Dj_673XGoRGDyRbrVmzIbya2dRMzi-7pIi4ilv1j8UmPtcaimLjWjLvBLq3ewPe34p3UU3FcBLevaj-hgWF1_YxK21pNw5FQt0gjy56BKA8y5MEY5wgUFJ5oPBN9srgOUb11lP6ObUmbFgvFVLkTmMt5hna0me-MuFhp-Wcz7E-kAyQ3YFpIOxCepCZxdIBETVVFuDVIxlXM5L261Uf7yfSloNIwJDZt05ZF3S4mJVqxT25aa2kQPX5sOe-GUt7dWMzI7bmIjuOuLG0KPEsN-Vz5ncFTdvnxceJ81AkiW_qid7hAvlZ4OjKUj9BUvLYXIwQc-xzaExD1Mt9n0YXRMevJ_rPxiesHYu7sfd3B0jFGed-PlQmxqAeEdhLPlKD0wf8CT1oQLw3iepPXLsdPJKOtMQJg1a34aFKyDs/RQbzMnzXCyWIB27p7Dz8gPcW0C69e6Bt/8), significantly higher than the assumed 5%. The timing prediction of late 2025/early 2026 implementation appears partially correct, as tariffs were implemented throughout 2025 with ongoing adjustments expected."
+      }
+    ],
+    "overall_analysis": "Deutsche Bank's prediction of significant China tariffs and motor vehicle tariff equalization proved accurate, demonstrating good foresight on sector-specific impacts. However, the institution significantly underestimated the magnitude of the universal baseline tariff, assuming 5% when actual effective rates reached 15.8%. The prediction captured the directional accuracy of tariff policy but failed to anticipate the aggressive scope of implementation.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Deutsche Bank's prediction of significant China tariffs and motor vehicle tariff equalization proved accurate, demonstrating good foresight on sector-specific impacts. However, the institution significantly underestimated the magnitude of the universal baseline tariff, assuming 5% when actual effective rates reached 15.8%. The prediction captured the directional accuracy of tariff policy but failed to anticipate the aggressive scope of implementation.",
+    "id": "TARIFFS-DEUTSCHE_BANK-5-2025",
+    "Original_Rank": 5,
+    "Prediction_Text": "\"On trade we assume a 10 percentage point increase in the tariff rate on imports from China in the first half of the year (ratcheting up a further 10 percentage points in the second half) and an equalisation of tariff rates on motor vehicles with Europe. The forecast also assumes a 5% universal baseline tariff, though that is more likely to be implemented late 2025/early 2026.\"",
+    "Institution": "DEUTSCHE BANK",
+    "Rank": 11
+  },
+  {
+    "statements": [
+      {
+        "statement": "China will be hit hard with 40% US tariffs imposed across the board.",
+        "materialized": "PARTIAL",
+        "reasoning": "While China did face significant tariffs, the sources do not confirm a uniform 40% across-the-board rate. J.P. Morgan noted that 'the average effective U.S. tariff rate stands at 15.8%' overall (SOURCE: US Tariffs: What's the Impact?, J.P. Morgan Global Research, December 2025, https://links.message.bloomberg.com/s/c/8djF0q5zDvmV-Qp5fn4kXxdQmshH4Dj_673XGoRGDyRbrVmzIbya2dRMzi-7pIi4ilv1j8UmPtcaimLjWjLvBLq3ewPe34p3UU3FcBLevaj-hgWF1_YxK21pNw5FQt0gjy56BKA8y5MEY5wgUFJ5oPBN9srgOUb11lP6ObUmbFgvFVLkTmMt5hna0me-MuFhp-Wcz7E-kAyQ3YFpIOxCepCZxdIBETVVFuDVIxlXM5L261Uf7yfSloNIwJDZt05ZF3S4mJVqxT25aa2kQPX5sOe-GUt7dWMzI7bmIjuOuLG0KPEsN-Vz5ncFTdvnxceJ81AkiW_qid7hAvlZ4OjKUj9BUvLYXIwQc-xzaExD1Mt9n0YXRMevJ_rPxiesHYu7sfd3B0jFGed-PlQmxqAeEdhLPlKD0wf8CT1oQLw3iepPXLsdPJKOtMQJg1a34aFKyDs/RQbzMnzXCyWIB27p7Dz8gPcW0C69e6Bt/8). However, China did face substantial tariffs as part of the trade war. A CNBC op-ed noted that 'In 2025, China stood up again — economically, without mass movements, banners or bombast — and showed the world that it would not be bullied in a renewed U.S.–China trade war' (SOURCE: Op-ed: China won the 2025 battle in Trump's trade war, CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/trump-china-trade-war-tariffs.html). The prediction captured the direction but likely overstated the uniform rate."
+      },
+      {
+        "statement": "We expect policymakers to do everything in their power to replace lost export demand with domestic demand.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction appears partially accurate regarding policy response, though the sources focus more on US policy than Chinese policy responses. The World Bank noted that 'China's outlook improved due to policy intervention' (SOURCE: Economic growth in 2025 has defied the gloomy expectations, World Bank Blogs, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations). However, the CNBC op-ed suggests China's response was more focused on external markets: 'The U.S. squeezed market access for China — China didn't flinch and sold to the world' (SOURCE: Op-ed: China won the 2025 battle in Trump's trade war, CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/trump-china-trade-war-tariffs.html), indicating China prioritized export diversification rather than purely domestic demand replacement."
+      }
+    ],
+    "overall_analysis": "TD Securities' prediction of 40% across-the-board China tariffs was directionally correct but likely overstated the magnitude, as actual effective rates averaged 15.8% overall. The prediction of policy responses to replace lost export demand was partially accurate, though China's actual strategy emphasized export diversification to non-US markets rather than pure domestic demand replacement. The institution captured the general trajectory of US-China trade tensions but overestimated the severity of tariff implementation.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "TD Securities' prediction of 40% across-the-board China tariffs was directionally correct but likely overstated the magnitude, as actual effective rates averaged 15.8% overall. The prediction of policy responses to replace lost export demand was partially accurate, though China's actual strategy emphasized export diversification to non-US markets rather than pure domestic demand replacement. The institution captured the general trajectory of US-China trade tensions but overestimated the severity of tariff implementation.",
+    "id": "TARIFFS-TD_SECURITIES-6-2025",
+    "Original_Rank": 6,
+    "Prediction_Text": "\"China will be hit hard with 40% US tariffs imposed across the board. We expect policymakers to do everything in their power to replace lost export demand with domestic demand.\"",
+    "Institution": "TD SECURITIES",
+    "Rank": 12
+  },
+  {
+    "statements": [
+      {
+        "statement": "Tariffs are likely to feature prominently in the new Trump Administration, coupled with modest additional tax cuts, more federal spending, and a light touch on regulation.",
+        "materialized": "PARTIAL",
+        "reasoning": "The tariff component materialized prominently with $200 billion in collections (SOURCE: New Trump tariffs collection hits $200 billion, Customs says, CNBC, December 15, 2025, https://www.cnbc.com/2025/12/15/trump-tariffs-trade-customs-imports.html). However, the sources do not provide sufficient evidence to validate or refute the other components regarding tax cuts, federal spending, and deregulation in 2025. The prediction's tariff component was accurate, but the broader policy package cannot be fully evaluated from the provided sources."
+      },
+      {
+        "statement": "That combination, meant to boost domestic business and weigh on foreign activity levels, should continue to keep capital flows tilted towards the US versus the rest of the world and support the Dollar on a broad basis.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction of capital flows tilted toward the US and dollar support was partially accurate. Reuters reported that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025' and noted 'the surge in the euro/dollar rate' and 'the outperformance of European stocks versus Wall Street' (SOURCE: What just happened? Ten charts to help make sense of markets, Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), suggesting the dollar did not uniformly strengthen as predicted. The prediction of weighed-on foreign activity materialized, as global trade was disrupted, but the capital flow and currency dynamics were more complex than anticipated."
+      }
+    ],
+    "overall_analysis": "Goldman Sachs correctly anticipated that tariffs would feature prominently in Trump's agenda and that the policy combination would weigh on foreign activity. However, the prediction overestimated the strength of dollar support and capital flow tilting toward the US, as currency markets showed more complexity with euro strength and European stock outperformance. The institution captured the directional impact on foreign economies but underestimated the nuanced market response to tariff policies.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Goldman Sachs correctly anticipated that tariffs would feature prominently in Trump's agenda and that the policy combination would weigh on foreign activity. However, the prediction overestimated the strength of dollar support and capital flow tilting toward the US, as currency markets showed more complexity with euro strength and European stock outperformance. The institution captured the directional impact on foreign economies but underestimated the nuanced market response to tariff policies.",
+    "id": "TARIFFS-GOLDMAN_SACHS-8-2025",
+    "Original_Rank": 8,
+    "Prediction_Text": "\"Tariffs are likely to feature prominently in the new Trump Administration, coupled with modest additional tax cuts, more federal spending, and a light touch on regulation. That combination, meant to boost domestic business and weigh on foreign activity levels, should continue to keep capital flows tilted towards the US versus the rest of the world and support the Dollar on a broad basis.\"",
+    "Institution": "GOLDMAN SACHS",
+    "Rank": 13
+  },
+  {
+    "statements": [
+      {
+        "statement": "We believe that current market concerns over Trump fiscal expansion and tariff impact are exaggerated.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction proved partially incorrect. While the global economy showed resilience (SOURCE: Economic growth in 2025 has defied the gloomy expectations, World Bank Blogs, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations), market concerns about tariff impacts were not exaggerated. McKinsey found that 'trade policy changes were the top perceived risk to growth in the global economy' for two consecutive quarters (SOURCE: Economic conditions outlook, December 2025, McKinsey, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook). Manufacturing contracted significantly (SOURCE: US manufacturing stuck in doldrums as tariff headwinds, Reuters, December 1, 2025, https://www.reuters.com/world/us/us-manufacturing-slump-deepens-november-2025-12-01/), and German auto exports fell 14% (SOURCE: German auto exports hit hard by Trump tariffs, study shows, Reuters, December 22, 2025, https://www.reuters.com/business/autos-transportation/german-auto-exports-hit-hard-by-trump-tariffs-study-shows-2025-12-22/), validating market concerns."
+      },
+      {
+        "statement": "We do see US fiscal deficits moving higher, but we believe that the fiscal policies will not be as negative as the market fears.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction that fiscal deficits would move higher appears reasonable given the policy environment, though the sources do not provide specific deficit data for 2025. However, the claim that fiscal policies would not be as negative as feared is partially supported by the fact that the US economy delivered 'solid year of growth for 2025' (SOURCE: Here's How the US Economy Fared Under Trump in 2025, Bloomberg, December 31, 2025, https://www.bloomberg.com/news/articles/2025-12-31/trump-s-economy-in-2025-solid-growth-higher-unemployment). However, the World Bank noted that 'global public debt climbed ever higher' (SOURCE: By the numbers: The global economy in 2025, Atlantic Council, December 2025, https://www.atlanticcouncil.org/dispatches/by-the-numbers-the-global-economy-in-2025/), suggesting fiscal concerns were not entirely unfounded."
+      },
+      {
+        "statement": "Similarly, on tariffs, we see them more as a bargaining tool for Trump and do not think they would have as negative growth impact as is currently feared.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction proved partially correct. While global growth showed resilience (SOURCE: Economic growth in 2025 has defied the gloomy expectations, World Bank Blogs, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations), the negative growth impacts on specific sectors were substantial. US manufacturing contracted (SOURCE: US manufacturing stuck in doldrums as tariff headwinds, Reuters, December 1, 2025, https://www.reuters.com/world/us/us-manufacturing-slump-deepens-november-2025-12-01/), and German auto exports fell 14% (SOURCE: German auto exports hit hard by Trump tariffs, study shows, Reuters, December 22, 2025, https://www.reuters.com/business/autos-transportation/german-auto-exports-hit-hard-by-trump-tariffs-study-shows-2025-12-22/). The tariffs appeared to be more than just bargaining tools, with lasting structural impacts on trade patterns and supply chains (SOURCE: Supply chain risk pulse 2025: Tariffs reshuffle global trade, McKinsey, December 2025, https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey)."
+      }
+    ],
+    "overall_analysis": "Jefferies' prediction that market concerns about tariff impacts were exaggerated proved overly optimistic. While the institution correctly anticipated that global growth would show resilience, they underestimated the severity of sectoral impacts, particularly in manufacturing and export-dependent industries. The prediction that tariffs were primarily a bargaining tool rather than structural policy proved incorrect, as tariffs persisted and reshaped global supply chains. Jefferies demonstrated a bullish bias that underestimated the real economic disruption from tariff implementation.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 3,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Jefferies' prediction that market concerns about tariff impacts were exaggerated proved overly optimistic. While the institution correctly anticipated that global growth would show resilience, they underestimated the severity of sectoral impacts, particularly in manufacturing and export-dependent industries. The prediction that tariffs were primarily a bargaining tool rather than structural policy proved incorrect, as tariffs persisted and reshaped global supply chains. Jefferies demonstrated a bullish bias that underestimated the real economic disruption from tariff implementation.",
+    "id": "TARIFFS-JEFFERIES-10-2025",
+    "Original_Rank": 10,
+    "Prediction_Text": "\"We believe that current market concerns over Trump fiscal expansion and tariff impact are exaggerated. We do see US fiscal deficits moving higher, but we believe that the fiscal policies will not be as negative as the market fears. Similarly, on tariffs, we see them more as a bargaining tool for Trump and do not think they would have as negative growth impact as is currently feared.\"",
+    "Institution": "JEFFERIES",
+    "Rank": 14
+  },
+  {
+    "statements": [
+      {
+        "statement": "While the specifics and timing of potential US policy shifts remain unclear, we anticipate tax cuts, higher tariffs, reduced immigration and deregulation of various sectors.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially materialized. SOURCE 6 (CNBC, December 15, 2025) confirms higher tariffs with '$200 billion in tariffs' collected through 'more than 40 executive orders.' SOURCE 15 (Bel Air Investment Advisors, December 2025) references 'liberal fossil fuel policies and significant deregulation across various industries and sectors, especially in the energy and financial sectors,' confirming deregulation occurred. However, the prediction's vagueness about 'specifics and timing' makes it difficult to fully evaluate. Tax cuts and immigration policy specifics are not clearly addressed in the provided sources, though SOURCE 5 (Reuters, December 17, 2025) mentions 'Trump's credit card rate cap plan,' suggesting some policy implementation. The prediction was cautiously accurate but lacked specificity."
+      }
+    ],
+    "overall_analysis": "JPMorgan Asset Management's prediction was appropriately cautious and partially accurate, correctly identifying the major policy pillars (tariffs, deregulation) that materialized in 2025. However, the institution's hedging language ('remain unclear,' 'anticipate') suggests limited conviction in the forecast. The prediction successfully captured the broad policy direction but provided minimal insight into magnitude, timing, or economic impact, making it a safe but uninformative forecast that added limited analytical value.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "JPMorgan Asset Management's prediction was appropriately cautious and partially accurate, correctly identifying the major policy pillars (tariffs, deregulation) that materialized in 2025. However, the institution's hedging language ('remain unclear,' 'anticipate') suggests limited conviction in the forecast. The prediction successfully captured the broad policy direction but provided minimal insight into magnitude, timing, or economic impact, making it a safe but uninformative forecast that added limited analytical value.",
+    "id": "TARIFFS-JPMORGAN_ASSET_MANAGEMENT-15-2025",
+    "Original_Rank": 15,
+    "Prediction_Text": "\"While the specifics and timing of potential US policy shifts remain unclear, we anticipate tax cuts, higher tariffs, reduced immigration and deregulation of various sectors.\"",
+    "Institution": "JPMORGAN ASSET MANAGEMENT",
+    "Rank": 15
+  },
+  {
+    "statements": [
+      {
+        "statement": "There are widespread expectations that tariffs imply a stronger US dollar, due to FX moves re-equilibrating trade flows in response to a relative price change and upward pressure on rates from higher inflation.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially materialized. SOURCE 12 (Reuters, December 31, 2025) discusses 'the surge in the euro/dollar rate,' which could indicate dollar strength, though the phrasing is ambiguous about direction. SOURCE 4 (J.P. Morgan, December 2025) confirms 'upward pressure on rates from higher inflation' with effective tariff rates at 15.8% and domestic prices 'adjusting sharply higher.' However, SOURCE 12 also notes 'rising long-dated German bond yields' and 'outperformance of European stocks versus Wall Street,' which could suggest relative weakness in the dollar or at least mixed currency dynamics. The prediction correctly identified the inflation-rate mechanism but the actual dollar strength outcome is not definitively confirmed in the sources."
+      },
+      {
+        "statement": "We think that view ignores the potential impact on capital flows.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement is difficult to evaluate directly from the sources provided. SOURCE 12 (Reuters, December 31, 2025) notes that 'The global trading system was turned upside down by President Donald Trump in 2025' and discusses significant shifts in merchandise traffic and regional trade patterns, suggesting capital flow impacts. SOURCE 11 (McKinsey, December 2025) indicates 'Companies are accelerating plans to shift supply chain footprint into the United States, Eastern Europe, and Mexico,' which represents a capital flow reallocation. However, the sources do not provide explicit analysis of capital flow impacts on currency dynamics, making it difficult to confirm whether LGIM's contrarian view on capital flows was validated."
+      }
+    ],
+    "overall_analysis": "LGIM's prediction demonstrated sophisticated thinking about currency dynamics and capital flows, correctly identifying the inflation-rate mechanism driving dollar expectations. However, the actual materialization of these dynamics is only partially confirmed in the available sources, and the institution's contrarian view on capital flows lacks clear validation. The prediction showed analytical depth but was somewhat speculative, and the sources do not provide sufficient evidence to fully assess whether the capital flow argument proved correct or incorrect.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "LGIM's prediction demonstrated sophisticated thinking about currency dynamics and capital flows, correctly identifying the inflation-rate mechanism driving dollar expectations. However, the actual materialization of these dynamics is only partially confirmed in the available sources, and the institution's contrarian view on capital flows lacks clear validation. The prediction showed analytical depth but was somewhat speculative, and the sources do not provide sufficient evidence to fully assess whether the capital flow argument proved correct or incorrect.",
+    "id": "TARIFFS-LGIM-16-2025",
+    "Original_Rank": 16,
+    "Prediction_Text": "\"There are widespread expectations that tariffs imply a stronger US dollar, due to FX moves re-equilibrating trade flows in response to a relative price change and upward pressure on rates from higher inflation. We think that view ignores the potential impact on capital flows.\"",
+    "Institution": "LGIM",
+    "Rank": 16
+  },
+  {
+    "statements": [
+      {
+        "statement": "The Trump administration has vowed to impose additional tariffs on US trading partners, curtail legal immigration, and accelerate the deportation of illegal immigrants.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially materialized. SOURCE 6 (CNBC, December 15, 2025) confirms tariff implementation with 'more than $200 billion in tariffs' collected through 'more than 40 executive orders,' validating the tariff component. SOURCE 2 (Atlantic Council, December 2025) references 'the world's largest economy hiked its tariff rates to the highest level in a century,' confirming tariff vows were implemented. However, the sources provided do not contain specific information about immigration policy implementation (curtailing legal immigration or accelerating deportations), making it impossible to fully validate those components of the prediction. The tariff portion is clearly materialized, but immigration policy validation is absent from the available sources."
+      },
+      {
+        "statement": "While these policies could be inflationary domestically, these measures will likely be offset by liberal fossil fuel policies and significant deregulation across various industries and sectors, especially in the energy and financial sectors.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially materialized. SOURCE 4 (J.P. Morgan, December 2025) confirms inflationary pressures with 'domestic prices have already been adjusting sharply higher' and effective tariff rates at 15.8%. SOURCE 5 (Reuters, December 17, 2025) reports 'CFOs in Fed survey on average expect 4.2% price rise in 2026,' indicating inflation was not offset. However, SOURCE 15 (World Bank, December 2025) notes 'Economic growth in 2025 has defied the gloomy expectations,' suggesting some offsetting factors. The sources do not provide explicit confirmation of 'liberal fossil fuel policies' or detailed deregulation in energy and financial sectors, though SOURCE 15 references 'liberal fossil fuel policies' in the context of offsetting inflation. The prediction's offset thesis appears incomplete, as inflation pressures persisted despite growth resilience."
+      }
+    ],
+    "overall_analysis": "Bel Air Investment Advisors' prediction was partially accurate on tariff implementation but less successful on the offset mechanism. The institution correctly identified that tariffs would be inflationary but overestimated the degree to which deregulation and fossil fuel policies would offset these pressures. While growth remained resilient in 2025, inflation expectations extended into 2026, suggesting the offsetting policies were insufficient. The prediction demonstrated understanding of policy mechanics but was overly optimistic about the economy's ability to absorb tariff-driven inflation.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Bel Air Investment Advisors' prediction was partially accurate on tariff implementation but less successful on the offset mechanism. The institution correctly identified that tariffs would be inflationary but overestimated the degree to which deregulation and fossil fuel policies would offset these pressures. While growth remained resilient in 2025, inflation expectations extended into 2026, suggesting the offsetting policies were insufficient. The prediction demonstrated understanding of policy mechanics but was overly optimistic about the economy's ability to absorb tariff-driven inflation.",
+    "id": "TARIFFS-BEL_AIR_INVESTMENT_ADVISORS-19-2025",
+    "Original_Rank": 19,
+    "Prediction_Text": "\"The Trump administration has vowed to impose additional tariffs on US trading partners, curtail legal immigration, and accelerate the deportation of illegal immigrants. While these policies could be inflationary domestically, these measures will likely be offset by liberal fossil fuel policies and significant deregulation across various industries and sectors, especially in the energy and financial sectors.\"",
+    "Institution": "BEL AIR INVESTMENT ADVISORS",
+    "Rank": 17
+  },
+  {
+    "statements": [
+      {
+        "statement": "Widespread tariffs might be hard to implement into law, but the uncertainty will encourage US companies to reshore in any case.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about tariffs being implemented is contradicted by reality. According to SOURCE 6 (CNBC, December 15, 2025), the U.S. Customs and Border Protection collected more than $200 billion in tariffs between January 20 and December 15, 2025, resulting from more than 40 executive orders by President Trump—demonstrating that tariffs were successfully implemented, not difficult to implement into law. However, the second part about reshoring is validated. SOURCE 11 (McKinsey, December 2025) explicitly states: 'Companies are accelerating plans to shift supply chain footprint into the United States, Eastern Europe, and Mexico,' confirming that uncertainty did encourage reshoring. SOURCE 4 (J.P. Morgan Global Research, December 2025) notes that companies are responding to tariff announcements with supply chain adjustments. The prediction was partially correct on reshoring but incorrect about implementation difficulty."
+      },
+      {
+        "statement": "This could boost US growth at the expense of its neighbors, but we would also expect more monetary stimulus outside of the US to offset this.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about US growth is partially validated. SOURCE 16 (Bloomberg, December 31, 2025) states 'the US economy looks set to turn in a solid year of growth for 2025,' and SOURCE 15 (World Bank, December 2025) notes 'The United States drove most of the recovery with strong AI investment and fiscal support.' However, the claim about growth at the expense of neighbors is mixed: SOURCE 13 (Bloomberg, December 24, 2025) reports 'the US saw an 8% contraction in inbound volumes while imports into Africa, the Middle East, Latin America and India all showed robust growth,' suggesting neighbors actually grew. Regarding monetary stimulus outside the US, the sources do not provide clear evidence of coordinated monetary stimulus by other central banks in response to US tariffs. SOURCE 5 (Reuters, December 17, 2025) mentions CFOs expect 4.2% price rises in 2026 but does not confirm external monetary stimulus. The prediction was partially correct on US growth but lacks clear validation on the offsetting stimulus mechanism."
+      }
+    ],
+    "overall_analysis": "Schroders' prediction demonstrated mixed accuracy on tariff dynamics in 2025. The institution correctly anticipated that tariff uncertainty would drive reshoring behavior, which materialized through accelerated supply chain shifts into the US and Mexico. However, the prediction significantly underestimated the ease of tariff implementation—tariffs were successfully enacted through executive orders rather than facing legislative obstacles. On the growth dynamics, while US growth did materialize, the prediction's assumption about growth occurring 'at the expense of neighbors' was contradicted by robust growth in emerging markets and developing economies. The prediction lacked specificity on the offsetting monetary stimulus mechanism, which was not clearly evidenced in the 2025 data.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Schroders' prediction demonstrated mixed accuracy on tariff dynamics in 2025. The institution correctly anticipated that tariff uncertainty would drive reshoring behavior, which materialized through accelerated supply chain shifts into the US and Mexico. However, the prediction significantly underestimated the ease of tariff implementation—tariffs were successfully enacted through executive orders rather than facing legislative obstacles. On the growth dynamics, while US growth did materialize, the prediction's assumption about growth occurring 'at the expense of neighbors' was contradicted by robust growth in emerging markets and developing economies. The prediction lacked specificity on the offsetting monetary stimulus mechanism, which was not clearly evidenced in the 2025 data.",
+    "id": "TARIFFS-SCHRODERS-21-2025",
+    "Original_Rank": 21,
+    "Prediction_Text": "\"Widespread tariffs might be hard to implement into law, but the uncertainty will encourage US companies to reshore in any case. This could boost US growth at the expense of its neighbors, but we would also expect more monetary stimulus outside of the US to offset this.\"",
+    "Institution": "SCHRODERS",
+    "Rank": 18
+  },
+  {
+    "statements": [
+      {
+        "statement": "Our back-of-an-envelope calculations suggest that Trump's proposed trade tariffs could reduce US GDP by as much as 0.3% this year (2025) and by far more in 2026 if more onerous tariffs are implanted.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize for 2025. SOURCE 16 (Bloomberg, December 31, 2025) reports 'the US economy looks set to turn in a solid year of growth for 2025,' contradicting the predicted 0.3% GDP reduction. SOURCE 15 (World Bank, December 2025) confirms 'Economic growth in 2025 has defied the gloomy expectations,' indicating actual growth exceeded the pessimistic tariff impact forecast. SOURCE 1 (Reuters, December 23, 2025) notes stocks 'recovered from April's \"Liberation Day\" tariffs' crash and have risen 21% in 2025,' suggesting the economy absorbed tariff shocks better than predicted. The 2026 outlook remains uncertain, but the 2025 prediction of 0.3% GDP reduction was clearly incorrect."
+      },
+      {
+        "statement": "The flip side to this scenario of course is that the impact could be less severe if all the associated tariff revenues are fully recycled into fiscal easing (tax cut) measures.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially materialized. SOURCE 6 (CNBC, December 15, 2025) reports that 'U.S. Customs and Border Protection collected more than $200 billion in tariffs,' confirming substantial tariff revenues. However, the sources do not provide explicit confirmation that these revenues were 'fully recycled into fiscal easing (tax cut) measures.' SOURCE 16 (Bloomberg, December 31, 2025) mentions 'tax cuts' as part of Trump's agenda but does not confirm they were funded by tariff revenues or that they fully offset tariff impacts. The actual outcome appears to be that growth remained solid despite tariffs, but whether this was due to fiscal recycling or other factors (AI investment, consumer resilience) is not definitively established in the sources."
+      }
+    ],
+    "overall_analysis": "First Abu Dhabi Bank's prediction was significantly inaccurate on the magnitude of tariff impacts in 2025. The institution's pessimistic 0.3% GDP reduction forecast was contradicted by actual solid growth and market resilience. While the bank correctly identified the potential offset mechanism (fiscal recycling), it failed to anticipate the economy's actual ability to absorb tariff shocks. The prediction demonstrated analytical rigor in considering offsetting factors but was overly pessimistic on the baseline tariff impact, missing the broader economic resilience that characterized 2025.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "First Abu Dhabi Bank's prediction was significantly inaccurate on the magnitude of tariff impacts in 2025. The institution's pessimistic 0.3% GDP reduction forecast was contradicted by actual solid growth and market resilience. While the bank correctly identified the potential offset mechanism (fiscal recycling), it failed to anticipate the economy's actual ability to absorb tariff shocks. The prediction demonstrated analytical rigor in considering offsetting factors but was overly pessimistic on the baseline tariff impact, missing the broader economic resilience that characterized 2025.",
+    "id": "TARIFFS-FIRST_ABU_DHABI_BANK-20-2025",
+    "Original_Rank": 20,
+    "Prediction_Text": "\"Our back-of-an-envelope calculations suggest that Trump's proposed trade tariffs could reduce US GDP by as much as 0.3% this year (2025) and by far more in 2026 if more onerous tariffs are implanted. The flip side to this scenario of course is that the impact could be less severe if all the associated tariff revenues are fully recycled into fiscal easing (tax cut) measures.\"",
+    "Institution": "FIRST ABU DHABI BANK",
+    "Rank": 19
+  },
+  {
+    "statements": [
+      {
+        "statement": "Any tariffs-related inflation shock should be short-lived.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. SOURCE 5 (Reuters, December 17, 2025) reports that 'CFOs in Fed survey on average expect 4.2% price rise in 2026,' indicating inflation expectations are extending well beyond 2025. SOURCE 4 (J.P. Morgan, December 2025) notes that 'domestic prices have already been adjusting sharply higher in anticipation of the new tariffs' and that tariff rates reached 15.8% by year-end. SOURCE 13 (Bloomberg, December 24, 2025) explicitly states 'The Consequences of Trump's Trade War May Arrive in 2026,' suggesting inflationary pressures are not short-lived but rather building into the next year."
+      },
+      {
+        "statement": "Similarly, just as how companies and consumers adjusted after the trade war\" in Trump's first administration, we would expect the US economy to “move on” within a few quarters, following the announcement of new tariffs.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. SOURCE 11 (McKinsey, December 2025) reports that 'New tariffs are affecting 30 percent of global supply chain activities' and that 'Companies are not passing the full costs of tariffs on to their customers,' indicating structural adjustments rather than quick adaptation. SOURCE 9 (Reuters, December 1, 2025) states 'US manufacturing stuck in doldrums as tariff headwinds' continue, with 'A new 25% duty on imported medium- and heavy-duty trucks and parts came into effect on November 1.' SOURCE 7 (McKinsey, December 2025) notes that 'For the past two quarters, trade policy changes were the top perceived risk to growth,' suggesting ongoing disruption rather than quick resolution. The economy did not 'move on' within quarters as predicted."
+      }
+    ],
+    "overall_analysis": "Barclays Private Bank's prediction was significantly inaccurate. The institution underestimated both the persistence of tariff-related inflation and the structural nature of supply chain adjustments required. Rather than a short-lived shock followed by quick adaptation, 2025 demonstrated that tariffs created sustained pricing pressures extending into 2026 and required fundamental supply chain reconfiguration. The historical analogy to Trump's first administration proved insufficient to capture the scale and scope of 2025's tariff implementation.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 2
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Barclays Private Bank's prediction was significantly inaccurate. The institution underestimated both the persistence of tariff-related inflation and the structural nature of supply chain adjustments required. Rather than a short-lived shock followed by quick adaptation, 2025 demonstrated that tariffs created sustained pricing pressures extending into 2026 and required fundamental supply chain reconfiguration. The historical analogy to Trump's first administration proved insufficient to capture the scale and scope of 2025's tariff implementation.",
+    "id": "TARIFFS-BARCLAYS_PRIVATE_BANK-12-2025",
+    "Original_Rank": 12,
+    "Prediction_Text": "\"Any tariffs-related inflation shock should be short-lived. Similarly, just as how companies and consumers adjusted after the trade war\" in Trump's first administration, we would expect the US economy to “move on” within a few quarters, following the announcement of new tariffs.\"\"\"",
+    "Institution": "BARCLAYS PRIVATE BANK",
+    "Rank": 20
+  },
+  {
+    "statements": [
+      {
+        "statement": "If history is any indication, the extreme tariff threats may simply be negotiation tools leading toward agreements with China and other countries, and potentially much less disruptive to economic growth, inflation, sales, and operations of multinational corporations.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. Rather than serving as negotiation tools leading to agreements, the tariffs were implemented at scale. SOURCE 6 (CNBC, December 15, 2025) reports that 'U.S. Customs and Border Protection collected more than $200 billion in tariffs' from 'more than 40 executive orders,' indicating actual implementation rather than negotiation posturing. SOURCE 11 (McKinsey, December 2025) confirms 'New tariffs are affecting 30 percent of global supply chain activities' and that 'Companies are not passing the full costs of tariffs on to their customers,' demonstrating real disruption. SOURCE 17 (CNBC, December 31, 2025) notes that 'China stood up again...and showed the world that it would not be bullied,' suggesting negotiations did not yield the expected agreements. The tariffs proved highly disruptive, contradicting the prediction."
+      }
+    ],
+    "overall_analysis": "Charles Schwab's prediction was fundamentally incorrect. The institution's reliance on historical precedent from Trump's first administration proved inadequate for 2025's tariff environment. Rather than serving as negotiation tools, tariffs were rapidly implemented at unprecedented scale ($200 billion collected), affecting 30% of global supply chains. The prediction underestimated both the administration's commitment to actual tariff implementation and the structural economic disruption that resulted, making this one of the least accurate forecasts in the evaluation.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Charles Schwab's prediction was fundamentally incorrect. The institution's reliance on historical precedent from Trump's first administration proved inadequate for 2025's tariff environment. Rather than serving as negotiation tools, tariffs were rapidly implemented at unprecedented scale ($200 billion collected), affecting 30% of global supply chains. The prediction underestimated both the administration's commitment to actual tariff implementation and the structural economic disruption that resulted, making this one of the least accurate forecasts in the evaluation.",
+    "id": "TARIFFS-CHARLES_SCHWAB-14-2025",
+    "Original_Rank": 14,
+    "Prediction_Text": "\"If history is any indication, the extreme tariff threats may simply be negotiation tools leading toward agreements with China and other countries, and potentially much less disruptive to economic growth, inflation, sales, and operations of multinational corporations.\"",
+    "Institution": "CHARLES SCHWAB",
+    "Rank": 21
+  }
+]

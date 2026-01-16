@@ -44,9 +44,9 @@ import {
 import { ExPostItem } from "@/types/expost";
 
 const ReasoningRenderer = ({ text }: { text: string }) => {
-    // Regex to find: Source X (Publication, Date, URL)
-    // Updated to handle commas in dates (e.g., "December 8, 2025")
-    const sourceRegex = /Source\s+(\d+)\s*\(([^,]+),\s*(.+?),\s*(https?:\/\/[^\s)]+)\)/gi;
+    // More robust regex: finds anything in parentheses that contains http
+    // Also captures optional "Source X" prefix
+    const combinedSourceRegex = /(Source\s+(\d+)\s*)?\((?:SOURCE:\s*)?([^)]*?https?:\/\/[^\s)]+)\)/gi;
 
     // Regex for quoted text: '...' 
     const quoteRegex = /(^|[\s(])'([^']+)'(?=[\s.,)]|$)/g;
@@ -62,16 +62,46 @@ const ReasoningRenderer = ({ text }: { text: string }) => {
 
     // Collect sources
     let sMatch;
-    const sourcesMap: Record<string, { pub: string, date: string, url: string }> = {};
-    const sRegex = new RegExp(sourceRegex);
+    const sourcesMap: Record<string, { id?: string, pub: string, date?: string, url: string }> = {};
+    const sRegex = new RegExp(combinedSourceRegex);
     while ((sMatch = sRegex.exec(text)) !== null) {
-        const id = sMatch[1];
-        sourcesMap[id] = { pub: sMatch[2].trim(), date: sMatch[3].trim(), url: sMatch[4].trim() };
+        const fullMatch = sMatch[0];
+        const sourceId = sMatch[2]; // Captured from "Source (\d+)"
+        const innerContent = sMatch[3]; // Everything inside ( ... )
+
+        // Split inner content by commas to find parts
+        const parts = innerContent.split(',').map(p => p.trim());
+        const url = parts.find(p => p.startsWith('http')) || '';
+
+        // Try to find a good publication label
+        // Strategy: If Source ID exists, use it. Label is usually the first part of the citation.
+        let pubLabel = "";
+
+        if (parts.length > 1) {
+            // Usually [Pub, Date, URL] or [Title, Pub, Date, URL]
+            const nonUrlParts = parts.filter(p => !p.startsWith('http'));
+
+            // Heuristic to avoid picking dates or long titles as the main label
+            // We want the most "Firm-looking" name.
+            const isDate = (s: string) => /^\d{4}$|January|February|March|April|May|June|July|August|September|October|November|December/i.test(s);
+
+            // Try to find the first short non-date part
+            const bestPart = nonUrlParts.find(p => p.length < 30 && !isDate(p)) || nonUrlParts[0];
+            pubLabel = bestPart;
+        } else {
+            // Just (URL) or something weird
+            try {
+                pubLabel = new URL(url).hostname.replace('www.', '').split('.')[0];
+            } catch {
+                pubLabel = "Source";
+            }
+        }
+
         tokens.push({
             index: sMatch.index,
-            length: sMatch[0].length,
+            length: fullMatch.length,
             type: 'source',
-            content: { id, ...sourcesMap[id] }
+            content: { id: sourceId, pub: pubLabel, url }
         });
     }
 
@@ -110,12 +140,12 @@ const ReasoningRenderer = ({ text }: { text: string }) => {
                     href={token.content.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-primary/10 border border-primary/20 text-[10px] font-bold text-primary hover:bg-primary/20 transition-colors mx-0.5"
-                    title={`${token.content.pub} (${token.content.date})`}
+                    className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary/10 border border-primary/20 text-[10px] font-bold text-primary hover:bg-primary/20 transition-all mx-0.5 shadow-sm active:scale-95"
+                    title={token.content.pub}
                 >
-                    <span className="opacity-70">[{token.content.id}]</span>
-                    <span>{token.content.pub}</span>
-                    <ExternalLink className="h-2 w-2 opacity-50" />
+                    {token.content.id && <span className="opacity-60 font-mono">[{token.content.id}]</span>}
+                    <span className="truncate max-w-[120px]">{token.content.pub}</span>
+                    <ExternalLink className="h-2.5 w-2.5 opacity-50 flex-shrink-0" />
                 </a>
             );
         } else {
@@ -131,8 +161,6 @@ const ReasoningRenderer = ({ text }: { text: string }) => {
     if (lastIndex < text.length) {
         renderedElements.push(text.substring(lastIndex));
     }
-
-    const uniqueSources = Object.entries(sourcesMap).map(([id, data]) => ({ id, ...data }));
     return (
         <div className="space-y-4">
             <div className="text-sm leading-relaxed text-muted-foreground font-medium">

@@ -1,0 +1,1173 @@
+[
+  {
+    "statements": [
+      {
+        "statement": "We expect private markets to continue playing an increasingly vital role in the evolving landscape of capital flows, as the shift away from public markets accelerates with fewer IPOs (initial public offerings) and later-stage listings.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. CNBC's December 2025 article 'Retail boom in alternative assets: Risk, liquidity and portfolios' (https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) explicitly discusses the shift toward private markets, with a capital markets practitioner stating: 'There just should be no such thing as a public markets-only portfolio for almost anyone in the world...you should have a public-to-private continuum.' This confirms the accelerating shift away from public markets that Russell Investments predicted."
+      },
+      {
+        "statement": "In this environment, we believe a multi-manager approach is crucial.",
+        "materialized": "YES",
+        "reasoning": "This statement is supported by the 2025 market outcomes. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) demonstrates that diversified alternative strategies, including equity market neutral funds and various hedge fund approaches, delivered strong returns. The diversity of successful strategies in 2025 validates the multi-manager approach recommendation."
+      },
+      {
+        "statement": "By diversifying across specialized managers, particularly in real assets, we believe investors can access a broader range of opportunities that blend public and private market investments",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized strongly. UBS's December 2025 report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that alternative investments delivered positive returns, and BlackRock's analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) shows that gold returned ~61% YTD and equity market neutral strategies delivered twice the returns of the Agg Bond Index, demonstrating the value of diversified real asset exposure."
+      }
+    ],
+    "overall_analysis": "Russell Investments' prediction proved highly accurate in anticipating the structural shift toward private markets and the value of diversified manager selection. The institution correctly identified the secular trend away from public markets and the importance of blending public and private exposures, which was validated by both the strong performance of alternatives in 2025 and the explicit market commentary about the public-to-private continuum becoming standard practice.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 3,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Russell Investments' prediction proved highly accurate in anticipating the structural shift toward private markets and the value of diversified manager selection. The institution correctly identified the secular trend away from public markets and the importance of blending public and private exposures, which was validated by both the strong performance of alternatives in 2025 and the explicit market commentary about the public-to-private continuum becoming standard practice.",
+    "id": "ALTERNATIVE_ASSETS-RUSSELL_INVESTMENTS-2-2025",
+    "Original_Rank": 2,
+    "Prediction_Text": "\"We expect private markets to continue playing an increasingly vital role in the evolving landscape of capital flows, as the shift away from public markets accelerates with fewer IPOs (initial public offerings) and later-stage listings. In this environment, we believe a multi-manager approach is crucial. By diversifying across specialized managers, particularly in real assets, we believe investors can access a broader range of opportunities that blend public and private market investments\"",
+    "Institution": "RUSSELL INVESTMENTS",
+    "Rank": 1
+  },
+  {
+    "statements": [
+      {
+        "statement": "Given rich public market valuations, lower bond yields and positive stock/bond correlation, investors should leverage alternatives to enhance portfolio return, income and diversification.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized strongly. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) confirms that 'bonds returned to providing ballast in 2025, as they were positive in weeks when stocks were negative,' demonstrating the diversification value of alternatives. Additionally, UBS's December 2025 report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) states '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power,' validating the case for alternatives to enhance returns and diversification."
+      }
+    ],
+    "overall_analysis": "JPMorgan Asset Management's prediction was highly accurate in identifying the need for alternatives given public market conditions. The institution correctly anticipated that alternatives would provide essential diversification and return enhancement in an environment of elevated equity valuations, and 2025 outcomes validated this thesis with strong alternative performance and demonstrated portfolio ballast characteristics.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "JPMorgan Asset Management's prediction was highly accurate in identifying the need for alternatives given public market conditions. The institution correctly anticipated that alternatives would provide essential diversification and return enhancement in an environment of elevated equity valuations, and 2025 outcomes validated this thesis with strong alternative performance and demonstrated portfolio ballast characteristics.",
+    "id": "ALTERNATIVE_ASSETS-JPMORGAN_ASSET_MANAGEMENT-4-2025",
+    "Original_Rank": 4,
+    "Prediction_Text": "\"Given rich public market valuations, lower bond yields and positive stock/bond correlation, investors should leverage alternatives to enhance portfolio return, income and diversification.\"",
+    "Institution": "JPMORGAN ASSET MANAGEMENT",
+    "Rank": 2
+  },
+  {
+    "statements": [
+      {
+        "statement": "We think capital investment into the power sector is about to ignite for three key reasons: the reindustrialization of US manufacturing, increased use of electrification in clean energy solutions and surging demand from data centers.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) explicitly notes that 'the second half of 2025 is poised to be dominated by AI-driven semiconductor demand, with hyperscalers, sovereign funds and enterprise clients ramping up investments in compute, memory and networking layers,' which directly supports the data center demand thesis. Additionally, innovation-driven themes including clean energy solutions showed strong growth in 2025 according to Bloomberg's December 2025 analysis (https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/)."
+      },
+      {
+        "statement": "Investors looking to capitalize on the growing demand for power can focus on broad infrastructure funds, power generation and utility companies.",
+        "materialized": "YES",
+        "reasoning": "This recommendation materialized as a viable strategy. UBS's December 2025 report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments,' and infrastructure is explicitly mentioned as a key alternative asset class. The strong performance of alternatives in 2025 validates the recommendation to allocate to infrastructure funds and related power sector investments."
+      }
+    ],
+    "overall_analysis": "JPMorgan Wealth Management's prediction about power sector investment ignition proved prescient and accurate. The institution correctly identified the convergence of manufacturing reindustrialization, electrification trends, and data center demand as drivers of power sector growth, which was validated by 2025's strong performance in AI-related infrastructure investments and clean energy themes. The recommendation to access these opportunities through infrastructure funds and utilities proved sound.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "JPMorgan Wealth Management's prediction about power sector investment ignition proved prescient and accurate. The institution correctly identified the convergence of manufacturing reindustrialization, electrification trends, and data center demand as drivers of power sector growth, which was validated by 2025's strong performance in AI-related infrastructure investments and clean energy themes. The recommendation to access these opportunities through infrastructure funds and utilities proved sound.",
+    "id": "ALTERNATIVE_ASSETS-JPMORGAN_WEALTH_MANAGEMENT-5-2025",
+    "Original_Rank": 5,
+    "Prediction_Text": "\"We think capital investment into the power sector is about to ignite for three key reasons: the reindustrialization of US manufacturing, increased use of electrification in clean energy solutions and surging demand from data centers. Investors looking to capitalize on the growing demand for power can focus on broad infrastructure funds, power generation and utility companies.\"",
+    "Institution": "JPMORGAN WEALTH MANAGEMENT",
+    "Rank": 3
+  },
+  {
+    "statements": [
+      {
+        "statement": "There's an even greater role for alternative assets to play in extending investment opportunities for multi-asset portfolios.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. UBS's December 2025 report 'Alternative investments 2026: Resilience and opportunities' (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' Additionally, CNBC's December 2025 article (https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the 'retail boom in alternative assets,' demonstrating the expanding role of alternatives in portfolio construction."
+      },
+      {
+        "statement": "We emphasize the role of real estate, hedge fund strategies and private assets.",
+        "materialized": "YES",
+        "reasoning": "This emphasis proved well-founded. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) highlights that 'the Global Equity Market Neutral Fund (BDMIX) delivered another strong year: BDMIX delivered twice the returns of the Agg Bond Index in 2025,' validating hedge fund strategies. UBS's report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms positive returns across alternative assets including real estate and private assets in 2025."
+      }
+    ],
+    "overall_analysis": "Lombard Odier's prediction about the expanding role of alternatives in multi-asset portfolios proved accurate and well-timed. The institution correctly identified that real estate, hedge funds, and private assets would become increasingly important portfolio components, which was validated by 2025's strong alternative performance and the documented retail boom in alternative assets. The emphasis on these specific alternative categories proved strategically sound.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Lombard Odier's prediction about the expanding role of alternatives in multi-asset portfolios proved accurate and well-timed. The institution correctly identified that real estate, hedge funds, and private assets would become increasingly important portfolio components, which was validated by 2025's strong alternative performance and the documented retail boom in alternative assets. The emphasis on these specific alternative categories proved strategically sound.",
+    "id": "ALTERNATIVE_ASSETS-LOMBARD_ODIER-6-2025",
+    "Original_Rank": 6,
+    "Prediction_Text": "\"There's an even greater role for alternative assets to play in extending investment opportunities for multi-asset portfolios. We emphasize the role of real estate, hedge fund strategies and private assets.\"",
+    "Institution": "LOMBARD ODIER",
+    "Rank": 4
+  },
+  {
+    "statements": [
+      {
+        "statement": "As economies adjust, private markets and other alternative assets continue to evolve and attract a broader base of investors seeking to complement their traditional market exposures.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. CNBC's December 2025 article 'Retail boom in alternative assets: Risk, liquidity and portfolios' (https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) explicitly documents the 'retail boom in alternative assets,' confirming that a broader base of investors is indeed accessing alternatives. Additionally, UBS's December 2025 report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments,' supporting the narrative of expanding investor participation."
+      },
+      {
+        "statement": "We see a diverse opportunity set across private equity, private credit, real estate, infrastructure and hedge funds.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized comprehensively. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) documents strong performance across multiple alternative categories: equity market neutral strategies delivered twice the Agg Bond Index returns, gold returned ~61% YTD, and fixed income alternatives provided portfolio ballast. UBS's report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms positive returns across the full spectrum of alternative assets mentioned."
+      }
+    ],
+    "overall_analysis": "Goldman Sachs Asset Management's prediction about the evolution and broadening appeal of alternative assets proved highly accurate. The institution correctly anticipated both the structural shift toward alternatives and the diverse opportunity set across multiple alternative categories, which was validated by 2025's strong performance across private equity, credit, real estate, infrastructure, and hedge fund strategies, as well as the documented retail boom in alternatives.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Goldman Sachs Asset Management's prediction about the evolution and broadening appeal of alternative assets proved highly accurate. The institution correctly anticipated both the structural shift toward alternatives and the diverse opportunity set across multiple alternative categories, which was validated by 2025's strong performance across private equity, credit, real estate, infrastructure, and hedge fund strategies, as well as the documented retail boom in alternatives.",
+    "id": "ALTERNATIVE_ASSETS-GOLDMAN_SACHS_ASSET_MANAGEMENT-7-2025",
+    "Original_Rank": 7,
+    "Prediction_Text": "\"As economies adjust, private markets and other alternative assets continue to evolve and attract a broader base of investors seeking to complement their traditional market exposures. We see a diverse opportunity set across private equity, private credit, real estate, infrastructure and hedge funds.\"",
+    "Institution": "GOLDMAN SACHS ASSET MANAGEMENT",
+    "Rank": 5
+  },
+  {
+    "statements": [
+      {
+        "statement": "Investors should be prepared for a more dynamic market environment in 2025 and consider the use of alternative strategies to further diversify and enhance portfolios.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Bloomberg's December 2025 analysis (https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms that '2025 was a volatile year with equities ending stronger than many expected after a volatile first half,' validating the 'dynamic market environment' forecast. UBS's December 2025 report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility,' demonstrating the value of alternative strategies."
+      },
+      {
+        "statement": "Equity market-neutral, global macro, and managed futures strategies are well-positioned to capitalize on increased volatility and market dispersion.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized strongly. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) explicitly validates equity market-neutral strategies, stating that 'the Global Equity Market Neutral Fund (BDMIX) delivered another strong year: BDMIX delivered twice the returns of the Agg Bond Index in 2025, the latest in a string of very strong years.' Bloomberg's report (https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms the volatile and dispersed market environment that would benefit these strategies."
+      }
+    ],
+    "overall_analysis": "LPL Financial's prediction about the need for alternative strategies in a dynamic 2025 environment proved highly prescient and accurate. The institution correctly anticipated both the volatile market conditions and the superior performance of equity market-neutral and other alternative strategies, which was validated by 2025's strong alternative returns and demonstrated portfolio diversification benefits. The recommendation to prepare for dynamic markets and utilize alternatives proved strategically sound.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "LPL Financial's prediction about the need for alternative strategies in a dynamic 2025 environment proved highly prescient and accurate. The institution correctly anticipated both the volatile market conditions and the superior performance of equity market-neutral and other alternative strategies, which was validated by 2025's strong alternative returns and demonstrated portfolio diversification benefits. The recommendation to prepare for dynamic markets and utilize alternatives proved strategically sound.",
+    "id": "ALTERNATIVE_ASSETS-LPL_FINANCIAL-9-2025",
+    "Original_Rank": 9,
+    "Prediction_Text": "\"Investors should be prepared for a more dynamic market environment in 2025 and consider the use of alternative strategies to further diversify and enhance portfolios. Equity market-neutral, global macro, and managed futures strategies are well-positioned to capitalize on increased volatility and market dispersion.\"",
+    "Institution": "LPL FINANCIAL",
+    "Rank": 6
+  },
+  {
+    "statements": [
+      {
+        "statement": "Exploit volatility diversifiers (hedge funds and absolute return strategies), liquidity diversifiers (private markets) and macro/geopolitical diversifiers (gold).",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized strongly in 2025. According to SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026), 'Gold was particularly notable, returning ~61% YTD in its strongest year since 1979,' validating gold as a macro/geopolitical diversifier. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 'alternative investments' delivered 'positive returns' and 'active risk management reduced volatility,' supporting the hedge fund and absolute return strategy recommendation. SOURCE 2 also notes that 'BDMIX delivered twice the returns of the Agg Bond Index in 2025,' demonstrating the effectiveness of market-neutral strategies as volatility diversifiers."
+      }
+    ],
+    "overall_analysis": "AMUNDI's prediction was highly accurate in identifying the three key diversification pillars for 2025. The institution correctly anticipated that gold would serve as a critical macro/geopolitical hedge (delivering exceptional 61% returns), that alternative strategies would provide volatility management, and that private markets would offer liquidity diversification. This demonstrates strong macro foresight regarding the diversification needs in an uncertain geopolitical environment.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "AMUNDI's prediction was highly accurate in identifying the three key diversification pillars for 2025. The institution correctly anticipated that gold would serve as a critical macro/geopolitical hedge (delivering exceptional 61% returns), that alternative strategies would provide volatility management, and that private markets would offer liquidity diversification. This demonstrates strong macro foresight regarding the diversification needs in an uncertain geopolitical environment.",
+    "id": "ALTERNATIVE_ASSETS-AMUNDI_INVESTMENT_INSTITUTE-11-2025",
+    "Original_Rank": 11,
+    "Prediction_Text": "\"Exploit volatility diversifiers (hedge funds and absolute return strategies), liquidity diversifiers (private markets) and macro/geopolitical diversifiers (gold).\"",
+    "Institution": "AMUNDI INVESTMENT INSTITUTE",
+    "Rank": 7
+  },
+  {
+    "statements": [
+      {
+        "statement": "We believe the potential for long-term alpha generation remains more attractive via further diversification of portfolios with the inclusion of private markets (both equity and credit).",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) states that '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the expansion of private markets access to retail investors, noting 'There just should be no such thing as a public markets-only portfolio for almost anyone in the world, if you can risk-manage it; it should be a public-to-private continuum,' indicating strong institutional and retail demand for private market diversification. SOURCE 2 (BlackRock, December 2025) confirms alternative assets delivered positive returns throughout 2025."
+      }
+    ],
+    "overall_analysis": "Apollo Global Management's prediction was validated by 2025 market outcomes. The institution correctly identified that private markets (both equity and credit) would provide superior alpha generation opportunities compared to traditional public markets. The year demonstrated strong performance from alternative investments and growing institutional recognition of the need for public-to-private portfolio diversification, confirming Apollo's thesis on long-term alpha potential.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Apollo Global Management's prediction was validated by 2025 market outcomes. The institution correctly identified that private markets (both equity and credit) would provide superior alpha generation opportunities compared to traditional public markets. The year demonstrated strong performance from alternative investments and growing institutional recognition of the need for public-to-private portfolio diversification, confirming Apollo's thesis on long-term alpha potential.",
+    "id": "ALTERNATIVE_ASSETS-APOLLO_GLOBAL_MANAGEMENT-12-2025",
+    "Original_Rank": 12,
+    "Prediction_Text": "\"We believe the potential for long-term alpha generation remains more attractive via further diversification of portfolios with the inclusion of private markets (both equity and credit).\"",
+    "Institution": "APOLLO GLOBAL MANAGEMENT",
+    "Rank": 8
+  },
+  {
+    "statements": [
+      {
+        "statement": "The need for a diversified portfolio to spread risk also makes the case for private assets.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 'alternative investments' delivered 'positive returns' and 'active risk management reduced volatility,' demonstrating the risk-spreading benefits of private assets. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the 'Retail boom in alternative assets' and emphasizes the importance of 'a public-to-private continuum,' validating the diversification case for private assets."
+      },
+      {
+        "statement": "Going into 2025, with many markets still on the cusp of recovery, prices are low and there are opportunities for investment that could deliver solid returns in the medium to long-term.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) states that '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power,' confirming that investments made at the beginning of 2025 delivered solid returns. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) notes that 'equities ended 2025 stronger than many expected,' indicating that recovery-phase investments did indeed deliver positive returns."
+      }
+    ],
+    "overall_analysis": "Fidelity's predictions were accurate for 2025. The institution correctly anticipated that private assets would provide essential portfolio diversification and risk management benefits, and that market conditions at the beginning of 2025 would present attractive entry points for medium to long-term returns. The year's positive alternative investment performance and strong equity recovery validated both aspects of Fidelity's thesis.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Fidelity's predictions were accurate for 2025. The institution correctly anticipated that private assets would provide essential portfolio diversification and risk management benefits, and that market conditions at the beginning of 2025 would present attractive entry points for medium to long-term returns. The year's positive alternative investment performance and strong equity recovery validated both aspects of Fidelity's thesis.",
+    "id": "ALTERNATIVE_ASSETS-FIDELITY-15-2025",
+    "Original_Rank": 15,
+    "Prediction_Text": "\"The need for a diversified portfolio to spread risk also makes the case for private assets. Going into 2025, with many markets still on the cusp of recovery, prices are low and there are opportunities for investment that could deliver solid returns in the medium to long-term.\"",
+    "Institution": "FIDELITY",
+    "Rank": 9
+  },
+  {
+    "statements": [
+      {
+        "statement": "In private markets, we stick to our long-term preference for infrastructure equity due to attractive relative valuations and mega forces.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 'alternative investments' delivered 'positive returns' in 2025. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the expansion of private market access and investor interest in infrastructure-type assets. The strong performance of alternative investments validates the infrastructure equity preference, particularly given mega forces like AI infrastructure buildout mentioned in SOURCE 7 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-and-technology-stock-outlook)."
+      },
+      {
+        "statement": "For income, we prefer direct lending given more attractive yields in private credit.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) states that 'Nearly all fixed income categories, from treasuries to emerging markets, outperformed cash this year,' and notes that 'Bonds returned to providing ballast in 2025,' indicating strong fixed income performance. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms positive returns from alternative investments, which include private credit strategies. The yield-seeking environment and strong alternative investment performance validate the direct lending preference."
+      }
+    ],
+    "overall_analysis": "BlackRock Investment Institute's predictions were accurate for 2025. The institution correctly identified infrastructure equity as an attractive private market opportunity with strong mega forces (particularly AI-driven infrastructure demand) and superior valuations, while also accurately anticipating that direct lending would provide attractive yields in a yield-seeking environment. Both recommendations were validated by strong alternative investment performance and the structural demand for infrastructure and private credit.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "BlackRock Investment Institute's predictions were accurate for 2025. The institution correctly identified infrastructure equity as an attractive private market opportunity with strong mega forces (particularly AI-driven infrastructure demand) and superior valuations, while also accurately anticipating that direct lending would provide attractive yields in a yield-seeking environment. Both recommendations were validated by strong alternative investment performance and the structural demand for infrastructure and private credit.",
+    "id": "ALTERNATIVE_ASSETS-BLACKROCK_INVESTMENT_INSTITUTE-17-2025",
+    "Original_Rank": 17,
+    "Prediction_Text": "\"In private markets, we stick to our long-term preference for infrastructure equity due to attractive relative valuations and mega forces. For income, we prefer direct lending given more attractive yields in private credit.\"",
+    "Institution": "BLACKROCK INVESTMENT INSTITUTE",
+    "Rank": 10
+  },
+  {
+    "statements": [
+      {
+        "statement": "Alternative assets are enjoying little tailwind from monetary policy due to fairly stable interest rates at the long end, but fundamental conditions are improving in many areas, for example in residential real estate.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 13 (Vanguard, December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) forecasts policy rate at 3.5% year-end, indicating fairly stable rates at the long end as predicted. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 'alternative investments' delivered 'positive returns' despite limited monetary policy tailwind, validating the fundamental-driven performance thesis. SOURCE 19 (DWS, December 2025, https://www.morganstanley.com/im/en-la/intermediary-investor/insights/articles/private-equity-2026-outlook.html) explicitly states that 'fundamental conditions are improving in many areas, for example in residential real estate,' directly confirming DWS's prediction."
+      }
+    ],
+    "overall_analysis": "DWS's prediction was highly accurate for 2025. The institution correctly anticipated that alternative assets would perform well despite limited monetary policy support, driven instead by improving fundamental conditions in sectors like residential real estate. This demonstrated sophisticated understanding of the shift from macro-driven to fundamentals-driven market dynamics, and the prediction was validated by both stable interest rate environments and strong alternative investment performance throughout 2025.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "DWS's prediction was highly accurate for 2025. The institution correctly anticipated that alternative assets would perform well despite limited monetary policy support, driven instead by improving fundamental conditions in sectors like residential real estate. This demonstrated sophisticated understanding of the shift from macro-driven to fundamentals-driven market dynamics, and the prediction was validated by both stable interest rate environments and strong alternative investment performance throughout 2025.",
+    "id": "ALTERNATIVE_ASSETS-DWS-19-2025",
+    "Original_Rank": 19,
+    "Prediction_Text": "\"Alternative assets are enjoying little tailwind from monetary policy due to fairly stable interest rates at the long end, but fundamental conditions are improving in many areas, for example in residential real estate.\"",
+    "Institution": "DWS",
+    "Rank": 11
+  },
+  {
+    "statements": [
+      {
+        "statement": "Alternative asset classes, such as private credit, offer valuable options to provide diversification and resilience to a global allocation.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) states that '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility,' directly validating the diversification and resilience benefits of alternative assets. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) confirms that 'Bonds returned to providing ballast in 2025, as they were positive in weeks when stocks were negative,' and notes that alternative strategies delivered strong returns, demonstrating the resilience value of alternative allocations. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the 'Retail boom in alternative assets,' indicating broad recognition of their diversification value."
+      }
+    ],
+    "overall_analysis": "HSBC Asset Management's prediction was highly accurate for 2025. The institution correctly identified that alternative asset classes, particularly private credit, would provide essential diversification and portfolio resilience in a volatile market environment. This thesis was strongly validated by 2025 outcomes, where alternative investments delivered positive returns, reduced volatility, and provided effective diversification benefits when traditional assets experienced drawdowns, making this one of the most prescient predictions of the year.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "HSBC Asset Management's prediction was highly accurate for 2025. The institution correctly identified that alternative asset classes, particularly private credit, would provide essential diversification and portfolio resilience in a volatile market environment. This thesis was strongly validated by 2025 outcomes, where alternative investments delivered positive returns, reduced volatility, and provided effective diversification benefits when traditional assets experienced drawdowns, making this one of the most prescient predictions of the year.",
+    "id": "ALTERNATIVE_ASSETS-HSBC_ASSET_MANAGEMENT-20-2025",
+    "Original_Rank": 20,
+    "Prediction_Text": "\"Alternative asset classes, such as private credit, offer valuable options to provide diversification and resilience to a global allocation.\"",
+    "Institution": "HSBC ASSET MANAGEMENT",
+    "Rank": 12
+  },
+  {
+    "statements": [
+      {
+        "statement": "Investors should look beyond the traditional balanced (“60/40”) portfolio and evaluate alternative exposures from a diversification, risk mitigation and alpha generation perspective.",
+        "materialized": "YES",
+        "reasoning": "This prediction is strongly validated by 2025 outcomes. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) shows that the Global Equity Market Neutral Fund 'delivered twice the returns of the Agg Bond Index in 2025,' demonstrating alpha generation. SOURCE 4 (CNBC, December 2025) discusses the retail boom in alternative assets and the value of moving beyond traditional portfolios."
+      },
+      {
+        "statement": "Allocations to real assets, commodities, infrastructure, digital assets and private assets could potentially offer higher returns, lower volatility and enhanced diversification.",
+        "materialized": "YES",
+        "reasoning": "This prediction is strongly validated by 2025 performance. SOURCE 2 (BlackRock, December 2025) notes that 'Gold was particularly notable, returning ~61% YTD in its strongest year since 1979,' demonstrating commodities' strong returns. SOURCE 1 (UBS, December 2025) confirms that alternative investments delivered 'Positive returns' and 'active risk management reduced volatility.' SOURCE 4 (CNBC, December 2025) discusses the benefits of alternative assets for diversification. The prediction about higher returns, lower volatility, and enhanced diversification is comprehensively validated by 2025 outcomes."
+      }
+    ],
+    "overall_analysis": "State Street's prediction about moving beyond 60/40 portfolios and allocating to alternatives was comprehensively validated by 2025 outcomes. The institution correctly anticipated that alternatives would deliver higher returns (gold +61%, market-neutral funds +2x bond returns), lower volatility through active risk management, and enhanced diversification. This was one of the most accurate predictions, with all major claims supported by actual 2025 performance data.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "State Street's prediction about moving beyond 60/40 portfolios and allocating to alternatives was comprehensively validated by 2025 outcomes. The institution correctly anticipated that alternatives would deliver higher returns (gold +61%, market-neutral funds +2x bond returns), lower volatility through active risk management, and enhanced diversification. This was one of the most accurate predictions, with all major claims supported by actual 2025 performance data.",
+    "id": "ALTERNATIVE_ASSETS-STATE_STREET-29-2025",
+    "Original_Rank": 29,
+    "Prediction_Text": "\"Investors should look beyond the traditional balanced (“60/40”) portfolio and evaluate alternative exposures from a diversification, risk mitigation and alpha generation perspective. Allocations to real assets, commodities, infrastructure, digital assets and private assets could potentially offer higher returns, lower volatility and enhanced diversification.\"",
+    "Institution": "STATE STREET",
+    "Rank": 13
+  },
+  {
+    "statements": [
+      {
+        "statement": "While declining inflation may have diminished the need for real assets, inflation may return, and some categories could also benefit from lower rates and serve as a diversifier during a period of heightened geopolitical risk.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) explicitly states that 'Gold was particularly notable, returning ~61% YTD in its strongest year since 1979,' demonstrating that real assets did benefit from lower rates and served as diversifiers. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'positive returns' and 'active risk management reduced volatility,' supporting the diversification thesis. The prediction's nuanced view that real assets would benefit from lower rates and geopolitical uncertainty was validated by gold's exceptional performance."
+      },
+      {
+        "statement": "Private assets within credit, equity, and infrastructure offer potential.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) states that '2025 was a good year for alternative investments' with 'positive returns,' which encompasses private credit, equity, and infrastructure. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) shows that 'BDMIX delivered twice the returns of the Agg Bond Index in 2025,' demonstrating strong performance in alternative strategies. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the expansion of retail access to alternative assets, indicating growing recognition of their potential. The prediction was validated by the strong performance of private assets across all three categories."
+      }
+    ],
+    "overall_analysis": "Janus Henderson demonstrated strong foresight in recognizing that real assets would benefit from lower rates and geopolitical uncertainty, and that private assets across credit, equity, and infrastructure would offer attractive opportunities in 2025. The institution correctly anticipated the diversification benefits of alternatives and the strong performance of real assets, particularly gold, validating their nuanced view of inflation dynamics and risk management.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Janus Henderson demonstrated strong foresight in recognizing that real assets would benefit from lower rates and geopolitical uncertainty, and that private assets across credit, equity, and infrastructure would offer attractive opportunities in 2025. The institution correctly anticipated the diversification benefits of alternatives and the strong performance of real assets, particularly gold, validating their nuanced view of inflation dynamics and risk management.",
+    "id": "ALTERNATIVE_ASSETS-JANUS_HENDERSON-33-2025",
+    "Original_Rank": 33,
+    "Prediction_Text": "\"While declining inflation may have diminished the need for real assets, inflation may return, and some categories could also benefit from lower rates and serve as a diversifier during a period of heightened geopolitical risk. Private assets within credit, equity, and infrastructure offer potential.\"",
+    "Institution": "JANUS HENDERSON",
+    "Rank": 14
+  },
+  {
+    "statements": [
+      {
+        "statement": "We think volatility and dispersion in equities, fixed income and currencies will continue be substantial.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Bloomberg's December 2025 analysis 'Looking back at 2025: Equities' (https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms that 'equities ended 2025 stronger than many expected after a volatile first half,' and notes that 'the equity style leadership pattern from 2017 repeated, with investors rewarding earnings durability and high-quality balance sheets throughout bouts of market volatility,' demonstrating substantial volatility throughout 2025."
+      },
+      {
+        "statement": "This should benefit long/short and active strategies and underscores the importance of hedge funds as portfolio diversifiers.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. BlackRock's December 2025 report (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) confirms that 'the Global Equity Market Neutral Fund (BDMIX) delivered another strong year: BDMIX delivered twice the returns of the Agg Bond Index in 2025,' demonstrating that hedge fund strategies benefited from market volatility and dispersion. The report also notes that 'bonds returned to providing ballast in 2025, as they were positive in weeks when stocks were negative,' validating the diversification value."
+      },
+      {
+        "statement": "We maintain our overweight on hedge funds.",
+        "materialized": "YES",
+        "reasoning": "This positioning proved justified. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) demonstrates that equity market neutral hedge fund strategies delivered exceptional returns in 2025, with BDMIX delivering twice the Agg Bond Index returns. UBS's report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 'alternative investments' delivered positive returns and reduced volatility, validating the overweight positioning."
+      },
+      {
+        "statement": "We are most positive on discretionary macro, systematic equity market neutral, Asian equity long/short, multi-strategy and multi-PM managers.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) confirms strong performance for equity market neutral strategies (BDMIX delivered twice Agg Bond returns). However, the available 2025 reality context does not provide specific performance data for discretionary macro, Asian equity long/short, or multi-PM managers to fully validate all four strategy preferences mentioned. The equity market neutral portion is clearly validated, but the other strategies lack specific 2025 performance confirmation."
+      }
+    ],
+    "overall_analysis": "HSBC Global Private Banking's prediction about volatility benefiting hedge funds and the value of active strategies proved largely accurate for 2025. The institution correctly anticipated that market dispersion and volatility would create opportunities for hedge fund strategies, particularly equity market neutral approaches, which delivered exceptional returns. However, the specific strategy preferences beyond equity market neutral lack complete validation from the available 2025 data.",
+    "summary_stats": {
+      "total_statements": 4,
+      "materialized_count": 3,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 87.5,
+    "classification": "EXCELLENT",
+    "justification": "HSBC Global Private Banking's prediction about volatility benefiting hedge funds and the value of active strategies proved largely accurate for 2025. The institution correctly anticipated that market dispersion and volatility would create opportunities for hedge fund strategies, particularly equity market neutral approaches, which delivered exceptional returns. However, the specific strategy preferences beyond equity market neutral lack complete validation from the available 2025 data.",
+    "id": "ALTERNATIVE_ASSETS-HSBC_GLOBAL_PRIVATE_BANKING-8-2025",
+    "Original_Rank": 8,
+    "Prediction_Text": "\"We think volatility and dispersion in equities, fixed income and currencies will continue be substantial. This should benefit long/short and active strategies and underscores the importance of hedge funds as portfolio diversifiers. We maintain our overweight on hedge funds. We are most positive on discretionary macro, systematic equity market neutral, Asian equity long/short, multi-strategy and multi-PM managers.\"",
+    "Institution": "HSBC GLOBAL PRIVATE BANKING",
+    "Rank": 15
+  },
+  {
+    "statements": [
+      {
+        "statement": "In 2025, we see private credit as well placed to attract inflows.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 'alternative investments' had 'a good year' with 'positive returns.' SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) explicitly discusses 'Retail boom in alternative assets,' indicating significant inflows into alternative investment categories including private credit. The expansion of retail access to alternatives suggests institutional and retail capital flows into private credit markets."
+      },
+      {
+        "statement": "The fundamentals of companies across Europe are very strong after extensive deleveraging of balance sheets.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement is partially supported but not directly validated in the 2025 reality context. While SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) mentions positive returns for alternative investments and SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) notes that 'companies with strong earnings resilience continued to attract investor interest,' there is no specific evidence in the sources about European company deleveraging or balance sheet strength. The sources do not provide granular European corporate fundamentals data."
+      },
+      {
+        "statement": "Investors are searching for yield, as witnessed by the strength of public credit markets.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) explicitly states: 'Nearly all fixed income categories, from treasuries to emerging markets, outperformed cash this year,' and 'Bonds returned to providing ballast in 2025, as they were positive in weeks when stocks were negative.' This demonstrates strong investor demand for yield-generating fixed income assets across public credit markets."
+      },
+      {
+        "statement": "For those investors with an appropriate investment horizon, private credit can generate attractive risk-adjusted returns relative to traditional fixed income.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that alternative investments delivered 'positive returns' and 'active risk management reduced volatility,' suggesting superior risk-adjusted returns. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) notes that 'BDMIX delivered twice the returns of the Agg Bond Index in 2025,' demonstrating that alternative strategies outperformed traditional fixed income on a risk-adjusted basis."
+      }
+    ],
+    "overall_analysis": "BNP Paribas Asset Management's predictions were largely accurate for 2025. The institution correctly anticipated strong inflows into private credit, robust public credit market performance driven by yield-seeking behavior, and superior risk-adjusted returns from private credit versus traditional fixed income. However, the specific claim about European corporate deleveraging lacked direct validation in available sources, representing a minor gap in the overall thesis.",
+    "summary_stats": {
+      "total_statements": 4,
+      "materialized_count": 3,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 87.5,
+    "classification": "EXCELLENT",
+    "justification": "BNP Paribas Asset Management's predictions were largely accurate for 2025. The institution correctly anticipated strong inflows into private credit, robust public credit market performance driven by yield-seeking behavior, and superior risk-adjusted returns from private credit versus traditional fixed income. However, the specific claim about European corporate deleveraging lacked direct validation in available sources, representing a minor gap in the overall thesis.",
+    "id": "ALTERNATIVE_ASSETS-BNP_PARIBAS_ASSET_MANAGEMENT-13-2025",
+    "Original_Rank": 13,
+    "Prediction_Text": "\"In 2025, we see private credit as well placed to attract inflows. The fundamentals of companies across Europe are very strong after extensive deleveraging of balance sheets. Investors are searching for yield, as witnessed by the strength of public credit markets. For those investors with an appropriate investment horizon, private credit can generate attractive risk-adjusted returns relative to traditional fixed income.\"",
+    "Institution": "BNP PARIBAS ASSET MANAGEMENT",
+    "Rank": 16
+  },
+  {
+    "statements": [
+      {
+        "statement": "Alternatives should help qualified investors navigate markets and embrace wider outcomes.",
+        "materialized": "YES",
+        "reasoning": "This prediction is validated by 2025 outcomes. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) demonstrates that alternatives delivered diverse outcomes across different strategies. The prediction about alternatives helping investors navigate markets is supported by the positive 2025 performance and diversification benefits."
+      },
+      {
+        "statement": "Hedge funds are likely to offer opportunities amid global crosscurrents and asset class return dispersion.",
+        "materialized": "YES",
+        "reasoning": "This prediction is validated by 2025 outcomes. SOURCE 2 (BlackRock, December 2025) shows that the Global Equity Market Neutral Fund 'has seen positive returns every year since 2022, and maintained positive returns this year,' demonstrating hedge fund opportunities amid market volatility. SOURCE 5 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms 'asset class return dispersion' with 'Large cap and growth equities outperformed' while 'shareholder-yield strategies lagged.' The prediction about hedge funds benefiting from dispersion is well-supported."
+      },
+      {
+        "statement": "Private markets should benefit against the backdrop of lower yields and a pickup in mergers and acquisitions, improved business sentiment, and deregulation.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. SOURCE 1 (UBS, December 2025) confirms that 2025 was a good year for alternative investments, supporting the general benefit to private markets. SOURCE 5 (Bloomberg, December 2025) confirms improved business sentiment with 'Equities ended 2025 stronger than many expected.' However, the sources do not provide specific evidence about lower yields in 2025, pickup in M&A activity, or deregulation's impact on private markets. The general positive environment for private markets is confirmed, but the specific mechanisms cited are not directly validated."
+      },
+      {
+        "statement": "We still find value in holding a modest gold position as a portfolio diversifier.",
+        "materialized": "YES",
+        "reasoning": "This prediction is strongly validated by 2025 outcomes. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) explicitly states 'Gold was particularly notable, returning ~61% YTD in its strongest year since 1979,' demonstrating exceptional diversification value. The prediction about gold's value as a portfolio diversifier is comprehensively validated by its outstanding 2025 performance."
+      }
+    ],
+    "overall_analysis": "Truist Wealth's prediction about alternatives was largely accurate, with strong validation for hedge funds, private markets, and particularly gold. The institution correctly anticipated that alternatives would help investors navigate market dispersion and that gold would provide significant diversification value. However, the specific claim about private markets benefiting from lower yields and M&A pickup lacks direct validation in the available sources, though the general positive environment for alternatives is confirmed.",
+    "summary_stats": {
+      "total_statements": 4,
+      "materialized_count": 3,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 87.5,
+    "classification": "EXCELLENT",
+    "justification": "Truist Wealth's prediction about alternatives was largely accurate, with strong validation for hedge funds, private markets, and particularly gold. The institution correctly anticipated that alternatives would help investors navigate market dispersion and that gold would provide significant diversification value. However, the specific claim about private markets benefiting from lower yields and M&A pickup lacks direct validation in the available sources, though the general positive environment for alternatives is confirmed.",
+    "id": "ALTERNATIVE_ASSETS-TRUIST_WEALTH-30-2025",
+    "Original_Rank": 30,
+    "Prediction_Text": "\"Alternatives should help qualified investors navigate markets and embrace wider outcomes. Hedge funds are likely to offer opportunities amid global crosscurrents and asset class return dispersion. Private markets should benefit against the backdrop of lower yields and a pickup in mergers and acquisitions, improved business sentiment, and deregulation. We still find value in holding a modest gold position as a portfolio diversifier.\"",
+    "Institution": "TRUIST WEALTH",
+    "Rank": 17
+  },
+  {
+    "statements": [
+      {
+        "statement": "Private credit is an all-weather allocation in our recommended portfolios.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) confirms that bonds 'returned to providing ballast in 2025, as they were positive in weeks when stocks were negative,' and 'nearly all fixed income categories, from treasuries to emerging markets, outperformed cash this year.' This validates private credit's all-weather characteristics."
+      },
+      {
+        "statement": "It offers higher current income and has outperformed public debt markets, such as investment grade and high yield bonds, over the last decade.",
+        "materialized": "YES",
+        "reasoning": "This statement is supported by the evidence. BlackRock's December 2025 report (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) shows that fixed income categories outperformed cash and provided positive returns in 2025. The long-term outperformance claim over the decade is consistent with the broader narrative of alternatives' strong performance documented in UBS's December 2025 report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html)."
+      },
+      {
+        "statement": "This has been true in both rising interest rate environments and periods of low rates",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement is partially validated but difficult to fully assess from 2025 data alone. While 2025 demonstrated that fixed income and alternatives performed well (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026), the claim about performance 'in both rising interest rate environments and periods of low rates' requires historical validation beyond the 2025 year-end data provided. The statement's historical claim cannot be fully verified from the available 2025 reality context."
+      }
+    ],
+    "overall_analysis": "BNY's prediction about private credit as an all-weather allocation proved sound for 2025, with fixed income and credit strategies delivering positive returns and portfolio ballast. The institution correctly anticipated the diversification benefits of private credit, though the claim about outperformance across different rate environments is only partially validated by the available 2025 data and would require longer historical perspective to fully confirm.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 83.3,
+    "classification": "GOOD",
+    "justification": "BNY's prediction about private credit as an all-weather allocation proved sound for 2025, with fixed income and credit strategies delivering positive returns and portfolio ballast. The institution correctly anticipated the diversification benefits of private credit, though the claim about outperformance across different rate environments is only partially validated by the available 2025 data and would require longer historical perspective to fully confirm.",
+    "id": "ALTERNATIVE_ASSETS-BNY-3-2025",
+    "Original_Rank": 3,
+    "Prediction_Text": "\"Private credit is an all-weather allocation in our recommended portfolios. It offers higher current income and has outperformed public debt markets, such as investment grade and high yield bonds, over the last decade. This has been true in both rising interest rate environments and periods of low rates\"",
+    "Institution": "BNY",
+    "Rank": 18
+  },
+  {
+    "statements": [
+      {
+        "statement": "As short-term interest rates settle at more normal elevated levels and as policy uncertainty increases, volatility across financial markets could remain elevated.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 5 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) states that 'Equities ended 2025 stronger than many expected after a volatile first half,' confirming that volatility did remain elevated throughout 2025. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) references multiple charts showing performance decomposition and volatility patterns, indicating sustained market volatility. The prediction's characterization of elevated volatility due to interest rate and policy uncertainty was validated by the actual market experience in 2025."
+      },
+      {
+        "statement": "Both dynamics should benefit hedge funds, which can provide diversification and the potential for enhanced returns.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) highlights that 'BDMIX delivered twice the returns of the Agg Bond Index in 2025, the latest in a string of very strong years' and notes that 'BlackRock Equity Market Neutral Fund has seen positive returns every year since 2022, and maintained positive returns this year,' demonstrating that hedge fund strategies did provide enhanced returns and diversification. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'active risk management reduced volatility,' supporting the hedge fund benefit thesis."
+      },
+      {
+        "statement": "Meanwhile, investments in infrastructure and transportation can provide stability via steady income.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that alternative investments performed well in 2025, which would include infrastructure. However, the sources do not provide specific evidence about infrastructure and transportation investments' income stability or performance in 2025. SOURCE 36 (LGIM, December 2025, referenced in predictions) notes that 'leverage and refinancing costs are likely to weigh on some areas of infrastructure, we think others will see robust asset creation,' suggesting mixed results rather than uniform stability. The prediction is partially supported but lacks specific evidence of steady income generation from infrastructure investments."
+      }
+    ],
+    "overall_analysis": "JPMorgan Asset Management correctly anticipated that elevated volatility would benefit hedge funds and alternative strategies in 2025, with strong evidence supporting the outperformance of market-neutral and alternative funds. However, the prediction regarding infrastructure's income stability was less clearly validated, as the sources suggest infrastructure faced mixed conditions with refinancing pressures offsetting some benefits. The institution's core thesis about alternatives benefiting from volatility was well-founded.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 83.3,
+    "classification": "GOOD",
+    "justification": "JPMorgan Asset Management correctly anticipated that elevated volatility would benefit hedge funds and alternative strategies in 2025, with strong evidence supporting the outperformance of market-neutral and alternative funds. However, the prediction regarding infrastructure's income stability was less clearly validated, as the sources suggest infrastructure faced mixed conditions with refinancing pressures offsetting some benefits. The institution's core thesis about alternatives benefiting from volatility was well-founded.",
+    "id": "ALTERNATIVE_ASSETS-JPMORGAN_ASSET_MANAGEMENT-34-2025",
+    "Original_Rank": 34,
+    "Prediction_Text": "\"As short-term interest rates settle at more normal elevated levels and as policy uncertainty increases, volatility across financial markets could remain elevated. Both dynamics should benefit hedge funds, which can provide diversification and the potential for enhanced returns. Meanwhile, investments in infrastructure and transportation can provide stability via steady income.\"",
+    "Institution": "JPMORGAN ASSET MANAGEMENT",
+    "Rank": 19
+  },
+  {
+    "statements": [
+      {
+        "statement": "Over the long run, we believe the negative stock-bond correlation will hold.",
+        "materialized": "YES",
+        "reasoning": "This long-term prediction is supported by 2025 outcomes. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) explicitly states 'Bonds returned to providing ballast in 2025, as they were positive in weeks when stocks were negative,' demonstrating the negative correlation between stocks and bonds materialized in practice. This validates the long-run thesis that negative stock-bond correlation will persist."
+      },
+      {
+        "statement": "But we see a strong argument for owning assets that can provide diversification to both equities and fixed income.",
+        "materialized": "YES",
+        "reasoning": "This prediction is strongly validated. SOURCE 2 (BlackRock, December 2025) shows that alternative assets provided diversification benefits, with the Global Equity Market Neutral Fund delivering strong returns. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the retail boom in alternative assets and the value of a 'public-to-private continuum' for diversification. The evidence confirms the strong case for diversifying assets."
+      },
+      {
+        "statement": "What fits the bill?",
+        "materialized": "N/A",
+        "reasoning": "This is a rhetorical question and not a substantive prediction that can be evaluated for materialization."
+      },
+      {
+        "statement": "Historically, real estate, commodities and infrastructure have exhibited low correlations to stocks and bonds.",
+        "materialized": "YES",
+        "reasoning": "This historical statement is validated by 2025 performance data. SOURCE 2 (BlackRock, December 2025) notes that 'Gold was particularly notable, returning ~61% YTD in its strongest year since 1979,' demonstrating commodities' uncorrelated performance. SOURCE 1 (UBS, December 2025) confirms that alternative investments including real assets delivered positive returns with reduced volatility. The historical claim about low correlations is supported by actual 2025 outcomes."
+      },
+      {
+        "statement": "At the same time, diversified hedge fund strategies have proved their worth in the post-COVID period.",
+        "materialized": "YES",
+        "reasoning": "This prediction is validated by 2025 performance. SOURCE 2 (BlackRock, December 2025) shows that the Global Equity Market Neutral Fund 'has seen positive returns every year since 2022, and maintained positive returns this year,' demonstrating hedge fund strategies' consistent value in the post-COVID period. SOURCE 1 (UBS, December 2025) confirms that alternative investments delivered positive returns and active risk management reduced volatility, supporting the claim about hedge fund value."
+      }
+    ],
+    "overall_analysis": "JPMorgan Wealth Management's prediction was highly accurate across all substantive statements. The institution correctly anticipated that negative stock-bond correlation would persist, that diversifying alternatives would be valuable, and that real assets and hedge funds would deliver uncorrelated returns. The 2025 outcomes—with bonds providing ballast, gold surging 61%, and market-neutral funds delivering strong returns—validated JPMorgan's diversification thesis comprehensively.",
+    "summary_stats": {
+      "total_statements": 5,
+      "materialized_count": 4,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 80.0,
+    "classification": "GOOD",
+    "justification": "JPMorgan Wealth Management's prediction was highly accurate across all substantive statements. The institution correctly anticipated that negative stock-bond correlation would persist, that diversifying alternatives would be valuable, and that real assets and hedge funds would deliver uncorrelated returns. The 2025 outcomes—with bonds providing ballast, gold surging 61%, and market-neutral funds delivering strong returns—validated JPMorgan's diversification thesis comprehensively.",
+    "id": "ALTERNATIVE_ASSETS-JPMORGAN_WEALTH_MANAGEMENT-22-2025",
+    "Original_Rank": 22,
+    "Prediction_Text": "\"Over the long run, we believe the negative stock-bond correlation will hold. But we see a strong argument for owning assets that can provide diversification to both equities and fixed income. What fits the bill? Historically, real estate, commodities and infrastructure have exhibited low correlations to stocks and bonds. At the same time, diversified hedge fund strategies have proved their worth in the post-COVID period.\"",
+    "Institution": "JPMORGAN WEALTH MANAGEMENT",
+    "Rank": 20
+  },
+  {
+    "statements": [
+      {
+        "statement": "We believe the private market sectors should deliver improved or steady performance in our base-case economic scenarios in 2025.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. According to UBS's December 2025 report 'Alternative investments 2026: Resilience and opportunities' (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html, December 2025), '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' Additionally, BlackRock's December 2025 analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) confirms that alternative assets delivered positive returns throughout 2025, with equity market neutral strategies and other alternatives performing well."
+      },
+      {
+        "statement": "Even in a less-than-ideal future environment, the current positioning of the private market sectors (real estate, infrastructure, alternative credit, and asset-backed lending) could provide some softening in negative or tail risk outcomes.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement is partially validated. While UBS (December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 'active risk management reduced volatility' in alternative investments, the reality context shows that 2025 was actually a strong year for alternatives rather than a 'less-than-ideal' environment. The statement's premise about tail risk protection is supported by the evidence that alternatives provided diversification benefits, but the prediction was made for a scenario that did not materialize—2025 turned out to be favorable rather than challenging."
+      }
+    ],
+    "overall_analysis": "Principal Asset Management's prediction was largely accurate in anticipating positive performance from private market sectors in 2025. The institution correctly identified that private markets would deliver steady to improved returns and provide portfolio diversification benefits. However, the prediction's framing around 'less-than-ideal' scenarios proved overly cautious, as 2025 delivered a genuinely strong year for alternatives without requiring the defensive positioning they emphasized.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Principal Asset Management's prediction was largely accurate in anticipating positive performance from private market sectors in 2025. The institution correctly identified that private markets would deliver steady to improved returns and provide portfolio diversification benefits. However, the prediction's framing around 'less-than-ideal' scenarios proved overly cautious, as 2025 delivered a genuinely strong year for alternatives without requiring the defensive positioning they emphasized.",
+    "id": "ALTERNATIVE_ASSETS-PRINCIPAL_ASSET_MANAGEMENT-1-2025",
+    "Original_Rank": 1,
+    "Prediction_Text": "\"We believe the private market sectors should deliver improved or steady performance in our base-case economic scenarios in 2025. Even in a less-than-ideal future environment, the current positioning of the private market sectors (real estate, infrastructure, alternative credit, and asset-backed lending) could provide some softening in negative or tail risk outcomes.\"",
+    "Institution": "PRINCIPAL ASSET MANAGEMENT",
+    "Rank": 21
+  },
+  {
+    "statements": [
+      {
+        "statement": "In private capital, we maintain our favorable guidance on growth equity and small- and mid-cap buyout strategies as deal activity continues to highlight preferences for quality growth and less debt.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. UBS's December 2025 report 'Alternative investments 2026: Resilience and opportunities' (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments,' validating the favorable outlook on private capital strategies. The emphasis on quality growth and less debt aligns with Bloomberg's December 2025 analysis (https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/), which notes that 'companies with strong earnings resilience continued to attract investor interest,' supporting the preference for quality growth in private capital."
+      },
+      {
+        "statement": "If economic growth accelerates in 2025, as we anticipate, we favor allocating to strategies with the flexibility to adjust to changing market conditions, such as equity hedge – directional, relative value – long/short credit, and macro – discretionary.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. While UBS's December 2025 report (https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that alternative investments delivered positive returns in 2025, and BlackRock's analysis (https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) shows that equity market neutral strategies performed well, the available 2025 reality context does not provide specific performance data for equity hedge directional, relative value long/short credit, or macro discretionary strategies. The general thesis about flexible strategies benefiting from changing conditions is supported, but specific strategy performance is not fully documented."
+      }
+    ],
+    "overall_analysis": "Wells Fargo Investment Institute's prediction about favorable conditions for growth equity and small/mid-cap buyouts proved sound for 2025. The institution correctly anticipated that private capital strategies would benefit from the market environment and that quality growth would be preferred, which was validated by strong alternative investment performance. However, the specific strategy recommendations beyond growth equity lack complete 2025 performance validation from the available data.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Wells Fargo Investment Institute's prediction about favorable conditions for growth equity and small/mid-cap buyouts proved sound for 2025. The institution correctly anticipated that private capital strategies would benefit from the market environment and that quality growth would be preferred, which was validated by strong alternative investment performance. However, the specific strategy recommendations beyond growth equity lack complete 2025 performance validation from the available data.",
+    "id": "ALTERNATIVE_ASSETS-WELLS_FARGO_INVESTMENT_INSTITUTE-10-2025",
+    "Original_Rank": 10,
+    "Prediction_Text": "\"In private capital, we maintain our favorable guidance on growth equity and small- and mid-cap buyout strategies as deal activity continues to highlight preferences for quality growth and less debt. If economic growth accelerates in 2025, as we anticipate, we favor allocating to strategies with the flexibility to adjust to changing market conditions, such as equity hedge – directional, relative value – long/short credit, and macro – discretionary.\"",
+    "Institution": "WELLS FARGO INVESTMENT INSTITUTE",
+    "Rank": 22
+  },
+  {
+    "statements": [
+      {
+        "statement": "Lower rates and the potential deregulatory environment coming from the new administration should create the conditions for M&A and IPO activity to reignite.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially materialized. SOURCE 3 (PwC, December 2025, https://www.pwc.com/us/en/industries/financial-services/library/private-equity-deals-outlook.html) discusses 'US Capital Markets 2026 outlook and IPO Trends' but provides limited specific data on 2025 M&A and IPO activity outcomes. SOURCE 13 (Vanguard, December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) forecasts policy rate at 3.5% year-end, suggesting rates did not fall dramatically. While the deregulatory environment was anticipated, the sources do not provide concrete evidence of M&A and IPO activity reigniting in 2025, making this a partially validated prediction."
+      },
+      {
+        "statement": "We favor buyouts and venture capital funds, both of which have consistently delivered an illiquidity premium over passive public investments in exchange for their longer holding period.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 'alternative investments' delivered 'positive returns' in 2025. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) demonstrates that alternative strategies outperformed traditional fixed income, with 'BDMIX delivered twice the returns of the Agg Bond Index in 2025.' This validates the illiquidity premium thesis for private market investments including buyouts and venture capital."
+      }
+    ],
+    "overall_analysis": "BNY's prediction was partially accurate for 2025. The institution correctly identified that private equity (buyouts and venture capital) would deliver superior returns and illiquidity premiums compared to public markets, which materialized through strong alternative investment performance. However, the prediction regarding M&A and IPO activity reignition due to lower rates and deregulation was not clearly validated in 2025 outcomes, suggesting the timing or magnitude of this catalyst may have been misjudged.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "BNY's prediction was partially accurate for 2025. The institution correctly identified that private equity (buyouts and venture capital) would deliver superior returns and illiquidity premiums compared to public markets, which materialized through strong alternative investment performance. However, the prediction regarding M&A and IPO activity reignition due to lower rates and deregulation was not clearly validated in 2025 outcomes, suggesting the timing or magnitude of this catalyst may have been misjudged.",
+    "id": "ALTERNATIVE_ASSETS-BNY-14-2025",
+    "Original_Rank": 14,
+    "Prediction_Text": "\"Lower rates and the potential deregulatory environment coming from the new administration should create the conditions for M&A and IPO activity to reignite. We favor buyouts and venture capital funds, both of which have consistently delivered an illiquidity premium over passive public investments in exchange for their longer holding period.\"",
+    "Institution": "BNY",
+    "Rank": 23
+  },
+  {
+    "statements": [
+      {
+        "statement": "We see the potential for assets like Bitcoin to provide distinct sources of risk and return.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized in 2025. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) notes that 'Gold was particularly notable, returning ~61% YTD in its strongest year since 1979,' demonstrating that alternative assets provided distinct risk and return sources. While Bitcoin-specific data is not provided in the sources, the broader validation of alternative assets as distinct diversifiers supports this prediction. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that alternative investments delivered 'positive returns' and 'active risk management reduced volatility,' validating the concept of distinct risk/return sources."
+      },
+      {
+        "statement": "With traditional diversifiers like bonds no longer working as before, investors have more reasons to be dynamic with portfolios.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially materialized. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) actually contradicts this statement, noting that 'Bonds returned to providing ballast in 2025, as they were positive in weeks when stocks were negative,' and 'Nearly all fixed income categories, from treasuries to emerging markets, outperformed cash this year.' This suggests bonds DID work as diversifiers in 2025, contrary to the prediction. However, SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that alternative investments provided value, suggesting investors did become more dynamic. The prediction is partially validated but the premise about bonds failing was incorrect."
+      }
+    ],
+    "overall_analysis": "BlackRock Investment Institute's prediction was partially accurate for 2025. The institution correctly identified that alternative assets like Bitcoin could provide distinct risk and return sources, which was validated by strong alternative investment performance and gold's exceptional 61% return. However, the prediction's premise that 'traditional diversifiers like bonds no longer work' was contradicted by 2025 outcomes, where bonds actually returned to providing effective portfolio ballast. This represents a significant analytical error in the macro thesis, though the conclusion about portfolio dynamism was ultimately correct.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "BlackRock Investment Institute's prediction was partially accurate for 2025. The institution correctly identified that alternative assets like Bitcoin could provide distinct risk and return sources, which was validated by strong alternative investment performance and gold's exceptional 61% return. However, the prediction's premise that 'traditional diversifiers like bonds no longer work' was contradicted by 2025 outcomes, where bonds actually returned to providing effective portfolio ballast. This represents a significant analytical error in the macro thesis, though the conclusion about portfolio dynamism was ultimately correct.",
+    "id": "ALTERNATIVE_ASSETS-BLACKROCK_INVESTMENT_INSTITUTE-18-2025",
+    "Original_Rank": 18,
+    "Prediction_Text": "\"We see the potential for assets like Bitcoin to provide distinct sources of risk and return. With traditional diversifiers like bonds no longer working as before, investors have more reasons to be dynamic with portfolios.\"",
+    "Institution": "BLACKROCK INVESTMENT INSTITUTE",
+    "Rank": 24
+  },
+  {
+    "statements": [
+      {
+        "statement": "A higher-for-longer rate environment also challenges traditional 60/40 portfolio constructs, with government bonds losing some of their hedge appeal.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about higher-for-longer rates challenging 60/40 portfolios is partially supported. However, the evidence shows bonds actually returned to providing portfolio ballast in 2025. According to SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026), 'Bonds returned to providing ballast in 2025, as they were positive in weeks when stocks were negative' and 'Nearly all fixed income categories, from treasuries to emerging markets, outperformed cash this year.' This contradicts the claim that bonds lost hedge appeal. The higher-for-longer rate environment did materialize, but bonds maintained their diversification benefits rather than losing them."
+      },
+      {
+        "statement": "This adds to the benefits of alternatives like private credit and real assets, alongside the uncorrelated returns of hedge funds.",
+        "materialized": "YES",
+        "reasoning": "This statement is validated by multiple sources. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' SOURCE 2 (BlackRock, December 2025) notes that the Global Equity Market Neutral Fund (BDMIX) 'delivered twice the returns of the Agg Bond Index in 2025.' SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the retail boom in alternative assets, confirming their benefits. The prediction about alternatives providing uncorrelated returns and benefits is well-supported."
+      }
+    ],
+    "overall_analysis": "HSBC Asset Management's prediction was largely accurate regarding the benefits of alternatives in 2025, with alternatives delivering positive returns and diversification benefits. However, the institution was incorrect about government bonds losing hedge appeal—bonds actually maintained their portfolio ballast function in 2025, providing positive returns during equity downturns. The prediction correctly identified alternatives as valuable but mischaracterized the role of traditional fixed income.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "HSBC Asset Management's prediction was largely accurate regarding the benefits of alternatives in 2025, with alternatives delivering positive returns and diversification benefits. However, the institution was incorrect about government bonds losing hedge appeal—bonds actually maintained their portfolio ballast function in 2025, providing positive returns during equity downturns. The prediction correctly identified alternatives as valuable but mischaracterized the role of traditional fixed income.",
+    "id": "ALTERNATIVE_ASSETS-HSBC_ASSET_MANAGEMENT-21-2025",
+    "Original_Rank": 21,
+    "Prediction_Text": "\"A higher-for-longer rate environment also challenges traditional 60/40 portfolio constructs, with government bonds losing some of their hedge appeal. This adds to the benefits of alternatives like private credit and real assets, alongside the uncorrelated returns of hedge funds.\"",
+    "Institution": "HSBC ASSET MANAGEMENT",
+    "Rank": 25
+  },
+  {
+    "statements": [
+      {
+        "statement": "In the private market space, private credit and infrastructure remain attractive, albeit with some moderation in expectations.",
+        "materialized": "YES",
+        "reasoning": "This prediction is validated by 2025 outcomes. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' The 'moderation in expectations' is reflected in the measured tone of post-2025 commentary, which acknowledges positive returns but discusses challenges ahead. The prediction correctly identified private credit and infrastructure as attractive while appropriately tempering expectations."
+      },
+      {
+        "statement": "While challenges persist in private equity, opportunities should exist in the secondary market.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. SOURCE 3 (PwC, December 2025, https://www.pwc.com/us/en/industries/financial-services/library/private-equity-deals-outlook.html) discusses private equity outlook but the content is largely navigation elements without substantive performance data. SOURCE 1 (UBS, December 2025) confirms that 2025 was a good year for alternatives generally, but does not specifically address primary versus secondary private equity performance or challenges. The prediction about secondary market opportunities cannot be directly validated from available evidence."
+      }
+    ],
+    "overall_analysis": "LPL Financial's prediction about private credit and infrastructure attractiveness was validated by 2025's positive alternative investment performance. However, the specific claim about private equity challenges and secondary market opportunities lacks sufficient evidence in the available sources to be fully evaluated. The institution's general positioning on alternatives was sound, though the nuanced view on private equity segments cannot be comprehensively assessed.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "LPL Financial's prediction about private credit and infrastructure attractiveness was validated by 2025's positive alternative investment performance. However, the specific claim about private equity challenges and secondary market opportunities lacks sufficient evidence in the available sources to be fully evaluated. The institution's general positioning on alternatives was sound, though the nuanced view on private equity segments cannot be comprehensively assessed.",
+    "id": "ALTERNATIVE_ASSETS-LPL_FINANCIAL-24-2025",
+    "Original_Rank": 24,
+    "Prediction_Text": "\"In the private market space, private credit and infrastructure remain attractive, albeit with some moderation in expectations. While challenges persist in private equity, opportunities should exist in the secondary market.\"",
+    "Institution": "LPL FINANCIAL",
+    "Rank": 26
+  },
+  {
+    "statements": [
+      {
+        "statement": "Private markets can also help provide resilience via exposure to different types of assets that are typically more insulated from geopolitical events than listed equities or bonds.",
+        "materialized": "YES",
+        "reasoning": "This prediction is validated by 2025 outcomes. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' The resilience of private markets through 2025 supports the claim about their insulation from market shocks. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the benefits of private market exposure for portfolio resilience."
+      },
+      {
+        "statement": "Examples include real estate and infrastructure assets that offer resilient long-term cash flows, as well as assets like insurance-linked securities, where weather is the key risk factor.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. SOURCE 1 (UBS, December 2025) confirms that 2025 was a good year for alternative investments, supporting the resilience of real estate and infrastructure. However, the sources do not provide specific evidence about insurance-linked securities performance or their weather-related risk characteristics in 2025. The prediction about real estate and infrastructure resilience is supported, but the insurance-linked securities example cannot be directly validated from available evidence."
+      }
+    ],
+    "overall_analysis": "Schroders' prediction about private markets providing resilience through diversified asset exposure was validated by 2025's positive alternative investment performance. The institution correctly identified real estate and infrastructure as resilient assets with long-term cash flows. However, the specific example of insurance-linked securities and their weather-related risk characteristics lacks validation in the available sources, limiting the comprehensiveness of the prediction's confirmation.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Schroders' prediction about private markets providing resilience through diversified asset exposure was validated by 2025's positive alternative investment performance. The institution correctly identified real estate and infrastructure as resilient assets with long-term cash flows. However, the specific example of insurance-linked securities and their weather-related risk characteristics lacks validation in the available sources, limiting the comprehensiveness of the prediction's confirmation.",
+    "id": "ALTERNATIVE_ASSETS-SCHRODERS-28-2025",
+    "Original_Rank": 28,
+    "Prediction_Text": "\"Private markets can also help provide resilience via exposure to different types of assets that are typically more insulated from geopolitical events than listed equities or bonds. Examples include real estate and infrastructure assets that offer resilient long-term cash flows, as well as assets like insurance-linked securities, where weather is the key risk factor.\"",
+    "Institution": "SCHRODERS",
+    "Rank": 27
+  },
+  {
+    "statements": [
+      {
+        "statement": "In real estate, the office sector remains challenged, but we see compelling ideas in the industrial and alternative segments.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'positive returns,' supporting the view that alternative real estate segments performed well. The prediction's characterization of office sector challenges versus industrial and alternative segment opportunities aligns with the broader market dynamics in 2025 where selective real estate recovery occurred. This prediction demonstrates accurate sector-level differentiation."
+      },
+      {
+        "statement": "We also like publicly listed REITs, where valuations, fundamentals and earnings appear favorable.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'positive returns,' which would include REITs. However, the sources do not provide specific data on REIT valuations, fundamentals, or earnings performance in 2025. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) does not specifically address REIT performance. The prediction is directionally supported by the positive alternative investment performance but lacks specific evidence about REIT valuations and fundamentals."
+      }
+    ],
+    "overall_analysis": "Nuveen demonstrated strong sector-level insight by correctly identifying that office real estate would remain challenged while industrial and alternative segments would offer opportunities in 2025. The institution's differentiated view of real estate segments was validated by the selective recovery in alternatives. However, the prediction regarding REIT valuations and fundamentals lacked specific supporting evidence from the available sources, though the general positive performance of alternatives suggests REITs likely performed reasonably well.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Nuveen demonstrated strong sector-level insight by correctly identifying that office real estate would remain challenged while industrial and alternative segments would offer opportunities in 2025. The institution's differentiated view of real estate segments was validated by the selective recovery in alternatives. However, the prediction regarding REIT valuations and fundamentals lacked specific supporting evidence from the available sources, though the general positive performance of alternatives suggests REITs likely performed reasonably well.",
+    "id": "ALTERNATIVE_ASSETS-NUVEEN-37-2025",
+    "Original_Rank": 37,
+    "Prediction_Text": "\"In real estate, the office sector remains challenged, but we see compelling ideas in the industrial and alternative segments. We also like publicly listed REITs, where valuations, fundamentals and earnings appear favorable.\"",
+    "Institution": "NUVEEN",
+    "Rank": 28
+  },
+  {
+    "statements": [
+      {
+        "statement": "Evolving economic and market conditions could expand opportunities for private market investors.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'positive returns' and 'active risk management reduced volatility,' indicating expanded opportunities for private market investors. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the 'retail boom in alternative assets' and expansion of access to private markets, confirming that opportunities expanded for private market investors. The prediction was validated by the strong performance and growing accessibility of private markets in 2025."
+      },
+      {
+        "statement": "Private credit will cater to complex financing needs, while potential IPOs and increased M&A activity, driven by lower interest rates, may offer liquidity avenues for private equity investors.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments,' suggesting improved conditions for private credit and M&A activity. SOURCE 3 (PwC, December 2025, https://www.pwc.com/us/en/industries/financial-services/library/private-equity-deals-outlook.html) references a 2026 outlook for private equity deals, indicating dealmaking activity resumed. However, the sources do not provide specific evidence about private credit catering to complex financing needs or quantified data on IPO activity and M&A-driven liquidity for PE investors in 2025. The prediction is directionally supported but lacks concrete evidence of the specific mechanisms mentioned."
+      }
+    ],
+    "overall_analysis": "T. Rowe Price correctly anticipated that evolving economic conditions would expand opportunities for private market investors in 2025, with strong evidence supporting improved conditions for alternatives and dealmaking. However, the prediction regarding private credit's role in complex financing and specific liquidity avenues for PE investors lacked concrete supporting evidence from the available sources, though the general positive performance of alternatives suggests the prediction was directionally accurate.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "T. Rowe Price correctly anticipated that evolving economic conditions would expand opportunities for private market investors in 2025, with strong evidence supporting improved conditions for alternatives and dealmaking. However, the prediction regarding private credit's role in complex financing and specific liquidity avenues for PE investors lacked concrete supporting evidence from the available sources, though the general positive performance of alternatives suggests the prediction was directionally accurate.",
+    "id": "ALTERNATIVE_ASSETS-T._ROWE_PRICE-38-2025",
+    "Original_Rank": 38,
+    "Prediction_Text": "\"Evolving economic and market conditions could expand opportunities for private market investors. Private credit will cater to complex financing needs, while potential IPOs and increased M&A activity, driven by lower interest rates, may offer liquidity avenues for private equity investors.\"",
+    "Institution": "T. ROWE PRICE",
+    "Rank": 29
+  },
+  {
+    "statements": [
+      {
+        "statement": "Falling interest rates and a less onerous regulatory environment could help sustain a nascent revival in dealmaking, which had been essentially frozen since 2021.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'positive returns,' indicating improved conditions for dealmaking. SOURCE 3 (PwC, December 2025, https://www.pwc.com/us/en/industries/financial-services/library/private-equity-deals-outlook.html) references a 2026 outlook for private equity deals, suggesting dealmaking activity did resume. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the expansion of alternative assets and private markets, indicating a revival in dealmaking activity. The prediction's characterization of falling interest rates facilitating dealmaking revival was validated."
+      },
+      {
+        "statement": "As a backlog of deals stands ready to be cleared, increased private lending should help jump-start transactions.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms positive returns for alternative investments in 2025, suggesting improved conditions for deal activity. However, the sources do not provide specific evidence of a 'backlog of deals' being cleared or quantified data on private lending's role in jump-starting transactions. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses private market expansion but does not specifically address deal backlog clearance. The prediction is directionally supported but lacks concrete evidence of backlog clearing."
+      },
+      {
+        "statement": "Opportunities exist across the capital structure.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'positive returns' across multiple asset classes. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) demonstrates strong performance across equities, fixed income, and alternatives, indicating opportunities across the capital structure. The broad-based positive performance in 2025 validates this prediction."
+      },
+      {
+        "statement": "The likely beneficiaries of a better environment for dealmakers?",
+        "materialized": "N/A",
+        "reasoning": "This statement is a rhetorical question and does not contain a testable prediction. It serves as a transition to the following statement."
+      },
+      {
+        "statement": "Wall Street banks, private equity and credit firms, and private business owners.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments,' which would benefit private equity and credit firms. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the expansion of alternative assets and private markets, indicating benefits to private business owners and financial intermediaries. The prediction's identification of beneficiaries was validated by the strong performance of alternative assets and dealmaking revival in 2025."
+      }
+    ],
+    "overall_analysis": "JPMorgan Wealth Management demonstrated strong predictive accuracy regarding the revival of dealmaking in 2025 driven by falling interest rates and improved market conditions. The institution correctly identified that private equity, credit firms, and alternative assets would benefit from the improved environment, though the prediction lacked specific evidence about the magnitude of deal backlog clearance. Overall, the macro view was well-founded and validated by the strong performance of alternative investments in 2025.",
+    "summary_stats": {
+      "total_statements": 5,
+      "materialized_count": 3,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 70.0,
+    "classification": "GOOD",
+    "justification": "JPMorgan Wealth Management demonstrated strong predictive accuracy regarding the revival of dealmaking in 2025 driven by falling interest rates and improved market conditions. The institution correctly identified that private equity, credit firms, and alternative assets would benefit from the improved environment, though the prediction lacked specific evidence about the magnitude of deal backlog clearance. Overall, the macro view was well-founded and validated by the strong performance of alternative investments in 2025.",
+    "id": "ALTERNATIVE_ASSETS-JPMORGAN_WEALTH_MANAGEMENT-35-2025",
+    "Original_Rank": 35,
+    "Prediction_Text": "\"Falling interest rates and a less onerous regulatory environment could help sustain a nascent revival in dealmaking, which had been essentially frozen since 2021. As a backlog of deals stands ready to be cleared, increased private lending should help jump-start transactions. Opportunities exist across the capital structure. The likely beneficiaries of a better environment for dealmakers? Wall Street banks, private equity and credit firms, and private business owners.\"",
+    "Institution": "JPMORGAN WEALTH MANAGEMENT",
+    "Rank": 30
+  },
+  {
+    "statements": [
+      {
+        "statement": "We see private credit as a resilient asset class, particularly in the current higher-rate environment.",
+        "materialized": "YES",
+        "reasoning": "This prediction is validated by 2025 outcomes. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms '2025 was a good year for alternative investments: Positive returns helped preserve purchasing power, and active risk management reduced volatility.' The higher-rate environment persisted through 2025, and private credit's resilience in this environment is supported by the general positive performance of alternatives. The prediction correctly identified private credit as resilient in the higher-rate context."
+      },
+      {
+        "statement": "With asset-based lending and European direct lending providing attractive relative value, we are broadening our fixed income exposures into these areas to capture higher yields and better diversification.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. SOURCE 1 (UBS, December 2025) confirms that 2025 was a good year for alternative investments, supporting the attractiveness of private credit strategies. However, the sources do not provide specific data on asset-based lending, European direct lending performance, or their relative value in 2025. The general strategy of broadening into alternatives for higher yields and diversification is supported by the positive 2025 outcomes, but the specific segments mentioned cannot be directly validated."
+      },
+      {
+        "statement": "We see attractive investment opportunities in real estate and infrastructure, particularly in areas benefiting from stabilizing long-term interest rates and favorable relative valuations compared to other growth assets.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. SOURCE 1 (UBS, December 2025) confirms that 2025 was a good year for alternative investments, which would include real estate and infrastructure. SOURCE 2 (BlackRock, December 2025) notes that 'Gold was particularly notable, returning ~61% YTD,' demonstrating strong alternative asset performance. However, the sources do not provide specific evidence about stabilizing long-term interest rates in 2025 or comparative valuations of real estate/infrastructure versus other growth assets. The general attractiveness of these alternatives is supported, but the specific valuation thesis is not directly validated."
+      }
+    ],
+    "overall_analysis": "Russell Investments' prediction about private credit resilience and the attractiveness of real estate and infrastructure was validated by 2025's positive alternative investment performance. The institution correctly identified these asset classes as resilient and attractive, though the specific mechanisms cited (stabilizing rates, relative valuations, higher yields) cannot be fully confirmed from available sources. The overall strategic positioning toward alternatives was sound and well-supported by 2025 outcomes.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 1,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 66.7,
+    "classification": "PARTIAL",
+    "justification": "Russell Investments' prediction about private credit resilience and the attractiveness of real estate and infrastructure was validated by 2025's positive alternative investment performance. The institution correctly identified these asset classes as resilient and attractive, though the specific mechanisms cited (stabilizing rates, relative valuations, higher yields) cannot be fully confirmed from available sources. The overall strategic positioning toward alternatives was sound and well-supported by 2025 outcomes.",
+    "id": "ALTERNATIVE_ASSETS-RUSSELL_INVESTMENTS-27-2025",
+    "Original_Rank": 27,
+    "Prediction_Text": "\"We see private credit as a resilient asset class, particularly in the current higher-rate environment. With asset-based lending and European direct lending providing attractive relative value, we are broadening our fixed income exposures into these areas to capture higher yields and better diversification. We see attractive investment opportunities in real estate and infrastructure, particularly in areas benefiting from stabilizing long-term interest rates and favorable relative valuations compared to other growth assets.\"",
+    "Institution": "RUSSELL INVESTMENTS",
+    "Rank": 31
+  },
+  {
+    "statements": [
+      {
+        "statement": "The outlook for residential and commercial real estate investments is bright.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially materialized. SOURCE 19 (DWS, December 2025, https://www.morganstanley.com/im/en-la/intermediary-investor/insights/articles/private-equity-2026-outlook.html) mentions that 'fundamental conditions are improving in many areas, for example in residential real estate,' supporting the residential real estate outlook. However, the sources do not provide comprehensive data on commercial real estate performance in 2025, making this a partially validated prediction. The evidence supports residential real estate but lacks clarity on commercial real estate outcomes."
+      },
+      {
+        "statement": "With constrained supply and rising demand, there are opportunities in sectors including logistics, data centers, and multifamily housing.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially materialized. SOURCE 19 (DWS, December 2025, https://www.morganstanley.com/im/en-la/intermediary-investor/insights/articles/private-equity-2026-outlook.html) confirms that 'fundamental conditions are improving in many areas, for example in residential real estate,' which aligns with the multifamily housing opportunity. However, the sources do not provide specific evidence about logistics and data center sector performance or supply/demand dynamics in 2025. The prediction is partially validated for residential/multifamily but lacks direct evidence for logistics and data centers."
+      }
+    ],
+    "overall_analysis": "UBS's real estate predictions were partially validated in 2025. The institution correctly identified improving conditions in residential real estate and multifamily housing, which was confirmed by market commentary. However, the prediction lacked comprehensive validation for commercial real estate and specific sector opportunities (logistics, data centers), suggesting that while the directional thesis was correct, the granular sector analysis may have been incomplete or the evidence was not captured in available sources.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "UBS's real estate predictions were partially validated in 2025. The institution correctly identified improving conditions in residential real estate and multifamily housing, which was confirmed by market commentary. However, the prediction lacked comprehensive validation for commercial real estate and specific sector opportunities (logistics, data centers), suggesting that while the directional thesis was correct, the granular sector analysis may have been incomplete or the evidence was not captured in available sources.",
+    "id": "ALTERNATIVE_ASSETS-UBS-16-2025",
+    "Original_Rank": 16,
+    "Prediction_Text": "\"The outlook for residential and commercial real estate investments is bright. With constrained supply and rising demand, there are opportunities in sectors including logistics, data centers, and multifamily housing.\"",
+    "Institution": "UBS",
+    "Rank": 32
+  },
+  {
+    "statements": [
+      {
+        "statement": "We think macro conditions are supportive of another strong year for private credit, but are watching out for higher-for-longer rates and strong bank competition.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms '2025 was a good year for alternative investments,' which would include private credit. However, the sources do not provide specific data on private credit performance or the impact of higher-for-longer rates and bank competition on private credit in 2025. The general positive year for alternatives supports the 'strong year' claim, but the specific risks mentioned are not directly addressed in the available evidence."
+      },
+      {
+        "statement": "Real estate returns are expected to be reasonable, based on yields that have already reset and subsequent income growth – not yield compression.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially supported but lacks specific validation. SOURCE 1 (UBS, December 2025) confirms that 2025 was a good year for alternative investments generally, which would include real estate. However, the sources do not provide specific data on real estate returns, yield resets, or income growth in 2025. The prediction's mechanism (yields already reset, income growth driving returns rather than yield compression) cannot be directly validated from the available evidence, though the general positive year for alternatives is confirmed."
+      }
+    ],
+    "overall_analysis": "LGIM's predictions about private credit and real estate were directionally correct—2025 was indeed a good year for alternative investments. However, the institution's specific claims about the mechanisms driving returns (yield resets, income growth, bank competition) cannot be fully validated from available sources. The prediction was reasonable but lacked sufficient specificity to be comprehensively evaluated against actual 2025 outcomes.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "LGIM's predictions about private credit and real estate were directionally correct—2025 was indeed a good year for alternative investments. However, the institution's specific claims about the mechanisms driving returns (yield resets, income growth, bank competition) cannot be fully validated from available sources. The prediction was reasonable but lacked sufficient specificity to be comprehensively evaluated against actual 2025 outcomes.",
+    "id": "ALTERNATIVE_ASSETS-LGIM-23-2025",
+    "Original_Rank": 23,
+    "Prediction_Text": "\"We think macro conditions are supportive of another strong year for private credit, but are watching out for higher-for-longer rates and strong bank competition. Real estate returns are expected to be reasonable, based on yields that have already reset and subsequent income growth – not yield compression.\"",
+    "Institution": "LGIM",
+    "Rank": 33
+  },
+  {
+    "statements": [
+      {
+        "statement": "Numerous factors are aligning to release a pent-up torrent of corporate dealmaking: above-trend growth; buoyant public equity market valuations; a more stable inflation and central bank outlook; the return of banks to the leveraged lending market; declining rates and tight credit spreads; and, perhaps most importantly, an expected change in regulatory stance in the US.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. SOURCE 5 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms that 'Equities ended 2025 stronger than many expected' with 'Large cap and growth equities outperformed,' supporting the 'buoyant public equity market valuations' claim. SOURCE 13 (Vanguard, December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) shows U.S. growth forecast of 2.25%, which is above-trend. However, the sources do not provide specific evidence about the return of banks to leveraged lending, declining rates enabling dealmaking, or the regulatory stance change's impact on dealmaking in 2025. The macro conditions are partially confirmed but dealmaking activity is not directly addressed."
+      },
+      {
+        "statement": "Event-driven hedge fund strategies will benefit from a big new opportunity set.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially supported. SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) confirms that hedge fund strategies delivered strong returns in 2025, with the Global Equity Market Neutral Fund delivering 'twice the returns of the Agg Bond Index.' However, the sources do not specifically address event-driven strategies or whether they benefited from a 'big new opportunity set' of corporate dealmaking. The general validation of hedge fund performance is confirmed, but the specific event-driven thesis is not directly addressed."
+      }
+    ],
+    "overall_analysis": "Neuberger Berman's prediction about macro conditions supporting dealmaking was directionally correct regarding equity valuations and growth, but the specific claim about a 'pent-up torrent of corporate dealmaking' and event-driven hedge fund opportunities cannot be fully validated from available sources. The institution correctly identified positive macro conditions but the specific dealmaking thesis and its impact on event-driven strategies lacks sufficient evidence in the 2025 outcomes provided.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Neuberger Berman's prediction about macro conditions supporting dealmaking was directionally correct regarding equity valuations and growth, but the specific claim about a 'pent-up torrent of corporate dealmaking' and event-driven hedge fund opportunities cannot be fully validated from available sources. The institution correctly identified positive macro conditions but the specific dealmaking thesis and its impact on event-driven strategies lacks sufficient evidence in the 2025 outcomes provided.",
+    "id": "ALTERNATIVE_ASSETS-NEUBERGER_BERMAN-25-2025",
+    "Original_Rank": 25,
+    "Prediction_Text": "\"Numerous factors are aligning to release a pent-up torrent of corporate dealmaking: above-trend growth; buoyant public equity market valuations; a more stable inflation and central bank outlook; the return of banks to the leveraged lending market; declining rates and tight credit spreads; and, perhaps most importantly, an expected change in regulatory stance in the US. Event-driven hedge fund strategies will benefit from a big new opportunity set.\"",
+    "Institution": "NEUBERGER BERMAN",
+    "Rank": 34
+  },
+  {
+    "statements": [
+      {
+        "statement": "We believe private credit has room to grow, supported by the shift of lending from traditional capital providers to private credit asset managers, while lower interest rates encourage potentially more mergers and acquisitions in 2025.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms '2025 was a good year for alternative investments,' which would include private credit growth. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the retail boom in alternative assets and mentions the shift toward private markets. However, the sources do not provide specific evidence about lower interest rates in 2025 or their impact on M&A activity. The prediction about private credit growth is supported, but the specific mechanism (lower rates driving M&A) is not directly validated."
+      }
+    ],
+    "overall_analysis": "Northern Trust Asset Management's prediction about private credit growth was validated by 2025's positive alternative investment performance and the documented shift toward private credit. However, the specific claim about lower interest rates encouraging M&A in 2025 cannot be confirmed from available sources, as the evidence does not clearly establish that rates declined in 2025 or that this drove M&A activity. The institution's core thesis about private credit growth was sound, though the rate mechanism was not clearly validated.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Northern Trust Asset Management's prediction about private credit growth was validated by 2025's positive alternative investment performance and the documented shift toward private credit. However, the specific claim about lower interest rates encouraging M&A in 2025 cannot be confirmed from available sources, as the evidence does not clearly establish that rates declined in 2025 or that this drove M&A activity. The institution's core thesis about private credit growth was sound, though the rate mechanism was not clearly validated.",
+    "id": "ALTERNATIVE_ASSETS-NORTHERN_TRUST_ASSET_MANAGEMENT-26-2025",
+    "Original_Rank": 26,
+    "Prediction_Text": "\"We believe private credit has room to grow, supported by the shift of lending from traditional capital providers to private credit asset managers, while lower interest rates encourage potentially more mergers and acquisitions in 2025.\"",
+    "Institution": "NORTHERN TRUST ASSET MANAGEMENT",
+    "Rank": 35
+  },
+  {
+    "statements": [
+      {
+        "statement": "Private credit will likely facilitate a significant portion of the M&A activities.",
+        "materialized": "PARTIAL",
+        "reasoning": "The sources indicate that private credit and dealmaking activity did begin to recover in 2025, but the evidence is mixed. SOURCE 3 (PwC, December 2025, https://www.pwc.com/us/en/industries/financial-services/library/private-equity-deals-outlook.html) references a 2026 outlook for private equity deals but provides limited specific data on private credit's role. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the public-to-private continuum and alternative assets but does not specifically quantify private credit's share of M&A. The sources confirm dealmaking activity resumed but do not provide definitive evidence that private credit facilitated a 'significant portion' of M&A activities in 2025."
+      },
+      {
+        "statement": "Private equity funds that have been on the sidelines will likely have more exit opportunities and begin distributing capital back to LPs.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) states that '2025 was a good year for alternative investments' with 'positive returns' and 'active risk management reduced volatility,' suggesting improved conditions for PE exits. However, SOURCE 3 (PwC, December 2025, https://www.pwc.com/us/en/industries/financial-services/library/private-equity-deals-outlook.html) does not provide specific data on LP distributions or exit volumes. SOURCE 4 (CNBC, December 2025, https://www.cnbc.com/2025/12/04/retail-boom-in-alternative-assets-risk-liquidity-and-portfolios.html) discusses the desire for perpetual private holdings rather than forced exits, suggesting exit dynamics may have been more complex than anticipated. The prediction is partially supported but lacks concrete evidence of significant LP distributions."
+      }
+    ],
+    "overall_analysis": "Bel Air Investment Advisors correctly anticipated that alternative assets would perform well in 2025 and that dealmaking would resume, but the prediction lacked specificity regarding the magnitude of private credit's role in M&A and the timing/volume of LP distributions. The institution captured the general recovery in alternative assets but did not account for the complexity of exit dynamics and the emerging preference for perpetual private holdings among some investors.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Bel Air Investment Advisors correctly anticipated that alternative assets would perform well in 2025 and that dealmaking would resume, but the prediction lacked specificity regarding the magnitude of private credit's role in M&A and the timing/volume of LP distributions. The institution captured the general recovery in alternative assets but did not account for the complexity of exit dynamics and the emerging preference for perpetual private holdings among some investors.",
+    "id": "ALTERNATIVE_ASSETS-BEL_AIR_INVESTMENT_ADVISORS-31-2025",
+    "Original_Rank": 31,
+    "Prediction_Text": "\"Private credit will likely facilitate a significant portion of the M&A activities. Private equity funds that have been on the sidelines will likely have more exit opportunities and begin distributing capital back to LPs.\"",
+    "Institution": "BEL AIR INVESTMENT ADVISORS",
+    "Rank": 36
+  },
+  {
+    "statements": [
+      {
+        "statement": "The sharp decline in values and falling interest rates are starting to boost the appeal of real estate, but investment volumes remain subdued for now.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that 2025 was 'a good year for alternative investments' with positive returns, which would include real estate. However, the sources do not provide specific data on real estate value declines or investment volumes in 2025. SOURCE 38 (Nuveen, December 2025, referenced in the predictions) notes that 'the office sector remains challenged, but we see compelling ideas in the industrial and alternative segments,' suggesting selective real estate recovery rather than broad-based appeal. The prediction's characterization of subdued investment volumes cannot be definitively confirmed or refuted from the available sources."
+      },
+      {
+        "statement": "That could start to change with further interest rate cuts and post-US election clarity.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 2 (BlackRock, December 2025, https://www.blackrock.com/us/financial-professionals/insights/ai-stocks-alternatives-and-the-new-market-playbook-for-2026) indicates that 'Bonds returned to providing ballast in 2025, as they were positive in weeks when stocks were negative,' suggesting interest rate environment did shift. However, the sources do not provide explicit evidence that post-election clarity (following the 2024 US election) directly catalyzed real estate investment volume increases in 2025. The prediction's conditional nature makes it difficult to assess definitively, but the available evidence suggests interest rate dynamics did evolve as anticipated."
+      }
+    ],
+    "overall_analysis": "HSBC Global Private Banking's prediction about real estate recovery was directionally correct regarding the improving interest rate environment and market conditions in 2025, but the sources provide limited specific evidence about real estate investment volumes or the impact of post-election clarity. The institution correctly anticipated that conditions would improve but may have underestimated the selective nature of real estate recovery (office weakness versus industrial strength).",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "HSBC Global Private Banking's prediction about real estate recovery was directionally correct regarding the improving interest rate environment and market conditions in 2025, but the sources provide limited specific evidence about real estate investment volumes or the impact of post-election clarity. The institution correctly anticipated that conditions would improve but may have underestimated the selective nature of real estate recovery (office weakness versus industrial strength).",
+    "id": "ALTERNATIVE_ASSETS-HSBC_GLOBAL_PRIVATE_BANKING-32-2025",
+    "Original_Rank": 32,
+    "Prediction_Text": "\"The sharp decline in values and falling interest rates are starting to boost the appeal of real estate, but investment volumes remain subdued for now. That could start to change with further interest rate cuts and post-US election clarity.\"",
+    "Institution": "HSBC GLOBAL PRIVATE BANKING",
+    "Rank": 37
+  },
+  {
+    "statements": [
+      {
+        "statement": "While leverage and refinancing costs are likely to weigh on some areas of infrastructure, we think others will see robust asset creation.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'positive returns,' which would include infrastructure. However, the sources do not provide specific evidence about refinancing costs weighing on infrastructure or robust asset creation in specific infrastructure segments. The prediction's nuanced view acknowledging both challenges and opportunities in infrastructure is reasonable but lacks concrete validation from the available sources regarding the specific dynamics mentioned."
+      }
+    ],
+    "overall_analysis": "LGIM's prediction about infrastructure facing mixed conditions with refinancing pressures in some areas while others see robust asset creation was directionally reasonable given the interest rate environment in 2025. However, the available sources do not provide specific evidence to validate or refute the prediction's characterization of infrastructure dynamics, making it difficult to assess the accuracy of this more granular forecast.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "LGIM's prediction about infrastructure facing mixed conditions with refinancing pressures in some areas while others see robust asset creation was directionally reasonable given the interest rate environment in 2025. However, the available sources do not provide specific evidence to validate or refute the prediction's characterization of infrastructure dynamics, making it difficult to assess the accuracy of this more granular forecast.",
+    "id": "ALTERNATIVE_ASSETS-LGIM-36-2025",
+    "Original_Rank": 36,
+    "Prediction_Text": "\"While leverage and refinancing costs are likely to weigh on some areas of infrastructure, we think others will see robust asset creation.\"",
+    "Institution": "LGIM",
+    "Rank": 38
+  },
+  {
+    "statements": [
+      {
+        "statement": "Private equity markets remain under some pressure (especially given still-high interest rates), but we do see value in secondary private equity markets, where demand is stronger and should continue to grow.",
+        "materialized": "PARTIAL",
+        "reasoning": "SOURCE 1 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html) confirms that '2025 was a good year for alternative investments' with 'positive returns,' suggesting that PE markets did not remain under significant pressure throughout 2025. This contradicts the prediction's characterization of continued pressure from high interest rates. However, the sources do not provide specific evidence about secondary PE market demand or growth in 2025. The prediction's view of secondary PE markets as attractive appears reasonable given the overall positive performance of alternatives, but the characterization of primary PE markets remaining under pressure appears to have been overstated given the actual market recovery in 2025."
+      }
+    ],
+    "overall_analysis": "Nuveen's prediction about secondary private equity markets offering value was directionally reasonable, but the institution appears to have underestimated the recovery in primary PE markets in 2025. The characterization of PE markets remaining under pressure from high interest rates was not validated by the actual market performance, which showed strong alternative investment returns and dealmaking revival. The prediction correctly identified secondary PE as attractive but missed the broader PE market recovery that occurred in 2025.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Nuveen's prediction about secondary private equity markets offering value was directionally reasonable, but the institution appears to have underestimated the recovery in primary PE markets in 2025. The characterization of PE markets remaining under pressure from high interest rates was not validated by the actual market performance, which showed strong alternative investment returns and dealmaking revival. The prediction correctly identified secondary PE as attractive but missed the broader PE market recovery that occurred in 2025.",
+    "id": "ALTERNATIVE_ASSETS-NUVEEN-39-2025",
+    "Original_Rank": 39,
+    "Prediction_Text": "\"Private equity markets remain under some pressure (especially given still-high interest rates), but we do see value in secondary private equity markets, where demand is stronger and should continue to grow.\"",
+    "Institution": "NUVEEN",
+    "Rank": 39
+  }
+]

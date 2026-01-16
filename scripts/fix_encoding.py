@@ -43,14 +43,13 @@ def process_json_file(file_path):
         json.dump(fixed_data, f, indent=2, ensure_ascii=False)
     print(f"Done fixing {file_path}")
 
-# Target files
-files_to_fix = [
-    r'c:\Users\juanj\OneDrive\Desktop\AI_Sandbox\Secular_Hub_App\lib\data\expost\2025\ai.json',
-    r'c:\Users\juanj\OneDrive\Desktop\AI_Sandbox\Secular_Hub_App\lib\data\expost\2025\tariffs.json'
-]
+# Target directory
+target_dir = r'c:\Users\juanj\OneDrive\Desktop\AI_Sandbox\Secular_Hub_App\lib\data\expost\2025'
 
-for file_path in files_to_fix:
-    if os.path.exists(file_path):
-        process_json_file(file_path)
-    else:
-        print(f"File not found: {file_path}")
+if os.path.exists(target_dir):
+    for filename in os.listdir(target_dir):
+        if filename.endswith('.json'):
+            file_path = os.path.join(target_dir, filename)
+            process_json_file(file_path)
+else:
+    print(f"Directory not found: {target_dir}")

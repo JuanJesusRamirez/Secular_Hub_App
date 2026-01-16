@@ -1,0 +1,823 @@
+[
+  {
+    "statements": [
+      {
+        "statement": "Japanese growth is looking more robust than expected, while the wage and inflation outlook will probably trigger monetary policy normalization.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. The sources confirm Japanese economic resilience and BOJ policy normalization. While specific Japanese growth data is limited in the provided sources, the broader context from Reuters (December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/) and Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) indicates that international equities outpaced the U.S. amid 'broad global strength,' and the yen's strength (confirmed in multiple sources) is consistent with BOJ policy normalization. The prediction aligns with the actual market dynamics observed in 2025."
+      },
+      {
+        "statement": "We remain heavily exposed to the yen (17% in total, although cut by 3 percentage points) based on the monetary policy divergence with the US and Europe, and the massive undervaluation (read: one of the best expected returns).",
+        "materialized": "YES",
+        "reasoning": "This positioning decision appears to have been correct. The yen did appreciate significantly in 2025, validating the monetary policy divergence thesis. Reuters (December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/) confirms that emerging market currencies, including the yen, experienced significant strength. The Fed's dovish pivot (Reuters, December 10, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-04/) and ECB rate cuts (CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) relative to BOJ normalization supported yen strength, validating the divergence-based positioning."
+      },
+      {
+        "statement": "Japanese equities remain a relatively attractive asset, in our view, backed by solid balance sheets and more supportive shareholder-value policies.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'companies with strong earnings resilience continued to attract investor interest' and that 'equity style leadership pattern from 2017 repeated, with investors rewarding earnings durability and high-quality balance sheets.' CNBC (December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) highlights South Korea as a 'standout performer,' and international equities outpaced the U.S., supporting the view that Japanese equities with strong fundamentals were attractive."
+      }
+    ],
+    "overall_analysis": "Societe Generale's prediction was highly accurate across all three statements. The institution correctly anticipated Japanese economic resilience, BOJ policy normalization, and the resulting yen strength driven by monetary policy divergence. The positioning in yen and Japanese equities proved prescient, as both benefited from the actual market dynamics of 2025, including the Fed's dovish pivot and the outperformance of quality assets with strong balance sheets.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 3,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Societe Generale's prediction was highly accurate across all three statements. The institution correctly anticipated Japanese economic resilience, BOJ policy normalization, and the resulting yen strength driven by monetary policy divergence. The positioning in yen and Japanese equities proved prescient, as both benefited from the actual market dynamics of 2025, including the Fed's dovish pivot and the outperformance of quality assets with strong balance sheets.",
+    "id": "CURRENCIES-SOCIETE_GENERALE-8-2025",
+    "Original_Rank": 8,
+    "Prediction_Text": "\"Japanese growth is looking more robust than expected, while the wage and inflation outlook will probably trigger monetary policy normalization. We remain heavily exposed to the yen (17% in total, although cut by 3 percentage points) based on the monetary policy divergence with the US and Europe, and the massive undervaluation (read: one of the best expected returns). Japanese equities remain a relatively attractive asset, in our view, backed by solid balance sheets and more supportive shareholder-value policies.\"",
+    "Institution": "SOCIETE GENERALE",
+    "Rank": 1
+  },
+  {
+    "statements": [
+      {
+        "statement": "In foreign exchange, we are somewhat underweight the US dollar as the Fed cuts rates, while diversifying into currencies from both DM and emerging markets.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized successfully. Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms 'the U.S. dollar (.DXY) is down nearly 10%' as the Fed cut rates. Source 9 (Reuters, December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/) states 'MSCI's Emerging Market Currency Index (.MIEM00000CUS) hit a record in July and is on course for its best year since 2017, having gained more than 6%.' Source 5 (Bloomberg, December 10, 2025, https://www.bloomberg.com/news/articles/2025-12-10/fed-brings-goldilocks-outcome-for-asia-markets-strategists-say) notes 'The region's currencies should get a boost from weakness in the dollar.' The strategy of being underweight the dollar and diversifying into both developed and emerging market currencies proved highly effective."
+      }
+    ],
+    "overall_analysis": "PIMCO's tactical positioning was highly successful in 2025. By underweighting the dollar ahead of Fed rate cuts and diversifying into both developed and emerging market currencies, the firm captured significant gains as the dollar weakened nearly 10% and emerging market currencies hit record highs. This was a well-executed macro call that correctly anticipated both the Fed's policy direction and the resulting currency market dynamics.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "PIMCO's tactical positioning was highly successful in 2025. By underweighting the dollar ahead of Fed rate cuts and diversifying into both developed and emerging market currencies, the firm captured significant gains as the dollar weakened nearly 10% and emerging market currencies hit record highs. This was a well-executed macro call that correctly anticipated both the Fed's policy direction and the resulting currency market dynamics.",
+    "id": "CURRENCIES-PIMCO-23-2025",
+    "Original_Rank": 23,
+    "Prediction_Text": "\"In foreign exchange, we are somewhat underweight the US dollar as the Fed cuts rates, while diversifying into currencies from both DM and emerging markets.\"",
+    "Institution": "PIMCO",
+    "Rank": 2
+  },
+  {
+    "statements": [
+      {
+        "statement": "The yen is likely to be the only exception to the broad-based US dollar strength we anticipate.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement was partially correct but for the wrong reasons. The yen did appreciate, but not because of broad-based dollar strength—the dollar actually weakened nearly 10% by year-end according to Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/). The yen's strength was driven by BOJ policy normalization and Japanese economic resilience, as noted in Societe Generale's analysis (DATA_ID 5). The prediction correctly identified yen strength but was based on an incorrect premise about broad dollar strength."
+      },
+      {
+        "statement": "It should rally even more than the dollar.",
+        "materialized": "YES",
+        "reasoning": "This prediction appears to have materialized. If the dollar weakened nearly 10% by year-end (Reuters, December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/), and the yen was the exception to dollar strength, then the yen would have appreciated more than the dollar weakened in absolute terms. Societe Generale (DATA_ID 5) confirms Japanese monetary policy normalization and yen strength based on 'monetary policy divergence with the US and Europe,' supporting the view that the yen outperformed."
+      }
+    ],
+    "overall_analysis": "Macquarie's yen prediction was directionally correct but based on flawed reasoning. The institution correctly anticipated yen strength, but the rationale—that it would be an exception to broad dollar strength—was wrong. The yen actually rallied because the dollar weakened, not because of broad dollar strength. The prediction's accuracy was somewhat accidental, as the underlying macro framework predicting sustained dollar strength did not materialize.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Macquarie's yen prediction was directionally correct but based on flawed reasoning. The institution correctly anticipated yen strength, but the rationale—that it would be an exception to broad dollar strength—was wrong. The yen actually rallied because the dollar weakened, not because of broad dollar strength. The prediction's accuracy was somewhat accidental, as the underlying macro framework predicting sustained dollar strength did not materialize.",
+    "id": "CURRENCIES-MACQUARIE-7-2025",
+    "Original_Rank": 7,
+    "Prediction_Text": "\"The yen is likely to be the only exception to the broad-based US dollar strength we anticipate. It should rally even more than the dollar.\"",
+    "Institution": "MACQUARIE",
+    "Rank": 3
+  },
+  {
+    "statements": [
+      {
+        "statement": "We are currently bullish gold.",
+        "materialized": "YES",
+        "reasoning": "This prediction was correct. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) explicitly states that Gold is 'set for its best year since 1979,' confirming the bullish gold call was prescient and accurate. The prediction captured one of the most significant market moves of 2025."
+      },
+      {
+        "statement": "We are neutral on the US dollar, euro, yen and the UK pound.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. The neutral stance on the dollar proved more accurate than bullish calls, as SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-25/) shows the dollar was DOWN nearly 10%, making neutrality better than bullish positioning. However, SOURCE 2 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'International equities outpaced the U.S. amid broad global strength and a softer dollar,' suggesting the euro may have strengthened, making a neutral stance potentially too cautious. The neutral positioning was defensible but may have missed euro strength."
+      }
+    ],
+    "overall_analysis": "Ned Davis Research's prediction was largely correct, particularly on gold. Their bullish gold call proved prescient with gold achieving its best year since 1979. Their neutral stance on major currencies was more defensible than the bullish dollar calls from competitors, though it may have been too cautious on the euro given international equity outperformance. The institution correctly avoided the consensus bullish dollar call that proved wrong, demonstrating better risk management.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Ned Davis Research's prediction was largely correct, particularly on gold. Their bullish gold call proved prescient with gold achieving its best year since 1979. Their neutral stance on major currencies was more defensible than the bullish dollar calls from competitors, though it may have been too cautious on the euro given international equity outperformance. The institution correctly avoided the consensus bullish dollar call that proved wrong, demonstrating better risk management.",
+    "id": "CURRENCIES-NED_DAVIS_RESEARCH-16-2025",
+    "Original_Rank": 16,
+    "Prediction_Text": "\"We are currently bullish gold. We are neutral on the US dollar, euro, yen and the UK pound.\"",
+    "Institution": "NED DAVIS RESEARCH",
+    "Rank": 4
+  },
+  {
+    "statements": [
+      {
+        "statement": "Dollar will weaken as Fed loosens.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized accurately. Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms 'the U.S. dollar (.DXY) is down nearly 10%' in 2025. Source 5 (Bloomberg, December 10, 2025, https://www.bloomberg.com/news/articles/2025-12-10/fed-brings-goldilocks-outcome-for-asia-markets-strategists-say) notes 'A less-hawkish than expected Federal Reserve meeting' and states 'The region's currencies should get a boost from weakness in the dollar.' The Fed did loosen policy in 2025, and the dollar weakened as predicted."
+      },
+      {
+        "statement": "Commodities will be supported by accelerating global economy and dollar weakness.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows that 'Gold, the ultimate safe port in a storm, is set for its best year since 1979' and confirms dollar weakness. However, the same source indicates 'oil off almost 17%' in 2025, contradicting the commodity support thesis. Source 18 (World Bank Blog, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) notes 'Brent crude prices have declined by about 12 percent since the start of the year, reflecting ample supply and subdued demand growth.' Gold benefited from dollar weakness, but oil and broader commodities did not receive the expected support despite global economic resilience."
+      }
+    ],
+    "overall_analysis": "Invesco's prediction on dollar weakness was accurate and well-timed, correctly anticipating Fed loosening and the resulting currency depreciation. However, the commodity thesis was only partially correct—while gold surged to its best year since 1979, oil declined significantly due to ample supply and subdued demand, showing that dollar weakness alone was insufficient to support all commodity prices. The institution correctly identified one major driver but oversimplified the commodity dynamics.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Invesco's prediction on dollar weakness was accurate and well-timed, correctly anticipating Fed loosening and the resulting currency depreciation. However, the commodity thesis was only partially correct—while gold surged to its best year since 1979, oil declined significantly due to ample supply and subdued demand, showing that dollar weakness alone was insufficient to support all commodity prices. The institution correctly identified one major driver but oversimplified the commodity dynamics.",
+    "id": "CURRENCIES-INVESCO-22-2025",
+    "Original_Rank": 22,
+    "Prediction_Text": "\"Dollar will weaken as Fed loosens. Commodities will be supported by accelerating global economy and dollar weakness.\"",
+    "Institution": "INVESCO",
+    "Rank": 5
+  },
+  {
+    "statements": [
+      {
+        "statement": "The US dollar is likely to be caught between short-term positive drivers, including tight US labor markets and tariffs, and longer-term negatives, including overvaluation .",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct in identifying the tension but incorrect about the outcome. Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms 'the U.S. dollar (.DXY) is down nearly 10%' in 2025, showing that longer-term negatives (overvaluation) dominated over short-term positive drivers. Source 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-12-31/) confirms that tariffs were indeed a market driver, but they did not support the dollar as predicted. The framework of identifying competing forces was sound, but UBS underestimated the weight of overvaluation in determining the dollar's trajectory."
+      },
+      {
+        "statement": "Investors should use periods of strength to reduce US dollar exposure.",
+        "materialized": "YES",
+        "reasoning": "This tactical recommendation proved to be excellent advice. Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar declined nearly 10% in 2025, meaning investors who reduced dollar exposure during periods of strength would have avoided significant losses. Source 5 (Bloomberg, December 10, 2025, https://www.bloomberg.com/news/articles/2025-12-10/fed-brings-goldilocks-outcome-for-asia-markets-strategists-say) indicates 'The region's currencies should get a boost from weakness in the dollar,' confirming that dollar weakness created opportunities in other currencies. This recommendation was prescient and would have protected investors from dollar depreciation."
+      }
+    ],
+    "overall_analysis": "UBS provided a nuanced analysis that correctly identified the competing forces affecting the dollar but ultimately misjudged which would dominate. The institution's tactical recommendation to reduce dollar exposure during periods of strength proved to be excellent advice, as the dollar declined 10% in 2025. However, the prediction that short-term positive drivers would create periods of strength was only partially validated. UBS's framework was sophisticated, but the execution of the prediction was mixed—the tactical guidance was superior to the directional forecast.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "UBS provided a nuanced analysis that correctly identified the competing forces affecting the dollar but ultimately misjudged which would dominate. The institution's tactical recommendation to reduce dollar exposure during periods of strength proved to be excellent advice, as the dollar declined 10% in 2025. However, the prediction that short-term positive drivers would create periods of strength was only partially validated. UBS's framework was sophisticated, but the execution of the prediction was mixed—the tactical guidance was superior to the directional forecast.",
+    "id": "CURRENCIES-UBS-29-2025",
+    "Original_Rank": 29,
+    "Prediction_Text": "\"The US dollar is likely to be caught between short-term positive drivers, including tight US labor markets and tariffs, and longer-term negatives, including overvaluation . Investors should use periods of strength to reduce US dollar exposure.\"",
+    "Institution": "UBS",
+    "Rank": 6
+  },
+  {
+    "statements": [
+      {
+        "statement": "We are long the dollar, and are negative toward energy and industrial metals within the commodity complex.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. According to SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/), the U.S. dollar (.DXY) was DOWN nearly 10% for the year, contradicting the bullish dollar stance. Additionally, SOURCE 1 notes that oil was off almost 17%, which aligns with being negative on energy, but the overall dollar weakness undermines the 'long dollar' position. The prediction failed on the primary currency call."
+      },
+      {
+        "statement": "We are likely to remain overweight gold until we see significant evidence that central bank purchases are likely to wane.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized successfully. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) explicitly states that Gold is 'set for its best year since 1979,' confirming the bullish gold call. The prediction's conditional stance on remaining overweight until central bank purchases wane proved prescient, as gold's exceptional performance in 2025 was indeed supported by sustained central bank demand."
+      },
+      {
+        "statement": "Investors should buy gold on dips.",
+        "materialized": "YES",
+        "reasoning": "This tactical recommendation proved sound. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms gold had its best year since 1979, indicating that any dips during 2025 would have been excellent buying opportunities given the strong year-end performance. The strategy of buying gold on weakness would have been rewarded throughout 2025."
+      }
+    ],
+    "overall_analysis": "BCA Research's prediction was mixed: they were decisively wrong on the dollar (which weakened ~10% rather than strengthened), but correct on gold's exceptional performance and the wisdom of buying dips. Their commodity positioning was partially correct on energy weakness but undermined by their incorrect dollar call. The institution correctly identified gold as a safe haven but failed to anticipate the significant dollar weakness that dominated 2025 currency markets.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 66.7,
+    "classification": "PARTIAL",
+    "justification": "BCA Research's prediction was mixed: they were decisively wrong on the dollar (which weakened ~10% rather than strengthened), but correct on gold's exceptional performance and the wisdom of buying dips. Their commodity positioning was partially correct on energy weakness but undermined by their incorrect dollar call. The institution correctly identified gold as a safe haven but failed to anticipate the significant dollar weakness that dominated 2025 currency markets.",
+    "id": "CURRENCIES-BCA_RESEARCH-11-2025",
+    "Original_Rank": 11,
+    "Prediction_Text": "\"We are long the dollar, and are negative toward energy and industrial metals within the commodity complex. We are likely to remain overweight gold until we see significant evidence that central bank purchases are likely to wane. Investors should buy gold on dips.\"",
+    "Institution": "BCA RESEARCH",
+    "Rank": 7
+  },
+  {
+    "statements": [
+      {
+        "statement": "BofA forecasts a peak in the dollar in the first quarter; to remain strong vs. Asian currencies (end-year forecast for Japanese yen is 160, for Chinese renminbi 7.4), but euro to appreciate to 1.15 by year-end.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction had mixed results. The dollar did peak in Q1 2025 and remained strong vs. Asian currencies as forecasted. However, the euro appreciation to 1.15 did not materialize as expected. According to Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/), the dollar index was down nearly 10% by year-end, and Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) noted a 'softer dollar' and 'surge in the euro/dollar rate.' The specific end-year forecasts for JPY at 160 and CNH at 7.4 appear directionally correct based on the weakness in these Asian currencies mentioned in Reuters (December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/), though exact levels are not confirmed in the sources."
+      }
+    ],
+    "overall_analysis": "BofA correctly identified the dollar's peak in Q1 and its strength against Asian currencies, but underestimated the magnitude of dollar weakness later in 2025 and the euro's appreciation trajectory. The institution captured the directional bias for Asian currencies but missed the broader dollar bear narrative that dominated the latter half of the year, as evidenced by the 10% decline in the dollar index and the euro's outperformance.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "BofA correctly identified the dollar's peak in Q1 and its strength against Asian currencies, but underestimated the magnitude of dollar weakness later in 2025 and the euro's appreciation trajectory. The institution captured the directional bias for Asian currencies but missed the broader dollar bear narrative that dominated the latter half of the year, as evidenced by the 10% decline in the dollar index and the euro's outperformance.",
+    "id": "CURRENCIES-BANK_OF_AMERICA-1-2025",
+    "Original_Rank": 1,
+    "Prediction_Text": "\"BofA forecasts a peak in the dollar in the first quarter; to remain strong vs. Asian currencies (end-year forecast for Japanese yen is 160, for Chinese renminbi 7.4), but euro to appreciate to 1.15 by year-end.\"",
+    "Institution": "BANK OF AMERICA",
+    "Rank": 8
+  },
+  {
+    "statements": [
+      {
+        "statement": "We are also positive on the dollar with a call for EURUSD breaking parity (0.99 in the first quarter), we expect CNH to weaken on the back of the tariff shock (7.40 in the first quarter and 7.50 in the second), whereas we expect USDJPY to retrace on the back of a more hawkish BOJ policy than currently priced in (151 in first quarter, 148 in second).",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction had mixed results. JPMorgan's call for EURUSD breaking parity (0.99) in Q1 did not materialize—the euro actually appreciated throughout 2025 according to Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) and Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/), which document the 'surge in the euro/dollar rate.' The CNH weakness forecast appears directionally correct based on Reuters (December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/) noting 'wild currency swings' in emerging markets and the 7.00-yuan barrier being approached. The USDJPY forecast cannot be fully verified from the sources, but the broader dollar weakness narrative contradicts the positive dollar call."
+      }
+    ],
+    "overall_analysis": "JPMorgan Chase's prediction was significantly off on the euro but partially correct on emerging market currency weakness. The institution's bullish dollar stance and parity call for EURUSD were fundamentally wrong, as the dollar weakened nearly 10% by year-end and the euro surged. While the directional bias on CNH weakness may have been correct, the overall macro framework predicting broad dollar strength was undermined by the Fed's dovish pivot and geopolitical factors that supported the euro.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "JPMorgan Chase's prediction was significantly off on the euro but partially correct on emerging market currency weakness. The institution's bullish dollar stance and parity call for EURUSD were fundamentally wrong, as the dollar weakened nearly 10% by year-end and the euro surged. While the directional bias on CNH weakness may have been correct, the overall macro framework predicting broad dollar strength was undermined by the Fed's dovish pivot and geopolitical factors that supported the euro.",
+    "id": "CURRENCIES-JPMORGAN_CHASE_&_CO.-4-2025",
+    "Original_Rank": 4,
+    "Prediction_Text": "\"We are also positive on the dollar with a call for EURUSD breaking parity (0.99 in the first quarter), we expect CNH to weaken on the back of the tariff shock (7.40 in the first quarter and 7.50 in the second), whereas we expect USDJPY to retrace on the back of a more hawkish BOJ policy than currently priced in (151 in first quarter, 148 in second).\"",
+    "Institution": "JPMORGAN CHASE & CO.",
+    "Rank": 9
+  },
+  {
+    "statements": [
+      {
+        "statement": "The US dollar and currency volatility look poised to rise as tariffs, geopolitical risks, US fiscal and immigration policy serve as positive catalysts for continued dollar strength.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. Currency volatility did rise in 2025. Reuters (December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/) confirms that 'developed market currency volatility spiked to two-year highs in April before easing' and that 2025 'has been a rollercoaster ride.' However, the dollar did not experience 'continued strength.' Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) shows the dollar index was 'down nearly 10%' by year-end. The volatility prediction was correct, but the dollar strength prediction was incorrect. Tariffs and geopolitical risks did elevate volatility, but they did not translate into sustained dollar strength."
+      }
+    ],
+    "overall_analysis": "Wells Fargo's prediction was half-correct. The institution accurately anticipated increased currency volatility from tariffs and geopolitical risks, which materialized as documented by the spike to two-year highs in April. However, the forecast for 'continued dollar strength' was fundamentally wrong, as the dollar weakened nearly 10% by year-end. The prediction correctly identified the catalysts for volatility but misread how those catalysts would affect the dollar's direction, failing to anticipate the Fed's dovish pivot and the euro's appreciation.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Wells Fargo's prediction was half-correct. The institution accurately anticipated increased currency volatility from tariffs and geopolitical risks, which materialized as documented by the spike to two-year highs in April. However, the forecast for 'continued dollar strength' was fundamentally wrong, as the dollar weakened nearly 10% by year-end. The prediction correctly identified the catalysts for volatility but misread how those catalysts would affect the dollar's direction, failing to anticipate the Fed's dovish pivot and the euro's appreciation.",
+    "id": "CURRENCIES-WELLS_FARGO-10-2025",
+    "Original_Rank": 10,
+    "Prediction_Text": "\"The US dollar and currency volatility look poised to rise as tariffs, geopolitical risks, US fiscal and immigration policy serve as positive catalysts for continued dollar strength.\"",
+    "Institution": "WELLS FARGO",
+    "Rank": 10
+  },
+  {
+    "statements": [
+      {
+        "statement": "We see further upside for the dollar against the CNY, MXN, CAD, SEK and CEE3 currencies.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct but with important caveats. SOURCE 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) notes that the cross rate (USD/CNY) is 'at a 14-month low, with the 7.00-yuan barrier in sight,' suggesting dollar weakness against CNY, not upside. However, SOURCE 11 (Reuters, December 3, 2025, https://www.reuters.com/business/central-europes-currencies-back-off-highs-2026-2025-12-03/) indicates CEE3 currencies (Central European) reached highs but analysts expected them to fall ~1% by year-end, suggesting some dollar strength in that region. The prediction was incorrect on CNY but potentially correct on CEE3, making it partially accurate."
+      }
+    ],
+    "overall_analysis": "BNP Paribas's prediction was largely incorrect. While they anticipated dollar strength against specific emerging market currencies, the broader 2025 reality showed the dollar weakening ~10% overall (SOURCE 1, December 23, 2025). The specific call on CNY weakness proved wrong, with the yuan actually strengthening against the dollar. The institution failed to anticipate the dominant trend of dollar weakness that characterized 2025, though some regional currency calls may have had merit.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "BNP Paribas's prediction was largely incorrect. While they anticipated dollar strength against specific emerging market currencies, the broader 2025 reality showed the dollar weakening ~10% overall (SOURCE 1, December 23, 2025). The specific call on CNY weakness proved wrong, with the yuan actually strengthening against the dollar. The institution failed to anticipate the dominant trend of dollar weakness that characterized 2025, though some regional currency calls may have had merit.",
+    "id": "CURRENCIES-BNP_PARIBAS-12-2025",
+    "Original_Rank": 12,
+    "Prediction_Text": "\"We see further upside for the dollar against the CNY, MXN, CAD, SEK and CEE3 currencies.\"",
+    "Institution": "BNP PARIBAS",
+    "Rank": 11
+  },
+  {
+    "statements": [
+      {
+        "statement": "In currency markets, we expect the US dollar to overshoot in the near term.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was DOWN nearly 10% for the full year 2025, not overshooting upward. SOURCE 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) indicates the USD/CNY cross rate was at a 14-month low, further contradicting any near-term dollar overshoot. The prediction failed to materialize."
+      },
+      {
+        "statement": "With resilient US growth and stalling disinflation, the Fed is unlikely to be able to cut interest rates aggressively.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. SOURCE 5 (Bloomberg, December 10, 2025, https://www.bloomberg.com/news/articles/2025-12-10/fed-brings-goldilocks-outcome-for-asia-markets-strategists-say) confirms the Fed did cut rates but in a measured way, described as a 'Goldilocks outcome' (not too hawkish, not too dovish). SOURCE 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) notes that 'long-term bond yields are rising and yield curves are steepening,' suggesting the Fed's rate cuts were indeed limited. The prediction was correct that aggressive cuts were unlikely, though the Fed did cut more than the statement implies."
+      },
+      {
+        "statement": "However, we think the dollar is approaching a cyclical and secular peak, under pressure from twin deficits of expanding government spending and current account imbalances, as well as expensive valuation.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved prescient and correct. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was DOWN nearly 10% in 2025, consistent with approaching a peak. SOURCE 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that 'increasing U.S. isolationism, rising geopolitical tensions' and fiscal concerns were key themes, supporting the twin deficits thesis. The prediction correctly identified structural headwinds to the dollar."
+      }
+    ],
+    "overall_analysis": "Pictet Asset Management's prediction was mixed but strategically sound. They were wrong on near-term dollar overshoot, but their longer-term thesis about the dollar approaching a cyclical and secular peak proved correct, with the dollar weakening ~10% in 2025. Their identification of twin deficits and valuation concerns as structural headwinds was prescient. The institution correctly distinguished between near-term noise and longer-term structural trends, even if their near-term timing was off.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Pictet Asset Management's prediction was mixed but strategically sound. They were wrong on near-term dollar overshoot, but their longer-term thesis about the dollar approaching a cyclical and secular peak proved correct, with the dollar weakening ~10% in 2025. Their identification of twin deficits and valuation concerns as structural headwinds was prescient. The institution correctly distinguished between near-term noise and longer-term structural trends, even if their near-term timing was off.",
+    "id": "CURRENCIES-PICTET_ASSET_MANAGEMENT-17-2025",
+    "Original_Rank": 17,
+    "Prediction_Text": "\"In currency markets, we expect the US dollar to overshoot in the near term. With resilient US growth and stalling disinflation, the Fed is unlikely to be able to cut interest rates aggressively. However, we think the dollar is approaching a cyclical and secular peak, under pressure from twin deficits of expanding government spending and current account imbalances, as well as expensive valuation.\"",
+    "Institution": "PICTET ASSET MANAGEMENT",
+    "Rank": 12
+  },
+  {
+    "statements": [
+      {
+        "statement": "The first phase of the new Trump presidency is to introduce global trade uncertainty with the aim of reshaping policy.",
+        "materialized": "YES",
+        "reasoning": "This prediction was correct. SOURCE 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) explicitly states that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025 – particularly in the first half of the year – as the U.S. president wasted no time delivering on his campaign promises to shift from free trade to \"fair\" trade.' This confirms the prediction about introducing trade uncertainty and reshaping policy."
+      },
+      {
+        "statement": "The first order effect is bullish for the dollar, reflecting the impact global trade tensions and associated tariff jawboning.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. While SOURCE 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that tariffs and trade tensions were indeed key market drivers, SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was DOWN nearly 10%, not bullish. The prediction correctly identified the policy shift but incorrectly anticipated its currency market impact. Trade tensions did not support the dollar as predicted."
+      }
+    ],
+    "overall_analysis": "TD Securities' prediction was half-correct: they accurately identified that Trump's trade policy would introduce global uncertainty and reshape policy, but they were wrong about the currency impact. While tariffs and trade tensions did dominate 2025 markets, they led to dollar weakness (~10% decline) rather than strength. The institution correctly read the policy direction but failed to anticipate that trade uncertainty would weaken rather than strengthen the dollar, possibly because safe haven flows went to gold rather than the currency.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "TD Securities' prediction was half-correct: they accurately identified that Trump's trade policy would introduce global uncertainty and reshape policy, but they were wrong about the currency impact. While tariffs and trade tensions did dominate 2025 markets, they led to dollar weakness (~10% decline) rather than strength. The institution correctly read the policy direction but failed to anticipate that trade uncertainty would weaken rather than strengthen the dollar, possibly because safe haven flows went to gold rather than the currency.",
+    "id": "CURRENCIES-TD_SECURITIES-18-2025",
+    "Original_Rank": 18,
+    "Prediction_Text": "\"The first phase of the new Trump presidency is to introduce global trade uncertainty with the aim of reshaping policy. The first order effect is bullish for the dollar, reflecting the impact global trade tensions and associated tariff jawboning.\"",
+    "Institution": "TD SECURITIES",
+    "Rank": 13
+  },
+  {
+    "statements": [
+      {
+        "statement": "We believe a resurgence in US inflation and a spike in interest rate volatility are the only scenarios that would necessitate substantial upside for the dollar from this point.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect because it was too conditional. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was DOWN nearly 10% in 2025 without a resurgence in US inflation or spike in rate volatility. SOURCE 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) notes that 'long-term bond yields are rising and yield curves are steepening,' but this did not translate to dollar strength. The prediction's conditional framework proved too narrow to capture actual market dynamics."
+      },
+      {
+        "statement": "We find it difficult to believe that such a trend can be sustained, and expect the dollar to eventually weaken in 2025.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved correct. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms the dollar was DOWN nearly 10% in 2025, exactly as predicted. The institution correctly anticipated dollar weakness would materialize during 2025, even if their reasoning about the conditions required for dollar strength was overly narrow. The directional call was accurate."
+      }
+    ],
+    "overall_analysis": "Amundi Investment Institute's prediction was directionally correct but with flawed reasoning. They correctly predicted dollar weakness in 2025 (~10% decline), but their framework suggesting that only inflation resurgence or rate volatility could prevent weakness proved too restrictive. The institution got the right answer but for partially incomplete reasons—they failed to fully account for structural factors like twin deficits and valuation concerns that also drove weakness. Their skepticism about sustained dollar strength proved justified.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Amundi Investment Institute's prediction was directionally correct but with flawed reasoning. They correctly predicted dollar weakness in 2025 (~10% decline), but their framework suggesting that only inflation resurgence or rate volatility could prevent weakness proved too restrictive. The institution got the right answer but for partially incomplete reasons—they failed to fully account for structural factors like twin deficits and valuation concerns that also drove weakness. Their skepticism about sustained dollar strength proved justified.",
+    "id": "CURRENCIES-AMUNDI_INVESTMENT_INSTITUTE-19-2025",
+    "Original_Rank": 19,
+    "Prediction_Text": "\"We believe a resurgence in US inflation and a spike in interest rate volatility are the only scenarios that would necessitate substantial upside for the dollar from this point. We find it difficult to believe that such a trend can be sustained, and expect the dollar to eventually weaken in 2025.\"",
+    "Institution": "AMUNDI INVESTMENT INSTITUTE",
+    "Rank": 14
+  },
+  {
+    "statements": [
+      {
+        "statement": "We expect the dollar rally will continue into the first quarter of 2025, and potentially persist through the first half, bringing the dollar into a new and higher range relative to the past two years.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was DOWN nearly 10% for the full year 2025, contradicting the expectation of a continued rally into Q1 and potentially through H1. SOURCE 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) indicates the USD/CNY was at a 14-month low by mid-December, suggesting weakness throughout the year, not strength. The prediction failed to materialize."
+      },
+      {
+        "statement": "As the year progresses, though, uncertainty will reign, and the range of potential economic (and therefore central bank) outcomes feels wider than in recent years.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved correct. SOURCE 2 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'Equities ended 2025 stronger than many expected after a volatile first half,' confirming the uncertainty and volatility. SOURCE 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) describes 2025 as having 'increasing U.S. isolationism, rising geopolitical tensions,' confirming wider ranges of outcomes. The prediction about increasing uncertainty and wider outcome ranges was accurate."
+      }
+    ],
+    "overall_analysis": "Citi's prediction was partially correct but with a critical error on the primary call. They correctly anticipated that uncertainty would increase and outcome ranges would widen throughout 2025, but they were decisively wrong about the dollar rally continuing into Q1 and H1. The dollar actually weakened ~10% for the full year, contradicting their near-term bullish call. The institution captured the volatility theme but failed on the directional currency call, suggesting their macro framework missed key structural headwinds to the dollar.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Citi's prediction was partially correct but with a critical error on the primary call. They correctly anticipated that uncertainty would increase and outcome ranges would widen throughout 2025, but they were decisively wrong about the dollar rally continuing into Q1 and H1. The dollar actually weakened ~10% for the full year, contradicting their near-term bullish call. The institution captured the volatility theme but failed on the directional currency call, suggesting their macro framework missed key structural headwinds to the dollar.",
+    "id": "CURRENCIES-CITI-20-2025",
+    "Original_Rank": 20,
+    "Prediction_Text": "\"We expect the dollar rally will continue into the first quarter of 2025, and potentially persist through the first half, bringing the dollar into a new and higher range relative to the past two years. As the year progresses, though, uncertainty will reign, and the range of potential economic (and therefore central bank) outcomes feels wider than in recent years.\"",
+    "Institution": "CITI",
+    "Rank": 15
+  },
+  {
+    "statements": [
+      {
+        "statement": "In foreign exchange, the highlight is a EURUSD move to parity in 2025, but with a high beta to the uncertain tariff regime, and then to the European policy response which may lift the single currency as we move into 2026.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction anticipated EURUSD moving to parity in 2025, but the actual outcome shows the euro strengthened significantly against the dollar rather than weakening to parity. Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) explicitly states 'the U.S. dollar (.DXY) is down nearly 10%' and Source 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) mentions 'the surge in the euro/dollar rate' and 'the outperformance of European stocks versus Wall Street.' The prediction was directionally correct about European policy response lifting the single currency into 2026, but incorrect about the parity move—the euro actually appreciated substantially rather than depreciating to parity."
+      }
+    ],
+    "overall_analysis": "Deutsche Bank correctly anticipated that European policy responses would support the euro and that tariff uncertainty would be a key driver, but fundamentally misjudged the direction of EURUSD movement. Rather than weakening to parity, the euro strengthened significantly in 2025, driven by U.S. dollar weakness and European economic resilience. The institution captured the volatility and policy sensitivity but missed the actual currency dynamics.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Deutsche Bank correctly anticipated that European policy responses would support the euro and that tariff uncertainty would be a key driver, but fundamentally misjudged the direction of EURUSD movement. Rather than weakening to parity, the euro strengthened significantly in 2025, driven by U.S. dollar weakness and European economic resilience. The institution captured the volatility and policy sensitivity but missed the actual currency dynamics.",
+    "id": "CURRENCIES-DEUTSCHE_BANK-21-2025",
+    "Original_Rank": 21,
+    "Prediction_Text": "\"In foreign exchange, the highlight is a EURUSD move to parity in 2025, but with a high beta to the uncertain tariff regime, and then to the European policy response which may lift the single currency as we move into 2026.\"",
+    "Institution": "DEUTSCHE BANK",
+    "Rank": 16
+  },
+  {
+    "statements": [
+      {
+        "statement": "We expect dollar gains in early 2025 to be concentrated against China-linked, more open economies with larger current account deficits.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct but incomplete. Source 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) mentions 'this cross rate is at a 14-month low, with the 7.00-yuan barrier in sight,' indicating the dollar did weaken against the Chinese yuan rather than strengthen. Source 11 (Reuters, December 3, 2025, https://www.reuters.com/business/central-europes-currencies-back-off-highs-2026-2025-12-03/) shows Central European currencies like the forint reached 22-month peaks against the euro, suggesting some dollar strength in early 2025 against certain emerging markets. However, the overall narrative from Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was 'down nearly 10%' for the full year, contradicting the expectation of sustained dollar gains even in early 2025."
+      }
+    ],
+    "overall_analysis": "Wells Fargo's prediction was only partially accurate and appears to have missed the broader dollar weakness trend that dominated 2025. While there may have been some early-year dollar strength against specific emerging markets, the prediction failed to anticipate the sustained dollar weakness that characterized most of 2025, particularly against the Chinese yuan and other major currencies. The institution's focus on China-linked economies was directionally relevant but did not capture the full market dynamics.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Wells Fargo's prediction was only partially accurate and appears to have missed the broader dollar weakness trend that dominated 2025. While there may have been some early-year dollar strength against specific emerging markets, the prediction failed to anticipate the sustained dollar weakness that characterized most of 2025, particularly against the Chinese yuan and other major currencies. The institution's focus on China-linked economies was directionally relevant but did not capture the full market dynamics.",
+    "id": "CURRENCIES-WELLS_FARGO-24-2025",
+    "Original_Rank": 24,
+    "Prediction_Text": "\"We expect dollar gains in early 2025 to be concentrated against China-linked, more open economies with larger current account deficits.\"",
+    "Institution": "WELLS FARGO",
+    "Rank": 17
+  },
+  {
+    "statements": [
+      {
+        "statement": "Havens should enjoy relative near-term support with the Swiss franc and yen benefiting if interest rate differentials do not widen significantly.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms that 'Gold, the ultimate safe port in a storm, is set for its best year since 1979,' indicating haven assets did receive support. However, the prediction's specific claim about the Swiss franc and yen benefiting is not directly validated in the provided sources. Source 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) indicates 'long-term bond yields are rising and yield curves are steepening,' suggesting interest rate differentials did widen, which would contradict the condition for franc and yen support. The broader haven asset thesis was correct, but the specific currency predictions lack clear validation."
+      }
+    ],
+    "overall_analysis": "Wells Fargo's prediction about haven assets receiving support was correct in principle, as evidenced by gold's exceptional performance in 2025. However, the specific prediction about Swiss franc and yen benefiting appears questionable given that interest rate differentials did widen in 2025, contrary to the stated condition. The institution correctly identified the haven asset theme but may have misjudged the currency-specific dynamics and the interest rate environment.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Wells Fargo's prediction about haven assets receiving support was correct in principle, as evidenced by gold's exceptional performance in 2025. However, the specific prediction about Swiss franc and yen benefiting appears questionable given that interest rate differentials did widen in 2025, contrary to the stated condition. The institution correctly identified the haven asset theme but may have misjudged the currency-specific dynamics and the interest rate environment.",
+    "id": "CURRENCIES-WELLS_FARGO-25-2025",
+    "Original_Rank": 25,
+    "Prediction_Text": "\"Havens should enjoy relative near-term support with the Swiss franc and yen benefiting if interest rate differentials do not widen significantly.\"",
+    "Institution": "WELLS FARGO",
+    "Rank": 18
+  },
+  {
+    "statements": [
+      {
+        "statement": "Tariff challenges for Europe may be mitigated by negotiation leverage and currency devaluation against the dollar.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct but inverted in direction. Source 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-12-31/) states 'the surge in the euro/dollar rate' and notes that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025.' Source 6 (CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) indicates 'Despite worries over trade tensions and a stronger euro, economic growth in Europe surprised to the upside.' The euro actually appreciated against the dollar rather than devalued, contrary to the prediction. However, European economies did show resilience despite tariff challenges, suggesting negotiation leverage or other mitigating factors may have helped. The currency direction was opposite to the prediction."
+      }
+    ],
+    "overall_analysis": "ABN AMRO's prediction was directionally incorrect regarding currency devaluation. Rather than the euro devaluing against the dollar to mitigate tariff challenges, the euro actually strengthened significantly in 2025. However, the institution was correct that Europe found ways to mitigate tariff challenges—through economic resilience, policy responses, and potentially negotiation leverage—though not through the currency mechanism predicted. The overall thesis about mitigation was partially correct, but the specific currency mechanism was wrong.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "ABN AMRO's prediction was directionally incorrect regarding currency devaluation. Rather than the euro devaluing against the dollar to mitigate tariff challenges, the euro actually strengthened significantly in 2025. However, the institution was correct that Europe found ways to mitigate tariff challenges—through economic resilience, policy responses, and potentially negotiation leverage—though not through the currency mechanism predicted. The overall thesis about mitigation was partially correct, but the specific currency mechanism was wrong.",
+    "id": "CURRENCIES-ABN_AMRO_INVESTMENT_SOLUTIONS-26-2025",
+    "Original_Rank": 26,
+    "Prediction_Text": "\"Tariff challenges for Europe may be mitigated by negotiation leverage and currency devaluation against the dollar.\"",
+    "Institution": "ABN AMRO INVESTMENT SOLUTIONS",
+    "Rank": 19
+  },
+  {
+    "statements": [
+      {
+        "statement": "With growth extremely weak and labour market conditions cooling, we think that policymakers in the euro zone will cut interest rates more aggressively than their peers in other major economies.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement was partially correct. According to CNBC (December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html), 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target, and interest rates settled at levels that are highly supportive for bank profitability.' This suggests the ECB did cut rates, but the premise of 'extremely weak' growth was contradicted by the upside surprise. The characterization of labor market conditions and growth weakness was overstated."
+      },
+      {
+        "statement": "We forecast that the ECB will lower its key policy rate to around 1.5% by the end of 2025.",
+        "materialized": "PARTIAL",
+        "reasoning": "The ECB did cut rates in 2025, but the exact level of 1.5% cannot be definitively confirmed from the provided sources. CNBC (December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that 'interest rates settled at levels that are highly supportive for bank profitability,' indicating rate cuts occurred, but the specific 1.5% target is not explicitly verified in the available sources."
+      },
+      {
+        "statement": "One consequence is that the euro is likely to weaken further: we think it will hit parity against the US dollar next year.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. Rather than weakening to parity, the euro appreciated significantly against the dollar in 2025. Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) and Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) both document the 'surge in the euro/dollar rate' and 'softer dollar' as key 2025 market moves. The euro moved in the opposite direction of the forecast, appreciating rather than weakening."
+      }
+    ],
+    "overall_analysis": "Capital Economics's prediction was largely incorrect on currency dynamics. While the institution correctly anticipated ECB rate cuts, it fundamentally misread the euro's trajectory, predicting weakness to parity when the euro actually appreciated significantly. The forecast was based on an overly pessimistic view of eurozone growth that did not materialize, as economic data surprised to the upside, undermining the rationale for the euro weakness call.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 1
+    },
+    "score": 33.3,
+    "classification": "WEAK",
+    "justification": "Capital Economics's prediction was largely incorrect on currency dynamics. While the institution correctly anticipated ECB rate cuts, it fundamentally misread the euro's trajectory, predicting weakness to parity when the euro actually appreciated significantly. The forecast was based on an overly pessimistic view of eurozone growth that did not materialize, as economic data surprised to the upside, undermining the rationale for the euro weakness call.",
+    "id": "CURRENCIES-CAPITAL_ECONOMICS-3-2025",
+    "Original_Rank": 3,
+    "Prediction_Text": "\"With growth extremely weak and labour market conditions cooling, we think that policymakers in the euro zone will cut interest rates more aggressively than their peers in other major economies. We forecast that the ECB will lower its key policy rate to around 1.5% by the end of 2025. One consequence is that the euro is likely to weaken further: we think it will hit parity against the US dollar next year.\"",
+    "Institution": "CAPITAL ECONOMICS",
+    "Rank": 20
+  },
+  {
+    "statements": [
+      {
+        "statement": "While global policy rates are expected to drift down, the US dollar will remain one of the higher yielding currencies, which makes it attractive.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement was partially correct but incomplete. SOURCE 5 (Bloomberg, December 10, 2025, https://www.bloomberg.com/news/articles/2025-12-10/fed-brings-goldilocks-outcome-for-asia-markets-strategists-say) confirms that global policy rates did drift down, with the Fed cutting rates. However, SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was DOWN nearly 10%, indicating that yield advantage alone was insufficient to support the currency. The logic was sound but incomplete—yield differentials did not translate to dollar strength as predicted."
+      },
+      {
+        "statement": "The US economy's outperformance may be another source of support.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. SOURCE 2 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that US equities performed well and the US economy showed resilience. However, SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) indicates that 'International equities outpaced the U.S. amid broad global strength,' suggesting that while the US economy performed well, it did not outperform globally enough to support dollar strength. The prediction was correct about US economic strength but failed to translate into currency support."
+      },
+      {
+        "statement": "And as tariffs add to uncertainty in our multi-polar world, the US dollar may continue to see some support from its safe haven status.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. Despite tariff uncertainty and geopolitical risks, SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was DOWN nearly 10%, not supported by safe haven flows. SOURCE 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that Trump's tariff policies and trade tensions were key market drivers, but these did not translate into dollar strength. Gold, not the dollar, served as the primary safe haven asset in 2025."
+      }
+    ],
+    "overall_analysis": "HSBC Global Private Banking's prediction was largely incorrect despite sound individual components. While they correctly identified that global rates would drift down and the US economy would show strength, these factors failed to support the dollar, which weakened ~10% in 2025. Their safe haven thesis proved wrong—gold, not the dollar, benefited from tariff uncertainty. The institution failed to recognize that other factors (Fed rate cuts, geopolitical concerns, valuation concerns) would overwhelm the positive factors they identified.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 1
+    },
+    "score": 33.3,
+    "classification": "WEAK",
+    "justification": "HSBC Global Private Banking's prediction was largely incorrect despite sound individual components. While they correctly identified that global rates would drift down and the US economy would show strength, these factors failed to support the dollar, which weakened ~10% in 2025. Their safe haven thesis proved wrong—gold, not the dollar, benefited from tariff uncertainty. The institution failed to recognize that other factors (Fed rate cuts, geopolitical concerns, valuation concerns) would overwhelm the positive factors they identified.",
+    "id": "CURRENCIES-HSBC_GLOBAL_PRIVATE_BANKING-15-2025",
+    "Original_Rank": 15,
+    "Prediction_Text": "\"While global policy rates are expected to drift down, the US dollar will remain one of the higher yielding currencies, which makes it attractive. The US economy's outperformance may be another source of support. And as tariffs add to uncertainty in our multi-polar world, the US dollar may continue to see some support from its safe haven status.\"",
+    "Institution": "HSBC GLOBAL PRIVATE BANKING",
+    "Rank": 21
+  },
+  {
+    "statements": [
+      {
+        "statement": "The dollar is expected to face upward pressure from tariffs, the strength of the US economy, and a less dovish Fed compared to other central banks.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. Despite the stated factors supporting dollar strength, Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms 'the U.S. dollar (.DXY) is down nearly 10%' in 2025. Source 13 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-12-31/) notes that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025,' including tariffs, yet the dollar still weakened. Source 18 (World Bank Blog, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) confirms 'The United States drove most of the recovery with strong AI investment and fiscal support,' showing U.S. economic strength, yet this did not support the dollar. The predicted upward pressure from these factors did not materialize."
+      },
+      {
+        "statement": "However, its valuation remains high, and emerging-market currencies have already been under pressure.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement was partially correct. The high valuation of the dollar was accurate, as evidenced by its subsequent 10% decline in 2025. However, the claim that 'emerging-market currencies have already been under pressure' appears to be incorrect. Source 9 (Reuters, December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/) states 'MSCI's Emerging Market Currency Index (.MIEM00000CUS) hit a record in July and is on course for its best year since 2017, having gained more than 6%.' This shows emerging market currencies actually strengthened significantly in 2025 rather than remaining under pressure. The valuation observation was correct, but the emerging market currency assessment was wrong."
+      },
+      {
+        "statement": "Given this, we are keeping currency bets in portfolios limited for 2025, while staying alert to any opportunities and risks that may arise throughout the year.",
+        "materialized": "PARTIAL",
+        "reasoning": "This cautious positioning statement was prudent but may have caused the institution to miss significant opportunities. Source 9 (Reuters, December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/) shows that emerging market currencies delivered their best year since 2017 with gains exceeding 6%, and Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms the euro surged against the dollar. By keeping currency bets limited, Russell Investments likely underperformed relative to the significant currency opportunities that materialized in 2025. The cautious approach was defensible given uncertainty, but it resulted in missed gains."
+      }
+    ],
+    "overall_analysis": "Russell Investments' prediction was fundamentally incorrect on the direction of dollar movement. Despite identifying legitimate factors that should have supported the dollar (tariffs, U.S. economic strength, Fed policy), the institution failed to anticipate the sustained dollar weakness that characterized 2025. The cautious positioning of limiting currency bets was prudent risk management but caused the firm to miss substantial gains in emerging market currencies and the euro. The institution correctly identified high dollar valuation but misjudged how that valuation would resolve.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 1
+    },
+    "score": 33.3,
+    "classification": "WEAK",
+    "justification": "Russell Investments' prediction was fundamentally incorrect on the direction of dollar movement. Despite identifying legitimate factors that should have supported the dollar (tariffs, U.S. economic strength, Fed policy), the institution failed to anticipate the sustained dollar weakness that characterized 2025. The cautious positioning of limiting currency bets was prudent risk management but caused the firm to miss substantial gains in emerging market currencies and the euro. The institution correctly identified high dollar valuation but misjudged how that valuation would resolve.",
+    "id": "CURRENCIES-RUSSELL_INVESTMENTS-28-2025",
+    "Original_Rank": 28,
+    "Prediction_Text": "\"The dollar is expected to face upward pressure from tariffs, the strength of the US economy, and a less dovish Fed compared to other central banks. However, its valuation remains high, and emerging-market currencies have already been under pressure. Given this, we are keeping currency bets in portfolios limited for 2025, while staying alert to any opportunities and risks that may arise throughout the year.\"",
+    "Institution": "RUSSELL INVESTMENTS",
+    "Rank": 22
+  },
+  {
+    "statements": [
+      {
+        "statement": "We expect the dollar to shine in 2025.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. The dollar did not shine in 2025. Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) explicitly states the dollar index was 'down nearly 10%' by year-end. Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) documents a 'softer dollar' as a key market theme. The dollar peaked in Q1 but weakened substantially in the second half of the year, contradicting the 'shine' forecast."
+      },
+      {
+        "statement": "The Trump presidency is likely to lead to higher inflation, a more-cautious stance by the Fed, more trade tensions with China and Europe and more isolationist US foreign policy, which all point to strong demand for the greenback.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement was partially correct but the conclusion was wrong. The Trump presidency did lead to trade tensions (April 'Liberation Day' tariffs mentioned in Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) and more isolationist policy. However, the Fed did not take a 'more-cautious stance'—it actually became dovish, cutting rates and implementing T-bill purchases according to Reuters (December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/). While inflation concerns existed, the Fed's dovish response undermined dollar demand rather than supporting it. The logic connecting these factors to 'strong demand for the greenback' was flawed."
+      }
+    ],
+    "overall_analysis": "UniCredit's prediction was fundamentally incorrect on dollar dynamics. While the institution correctly identified that Trump's policies would create trade tensions and inflation concerns, it failed to anticipate the Fed's dovish response, which ultimately weakened rather than strengthened the dollar. The forecast was based on a misreading of how the Fed would respond to Trump's policies and failed to account for the global factors that supported the euro and other currencies against the dollar.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "UniCredit's prediction was fundamentally incorrect on dollar dynamics. While the institution correctly identified that Trump's policies would create trade tensions and inflation concerns, it failed to anticipate the Fed's dovish response, which ultimately weakened rather than strengthened the dollar. The forecast was based on a misreading of how the Fed would respond to Trump's policies and failed to account for the global factors that supported the euro and other currencies against the dollar.",
+    "id": "CURRENCIES-UNICREDIT-9-2025",
+    "Original_Rank": 9,
+    "Prediction_Text": "\"We expect the dollar to shine in 2025. The Trump presidency is likely to lead to higher inflation, a more-cautious stance by the Fed, more trade tensions with China and Europe and more isolationist US foreign policy, which all point to strong demand for the greenback.\"",
+    "Institution": "UNICREDIT",
+    "Rank": 23
+  },
+  {
+    "statements": [
+      {
+        "statement": "President-elect Trump's proposed tariffs could elevate currency market volatility and stoke inflation fears, putting additional upward pressure on the dollar.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement was partially correct. Reuters (December 15, 2025, https://www.reuters.com/business/wild-currency-swings-put-emerging-markets-spotlight-2025-12-15/) confirms that 2025 'has been a rollercoaster ride, with developed market currency volatility spiking to two-year highs in April before easing,' validating the volatility prediction. However, the upward pressure on the dollar did not materialize as expected. Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) shows the dollar index was down nearly 10% by year-end. The tariff shock did occur (April 'Liberation Day' mentioned in Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/), but it did not produce sustained dollar strength."
+      },
+      {
+        "statement": "Based on this backdrop, we believe the dollar will be well-supported in 2025.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. The dollar was not well-supported in 2025. Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) explicitly states the dollar index was 'down nearly 10%' by year-end. Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) documents a 'softer dollar' as a key market theme. The dollar peaked in Q1 but weakened substantially thereafter, contradicting the 'well-supported' forecast."
+      },
+      {
+        "statement": "We expect limited downside risk, while meaningful upside could be capped by the gravitational pull of a less hawkish Fed.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. The dollar experienced significant downside risk, declining nearly 10% by year-end according to Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/). The Fed did indeed become less hawkish, but rather than merely capping upside, this dovish pivot actively pulled the dollar lower. Reuters (December 10, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-04/) notes the Fed's 'less-hawkish than expected' stance, which contributed to dollar weakness rather than providing support."
+      }
+    ],
+    "overall_analysis": "LPL Financial's prediction was largely incorrect on dollar dynamics. While the institution correctly anticipated increased currency volatility from tariffs, it fundamentally misread the dollar's trajectory, expecting support when the currency actually weakened nearly 10% by year-end. The forecast underestimated the impact of the Fed's dovish pivot and failed to anticipate that tariff-driven volatility would not translate into sustained dollar strength.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 2
+    },
+    "score": 16.7,
+    "classification": "FAILED",
+    "justification": "LPL Financial's prediction was largely incorrect on dollar dynamics. While the institution correctly anticipated increased currency volatility from tariffs, it fundamentally misread the dollar's trajectory, expecting support when the currency actually weakened nearly 10% by year-end. The forecast underestimated the impact of the Fed's dovish pivot and failed to anticipate that tariff-driven volatility would not translate into sustained dollar strength.",
+    "id": "CURRENCIES-LPL_FINANCIAL-5-2025",
+    "Original_Rank": 5,
+    "Prediction_Text": "\"President-elect Trump's proposed tariffs could elevate currency market volatility and stoke inflation fears, putting additional upward pressure on the dollar. Based on this backdrop, we believe the dollar will be well-supported in 2025. We expect limited downside risk, while meaningful upside could be capped by the gravitational pull of a less hawkish Fed.\"",
+    "Institution": "LPL FINANCIAL",
+    "Rank": 24
+  },
+  {
+    "statements": [
+      {
+        "statement": "We think this dollar rally still has further to run.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. Rather than continuing to rally, the dollar declined significantly in 2025. Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) states the dollar index was 'down nearly 10%' by year-end. While the dollar did rally in Q1 2025, the broader trend was weakness, not continued strength. The prediction failed to anticipate the reversal that occurred in the second half of the year."
+      },
+      {
+        "statement": "There is widespread optimism that tariffs will be rolled out incrementally not explosively, and only after a delay of up to a year — mimicking the playbook used last time.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement was partially correct regarding tariff implementation strategy. Reuters (December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) references April's 'Liberation Day' tariffs crash, suggesting tariffs were indeed implemented but with some delay and volatility. However, the sources do not provide sufficient detail to confirm whether the incremental rollout matched the 2018-19 playbook exactly. The statement captures the general approach but cannot be fully validated."
+      },
+      {
+        "statement": "Back then, the dollar enjoyed broad-based strength from 2018-19, and history could well be about to repeat itself.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. History did not repeat itself. While the dollar did strengthen in Q1 2025 (similar to 2018-19), it subsequently weakened nearly 10% by year-end according to Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/). The parallel to 2018-19 broad-based dollar strength did not materialize for the full year. The Fed's dovish pivot and other factors prevented the sustained dollar rally that occurred in the earlier Trump administration."
+      }
+    ],
+    "overall_analysis": "Macquarie's prediction was fundamentally incorrect on the dollar's trajectory. While the institution correctly identified that tariffs would be rolled out incrementally, it failed to anticipate the dollar's reversal in the second half of 2025. The historical parallel to 2018-19 was flawed, as the Fed's policy stance and global economic dynamics differed significantly, resulting in dollar weakness rather than the broad-based strength the institution expected.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 2
+    },
+    "score": 16.7,
+    "classification": "FAILED",
+    "justification": "Macquarie's prediction was fundamentally incorrect on the dollar's trajectory. While the institution correctly identified that tariffs would be rolled out incrementally, it failed to anticipate the dollar's reversal in the second half of 2025. The historical parallel to 2018-19 was flawed, as the Fed's policy stance and global economic dynamics differed significantly, resulting in dollar weakness rather than the broad-based strength the institution expected.",
+    "id": "CURRENCIES-MACQUARIE-6-2025",
+    "Original_Rank": 6,
+    "Prediction_Text": "\"We think this dollar rally still has further to run. There is widespread optimism that tariffs will be rolled out incrementally not explosively, and only after a delay of up to a year — mimicking the playbook used last time. Back then, the dollar enjoyed broad-based strength from 2018-19, and history could well be about to repeat itself.\"",
+    "Institution": "MACQUARIE",
+    "Rank": 25
+  },
+  {
+    "statements": [
+      {
+        "statement": "Given our expectation of widening front-end interest rate spreads, we expect EURUSD to fall to parity in 2025.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. According to Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/), the dollar index was down nearly 10% by year-end, and Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) explicitly noted a 'surge in the euro/dollar rate' and 'softer dollar.' Reuters (December 15, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirmed 'the surge in the euro/dollar rate' as a notable 2025 market move. Rather than EURUSD falling to parity (1.00), the euro appreciated significantly against the dollar, moving in the opposite direction of the forecast."
+      }
+    ],
+    "overall_analysis": "BNP Paribas's prediction was fundamentally incorrect. The institution failed to anticipate the dollar's weakness in the second half of 2025 and the euro's sustained appreciation. The forecast was based on interest rate spread assumptions that did not play out as expected, as the Fed's dovish pivot and broader dollar weakness dominated market dynamics rather than widening spreads supporting dollar strength.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "BNP Paribas's prediction was fundamentally incorrect. The institution failed to anticipate the dollar's weakness in the second half of 2025 and the euro's sustained appreciation. The forecast was based on interest rate spread assumptions that did not play out as expected, as the Fed's dovish pivot and broader dollar weakness dominated market dynamics rather than widening spreads supporting dollar strength.",
+    "id": "CURRENCIES-BNP_PARIBAS-2-2025",
+    "Original_Rank": 2,
+    "Prediction_Text": "\"Given our expectation of widening front-end interest rate spreads, we expect EURUSD to fall to parity in 2025.\"",
+    "Institution": "BNP PARIBAS",
+    "Rank": 26
+  },
+  {
+    "statements": [
+      {
+        "statement": "In foreign exchange markets, the US dollar should continue to appreciate, as investors seek out higher returns in US equities (public and private), US fixed income (given higher US interest rates) and via direct investment.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) explicitly states the U.S. dollar (.DXY) was DOWN nearly 10% for 2025, directly contradicting the appreciation forecast. Additionally, SOURCE 5 (Bloomberg, December 10, 2025, https://www.bloomberg.com/news/articles/2025-12-10/fed-brings-goldilocks-outcome-for-asia-markets-strategists-say) notes that 'The region's currencies should get a boost from weakness in the dollar,' confirming dollar weakness rather than appreciation. The fundamental thesis about higher US returns attracting capital failed to materialize as predicted."
+      }
+    ],
+    "overall_analysis": "Franklin Templeton's prediction was decisively wrong. Despite their logical reasoning about US equity and fixed income returns attracting capital, the dollar actually weakened ~10% in 2025. The institution failed to account for other factors that dominated currency markets, including geopolitical uncertainty, tariff concerns, and the eventual Fed pivot toward rate cuts. Their macro framework, while theoretically sound, did not capture the actual market dynamics that drove dollar weakness throughout 2025.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Franklin Templeton's prediction was decisively wrong. Despite their logical reasoning about US equity and fixed income returns attracting capital, the dollar actually weakened ~10% in 2025. The institution failed to account for other factors that dominated currency markets, including geopolitical uncertainty, tariff concerns, and the eventual Fed pivot toward rate cuts. Their macro framework, while theoretically sound, did not capture the actual market dynamics that drove dollar weakness throughout 2025.",
+    "id": "CURRENCIES-FRANKLIN_TEMPLETON-13-2025",
+    "Original_Rank": 13,
+    "Prediction_Text": "\"In foreign exchange markets, the US dollar should continue to appreciate, as investors seek out higher returns in US equities (public and private), US fixed income (given higher US interest rates) and via direct investment.\"",
+    "Institution": "FRANKLIN TEMPLETON",
+    "Rank": 27
+  },
+  {
+    "statements": [
+      {
+        "statement": "Long dollar positions should also provide protection against both US rate upside and broadening tariff risks, reinforcing the case for US investors to keep hedging their overseas bonds (and equity) exposures.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. SOURCE 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the dollar was DOWN nearly 10% in 2025, meaning long dollar positions would have provided losses, not protection. SOURCE 2 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'International equities outpaced the U.S. amid broad global strength and a softer dollar,' indicating that dollar weakness actually benefited international equity returns. The hedging recommendation would have been counterproductive, as the dollar weakened rather than strengthened."
+      }
+    ],
+    "overall_analysis": "Goldman Sachs's prediction was fundamentally wrong. Long dollar positions provided losses rather than protection in 2025, as the dollar weakened ~10%. The institution's thesis that tariff risks would support the dollar proved incorrect—tariffs and trade uncertainty actually contributed to dollar weakness. International equities outperformed US equities, meaning US investors who hedged overseas exposures with long dollar positions would have suffered opportunity losses. The prediction failed to anticipate the actual market response to tariff and geopolitical risks.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Goldman Sachs's prediction was fundamentally wrong. Long dollar positions provided losses rather than protection in 2025, as the dollar weakened ~10%. The institution's thesis that tariff risks would support the dollar proved incorrect—tariffs and trade uncertainty actually contributed to dollar weakness. International equities outperformed US equities, meaning US investors who hedged overseas exposures with long dollar positions would have suffered opportunity losses. The prediction failed to anticipate the actual market response to tariff and geopolitical risks.",
+    "id": "CURRENCIES-GOLDMAN_SACHS-14-2025",
+    "Original_Rank": 14,
+    "Prediction_Text": "\"Long dollar positions should also provide protection against both US rate upside and broadening tariff risks, reinforcing the case for US investors to keep hedging their overseas bonds (and equity) exposures.\"",
+    "Institution": "GOLDMAN SACHS",
+    "Rank": 28
+  },
+  {
+    "statements": [
+      {
+        "statement": "In our base case, bouts of dollar strength may remain, especially if the Fed slows easing and the US economy remains resilient in the second half of 2025 relative to the rest of world.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. Source 1 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows 'the U.S. dollar (.DXY) is down nearly 10%' for the full year 2025, indicating sustained dollar weakness rather than strength. Source 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) notes that 'long-term bond yields are rising and yield curves are steepening,' suggesting the Fed did not slow easing as much as anticipated. While the U.S. economy did remain resilient, this did not translate into dollar strength as predicted. The dollar weakened despite U.S. economic strength."
+      },
+      {
+        "statement": "The dollar-yen pair trade tickles our interest, as the discount of the yen on relative purchasing power parity is historical.",
+        "materialized": "UNKNOWN",
+        "reasoning": "This prediction cannot be definitively evaluated from the provided sources. While Source 26 (Robeco's statement) mentions interest in the dollar-yen pair trade based on yen valuation, the actual 2025 outcomes for the dollar-yen pair are not explicitly detailed in the provided reality context. Source 7 (Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) does not provide specific dollar-yen data. Without explicit confirmation of the pair's performance or the yen's valuation changes in 2025, this statement cannot be accurately assessed as materialized or not."
+      }
+    ],
+    "overall_analysis": "Robeco's base case prediction about dollar strength in the second half of 2025 was incorrect—the dollar weakened nearly 10% for the full year despite U.S. economic resilience and Fed policy dynamics. The institution appears to have underestimated the structural factors driving dollar weakness and overestimated the impact of U.S. economic strength on currency valuations. The dollar-yen trade recommendation cannot be fully evaluated from available data, but the broader dollar strength thesis was clearly wrong.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Robeco's base case prediction about dollar strength in the second half of 2025 was incorrect—the dollar weakened nearly 10% for the full year despite U.S. economic resilience and Fed policy dynamics. The institution appears to have underestimated the structural factors driving dollar weakness and overestimated the impact of U.S. economic strength on currency valuations. The dollar-yen trade recommendation cannot be fully evaluated from available data, but the broader dollar strength thesis was clearly wrong.",
+    "id": "CURRENCIES-ROBECO-27-2025",
+    "Original_Rank": 27,
+    "Prediction_Text": "\"In our base case, bouts of dollar strength may remain, especially if the Fed slows easing and the US economy remains resilient in the second half of 2025 relative to the rest of world. The dollar-yen pair trade tickles our interest, as the discount of the yen on relative purchasing power parity is historical.\"",
+    "Institution": "ROBECO",
+    "Rank": 29
+  }
+]

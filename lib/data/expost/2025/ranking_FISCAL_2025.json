@@ -1,0 +1,529 @@
+[
+  {
+    "statements": [
+      {
+        "statement": "We believe that current market concerns over Trump fiscal expansion and tariff impact are exaggerated.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved accurate. SOURCE 1 (Vanguard, December 2025) states 'equities reached new all-time highs on 39 separate occasions' and 'making 2025 one of the top years of the market hitting all-time highs and positioning annual returns well above their historical average,' indicating markets recovered from initial concerns. SOURCE 6 (Bloomberg, December 2025) notes 'Equities ended 2025 stronger than many expected after a volatile first half,' and SOURCE 10 (World Bank, December 2025) confirms 'Economic growth in 2025 has defied the gloomy expectations.' SOURCE 2 (Reuters, December 2025) mentions 'World stocks recovered from April's \"Liberation Day\" tariffs crash to add another 20%,' directly confirming that tariff concerns were initially overblown."
+      },
+      {
+        "statement": "We do see US fiscal deficits moving higher, but we believe that the fiscal policies will not be as negative as the market fears.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 3 (Reuters, December 2025) confirms 'loose fiscal policy' under Trump with 'US deficit 6-7% of GDP.' SOURCE 5 (Deloitte, December 2025) documents strong US economic growth at 4.4% in 2025, contradicting fears that fiscal deficits would be economically damaging. SOURCE 10 (World Bank, December 2025) states 'The United States drove most of the recovery with strong AI investment and fiscal support,' showing fiscal policy supported growth rather than harming it. The strong market performance and economic growth despite higher deficits validates Jefferies' view that fiscal expansion would not be as negative as feared."
+      },
+      {
+        "statement": "Similarly, on tariffs, we see them more as a bargaining tool for Trump and do not think they would have as negative growth impact as is currently feared.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved accurate. SOURCE 2 (Reuters, December 2025) documents that 'World stocks recovered from April's \"Liberation Day\" tariffs crash to add another 20%,' showing markets recovered from initial tariff shock. SOURCE 6 (Bloomberg, December 2025) notes 'Equities ended 2025 stronger than many expected after a volatile first half,' with SOURCE 10 (World Bank, December 2025) confirming 'A tariff shock in April led to pessimism, but actual activity rebounded, restoring optimism by year-end.' SOURCE 5 (Deloitte, December 2025) shows US growth remained strong at 4.4% in 2025 despite tariff implementation, validating that tariff impacts were less negative than initially feared."
+      }
+    ],
+    "overall_analysis": "Jefferies' prediction was highly accurate across all three statements. The institution correctly anticipated that market concerns about Trump's fiscal expansion and tariff policies were exaggerated, and that actual economic outcomes would prove more resilient than feared. The 2025 market recovery to all-time highs and strong GDP growth of 4.4% validated their contrarian view that policy risks were being overpriced by markets.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 3,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Jefferies' prediction was highly accurate across all three statements. The institution correctly anticipated that market concerns about Trump's fiscal expansion and tariff policies were exaggerated, and that actual economic outcomes would prove more resilient than feared. The 2025 market recovery to all-time highs and strong GDP growth of 4.4% validated their contrarian view that policy risks were being overpriced by markets.",
+    "id": "FISCAL-JEFFERIES-4-2025",
+    "Original_Rank": 4,
+    "Prediction_Text": "\"We believe that current market concerns over Trump fiscal expansion and tariff impact are exaggerated. We do see US fiscal deficits moving higher, but we believe that the fiscal policies will not be as negative as the market fears. Similarly, on tariffs, we see them more as a bargaining tool for Trump and do not think they would have as negative growth impact as is currently feared.\"",
+    "Institution": "JEFFERIES",
+    "Rank": 1
+  },
+  {
+    "statements": [
+      {
+        "statement": "The debt and deficit implications, and the question of whether capital is being well allocated, may surprise investors by being manageable concerns in 2025.",
+        "materialized": "YES",
+        "reasoning": "This prediction proved accurate. SOURCE 1 (Vanguard, December 2025) documents that 'equities reached new all-time highs on 39 separate occasions' and markets delivered 'annual returns well above their historical average,' indicating that debt and deficit concerns did not derail markets. SOURCE 10 (World Bank, December 2025) confirms 'Economic growth in 2025 has defied the gloomy expectations,' suggesting that concerns about capital allocation and deficits proved manageable. SOURCE 5 (Deloitte, December 2025) shows strong business investment acceleration at 4.4% growth, indicating capital was being allocated productively. The prediction that these concerns would be manageable rather than market-disrupting proved correct."
+      }
+    ],
+    "overall_analysis": "Neuberger Berman's prediction was highly accurate, correctly anticipating that debt and deficit concerns would remain manageable in 2025 despite elevated levels. The institution's contrarian view that these issues would not derail markets proved prescient, as evidenced by strong equity performance and economic growth throughout the year.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Neuberger Berman's prediction was highly accurate, correctly anticipating that debt and deficit concerns would remain manageable in 2025 despite elevated levels. The institution's contrarian view that these issues would not derail markets proved prescient, as evidenced by strong equity performance and economic growth throughout the year.",
+    "id": "FISCAL-NEUBERGER_BERMAN-9-2025",
+    "Original_Rank": 9,
+    "Prediction_Text": "\"The debt and deficit implications, and the question of whether capital is being well allocated, may surprise investors by being manageable concerns in 2025.\"",
+    "Institution": "NEUBERGER BERMAN",
+    "Rank": 2
+  },
+  {
+    "statements": [
+      {
+        "statement": "Our central case for US fiscal policy is likely to be bullish for growth and US corporate profits.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. According to Deloitte's US Economic Forecast (SOURCE: Deloitte Insights, DATE: December 2025, LINK: https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html), the US economy grew at 4.4% in 2025, which was strong growth. The World Bank blog (SOURCE: World Bank Blogs, DATE: December 2025, LINK: https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) confirms that 'The United States drove most of the recovery with strong AI investment and fiscal support.' Additionally, Vanguard's report (SOURCE: Vanguard, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) notes that equities rose significantly in 2025, with U.S. equity markets reaching new all-time highs on 39 separate occasions."
+      },
+      {
+        "statement": "If a moderate expansion in the deficit and deregulation are the only policies likely to be implemented next year (a replay of 2017), we would expect the US economy to continue to expand and equities to rise in 2025.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. The US economy did expand and equities rose in 2025. According to Vanguard's Q4 2025 report (SOURCE: Vanguard, DATE: December 2025, LINK: https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry), 'equities reached new all-time highs on 39 separate occasions' and 'annual returns well above their historical average.' Reuters (SOURCE: Reuters, DATE: December 23, 2025, LINK: https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms 'World stocks recovered from April's Liberation Day tariffs crash to add another 20%.' The pattern of fiscal expansion and deregulation under Trump's 'America First' agenda did drive growth and equity gains."
+      },
+      {
+        "statement": "That would warrant an overweight equity stance over a six- to 12-month time horizon.",
+        "materialized": "YES",
+        "reasoning": "This recommendation proved sound. An overweight equity stance would have been rewarded in 2025. According to Vanguard (SOURCE: Vanguard, DATE: December 2025, LINK: https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry), U.S. equities delivered strong returns well above historical averages, and non-U.S. equities delivered approximately 32% returns. Bloomberg (SOURCE: Bloomberg, DATE: December 2025, LINK: https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'Equities ended 2025 stronger than many expected after a volatile first half.' An overweight equity position would have captured these gains."
+      }
+    ],
+    "overall_analysis": "BCA Research's prediction was highly accurate. The institution correctly anticipated that moderate fiscal expansion and deregulation would drive both economic growth and equity market gains in 2025, mirroring the 2017 playbook. They accurately called the bullish case for US corporate profits and appropriately recommended an overweight equity stance, which proved to be the correct positioning for the year as equities reached all-time highs and delivered returns well above historical averages.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 3,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "BCA Research's prediction was highly accurate. The institution correctly anticipated that moderate fiscal expansion and deregulation would drive both economic growth and equity market gains in 2025, mirroring the 2017 playbook. They accurately called the bullish case for US corporate profits and appropriately recommended an overweight equity stance, which proved to be the correct positioning for the year as equities reached all-time highs and delivered returns well above historical averages.",
+    "id": "FISCAL-BCA_RESEARCH-11-2025",
+    "Original_Rank": 11,
+    "Prediction_Text": "\"Our central case for US fiscal policy is likely to be bullish for growth and US corporate profits. If a moderate expansion in the deficit and deregulation are the only policies likely to be implemented next year (a replay of 2017), we would expect the US economy to continue to expand and equities to rise in 2025. That would warrant an overweight equity stance over a six- to 12-month time horizon.\"",
+    "Institution": "BCA RESEARCH",
+    "Rank": 3
+  },
+  {
+    "statements": [
+      {
+        "statement": "If interest rates do fall, we expect yield curves to remain steep and long-term rates relatively high.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. According to Reuters (SOURCE: Reuters, DATE: December 15, 2025, LINK: https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/), 'long-term bond yields are rising and yield curves are steepening' despite the Federal Reserve cutting interest rates. The report notes that 'The 30-year U.S. yield last week reached 4.8670%, its highest since early September' and that 'Long bonds now have to contend with the prospect of having both a White House seeking to run the economy hot with loose fiscal policy and a dovish-leaning Fed.' This confirms steep yield curves and relatively high long-term rates despite rate cuts."
+      },
+      {
+        "statement": "There are concerns about budget deficits, which look large for this stage of the cycle, but there currently appears to be little political appetite for fiscal prudence.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Reuters (SOURCE: Reuters, DATE: December 15, 2025, LINK: https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms that 'U.S. fiscal concerns and inflation fears – partly reflecting President Donald Trump's trade and tax policy' are driving market dynamics. Capital Economics' perspective (SOURCE: Reuters, DATE: December 31, 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that Trump's 'America First' agenda proved to be a key market driver, with loose fiscal policy continuing throughout 2025. The lack of fiscal consolidation despite large deficits confirms the prediction."
+      }
+    ],
+    "overall_analysis": "BNP Paribas Asset Management's prediction was accurate in identifying the structural dynamics of 2025's fixed income environment. The institution correctly anticipated that despite Fed rate cuts, yield curves would steepen and long-term rates would remain elevated due to fiscal expansion concerns and political unwillingness to pursue fiscal prudence. Their analysis of the disconnect between monetary policy easing and fiscal expansion proved prescient for understanding bond market behavior.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "BNP Paribas Asset Management's prediction was accurate in identifying the structural dynamics of 2025's fixed income environment. The institution correctly anticipated that despite Fed rate cuts, yield curves would steepen and long-term rates would remain elevated due to fiscal expansion concerns and political unwillingness to pursue fiscal prudence. Their analysis of the disconnect between monetary policy easing and fiscal expansion proved prescient for understanding bond market behavior.",
+    "id": "FISCAL-BNP_PARIBAS_ASSET_MANAGEMENT-12-2025",
+    "Original_Rank": 12,
+    "Prediction_Text": "\"If interest rates do fall, we expect yield curves to remain steep and long-term rates relatively high. There are concerns about budget deficits, which look large for this stage of the cycle, but there currently appears to be little political appetite for fiscal prudence.\"",
+    "Institution": "BNP PARIBAS ASSET MANAGEMENT",
+    "Rank": 4
+  },
+  {
+    "statements": [
+      {
+        "statement": "Whilst there will be fewer elections to contend with in 2025, we expect markets to be no less volatile as they navigate the swing towards fiscal activism, terminal rates and global protectionism.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Vanguard (SOURCE: Vanguard, DATE: December 2025, LINK: https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) describes 2025 as 'Against this backdrop of volatility,' confirming that markets remained volatile despite fewer elections. Reuters (SOURCE: Reuters, DATE: December 23, 2025, LINK: https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) notes that markets 'recovered from April's Liberation Day tariffs crash,' confirming the impact of protectionism. The World Bank (SOURCE: World Bank Blogs, DATE: December 2025, LINK: https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) mentions 'A tariff shock in April led to pessimism,' validating NatWest's prediction of volatility from fiscal activism and protectionism."
+      }
+    ],
+    "overall_analysis": "NatWest's prediction was accurate in anticipating that 2025 would remain volatile despite fewer elections, driven by fiscal activism, terminal rate dynamics, and global protectionism. The institution correctly identified that the April tariff shock ('Liberation Day') would create significant market turbulence, and that the combination of loose fiscal policy and trade tensions would sustain volatility throughout the year, even as equities ultimately delivered strong returns.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "NatWest's prediction was accurate in anticipating that 2025 would remain volatile despite fewer elections, driven by fiscal activism, terminal rate dynamics, and global protectionism. The institution correctly identified that the April tariff shock ('Liberation Day') would create significant market turbulence, and that the combination of loose fiscal policy and trade tensions would sustain volatility throughout the year, even as equities ultimately delivered strong returns.",
+    "id": "FISCAL-NATWEST-14-2025",
+    "Original_Rank": 14,
+    "Prediction_Text": "\"Whilst there will be fewer elections to contend with in 2025, we expect markets to be no less volatile as they navigate the swing towards fiscal activism, terminal rates and global protectionism.\"",
+    "Institution": "NATWEST",
+    "Rank": 5
+  },
+  {
+    "statements": [
+      {
+        "statement": "China seems unlikely to enact a policy bazooka.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. The World Bank blog (SOURCE: World Bank Blogs, DATE: December 2025, LINK: https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) notes that 'China's outlook improved due to policy intervention,' but the language suggests measured intervention rather than aggressive stimulus. The sources do not indicate that China implemented massive stimulus packages, supporting Wells Fargo's prediction that a 'policy bazooka' was unlikely. The measured nature of Chinese policy support throughout 2025 confirms this assessment."
+      },
+      {
+        "statement": "However, we see direct stimulus and RMB depreciation to protect against tariffs and weak domestic demand.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Reuters (SOURCE: Reuters, DATE: December 15, 2025, LINK: https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) notes that 'Going into the last full week of the year, this cross rate is at a 14-month low, with the 7.00-yuan barrier in sight,' indicating RMB depreciation. The World Bank (SOURCE: World Bank Blogs, DATE: December 2025, LINK: https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) confirms that 'China's outlook improved due to policy intervention,' supporting the direct stimulus component. Wells Fargo's prediction of measured stimulus combined with currency depreciation to manage tariff impacts proved accurate."
+      }
+    ],
+    "overall_analysis": "Wells Fargo's prediction regarding China was accurate in distinguishing between a massive 'policy bazooka' and more measured direct stimulus combined with currency depreciation. The institution correctly anticipated that China would respond to tariff pressures and weak domestic demand with targeted stimulus and RMB weakness rather than aggressive monetary expansion, which proved to be the actual policy response in 2025.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Wells Fargo's prediction regarding China was accurate in distinguishing between a massive 'policy bazooka' and more measured direct stimulus combined with currency depreciation. The institution correctly anticipated that China would respond to tariff pressures and weak domestic demand with targeted stimulus and RMB weakness rather than aggressive monetary expansion, which proved to be the actual policy response in 2025.",
+    "id": "FISCAL-WELLS_FARGO-15-2025",
+    "Original_Rank": 15,
+    "Prediction_Text": "\"China seems unlikely to enact a policy bazooka. However, we see direct stimulus and RMB depreciation to protect against tariffs and weak domestic demand.\"",
+    "Institution": "WELLS FARGO",
+    "Rank": 6
+  },
+  {
+    "statements": [
+      {
+        "statement": "What China does on stimulus — and with its stock of US Treasuries — looms large.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially validated. The World Bank blog (SOURCE: World Bank Blogs, DATE: December 2025, LINK: https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) notes that 'China's outlook improved due to policy intervention,' confirming that Chinese stimulus did matter. However, the sources do not provide detailed information about China's Treasury holdings or their specific impact on markets. The prediction correctly identified China's importance but the full scope of the prediction regarding Treasury holdings cannot be fully validated from the available sources."
+      },
+      {
+        "statement": "A stabilizing Chinese economy is welcome news for Europe, but it will not lend enough strength to the continent to fully recover in the next 12 months, while the dollar is a crucial factor for emerging markets.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Reuters (SOURCE: Reuters, DATE: December 23, 2025, LINK: https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms that 'International equities outpaced the U.S. amid broad global strength and a softer dollar,' and notes that 'the U.S. dollar (.DXY) is down nearly 10%,' validating the importance of the dollar for emerging markets. Regarding Europe, Reuters (SOURCE: Reuters, DATE: December 31, 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that 'increasing U.S. isolationism' and 'rising geopolitical tensions' affected European recovery, and that 'European stocks versus Wall Street' showed outperformance but not full recovery. The prediction that Europe would not fully recover despite Chinese stabilization proved accurate."
+      }
+    ],
+    "overall_analysis": "Fidelity's prediction was largely accurate in identifying China's stimulus importance and the dollar's crucial role for emerging markets. The institution correctly anticipated that while Chinese policy support would help, Europe would not achieve full recovery in 2025, and that currency dynamics (particularly dollar weakness) would be a key factor for emerging market performance. However, the prediction lacked specificity regarding Treasury holdings, which limited its comprehensiveness.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Fidelity's prediction was largely accurate in identifying China's stimulus importance and the dollar's crucial role for emerging markets. The institution correctly anticipated that while Chinese policy support would help, Europe would not achieve full recovery in 2025, and that currency dynamics (particularly dollar weakness) would be a key factor for emerging market performance. However, the prediction lacked specificity regarding Treasury holdings, which limited its comprehensiveness.",
+    "id": "FISCAL-FIDELITY-13-2025",
+    "Original_Rank": 13,
+    "Prediction_Text": "\"What China does on stimulus — and with its stock of US Treasuries — looms large. A stabilizing Chinese economy is welcome news for Europe, but it will not lend enough strength to the continent to fully recover in the next 12 months, while the dollar is a crucial factor for emerging markets.\"",
+    "Institution": "FIDELITY",
+    "Rank": 7
+  },
+  {
+    "statements": [
+      {
+        "statement": "European politics have several major catalysts on the horizon.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Reuters (SOURCE: Reuters, DATE: December 31, 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'increasing U.S. isolationism, rising geopolitical tensions and expectations for a European economic reboot' were key themes in 2025, indicating that European political catalysts were indeed significant. The sources reference European political developments as important market drivers, validating Wells Fargo's assessment that European politics would have major catalysts."
+      },
+      {
+        "statement": "German elections could be a positive catalyst for the euro zone if the debt brake is ended, and fiscal stimulus reinvigorates growth.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially validated. Reuters (SOURCE: Reuters, DATE: December 31, 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that 'rising long-dated German bond yields' occurred and that there were 'expectations for a European economic reboot,' suggesting that German fiscal policy was indeed a topic of discussion. However, the sources do not provide specific confirmation that German elections resulted in debt brake reform or that fiscal stimulus was implemented. The prediction identified the right catalyst but the outcome regarding actual policy implementation cannot be fully confirmed from available sources."
+      },
+      {
+        "statement": "However, French cohabitation poses a risk to the current minority government and past fiscal reforms.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially validated. Reuters (SOURCE: Reuters, DATE: December 31, 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) references 'rising geopolitical tensions' and European political risks, which could encompass French political challenges. However, the sources do not provide specific details about French cohabitation or its impact on fiscal reforms in 2025. The prediction correctly identified French politics as a risk factor, but the specific impact on fiscal reforms cannot be fully validated from the available sources."
+      }
+    ],
+    "overall_analysis": "Wells Fargo's prediction regarding European politics was partially accurate. The institution correctly identified that European politics would be a significant factor in 2025 and recognized German fiscal policy and French political risks as important catalysts. However, the sources do not provide sufficient detail to fully validate the specific outcomes regarding German debt brake reform or the impact of French cohabitation on fiscal reforms, limiting the ability to assess the full accuracy of these predictions.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 1,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 66.7,
+    "classification": "PARTIAL",
+    "justification": "Wells Fargo's prediction regarding European politics was partially accurate. The institution correctly identified that European politics would be a significant factor in 2025 and recognized German fiscal policy and French political risks as important catalysts. However, the sources do not provide sufficient detail to fully validate the specific outcomes regarding German debt brake reform or the impact of French cohabitation on fiscal reforms, limiting the ability to assess the full accuracy of these predictions.",
+    "id": "FISCAL-WELLS_FARGO-18-2025",
+    "Original_Rank": 18,
+    "Prediction_Text": "\"European politics have several major catalysts on the horizon. German elections could be a positive catalyst for the euro zone if the debt brake is ended, and fiscal stimulus reinvigorates growth. However, French cohabitation poses a risk to the current minority government and past fiscal reforms.\"",
+    "Institution": "WELLS FARGO",
+    "Rank": 8
+  },
+  {
+    "statements": [
+      {
+        "statement": "BofA forecasts 124 rate cuts by central banks taking the global policy rate from 5% to 4%; the Fed predicted to cut rates two more times in the first half and then end its easing cycle in June; fiscal policies set to ease (German deficit to 3% GDP) or stay accommodative (US deficit 6-7% of GDP).",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about Fed rate cuts and fiscal policy direction shows mixed results. According to SOURCE 3 (Reuters, December 2025), 'the Federal Reserve cut interest rates last week and unveiled a program of large-scale T-bill purchases, long-term bond yields are rising and yield curves are steepening.' However, the sources do not provide specific confirmation of exactly 124 global rate cuts or the precise timing of Fed cuts ending in June 2025. SOURCE 5 (Deloitte, December 2025) notes growth moderation from 4.4% in 2025 to 4% in 2026, suggesting some policy accommodation occurred. The US deficit projection of 6-7% appears consistent with SOURCE 3's reference to 'loose fiscal policy' under Trump. The German deficit target of 3% is mentioned in SOURCE 8 (Columbia Threadneedle) as 'Europeâs supposed 3% limit,' suggesting aspirational rather than achieved targets. The overall direction was correct but specific quantitative forecasts cannot be fully verified."
+      }
+    ],
+    "overall_analysis": "BofA's prediction captured the directional thrust of monetary easing and accommodative fiscal policy in 2025, though the specific quantitative forecasts (124 cuts, June end-date) cannot be fully validated from available sources. The institution correctly anticipated the Fed's easing cycle and elevated US fiscal deficits, but the precision of their rate-cut forecast and timing remains unverified in the provided reality context.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "BofA's prediction captured the directional thrust of monetary easing and accommodative fiscal policy in 2025, though the specific quantitative forecasts (124 cuts, June end-date) cannot be fully validated from available sources. The institution correctly anticipated the Fed's easing cycle and elevated US fiscal deficits, but the precision of their rate-cut forecast and timing remains unverified in the provided reality context.",
+    "id": "FISCAL-BANK_OF_AMERICA-1-2025",
+    "Original_Rank": 1,
+    "Prediction_Text": "\"BofA forecasts 124 rate cuts by central banks taking the global policy rate from 5% to 4%; the Fed predicted to cut rates two more times in the first half and then end its easing cycle in June; fiscal policies set to ease (German deficit to 3% GDP) or stay accommodative (US deficit 6-7% of GDP).\"",
+    "Institution": "BANK OF AMERICA",
+    "Rank": 9
+  },
+  {
+    "statements": [
+      {
+        "statement": "We expect the planned corporate tax cuts to be implemented quickly, boosting business investment and financial activity, and supporting yields.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about corporate tax cuts and their effects shows partial materialization. SOURCE 5 (Deloitte, December 2025) confirms that 'business investment continues to accelerate' and notes 'stronger business investment' despite tariff headwinds. However, the sources do not explicitly confirm that corporate tax cuts were 'implemented quickly' in 2025. SOURCE 6 (Bloomberg, December 2025) mentions 'Large cap and growth equities outperformed' and 'innovation-driven themes such as solar and digital finance recorded strong growth,' suggesting financial activity was robust. SOURCE 3 (Reuters, December 2025) notes that 'long-term bond yields are rising,' which could support the 'supporting yields' aspect. The business investment acceleration is confirmed, but the specific mechanism of tax cut implementation timing cannot be fully verified."
+      },
+      {
+        "statement": "We also expect significant early action on immigration, although at this stage we assume that the impact on labor supply will be modest.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about immigration action and labor supply impact cannot be directly verified from the provided sources. SOURCE 1 (Macquarie prediction) mentions 'significant early action on immigration,' but the reality context sources do not provide specific information about immigration policy implementation or its labor supply effects in 2025. SOURCE 5 (Deloitte, December 2025) discusses labor markets but does not specifically address immigration policy impacts. The sources focus on broader economic outcomes rather than immigration policy specifics, making this statement difficult to validate against the available reality data."
+      }
+    ],
+    "overall_analysis": "Macquarie's prediction about corporate tax cuts and business investment acceleration was partially validated, as SOURCE 5 confirms accelerating business investment in 2025. However, the specific claim about 'quick implementation' of tax cuts and the immigration policy prediction cannot be adequately verified from the available sources, which focus more on macroeconomic outcomes than policy implementation details.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Macquarie's prediction about corporate tax cuts and business investment acceleration was partially validated, as SOURCE 5 confirms accelerating business investment in 2025. However, the specific claim about 'quick implementation' of tax cuts and the immigration policy prediction cannot be adequately verified from the available sources, which focus more on macroeconomic outcomes than policy implementation details.",
+    "id": "FISCAL-MACQUARIE-2-2025",
+    "Original_Rank": 2,
+    "Prediction_Text": "\"We expect the planned corporate tax cuts to be implemented quickly, boosting business investment and financial activity, and supporting yields. We also expect significant early action on immigration, although at this stage we assume that the impact on labor supply will be modest.\"",
+    "Institution": "MACQUARIE",
+    "Rank": 10
+  },
+  {
+    "statements": [
+      {
+        "statement": "The next Congress passes a major tax bill, combining extensions of some expiring provisions of the 2017 tax cut, reversal of some Biden-era tax increases, and follow-through on some tax-related campaign promises.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about a major tax bill cannot be directly confirmed from the provided sources. While SOURCE 6 (Bloomberg, December 2025) references 'President Donald Trump's trade and tax policy' and SOURCE 3 (Reuters, December 2025) mentions 'Trump's trade and tax policy,' the sources do not explicitly confirm passage of a comprehensive tax bill combining the specific elements mentioned (TCJA extensions, Biden-era reversals, campaign promises). The sources discuss the effects of tax policy rather than the legislative process itself. SOURCE 5 (Deloitte, December 2025) references 'business investment' acceleration but does not attribute it specifically to tax legislation passage."
+      },
+      {
+        "statement": "Fiscal stimulus through tax cuts provides a significant incremental boost to disposable incomes and corporate profits, with pass-through to consumer spending and hiring.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about fiscal stimulus effects shows partial materialization. SOURCE 5 (Deloitte, December 2025) confirms that 'business investment continues to accelerate' and notes growth of 4.4% in 2025, suggesting economic stimulus effects. SOURCE 6 (Bloomberg, December 2025) indicates strong equity market performance with 'Large cap and growth equities outperformed,' which could reflect corporate profit improvements. However, the sources do not explicitly confirm the specific mechanism of 'disposable income' boost or direct attribution of consumer spending and hiring to tax cuts. SOURCE 10 (World Bank, December 2025) notes 'The United States drove most of the recovery with strong AI investment and fiscal support,' suggesting fiscal support was present, but the specific pass-through to consumer spending is not detailed in the available sources."
+      }
+    ],
+    "overall_analysis": "Comerica's prediction about fiscal stimulus effects on business investment and economic growth was partially validated by the strong 2025 economic performance documented in multiple sources. However, the specific legislative details about tax bill passage and the precise mechanisms of income and spending stimulus cannot be fully confirmed from the available reality context, which focuses on macroeconomic outcomes rather than policy implementation specifics.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Comerica's prediction about fiscal stimulus effects on business investment and economic growth was partially validated by the strong 2025 economic performance documented in multiple sources. However, the specific legislative details about tax bill passage and the precise mechanisms of income and spending stimulus cannot be fully confirmed from the available reality context, which focuses on macroeconomic outcomes rather than policy implementation specifics.",
+    "id": "FISCAL-COMERICA-3-2025",
+    "Original_Rank": 3,
+    "Prediction_Text": "\"The next Congress passes a major tax bill, combining extensions of some expiring provisions of the 2017 tax cut, reversal of some Biden-era tax increases, and follow-through on some tax-related campaign promises. Fiscal stimulus through tax cuts provides a significant incremental boost to disposable incomes and corporate profits, with pass-through to consumer spending and hiring.\"",
+    "Institution": "COMERICA",
+    "Rank": 11
+  },
+  {
+    "statements": [
+      {
+        "statement": "Trump has promised tax breaks and seems intent to run a hot fiscal condition against the backdrop of 3% GDP and reasonably strong employment.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction shows partial materialization. SOURCE 5 (Deloitte, December 2025) confirms strong US economic growth at 4.4% in 2025, which exceeds the predicted 3% GDP growth. SOURCE 3 (Reuters, December 2025) confirms 'loose fiscal policy' under Trump, validating the 'hot fiscal condition' aspect. However, the sources do not explicitly confirm that tax breaks were implemented as promised. SOURCE 6 (Bloomberg, December 2025) references 'President Donald Trump's trade and tax policy' but does not detail specific tax break implementation. The employment situation is not explicitly detailed in the sources, though strong growth suggests reasonable employment conditions."
+      },
+      {
+        "statement": "Less regulation and potentially lower corporate taxes means more corporate capital for fixed asset investment, re-localizing key parts of the economy and reinforcing higher growth and inflation.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction shows partial materialization. SOURCE 5 (Deloitte, December 2025) confirms 'business investment continues to accelerate' and notes 'stronger business investment,' validating the corporate capital investment aspect. SOURCE 10 (World Bank, December 2025) states 'The United States drove most of the recovery with strong AI investment and fiscal support,' confirming investment acceleration. However, the sources do not explicitly confirm 're-localization' of economic activity or provide specific evidence of inflation reinforcement. SOURCE 3 (Reuters, December 2025) notes 'inflation fears' but does not confirm actual inflation acceleration. The growth acceleration is confirmed, but the specific mechanisms of re-localization and inflation effects are not explicitly validated."
+      }
+    ],
+    "overall_analysis": "Tallbacken Capital's prediction about fiscal expansion and business investment acceleration was partially validated by strong 2025 GDP growth of 4.4% and confirmed acceleration in business investment. However, the specific claims about tax break implementation, economic re-localization, and inflation reinforcement cannot be fully verified from the available sources, which focus on aggregate economic outcomes rather than sectoral shifts or inflation dynamics.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Tallbacken Capital's prediction about fiscal expansion and business investment acceleration was partially validated by strong 2025 GDP growth of 4.4% and confirmed acceleration in business investment. However, the specific claims about tax break implementation, economic re-localization, and inflation reinforcement cannot be fully verified from the available sources, which focus on aggregate economic outcomes rather than sectoral shifts or inflation dynamics.",
+    "id": "FISCAL-TALLBACKEN_CAPITAL-5-2025",
+    "Original_Rank": 5,
+    "Prediction_Text": "\"Trump has promised tax breaks and seems intent to run a hot fiscal condition against the backdrop of 3% GDP and reasonably strong employment. Less regulation and potentially lower corporate taxes means more corporate capital for fixed asset investment, re-localizing key parts of the economy and reinforcing higher growth and inflation.\"",
+    "Institution": "TALLBACKEN CAPITAL",
+    "Rank": 12
+  },
+  {
+    "statements": [
+      {
+        "statement": "Tax cuts might be on the way for the US.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction shows partial materialization. SOURCE 3 (Reuters, December 2025) references 'President Donald Trump's trade and tax policy,' suggesting tax policy was a focus. SOURCE 6 (Bloomberg, December 2025) also mentions 'Trump's trade and tax policy,' indicating tax policy was implemented or pursued. However, the sources do not explicitly confirm that tax cuts were 'on the way' or implemented in 2025. The sources discuss the effects of policy rather than the legislative status of tax cuts. The prediction is vague enough ('might be on the way') that it cannot be definitively confirmed or refuted from the available evidence."
+      },
+      {
+        "statement": "The GOP sweep should allow Republicans to extend the TCJA, and possibly reduce tax rates even further.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction cannot be directly confirmed from the provided sources. While SOURCE 3 (Reuters, December 2025) and SOURCE 6 (Bloomberg, December 2025) reference Trump's tax policy, the sources do not explicitly confirm TCJA extension or further tax rate reductions. The sources focus on macroeconomic outcomes rather than specific tax legislation details. SOURCE 5 (Deloitte, December 2025) documents strong business investment acceleration, which could result from tax policy, but does not attribute it specifically to TCJA extension or rate reductions. The legislative specifics of the prediction cannot be validated from the available reality context."
+      }
+    ],
+    "overall_analysis": "Wells Fargo's prediction about tax cuts was vague and cannot be definitively validated from the available sources. While the sources confirm that Trump's tax policy was a focus in 2025, they do not provide explicit confirmation of TCJA extension or specific tax rate reductions. The prediction's lack of specificity makes it difficult to assess accuracy against the available evidence.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Wells Fargo's prediction about tax cuts was vague and cannot be definitively validated from the available sources. While the sources confirm that Trump's tax policy was a focus in 2025, they do not provide explicit confirmation of TCJA extension or specific tax rate reductions. The prediction's lack of specificity makes it difficult to assess accuracy against the available evidence.",
+    "id": "FISCAL-WELLS_FARGO-6-2025",
+    "Original_Rank": 6,
+    "Prediction_Text": "\"Tax cuts might be on the way for the US. The GOP sweep should allow Republicans to extend the TCJA, and possibly reduce tax rates even further.\"",
+    "Institution": "WELLS FARGO",
+    "Rank": 13
+  },
+  {
+    "statements": [
+      {
+        "statement": "Trump's tax cuts may enhance corporate profits, continuing the robust earnings trend from 2024.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction shows partial materialization. SOURCE 6 (Bloomberg, December 2025) states 'Large cap and growth equities outperformed' and notes 'companies with strong earnings resilience continued to attract investor interest,' suggesting corporate earnings remained robust in 2025. SOURCE 5 (Deloitte, December 2025) confirms 'business investment continues to accelerate,' which typically correlates with strong corporate profitability. However, the sources do not explicitly confirm that tax cuts were implemented or that they specifically enhanced corporate profits. The robust earnings trend is confirmed, but the causal attribution to tax cuts cannot be definitively established from the available sources."
+      }
+    ],
+    "overall_analysis": "ABN AMRO's prediction about corporate profit enhancement was partially validated by the strong equity market performance and confirmed earnings resilience documented in 2025. However, the specific causal link between tax cuts and profit enhancement cannot be definitively confirmed from the available sources, which document the outcome (strong earnings) but not the specific policy mechanism.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "ABN AMRO's prediction about corporate profit enhancement was partially validated by the strong equity market performance and confirmed earnings resilience documented in 2025. However, the specific causal link between tax cuts and profit enhancement cannot be definitively confirmed from the available sources, which document the outcome (strong earnings) but not the specific policy mechanism.",
+    "id": "FISCAL-ABN_AMRO_INVESTMENT_SOLUTIONS-7-2025",
+    "Original_Rank": 7,
+    "Prediction_Text": "\"Trump's tax cuts may enhance corporate profits, continuing the robust earnings trend from 2024.\"",
+    "Institution": "ABN AMRO INVESTMENT SOLUTIONS",
+    "Rank": 14
+  },
+  {
+    "statements": [
+      {
+        "statement": "Major global economies – from the US, the UK and Japan to much of Europe – are running deficits of 5%-6% (despite Europe's supposed 3% limit).",
+        "materialized": "YES",
+        "reasoning": "This prediction proved accurate. SOURCE 3 (Reuters, December 2025) confirms 'loose fiscal policy' with 'US deficit 6-7% of GDP,' which aligns with the predicted 5%-6% range. SOURCE 8 (Columbia Threadneedle) explicitly states 'Major global economies â from the US, the UK and Japan to much of Europe â are running deficits of 5%-6% (despite Europeâs supposed 3% limit),' directly validating this statement. SOURCE 5 (Deloitte, December 2025) references accommodative fiscal policy across developed economies. The prediction accurately captured the global fiscal expansion trend despite nominal deficit targets."
+      },
+      {
+        "statement": "That may be manageable if interest rates are low, but if deficits continue to rise and rates don't come down as much as expected, financing the deficit becomes increasingly problematic.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction shows partial materialization. SOURCE 3 (Reuters, December 2025) documents that 'long-term bond yields are rising and yield curves are steepening' despite Fed rate cuts, suggesting that rates did not come down as much as expected. This validates the concern about deficit financing becoming problematic. SOURCE 3 notes 'Long bonds now have to contend with the prospect of having both a White House seeking to run the economy hot with loose fiscal policy and a dovish-leaning Fed,' indicating the exact tension predicted. However, the sources do not indicate that deficit financing actually became a 'market-moving factor' in 2025, suggesting the problem remained manageable despite the predicted conditions."
+      },
+      {
+        "statement": "When this eventually becomes a focus, it will become a market-moving factor.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize in 2025. SOURCE 1 (Vanguard, December 2025) documents that 'equities reached new all-time highs on 39 separate occasions' and markets delivered 'annual returns well above their historical average,' indicating that deficit concerns did not become a significant market-moving factor. SOURCE 2 (Reuters, December 2025) notes 'World stocks recovered from April's \"Liberation Day\" tariffs crash to add another 20%,' showing that tariffs, not deficits, were the primary market concern. SOURCE 19 (McKinsey, December 2025) confirms that 'For the first time since March 2021, inflation is not one of the top five most-cited economic risks,' and does not mention deficits as a primary concern. The prediction that deficit concerns would become market-moving did not occur in 2025."
+      }
+    ],
+    "overall_analysis": "Columbia Threadneedle's prediction about global deficit levels was accurate, correctly identifying the 5%-6% deficit range across major economies. However, their prediction that rising deficits and higher-than-expected rates would become a market-moving factor proved incorrect, as markets remained resilient throughout 2025 despite these conditions. The institution correctly diagnosed the fiscal situation but misjudged its market impact.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Columbia Threadneedle's prediction about global deficit levels was accurate, correctly identifying the 5%-6% deficit range across major economies. However, their prediction that rising deficits and higher-than-expected rates would become a market-moving factor proved incorrect, as markets remained resilient throughout 2025 despite these conditions. The institution correctly diagnosed the fiscal situation but misjudged its market impact.",
+    "id": "FISCAL-COLUMBIA_THREADNEEDLE-8-2025",
+    "Original_Rank": 8,
+    "Prediction_Text": "\"Major global economies – from the US, the UK and Japan to much of Europe – are running deficits of 5%-6% (despite Europe's supposed 3% limit). That may be manageable if interest rates are low, but if deficits continue to rise and rates don't come down as much as expected, financing the deficit becomes increasingly problematic. When this eventually becomes a focus, it will become a market-moving factor.\"",
+    "Institution": "COLUMBIA THREADNEEDLE",
+    "Rank": 15
+  },
+  {
+    "statements": [
+      {
+        "statement": "Bond yields are likely to move significantly higher in an aggressive fiscal expansion scenario, but that is why moderate fiscal thrust is our base case view.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially validated. Reuters (SOURCE: Reuters, DATE: December 15, 2025, LINK: https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms that 'long-term bond yields are rising,' with the 30-year yield reaching 4.8670%. However, the actual fiscal expansion in 2025 appears to have been more aggressive than BCA Research's 'moderate fiscal thrust' base case. Deloitte (SOURCE: Deloitte Insights, DATE: December 2025, LINK: https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) notes strong growth at 4.4%, suggesting fiscal support was substantial. The prediction about yield movement was correct, but the characterization of fiscal policy as 'moderate' appears to have underestimated actual expansion."
+      },
+      {
+        "statement": "Similarly, while tariffs typically raise prices, they could easily be deflationary on balance if they destabilize global economic activity.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially validated. Reuters (SOURCE: Reuters, DATE: December 23, 2025, LINK: https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) notes that 'oil off almost 17%,' suggesting some deflationary pressures from commodity prices. However, the sources do not provide comprehensive inflation data for 2025 to fully validate whether tariffs were deflationary on balance. The World Bank (SOURCE: World Bank Blogs, DATE: December 2025, LINK: https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) mentions that growth 'defied gloomy expectations,' suggesting tariffs did not cause severe economic destabilization, which would support the deflationary scenario."
+      },
+      {
+        "statement": "That favors a long duration stance.",
+        "materialized": "NO",
+        "reasoning": "This recommendation proved incorrect. Reuters (SOURCE: Reuters, DATE: December 15, 2025, LINK: https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) reports that 'long-term bond yields are rising and yield curves are steepening,' which would have been detrimental to a long duration bond position. Vanguard (SOURCE: Vanguard, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) recommends 'high-quality fixed income' but does not specifically endorse long duration. Rising long-term yields in 2025 would have resulted in losses for long duration bond positions, making this recommendation incorrect."
+      }
+    ],
+    "overall_analysis": "BCA Research's prediction was mixed in accuracy. The institution correctly anticipated rising bond yields and identified the potential for tariffs to have deflationary effects, but underestimated the actual magnitude of fiscal expansion in 2025 and incorrectly recommended a long duration stance that would have suffered from rising long-term yields. Their base case of 'moderate fiscal thrust' proved too conservative relative to actual policy implementation.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 1
+    },
+    "score": 33.3,
+    "classification": "WEAK",
+    "justification": "BCA Research's prediction was mixed in accuracy. The institution correctly anticipated rising bond yields and identified the potential for tariffs to have deflationary effects, but underestimated the actual magnitude of fiscal expansion in 2025 and incorrectly recommended a long duration stance that would have suffered from rising long-term yields. Their base case of 'moderate fiscal thrust' proved too conservative relative to actual policy implementation.",
+    "id": "FISCAL-BCA_RESEARCH-16-2025",
+    "Original_Rank": 16,
+    "Prediction_Text": "\"Bond yields are likely to move significantly higher in an aggressive fiscal expansion scenario, but that is why moderate fiscal thrust is our base case view. Similarly, while tariffs typically raise prices, they could easily be deflationary on balance if they destabilize global economic activity. That favors a long duration stance.\"",
+    "Institution": "BCA RESEARCH",
+    "Rank": 16
+  },
+  {
+    "statements": [
+      {
+        "statement": "High budget deficits will likely persist, limiting the potential for further fiscal stimulus and adding to economic risks.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction shows partial materialization. SOURCE 3 (Reuters, December 2025) confirms 'loose fiscal policy' with 'US deficit 6-7% of GDP,' validating that high deficits persisted. However, the prediction that deficits would 'limit the potential for further fiscal stimulus' is contradicted by SOURCE 5 (Deloitte, December 2025), which documents continued strong business investment and economic growth at 4.4% in 2025, suggesting fiscal stimulus continued despite high deficits. The claim about 'adding to economic risks' is not validated by the sources, which document resilient growth and strong market performance. The first part about persistent deficits is accurate, but the implications about limited stimulus and added risks did not materialize."
+      },
+      {
+        "statement": "As developed economies slow and potential trade and geopolitical conflicts loom, investors should favor caution and flexibility in portfolio positioning.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize in 2025. SOURCE 5 (Deloitte, December 2025) shows that developed economies did not slow as predicted, with US growth at 4.4% and SOURCE 10 (World Bank, December 2025) confirming 'Economic growth in 2025 has defied the gloomy expectations.' SOURCE 1 (Vanguard, December 2025) documents that 'equities reached new all-time highs on 39 separate occasions,' indicating that aggressive positioning outperformed cautious positioning. SOURCE 2 (Reuters, December 2025) notes 'World stocks recovered from April's \"Liberation Day\" tariffs crash to add another 20%,' showing that despite trade conflicts, markets thrived. The prediction to favor caution proved incorrect, as risk-on positioning delivered superior returns."
+      }
+    ],
+    "overall_analysis": "PIMCO's prediction was largely inaccurate. While the institution correctly identified that high budget deficits would persist, they incorrectly predicted that this would limit fiscal stimulus and add economic risks. More significantly, their recommendation for cautious portfolio positioning proved wrong, as developed economies remained resilient and equity markets delivered strong returns throughout 2025, contradicting the pessimistic outlook.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "PIMCO's prediction was largely inaccurate. While the institution correctly identified that high budget deficits would persist, they incorrectly predicted that this would limit fiscal stimulus and add economic risks. More significantly, their recommendation for cautious portfolio positioning proved wrong, as developed economies remained resilient and equity markets delivered strong returns throughout 2025, contradicting the pessimistic outlook.",
+    "id": "FISCAL-PIMCO-10-2025",
+    "Original_Rank": 10,
+    "Prediction_Text": "\"High budget deficits will likely persist, limiting the potential for further fiscal stimulus and adding to economic risks. As developed economies slow and potential trade and geopolitical conflicts loom, investors should favor caution and flexibility in portfolio positioning.\"",
+    "Institution": "PIMCO",
+    "Rank": 17
+  },
+  {
+    "statements": [
+      {
+        "statement": "Fiscal vulnerabilities constrain governments over the coming year – indeed, this is a key reason why we do not expect the Trump administration to enact the additional deficit-financed tax cuts that many now anticipate.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. The actual outcome contradicts Capital Economics' expectation. Reuters (SOURCE: Reuters, DATE: December 31, 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that Trump's 'America First' agenda 'proved to be a key market driver in 2025' with fiscal support evident throughout the year. Deloitte (SOURCE: Deloitte Insights, DATE: December 2025, LINK: https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) notes that 'the growth rate is expected to moderate from 4.4% in 2025 to 4% in 2026,' indicating that fiscal expansion did occur in 2025. The Trump administration did pursue fiscal expansion despite fiscal vulnerabilities, contrary to Capital Economics' prediction."
+      },
+      {
+        "statement": "If governments attempt to delay the fiscal tightening that the markets have already factored in, or push through fiscal expansion that adds to already large deficits, then 2025 could be the year when the bond vigilantes\" make their proper return.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. Despite fiscal expansion and large deficits, 'bond vigilantes' did not make a significant return in 2025. Vanguard (SOURCE: Vanguard, DATE: December 2025, LINK: https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) reports that 'U.S. bond markets, as measured by Bloomberg U.S. Aggregate Bond Index, also had a strong year with returns of approximately 7%.' Reuters (SOURCE: Reuters, DATE: December 23, 2025, LINK: https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) notes that 'bond market volatility is at a four-year low,' indicating that bond markets remained relatively stable despite fiscal expansion. While long-term yields did rise, this did not constitute a 'bond vigilante' crisis."
+      }
+    ],
+    "overall_analysis": "Capital Economics' prediction was largely inaccurate. The institution underestimated the Trump administration's willingness to pursue fiscal expansion despite fiscal vulnerabilities, and incorrectly predicted that bond vigilantes would emerge in response to deficit-financed policies. In reality, the Trump administration did implement fiscal expansion, and bond markets remained relatively stable with low volatility, contradicting the prediction of a bond market crisis.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 2
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Capital Economics' prediction was largely inaccurate. The institution underestimated the Trump administration's willingness to pursue fiscal expansion despite fiscal vulnerabilities, and incorrectly predicted that bond vigilantes would emerge in response to deficit-financed policies. In reality, the Trump administration did implement fiscal expansion, and bond markets remained relatively stable with low volatility, contradicting the prediction of a bond market crisis.",
+    "id": "FISCAL-CAPITAL_ECONOMICS-17-2025",
+    "Original_Rank": 17,
+    "Prediction_Text": "\"Fiscal vulnerabilities constrain governments over the coming year – indeed, this is a key reason why we do not expect the Trump administration to enact the additional deficit-financed tax cuts that many now anticipate. If governments attempt to delay the fiscal tightening that the markets have already factored in, or push through fiscal expansion that adds to already large deficits, then 2025 could be the year when the bond vigilantes\" make their proper return.\"\"\"",
+    "Institution": "CAPITAL ECONOMICS",
+    "Rank": 18
+  }
+]

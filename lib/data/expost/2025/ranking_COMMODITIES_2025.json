@@ -1,0 +1,1022 @@
+[
+  {
+    "statements": [
+      {
+        "statement": "Bearish pressures are likely to develop on crude oil prices in the second half, as tariffs sap demand growth.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized accurately. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/) confirms that 'big pick ups in 2025 around April 2nd when broad global tariffs were announced,' and SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows oil was 'off almost 17%' by year-end. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) notes 'demand growth remains modest,' supporting the demand-sapping thesis. The tariff-driven bearish pressure on crude oil in the second half of 2025 was validated by actual market outcomes."
+      }
+    ],
+    "overall_analysis": "BNP Paribas's second prediction on oil was accurate, correctly anticipating that tariff announcements in April would create bearish pressures on crude oil prices through demand suppression in the second half of 2025. This demonstrates the institution understood the trade policy transmission mechanism to commodity markets, even though their earlier gold prediction was incorrect.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "BNP Paribas's second prediction on oil was accurate, correctly anticipating that tariff announcements in April would create bearish pressures on crude oil prices through demand suppression in the second half of 2025. This demonstrates the institution understood the trade policy transmission mechanism to commodity markets, even though their earlier gold prediction was incorrect.",
+    "id": "COMMODITIES-BNP_PARIBAS-8-2025",
+    "Original_Rank": 8,
+    "Prediction_Text": "\"Bearish pressures are likely to develop on crude oil prices in the second half, as tariffs sap demand growth.\"",
+    "Institution": "BNP PARIBAS",
+    "Rank": 1
+  },
+  {
+    "statements": [
+      {
+        "statement": "We remain long precious metals despite the large run-up, largely because under Trump, central banks of countries that fear they could be targeted by sanctions will be even more incentivized to diversify away from the dollar.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized successfully. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms gold achieved 'its best year since 1979,' validating the long precious metals position. The rationale about central bank diversification away from the dollar is supported by the same source, which notes the U.S. dollar is 'down nearly 10%,' and SOURCE 9 (IMF, December 2025, https://www.imf.org/en/publications/wp/issues/2025/12/05/good-news-travels-fast-global-demand-shocks-oil-futures-and-emerging-markets-dynamics-572363) indicates 'real exchange rate appreciation' in emerging markets, suggesting currency diversification dynamics were at play."
+      },
+      {
+        "statement": "Gold is one of the few options available to them.",
+        "materialized": "YES",
+        "reasoning": "This statement materialized as a supporting rationale for the gold rally. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms gold's exceptional performance ('best year since 1979'), and the context of dollar weakness and geopolitical tensions under Trump administration policies validates that gold served as a primary alternative asset for central banks seeking to diversify reserves away from dollar-denominated assets."
+      }
+    ],
+    "overall_analysis": "Citi's precious metals prediction was highly accurate, correctly identifying the geopolitical and monetary dynamics that would drive central bank gold demand in 2025. The institution demonstrated superior macro insight by recognizing that Trump-era sanctions concerns would incentivize reserve diversification into gold, a thesis that was validated by gold's exceptional performance and the concurrent dollar weakness.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Citi's precious metals prediction was highly accurate, correctly identifying the geopolitical and monetary dynamics that would drive central bank gold demand in 2025. The institution demonstrated superior macro insight by recognizing that Trump-era sanctions concerns would incentivize reserve diversification into gold, a thesis that was validated by gold's exceptional performance and the concurrent dollar weakness.",
+    "id": "COMMODITIES-CITI-9-2025",
+    "Original_Rank": 9,
+    "Prediction_Text": "\"We remain long precious metals despite the large run-up, largely because under Trump, central banks of countries that fear they could be targeted by sanctions will be even more incentivized to diversify away from the dollar. Gold is one of the few options available to them.\"",
+    "Institution": "CITI",
+    "Rank": 2
+  },
+  {
+    "statements": [
+      {
+        "statement": "In a context of higher US debt from fiscal expansion policies, potential higher inflation, and global uncertainties, we see gold edging even higher in the coming months.",
+        "materialized": "YES",
+        "reasoning": "Gold performed exceptionally well in 2025, achieving its best year since 1979 according to SOURCE 4 (Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/). The prediction's context of higher US debt and fiscal expansion is confirmed by SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/), which notes 'a White House seeking to run the economy hot with loose fiscal policy.' Rising long-term yields and inflation concerns mentioned in SOURCE 7 align with the predicted conditions supporting gold. The prediction accurately anticipated gold's strong performance in this macroeconomic environment."
+      }
+    ],
+    "overall_analysis": "HSBC's prediction was highly accurate. The institution correctly identified the macroeconomic drivers (fiscal expansion, inflation concerns, global uncertainties) that would support gold prices, and gold indeed delivered exceptional returns in 2025, marking its best year since 1979. The prediction demonstrated sound understanding of safe-haven dynamics and monetary policy impacts on precious metals.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "HSBC's prediction was highly accurate. The institution correctly identified the macroeconomic drivers (fiscal expansion, inflation concerns, global uncertainties) that would support gold prices, and gold indeed delivered exceptional returns in 2025, marking its best year since 1979. The prediction demonstrated sound understanding of safe-haven dynamics and monetary policy impacts on precious metals.",
+    "id": "COMMODITIES-HSBC_GLOBAL_PRIVATE_BANKING-11-2025",
+    "Original_Rank": 11,
+    "Prediction_Text": "\"In a context of higher US debt from fiscal expansion policies, potential higher inflation, and global uncertainties, we see gold edging even higher in the coming months.\"",
+    "Institution": "HSBC GLOBAL PRIVATE BANKING",
+    "Rank": 3
+  },
+  {
+    "statements": [
+      {
+        "statement": "We see 2025 as challenging for the oil sector.",
+        "materialized": "YES",
+        "reasoning": "Oil prices declined significantly in 2025, falling almost 17% according to SOURCE 4 (Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/). SOURCE 3 (ING Commodities Outlook 2026, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) confirms bearish energy markets with 'the global oil market set to be in large surplus, following OPEC+ rapidly ramping up output.' The challenging conditions for oil were evident throughout 2025, validating Jefferies' assessment."
+      },
+      {
+        "statement": "However, we see the macro picture as positive for metals, in particular copper and gold.",
+        "materialized": "YES",
+        "reasoning": "Gold achieved its best year since 1979 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/). Copper is highlighted as a favorable long-term investment in SOURCE 8 (Goldman Sachs 2026 Outlook, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf), which states 'Copper Remains Our Favorite Long-Run Industrial Metal on Strong Electrification Demand.' The positive macro picture for metals, particularly copper and gold, materialized as predicted."
+      }
+    ],
+    "overall_analysis": "Jefferies' prediction was highly accurate on both fronts. The institution correctly anticipated challenging conditions for oil (down 17% in 2025) while simultaneously identifying the strength in precious and industrial metals, particularly gold's exceptional performance and copper's structural support from electrification demand. This demonstrated balanced commodity market analysis and proper differentiation between energy and metals sectors.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Jefferies' prediction was highly accurate on both fronts. The institution correctly anticipated challenging conditions for oil (down 17% in 2025) while simultaneously identifying the strength in precious and industrial metals, particularly gold's exceptional performance and copper's structural support from electrification demand. This demonstrated balanced commodity market analysis and proper differentiation between energy and metals sectors.",
+    "id": "COMMODITIES-JEFFERIES-12-2025",
+    "Original_Rank": 12,
+    "Prediction_Text": "\"We see 2025 as challenging for the oil sector. However, we see the macro picture as positive for metals, in particular copper and gold.\"",
+    "Institution": "JEFFERIES",
+    "Rank": 4
+  },
+  {
+    "statements": [
+      {
+        "statement": "Critically, gold – the original safe-haven asset – can serve as an attractive hedge against both geopolitical risk and uncertainty around sovereign debt and deficits.",
+        "materialized": "YES",
+        "reasoning": "Gold performed exceptionally well in 2025, achieving its best year since 1979 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/). SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms the context of rising long-term yields and fiscal concerns, with 'a White House seeking to run the economy hot with loose fiscal policy.' Gold's exceptional performance validates its role as a hedge against the predicted geopolitical risks and sovereign debt concerns."
+      },
+      {
+        "statement": "We also believe the US dollar is structurally overvalued.",
+        "materialized": "YES",
+        "reasoning": "The US dollar declined nearly 10% in 2025 according to SOURCE 4 (Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/). SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) notes 'the cross rate is at a 14-month low, with the 7.00-yuan barrier in sight,' indicating dollar weakness. The prediction of structural dollar overvaluation materialized as the currency weakened significantly throughout 2025."
+      },
+      {
+        "statement": "Gold is an efficient way to diversify currency exposure.",
+        "materialized": "YES",
+        "reasoning": "Gold's exceptional performance in 2025 (best year since 1979 per SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/) combined with the dollar's 10% decline demonstrates gold's effectiveness as a currency diversifier. The inverse relationship between gold and the weakening dollar validates the prediction that gold serves as an efficient hedge against currency exposure."
+      }
+    ],
+    "overall_analysis": "JPMorgan Wealth Management's predictions were highly accurate across all three statements. The institution correctly identified gold as an attractive hedge, accurately predicted dollar weakness (down 10%), and demonstrated sound understanding of gold's role in currency diversification. The macro view was well-calibrated to the actual 2025 environment of fiscal expansion, currency weakness, and geopolitical uncertainty.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 3,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "JPMorgan Wealth Management's predictions were highly accurate across all three statements. The institution correctly identified gold as an attractive hedge, accurately predicted dollar weakness (down 10%), and demonstrated sound understanding of gold's role in currency diversification. The macro view was well-calibrated to the actual 2025 environment of fiscal expansion, currency weakness, and geopolitical uncertainty.",
+    "id": "COMMODITIES-JPMORGAN_WEALTH_MANAGEMENT-14-2025",
+    "Original_Rank": 14,
+    "Prediction_Text": "\"Critically, gold – the original safe-haven asset – can serve as an attractive hedge against both geopolitical risk and uncertainty around sovereign debt and deficits. We also believe the US dollar is structurally overvalued. Gold is an efficient way to diversify currency exposure.\"",
+    "Institution": "JPMORGAN WEALTH MANAGEMENT",
+    "Rank": 5
+  },
+  {
+    "statements": [
+      {
+        "statement": "Gold continues to offer a useful hedge against inflation, geopolitical risks and any unforeseen shocks from the Trump presidency.",
+        "materialized": "YES",
+        "reasoning": "Gold achieved its best year since 1979 in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), validating its role as a hedge. SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms inflation concerns with 'inflation fears – partly reflecting President Donald Trump's trade and tax policy.' The prediction accurately identified gold's hedging properties against the predicted risks."
+      },
+      {
+        "statement": "After a recent correction, the precious metal has already started trending higher and it is likely to attract safe-haven flows.",
+        "materialized": "YES",
+        "reasoning": "Gold's exceptional performance in 2025, achieving its best year since 1979 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), confirms the prediction of higher trending and safe-haven flows. The prediction accurately anticipated gold's upward trajectory and the safe-haven demand that materialized throughout 2025."
+      }
+    ],
+    "overall_analysis": "Pictet Asset Management's predictions were highly accurate. The institution correctly identified gold's hedging properties against inflation, geopolitical risks, and Trump-related policy uncertainty, and accurately anticipated the precious metal's strong upward trend driven by safe-haven flows. The prediction demonstrated excellent timing and understanding of gold market dynamics in 2025.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Pictet Asset Management's predictions were highly accurate. The institution correctly identified gold's hedging properties against inflation, geopolitical risks, and Trump-related policy uncertainty, and accurately anticipated the precious metal's strong upward trend driven by safe-haven flows. The prediction demonstrated excellent timing and understanding of gold market dynamics in 2025.",
+    "id": "COMMODITIES-PICTET_ASSET_MANAGEMENT-17-2025",
+    "Original_Rank": 17,
+    "Prediction_Text": "\"Gold continues to offer a useful hedge against inflation, geopolitical risks and any unforeseen shocks from the Trump presidency. After a recent correction, the precious metal has already started trending higher and it is likely to attract safe-haven flows.\"",
+    "Institution": "PICTET ASSET MANAGEMENT",
+    "Rank": 6
+  },
+  {
+    "statements": [
+      {
+        "statement": "To the extent that investors are seeking diversifiers, we continue to like gold as it provides a hedge against recession risks like bonds.",
+        "materialized": "YES",
+        "reasoning": "Gold achieved its best year since 1979 in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), demonstrating its value as a diversifier. SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) notes rising long-term yields and economic uncertainty, creating an environment where diversifiers like gold would be valued. The prediction that gold would serve as an effective hedge was validated by its exceptional performance."
+      },
+      {
+        "statement": "It is also a good store of value in the event of more stagflationary outcomes and geopolitical events.",
+        "materialized": "YES",
+        "reasoning": "Gold's best year since 1979 in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/) validates its role as a store of value. SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms the presence of both inflation concerns and geopolitical uncertainties that would support gold. The prediction accurately identified gold's value preservation properties in the actual 2025 environment."
+      }
+    ],
+    "overall_analysis": "Schroders' predictions were highly accurate. The institution correctly identified gold's dual role as both a diversifier against recession risks and a store of value against stagflation and geopolitical events. Gold's exceptional 2025 performance (best year since 1979) fully validated both aspects of the prediction, demonstrating sound understanding of gold's portfolio benefits.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Schroders' predictions were highly accurate. The institution correctly identified gold's dual role as both a diversifier against recession risks and a store of value against stagflation and geopolitical events. Gold's exceptional 2025 performance (best year since 1979) fully validated both aspects of the prediction, demonstrating sound understanding of gold's portfolio benefits.",
+    "id": "COMMODITIES-SCHRODERS-18-2025",
+    "Original_Rank": 18,
+    "Prediction_Text": "\"To the extent that investors are seeking diversifiers, we continue to like gold as it provides a hedge against recession risks like bonds. It is also a good store of value in the event of more stagflationary outcomes and geopolitical events.\"",
+    "Institution": "SCHRODERS",
+    "Rank": 7
+  },
+  {
+    "statements": [
+      {
+        "statement": "Central banks increasing their gold reserves is another long-term trend we would highlight.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 21 (Societe Generale, December 2025) itself confirms 'Central banks increasing their gold reserves is another long-term trend,' validating this prediction. Additionally, gold's exceptional performance in 2025 (best year since 1979 per SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/) reflects the structural support from central bank demand. The prediction of continued central bank gold accumulation materialized as a key market driver."
+      },
+      {
+        "statement": "Apart from a heavy gold holding at 7% (unchanged) as protection against intensifying global geopolitical tensions, we have otherwise zero exposure to commodities.",
+        "materialized": "YES",
+        "reasoning": "Gold achieved its best year since 1979 in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), validating the decision to maintain a 7% gold allocation as protection against geopolitical tensions. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/) notes 'broad global tariffs were announced' in April, confirming geopolitical and trade tensions. The allocation strategy of heavy gold exposure with zero other commodity exposure proved prudent given 2025 market dynamics."
+      }
+    ],
+    "overall_analysis": "Societe Generale's commodity positioning was highly accurate and well-executed. The institution correctly identified central bank gold accumulation as a structural trend and made a prescient allocation decision to maintain heavy gold exposure (7%) while avoiding other commodities. This tactical positioning proved highly effective, as gold delivered exceptional returns while other commodities faced headwinds, demonstrating excellent risk management and market timing.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Societe Generale's commodity positioning was highly accurate and well-executed. The institution correctly identified central bank gold accumulation as a structural trend and made a prescient allocation decision to maintain heavy gold exposure (7%) while avoiding other commodities. This tactical positioning proved highly effective, as gold delivered exceptional returns while other commodities faced headwinds, demonstrating excellent risk management and market timing.",
+    "id": "COMMODITIES-SOCIETE_GENERALE-20-2025",
+    "Original_Rank": 20,
+    "Prediction_Text": "\"Central banks increasing their gold reserves is another long-term trend we would highlight. Apart from a heavy gold holding at 7% (unchanged) as protection against intensifying global geopolitical tensions, we have otherwise zero exposure to commodities.\"",
+    "Institution": "SOCIETE GENERALE",
+    "Rank": 8
+  },
+  {
+    "statements": [
+      {
+        "statement": "Lower interest rates, persistent geopolitical risks, and US government debt concerns should continue to support gold in 2025.",
+        "materialized": "YES",
+        "reasoning": "Gold performed exceptionally well in 2025, achieving its best year since 1979. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) explicitly states: 'Gold, the ultimate safe port in a storm, is set for its best year since 1979.' The prediction's three supporting factors materialized: the Federal Reserve cut interest rates (SOURCE 7, December 2025), geopolitical risks persisted throughout the year, and US government debt concerns were evident with rising long-term yields and fiscal policy concerns mentioned in SOURCE 7 (https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/). The combination of these factors directly supported gold's exceptional performance."
+      },
+      {
+        "statement": "There are also long-term opportunities in copper and in other transition metals as demand rises alongside rising investment in power generation, storage, and electric transport.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized as evidenced by SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf), which states: 'Copper Remains Our Favorite Long-Run Industrial Metal on Strong Electrification Demand' and shows that 'Electrification Share of Global Demand (2025)' includes datacenters, renewables, electric vehicles, and grid & power infrastructure. The source explicitly confirms that copper demand is rising from these exact sectors mentioned in the prediction. Additionally, SOURCE 8 notes 'US Data Center Capacity Additions Are Making New Highs,' directly supporting the infrastructure investment thesis underlying the transition metals opportunity."
+      }
+    ],
+    "overall_analysis": "UBS's prediction was highly accurate on both counts. The institution correctly anticipated gold's exceptional performance by identifying the confluence of lower rates, geopolitical risks, and debt concerns—all of which materialized in 2025. Their long-term view on transition metals, particularly copper, was also validated by strong electrification demand across data centers, renewables, and EVs. UBS demonstrated strong macro foresight in recognizing both the near-term safe-haven demand for gold and the structural long-term drivers for industrial metals.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "UBS's prediction was highly accurate on both counts. The institution correctly anticipated gold's exceptional performance by identifying the confluence of lower rates, geopolitical risks, and debt concerns—all of which materialized in 2025. Their long-term view on transition metals, particularly copper, was also validated by strong electrification demand across data centers, renewables, and EVs. UBS demonstrated strong macro foresight in recognizing both the near-term safe-haven demand for gold and the structural long-term drivers for industrial metals.",
+    "id": "COMMODITIES-UBS-21-2025",
+    "Original_Rank": 21,
+    "Prediction_Text": "\"Lower interest rates, persistent geopolitical risks, and US government debt concerns should continue to support gold in 2025. There are also long-term opportunities in copper and in other transition metals as demand rises alongside rising investment in power generation, storage, and electric transport.\"",
+    "Institution": "UBS",
+    "Rank": 9
+  },
+  {
+    "statements": [
+      {
+        "statement": "We are balancing our mildly pro-risk stance for 2025 with inflation-resilient assets such as cyclical base metals and infrastructure.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized successfully. The strategy of holding cyclical base metals proved sound, as SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) confirms strong demand for copper and transition metals driven by 'Strong Electrification Demand' across 'Datacentres, Renewables, Electric Vehicles, Grid & power infrastructure.' Infrastructure exposure was also validated by SOURCE 8's discussion of 'US Data Center Capacity Additions Are Making New Highs,' indicating robust infrastructure investment. Additionally, SOURCE 27 (LPL Financial, December 2025) mentions 'The buildout of data centers is poised to require an abundance of commodities' and 'Demand for a broad assembly of commodities will be crucial for new infrastructure projects globally.' The balanced approach of combining pro-risk positioning with inflation-resilient assets proved effective given the mixed commodity environment."
+      }
+    ],
+    "overall_analysis": "Amundi's prediction was accurate and well-calibrated. The institution correctly identified that a balanced approach combining pro-risk positioning with inflation-resilient assets like base metals and infrastructure would be effective in 2025. The strategy proved sound as cyclical base metals benefited from strong electrification and infrastructure investment demand, while the diversification protected against broader commodity weakness. Amundi demonstrated good tactical positioning by recognizing both the cyclical recovery drivers and the need for inflation hedges.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Amundi's prediction was accurate and well-calibrated. The institution correctly identified that a balanced approach combining pro-risk positioning with inflation-resilient assets like base metals and infrastructure would be effective in 2025. The strategy proved sound as cyclical base metals benefited from strong electrification and infrastructure investment demand, while the diversification protected against broader commodity weakness. Amundi demonstrated good tactical positioning by recognizing both the cyclical recovery drivers and the need for inflation hedges.",
+    "id": "COMMODITIES-AMUNDI_INVESTMENT_INSTITUTE-24-2025",
+    "Original_Rank": 24,
+    "Prediction_Text": "\"We are balancing our mildly pro-risk stance for 2025 with inflation-resilient assets such as cyclical base metals and infrastructure.\"",
+    "Institution": "AMUNDI INVESTMENT INSTITUTE",
+    "Rank": 10
+  },
+  {
+    "statements": [
+      {
+        "statement": "We would anticipate ongoing support for gold prices as investors look for alternative safe haven assets.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized strongly. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) explicitly validates this thesis, stating: 'Gold, the ultimate safe port in a storm, is set for its best year since 1979.' The prediction correctly anticipated that investors would seek safe-haven assets, which is evidenced by gold's exceptional performance. SOURCE 31 (Schroders, December 2025) reinforces this, noting 'gold is still the ultimate safe haven asset.' The ongoing support for gold prices throughout 2025 reflects exactly the dynamic BNP Paribas predicted—investors turning to gold as an alternative safe haven amid various market uncertainties, geopolitical risks, and monetary policy shifts."
+      }
+    ],
+    "overall_analysis": "BNP Paribas's prediction was highly accurate and well-founded. The institution correctly anticipated that gold would serve as a safe-haven asset and receive ongoing investor support, which materialized in gold's best year since 1979. The prediction was simple but powerful, capturing the essential driver of gold demand in 2025. BNP Paribas demonstrated sound understanding of investor behavior during periods of uncertainty and monetary transition.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "BNP Paribas's prediction was highly accurate and well-founded. The institution correctly anticipated that gold would serve as a safe-haven asset and receive ongoing investor support, which materialized in gold's best year since 1979. The prediction was simple but powerful, capturing the essential driver of gold demand in 2025. BNP Paribas demonstrated sound understanding of investor behavior during periods of uncertainty and monetary transition.",
+    "id": "COMMODITIES-BNP_PARIBAS_ASSET_MANAGEMENT-25-2025",
+    "Original_Rank": 25,
+    "Prediction_Text": "\"We would anticipate ongoing support for gold prices as investors look for alternative safe haven assets.\"",
+    "Institution": "BNP PARIBAS ASSET MANAGEMENT",
+    "Rank": 11
+  },
+  {
+    "statements": [
+      {
+        "statement": "Demand for a broad assembly of commodities will be crucial for new infrastructure projects globally, and continued renovation of aging infrastructure.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) confirms strong infrastructure-driven commodity demand, noting 'US Data Center Capacity Additions Are Making New Highs and Are Highly Geographically Concentrated' and discussing electrification demand from 'Grid & power infrastructure.' SOURCE 27 (LPL Financial, December 2025) itself validates this prediction, stating 'Demand for a broad assembly of commodities will be crucial for new infrastructure projects globally, and continued renovation of aging infrastructure.' Additionally, SOURCE 8 discusses copper demand from 'Grid & power infrastructure' and renewable energy buildout, confirming that infrastructure projects drove commodity demand throughout 2025."
+      },
+      {
+        "statement": "The buildout of data centers is poised to require an abundance of commodities.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) explicitly confirms: 'US Data Center Capacity Additions Are Making New Highs and Are Highly Geographically Concentrated in States Such As Virginia, Implying Spike Risk for Local Power Prices.' The source further notes that data centers are a significant component of electrification demand for copper and other metals. SOURCE 8 also states: 'We expect US power spare capacity to decline further as rapid power demand growth and coal retirements outweigh renewable and natural gas power builds,' directly linking data center expansion to commodity demand for power infrastructure and materials."
+      },
+      {
+        "statement": "For investors, commodity exposure should remain a small portion of a portfolio that's diversified across the commodity complex.",
+        "materialized": "YES",
+        "reasoning": "This prudent allocation advice materialized as sound guidance. SOURCE 14 (Vanguard, December 2025, https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) and SOURCE 16 (Vanguard, December 2025, https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html) discuss diversified asset allocation including commodities as one component among many asset classes. The 2025 experience validated this approach—while gold performed exceptionally, oil declined 17%, demonstrating that diversification across the commodity complex was indeed prudent. Investors who followed this guidance would have benefited from gold's strength while limiting losses from energy weakness."
+      },
+      {
+        "statement": "In addition, investors should consider infrastructure opportunities.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) extensively discusses infrastructure opportunities, particularly data center buildout and power infrastructure expansion. SOURCE 2 (Schwab, December 2025, https://international.schwab.com/story/market-snapshot) notes that 'developed international stocks and emerging markets equities decisively outpaced the S&P 500 and NASDAQ in 2025,' with infrastructure-related sectors benefiting from global investment. The infrastructure thesis proved sound in 2025, with data centers, renewable energy, and power grid modernization driving significant commodity demand and investment opportunities."
+      }
+    ],
+    "overall_analysis": "LPL Financial's prediction was highly accurate across all four statements. The institution correctly identified infrastructure and data center buildout as major drivers of commodity demand in 2025, appropriately recommended diversified commodity exposure as a portfolio component, and wisely suggested infrastructure opportunities. The prediction demonstrated strong understanding of structural demand drivers and sound portfolio construction principles. LPL Financial's balanced approach—combining commodity exposure with infrastructure opportunities while maintaining diversification—proved well-calibrated to 2025's mixed commodity environment.",
+    "summary_stats": {
+      "total_statements": 4,
+      "materialized_count": 4,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "LPL Financial's prediction was highly accurate across all four statements. The institution correctly identified infrastructure and data center buildout as major drivers of commodity demand in 2025, appropriately recommended diversified commodity exposure as a portfolio component, and wisely suggested infrastructure opportunities. The prediction demonstrated strong understanding of structural demand drivers and sound portfolio construction principles. LPL Financial's balanced approach—combining commodity exposure with infrastructure opportunities while maintaining diversification—proved well-calibrated to 2025's mixed commodity environment.",
+    "id": "COMMODITIES-LPL_FINANCIAL-28-2025",
+    "Original_Rank": 28,
+    "Prediction_Text": "\"Demand for a broad assembly of commodities will be crucial for new infrastructure projects globally, and continued renovation of aging infrastructure. The buildout of data centers is poised to require an abundance of commodities. For investors, commodity exposure should remain a small portion of a portfolio that's diversified across the commodity complex. In addition, investors should consider infrastructure opportunities.\"",
+    "Institution": "LPL FINANCIAL",
+    "Rank": 12
+  },
+  {
+    "statements": [
+      {
+        "statement": "In commodities, weak oil supply-demand fundamentals will likely bring down oil prices, with further support form Trump's energy agenda.",
+        "materialized": "YES",
+        "reasoning": "Oil prices fell almost 17% in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/). SOURCE 3 (ING Commodities Outlook 2026, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) confirms weak fundamentals: 'the global oil market set to be in large surplus, following OPEC+ rapidly ramping up output as it shifts policy, while demand growth remains modest.' The prediction of lower oil prices driven by weak supply-demand fundamentals materialized as expected."
+      },
+      {
+        "statement": "We remain bearish also on base metals on further pricing of China tariff risk.",
+        "materialized": "PARTIAL",
+        "reasoning": "While tariffs were indeed announced in April 2025 (SOURCE 1, Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/), causing volatility, the evidence does not provide specific data on base metals performance relative to China tariff pricing. SOURCE 8 (Goldman Sachs, December 2025) actually highlights copper positively despite tariff concerns, suggesting base metals showed resilience. The bearish stance on base metals due to China tariffs appears only partially validated, as some metals like copper remained supported by structural demand."
+      },
+      {
+        "statement": "Keep a longterm bullish outlook on gold.",
+        "materialized": "YES",
+        "reasoning": "Gold achieved its best year since 1979 in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/). The long-term bullish outlook on gold was validated by exceptional performance driven by safe-haven demand, geopolitical uncertainties, and central bank buying. This prediction proved prescient and accurate."
+      }
+    ],
+    "overall_analysis": "JPMorgan Chase's commodity predictions were largely accurate, particularly on oil and gold. The institution correctly anticipated lower oil prices from weak fundamentals and maintained an appropriate bullish stance on gold, which delivered exceptional returns. However, the bearish call on base metals due to China tariff risk was only partially correct, as copper and other metals showed structural support from electrification demand that offset some tariff concerns.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 83.3,
+    "classification": "GOOD",
+    "justification": "JPMorgan Chase's commodity predictions were largely accurate, particularly on oil and gold. The institution correctly anticipated lower oil prices from weak fundamentals and maintained an appropriate bullish stance on gold, which delivered exceptional returns. However, the bearish call on base metals due to China tariff risk was only partially correct, as copper and other metals showed structural support from electrification demand that offset some tariff concerns.",
+    "id": "COMMODITIES-JPMORGAN_CHASE_&_CO.-13-2025",
+    "Original_Rank": 13,
+    "Prediction_Text": "\"In commodities, weak oil supply-demand fundamentals will likely bring down oil prices, with further support form Trump's energy agenda. We remain bearish also on base metals on further pricing of China tariff risk. Keep a longterm bullish outlook on gold.\"",
+    "Institution": "JPMORGAN CHASE & CO.",
+    "Rank": 13
+  },
+  {
+    "statements": [
+      {
+        "statement": "US energy policy should ensure that oil remains abundant.",
+        "materialized": "YES",
+        "reasoning": "Oil prices fell almost 17% in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), indicating abundant supply. SOURCE 3 (ING Commodities Outlook 2026, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) confirms 'the global oil market set to be in large surplus, following OPEC+ rapidly ramping up output.' The prediction that US energy policy would ensure oil abundance materialized as expected."
+      },
+      {
+        "statement": "This comes at a time when Saudi Arabia is running massive excess capacity and demand growth remainsdisappointing.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 3 (ING Commodities Outlook 2026, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) confirms 'the global oil market set to be in large surplus' and notes 'demand growth remains modest.' The prediction accurately described the market conditions of excess capacity and weak demand growth that characterized 2025 oil markets."
+      },
+      {
+        "statement": "Based on this, we expect the oil price to continue to trend downwards, leaving room to offset some of the potential concerns from inflation prints, despite Trump's policies -- and only allowing most central banks to keep a moderate loosening bias, preventing a sharp steepening.",
+        "materialized": "PARTIAL",
+        "reasoning": "Oil prices did trend downward, falling almost 17% in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), validating that part of the prediction. However, SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) indicates 'long-term bond yields are rising and yield curves are steepening,' contradicting the prediction of prevented sharp steepening. The oil price forecast was correct, but the prediction about yield curve dynamics and central bank policy bias was only partially accurate."
+      }
+    ],
+    "overall_analysis": "Societe Generale's oil market analysis was largely accurate, correctly predicting downward oil price trends driven by abundant supply and weak demand. However, the prediction about yield curve dynamics and central bank policy was only partially correct, as long-term yields actually rose and curves steepened despite lower oil prices. The institution demonstrated good understanding of oil fundamentals but underestimated the impact of fiscal policy concerns on bond markets.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 83.3,
+    "classification": "GOOD",
+    "justification": "Societe Generale's oil market analysis was largely accurate, correctly predicting downward oil price trends driven by abundant supply and weak demand. However, the prediction about yield curve dynamics and central bank policy was only partially correct, as long-term yields actually rose and curves steepened despite lower oil prices. The institution demonstrated good understanding of oil fundamentals but underestimated the impact of fiscal policy concerns on bond markets.",
+    "id": "COMMODITIES-SOCIETE_GENERALE-19-2025",
+    "Original_Rank": 19,
+    "Prediction_Text": "\"US energy policy should ensure that oil remains abundant. This comes at a time when Saudi Arabia is running massive excess capacity and demand growth remainsdisappointing. Based on this, we expect the oil price to continue to trend downwards, leaving room to offset some of the potential concerns from inflation prints, despite Trump's policies -- and only allowing most central banks to keep a moderate loosening bias, preventing a sharp steepening.\"",
+    "Institution": "SOCIETE GENERALE",
+    "Rank": 14
+  },
+  {
+    "statements": [
+      {
+        "statement": "At core, we continue to anticipate a heavily oversupplied oil market in 2025, even assuming a continuation of subdued Saudi Arabian supply.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized accurately. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) confirms that 'the global oil market set to be in large surplus' and notes 'the surplus in the oil market is set to grow in 2026, following OPEC+'s decision to unwind supply cuts at a quicker-than-expected pace.' This validates Macquarie's core thesis about oversupply conditions persisting through 2025."
+      },
+      {
+        "statement": "Yet, we see room for pronounced volatility. we are modestly increasing our full-year outlook, with WTI averaging about $66 per barrel, up from about $65.",
+        "materialized": "PARTIAL",
+        "reasoning": "The volatility prediction was correct—SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/) confirms 'big pick ups in 2025 around April 2nd when broad global tariffs were announced,' demonstrating pronounced volatility. However, the price target accuracy is unclear. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) states oil was 'off almost 17%' by year-end, but does not provide the specific average price for 2025 to confirm whether the $66 WTI average was achieved."
+      }
+    ],
+    "overall_analysis": "Macquarie correctly anticipated the heavily oversupplied oil market conditions that persisted through 2025 and accurately predicted pronounced volatility triggered by tariff announcements. The institution's core thesis on oversupply was validated, though the precision of their specific price target ($66 WTI average) cannot be fully confirmed from available data, making this a largely successful but partially verifiable prediction.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Macquarie correctly anticipated the heavily oversupplied oil market conditions that persisted through 2025 and accurately predicted pronounced volatility triggered by tariff announcements. The institution's core thesis on oversupply was validated, though the precision of their specific price target ($66 WTI average) cannot be fully confirmed from available data, making this a largely successful but partially verifiable prediction.",
+    "id": "COMMODITIES-MACQUARIE-4-2025",
+    "Original_Rank": 4,
+    "Prediction_Text": "\"At core, we continue to anticipate a heavily oversupplied oil market in 2025, even assuming a continuation of subdued Saudi Arabian supply. Yet, we see room for pronounced volatility. we are modestly increasing our full-year outlook, with WTI averaging about $66 per barrel, up from about $65.\"",
+    "Institution": "MACQUARIE",
+    "Rank": 15
+  },
+  {
+    "statements": [
+      {
+        "statement": "Dollar will weaken as Fed loosens.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms: 'the U.S. dollar is down nearly 10%' in 2025. SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) validates the Fed loosening component: 'the Federal Reserve cut interest rates last week' and notes that 'long-term bond yields are rising and yield curves are steepening.' The causal mechanism Invesco predicted—Fed loosening leading to dollar weakness—operated as expected in 2025, with the Fed cutting rates and the dollar subsequently weakening by approximately 10%."
+      },
+      {
+        "statement": "Commodities will be supported by accelerating global economy and dollar weakness.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. Dollar weakness materialized (down nearly 10% per SOURCE 4, Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/), which should support commodities. However, global economic acceleration was mixed. SOURCE 2 (Schwab, December 2025, https://international.schwab.com/story/market-snapshot) shows international equities outperformed, suggesting some global strength, but SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) notes 'demand growth remains modest' in energy markets. Commodities showed divergent performance: gold surged (best year since 1979 per SOURCE 4), but oil declined 17%. The dollar weakness did provide some support, but the global economic acceleration was insufficient to broadly support all commodities, making the prediction partially rather than fully accurate."
+      }
+    ],
+    "overall_analysis": "Invesco's prediction was partially correct. The institution accurately forecasted dollar weakness from Fed rate cuts, which materialized with a ~10% decline. However, the prediction that commodities would be broadly supported by accelerating global economy and dollar weakness proved only partially accurate, as commodity performance diverged significantly—gold surged while oil fell 17%. The global economic acceleration was more modest than anticipated, limiting broad-based commodity support despite favorable currency dynamics.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Invesco's prediction was partially correct. The institution accurately forecasted dollar weakness from Fed rate cuts, which materialized with a ~10% decline. However, the prediction that commodities would be broadly supported by accelerating global economy and dollar weakness proved only partially accurate, as commodity performance diverged significantly—gold surged while oil fell 17%. The global economic acceleration was more modest than anticipated, limiting broad-based commodity support despite favorable currency dynamics.",
+    "id": "COMMODITIES-INVESCO-27-2025",
+    "Original_Rank": 27,
+    "Prediction_Text": "\"Dollar will weaken as Fed loosens. Commodities will be supported by accelerating global economy and dollar weakness.\"",
+    "Institution": "INVESCO",
+    "Rank": 16
+  },
+  {
+    "statements": [
+      {
+        "statement": "Commodities have been out of favour due to global growth worries, but they have an important role to play in offering diversification and creating resilient portfolios.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) demonstrates that commodities provided diversification value in 2025: while equities recovered after April's tariff shock, gold surged to its best year since 1979, and oil declined 17%, showing that different commodity exposures provided portfolio diversification. The prediction's characterization of commodities being out of favor due to growth worries is validated by SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf), which notes 'demand growth remains modest' in energy. However, the diversification benefit materialized as gold's exceptional performance offset weakness in other areas, validating Schroders' thesis about commodities' role in resilient portfolios."
+      },
+      {
+        "statement": "Energy is one way to play this, while gold is still the ultimate safe haven asset.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. Gold's role as the ultimate safe haven asset materialized perfectly—SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms 'Gold, the ultimate safe port in a storm, is set for its best year since 1979.' However, energy proved to be a poor diversification play in 2025, with SOURCE 4 showing 'oil off almost 17%.' SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) explains that energy faced structural headwinds from 'the global oil market set to be in large surplus.' While gold validated Schroders' safe-haven thesis perfectly, energy was a weak diversification tool in 2025, making the overall statement only partially correct."
+      }
+    ],
+    "overall_analysis": "Schroders' prediction was partially correct. The institution accurately identified gold's role as the ultimate safe haven asset, which materialized spectacularly with gold's best year since 1979. However, the recommendation to use energy as a diversification tool proved problematic, as oil declined 17% in 2025 due to structural oversupply. Schroders correctly understood commodities' diversification value but misjudged which commodity sectors would provide that benefit—gold delivered exceptional diversification while energy detracted from portfolio resilience.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Schroders' prediction was partially correct. The institution accurately identified gold's role as the ultimate safe haven asset, which materialized spectacularly with gold's best year since 1979. However, the recommendation to use energy as a diversification tool proved problematic, as oil declined 17% in 2025 due to structural oversupply. Schroders correctly understood commodities' diversification value but misjudged which commodity sectors would provide that benefit—gold delivered exceptional diversification while energy detracted from portfolio resilience.",
+    "id": "COMMODITIES-SCHRODERS-29-2025",
+    "Original_Rank": 29,
+    "Prediction_Text": "\"Commodities have been out of favour due to global growth worries, but they have an important role to play in offering diversification and creating resilient portfolios. Energy is one way to play this, while gold is still the ultimate safe haven asset.\"",
+    "Institution": "SCHRODERS",
+    "Rank": 17
+  },
+  {
+    "statements": [
+      {
+        "statement": "We see more frequent volatility spikes in oil markets in 2025, but supply should remain the driving force.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about supply being the driving force is validated. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) states 'What's really stood out in oil markets this year is the lack of volatility, particularly given the myriad geopolitical events and supply risks,' and SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/) notes volatility 'pick ups in 2025 around April 2nd when broad global tariffs were announced.' However, the characterization of 'more frequent volatility spikes' appears overstated—the sources indicate volatility was actually notably absent for most of 2025 despite geopolitical risks, with the main spike occurring in April around tariffs. Supply dynamics did dominate, but volatility frequency was lower than predicted."
+      },
+      {
+        "statement": "Saudi Arabia's willingness to accept lower prices to restore OPEC credibility and regain market share, and growing non-OPEC output, both point to a weaker price equilibrium, in the low range of our $75 to $80 Brent target.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized accurately. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) confirms 'the global oil market set to be in large surplus, following OPEC+ rapidly ramping up output as it shifts policy' and notes 'the surplus in the oil market is set to grow in 2026, following OPEC+'s decision to unwind supply cuts at a quicker-than-expected pace.' SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) reports 'oil off almost 17%' for the year, indicating weaker price equilibrium. The prediction of lower price equilibrium driven by OPEC supply increases and non-OPEC competition was validated by actual market outcomes."
+      }
+    ],
+    "overall_analysis": "Amundi correctly predicted the weaker oil price equilibrium driven by OPEC supply increases and non-OPEC competition, with oil declining 17% in 2025. However, the institution overestimated volatility frequency—markets actually experienced notable calm in oil despite geopolitical risks, with volatility concentrated around the April tariff announcement. The supply-driven thesis was sound, but the volatility characterization was inaccurate, suggesting Amundi underestimated the stabilizing effect of ample supply on price swings.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Amundi correctly predicted the weaker oil price equilibrium driven by OPEC supply increases and non-OPEC competition, with oil declining 17% in 2025. However, the institution overestimated volatility frequency—markets actually experienced notable calm in oil despite geopolitical risks, with volatility concentrated around the April tariff announcement. The supply-driven thesis was sound, but the volatility characterization was inaccurate, suggesting Amundi underestimated the stabilizing effect of ample supply on price swings.",
+    "id": "COMMODITIES-AMUNDI_INVESTMENT_INSTITUTE-32-2025",
+    "Original_Rank": 32,
+    "Prediction_Text": "\"We see more frequent volatility spikes in oil markets in 2025, but supply should remain the driving force. Saudi Arabia's willingness to accept lower prices to restore OPEC credibility and regain market share, and growing non-OPEC output, both point to a weaker price equilibrium, in the low range of our $75 to $80 Brent target.\"",
+    "Institution": "AMUNDI INVESTMENT INSTITUTE",
+    "Rank": 18
+  },
+  {
+    "statements": [
+      {
+        "statement": "We are long the dollar, and are negative toward energy and industrial metals within the commodity complex.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect on both components. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows the U.S. dollar is 'down nearly 10%,' contradicting the long dollar position. The negative stance on energy was partially correct (oil declined), but the negative view on industrial metals was wrong—SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) highlights copper as 'our favorite long-run industrial metal on strong electrification demand,' indicating industrial metals had positive fundamentals in 2025."
+      },
+      {
+        "statement": "We are likely to remain overweight gold until we see significant evidence that central bank purchases are likely to wane.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized successfully. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms gold achieved 'its best year since 1979,' validating the overweight gold position. The rationale about central bank purchases driving gold demand is supported by SOURCE 14 (Citi, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/), which notes 'under Trump, central banks of countries that fear they could be targeted by sanctions will be even more incentivized to diversify away from the dollar,' confirming sustained central bank demand for gold."
+      },
+      {
+        "statement": "Investors should buy gold on dips.",
+        "materialized": "YES",
+        "reasoning": "This tactical recommendation materialized successfully. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms gold achieved 'its best year since 1979,' indicating that any dips in gold prices during 2025 would have been profitable entry points. The sustained strength of gold throughout the year validates this tactical guidance."
+      }
+    ],
+    "overall_analysis": "BCA Research's prediction was mixed: they were correct on gold (overweight position and buy-on-dips advice proved profitable) but significantly wrong on the dollar (which weakened rather than strengthened) and partially wrong on industrial metals (which had positive fundamentals). The institution's gold call was their strongest insight, but their broader macro view on dollar strength and industrial metals weakness was misaligned with actual 2025 market dynamics.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 66.7,
+    "classification": "PARTIAL",
+    "justification": "BCA Research's prediction was mixed: they were correct on gold (overweight position and buy-on-dips advice proved profitable) but significantly wrong on the dollar (which weakened rather than strengthened) and partially wrong on industrial metals (which had positive fundamentals). The institution's gold call was their strongest insight, but their broader macro view on dollar strength and industrial metals weakness was misaligned with actual 2025 market dynamics.",
+    "id": "COMMODITIES-BCA_RESEARCH-7-2025",
+    "Original_Rank": 7,
+    "Prediction_Text": "\"We are long the dollar, and are negative toward energy and industrial metals within the commodity complex. We are likely to remain overweight gold until we see significant evidence that central bank purchases are likely to wane. Investors should buy gold on dips.\"",
+    "Institution": "BCA RESEARCH",
+    "Rank": 19
+  },
+  {
+    "statements": [
+      {
+        "statement": "Our optimisation process unambiguously favors bank loans, investment grade credit and commodities, while gold and equities are out of favor.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct but with significant caveats. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms that 'the junkiest of junk bonds have soared in the debt markets,' supporting the credit favorability view. However, the prediction was wrong on gold and equities: gold achieved 'its best year since 1979' (SOURCE 4), contradicting the 'out of favor' assessment. Equities also performed strongly, with SOURCE 6 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) noting equities 'ended 2025 stronger than many expected.' The commodities call was mixed—some commodities performed well (gold), while others like oil declined."
+      },
+      {
+        "statement": "When faced with difficult choices, we are now erring on the riskier side (given our view that economies will accelerate).",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement's accuracy is difficult to fully assess from the available data. SOURCE 9 (IMF, December 2025, https://www.imf.org/en/publications/wp/issues/2025/12/05/good-news-travels-fast-global-demand-shocks-oil-futures-and-emerging-markets-dynamics-572363) indicates that 'upward revision in macroeconomic outlook leads to higher industrial production and inflation,' suggesting some economic acceleration occurred. However, SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) notes 'demand growth remains modest' for oil markets, and SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) indicates concerns about 'loose fiscal policy' and inflation fears, suggesting the economic acceleration narrative was more nuanced than a simple acceleration story."
+      }
+    ],
+    "overall_analysis": "Invesco's prediction was partially correct on credit markets but significantly wrong on gold and equities, which both outperformed contrary to their 'out of favor' assessment. The institution correctly identified some credit market strength but failed to anticipate the exceptional gold rally and equity market resilience, suggesting their optimization process underestimated safe-haven demand and equity market momentum in 2025.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Invesco's prediction was partially correct on credit markets but significantly wrong on gold and equities, which both outperformed contrary to their 'out of favor' assessment. The institution correctly identified some credit market strength but failed to anticipate the exceptional gold rally and equity market resilience, suggesting their optimization process underestimated safe-haven demand and equity market momentum in 2025.",
+    "id": "COMMODITIES-INVESCO-3-2025",
+    "Original_Rank": 3,
+    "Prediction_Text": "\"Our optimisation process unambiguously favors bank loans, investment grade credit and commodities, while gold and equities are out of favor. When faced with difficult choices, we are now erring on the riskier side (given our view that economies will accelerate).\"",
+    "Institution": "INVESCO",
+    "Rank": 20
+  },
+  {
+    "statements": [
+      {
+        "statement": "BofA expects commodity prices to ultimately rise in 2025; base and precious metal prices forecast to jump (copper up 17%, gold to $3,000 per ounce); but oil prices to buck trend (Brent to average $65 per barrel, down 20% from 2024).",
+        "materialized": "PARTIAL",
+        "reasoning": "Bank of America's prediction was partially correct. The gold forecast was directionally correct—SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms gold achieved 'its best year since 1979,' supporting the upside call, though the specific $3,000 per ounce target cannot be verified from available sources. The oil forecast was directionally correct—SOURCE 4 shows oil was 'off almost 17%,' consistent with the downward expectation, though the specific $65 Brent average cannot be confirmed. SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) discusses copper favorability for electrification demand, supporting the base metals upside view. However, the copper-specific 17% gain target cannot be verified from available data."
+      }
+    ],
+    "overall_analysis": "Bank of America correctly anticipated the divergence between precious metals (gold strength) and oil (weakness) in 2025, and the general upside bias for commodities. The institution's directional calls on gold and oil were accurate, though specific price targets cannot be fully verified. The prediction demonstrated good macro insight into the commodity complex dynamics, particularly the oil underperformance relative to precious metals.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Bank of America correctly anticipated the divergence between precious metals (gold strength) and oil (weakness) in 2025, and the general upside bias for commodities. The institution's directional calls on gold and oil were accurate, though specific price targets cannot be fully verified. The prediction demonstrated good macro insight into the commodity complex dynamics, particularly the oil underperformance relative to precious metals.",
+    "id": "COMMODITIES-BANK_OF_AMERICA-6-2025",
+    "Original_Rank": 6,
+    "Prediction_Text": "\"BofA expects commodity prices to ultimately rise in 2025; base and precious metal prices forecast to jump (copper up 17%, gold to $3,000 per ounce); but oil prices to buck trend (Brent to average $65 per barrel, down 20% from 2024).\"",
+    "Institution": "BANK OF AMERICA",
+    "Rank": 21
+  },
+  {
+    "statements": [
+      {
+        "statement": "We do not expect gold to rally as it did in 2024, but we expect it will still achieve a decent gain.",
+        "materialized": "NO",
+        "reasoning": "This prediction was incorrect. DWS expected gold to underperform relative to 2024, but SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows gold achieved 'its best year since 1979,' which is an exceptional rally that likely exceeded 2024's performance. The prediction of a 'decent gain' was far too conservative—gold's 2025 performance was extraordinary, not merely decent, contradicting DWS's expectation of moderation relative to 2024."
+      },
+      {
+        "statement": "In any case, we believe that the precious metal is likely to serve as a good hedge in a challenging year 2025.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized successfully. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms gold achieved 'its best year since 1979,' demonstrating it served as an excellent hedge. The year 2025 was indeed challenging, with SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/) noting 'big pick ups in 2025 around April 2nd when broad global tariffs were announced,' and SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) indicating concerns about 'loose fiscal policy' and inflation fears, confirming gold's hedge value was realized."
+      }
+    ],
+    "overall_analysis": "DWS's prediction was partially correct but significantly underestimated gold's strength. While the institution correctly identified gold as a good hedge for a challenging 2025, they were far too conservative in expecting only a 'decent gain' when gold actually achieved its best year since 1979. The prediction demonstrated correct directional thinking on gold's hedging role but failed to anticipate the magnitude of the rally.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "DWS's prediction was partially correct but significantly underestimated gold's strength. While the institution correctly identified gold as a good hedge for a challenging 2025, they were far too conservative in expecting only a 'decent gain' when gold actually achieved its best year since 1979. The prediction demonstrated correct directional thinking on gold's hedging role but failed to anticipate the magnitude of the rally.",
+    "id": "COMMODITIES-DWS-10-2025",
+    "Original_Rank": 10,
+    "Prediction_Text": "\"We do not expect gold to rally as it did in 2024, but we expect it will still achieve a decent gain. In any case, we believe that the precious metal is likely to serve as a good hedge in a challenging year 2025.\"",
+    "Institution": "DWS",
+    "Rank": 22
+  },
+  {
+    "statements": [
+      {
+        "statement": "Following new US trade and energy policies, 2025 will likely be a year of US dollar strength and lower oil prices.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction was partially correct. Oil prices did fall almost 17% in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), validating the lower oil prices forecast. However, the US dollar weakened rather than strengthened, declining nearly 10% (SOURCE 4). SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms dollar weakness despite fiscal expansion. The oil price prediction was accurate, but the dollar strength prediction was incorrect."
+      },
+      {
+        "statement": "We expect gold to perform well on haven demand and structural buying from central banks, but returns are unlikely to be comparable to 2024.",
+        "materialized": "NO",
+        "reasoning": "Gold achieved its best year since 1979 in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), which would represent exceptional returns far exceeding typical 2024 performance. SOURCE 21 (Societe Generale, December 2025) confirms 'Central banks increasing their gold reserves is another long-term trend,' validating the central bank buying thesis. However, the prediction that returns would be 'unlikely to be comparable to 2024' was incorrect, as 2025 gold returns were extraordinary and likely exceeded 2024 significantly."
+      },
+      {
+        "statement": "Industrial metals should be supported by positive economic growth.",
+        "materialized": "YES",
+        "reasoning": "SOURCE 8 (Goldman Sachs 2026 Outlook, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) highlights copper as supported by 'Strong Electrification Demand' and notes 'Copper Remains Our Favorite Long-Run Industrial Metal.' SOURCE 6 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms global economic strength with 'International equities outpaced the U.S. amid broad global strength.' Industrial metals were indeed supported by positive economic growth dynamics in 2025."
+      }
+    ],
+    "overall_analysis": "Lombard Odier's predictions were mixed in accuracy. The institution correctly anticipated lower oil prices and industrial metals support from economic growth, but significantly underestimated gold's performance (predicting returns would not match 2024 when gold actually achieved its best year since 1979) and incorrectly predicted dollar strength when the currency actually weakened 10%. The macro framework was partially sound but missed key currency dynamics.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Lombard Odier's predictions were mixed in accuracy. The institution correctly anticipated lower oil prices and industrial metals support from economic growth, but significantly underestimated gold's performance (predicting returns would not match 2024 when gold actually achieved its best year since 1979) and incorrectly predicted dollar strength when the currency actually weakened 10%. The macro framework was partially sound but missed key currency dynamics.",
+    "id": "COMMODITIES-LOMBARD_ODIER-15-2025",
+    "Original_Rank": 15,
+    "Prediction_Text": "\"Following new US trade and energy policies, 2025 will likely be a year of US dollar strength and lower oil prices. We expect gold to perform well on haven demand and structural buying from central banks, but returns are unlikely to be comparable to 2024. Industrial metals should be supported by positive economic growth.\"",
+    "Institution": "LOMBARD ODIER",
+    "Rank": 23
+  },
+  {
+    "statements": [
+      {
+        "statement": "We are currently bullish gold.",
+        "materialized": "YES",
+        "reasoning": "Gold achieved its best year since 1979 in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/), delivering exceptional returns that validated a bullish stance. The prediction was accurate and well-timed, as gold's performance far exceeded typical commodity returns."
+      },
+      {
+        "statement": "We are neutral on the US dollar, euro, yen and the UK pound.",
+        "materialized": "NO",
+        "reasoning": "The US dollar weakened significantly, declining nearly 10% in 2025 (SOURCE 4, Reuters, December 2025, https://www.reuters.org/world/china/global-markets-performance-pix-graphics-2025-12-23/). SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms substantial dollar weakness with 'the cross rate is at a 14-month low.' A neutral stance on the dollar was incorrect given the significant directional move downward. The prediction failed to anticipate the magnitude of currency movements in 2025."
+      }
+    ],
+    "overall_analysis": "Ned Davis Research's predictions were split in accuracy. The bullish gold call was highly prescient and correct, as gold delivered its best year since 1979. However, the neutral stance on major currencies, particularly the US dollar, was significantly wrong, as the dollar weakened nearly 10% in 2025. The institution correctly identified gold strength but missed important currency dynamics.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Ned Davis Research's predictions were split in accuracy. The bullish gold call was highly prescient and correct, as gold delivered its best year since 1979. However, the neutral stance on major currencies, particularly the US dollar, was significantly wrong, as the dollar weakened nearly 10% in 2025. The institution correctly identified gold strength but missed important currency dynamics.",
+    "id": "COMMODITIES-NED_DAVIS_RESEARCH-16-2025",
+    "Original_Rank": 16,
+    "Prediction_Text": "\"We are currently bullish gold. We are neutral on the US dollar, euro, yen and the UK pound.\"",
+    "Institution": "NED DAVIS RESEARCH",
+    "Rank": 24
+  },
+  {
+    "statements": [
+      {
+        "statement": "In our view, commodities are well-positioned to benefit from a rebound in global demand, driven by a modest international economic recovery and lower global interest rates.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. Lower global interest rates materialized—SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms 'the Federal Reserve cut interest rates last week.' However, the global demand rebound was mixed. SOURCE 2 (Schwab, December 2025, https://international.schwab.com/story/market-snapshot) notes that 'developed international stocks and emerging markets equities decisively outpaced the S&P 500 and NASDAQ in 2025,' suggesting some international economic strength. However, SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) indicates energy markets faced headwinds with 'the global oil market set to be in large surplus' and 'demand growth remains modest.' Agricultural commodities showed mixed signals with 'strong supply and trade tensions' creating downward pressure. The broad commodity rebound was therefore uneven rather than uniform."
+      },
+      {
+        "statement": "We favor holding a basket of commodities to gain exposure to the reacceleration of the commodity bull super-cycle.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct. While some commodities performed well, the 'commodity bull super-cycle' did not uniformly reaccelerate. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows mixed commodity performance: 'oil off almost 17%' while 'Gold is set for its best year since 1979.' SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) indicates energy weakness with 'the global oil market set to be in large surplus,' contradicting a broad super-cycle narrative. However, SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) shows copper and transition metals benefited from electrification demand. A diversified commodity basket would have captured gold's strength but suffered from oil weakness, making the strategy partially effective rather than fully validating a super-cycle thesis."
+      }
+    ],
+    "overall_analysis": "Wells Fargo's prediction was partially correct but overstated the breadth of commodity strength. While lower interest rates materialized and some commodities (particularly gold and transition metals) performed well, the prediction of a broad 'commodity bull super-cycle' failed to account for significant weakness in energy markets, which declined 17% in 2025. The institution correctly identified the interest rate tailwind but underestimated the divergence between commodity sectors, with energy facing structural headwinds from OPEC+ production increases and modest demand growth.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Wells Fargo's prediction was partially correct but overstated the breadth of commodity strength. While lower interest rates materialized and some commodities (particularly gold and transition metals) performed well, the prediction of a broad 'commodity bull super-cycle' failed to account for significant weakness in energy markets, which declined 17% in 2025. The institution correctly identified the interest rate tailwind but underestimated the divergence between commodity sectors, with energy facing structural headwinds from OPEC+ production increases and modest demand growth.",
+    "id": "COMMODITIES-WELLS_FARGO_INVESTMENT_INSTITUTE-23-2025",
+    "Original_Rank": 23,
+    "Prediction_Text": "\"In our view, commodities are well-positioned to benefit from a rebound in global demand, driven by a modest international economic recovery and lower global interest rates. We favor holding a basket of commodities to gain exposure to the reacceleration of the commodity bull super-cycle.\"",
+    "Institution": "WELLS FARGO INVESTMENT INSTITUTE",
+    "Rank": 25
+  },
+  {
+    "statements": [
+      {
+        "statement": "Macroeconomic and geopolitical uncertainty will continue to sustain demand for precious metals, while industrial metals will await better economic-growth prospects.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction about precious metals demand was correct. According to SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/), 'Gold, the ultimate safe port in a storm, is set for its best year since 1979,' confirming sustained demand for precious metals amid uncertainty. However, the second part about industrial metals awaiting better growth prospects is less clearly validated. SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) shows copper remained favorable due to electrification demand despite supply constraints, suggesting industrial metals did not simply 'await' better prospects but rather responded to specific demand drivers. The prediction was directionally correct on precious metals but oversimplified the industrial metals narrative."
+      }
+    ],
+    "overall_analysis": "UniCredit correctly identified the safe-haven demand for precious metals in 2025, which materialized strongly with gold's best year since 1979. However, the characterization of industrial metals as merely 'awaiting' better growth was incomplete, as copper and other metals showed resilience driven by specific structural demand (electrification, data centers) rather than general economic improvement. The institution captured the macro uncertainty theme but missed the nuanced sectoral differentiation within commodities.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "UniCredit correctly identified the safe-haven demand for precious metals in 2025, which materialized strongly with gold's best year since 1979. However, the characterization of industrial metals as merely 'awaiting' better growth was incomplete, as copper and other metals showed resilience driven by specific structural demand (electrification, data centers) rather than general economic improvement. The institution captured the macro uncertainty theme but missed the nuanced sectoral differentiation within commodities.",
+    "id": "COMMODITIES-UNICREDIT-31-2025",
+    "Original_Rank": 31,
+    "Prediction_Text": "\"Macroeconomic and geopolitical uncertainty will continue to sustain demand for precious metals, while industrial metals will await better economic-growth prospects.\"",
+    "Institution": "UNICREDIT",
+    "Rank": 26
+  },
+  {
+    "statements": [
+      {
+        "statement": "The looming tariffs mean that base metals may not trade all that well, despite signs that the global manufacturing PMI has turned higher, which is usually supportive.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct but requires nuance. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/) confirms that 'broad global tariffs were announced' on April 2nd, 2025, causing 'big pick ups' in volatility. However, the sources do not provide specific data on base metals performance relative to this tariff impact. SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) shows copper remained favorable due to electrification demand, suggesting base metals did not uniformly underperform. The tariff impact occurred as predicted, but the blanket negative view on base metals appears overstated given structural demand drivers."
+      },
+      {
+        "statement": "We are tempted to buy a tariff driven pullback.",
+        "materialized": "PARTIAL",
+        "reasoning": "The tactical recommendation to buy tariff-driven pullbacks appears reasonable given market dynamics. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/) documents that after the April 2nd tariff announcement caused volatility, 'world stocks recovered from April's \"Liberation Day\" tariffs crash to add another 20%' by year-end. This suggests that tariff-driven pullbacks were indeed buying opportunities. However, the sources do not provide specific evidence of base metals pullbacks being purchased or their subsequent performance, making it difficult to fully validate this tactical call. The broader market recovery supports the contrarian positioning, but commodity-specific validation is limited."
+      }
+    ],
+    "overall_analysis": "Citi correctly identified that tariffs would create volatility in April 2025 and that pullbacks could present buying opportunities, as evidenced by the subsequent market recovery. However, the institution's blanket pessimism on base metals despite higher manufacturing PMI appears to have underestimated structural demand drivers like electrification that supported copper prices. The tactical call to buy pullbacks was sound, but the macro view on base metals was overly cautious and failed to differentiate between metals with different demand fundamentals.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Citi correctly identified that tariffs would create volatility in April 2025 and that pullbacks could present buying opportunities, as evidenced by the subsequent market recovery. However, the institution's blanket pessimism on base metals despite higher manufacturing PMI appears to have underestimated structural demand drivers like electrification that supported copper prices. The tactical call to buy pullbacks was sound, but the macro view on base metals was overly cautious and failed to differentiate between metals with different demand fundamentals.",
+    "id": "COMMODITIES-CITI-33-2025",
+    "Original_Rank": 33,
+    "Prediction_Text": "\"The looming tariffs mean that base metals may not trade all that well, despite signs that the global manufacturing PMI has turned higher, which is usually supportive. We are tempted to buy a tariff driven pullback.\"",
+    "Institution": "CITI",
+    "Rank": 27
+  },
+  {
+    "statements": [
+      {
+        "statement": "Over the long run, we believe the negative stock-bond correlation will hold.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize in 2025. SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) explicitly states 'even though the Federal Reserve cut interest rates last week and unveiled a program of large-scale T-bill purchases, long-term bond yields are rising and yield curves are steepening – both inside and outside the United States.' This indicates that bonds and equities moved together (both benefiting from Fed cuts initially, but then bonds selling off), breaking the negative correlation. SOURCE 6 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes equities 'ended 2025 stronger than many expected,' while SOURCE 7 shows long-term yields rising to 4.8670%, the highest since early September. The positive correlation between rising yields and equity strength contradicts the negative stock-bond correlation thesis."
+      },
+      {
+        "statement": "But we see a strong argument for owning assets that can provide diversification to both equities and fixed income.",
+        "materialized": "YES",
+        "reasoning": "This statement materialized and was validated by market outcomes. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms that 'Gold, the ultimate safe port in a storm, is set for its best year since 1979,' demonstrating strong diversification benefits. SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) discusses copper and other commodities as benefiting from structural demand, providing diversification. The case for diversifying assets was indeed strong in 2025, as evidenced by gold's exceptional performance and commodity resilience despite equity volatility."
+      },
+      {
+        "statement": "What fits the bill?",
+        "materialized": "N/A",
+        "reasoning": "This is a rhetorical question and not a falsifiable prediction statement. It does not contain a claim about market outcomes and therefore cannot be evaluated for materialization."
+      },
+      {
+        "statement": "Historically, real estate, commodities and infrastructure have exhibited low correlations to stocks and bonds.",
+        "materialized": "YES",
+        "reasoning": "This historical statement is validated by the 2025 outcomes. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows gold performed exceptionally well (best year since 1979) while equities and bonds had mixed performance, demonstrating low correlation. SOURCE 8 (Goldman Sachs, December 2025, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/2026-outlooks/CommoditiesOutlook2026.pdf) discusses commodities' independent performance drivers (electrification, data center demand), confirming their low correlation to traditional assets. The historical claim is supported by 2025 evidence."
+      },
+      {
+        "statement": "At the same time, diversified hedge fund strategies have proved their worth in the post-COVID period.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement is partially validated but not directly confirmed by the sources. SOURCE 10 (McKinsey, December 2025, https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/seeing-the-full-picture-managing-the-commodity-trading-risk-triangle) discusses commodity trading risk management but does not specifically address hedge fund performance. SOURCE 2 (Schwab, December 2025, https://international.schwab.com/story/market-snapshot) notes that 'junkiest of junk bonds have soared in the debt markets' and 'bond market volatility is at a four-year low,' suggesting a benign environment where diversification strategies could have performed well. However, no source provides explicit evidence of hedge fund performance in 2025, making this claim partially supported but not fully validated."
+      }
+    ],
+    "overall_analysis": "JPMorgan Wealth Management's prediction was mixed in accuracy. The institution correctly identified the value of diversifying assets like commodities and gold, which performed exceptionally well in 2025 (gold's best year since 1979). However, the core thesis about negative stock-bond correlation was incorrect—bonds and equities actually moved together in 2025 as long-term yields rose despite Fed rate cuts, breaking the predicted negative correlation. The recommendation to own diversifying assets was sound and prescient, but the underlying correlation assumption was flawed, suggesting JPMorgan misread the macro dynamics that would drive asset relationships in 2025.",
+    "summary_stats": {
+      "total_statements": 5,
+      "materialized_count": 2,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "JPMorgan Wealth Management's prediction was mixed in accuracy. The institution correctly identified the value of diversifying assets like commodities and gold, which performed exceptionally well in 2025 (gold's best year since 1979). However, the core thesis about negative stock-bond correlation was incorrect—bonds and equities actually moved together in 2025 as long-term yields rose despite Fed rate cuts, breaking the predicted negative correlation. The recommendation to own diversifying assets was sound and prescient, but the underlying correlation assumption was flawed, suggesting JPMorgan misread the macro dynamics that would drive asset relationships in 2025.",
+    "id": "COMMODITIES-JPMORGAN_WEALTH_MANAGEMENT-35-2025",
+    "Original_Rank": 35,
+    "Prediction_Text": "\"Over the long run, we believe the negative stock-bond correlation will hold. But we see a strong argument for owning assets that can provide diversification to both equities and fixed income. What fits the bill? Historically, real estate, commodities and infrastructure have exhibited low correlations to stocks and bonds. At the same time, diversified hedge fund strategies have proved their worth in the post-COVID period.\"",
+    "Institution": "JPMORGAN WEALTH MANAGEMENT",
+    "Rank": 28
+  },
+  {
+    "statements": [
+      {
+        "statement": "On balance, we expect (and hope) for 2025 to be a better year on geopolitical front than the last couple of years.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. While the sources do not provide extensive detail on geopolitical events throughout 2025, SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) explicitly states 'What's really stood out in oil markets this year is the lack of volatility, particularly given the myriad geopolitical events and supply risks,' indicating that geopolitical tensions and risks persisted throughout 2025. The phrase 'myriad geopolitical events' suggests 2025 was not materially better on the geopolitical front. Additionally, SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) references ongoing concerns about policy uncertainty and trade tensions, suggesting geopolitical risks remained elevated."
+      },
+      {
+        "statement": "Whether Trump Presidency could engineer a deal between Ukraine and Russia remains to be seen.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement is partially validated but inconclusive. The sources do not provide definitive evidence that a Ukraine-Russia deal was or was not engineered in 2025. SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) mentions 'Ukraine talks' in the context of oil price movements, suggesting negotiations were ongoing. However, no source confirms a successful deal was reached. The statement's cautious framing ('remains to be seen') makes it technically accurate as a forward-looking observation, but it does not constitute a falsifiable prediction about 2025 outcomes."
+      },
+      {
+        "statement": "It would have significant implications on commodity prices and the growth outlook for Europe.",
+        "materialized": "PARTIAL",
+        "reasoning": "This conditional statement cannot be fully evaluated because the antecedent (a Ukraine-Russia deal) is not confirmed to have occurred. However, the logic is supported by the sources. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) discusses energy market dynamics and supply concerns, which would be directly affected by geopolitical resolution. SOURCE 9 (IMF, December 2025, https://www.imf.org/en/publications/wp/issues/2025/12/05/good-news-travels-fast-global-demand-shocks-oil-futures-and-emerging-markets-dynamics-572363) notes that 'upward revision in macroeconomic outlook leads to higher industrial production and inflation,' suggesting geopolitical resolution would indeed have growth implications. The statement's logic is sound, but its materialization depends on the unconfirmed deal."
+      }
+    ],
+    "overall_analysis": "Jefferies' geopolitical outlook for 2025 was overly optimistic and did not materialize. The institution expected improved geopolitical conditions, but sources confirm 'myriad geopolitical events' persisted throughout the year, and there is no evidence of a successful Ukraine-Russia deal. While the conditional logic about deal implications is sound, the core prediction that 2025 would be 'a better year on geopolitical front' was incorrect, suggesting Jefferies underestimated the persistence of global tensions and the difficulty of achieving major diplomatic breakthroughs.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 1
+    },
+    "score": 33.3,
+    "classification": "WEAK",
+    "justification": "Jefferies' geopolitical outlook for 2025 was overly optimistic and did not materialize. The institution expected improved geopolitical conditions, but sources confirm 'myriad geopolitical events' persisted throughout the year, and there is no evidence of a successful Ukraine-Russia deal. While the conditional logic about deal implications is sound, the core prediction that 2025 would be 'a better year on geopolitical front' was incorrect, suggesting Jefferies underestimated the persistence of global tensions and the difficulty of achieving major diplomatic breakthroughs.",
+    "id": "COMMODITIES-JEFFERIES-34-2025",
+    "Original_Rank": 34,
+    "Prediction_Text": "\"On balance, we expect (and hope) for 2025 to be a better year on geopolitical front than the last couple of years. Whether Trump Presidency could engineer a deal between Ukraine and Russia remains to be seen. It would have significant implications on commodity prices and the growth outlook for Europe.\"",
+    "Institution": "JEFFERIES",
+    "Rank": 29
+  },
+  {
+    "statements": [
+      {
+        "statement": "In our baseline forecast, we continue to see oil prices as range-bound, with Brent likely to stay in a $70-$85 per barrel range.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction was partially correct regarding the range-bound nature of oil but the specific price range cannot be fully validated from the sources. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) supports the range-bound characterization, noting 'What's really stood out in oil markets this year is the lack of volatility, particularly given the myriad geopolitical events and supply risks.' However, SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) indicates 'oil off almost 17%' in 2025, suggesting prices declined significantly from earlier levels. The sources do not provide specific Brent price data to confirm whether prices remained within the $70-$85 range throughout 2025, making the specific price target unverifiable, though the range-bound characterization appears accurate."
+      },
+      {
+        "statement": "Including the roll return, this means that energy and our broader commodity indexes should offer modest positive returns in the central case.",
+        "materialized": "NO",
+        "reasoning": "This prediction proved incorrect for energy commodities. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) explicitly states 'oil off almost 17%' in 2025, indicating negative returns rather than modest positive returns. While the broader commodity index may have shown positive returns due to gold's exceptional performance (best year since 1979), energy specifically—a major component of commodity indexes—delivered negative returns. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) explains the weakness: 'the global oil market set to be in large surplus, following OPEC+ rapidly ramping up output.' Goldman Sachs's prediction of modest positive returns for energy failed to materialize."
+      },
+      {
+        "statement": "But we think the risks of breaking outside those ranges are growing.",
+        "materialized": "NO",
+        "reasoning": "This prediction proved incorrect. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) explicitly contradicts this, stating: 'What's really stood out in oil markets this year is the lack of volatility, particularly given the myriad geopolitical events and supply risks.' Rather than risks of breaking outside ranges growing, oil markets actually exhibited remarkable stability and low volatility throughout 2025 despite numerous geopolitical events. Goldman Sachs underestimated the stabilizing effect of OPEC+ production management and overestimated the volatility risks that would emerge from geopolitical tensions."
+      }
+    ],
+    "overall_analysis": "Goldman Sachs's oil prediction was largely incorrect. While the institution correctly identified that oil would be range-bound with low volatility, it failed on the critical forecast of modest positive returns—oil declined 17% in 2025. The prediction also incorrectly anticipated growing risks of breaking outside price ranges, when in fact volatility remained subdued throughout the year. Goldman Sachs underestimated the structural headwinds from OPEC+ production increases and overestimated both the upside potential and volatility risks in energy markets.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 2
+    },
+    "score": 16.7,
+    "classification": "FAILED",
+    "justification": "Goldman Sachs's oil prediction was largely incorrect. While the institution correctly identified that oil would be range-bound with low volatility, it failed on the critical forecast of modest positive returns—oil declined 17% in 2025. The prediction also incorrectly anticipated growing risks of breaking outside price ranges, when in fact volatility remained subdued throughout the year. Goldman Sachs underestimated the structural headwinds from OPEC+ production increases and overestimated both the upside potential and volatility risks in energy markets.",
+    "id": "COMMODITIES-GOLDMAN_SACHS-26-2025",
+    "Original_Rank": 26,
+    "Prediction_Text": "\"In our baseline forecast, we continue to see oil prices as range-bound, with Brent likely to stay in a $70-$85 per barrel range. Including the roll return, this means that energy and our broader commodity indexes should offer modest positive returns in the central case. But we think the risks of breaking outside those ranges are growing.\"",
+    "Institution": "GOLDMAN SACHS",
+    "Rank": 30
+  },
+  {
+    "statements": [
+      {
+        "statement": "A stronger dollar and an on-hold Fed will keep a lid on gold prices into the second half, in our view, after hitting new highs in early 2025.",
+        "materialized": "NO",
+        "reasoning": "This prediction was contradicted by actual 2025 outcomes. According to SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/), gold 'is set for its best year since 1979' and the U.S. dollar is 'down nearly 10%' - the opposite of what BNP Paribas predicted. Rather than a stronger dollar keeping a lid on gold prices in the second half, gold surged dramatically while the dollar weakened significantly throughout 2025."
+      }
+    ],
+    "overall_analysis": "BNP Paribas's prediction was fundamentally incorrect on both key variables. The institution failed to anticipate the exceptional gold rally (best year since 1979) and incorrectly forecasted dollar strength when the dollar actually weakened by nearly 10%. The prediction missed the geopolitical and monetary dynamics that drove safe-haven demand for gold throughout 2025.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "BNP Paribas's prediction was fundamentally incorrect on both key variables. The institution failed to anticipate the exceptional gold rally (best year since 1979) and incorrectly forecasted dollar strength when the dollar actually weakened by nearly 10%. The prediction missed the geopolitical and monetary dynamics that drove safe-haven demand for gold throughout 2025.",
+    "id": "COMMODITIES-BNP_PARIBAS-1-2025",
+    "Original_Rank": 1,
+    "Prediction_Text": "\"A stronger dollar and an on-hold Fed will keep a lid on gold prices into the second half, in our view, after hitting new highs in early 2025.\"",
+    "Institution": "BNP PARIBAS",
+    "Rank": 31
+  },
+  {
+    "statements": [
+      {
+        "statement": "We forecast that oil prices will gradually decline to $60 per barrel by mid-2025 and remain around that level.",
+        "materialized": "NO",
+        "reasoning": "Citi's forecast was inaccurate regarding both the timing and magnitude of oil price movements. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/2025-commodity-look-back-blog/) indicates that volatility picked up 'around April 2nd when broad global tariffs were announced,' suggesting oil prices did not follow a simple gradual decline path. SOURCE 4 (Reuters, December 2025) shows oil was 'off almost 17%' by year-end, but this does not confirm the $60 per barrel level was achieved or maintained mid-year. The prediction's specific price target and timeline do not align with the actual volatile trajectory of oil markets in 2025."
+      }
+    ],
+    "overall_analysis": "Citi's prediction failed to capture the actual dynamics of 2025 oil markets, which experienced significant volatility triggered by tariff announcements in April rather than a gradual decline to $60/barrel. The institution underestimated the impact of geopolitical and trade policy shocks on oil price trajectories, missing both the timing and the nature of price movements.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Citi's prediction failed to capture the actual dynamics of 2025 oil markets, which experienced significant volatility triggered by tariff announcements in April rather than a gradual decline to $60/barrel. The institution underestimated the impact of geopolitical and trade policy shocks on oil price trajectories, missing both the timing and the nature of price movements.",
+    "id": "COMMODITIES-CITI-2-2025",
+    "Original_Rank": 2,
+    "Prediction_Text": "\"We forecast that oil prices will gradually decline to $60 per barrel by mid-2025 and remain around that level.\"",
+    "Institution": "CITI",
+    "Rank": 32
+  },
+  {
+    "statements": [
+      {
+        "statement": "If geopolitical tensions in the Middle East do not escalate into a broader regional conflict, we expect OPEC+ to seek to stabilise the Brent price at around $75 per barrel.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize as stated. SOURCE 3 (ING, December 2025, https://think.ing.com/uploads/reports/Commodities_Outlook_2026.pdf) indicates that OPEC+ 'rapidly ramping up output as it shifts policy' and 'the surplus in the oil market is set to grow in 2026,' suggesting OPEC+ moved away from price stabilization efforts rather than toward them. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows oil was 'off almost 17%' by year-end, well below the $75 Brent target. The conditional assumption about geopolitical escalation may have held, but OPEC+ behavior diverged significantly from the predicted stabilization strategy."
+      }
+    ],
+    "overall_analysis": "UniCredit's prediction failed to anticipate OPEC+'s actual policy shift toward rapid output increases rather than price stabilization. The institution underestimated the structural shift in OPEC+ strategy and overestimated their commitment to maintaining prices around $75 per barrel, missing the move toward surplus conditions that characterized 2025 oil markets.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "UniCredit's prediction failed to anticipate OPEC+'s actual policy shift toward rapid output increases rather than price stabilization. The institution underestimated the structural shift in OPEC+ strategy and overestimated their commitment to maintaining prices around $75 per barrel, missing the move toward surplus conditions that characterized 2025 oil markets.",
+    "id": "COMMODITIES-UNICREDIT-5-2025",
+    "Original_Rank": 5,
+    "Prediction_Text": "\"If geopolitical tensions in the Middle East do not escalate into a broader regional conflict, we expect OPEC+ to seek to stabilise the Brent price at around $75 per barrel.\"",
+    "Institution": "UNICREDIT",
+    "Rank": 33
+  },
+  {
+    "statements": [
+      {
+        "statement": "Barring any escalation in geopolitical tensions or sudden spikes in inflation, gold may face limited upside in the near future.",
+        "materialized": "NO",
+        "reasoning": "This prediction proved incorrect. Despite the stated conditions (no major geopolitical escalation and no sudden inflation spikes), gold achieved its best year since 1979 in 2025. SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) confirms: 'Gold, the ultimate safe port in a storm, is set for its best year since 1979.' The prediction assumed limited upside would occur absent major shocks, but gold surged significantly. While geopolitical risks did persist (SOURCE 3 mentions 'myriad geopolitical events'), the prediction's conditional logic failed because gold found support from other factors including lower interest rates and dollar weakness (SOURCE 4 notes 'the U.S. dollar is down nearly 10%'), which the prediction did not adequately account for."
+      }
+    ],
+    "overall_analysis": "UniCredit's prediction was incorrect and overly pessimistic on gold. The institution failed to anticipate that gold would achieve its best year since 1979, apparently underestimating the support from monetary easing and currency weakness. The prediction's conditional framing—that gold would face limited upside absent major shocks—proved flawed, as gold rallied substantially despite relatively stable geopolitical conditions and moderate inflation. UniCredit missed the structural drivers of gold demand in a lower-rate, weaker-dollar environment.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "UniCredit's prediction was incorrect and overly pessimistic on gold. The institution failed to anticipate that gold would achieve its best year since 1979, apparently underestimating the support from monetary easing and currency weakness. The prediction's conditional framing—that gold would face limited upside absent major shocks—proved flawed, as gold rallied substantially despite relatively stable geopolitical conditions and moderate inflation. UniCredit missed the structural drivers of gold demand in a lower-rate, weaker-dollar environment.",
+    "id": "COMMODITIES-UNICREDIT-22-2025",
+    "Original_Rank": 22,
+    "Prediction_Text": "\"Barring any escalation in geopolitical tensions or sudden spikes in inflation, gold may face limited upside in the near future.\"",
+    "Institution": "UNICREDIT",
+    "Rank": 34
+  },
+  {
+    "statements": [
+      {
+        "statement": "Given the change in the interest rate trajectory, a firm dollar and a slower uptake of physical metal by central banks and coin and bar investors, the gold market may very well be ready to consolidate recent gains.",
+        "materialized": "NO",
+        "reasoning": "This prediction proved incorrect. The prediction assumed three conditions would lead to gold consolidation: (1) changed interest rate trajectory, (2) firm dollar, and (3) slower central bank/retail uptake. However, the actual outcomes contradicted these assumptions. SOURCE 7 (Reuters, December 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/) confirms the Fed cut interest rates (not a changed trajectory toward tightening), and SOURCE 4 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) shows 'the U.S. dollar is down nearly 10%' (not firm). Rather than consolidating, SOURCE 4 states gold achieved 'its best year since 1979.' TD Securities fundamentally misread the interest rate environment and currency dynamics, predicting consolidation when gold actually surged dramatically."
+      }
+    ],
+    "overall_analysis": "TD Securities' prediction was significantly incorrect. The institution failed to anticipate gold's exceptional 2025 performance, instead predicting consolidation based on assumptions about interest rates and dollar strength that proved wrong. TD Securities underestimated the support from Fed rate cuts and dollar weakness, and apparently overestimated the impact of slower central bank demand. The prediction demonstrated poor macro forecasting, missing the key drivers of gold's best year since 1979.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "TD Securities' prediction was significantly incorrect. The institution failed to anticipate gold's exceptional 2025 performance, instead predicting consolidation based on assumptions about interest rates and dollar strength that proved wrong. TD Securities underestimated the support from Fed rate cuts and dollar weakness, and apparently overestimated the impact of slower central bank demand. The prediction demonstrated poor macro forecasting, missing the key drivers of gold's best year since 1979.",
+    "id": "COMMODITIES-TD_SECURITIES-30-2025",
+    "Original_Rank": 30,
+    "Prediction_Text": "\"Given the change in the interest rate trajectory, a firm dollar and a slower uptake of physical metal by central banks and coin and bar investors, the gold market may very well be ready to consolidate recent gains.\"",
+    "Institution": "TD SECURITIES",
+    "Rank": 35
+  }
+]

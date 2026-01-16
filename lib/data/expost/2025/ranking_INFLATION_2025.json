@@ -1,0 +1,591 @@
+[
+  {
+    "statements": [
+      {
+        "statement": "Developed markets (DM) appear on track to return to target inflation levels in 2025, driven by normalizing consumer demand and increased competition for limited job openings.",
+        "materialized": "YES",
+        "reasoning": "PIMCO's prediction proved accurate. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) confirms that inflation 'slowed unexpectedly in November' with headline CPI at 2.7% and core CPI at 2.6%, both near the Fed's 2% target. SOURCE 9 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) reports that 'inflation cooled closer to the European Central Bank's 2% target' in Europe. SOURCE 18 (Reuters, December 2025, https://www.reuters.com/world/americas/canadas-annual-inflation-november-stays-unchanged-22-2025-12-15/) shows Canada at 2.2%, confirming developed markets returned to target inflation levels. The mechanism cited—normalizing demand and labor market competition—aligns with SOURCE 10 (Economist, December 2025, https://www.economist.com/finance-and-economics/2025/12/07/which-economy-did-best-in-2025) noting that 'Unemployment remains low almost everywhere.'"
+      }
+    ],
+    "overall_analysis": "PIMCO's prediction was highly accurate, correctly anticipating that developed markets would return to target inflation levels in 2025 through normalizing consumer demand and tight labor markets. The institution demonstrated superior forecasting by identifying the correct mechanism for disinflation and accurately predicting the outcome across multiple developed economies.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "PIMCO's prediction was highly accurate, correctly anticipating that developed markets would return to target inflation levels in 2025 through normalizing consumer demand and tight labor markets. The institution demonstrated superior forecasting by identifying the correct mechanism for disinflation and accurately predicting the outcome across multiple developed economies.",
+    "id": "INFLATION-PIMCO-10-2025",
+    "Original_Rank": 10,
+    "Prediction_Text": "\"Developed markets (DM) appear on track to return to target inflation levels in 2025, driven by normalizing consumer demand and increased competition for limited job openings.\"",
+    "Institution": "PIMCO",
+    "Rank": 1
+  },
+  {
+    "statements": [
+      {
+        "statement": "US inflation will likely progress very slowly toward the Fed's 2% target rate as the US economy stabilizes, but it's unlikely to be a straight line to the target.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized accurately. By November 2025, headline CPI reached 2.7% and core CPI 2.6% (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html), showing progress toward the 2% target but not yet achieving it. The Fed's Summary of Economic Projections showed 2025 core PCE inflation revised down to 3.0% (SOURCE: UBS, December 11, 2025, https://www.ubs.com/global/en/wealthmanagement/insights/chief-investment-office/house-view/daily/2025/latest-11122025.html). The 'slow progress' and 'non-linear path' characterization proved accurate, as inflation cooled gradually with some volatility rather than in a straight line, particularly given government shutdown data collection issues (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/trust-these-numbers-economists-see-a-lot-of-flaws-in-delayed-cpi-report-showing-downward-inflation.html)."
+      }
+    ],
+    "overall_analysis": "AllSpring Global Investments made an accurate and well-calibrated prediction about inflation's trajectory in 2025. They correctly anticipated that while inflation would move toward the Fed's 2% target, the path would be gradual and non-linear rather than smooth. This nuanced view proved prescient given the actual data showing inflation approaching but not reaching target by year-end, with some measurement complications along the way.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "AllSpring Global Investments made an accurate and well-calibrated prediction about inflation's trajectory in 2025. They correctly anticipated that while inflation would move toward the Fed's 2% target, the path would be gradual and non-linear rather than smooth. This nuanced view proved prescient given the actual data showing inflation approaching but not reaching target by year-end, with some measurement complications along the way.",
+    "id": "INFLATION-ALLSPRING_GLOBAL_INVESTMENTS-12-2025",
+    "Original_Rank": 12,
+    "Prediction_Text": "\"US inflation will likely progress very slowly toward the Fed's 2% target rate as the US economy stabilizes, but it's unlikely to be a straight line to the target.\"",
+    "Institution": "ALLSPRING GLOBAL INVESTMENTS",
+    "Rank": 2
+  },
+  {
+    "statements": [
+      {
+        "statement": "Though we believe there is further disinflation in the pipeline from housing and other core services, overall inflation is likely to remain above the Fed's target.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized accurately. By November 2025, inflation remained above the Fed's 2% target at 2.7% headline and 2.6% core CPI (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html). The prediction of further disinflation potential from housing and services proved sound, as these categories showed cooling pressures. The overall assessment that inflation would remain above target despite these disinflationary forces proved correct."
+      },
+      {
+        "statement": "Rates are unlikely to fall as much as many expect, and risk assets are likely to be supported.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. The Fed did cut rates in 2025, but the pace was more measured than many had expected earlier in the year. Risk assets were indeed supported, with equities reaching new all-time highs on 39 separate occasions in 2025, including December 23-24, making 2025 one of the top years for all-time highs (SOURCE: Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry). Non-U.S. equity markets delivered approximately 32% returns for the year (SOURCE: Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry)."
+      }
+    ],
+    "overall_analysis": "Nuveen made a well-calibrated prediction that correctly anticipated both the inflation trajectory and market dynamics. They accurately identified that while disinflationary forces existed in housing and services, overall inflation would remain sticky above target, and that rate cuts would be more limited than consensus expected. Their call on risk asset support proved prescient, as equities delivered strong returns despite economic uncertainties.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Nuveen made a well-calibrated prediction that correctly anticipated both the inflation trajectory and market dynamics. They accurately identified that while disinflationary forces existed in housing and services, overall inflation would remain sticky above target, and that rate cuts would be more limited than consensus expected. Their call on risk asset support proved prescient, as equities delivered strong returns despite economic uncertainties.",
+    "id": "INFLATION-NUVEEN-16-2025",
+    "Original_Rank": 16,
+    "Prediction_Text": "\"Though we believe there is further disinflation in the pipeline from housing and other core services, overall inflation is likely to remain above the Fed's target. Rates are unlikely to fall as much as many expect, and risk assets are likely to be supported.\"",
+    "Institution": "NUVEEN",
+    "Rank": 3
+  },
+  {
+    "statements": [
+      {
+        "statement": "Support for risk assets is likely to come from further monetary easing, as central banks respond to improvements in inflation.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. Central banks did respond to inflation improvements with monetary easing. The Fed cut rates in 2025, and the ECB also eased policy as inflation cooled closer to the 2% target (SOURCE: CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html). Risk assets were indeed supported, with equities reaching new all-time highs on 39 occasions and delivering strong returns (SOURCE: Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry)."
+      },
+      {
+        "statement": "It will continue to drift lower, although developed market central banks are unlikely to hit their 2% targets during the year.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized accurately. Inflation did continue to drift lower throughout 2025, reaching 2.7% headline and 2.6% core CPI by November (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html). Developed market central banks did not hit their 2% targets during 2025—the U.S. remained above target, and while European inflation cooled closer to the ECB's 2% target, it did not definitively reach it (SOURCE: CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html)."
+      }
+    ],
+    "overall_analysis": "Pictet Asset Management made an accurate and well-reasoned prediction about both inflation dynamics and central bank policy responses. They correctly anticipated that inflation would continue drifting lower while remaining above central bank targets, and that monetary easing would support risk assets. Their prediction proved prescient on both the inflation trajectory and the market support mechanisms that materialized in 2025.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Pictet Asset Management made an accurate and well-reasoned prediction about both inflation dynamics and central bank policy responses. They correctly anticipated that inflation would continue drifting lower while remaining above central bank targets, and that monetary easing would support risk assets. Their prediction proved prescient on both the inflation trajectory and the market support mechanisms that materialized in 2025.",
+    "id": "INFLATION-PICTET_ASSET_MANAGEMENT-17-2025",
+    "Original_Rank": 17,
+    "Prediction_Text": "\"Support for risk assets is likely to come from further monetary easing, as central banks respond to improvements in inflation. It will continue to drift lower, although developed market central banks are unlikely to hit their 2% targets during the year.\"",
+    "Institution": "PICTET ASSET MANAGEMENT",
+    "Rank": 4
+  },
+  {
+    "statements": [
+      {
+        "statement": "Trump's potential barriers to trade and aggressive approach to immigration are seen as fresh fuel for inflation, with the Federal Reserve struggling to bring price growth down to target.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction correctly identified tariffs as an inflationary pressure. SOURCE 11 (Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) confirms that tariff rates rose from 2.5% at the start of 2025 to above 10% by August, with expectations to reach 15% by Q1 2026, and notes that 'rising prices cause consumption to decelerate.' However, the second part of the statement about the Fed 'struggling' is contradicted by actual outcomes. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) reports that 'Inflation slowed unexpectedly in November, as a deceleration across a range of consumer products outweighed price pressures,' with CPI at 2.7% year-over-year. The Fed did not struggle to bring inflation down; it actually achieved near-target levels by year-end."
+      },
+      {
+        "statement": "Still, inflation is generally seen as contained and range-bound both in the US and abroad, compared to recent years.",
+        "materialized": "YES",
+        "reasoning": "This statement is validated by multiple sources. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) confirms that 'Inflation slowed unexpectedly in November' with headline CPI at 2.7% and core CPI at 2.6%. SOURCE 9 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes that 'inflation cooled closer to the European Central Bank's 2% target' in Europe. SOURCE 18 (Reuters, December 2025, https://www.reuters.com/world/americas/canadas-annual-inflation-november-stays-unchanged-22-2025-12-15/) reports Canada's inflation at 2.2% in November. SOURCE 17 (McKinsey, December 2025, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook) states that 'For the first time since March 2021, inflation is not one of the top five most-cited economic risks,' indicating it is now seen as contained."
+      }
+    ],
+    "overall_analysis": "Wells Fargo's prediction was partially accurate. The institution correctly anticipated that tariffs would create inflationary pressures and that inflation would remain contained relative to 2021-2023 levels. However, the characterization of the Fed 'struggling' to bring inflation down proved incorrect—inflation actually decelerated more than expected by year-end 2025, reaching near-target levels of 2.6-2.7%, suggesting the Fed's policy framework was more effective than the prediction implied.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Wells Fargo's prediction was partially accurate. The institution correctly anticipated that tariffs would create inflationary pressures and that inflation would remain contained relative to 2021-2023 levels. However, the characterization of the Fed 'struggling' to bring inflation down proved incorrect—inflation actually decelerated more than expected by year-end 2025, reaching near-target levels of 2.6-2.7%, suggesting the Fed's policy framework was more effective than the prediction implied.",
+    "id": "INFLATION-WELLS_FARGO-1-2025",
+    "Original_Rank": 1,
+    "Prediction_Text": "\"Trump's potential barriers to trade and aggressive approach to immigration are seen as fresh fuel for inflation, with the Federal Reserve struggling to bring price growth down to target. Still, inflation is generally seen as contained and range-bound both in the US and abroad, compared to recent years.\"",
+    "Institution": "WELLS FARGO",
+    "Rank": 5
+  },
+  {
+    "statements": [
+      {
+        "statement": "Concerns about inflation are likely to linger and we do not foresee a return to the low inflation environment of the 2010s.",
+        "materialized": "PARTIAL",
+        "reasoning": "HSBC's prediction about lingering inflation concerns was partially correct, though the actual outcome was more favorable than anticipated. SOURCE 17 (McKinsey, December 2025, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook) states that 'For the first time since March 2021, inflation is not one of the top five most-cited economic risks to the global economy,' suggesting that inflation concerns have actually diminished significantly by year-end 2025. However, SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) confirms that inflation remains above the 2010s lows, validating the second part of HSBC's statement."
+      },
+      {
+        "statement": "Instead, we anticipate inflation settling in the 2-3% range for most major economies, with interest rate cutting cycles expected to be shallow in both the US and Europe.",
+        "materialized": "YES",
+        "reasoning": "HSBC's forecast proved accurate. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) reports US headline CPI at 2.7% and core CPI at 2.6%, both within the 2-3% range. SOURCE 9 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that 'inflation cooled closer to the European Central Bank's 2% target,' placing European inflation in the 2-3% range. SOURCE 18 (Reuters, December 2025, https://www.reuters.com/world/americas/canadas-annual-inflation-november-stays-unchanged-22-2025-12-15/) reports Canada at 2.2%, also within range. The shallow rate-cutting prediction aligns with actual Fed and ECB policy throughout 2025."
+      }
+    ],
+    "overall_analysis": "HSBC's inflation prediction was largely accurate, correctly forecasting that inflation would settle in the 2-3% range across major economies and that rate-cutting cycles would be shallow. However, the institution overestimated the persistence of inflation concerns—by year-end 2025, inflation had dropped from the top five economic risks, suggesting a faster resolution than HSBC anticipated.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "HSBC's inflation prediction was largely accurate, correctly forecasting that inflation would settle in the 2-3% range across major economies and that rate-cutting cycles would be shallow. However, the institution overestimated the persistence of inflation concerns—by year-end 2025, inflation had dropped from the top five economic risks, suggesting a faster resolution than HSBC anticipated.",
+    "id": "INFLATION-HSBC_ASSET_MANAGEMENT-8-2025",
+    "Original_Rank": 8,
+    "Prediction_Text": "\"Concerns about inflation are likely to linger and we do not foresee a return to the low inflation environment of the 2010s. Instead, we anticipate inflation settling in the 2-3% range for most major economies, with interest rate cutting cycles expected to be shallow in both the US and Europe.\"",
+    "Institution": "HSBC ASSET MANAGEMENT",
+    "Rank": 6
+  },
+  {
+    "statements": [
+      {
+        "statement": "Housing and employment will keep the Fed from reaching its inflation target.",
+        "materialized": "PARTIAL",
+        "reasoning": "By November 2025, headline CPI was 2.7% and core CPI was 2.6% (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html), approaching but not yet at the Fed's 2% target. However, the prediction that housing and employment would prevent reaching the target is only partially supported. While housing costs remain elevated and employment remains tight (unemployment remains low across OECD per SOURCE: The Economist, December 7, 2025, https://www.economist.com/finance-and-economics/2025/12/07/which-economy-did-best-in-2025), inflation has actually cooled closer to target levels. The statement assumes these factors would definitively prevent target achievement, but actual data shows inflation approaching target despite tight conditions."
+      },
+      {
+        "statement": "Both have been tight for some time, and significant solutions to both increasing the supply in both of these markets will not be close at hand.",
+        "materialized": "YES",
+        "reasoning": "This statement is validated by year-end 2025 data. Employment remains tight with low unemployment across OECD economies (SOURCE: The Economist, December 7, 2025, https://www.economist.com/finance-and-economics/2025/12/07/which-economy-did-best-in-2025). Housing supply constraints persist, with mortgage rates falling but affordability remaining a concern for middle-class households (SOURCE: NASDAQ, December 2025, https://www.nasdaq.com/articles/where-inflation-hit-the-middle-class-hardest-in-2025). No major policy solutions addressing supply in either market materialized during 2025."
+      }
+    ],
+    "overall_analysis": "Tallbacken Capital correctly identified persistent tightness in housing and employment markets that would constrain inflation dynamics. However, they overestimated the degree to which these factors would prevent the Fed from approaching its inflation target—actual 2025 inflation data showed meaningful progress toward 2% despite tight labor and housing markets. The prediction was directionally sound but underestimated the effectiveness of monetary policy and demand moderation in bringing inflation lower.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Tallbacken Capital correctly identified persistent tightness in housing and employment markets that would constrain inflation dynamics. However, they overestimated the degree to which these factors would prevent the Fed from approaching its inflation target—actual 2025 inflation data showed meaningful progress toward 2% despite tight labor and housing markets. The prediction was directionally sound but underestimated the effectiveness of monetary policy and demand moderation in bringing inflation lower.",
+    "id": "INFLATION-TALLBACKEN_CAPITAL-11-2025",
+    "Original_Rank": 11,
+    "Prediction_Text": "\"Housing and employment will keep the Fed from reaching its inflation target. Both have been tight for some time, and significant solutions to both increasing the supply in both of these markets will not be close at hand.\"",
+    "Institution": "TALLBACKEN CAPITAL",
+    "Rank": 7
+  },
+  {
+    "statements": [
+      {
+        "statement": "While the Federal Reserve has successfully brought inflation meaningfully lower since the June 2022 peak, it is not clear we will enter a period of low, below-target rate of inflation.",
+        "materialized": "YES",
+        "reasoning": "This statement materialized. The Fed did bring inflation meaningfully lower from the June 2022 peak, and by November 2025, inflation remained above target at 2.7% headline and 2.6% core CPI (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html). The prediction that inflation would not fall below the 2% target proved accurate—inflation approached but did not breach the target by year-end 2025."
+      },
+      {
+        "statement": "We believe a combination of tariffs, tighter immigration, and onshoring may result in a higher inflation regime going forward.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. Tariffs have been implemented with an average effective rate of 10% as of August 2025, rising to 15% by Q1 2026 (SOURCE: Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html). Immigration policies have been pursued, with the Trump administration vowing to curtail legal immigration and accelerate deportations (SOURCE: BEL AIR INVESTMENT ADVISORS statement in context). However, the actual inflation outcome by November 2025 showed inflation at 2.7%, not significantly elevated. Morgan Stanley notes contemplation of 'higher-for-longer' inflation (SOURCE: Morgan Stanley, December 2025, https://www.morganstanley.com/insights/articles/high-inflation-investing-2026), suggesting the regime shift may be emerging but has not yet fully materialized in 2025 data."
+      }
+    ],
+    "overall_analysis": "Bel Air Investment Advisors made a prescient call on the structural inflation risks posed by tariffs, immigration restrictions, and onshoring. While 2025 inflation data did not show a dramatic spike, the prediction correctly identified the policy mechanisms that could create persistent inflation pressures. The prediction appears to be validating in real-time, with economists increasingly discussing 'higher-for-longer' inflation scenarios, though the full impact may extend into 2026 and beyond.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Bel Air Investment Advisors made a prescient call on the structural inflation risks posed by tariffs, immigration restrictions, and onshoring. While 2025 inflation data did not show a dramatic spike, the prediction correctly identified the policy mechanisms that could create persistent inflation pressures. The prediction appears to be validating in real-time, with economists increasingly discussing 'higher-for-longer' inflation scenarios, though the full impact may extend into 2026 and beyond.",
+    "id": "INFLATION-BEL_AIR_INVESTMENT_ADVISORS-14-2025",
+    "Original_Rank": 14,
+    "Prediction_Text": "\"While the Federal Reserve has successfully brought inflation meaningfully lower since the June 2022 peak, it is not clear we will enter a period of low, below-target rate of inflation. We believe a combination of tariffs, tighter immigration, and onshoring may result in a higher inflation regime going forward.\"",
+    "Institution": "BEL AIR INVESTMENT ADVISORS",
+    "Rank": 8
+  },
+  {
+    "statements": [
+      {
+        "statement": "The Trump administration has vowed to impose additional tariffs on US trading partners, curtail legal immigration, and accelerate the deportation of illegal immigrants.",
+        "materialized": "YES",
+        "reasoning": "This prediction materialized. The Trump administration did impose tariffs, with the average effective tariff rate reaching just above 10% as of August 2025, up from 2.5% at the start of the year (SOURCE: Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html). Immigration policies were pursued, with vows to curtail legal immigration and accelerate deportations of illegal immigrants. These policies were implemented and remained in effect throughout 2025."
+      },
+      {
+        "statement": "While these policies could be inflationary domestically, these measures will likely be offset by liberal fossil fuel policies and significant deregulation across various industries and sectors, especially in the energy and financial sectors.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. Fossil fuel policies did support energy markets, with Brent crude prices declining by about 12% since the start of 2025, reflecting ample supply (SOURCE: World Bank, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations). Deregulation efforts were pursued. However, the prediction that these measures would 'offset' inflationary policies is only partially supported. While inflation remained moderate at 2.7% by November (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html), Morgan Stanley contemplates 'higher-for-longer' inflation (SOURCE: Morgan Stanley, December 2025, https://www.morganstanley.com/insights/articles/high-inflation-investing-2026), suggesting the offsetting effect may be incomplete or temporary."
+      }
+    ],
+    "overall_analysis": "Bel Air Investment Advisors correctly identified the Trump administration's policy mix of tariffs, immigration restrictions, and deregulation. Their prediction that offsetting disinflationary forces (fossil fuel policies, deregulation) would moderate inflation pressures proved partially correct for 2025, though the full offsetting effect remains uncertain. The prediction was directionally sound but may have underestimated the persistence of tariff-related inflation pressures into 2026.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 1,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 75.0,
+    "classification": "GOOD",
+    "justification": "Bel Air Investment Advisors correctly identified the Trump administration's policy mix of tariffs, immigration restrictions, and deregulation. Their prediction that offsetting disinflationary forces (fossil fuel policies, deregulation) would moderate inflation pressures proved partially correct for 2025, though the full offsetting effect remains uncertain. The prediction was directionally sound but may have underestimated the persistence of tariff-related inflation pressures into 2026.",
+    "id": "INFLATION-BEL_AIR_INVESTMENT_ADVISORS-19-2025",
+    "Original_Rank": 19,
+    "Prediction_Text": "\"The Trump administration has vowed to impose additional tariffs on US trading partners, curtail legal immigration, and accelerate the deportation of illegal immigrants. While these policies could be inflationary domestically, these measures will likely be offset by liberal fossil fuel policies and significant deregulation across various industries and sectors, especially in the energy and financial sectors.\"",
+    "Institution": "BEL AIR INVESTMENT ADVISORS",
+    "Rank": 9
+  },
+  {
+    "statements": [
+      {
+        "statement": "With respect to Trump policies, the base case of our global team is tariffs, extension of the 2017 Trump tax cuts, a sharp curb in immigration inflows, a broad deregulation of Biden-era requirements, and a potential boost to animal spirits.",
+        "materialized": "PARTIAL",
+        "reasoning": "Citi's enumeration of Trump policies partially materialized. SOURCE 11 (Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) confirms tariffs were implemented, with rates rising from 2.5% to above 10% by August 2025. SOURCE 4 (Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) notes that 'equities reached new all-time highs on 39 separate occasions' and 'annual returns well above their historical average,' suggesting 'animal spirits' did boost markets. However, the sources do not provide explicit confirmation of tax cut extensions or deregulation specifics, making this partially verifiable rather than fully confirmed."
+      },
+      {
+        "statement": "They think this cocktail will bring moderately higher inflation in the US, while the effects on US growth may net out at around zero.",
+        "materialized": "PARTIAL",
+        "reasoning": "The inflation prediction was incorrect; the effects on growth were more positive than predicted. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) shows headline CPI at 2.7% and core CPI at 2.6%, which are near-target levels rather than 'moderately higher.' SOURCE 13 (World Bank, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) states that 'global gdp will probably grow by around 3% this year, the same as last,' and SOURCE 19 (Vanguard, December 2025, https://investor.vanguard.com/investor-resources-education/article/ai-exuberance-economic-upside-stock-market-downside) projects 'up to a 60% chance that the U.S. economy will achieve 3% real GDP growth,' suggesting growth was stronger than 'netting out at around zero.'"
+      }
+    ],
+    "overall_analysis": "Citi's prediction was partially accurate on policy implementation but significantly underestimated both inflation control and economic growth. While tariffs were indeed implemented and markets rallied, the institution incorrectly predicted 'moderately higher inflation' when actual inflation remained contained near 2% targets, and growth proved substantially stronger than the 'net zero' forecast, driven by AI investment and fiscal support.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Citi's prediction was partially accurate on policy implementation but significantly underestimated both inflation control and economic growth. While tariffs were indeed implemented and markets rallied, the institution incorrectly predicted 'moderately higher inflation' when actual inflation remained contained near 2% targets, and growth proved substantially stronger than the 'net zero' forecast, driven by AI investment and fiscal support.",
+    "id": "INFLATION-CITI-2-2025",
+    "Original_Rank": 2,
+    "Prediction_Text": "\"With respect to Trump policies, the base case of our global team is tariffs, extension of the 2017 Trump tax cuts, a sharp curb in immigration inflows, a broad deregulation of Biden-era requirements, and a potential boost to animal spirits. They think this cocktail will bring moderately higher inflation in the US, while the effects on US growth may net out at around zero.\"",
+    "Institution": "CITI",
+    "Rank": 10
+  },
+  {
+    "statements": [
+      {
+        "statement": "For Europe, the Trump victory appears overwhelmingly negative at face value, but it could shake the continent into more positive policy action over the medium term.",
+        "materialized": "PARTIAL",
+        "reasoning": "Deutsche Bank's nuanced view on Europe proved partially correct. SOURCE 9 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) reports that 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains, ranking among the world's top performers' and notes that 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target.' This suggests that despite initial concerns, Europe did not experience the overwhelmingly negative outcome feared, and some positive policy responses may have occurred."
+      },
+      {
+        "statement": "For 2025, it's too early for the positive scenario to be considered and the economic performance gap to the US will likely widen.",
+        "materialized": "PARTIAL",
+        "reasoning": "This statement was partially correct regarding timing but incorrect about the performance gap. SOURCE 9 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that 'Non-U.S. equity markets far outpaced their U.S. counterparts, delivering robust returns of approximately 32% for the year,' contradicting the prediction that the US performance gap would widen. However, the statement about it being 'too early' for positive scenarios in 2025 was accurate, as positive European performance did emerge by year-end."
+      },
+      {
+        "statement": "In light of this, our economists have downgraded their growth forecast (0.8% in 2025) while lowering their inflation and ECB terminal rate forecast (to 1.5% by year-end 2025).",
+        "materialized": "PARTIAL",
+        "reasoning": "Deutsche Bank's inflation and rate forecasts proved directionally correct but the growth forecast appears pessimistic. SOURCE 9 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that 'inflation cooled closer to the European Central Bank's 2% target,' supporting the lower inflation forecast. However, SOURCE 13 (World Bank, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) indicates that 'the euro area...also contributed' to global growth that 'will probably grow by around 3% this year,' suggesting European growth may have exceeded the 0.8% forecast."
+      }
+    ],
+    "overall_analysis": "Deutsche Bank's European outlook was overly pessimistic on growth but directionally correct on inflation. The institution correctly anticipated lower inflation converging toward ECB targets, but underestimated European economic resilience and equity market performance, which outpaced US returns contrary to their prediction of a widening performance gap.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 0,
+      "partial_count": 3,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Deutsche Bank's European outlook was overly pessimistic on growth but directionally correct on inflation. The institution correctly anticipated lower inflation converging toward ECB targets, but underestimated European economic resilience and equity market performance, which outpaced US returns contrary to their prediction of a widening performance gap.",
+    "id": "INFLATION-DEUTSCHE_BANK-3-2025",
+    "Original_Rank": 3,
+    "Prediction_Text": "\"For Europe, the Trump victory appears overwhelmingly negative at face value, but it could shake the continent into more positive policy action over the medium term. For 2025, it's too early for the positive scenario to be considered and the economic performance gap to the US will likely widen. In light of this, our economists have downgraded their growth forecast (0.8% in 2025) while lowering their inflation and ECB terminal rate forecast (to 1.5% by year-end 2025).\"",
+    "Institution": "DEUTSCHE BANK",
+    "Rank": 11
+  },
+  {
+    "statements": [
+      {
+        "statement": "Policy risks may increase inflationary pressures.",
+        "materialized": "PARTIAL",
+        "reasoning": "Vanguard's statement about policy risks increasing inflationary pressures was partially correct. SOURCE 11 (Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) confirms that tariff policies did create inflationary pressures, with rates rising from 2.5% to above 10% by August 2025. However, SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) shows that despite these policy risks, inflation actually decelerated to 2.7% headline and 2.6% core by November, suggesting that policy risks did not fully materialize into sustained higher inflation."
+      },
+      {
+        "statement": "Therefore, we anticipate that core inflation will remain above 2.5% for most of 2025.",
+        "materialized": "PARTIAL",
+        "reasoning": "Vanguard's forecast was directionally correct but the margin was minimal. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) reports that core CPI came in at 2.6% in November 2025, which is indeed above 2.5%, validating the prediction. SOURCE 6 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/chief-investment-office/house-view/daily/2025/latest-11122025.html) notes that 'The Summary of Economic Projections (SEP) showed 2025 core PCE inflation estimates revised down to 3.0%,' suggesting that for much of 2025, core inflation may have been higher than the November reading, supporting Vanguard's 'above 2.5%' forecast for most of the year."
+      }
+    ],
+    "overall_analysis": "Vanguard's inflation prediction was largely accurate, correctly anticipating that core inflation would remain above 2.5% for most of 2025 despite policy risks. The institution appropriately identified policy risks as inflationary but was conservative in its forecast, as actual core inflation (2.6%) remained only marginally above the 2.5% threshold, demonstrating reasonable accuracy in a volatile policy environment.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Vanguard's inflation prediction was largely accurate, correctly anticipating that core inflation would remain above 2.5% for most of 2025 despite policy risks. The institution appropriately identified policy risks as inflationary but was conservative in its forecast, as actual core inflation (2.6%) remained only marginally above the 2.5% threshold, demonstrating reasonable accuracy in a volatile policy environment.",
+    "id": "INFLATION-VANGUARD-6-2025",
+    "Original_Rank": 6,
+    "Prediction_Text": "\"Policy risks may increase inflationary pressures. Therefore, we anticipate that core inflation will remain above 2.5% for most of 2025.\"",
+    "Institution": "VANGUARD",
+    "Rank": 12
+  },
+  {
+    "statements": [
+      {
+        "statement": "Our inflation forecast (2.75%-3.25%), GDP expectations (2.0%-2.5%, with a slower second half), Fed policy uncertainty, EPS projection (8.4%), 10-year yield outlook (4.625% fair value), potential for tariffs and deportations, and the presidential cycle suggest the risks increase in the second half.",
+        "materialized": "PARTIAL",
+        "reasoning": "Ned Davis Research's inflation forecast was directionally correct but slightly high. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) reports headline CPI at 2.7% in November, which falls within the 2.75%-3.25% range, validating the inflation forecast. However, SOURCE 13 (World Bank, December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) indicates that 'global gdp will probably grow by around 3% this year,' suggesting US growth may have exceeded the 2.0%-2.5% range. SOURCE 19 (Vanguard, December 2025, https://investor.vanguard.com/investor-resources-education/article/ai-exuberance-economic-upside-stock-market-downside) projects 'up to a 60% chance that the U.S. economy will achieve 3% real GDP growth,' further contradicting the lower growth forecast. The prediction about second-half risks increasing cannot be fully verified from available sources."
+      }
+    ],
+    "overall_analysis": "Ned Davis Research's inflation forecast was accurate, but the institution significantly underestimated economic growth potential. While the 2.75%-3.25% inflation range proved reasonable, the 2.0%-2.5% GDP forecast was too conservative, as actual growth appears to have exceeded these expectations, driven by AI investment and stronger-than-anticipated economic resilience.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Ned Davis Research's inflation forecast was accurate, but the institution significantly underestimated economic growth potential. While the 2.75%-3.25% inflation range proved reasonable, the 2.0%-2.5% GDP forecast was too conservative, as actual growth appears to have exceeded these expectations, driven by AI investment and stronger-than-anticipated economic resilience.",
+    "id": "INFLATION-NED_DAVIS_RESEARCH-9-2025",
+    "Original_Rank": 9,
+    "Prediction_Text": "\"Our inflation forecast (2.75%-3.25%), GDP expectations (2.0%-2.5%, with a slower second half), Fed policy uncertainty, EPS projection (8.4%), 10-year yield outlook (4.625% fair value), potential for tariffs and deportations, and the presidential cycle suggest the risks increase in the second half.\"",
+    "Institution": "NED DAVIS RESEARCH",
+    "Rank": 13
+  },
+  {
+    "statements": [
+      {
+        "statement": "We expect the market to shift to price in higher US inflation and fewer rate cuts than it currently does.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. The market did adjust expectations for fewer rate cuts than initially anticipated earlier in 2025. However, the shift to price in 'higher US inflation' is less clearly supported. By November 2025, inflation was 2.7% headline and 2.6% core CPI (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html), and the Fed's Summary of Economic Projections showed 2025 core PCE inflation at 3.0% (SOURCE: UBS, December 11, 2025, https://www.ubs.com/global/en/wealthmanagement/insights/chief-investment-office/house-view/daily/2025/latest-11122025.html). While inflation expectations may have shifted upward from early 2025 levels, the actual inflation outcome did not validate a dramatic repricing toward 'higher' inflation. The fewer rate cuts component proved more accurate than the higher inflation component."
+      }
+    ],
+    "overall_analysis": "BNP Paribas made a partially accurate prediction. They correctly anticipated that the market would adjust expectations for fewer rate cuts than initially priced in, which materialized as the Fed maintained a more measured approach to rate reductions. However, their expectation of a market shift to price in 'higher US inflation' proved less accurate, as actual inflation remained moderate and the market did not dramatically reprice inflation expectations upward. The prediction was half-right on the policy side but overestimated inflation repricing.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "BNP Paribas made a partially accurate prediction. They correctly anticipated that the market would adjust expectations for fewer rate cuts than initially priced in, which materialized as the Fed maintained a more measured approach to rate reductions. However, their expectation of a market shift to price in 'higher US inflation' proved less accurate, as actual inflation remained moderate and the market did not dramatically reprice inflation expectations upward. The prediction was half-right on the policy side but overestimated inflation repricing.",
+    "id": "INFLATION-BNP_PARIBAS-20-2025",
+    "Original_Rank": 20,
+    "Prediction_Text": "\"We expect the market to shift to price in higher US inflation and fewer rate cuts than it currently does.\"",
+    "Institution": "BNP PARIBAS",
+    "Rank": 14
+  },
+  {
+    "statements": [
+      {
+        "statement": "If implemented, Trump's key policy objectives — lower taxes, higher tariffs, and reduced immigration — could increase rates, boost asset prices, drive inflation, and strengthen the dollar.",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction partially materialized in 2025. Evidence supports several components: (1) Higher tariffs WERE implemented - Deloitte reports the average effective tariff rate rose from 2.5% at the start of 2025 to just above 10% by August, with assumptions of further increases to 15% by Q1 2026 (SOURCE: US Economic Forecast Q4 2025 | Deloitte Insights, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html). (2) Asset prices WERE boosted - equities reached all-time highs on 39 separate occasions in 2025, with the MSCI All Country World Index climbing over 21% (SOURCE: Global stock markets' winners and losers of 2025, CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html). (3) Inflation effects were MIXED - while headline CPI came in at 2.7% in November (below the 3.1% expectation), this was partially attributed to data collection issues during the government shutdown, and longer-term inflation expectations remained elevated at 3.5% for the next five years (SOURCE: US Economic Forecast Q4 2025 | Deloitte Insights, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html). (4) The prediction on lower taxes and reduced immigration cannot be fully evaluated from the provided sources, which focus primarily on tariffs and inflation outcomes. (5) Regarding the dollar strengthening, the sources do not provide explicit evidence of dollar strength in 2025."
+      }
+    ],
+    "overall_analysis": "Apollo Global Management's prediction was directionally correct on tariffs and asset price appreciation, which both materialized in 2025, but the inflation outcome was more nuanced than anticipated. While headline inflation appeared to cool to 2.7% by November, this figure was compromised by data collection issues during the government shutdown, and underlying inflation expectations remained sticky at 3.5%, suggesting the institution's concern about inflation-driving policies had merit. The prediction successfully identified the key policy levers (tariffs, asset purchases) that would drive market outcomes, though the full inflationary impact may have been masked by temporary data anomalies and firm-level tariff absorption in 2025.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Apollo Global Management's prediction was directionally correct on tariffs and asset price appreciation, which both materialized in 2025, but the inflation outcome was more nuanced than anticipated. While headline inflation appeared to cool to 2.7% by November, this figure was compromised by data collection issues during the government shutdown, and underlying inflation expectations remained sticky at 3.5%, suggesting the institution's concern about inflation-driving policies had merit. The prediction successfully identified the key policy levers (tariffs, asset purchases) that would drive market outcomes, though the full inflationary impact may have been masked by temporary data anomalies and firm-level tariff absorption in 2025.",
+    "id": "INFLATION-APOLLO_GLOBAL_MANAGEMENT-21-2025",
+    "Original_Rank": 21,
+    "Prediction_Text": "\"If implemented, Trump's key policy objectives — lower taxes, higher tariffs, and reduced immigration — could increase rates, boost asset prices, drive inflation, and strengthen the dollar.\"",
+    "Institution": "APOLLO GLOBAL MANAGEMENT",
+    "Rank": 15
+  },
+  {
+    "statements": [
+      {
+        "statement": "In the US, tariffs and immigration policies will boost inflation by nearly 1 percentage point by early 2026, eventually weighing on growth and have an important impact on monetary policy.",
+        "materialized": "PARTIAL",
+        "reasoning": "TD Securities' prediction about tariff and immigration impacts on inflation was partially correct but the magnitude appears overstated. SOURCE 11 (Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) confirms that tariffs were implemented and 'rising prices cause consumption to decelerate,' supporting the growth-dampening effect. However, SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) shows that actual inflation came in at 2.7% headline and 2.6% core by November 2025, suggesting the nearly 1 percentage point boost may have been overstated. The impact on monetary policy was real, as evidenced by Fed policy discussions throughout 2025."
+      },
+      {
+        "statement": "As the labour market softens and wage growth slows, we expect aggregate income growth to cool; we expect the unemployment rate to peak at 4.4% in 2025.",
+        "materialized": "UNKNOWN",
+        "reasoning": "The sources provided do not contain explicit data on the unemployment rate peak for 2025 or detailed wage growth metrics for the full year. SOURCE 10 (Economist, December 2025, https://www.economist.com/finance-and-economics/2025/12/07/which-economy-did-best-in-2025) states that 'Unemployment remains low almost everywhere,' but does not provide the specific 4.4% peak figure. SOURCE 11 (Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) mentions consumer sentiment hitting 'an all-time low in the fourth quarter,' suggesting labor market softening, but the specific unemployment rate cannot be verified from the available sources."
+      }
+    ],
+    "overall_analysis": "TD Securities' prediction was partially accurate on tariff impacts but likely overstated the inflation boost magnitude. The institution correctly anticipated that tariffs would weigh on growth and impact monetary policy, but actual inflation remained more contained than the 'nearly 1 percentage point' boost suggested. The unemployment rate prediction cannot be fully verified from available sources, limiting overall assessment.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "TD Securities' prediction was partially accurate on tariff impacts but likely overstated the inflation boost magnitude. The institution correctly anticipated that tariffs would weigh on growth and impact monetary policy, but actual inflation remained more contained than the 'nearly 1 percentage point' boost suggested. The unemployment rate prediction cannot be fully verified from available sources, limiting overall assessment.",
+    "id": "INFLATION-TD_SECURITIES-5-2025",
+    "Original_Rank": 5,
+    "Prediction_Text": "\"In the US, tariffs and immigration policies will boost inflation by nearly 1 percentage point by early 2026, eventually weighing on growth and have an important impact on monetary policy. As the labour market softens and wage growth slows, we expect aggregate income growth to cool; we expect the unemployment rate to peak at 4.4% in 2025.\"",
+    "Institution": "TD SECURITIES",
+    "Rank": 16
+  },
+  {
+    "statements": [
+      {
+        "statement": "We believe it will take longer than expected for the Fed to travel the last mile toward its inflation goal.",
+        "materialized": "NO",
+        "reasoning": "Apollo Global Management's prediction proved incorrect. The Fed actually achieved near-target inflation levels faster than this statement suggests. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) reports that 'Inflation slowed unexpectedly in November, as a deceleration across a range of consumer products outweighed price pressures,' with core CPI at 2.6%, very close to the Fed's 2% target. SOURCE 5 (NASDAQ, December 2025, https://www.nasdaq.com/articles/november-inflation-data-gave-stock-market-nice-holiday-surprise-economists-are-sounding) states that 'investors received a pleasant surprise, as the November inflation data recently came in significantly lower than expected,' indicating the Fed made faster progress than anticipated."
+      },
+      {
+        "statement": "We expect the Consumer Price Index and Core Personal Consumption Expenditure Price Index to come in at 2.4% and 2.3%, respectively, in 2025.",
+        "materialized": "PARTIAL",
+        "reasoning": "Apollo's forecast was directionally correct but slightly optimistic. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) reports headline CPI at 2.7% in November 2025, which is higher than the 2.4% forecast. SOURCE 6 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/chief-investment-office/house-view/daily/2025/latest-11122025.html) notes that 'The Summary of Economic Projections (SEP) showed 2025 core PCE inflation estimates revised down to 3.0%,' suggesting that for much of 2025, core PCE was above the 2.3% forecast, though it may have converged toward that level by year-end."
+      }
+    ],
+    "overall_analysis": "Apollo Global Management's prediction was partially accurate but overly optimistic on inflation levels. The institution correctly anticipated that the Fed would make progress toward its inflation goal, but underestimated actual inflation readings—headline CPI came in at 2.7% rather than 2.4%, and core PCE remained above 2.3% for most of 2025. The prediction reflected excessive confidence in rapid disinflation.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "Apollo Global Management's prediction was partially accurate but overly optimistic on inflation levels. The institution correctly anticipated that the Fed would make progress toward its inflation goal, but underestimated actual inflation readings—headline CPI came in at 2.7% rather than 2.4%, and core PCE remained above 2.3% for most of 2025. The prediction reflected excessive confidence in rapid disinflation.",
+    "id": "INFLATION-APOLLO_GLOBAL_MANAGEMENT-7-2025",
+    "Original_Rank": 7,
+    "Prediction_Text": "\"We believe it will take longer than expected for the Fed to travel the last mile toward its inflation goal. We expect the Consumer Price Index and Core Personal Consumption Expenditure Price Index to come in at 2.4% and 2.3%, respectively, in 2025.\"",
+    "Institution": "APOLLO GLOBAL MANAGEMENT",
+    "Rank": 17
+  },
+  {
+    "statements": [
+      {
+        "statement": "Heading into 2025, we are less optimistic the cooling US inflation trend will continue.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated. NatWest was less optimistic about continued cooling, yet inflation did continue to cool through 2025, reaching 2.7% headline and 2.6% core CPI by November (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html). However, the cooling was slower and more volatile than the pre-2025 trend, with government shutdown complications affecting data collection (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/trust-these-numbers-economists-see-a-lot-of-flaws-in-delayed-cpi-report-showing-downward-inflation.html). So while cooling did continue, the skepticism about its persistence was somewhat justified by the data quality issues and underlying pressures."
+      },
+      {
+        "statement": "However, with a Trump victory we reasonably expect upside risks to core goods prices (tariffs), and our forecast for PCE inflation for the end of 2025 (year on year) has grown from 2.4% to 3.2%.",
+        "materialized": "NO",
+        "reasoning": "This prediction did not materialize. NatWest forecasted PCE inflation of 3.2% for end of 2025, but the Fed's Summary of Economic Projections showed 2025 core PCE inflation revised down to 3.0% (SOURCE: UBS, December 11, 2025, https://www.ubs.com/global/en/wealthmanagement/insights/chief-investment-office/house-view/daily/2025/latest-11122025.html). More importantly, headline CPI came in at 2.7% and core CPI at 2.6% in November (SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html), both significantly below the 3.2% forecast. While tariff upside risks were real, firms absorbed much of the impact, preventing the inflation spike NatWest anticipated."
+      }
+    ],
+    "overall_analysis": "NatWest's prediction was directionally correct about inflation risks but materially overestimated the magnitude of the inflation spike from tariffs. They correctly identified that Trump policies posed upside risks to core goods prices, but underestimated firms' ability to absorb tariff costs and the continued disinflationary forces in the economy. Their 3.2% PCE forecast proved too high by approximately 50-60 basis points.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "NatWest's prediction was directionally correct about inflation risks but materially overestimated the magnitude of the inflation spike from tariffs. They correctly identified that Trump policies posed upside risks to core goods prices, but underestimated firms' ability to absorb tariff costs and the continued disinflationary forces in the economy. Their 3.2% PCE forecast proved too high by approximately 50-60 basis points.",
+    "id": "INFLATION-NATWEST-15-2025",
+    "Original_Rank": 15,
+    "Prediction_Text": "\"Heading into 2025, we are less optimistic the cooling US inflation trend will continue. However, with a Trump victory we reasonably expect upside risks to core goods prices (tariffs), and our forecast for PCE inflation for the end of 2025 (year on year) has grown from 2.4% to 3.2%.\"",
+    "Institution": "NATWEST",
+    "Rank": 18
+  },
+  {
+    "statements": [
+      {
+        "statement": "Trump 2.0 will probably be a less inflationary presidency than many fear.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction is partially validated but with important caveats. While inflation did not spike dramatically in 2025 (reaching 2.7% by November, SOURCE: CNBC, December 18, 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html), this appears more due to firm cost absorption and disinflationary forces than to Trump policies being less inflationary. Tariffs were implemented with an average effective rate of 10% as of August, rising to 15% by Q1 2026 (SOURCE: Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html). Morgan Stanley contemplates 'higher-for-longer' inflation (SOURCE: Morgan Stanley, December 2025, https://www.morganstanley.com/insights/articles/high-inflation-investing-2026), suggesting inflationary risks remain. The prediction is only partially validated by 2025 data."
+      },
+      {
+        "statement": "After making some symbolic decisions related to targeted tariffs, immigration and taxes in the first months of his presidency, to follow through on campaign promises, Trump is likely to try and shift attention away from economic promises and towards identity issues.",
+        "materialized": "NO",
+        "reasoning": "This prediction has not materialized. Trump did not shift attention away from economic policies toward identity issues. Instead, tariff implementation has been substantial and ongoing, with average effective rates reaching 10% by August and projected to rise to 15% by Q1 2026 (SOURCE: Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html). Immigration policies have been actively pursued with vows to curtail legal immigration and accelerate deportations (SOURCE: BEL AIR statement context). Economic policy remained a central focus throughout 2025, contradicting the prediction of a shift toward identity issues."
+      }
+    ],
+    "overall_analysis": "UniCredit's prediction that Trump 2.0 would be less inflationary than feared proved partially correct in terms of 2025 inflation outcomes, but for the wrong reasons—inflation remained moderate due to firm cost absorption and disinflationary forces rather than Trump policies being inherently less inflationary. Their prediction that Trump would shift focus away from economic policies proved incorrect, as economic policy remained central throughout 2025. The institution underestimated Trump's commitment to implementing tariff and immigration policies.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "UniCredit's prediction that Trump 2.0 would be less inflationary than feared proved partially correct in terms of 2025 inflation outcomes, but for the wrong reasons—inflation remained moderate due to firm cost absorption and disinflationary forces rather than Trump policies being inherently less inflationary. Their prediction that Trump would shift focus away from economic policies proved incorrect, as economic policy remained central throughout 2025. The institution underestimated Trump's commitment to implementing tariff and immigration policies.",
+    "id": "INFLATION-UNICREDIT-18-2025",
+    "Original_Rank": 18,
+    "Prediction_Text": "\"Trump 2.0 will probably be a less inflationary presidency than many fear. After making some symbolic decisions related to targeted tariffs, immigration and taxes in the first months of his presidency, to follow through on campaign promises, Trump is likely to try and shift attention away from economic promises and towards identity issues.\"",
+    "Institution": "UNICREDIT",
+    "Rank": 19
+  },
+  {
+    "statements": [
+      {
+        "statement": "The US policy mix will stall progress on inflation, with core PCE expected to remain at or above 2.5% over the next two years, leading the Fed to halt their rate cuts.",
+        "materialized": "NO",
+        "reasoning": "This prediction proved incorrect on multiple fronts. SOURCE 1 (CNBC, December 2025, https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html) reports that core CPI came in at 2.6% in November 2025, which is only marginally above the 2.5% threshold and represents significant progress. SOURCE 6 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/chief-investment-office/house-view/daily/2025/latest-11122025.html) notes that 'The Summary of Economic Projections (SEP) showed 2025 core PCE inflation estimates revised down to 3.0% (2026 to 2.5%),' indicating the Fed did not halt rate cuts and inflation did make progress. The prediction that the Fed would halt cuts was contradicted by actual Fed policy actions throughout 2025."
+      },
+      {
+        "statement": "We now see the fed funds rate at 4.375% by year-end 2025.",
+        "materialized": "UNKNOWN",
+        "reasoning": "The sources provided do not contain explicit confirmation of the exact fed funds rate at year-end 2025. While SOURCE 6 (UBS, December 2025, https://www.ubs.com/global/en/wealthmanagement/insights/chief-investment-office/house-view/daily/2025/latest-11122025.html) references Fed policy and rate discussions, it does not provide the specific year-end rate. Without direct evidence confirming or contradicting the 4.375% forecast, this statement cannot be definitively evaluated based on the available sources."
+      }
+    ],
+    "overall_analysis": "Deutsche Bank's inflation and Fed policy prediction was significantly incorrect. The institution overestimated inflation persistence and incorrectly predicted the Fed would halt rate cuts, when in fact inflation decelerated to near-target levels (2.6% core CPI) and the Fed continued its policy normalization. The prediction reflected excessive pessimism about the Fed's ability to manage inflation and underestimated the effectiveness of monetary policy.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 1
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Deutsche Bank's inflation and Fed policy prediction was significantly incorrect. The institution overestimated inflation persistence and incorrectly predicted the Fed would halt rate cuts, when in fact inflation decelerated to near-target levels (2.6% core CPI) and the Fed continued its policy normalization. The prediction reflected excessive pessimism about the Fed's ability to manage inflation and underestimated the effectiveness of monetary policy.",
+    "id": "INFLATION-DEUTSCHE_BANK-4-2025",
+    "Original_Rank": 4,
+    "Prediction_Text": "\"The US policy mix will stall progress on inflation, with core PCE expected to remain at or above 2.5% over the next two years, leading the Fed to halt their rate cuts. We now see the fed funds rate at 4.375% by year-end 2025.\"",
+    "Institution": "DEUTSCHE BANK",
+    "Rank": 20
+  },
+  {
+    "statements": [
+      {
+        "statement": "Any tariffs-related inflation shock should be short-lived.",
+        "materialized": "NO",
+        "reasoning": "This prediction has not materialized by end of 2025. While tariff impacts have been gradual rather than immediate, they remain an ongoing concern. The average effective tariff rate was just above 10% as of August 2025, up from 2.5% at the start of the year, with assumptions of further increases to 15% by Q1 2026 (SOURCE: Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html). Firms have been absorbing tariff impacts, but prices are rising gradually. Morgan Stanley's Global Investment Committee is contemplating whether the economy is entering 'a new era of higher-for-longer price pressures' (SOURCE: Morgan Stanley, December 2025, https://www.morganstanley.com/insights/articles/high-inflation-investing-2026), suggesting tariff-related inflation may be more persistent than 'short-lived.'"
+      },
+      {
+        "statement": "Similarly, just as how companies and consumers adjusted after the trade war\" in Trump's first administration, we would expect the US economy to “move on” within a few quarters, following the announcement of new tariffs.",
+        "materialized": "NO",
+        "reasoning": "This prediction has not materialized. While the article notes that firms have been absorbing tariff impacts so far, the structural nature of 2025's tariff regime appears different from the first Trump administration. Supply chain disruptions are cited as a major concern, with 22% of respondents citing them—the largest share since December 2022 (SOURCE: McKinsey, December 2025, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook). Trade policy changes are now on par with geopolitical instability as the biggest perceived disruptive forces (SOURCE: McKinsey, December 2025, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook). The expectation of quick adjustment 'within a few quarters' appears optimistic given the persistent focus on trade disruptions and the assumption of further tariff increases into 2026."
+      }
+    ],
+    "overall_analysis": "Barclays Private Bank's prediction that tariff-related inflation would be short-lived and that the economy would quickly adjust proved overly optimistic. While firms have managed tariff impacts gradually rather than creating immediate shocks, the evidence suggests tariff-related pressures are more persistent and structural than anticipated. The comparison to the first Trump administration may have underestimated the scale and scope of 2025's tariff regime and its supply chain implications.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 0,
+      "failed_count": 2
+    },
+    "score": 0.0,
+    "classification": "FAILED",
+    "justification": "Barclays Private Bank's prediction that tariff-related inflation would be short-lived and that the economy would quickly adjust proved overly optimistic. While firms have managed tariff impacts gradually rather than creating immediate shocks, the evidence suggests tariff-related pressures are more persistent and structural than anticipated. The comparison to the first Trump administration may have underestimated the scale and scope of 2025's tariff regime and its supply chain implications.",
+    "id": "INFLATION-BARCLAYS_PRIVATE_BANK-13-2025",
+    "Original_Rank": 13,
+    "Prediction_Text": "\"Any tariffs-related inflation shock should be short-lived. Similarly, just as how companies and consumers adjusted after the trade war\" in Trump's first administration, we would expect the US economy to “move on” within a few quarters, following the announcement of new tariffs.\"\"\"",
+    "Institution": "BARCLAYS PRIVATE BANK",
+    "Rank": 21
+  }
+]

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ConsensusSummary } from "@/components/snapshot/consensus-summary";
 import { ThemeTreemap } from "@/components/snapshot/theme-treemap";
 import { SentimentDonut } from "@/components/snapshot/sentiment-donut";
@@ -23,6 +23,14 @@ export default function SnapshotPage() {
   const { themes, institutions, outlooks, stats, loading, error } = useSnapshotData(selectedYear);
 
   const [selectedInstitution, setSelectedInstitution] = useState<string | null>(null);
+
+  // Automatically select the first institution by default
+  useEffect(() => {
+    if (institutions && institutions.length > 0 && !selectedInstitution) {
+      setSelectedInstitution(institutions[0].institution);
+    }
+  }, [institutions, selectedInstitution]);
+
   const [selectedTheme, setSelectedTheme] = useState<string | null>(null);
   const [modalCalls, setModalCalls] = useState<OutlookItem[]>([]);
   const [loadingModal, setLoadingModal] = useState(false);

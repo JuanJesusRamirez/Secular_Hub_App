@@ -1,0 +1,333 @@
+
+export const MANUS_ASSETS_DATA = {
+    "BASE CASE": {
+        "theme": "BASE CASE",
+        "sentiment": "Bullish",
+        "sentiment_distribution": {
+            "Neutral": 21,
+            "Bullish": 37,
+            "Bearish": 6
+        },
+        "description": "Wall Street is modestly optimistic for 2026. Global and US growth are expected to continue to demonstrate resilience even as some geopolitical and trade concerns linger. Policy support, both fiscal and monetary, combined with unprecedented capital expenditure for AI adoption are key to the extension of the cycle. AI’s broadening boost to productivity is also positive. The elevated starting point of many assets curtails gains. There’s no bubble yet.",
+        "sub_themes": [
+            "Capex + Policy = Growth"
+        ],
+        "institutions_count": 64,
+        "calls_count": 64,
+        "institutions": [
+            "Citi",
+            "Goldman Sachs",
+            "Vanguard",
+            "BlackRock Investment Institute",
+            "BNY"
+        ]
+    },
+    "GROWTH": {
+        "theme": "GROWTH",
+        "sentiment": "Bullish",
+        "sentiment_distribution": {
+            "Neutral": 23,
+            "Bullish": 64,
+            "Bearish": 4
+        },
+        "description": "Global growth mostly expected to match the long-term trend, representing a slight moderation to 2025. Stimulative policies and AI spending keep the cycle going. A number of firms see uneven performance across economies, with views split over whether Europe’s fiscal spend and easy monetary policy can finally meaningfully boost the region.",
+        "sub_themes": [
+            "Trend Is Your Friend"
+        ],
+        "institutions_count": 47,
+        "calls_count": 91,
+        "institutions": [
+            "Capital Economics",
+            "Citi",
+            "Federated Hermes",
+            "Robeco",
+            "Truist Wealth"
+        ]
+    },
+    "INFLATION": {
+        "theme": "INFLATION",
+        "sentiment": "Bullish",
+        "sentiment_distribution": {
+            "Bullish": 15,
+            "Neutral": 15,
+            "Bearish": 13
+        },
+        "description": "Worst of inflation seen behind us, but ongoing trade barriers and US immigration policy (and its impact on the labor market) mean any cooling of price growth is liable to be slow and could be limited. Risks are seen stacked toward higher inflation.",
+        "sub_themes": [
+            "Sticky Slide"
+        ],
+        "institutions_count": 32,
+        "calls_count": 43,
+        "institutions": [
+            "Capital Economics",
+            "Robeco",
+            "Vanguard",
+            "Wells Fargo",
+            "Apollo Global Management"
+        ]
+    },
+    "MONETARY POLICY": {
+        "theme": "MONETARY POLICY",
+        "sentiment": "Neutral",
+        "sentiment_distribution": {
+            "Bullish": 17,
+            "Neutral": 53,
+            "Bearish": 17
+        },
+        "description": "Global central banks broadly seen leaning into easier policy, aside from the Bank of Japan. The Fed will come under increased political pressure to cut rates, especially once its Chair is replaced, but may be constrained by sticky inflation. A weak labor market may provide an excuse for some US easing, but most firms think the market is currently pricing too many cuts.",
+        "sub_themes": [
+            "Easy Does It"
+        ],
+        "institutions_count": 47,
+        "calls_count": 87,
+        "institutions": [
+            "Capital Economics",
+            "Truist Wealth",
+            "UniCredit",
+            "Vanguard",
+            "Allspring Global Investments"
+        ]
+    },
+    "FISCAL": {
+        "theme": "FISCAL",
+        "sentiment": "Bullish",
+        "sentiment_distribution": {
+            "Neutral": 9,
+            "Bearish": 7,
+            "Bullish": 12
+        },
+        "description": "Sustainability of fiscal expenditure in major countries remains a concern, but little reduction in spending is expected because of political pressures. Bond investors will remain on guard.",
+        "sub_themes": [
+            "Big Spenders"
+        ],
+        "institutions_count": 21,
+        "calls_count": 28,
+        "institutions": [
+            "UniCredit",
+            "Allspring Global Investments",
+            "Bank of America",
+            "BNP Paribas",
+            "Capital Group"
+        ]
+    },
+    "TARIFFS": {
+        "theme": "TARIFFS",
+        "sentiment": "Neutral",
+        "sentiment_distribution": {
+            "Bullish": 6,
+            "Neutral": 11,
+            "Bearish": 3
+        },
+        "description": "No repeat of Liberation Day, and a possibility the Supreme Court strikes down tariffs. In that case, the administration would impose them by other means. In other words, barriers to trade are here to stay, but many firms say the world has adjusted.",
+        "sub_themes": [
+            "New Normal"
+        ],
+        "institutions_count": 18,
+        "calls_count": 20,
+        "institutions": [
+            "Wells Fargo",
+            "Capital Group",
+            "Lazard Asset Management",
+            "BCA Research",
+            "Capital Economics"
+        ]
+    },
+    "AI": {
+        "theme": "AI",
+        "sentiment": "Bullish",
+        "sentiment_distribution": {
+            "Bullish": 31,
+            "Neutral": 23,
+            "Bearish": 15
+        },
+        "description": "Huge capital expenditure to roll out artificial intelligence is seen supporting multiple sectors and the world economy itself. Adoption of the technology is expected to start meaningfully boosting productivity in areas such as health care. Wall Street doesn’t think it’s a bubble yet; at least, not one that is ready to burst.",
+        "sub_themes": [
+            "No Bubble No Problem"
+        ],
+        "institutions_count": 46,
+        "calls_count": 69,
+        "institutions": [
+            "Evercore ISI",
+            "Federated Hermes",
+            "HSBC",
+            "JPMorgan Wealth Management",
+            "Morgan Stanley"
+        ]
+    },
+    "STOCKS": {
+        "theme": "STOCKS",
+        "sentiment": "Bullish",
+        "sentiment_distribution": {
+            "Neutral": 77,
+            "Bullish": 97,
+            "Bearish": 24
+        },
+        "description": "Policy, AI and capex all add up to stock gains. However, the US market is starting from a position of elevated valuations, meaning equity performance won’t match the past three years. Diversification is recommended to avoid concentrated exposure to the megacaps, and as broader AI adoption helps certain sectors close the gap with the Mag7. Firms are mostly optimistic on European, Asian and emerging markets.",
+        "sub_themes": [
+            "High to Higher"
+        ],
+        "institutions_count": 61,
+        "calls_count": 198,
+        "institutions": [
+            "Federated Hermes",
+            "Morgan Stanley",
+            "Societe Generale",
+            "Truist Wealth",
+            "UBS"
+        ]
+    },
+    "BONDS": {
+        "theme": "BONDS",
+        "sentiment": "Neutral",
+        "sentiment_distribution": {
+            "Neutral": 54,
+            "Bullish": 26,
+            "Bearish": 28
+        },
+        "description": "Rate cuts to constrain near-term yields, fiscal picture to prop up long end. Result: steeper curve. Some firms worry about bonds’ hedging ability and recommend alternatives. But most embrace the asset class as a source of income, if not capital gains.",
+        "sub_themes": [
+            "Steeper"
+        ],
+        "institutions_count": 56,
+        "calls_count": 108,
+        "institutions": [
+            "Societe Generale",
+            "UniCredit",
+            "Bank of America",
+            "BCA Research",
+            "Bel Air Investment Advisors"
+        ]
+    },
+    "CREDIT": {
+        "theme": "CREDIT",
+        "sentiment": "Neutral",
+        "sentiment_distribution": {
+            "Neutral": 26,
+            "Bullish": 19,
+            "Bearish": 7
+        },
+        "description": "Most institutions agree the signs of stress in credit are limited and contained, and the environment is constructive. But all agree the asset class overall looks pricey. Utilize for income but be selective, and realize spreads are more likely to widen then tighten.",
+        "sub_themes": [
+            "Selectivity"
+        ],
+        "institutions_count": 35,
+        "calls_count": 52,
+        "institutions": [
+            "BCA Research",
+            "BNP Paribas",
+            "Carmignac",
+            "Citi",
+            "JPMorgan Wealth Management"
+        ]
+    },
+    "COMMODITIES": {
+        "theme": "COMMODITIES",
+        "sentiment": "Neutral",
+        "sentiment_distribution": {
+            "Bearish": 10,
+            "Neutral": 17,
+            "Bullish": 7
+        },
+        "description": "Don't bet against gold extending its run, and position for industrial metals to benefit from the AI infrastructure build out. Not much love for or interest in crude.",
+        "sub_themes": [
+            "Metallic Taste"
+        ],
+        "institutions_count": 26,
+        "calls_count": 34,
+        "institutions": [
+            "BCA Research",
+            "BNP Paribas",
+            "Carmignac",
+            "Citi",
+            "Fidelity International"
+        ]
+    },
+    "CURRENCIES": {
+        "theme": "CURRENCIES",
+        "sentiment": "Neutral",
+        "sentiment_distribution": {
+            "Bullish": 7,
+            "Neutral": 13,
+            "Bearish": 10
+        },
+        "description": "Most firms expect ongoing weakness in the dollar, especially as the Fed leans into easier policy. That should benefit emerging nations in particular.",
+        "sub_themes": [
+            "Dollar Down"
+        ],
+        "institutions_count": 28,
+        "calls_count": 30,
+        "institutions": [
+            "BNP Paribas",
+            "Capital Group",
+            "Carmignac",
+            "DWS",
+            "Franklin Templeton"
+        ]
+    },
+    "ALTERNATIVE ASSETS": {
+        "theme": "ALTERNATIVE ASSETS",
+        "sentiment": "Neutral",
+        "sentiment_distribution": {
+            "Neutral": 40,
+            "Bearish": 8,
+            "Bullish": 24
+        },
+        "description": "Wall Street's passion for all things private shows few signs of abating. Whether for income or diversification or exposure to the hottest young companies, most firms advocate investing in unlisted assets.",
+        "sub_themes": [
+            "Private Party"
+        ],
+        "institutions_count": 40,
+        "calls_count": 72,
+        "institutions": [
+            "Bank of America",
+            "Brandywine Global",
+            "Citi",
+            "Fidelity International",
+            "Franklin Templeton"
+        ]
+    },
+    "MULTI ASSET": {
+        "theme": "MULTI ASSET",
+        "sentiment": "Bullish",
+        "sentiment_distribution": {
+            "Bullish": 11,
+            "Bearish": 5,
+            "Neutral": 10
+        },
+        "description": "AI may not be a bubble (according to most firms), but valuations look high, especially in the megacaps. Wall Street says it's time to diversify across sectors, regions and asset classes to spread out risk. And stay nimble in case things change.",
+        "sub_themes": [
+            "Diversify"
+        ],
+        "institutions_count": 20,
+        "calls_count": 26,
+        "institutions": [
+            "Truist Wealth",
+            "Brandywine Global",
+            "Carmignac",
+            "LPL Financial",
+            "Morgan Stanley"
+        ]
+    },
+    "RISKS": {
+        "theme": "RISKS",
+        "sentiment": "Bearish",
+        "sentiment_distribution": {
+            "Bearish": 33,
+            "Neutral": 12,
+            "Bullish": 3
+        },
+        "description": "The risks of a policy mistake loom large. Firms see potential for inflation to turn higher as central banks lower rates, with trade barriers a potential catalyst. Stimulative policy at this stage in the cycle could lead to overheating. Bubble or not, the extreme spending to roll out AI coupled with its uncertain payoff is making firms edgy. So is the technology’s potential impact on the labor market and established business models. And never underestimate the potential for geopolitical or trade-related shocks.",
+        "sub_themes": [
+            "Policy, AI, Geopolitics"
+        ],
+        "institutions_count": 37,
+        "calls_count": 48,
+        "institutions": [
+            "Barclays Private Bank",
+            "Citi",
+            "Goldman Sachs",
+            "Invesco",
+            "JPMorgan Wealth Management"
+        ]
+    }
+} as const; 

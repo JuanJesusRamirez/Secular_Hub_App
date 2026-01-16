@@ -25,6 +25,7 @@ import {
   CloudRain,
   FileText,
   BookOpen,
+  Calendar,
 } from "lucide-react";
 
 interface NavigationItem {
@@ -36,17 +37,12 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/", icon: LayoutDashboard },
-  { name: "Executive", href: "/overview", icon: Briefcase },
-  { name: "Assets & Economics", href: "/assets", icon: FileText },
-  { name: "Snapshot", href: "/snapshot", icon: PieChart },
+  { name: "Outlook 2026", href: "/overview", icon: Briefcase },
+
   //  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
   { name: "Word Analysis", href: "/wordcloud-new", icon: CloudRain },
-  //  { name: "Word Rain", href: "/wordrain", icon: CloudRain },
-  { name: "Delta", href: "/delta", icon: TrendingUp },
-  { name: "Historical", href: "/historical", icon: History },
-  { name: "Tesis", href: "/tesis", icon: BookOpen },
-  { name: "Narrative", href: "/narrative", icon: Sparkles },
-  { name: "Explorer", href: "/explorer", icon: Compass },
+
+  { name: "Historical", href: "/tesis", icon: History },
 ];
 
 export function Sidebar() {

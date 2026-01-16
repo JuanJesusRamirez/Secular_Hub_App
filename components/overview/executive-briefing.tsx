@@ -8,9 +8,10 @@ import { OverviewResponse } from "@/lib/db/queries";
 interface ExecutiveBriefingProps {
   data: OverviewResponse | null;
   isLoading?: boolean;
+  onThemeClick?: (theme: string) => void;
 }
 
-export function ExecutiveBriefing({ data, isLoading }: ExecutiveBriefingProps) {
+export function ExecutiveBriefing({ data, isLoading, onThemeClick }: ExecutiveBriefingProps) {
   if (isLoading) {
     return (
       <Card className="min-h-[400px]">
@@ -66,19 +67,24 @@ export function ExecutiveBriefing({ data, isLoading }: ExecutiveBriefingProps) {
             Top Themes
           </span>
           <div className="flex flex-wrap gap-2">
-            {data.topThemes.map((themeData, index) => (
-              <Badge
-                key={themeData.theme}
-                className={`text-sm py-1 px-3 ${
-                  index === 0
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-secondary-foreground"
-                }`}
-              >
-                {themeData.theme}
-              </Badge>
-            ))}
-            {data.topThemes.length === 0 && (
+            {data.topThemes
+              .filter(themeData => ["STOCKS", "BONDS"].includes(themeData.theme))
+              .map((themeData, index) => {
+                let displayName = themeData.theme;
+                if (themeData.theme === "STOCKS") displayName = "OUTLOOK ANALYSIS";
+                if (themeData.theme === "BONDS") displayName = "INTEREST TOPICS";
+
+                return (
+                  <Badge
+                    key={themeData.theme}
+                    onClick={() => onThemeClick?.(displayName)}
+                    className={`text-sm py-1 px-3 cursor-pointer hover:opacity-80 transition-opacity bg-primary text-primary-foreground`}
+                  >
+                    {displayName}
+                  </Badge>
+                );
+              })}
+            {data.topThemes.filter(t => ["STOCKS", "BONDS"].includes(t.theme)).length === 0 && (
               <span className="text-sm text-muted-foreground italic">No themes data available</span>
             )}
           </div>

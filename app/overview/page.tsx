@@ -1,12 +1,16 @@
 "use client";
 
+
 import { useEffect, useState, Suspense } from "react";
 import { useSelectedYear } from "@/lib/hooks/use-selected-year";
 import { ExecutiveBriefing } from "@/components/overview/executive-briefing";
 import { AnalyticsGrid } from "@/components/overview/analytics-grid";
 import { YearSelect } from "@/components/overview/year-select";
 import { OverviewResponse } from "@/lib/db/queries";
-import { Info } from "lucide-react";
+import { Info, ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import ManusReport from "@/components/manus/ManusReport";
+import AssetsDashboard from "@/components/assets/AssetsDashboard";
 import {
   Tooltip,
   TooltipContent,
@@ -19,6 +23,7 @@ function OverviewContent() {
   const [data, setData] = useState<OverviewResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState<'default' | 'manus' | 'assets'>('default');
 
   useEffect(() => {
     async function fetchOverview() {
@@ -39,6 +44,33 @@ function OverviewContent() {
     }
     fetchOverview();
   }, [yearNum]);
+
+  const handleThemeClick = (theme: string) => {
+    if (theme === "OUTLOOK ANALYSIS") {
+      setViewMode('manus');
+    } else if (theme === "INTEREST TOPICS") {
+      setViewMode('assets');
+    }
+  };
+
+  if (viewMode !== 'default') {
+    return (
+      <div className="space-y-6 animate-in slide-in-from-right duration-500">
+        <div className="flex items-center gap-4">
+          <Button variant="ghost" size="sm" onClick={() => setViewMode('default')} className="gap-2">
+            <ArrowLeft className="h-4 w-4" />
+            Back to Executive Overview
+          </Button>
+        </div>
+        {viewMode === 'manus' && <ManusReport />}
+        {viewMode === 'assets' && (
+          <div className="border rounded-xl shadow-sm overflow-hidden">
+            <AssetsDashboard />
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
@@ -71,7 +103,11 @@ function OverviewContent() {
       )}
 
       {/* Executive Briefing (Hero) */}
-      <ExecutiveBriefing data={data} isLoading={loading} />
+      <ExecutiveBriefing
+        data={data}
+        isLoading={loading}
+        onThemeClick={handleThemeClick}
+      />
 
       {/* Analytics Grid (4 Tiles) */}
       <AnalyticsGrid data={data} isLoading={loading} />

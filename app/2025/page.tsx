@@ -44,7 +44,10 @@ import {
     getClassificationColor,
     getClassificationBg,
     getMaterializedIcon,
-    getMaterializedColor
+    getMaterializedColor,
+    getThemeRanking,
+    getThemeRankingByConviction,
+    ALL_THEMES
 } from "@/lib/data/expost-2025";
 import { ExPostItem, ThemeData } from "@/types/expost";
 
@@ -175,10 +178,18 @@ const ReasoningRenderer = ({ text }: { text: string }) => {
     );
 };
 
+const getGlobalScoreColor = (score: number) => {
+    if (score >= 800) return "text-green-600";
+    if (score >= 650) return "text-slate-950"; // Black
+    if (score >= 450) return "text-yellow-600";
+    return "text-red-500";
+};
+
 export default function ExPost2025Page() {
+    const THEME_RANKING_LABEL = "THEME RANKING";
     const [activeThemeName, setActiveThemeName] = useState<string>(ALL_THEMES_WITH_GLOBAL[0].theme);
     const [searchQuery, setSearchQuery] = useState("");
-    const [selectedExPostItem, setSelectedExPostItem] = useState<ExPostItem | null>(null);
+    const [selectedExPostItem, setSelectedExPostItem] = useState<ExPostItem | null>(ALL_THEMES_WITH_GLOBAL[0].items[0] || null);
 
     const currentThemeData = useMemo(() =>
         ALL_THEMES_WITH_GLOBAL.find(t => t.theme === activeThemeName) || ALL_THEMES_WITH_GLOBAL[0]
@@ -191,12 +202,8 @@ export default function ExPost2025Page() {
         );
     }, [currentThemeData, searchQuery]);
 
-    // Automatically select the first firm when the theme changes or at startup
-    useEffect(() => {
-        if (filteredItems.length > 0) {
-            setSelectedExPostItem(filteredItems[0]);
-        }
-    }, [activeThemeName, currentThemeData]);
+    // We removed the automatic selection reset to allow for firm preservation during navigation
+    // Individual theme buttons and onNavigate will handle selection manually
 
     const stats = currentThemeData.themeStats;
 
@@ -217,14 +224,29 @@ export default function ExPost2025Page() {
                     </p>
                 </div>
 
-                <div className="flex flex-wrap gap-3 max-w-3xl justify-end">
+                <div className="flex flex-wrap gap-2 max-w-4xl justify-end">
+                    <Button
+                        variant={activeThemeName === THEME_RANKING_LABEL ? "default" : "outline"}
+                        onClick={() => {
+                            setActiveThemeName(THEME_RANKING_LABEL);
+                            setSelectedExPostItem(null);
+                        }}
+                        className={cn(
+                            "rounded-full px-4 h-9 text-xs font-bold uppercase tracking-wider",
+                            activeThemeName === THEME_RANKING_LABEL ? "" : "bg-primary/5 hover:bg-primary/10 border-primary/20"
+                        )}
+                    >
+                        <BarChart3 className="mr-2 h-3.5 w-3.5" />
+                        {THEME_RANKING_LABEL}
+                    </Button>
+                    <div className="w-[1px] h-6 bg-border mx-1 my-auto" />
                     {ALL_THEMES_WITH_GLOBAL.map((themeData) => (
                         <Button
                             key={themeData.theme}
                             variant={activeThemeName === themeData.theme ? "default" : "outline"}
                             onClick={() => {
                                 setActiveThemeName(themeData.theme);
-                                // No need to manually reset here as useEffect will handle it
+                                setSelectedExPostItem(themeData.items[0] || null);
                             }}
                             className="rounded-full px-4 h-9 text-xs font-bold uppercase tracking-wider"
                         >
@@ -237,111 +259,205 @@ export default function ExPost2025Page() {
 
 
             {/* Stats Summary Area */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                <StatCard title="Total Firms" value={stats.totalInstitutions} icon={Target} color="text-blue-500" />
-                <StatCard title="Avg Score" value={`${stats.avgScore} pts`} icon={TrendingUp} color="text-emerald-500" />
-                <StatCard title="Excellent" value={stats.excellentCount} icon={Trophy} color="text-green-500" />
-                <StatCard title="Good/Partial" value={stats.goodCount + stats.partialCount} icon={CheckCircle2} color="text-yellow-500" />
-                <StatCard title="Weak/Failed" value={stats.weakCount + stats.failedCount} icon={XCircle} color="text-red-500" />
-                <Card className="bg-muted/30 border-dashed">
-                    <CardContent className="p-4 flex flex-col justify-center h-full text-center">
-                        <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Theme Hub</p>
-                        <p className="text-xl font-bold truncate">{activeThemeName}</p>
-                    </CardContent>
-                </Card>
-            </div>
+            {activeThemeName !== THEME_RANKING_LABEL && (
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <StatCard
+                        title="Total Firms"
+                        value={stats.totalInstitutions}
+                        icon={Target}
+                        color={activeThemeName === "GLOBAL RANKING" ? "text-indigo-600" : "text-blue-500"}
+                    />
+                    <StatCard
+                        title={activeThemeName === "GLOBAL RANKING" ? "Global Score" : "Avg Score"}
+                        value={`${stats.avgScore} pts`}
+                        icon={TrendingUp}
+                        color={activeThemeName === "GLOBAL RANKING" ? getGlobalScoreColor(stats.avgScore) : "text-emerald-500"}
+                    />
+
+                    {activeThemeName === "GLOBAL RANKING" ? (
+                        <>
+                            <StatCard
+                                title="Market Alphas"
+                                value={stats.excellentCount}
+                                icon={Zap}
+                                color="text-green-600"
+                            />
+                            <StatCard
+                                title="Market Leaders"
+                                value={stats.goodCount}
+                                icon={Trophy}
+                                color="text-slate-950"
+                            />
+                            <StatCard
+                                title="Consistent"
+                                value={stats.partialCount}
+                                icon={CheckCircle2}
+                                color="text-yellow-600"
+                            />
+                            <StatCard
+                                title="Lagging"
+                                value={stats.weakCount}
+                                icon={AlertTriangle}
+                                color="text-red-500"
+                            />
+                        </>
+                    ) : (
+                        <>
+                            <StatCard
+                                title="Excellent"
+                                value={stats.excellentCount}
+                                icon={Trophy}
+                                color="text-green-500"
+                            />
+                            <StatCard
+                                title="Good/Partial"
+                                value={stats.goodCount + stats.partialCount}
+                                icon={CheckCircle2}
+                                color="text-yellow-500"
+                            />
+                            <StatCard
+                                title="Weak/Failed"
+                                value={stats.weakCount + stats.failedCount}
+                                icon={XCircle}
+                                color="text-red-500"
+                            />
+                            <Card className="bg-muted/30 border-dashed">
+                                <CardContent className="p-4 flex flex-col justify-center h-full text-center">
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Theme Hub</p>
+                                    <p className="text-xl font-bold truncate">{activeThemeName}</p>
+                                </CardContent>
+                            </Card>
+                        </>
+                    )}
+                </div>
+            )}
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                {/* Sidebar: Ranking List */}
-                <div className="lg:col-span-4 space-y-4">
-                    <div className="flex items-center gap-2 mb-4">
-                        <div className="relative flex-1">
-                            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                            <Input
-                                placeholder="Search firm..."
-                                className="pl-9"
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
-                            />
-                        </div>
-                    </div>
-
-                    <Card className="max-h-[800px] overflow-auto">
-                        <CardHeader className="bg-muted/20 pb-4">
-                            <div className="flex justify-between items-center">
-                                <CardTitle className="text-sm font-bold uppercase tracking-wider">Performance Ranking</CardTitle>
-                                <Badge variant="outline">Score-Based</Badge>
-                            </div>
-                        </CardHeader>
-                        <CardContent className="p-0">
-                            <div className="divide-y">
-                                {filteredItems.map((item, index) => (
-                                    <button
-                                        key={item.id}
-                                        onClick={() => setSelectedExPostItem(item)}
-                                        className={cn(
-                                            "w-full text-left p-4 hover:bg-muted/50 transition-colors flex items-center justify-between gap-4",
-                                            selectedExPostItem?.id === item.id ? "bg-primary/5 border-l-4 border-l-primary" : "border-l-4 border-l-transparent"
-                                        )}
-                                    >
-                                        <div className="flex items-center gap-3">
-                                            <div className="flex flex-col items-center">
-                                                <span className="text-sm font-bold text-muted-foreground">
-                                                    {activeThemeName === "GLOBAL RANKING" ? <Trophy className="h-3.5 w-3.5 text-yellow-500" /> : `#${index + 1}`}
-                                                </span>
-                                                {activeThemeName !== "GLOBAL RANKING" && (
-                                                    item.Rank < item.Original_Rank ? (
-                                                        <ArrowUpRight className="h-3 w-3 text-green-500" />
-                                                    ) : item.Rank > item.Original_Rank ? (
-                                                        <ArrowDownRight className="h-3 w-3 text-red-500" />
-                                                    ) : (
-                                                        <Minus className="h-3 w-3 text-gray-400" />
-                                                    )
-                                                )}
-                                            </div>
-                                            <div>
-                                                <p className="font-semibold text-sm line-clamp-1">{item.Institution}</p>
-                                                {activeThemeName !== "GLOBAL RANKING" && (
-                                                    <p className="text-xs text-muted-foreground">Ex-Ante Rank: #{item.Original_Rank}</p>
-                                                )}
-                                            </div>
-                                        </div>
-                                        <div className="text-right">
-                                            <div className={cn("text-sm font-bold", getClassificationColor(item.classification))}>
-                                                {item.score} pts
-                                            </div>
-                                        </div>
-                                    </button>
-                                ))}
-                            </div>
-                        </CardContent>
-                    </Card>
-                </div>
-
-                {/* Main Content: Analysis Detail */}
-                <div className="lg:col-span-8 space-y-6">
-                    {!selectedExPostItem ? (
-                        <div className="h-full flex flex-col items-center justify-center p-12 text-center border-2 border-dashed rounded-xl bg-muted/10">
-                            <FileText className="h-16 w-16 text-muted-foreground/20 mb-4" />
-                            <h3 className="text-xl font-bold">Select a Firm</h3>
-                            <p className="text-muted-foreground max-w-xs">Select an institution from the ranking to see their detailed ex-post analysis.</p>
-                        </div>
-                    ) : (
-                        <AnalysisDetail
-                            item={selectedExPostItem}
+                {activeThemeName === THEME_RANKING_LABEL ? (
+                    <div className="lg:col-span-12">
+                        <ThemePerformanceRanking
                             onNavigate={(theme, instName) => {
                                 const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
                                 if (targetTheme) {
                                     setActiveThemeName(theme);
                                     const targetItem = targetTheme.items.find(i => i.Institution === instName);
-                                    if (targetItem) {
-                                        setSelectedExPostItem(targetItem);
-                                    }
+                                    setSelectedExPostItem(targetItem || targetTheme.items[0] || null);
                                 }
                             }}
                         />
-                    )}
-                </div>
+                    </div>
+                ) : (
+                    <>
+                        {/* Sidebar: Ranking List */}
+                        <div className="lg:col-span-4 space-y-4">
+                            <div className="flex items-center gap-2 mb-4">
+                                <div className="relative flex-1">
+                                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                                    <Input
+                                        placeholder="Search firm..."
+                                        className="pl-9"
+                                        value={searchQuery}
+                                        onChange={(e) => setSearchQuery(e.target.value)}
+                                    />
+                                </div>
+                            </div>
+
+                            <Card className="max-h-[800px] overflow-auto">
+                                <CardHeader className={cn(
+                                    "pb-4",
+                                    activeThemeName === "GLOBAL RANKING" ? "bg-indigo-500/5" : "bg-muted/20"
+                                )}>
+                                    <div className="flex justify-between items-center">
+                                        <CardTitle className="text-sm font-bold uppercase tracking-wider">Performance Ranking</CardTitle>
+                                        <Badge
+                                            variant={activeThemeName === "GLOBAL RANKING" ? "default" : "outline"}
+                                            className={cn(
+                                                activeThemeName === "GLOBAL RANKING" && "bg-indigo-600 hover:bg-indigo-700"
+                                            )}
+                                        >
+                                            Score-Based
+                                        </Badge>
+                                    </div>
+                                </CardHeader>
+                                <CardContent className="p-0">
+                                    <div className="divide-y">
+                                        {filteredItems.map((item, index) => (
+                                            <button
+                                                key={item.id}
+                                                onClick={() => setSelectedExPostItem(item)}
+                                                className={cn(
+                                                    "w-full text-left p-4 hover:bg-muted/50 transition-colors flex items-center justify-between gap-4",
+                                                    selectedExPostItem?.id === item.id
+                                                        ? (activeThemeName === "GLOBAL RANKING" ? "bg-indigo-500/5 border-l-4 border-l-indigo-600" : "bg-primary/5 border-l-4 border-l-primary")
+                                                        : "border-l-4 border-l-transparent"
+                                                )}
+                                            >
+                                                <div className="flex items-center gap-3">
+                                                    <div className="flex flex-col items-center">
+                                                        <span className="text-sm font-bold text-muted-foreground">
+                                                            {activeThemeName === "GLOBAL RANKING" ? <Trophy className="h-3.5 w-3.5 text-indigo-500" /> : `#${index + 1}`}
+                                                        </span>
+                                                        {activeThemeName !== "GLOBAL RANKING" && (
+                                                            item.Rank < item.Original_Rank ? (
+                                                                <ArrowUpRight className="h-3 w-3 text-green-500" />
+                                                            ) : item.Rank > item.Original_Rank ? (
+                                                                <ArrowDownRight className="h-3 w-3 text-red-500" />
+                                                            ) : (
+                                                                <Minus className="h-3 w-3 text-gray-400" />
+                                                            )
+                                                        )}
+                                                    </div>
+                                                    <div>
+                                                        <p className={cn(
+                                                            "font-semibold text-sm line-clamp-1",
+                                                            activeThemeName === "GLOBAL RANKING" && selectedExPostItem?.id === item.id && "text-indigo-700"
+                                                        )}>{item.Institution}</p>
+                                                        {activeThemeName !== "GLOBAL RANKING" && (
+                                                            <p className="text-xs text-muted-foreground">Ex-Ante Rank: #{item.Original_Rank}</p>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                                <div className="text-right">
+                                                    <div className={cn(
+                                                        "text-sm font-bold",
+                                                        activeThemeName === "GLOBAL RANKING"
+                                                            ? getGlobalScoreColor(item.score)
+                                                            : getClassificationColor(item.classification)
+                                                    )}>
+                                                        {item.score} pts
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        ))}
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+
+                        {/* Main Content: Analysis Detail */}
+                        <div className="lg:col-span-8 space-y-6">
+                            {!selectedExPostItem ? (
+                                <div className="h-full flex flex-col items-center justify-center p-12 text-center border-2 border-dashed rounded-xl bg-muted/10">
+                                    <FileText className="h-16 w-16 text-muted-foreground/20 mb-4" />
+                                    <h3 className="text-xl font-bold">Select a Firm</h3>
+                                    <p className="text-muted-foreground max-w-xs">Select an institution from the ranking to see their detailed ex-post analysis.</p>
+                                </div>
+                            ) : (
+                                <AnalysisDetail
+                                    item={selectedExPostItem}
+                                    onNavigate={(theme, instName) => {
+                                        const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
+                                        if (targetTheme) {
+                                            setActiveThemeName(theme);
+                                            const targetItem = targetTheme.items.find(i => i.Institution === instName);
+                                            setSelectedExPostItem(targetItem || targetTheme.items[0] || null);
+                                        }
+                                    }}
+                                />
+                            )}
+                        </div>
+                    </>
+                )}
             </div>
         </div>
     );
@@ -356,7 +472,7 @@ function StatCard({ title, value, icon: Icon, color }: any) {
                 </div>
                 <div>
                     <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">{title}</p>
-                    <p className="text-lg font-extrabold line-clamp-1">{value}</p>
+                    <p className={cn("text-lg font-extrabold line-clamp-1", color)}>{value}</p>
                 </div>
             </CardContent>
         </Card>
@@ -411,7 +527,10 @@ function AnalysisDetail({
                         {item.theme === "Global" && (
                             <div className="bg-background/50 p-4 rounded-2xl border-2 shadow-sm">
                                 <span className="text-[10px] uppercase font-black text-muted-foreground block mb-1">Aggregate Accuracy Score</span>
-                                <span className={cn("text-4xl font-black", getClassificationColor(item.classification))}>{item.score} pts</span>
+                                <span className={cn(
+                                    "text-4xl font-black",
+                                    getGlobalScoreColor(item.score)
+                                )}>{item.score} pts</span>
                             </div>
                         )}
                     </div>
@@ -480,7 +599,19 @@ function AnalysisDetail({
                                         <div className="p-2 rounded-lg bg-primary/10">
                                             <ThemeIcon theme={tb.theme} className="h-4 w-4 text-primary" />
                                         </div>
-                                        <Badge variant="outline" className="text-[10px] font-bold">{tb.score} PTS</Badge>
+                                        <Badge
+                                            variant="outline"
+                                            className={cn(
+                                                "text-[10px] font-bold",
+                                                tb.score >= 90 ? "text-green-500 border-green-500/50 bg-green-500/10" :
+                                                    tb.score >= 75 ? "text-emerald-500 border-emerald-500/50 bg-emerald-500/10" :
+                                                        tb.score >= 60 ? "text-yellow-500 border-yellow-500/50 bg-yellow-500/10" :
+                                                            tb.score >= 40 ? "text-orange-500 border-orange-500/50 bg-orange-500/10" :
+                                                                "text-red-500 border-red-500/50 bg-red-500/10"
+                                            )}
+                                        >
+                                            {tb.score} PTS
+                                        </Badge>
                                     </div>
                                     <div>
                                         <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mb-1">{tb.theme}</p>
@@ -572,9 +703,166 @@ function OutcomeBadge({ label, count, color }: any) {
     );
 }
 
+const THEME_COLORS: Record<string, string> = {
+    "BASE CASE": "#3b82f6", // Blue
+    "GROWTH": "#10b981",    // Emerald
+    "INFLATION": "#ef4444", // Red
+    "MONETARY POLICY": "#8b5cf6", // Violet
+    "FISCAL": "#f59e0b",    // Amber
+    "TARIFFS": "#f43f5e",   // Rose
+    "STOCKS": "#06b6d4",    // Cyan
+    "BONDS": "#6366f1",     // Indigo
+    "CREDIT": "#14b8a6",    // Teal
+    "COMMODITIES": "#84cc16", // Lime
+    "CURRENCIES": "#ec4899", // Pink
+    "ALTERNATIVE ASSETS": "#f97316", // Orange
+    "MULTI ASSET": "#0ea5e9", // Sky
+    "AI": "#d946ef",        // Fuchsia
+    "RISKS": "#64748b",      // Slate
+    "DEFAULT": "#94a3b8"
+};
+
+function ThemePerformanceRanking({ onNavigate }: { onNavigate: (theme: string, institution: string) => void }) {
+    return (
+        <div className="pt-4">
+            <RankMigrationChart onNavigate={onNavigate} />
+        </div>
+    );
+}
+
+function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, institution: string) => void }) {
+    const convictionData = useMemo(() => getThemeRankingByConviction(), []);
+    const accuracyData = useMemo(() => getThemeRanking(), []);
+    const [hoveredTheme, setHoveredTheme] = useState<string | null>(null);
+
+    const THEME_HEIGHT = 45;
+    const SVG_HEIGHT = convictionData.length * THEME_HEIGHT + 100;
+    const SVG_WIDTH = 1000;
+    const COLUMN_WIDTH = 250;
+
+    return (
+        <Card className="min-h-[600px] overflow-hidden bg-background/50 border-2">
+            <CardHeader className="bg-muted/10 border-b">
+                <div className="flex justify-between items-center">
+                    <div className="text-center w-[250px]">
+                        <Badge variant="outline" className="mb-1">EX-ANTE</Badge>
+                        <CardTitle className="text-sm font-black uppercase text-muted-foreground">Institutional Conviction</CardTitle>
+                    </div>
+                    <div className="text-center flex-1 italic text-xs text-muted-foreground">
+                        Trace the evolution of market priorities vs reality (Click theme to explore)
+                    </div>
+                    <div className="text-center w-[250px]">
+                        <Badge variant="outline" className="mb-1">EX-POST</Badge>
+                        <CardTitle className="text-sm font-black uppercase text-muted-foreground">Prediction Accuracy</CardTitle>
+                    </div>
+                </div>
+            </CardHeader>
+            <CardContent className="p-8">
+                <svg viewBox={`0 0 ${SVG_WIDTH} ${SVG_HEIGHT}`} className="w-full h-auto overflow-visible select-none">
+                    {/* Connecting Lines */}
+                    {convictionData.map((exAnte, exAnteIdx) => {
+                        const exPostIdx = accuracyData.findIndex(t => t.theme === exAnte.theme);
+                        const exPost = accuracyData[exPostIdx];
+                        const color = THEME_COLORS[exAnte.theme] || THEME_COLORS["DEFAULT"];
+                        const isHovered = hoveredTheme === exAnte.theme;
+
+                        const y1 = exAnteIdx * THEME_HEIGHT + 50;
+                        const y2 = exPostIdx * THEME_HEIGHT + 50;
+                        const x1 = COLUMN_WIDTH + 20;
+                        const x2 = SVG_WIDTH - COLUMN_WIDTH - 20;
+
+                        return (
+                            <path
+                                key={exAnte.theme}
+                                d={`M ${x1} ${y1} C ${(x1 + x2) / 2} ${y1}, ${(x1 + x2) / 2} ${y2}, ${x2} ${y2}`}
+                                fill="none"
+                                stroke={color}
+                                strokeWidth={isHovered ? 4 : 2}
+                                opacity={hoveredTheme ? (isHovered ? 1 : 0.1) : 0.4}
+                                className="transition-all duration-300"
+                            />
+                        );
+                    })}
+
+                    {/* Left Column (Conviction) */}
+                    {convictionData.map((t, idx) => (
+                        <g
+                            key={`left-${t.theme}`}
+                            className="cursor-pointer group"
+                            onMouseEnter={() => setHoveredTheme(t.theme)}
+                            onMouseLeave={() => setHoveredTheme(null)}
+                            onClick={() => onNavigate(t.theme, "")}
+                        >
+                            <rect
+                                x={0}
+                                y={idx * THEME_HEIGHT + 30}
+                                width={COLUMN_WIDTH}
+                                height={36}
+                                rx={8}
+                                fill={hoveredTheme === t.theme ? THEME_COLORS[t.theme] : "white"}
+                                stroke={THEME_COLORS[t.theme] || THEME_COLORS["DEFAULT"]}
+                                strokeWidth={1}
+                                className="transition-all duration-200"
+                                opacity={hoveredTheme && hoveredTheme !== t.theme ? 0.3 : 1}
+                            />
+                            <text
+                                x={15}
+                                y={idx * THEME_HEIGHT + 53}
+                                className={cn(
+                                    "text-[10px] font-black uppercase transition-colors",
+                                    hoveredTheme === t.theme ? "fill-white" : "fill-foreground"
+                                )}
+                                opacity={hoveredTheme && hoveredTheme !== t.theme ? 0.3 : 1}
+                            >
+                                <tspan x={15} dy="0">#{idx + 1} {t.theme.length > 25 ? t.theme.slice(0, 22) + "..." : t.theme}</tspan>
+                            </text>
+                        </g>
+                    ))}
+
+                    {/* Right Column (Accuracy) */}
+                    {accuracyData.map((t, idx) => (
+                        <g
+                            key={`right-${t.theme}`}
+                            className="cursor-pointer"
+                            onMouseEnter={() => setHoveredTheme(t.theme)}
+                            onMouseLeave={() => setHoveredTheme(null)}
+                            onClick={() => onNavigate(t.theme, "")}
+                        >
+                            <rect
+                                x={SVG_WIDTH - COLUMN_WIDTH}
+                                y={idx * THEME_HEIGHT + 30}
+                                width={COLUMN_WIDTH}
+                                height={36}
+                                rx={8}
+                                fill={hoveredTheme === t.theme ? THEME_COLORS[t.theme] : "white"}
+                                stroke={THEME_COLORS[t.theme] || THEME_COLORS["DEFAULT"]}
+                                strokeWidth={1}
+                                className="transition-all duration-200"
+                                opacity={hoveredTheme && hoveredTheme !== t.theme ? 0.3 : 1}
+                            />
+                            <text
+                                x={SVG_WIDTH - COLUMN_WIDTH + 15}
+                                y={idx * THEME_HEIGHT + 53}
+                                className={cn(
+                                    "text-[10px] font-black uppercase transition-colors",
+                                    hoveredTheme === t.theme ? "fill-white" : "fill-foreground"
+                                )}
+                                opacity={hoveredTheme && hoveredTheme !== t.theme ? 0.3 : 1}
+                            >
+                                <tspan x={SVG_WIDTH - COLUMN_WIDTH + 15} dy="0">#{idx + 1} {t.theme.length > 20 ? t.theme.slice(0, 18) + "..." : t.theme} ({t.avgScore}%)</tspan>
+                            </text>
+                        </g>
+                    ))}
+                </svg>
+            </CardContent>
+        </Card>
+    );
+}
+
 function ThemeIcon({ theme, className }: { theme: string, className?: string }) {
     switch (theme.toUpperCase()) {
         case "GLOBAL RANKING": return <Trophy className={className} />;
+        case "THEME RANKING": return <BarChart3 className={className} />;
         case "AI": return <Zap className={className} />;
         case "STOCKS": return <BarChart3 className={className} />;
         case "INFLATION": return <TrendingUp className={className} />;

@@ -14,6 +14,7 @@ import risksData from "./expost/2025/ranking_RISKS_2025.json";
 import bondsData from "./expost/2025/ranking_BONDS_2025.json";
 import stocksData from "./expost/2025/ranking_STOCKS_2025.json";
 import tariffsData from "./expost/2025/ranking_TARIFFS_2025.json";
+import themeConvictionData from "./expost/2025/theme_conviction_ranking.json";
 
 // Process and enrich the data with theme information
 const processData = (data: any[], theme: string): ExPostItem[] => {
@@ -247,11 +248,11 @@ export const getAggregateThemeData = (themes: ThemeData[]): ThemeData => {
         themeStats: {
             totalInstitutions: aggregate.length,
             avgScore: Math.round((aggregate.reduce((acc: number, a: AggregateRankingItem) => acc + a.totalScore, 0) / aggregate.length) * 10) / 10,
-            excellentCount: items.filter(i => i.classification === "EXCELLENT").length,
-            goodCount: items.filter(i => i.classification === "GOOD").length,
-            partialCount: items.filter(i => i.classification === "PARTIAL").length,
-            weakCount: items.filter(i => i.classification === "WEAK").length,
-            failedCount: items.filter(i => i.classification === "FAILED").length,
+            excellentCount: items.filter(i => i.score >= 800).length,
+            goodCount: items.filter(i => i.score >= 650 && i.score < 800).length,
+            partialCount: items.filter(i => i.score >= 450 && i.score < 650).length,
+            weakCount: items.filter(i => i.score < 450).length,
+            failedCount: 0,
         }
     };
 };
@@ -265,4 +266,32 @@ export const ALL_THEMES_WITH_GLOBAL: ThemeData[] = [
 ];
 
 export const TOP_5_INSTITUTIONS = getAggregateRanking(ALL_THEMES).slice(0, 5);
+
+export const getThemeRanking = () => {
+    return ALL_THEMES
+        .map(t => {
+            const conviction = themeConvictionData.find(c => c.theme === t.theme);
+            return {
+                theme: t.theme,
+                avgScore: t.themeStats.avgScore,
+                totalInstitutions: t.themeStats.totalInstitutions,
+                convictionRank: conviction ? conviction.rank : 99
+            };
+        })
+        .sort((a, b) => b.avgScore - a.avgScore);
+};
+
+export const getThemeRankingByConviction = () => {
+    return ALL_THEMES
+        .map(t => {
+            const conviction = themeConvictionData.find(c => c.theme === t.theme);
+            return {
+                theme: t.theme,
+                avgScore: t.themeStats.avgScore,
+                totalInstitutions: t.themeStats.totalInstitutions,
+                convictionRank: conviction ? conviction.rank : 99
+            };
+        })
+        .sort((a, b) => a.convictionRank - b.convictionRank);
+};
 

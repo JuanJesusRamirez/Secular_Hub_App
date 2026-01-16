@@ -20,7 +20,7 @@ function OverviewContent() {
   const [data, setData] = useState<OverviewResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [viewMode, setViewMode] = useState<'default' | 'manus' | 'assets'>('default');
+  const [viewMode, setViewMode] = useState<'default' | 'manus' | 'assets'>('manus');
 
   useEffect(() => {
     async function fetchOverview() {
@@ -50,27 +50,8 @@ function OverviewContent() {
     }
   };
 
-  if (viewMode !== 'default') {
-    return (
-      <div className="space-y-4 animate-in slide-in-from-right duration-500">
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" onClick={() => setViewMode('default')} className="gap-2">
-            <ArrowLeft className="h-4 w-4" />
-            Back to Outlook 2026
-          </Button>
-        </div>
-        {viewMode === 'manus' && <ManusReport />}
-        {viewMode === 'assets' && (
-          <div className="border rounded-xl shadow-sm overflow-hidden">
-            <AssetsDashboard />
-          </div>
-        )}
-      </div>
-    );
-  }
-
   return (
-    <div className="space-y-4 animate-in fade-in duration-500">
+    <div className="space-y-6 animate-in fade-in duration-500">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -98,14 +79,45 @@ function OverviewContent() {
         </div>
       )}
 
-      {/* Executive Briefing (Hero) */}
+      {/* Executive Briefing - Blue Box */}
       <ExecutiveBriefing
         data={data}
         isLoading={loading}
         onThemeClick={handleThemeClick}
       />
 
+      {/* Deep Dive Analysis Section */}
+      <div className="space-y-4">
+        {/* Buttons Below the Blue Box */}
+        <div className="flex gap-3 justify-center">
+          <Button
+            onClick={() => setViewMode('manus')}
+            variant={viewMode === 'manus' ? 'default' : 'outline'}
+            size="lg"
+            className="min-w-[200px] font-semibold"
+          >
+            OUTLOOK ANALYSIS
+          </Button>
+          <Button
+            onClick={() => setViewMode('assets')}
+            variant={viewMode === 'assets' ? 'default' : 'outline'}
+            size="lg"
+            className="min-w-[200px] font-semibold"
+          >
+            INTEREST TOPICS
+          </Button>
+        </div>
 
+        {/* Content Area */}
+        <div className="animate-in fade-in duration-500">
+          {viewMode === 'manus' && <ManusReport />}
+          {viewMode === 'assets' && (
+            <div className="border rounded-xl shadow-sm overflow-hidden">
+              <AssetsDashboard />
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

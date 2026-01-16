@@ -57,44 +57,11 @@ export function ExecutiveBriefing({ data, isLoading, onThemeClick }: ExecutiveBr
           </h1>
         </div>
 
-        {/* Content Area with Narrative and Buttons side-by-side */}
-        <div className="flex flex-col md:flex-row gap-8 items-start">
-          {/* Left Side: Narrative */}
-          <div className="flex-1">
-            <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
-              {narrative}
-            </p>
-          </div>
-
-          {/* Right Side: Square Buttons */}
-          <div className="w-full md:w-auto md:min-w-[200px] space-y-3">
-            <span className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider block mb-2">
-              Deep Dive Analysis
-            </span>
-            <div className="flex flex-col gap-3">
-              {data.topThemes
-                .filter(themeData => ["STOCKS", "BONDS"].includes(themeData.theme))
-                .map((themeData) => {
-                  let displayName = themeData.theme;
-                  if (themeData.theme === "STOCKS") displayName = "OUTLOOK ANALYSIS";
-                  if (themeData.theme === "BONDS") displayName = "INTEREST TOPICS";
-
-                  return (
-                    <Button
-                      key={themeData.theme}
-                      onClick={() => onThemeClick?.(displayName)}
-                      variant="default"
-                      className="w-full h-12 rounded-md font-bold text-xs uppercase tracking-wide shadow-sm hover:scale-[1.02] transition-transform"
-                    >
-                      {displayName}
-                    </Button>
-                  );
-                })}
-              {data.topThemes.filter(t => ["STOCKS", "BONDS"].includes(t.theme)).length === 0 && (
-                <span className="text-xs text-muted-foreground italic">No themes data available</span>
-              )}
-            </div>
-          </div>
+        {/* Content Area with Narrative */}
+        <div className="flex-1">
+          <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+            {narrative}
+          </p>
         </div>
 
         {/* Footer stats */}

@@ -2,10 +2,7 @@
 
 
 import { useEffect, useState, Suspense } from "react";
-import { useSelectedYear } from "@/lib/hooks/use-selected-year";
 import { ExecutiveBriefing } from "@/components/overview/executive-briefing";
-import { AnalyticsGrid } from "@/components/overview/analytics-grid";
-import { YearSelect } from "@/components/overview/year-select";
 import { OverviewResponse } from "@/lib/db/queries";
 import { Info, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,7 +16,7 @@ import {
 } from "@/components/ui/tooltip";
 
 function OverviewContent() {
-  const { yearNum } = useSelectedYear();
+  const yearNum = 2026; // Fixed to 2026 only
   const [data, setData] = useState<OverviewResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -55,11 +52,11 @@ function OverviewContent() {
 
   if (viewMode !== 'default') {
     return (
-      <div className="space-y-6 animate-in slide-in-from-right duration-500">
+      <div className="space-y-4 animate-in slide-in-from-right duration-500">
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="sm" onClick={() => setViewMode('default')} className="gap-2">
             <ArrowLeft className="h-4 w-4" />
-            Back to Executive Overview
+            Back to Outlook 2026
           </Button>
         </div>
         {viewMode === 'manus' && <ManusReport />}
@@ -73,11 +70,11 @@ function OverviewContent() {
   }
 
   return (
-    <div className="space-y-6 animate-in fade-in duration-500">
+    <div className="space-y-4 animate-in fade-in duration-500">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <h1 className="text-2xl font-bold tracking-tight">Executive Overview</h1>
+          <h1 className="text-2xl font-bold tracking-tight">Outlook 2026</h1>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -92,7 +89,6 @@ function OverviewContent() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <YearSelect />
       </div>
 
       {/* Error State */}
@@ -109,8 +105,7 @@ function OverviewContent() {
         onThemeClick={handleThemeClick}
       />
 
-      {/* Analytics Grid (4 Tiles) */}
-      <AnalyticsGrid data={data} isLoading={loading} />
+
     </div>
   );
 }
@@ -125,7 +120,7 @@ export default function OverviewPage() {
 
 function OverviewLoadingSkeleton() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <div className="flex items-center justify-between">
         <div className="h-8 w-48 bg-muted rounded animate-pulse" />
         <div className="h-10 w-32 bg-muted rounded animate-pulse" />

@@ -60,40 +60,60 @@ export default function AssetCard({
 
                             {/* Descripción */}
                             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                                {description.substring(0, 150)}...
+                                {isExpanded ? description : `${description.substring(0, 150)}...`}
                             </p>
 
-                            {/* Barra de distribución de sentimientos */}
-                            <div className="flex items-center gap-2 mb-4">
-                                <div className="flex-1 flex gap-0.5 h-2 bg-slate-100 rounded overflow-hidden">
+                            {/* Distribución de sentimientos: Barra + Leyenda explicativa */}
+                            <div className="space-y-3 mb-4">
+                                {/* Barra visual */}
+                                <div className="flex h-2.5 bg-slate-100 rounded-full overflow-hidden">
                                     {percentages.Bullish > 0 && (
                                         <div
-                                            className="bg-green-500"
+                                            className="bg-green-500 border-r border-white/10"
                                             style={{ width: `${percentages.Bullish}%` }}
-                                            title={`Bullish: ${percentages.Bullish}%`}
                                         />
                                     )}
                                     {percentages.Neutral > 0 && (
                                         <div
-                                            className="bg-slate-400"
+                                            className="bg-slate-400 border-r border-white/10"
                                             style={{ width: `${percentages.Neutral}%` }}
-                                            title={`Neutral: ${percentages.Neutral}%`}
                                         />
                                     )}
                                     {percentages.Bearish > 0 && (
                                         <div
                                             className="bg-red-500"
                                             style={{ width: `${percentages.Bearish}%` }}
-                                            title={`Bearish: ${percentages.Bearish}%`}
                                         />
+                                    )}
+                                </div>
+
+                                {/* Leyenda con porcentajes */}
+                                <div className="flex flex-wrap gap-x-5 gap-y-2 text-[10px] font-bold uppercase tracking-wider">
+                                    {percentages.Bullish > 0 && (
+                                        <div className="flex items-center gap-2 text-green-700">
+                                            <div className="w-2 h-2 rounded-full bg-green-500" />
+                                            <span>Bullish {percentages.Bullish}%</span>
+                                        </div>
+                                    )}
+                                    {percentages.Neutral > 0 && (
+                                        <div className="flex items-center gap-2 text-slate-500">
+                                            <div className="w-2 h-2 rounded-full bg-slate-400" />
+                                            <span>Neutral {percentages.Neutral}%</span>
+                                        </div>
+                                    )}
+                                    {percentages.Bearish > 0 && (
+                                        <div className="flex items-center gap-2 text-red-600">
+                                            <div className="w-2 h-2 rounded-full bg-red-500" />
+                                            <span>Bearish {percentages.Bearish}%</span>
+                                        </div>
                                     )}
                                 </div>
                             </div>
 
                             {/* Estadísticas */}
                             <div className="flex flex-wrap gap-4 text-xs text-muted-foreground">
-                                <span>📊 {calls_count} análisis</span>
-                                <span>🏢 {institutions_count} instituciones</span>
+                                <span>📊 {calls_count} analyses</span>
+                                <span>🏢 {institutions_count} institutions</span>
                             </div>
                         </div>
 
@@ -106,30 +126,13 @@ export default function AssetCard({
                     {/* Contenido expandido */}
                     {isExpanded && (
                         <div className="mt-6 pt-6 border-t border-border space-y-4">
-                            {/* Sub-temas */}
-                            {sub_themes.length > 0 && (
-                                <div>
-                                    <p className="text-xs font-medium text-muted-foreground uppercase tracking-widest mb-2">
-                                        Temas Relacionados
-                                    </p>
-                                    <div className="flex flex-wrap gap-2">
-                                        {sub_themes.map((theme, idx) => (
-                                            <span
-                                                key={idx}
-                                                className="inline-block px-2 py-1 text-xs bg-slate-100 text-slate-700 rounded"
-                                            >
-                                                {theme}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
+
 
                             {/* Instituciones principales */}
                             {institutions.length > 0 && (
                                 <div>
                                     <p className="text-xs font-medium text-muted-foreground uppercase tracking-widest mb-2">
-                                        Instituciones Principales
+                                        Key Institutions
                                     </p>
                                     <div className="flex flex-wrap gap-2">
                                         {institutions.map((inst, idx) => (
@@ -144,42 +147,8 @@ export default function AssetCard({
                                 </div>
                             )}
 
-                            {/* Distribución de sentimientos detallada */}
-                            <div>
-                                <p className="text-xs font-medium text-muted-foreground uppercase tracking-widest mb-3">
-                                    Distribución de Sentimientos
-                                </p>
-                                <div className="space-y-2">
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-sm text-green-700 font-medium">Alcista</span>
-                                        <span className="text-sm font-semibold text-green-700">
-                                            {sentiment_distribution.Bullish || 0} ({percentages.Bullish}%)
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-sm text-slate-700 font-medium">Neutral</span>
-                                        <span className="text-sm font-semibold text-slate-700">
-                                            {sentiment_distribution.Neutral || 0} ({percentages.Neutral}%)
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-sm text-red-700 font-medium">Bajista</span>
-                                        <span className="text-sm font-semibold text-red-700">
-                                            {sentiment_distribution.Bearish || 0} ({percentages.Bearish}%)
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
 
-                            {/* Descripción completa */}
-                            <div>
-                                <p className="text-xs font-medium text-muted-foreground uppercase tracking-widest mb-2">
-                                    Expectativas del Mercado
-                                </p>
-                                <p className="text-sm text-foreground leading-relaxed">
-                                    {description}
-                                </p>
-                            </div>
+
                         </div>
                     )}
                 </button>

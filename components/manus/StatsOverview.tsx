@@ -11,7 +11,7 @@ interface StatsOverviewProps {
 
 export default function StatsOverview({ stats }: StatsOverviewProps) {
     return (
-        <div className="py-16">
+        <div className="py-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                 {stats.map((stat, index) => (
                     <div key={index} className="flex flex-col">

@@ -6,7 +6,7 @@ export interface YearlyBriefing {
 export const YEARLY_BRIEFINGS: Record<number, YearlyBriefing> = {
   2026: {
     subtitle: "Capex + Policy Equal Growth",
-    narrative: "Wall Street is modestly optimistic about 2026, with capital expenditure and supportive policy driving growth expectations.",
+    narrative: "The global economy is expected to grow steadily around 2.6% to 3.1% in 2026, supported primarily by sustained AI-driven capital investment and accommodative fiscal and monetary policies.\n\nThe US is projected to expand between 2.25% and 2.8%, benefiting from easing tariff pressures, tax incentives, and a softening labor market.\n\nWhile growth momentum may moderate compared to 2025, recession risks remain low, though geopolitical tensions, trade uncertainties, and uneven regional performance pose notable downside risks.\n\nInvestors should adopt a cautiously constructive stance, favoring equities and credit with diversification across sectors and regions, while remaining vigilant to volatility and potential policy shifts that could impact inflation and asset valuations.",
   },
   2025: {
     subtitle: "Inflation Watch Continues",

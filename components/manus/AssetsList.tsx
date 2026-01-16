@@ -25,8 +25,8 @@ interface AssetsListProps {
 
 export default function AssetsList({
     assets,
-    title = 'Análisis de Assets 2026',
-    description = 'Sentimiento de mercado y expectativas por clase de activo'
+    title = '2026 Asset Analysis',
+    description = 'Market sentiment and expectations by asset class'
 }: AssetsListProps) {
     const [selectedSentiment, setSelectedSentiment] = useState<'All' | 'Bullish' | 'Bearish' | 'Neutral'>('All');
 
@@ -43,58 +43,69 @@ export default function AssetsList({
         Bearish: Object.values(assets).filter(a => a.sentiment === 'Bearish').length
     };
 
-    return (
-        <section className="py-16">
-            <div className="mb-12">
-                <h2 className="text-3xl font-bold text-primary mb-3">
-                    {title}
-                </h2>
-                {description && (
-                    <p className="text-base text-muted-foreground mb-6">
-                        {description}
-                    </p>
-                )}
+    const stats = {
+        bullish: sentimentCounts.Bullish,
+        neutral: sentimentCounts.Neutral,
+        bearish: sentimentCounts.Bearish,
+    };
 
-                {/* Filtros de sentimiento */}
-                <div className="flex flex-wrap gap-3">
-                    <button
-                        onClick={() => setSelectedSentiment('All')}
-                        className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${selectedSentiment === 'All'
-                                ? 'bg-primary text-primary-foreground'
-                                : 'bg-secondary text-foreground hover:bg-secondary/80'
-                            }`}
-                    >
-                        Todos ({Object.keys(assets).length})
-                    </button>
-                    <button
-                        onClick={() => setSelectedSentiment('Bullish')}
-                        className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${selectedSentiment === 'Bullish'
-                                ? 'bg-green-500 text-white'
-                                : 'bg-green-50 text-green-700 hover:bg-green-100 border border-green-200'
-                            }`}
-                    >
-                        📈 Alcista ({sentimentCounts.Bullish})
-                    </button>
-                    <button
-                        onClick={() => setSelectedSentiment('Neutral')}
-                        className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${selectedSentiment === 'Neutral'
-                                ? 'bg-slate-500 text-white'
-                                : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
-                            }`}
-                    >
-                        ➡️ Neutral ({sentimentCounts.Neutral})
-                    </button>
-                    <button
-                        onClick={() => setSelectedSentiment('Bearish')}
-                        className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${selectedSentiment === 'Bearish'
-                                ? 'bg-red-500 text-white'
-                                : 'bg-red-50 text-red-700 hover:bg-red-100 border border-red-200'
-                            }`}
-                    >
-                        📉 Bajista ({sentimentCounts.Bearish})
-                    </button>
+    return (
+        <section className="py-8">
+            <div className="mb-8">
+                <h2 className="text-3xl font-bold text-primary mb-4">{title}</h2>
+                <div className="space-y-4 max-w-3xl text-muted-foreground leading-relaxed">
+                    <p>{description}</p>
+                    <p>
+                        Sentiment analysis has been extracted using natural language processing from
+                        investment outlooks, identifying patterns of optimism, caution, and pessimism.
+                        The sentiment distribution reflects the institutional consensus on the outlook for each asset for the coming year.
+                    </p>
+                    <p className="font-medium text-slate-900 border-t border-slate-100 pt-4">
+                        Overall Sentiment: <span className="text-green-600 font-bold">{stats.bullish} bullish assets</span>, {stats.neutral} neutral, and <span className="text-red-600 font-bold">{stats.bearish} bearish</span>.
+                    </p>
                 </div>
             </div>
+
+            {/* Filtros de sentimiento */}
+            <div className="flex flex-wrap gap-3 mb-8">
+                <button
+                    onClick={() => setSelectedSentiment('All')}
+                    className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${selectedSentiment === 'All'
+                        ? 'bg-primary text-primary-foreground'
+                        : 'bg-secondary text-foreground hover:bg-secondary/80'
+                        }`}
+                >
+                    All ({Object.keys(assets).length})
+                </button>
+                <button
+                    onClick={() => setSelectedSentiment('Bullish')}
+                    className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${selectedSentiment === 'Bullish'
+                        ? 'bg-green-500 text-white'
+                        : 'bg-green-50 text-green-700 hover:bg-green-100 border border-green-200'
+                        }`}
+                >
+                    📈 Bullish ({sentimentCounts.Bullish})
+                </button>
+                <button
+                    onClick={() => setSelectedSentiment('Neutral')}
+                    className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${selectedSentiment === 'Neutral'
+                        ? 'bg-slate-500 text-white'
+                        : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
+                        }`}
+                >
+                    ➡️ Neutral ({sentimentCounts.Neutral})
+                </button>
+                <button
+                    onClick={() => setSelectedSentiment('Bearish')}
+                    className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${selectedSentiment === 'Bearish'
+                        ? 'bg-red-500 text-white'
+                        : 'bg-red-50 text-red-700 hover:bg-red-100 border border-red-200'
+                        }`}
+                >
+                    📉 Bearish ({sentimentCounts.Bearish})
+                </button>
+            </div>
+
 
             {/* Lista de assets */}
             <div className="space-y-4">
@@ -125,7 +136,7 @@ export default function AssetsList({
                 ) : (
                     <div className="text-center py-12">
                         <p className="text-muted-foreground">
-                            No hay assets con sentimiento {selectedSentiment.toLowerCase()}
+                            No assets found with {selectedSentiment.toLowerCase()} sentiment
                         </p>
                     </div>
                 )}

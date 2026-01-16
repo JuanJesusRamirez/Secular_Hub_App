@@ -85,7 +85,7 @@ export default function Dashboard2026() {
         const summary = items[0]?.Section_description;
 
         return (
-            <div key={theme} className="mb-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <div key={theme} className="mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
                 <div className="flex items-start gap-4 mb-6">
                     <div className={cn("p-3 rounded-xl bg-muted/50", config.color.replace('text-', 'bg-').replace('500', '500/10'))}>
                         <Icon className={cn("h-8 w-8", config.color)} />
@@ -178,7 +178,7 @@ export default function Dashboard2026() {
     };
 
     return (
-        <div className="space-y-8 pb-20 w-full max-w-[1920px] mx-auto">
+        <div className="space-y-6 pb-12 w-full max-w-[1920px] mx-auto">
             {/* Header Area */}
             <div className="flex flex-col xl:flex-row gap-6 justify-between items-start xl:items-center border-b pb-8 bg-background/50 backdrop-blur-sm sticky top-0 z-10 px-1 pt-4">
                 <div>
@@ -230,21 +230,21 @@ export default function Dashboard2026() {
 
             {/* Main Content */}
             <Tabs defaultValue="overview" className="w-full">
-                <TabsList className="grid w-full grid-cols-3 max-w-[600px] mb-12 mx-auto bg-muted/50 p-1">
+                <TabsList className="grid w-full grid-cols-3 max-w-[600px] mb-8 mx-auto bg-muted/50 p-1">
                     <TabsTrigger value="overview">Executive Summary</TabsTrigger>
                     <TabsTrigger value="macro">Macroeconomics</TabsTrigger>
                     <TabsTrigger value="assets">Asset Classes</TabsTrigger>
                 </TabsList>
 
-                <TabsContent value="overview" className="mt-0 space-y-16">
+                <TabsContent value="overview" className="mt-0 space-y-10">
                     {TAB_GROUPS.overview.map(theme => renderThemeSection(theme))}
                 </TabsContent>
 
-                <TabsContent value="macro" className="mt-0 space-y-16">
+                <TabsContent value="macro" className="mt-0 space-y-10">
                     {TAB_GROUPS.macro.map(theme => renderThemeSection(theme))}
                 </TabsContent>
 
-                <TabsContent value="assets" className="mt-0 space-y-16">
+                <TabsContent value="assets" className="mt-0 space-y-10">
                     {TAB_GROUPS.assets.map(theme => renderThemeSection(theme))}
                 </TabsContent>
             </Tabs>

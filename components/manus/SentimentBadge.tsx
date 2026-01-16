@@ -19,14 +19,14 @@ export default function SentimentBadge({ sentiment, size = 'md' }: SentimentBadg
             text: 'text-green-700',
             border: 'border-green-200',
             icon: TrendingUp,
-            label: 'Alcista'
+            label: 'Bullish'
         },
         Bearish: {
             bg: 'bg-red-50',
             text: 'text-red-700',
             border: 'border-red-200',
             icon: TrendingDown,
-            label: 'Bajista'
+            label: 'Bearish'
         },
         Neutral: {
             bg: 'bg-slate-50',

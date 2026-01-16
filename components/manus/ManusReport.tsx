@@ -49,7 +49,7 @@ export default function ManusReport() {
             <div className="min-h-[400px] flex items-center justify-center bg-white rounded-xl">
                 <div className="text-center">
                     <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary mb-4" />
-                    <p className="text-muted-foreground">Cargando análisis de mercado...</p>
+                    <p className="text-muted-foreground">Loading market analysis...</p>
                 </div>
             </div>
         );
@@ -68,18 +68,18 @@ export default function ManusReport() {
     const stats = [
         {
             number: String(bullishCount),
-            label: 'Assets Alcistas',
-            description: 'Sentimiento positivo del mercado'
+            label: 'Bullish Assets',
+            description: 'Positive market sentiment'
         },
         {
             number: String(totalCalls),
-            label: 'Análisis Totales',
-            description: 'Perspectivas de inversión'
+            label: 'Total Analyses',
+            description: 'Investment Outlooks'
         },
         {
             number: String(totalInstitutions),
-            label: 'Instituciones',
-            description: 'Cobertura global'
+            label: 'Institutions',
+            description: 'Global Coverage'
         }
     ];
 
@@ -92,65 +92,64 @@ export default function ManusReport() {
                 <StatsOverview stats={stats} />
 
                 {/* Divisor sutil */}
-                <div className="h-px bg-slate-100 my-12" />
+                <div className="h-px bg-slate-100 my-4" />
 
-                {/* Resumen ejecutivo */}
-                <section className="py-16">
-                    <div className="max-w-3xl">
-                        <h2 className="text-3xl font-bold text-primary mb-6">
-                            Análisis de Sentimiento 2026
+                <section className="py-8">
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="text-3xl font-bold text-primary mb-6 text-center">
+                            2026 Sentiment Analysis
                         </h2>
-                        <div className="space-y-4 text-slate-700 leading-relaxed text-lg">
+                        <div className="space-y-4 text-slate-700 leading-relaxed text-lg text-justify">
                             <p>
-                                Este informe presenta un análisis comprensivo del sentimiento de mercado para 2026, basado en {totalCalls} perspectivas de inversión de {totalInstitutions} instituciones financieras globales. Cada clase de activo ha sido evaluada en términos de su sentimiento dominante (Alcista, Neutral o Bajista) y sus expectativas estratégicas.
+                                This report presents a comprehensive analysis of market sentiment for 2026, based on {totalCalls} investment perspectives from {totalInstitutions} global financial institutions. Each asset class has been evaluated in terms of its dominant sentiment (Bullish, Neutral, or Bearish) and its strategic expectations.
                             </p>
                             <p>
-                                El análisis de sentimiento se ha extraído mediante procesamiento de lenguaje natural de los outlooks de inversión, identificando patrones de optimismo, cautela y pesimismo. La distribución de sentimientos refleja el consenso institucional sobre las perspectivas de cada asset para el próximo año.
+                                Sentiment analysis has been extracted using natural language processing from investment outlooks, identifying patterns of optimism, caution, and pessimism. The sentiment distribution reflects the institutional consensus on the outlook for each asset for the coming year.
                             </p>
-                            <p>
-                                Sentimiento general: <span className="font-semibold text-green-700">{bullishCount} assets alcistas</span>, <span className="font-semibold text-slate-700">{neutralCount} neutrales</span>, y <span className="font-semibold text-red-700">{bearishCount} bajistas</span>.
+                            <p className="text-center font-medium">
+                                Overall Sentiment: <span className="font-semibold text-green-700">{bullishCount} bullish assets</span>, <span className="font-semibold text-slate-700">{neutralCount} neutral</span>, and <span className="font-semibold text-red-700">{bearishCount} bearish</span>.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 {/* Divisor sutil */}
-                <div className="h-px bg-slate-100 my-12" />
+                <div className="h-px bg-slate-100 my-4" />
 
                 {/* Lista de assets con sentimiento */}
                 <AssetsList
                     assets={assets}
-                    title="Análisis de Assets por Sentimiento"
-                    description="Explorar el sentimiento de mercado, expectativas y distribución de opiniones institucionales para cada clase de activo"
+                    title="Asset Analysis by Sentiment"
+                    description="Explore market sentiment, expectations, and distribution of institutional opinions for each asset class"
                 />
 
-                {/* Metodología */}
-                <section className="py-16 bg-slate-50/50 rounded-xl px-8 my-12">
+                {/* Methodology */}
+                <section className="py-6 bg-slate-50/50 rounded-xl px-6 my-4">
                     <div className="max-w-3xl">
                         <h2 className="text-3xl font-bold text-primary mb-6">
-                            Metodología
+                            Methodology
                         </h2>
                         <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
                             <p>
-                                <strong>Análisis de Sentimiento:</strong> Se aplicó procesamiento de lenguaje natural a {totalCalls} perspectivas de inversión para clasificar el sentimiento de cada institución como Alcista (optimista), Neutral (equilibrado) o Bajista (pesimista).
+                                <strong>Sentiment Analysis:</strong> Natural language processing was applied to {totalCalls} investment perspectives to classify each institution's sentiment as Bullish (optimistic), Neutral (balanced), or Bearish (pessimistic).
                             </p>
                             <p>
-                                <strong>Agregación por Asset:</strong> Los sentimientos se agruparon por clase de activo, determinando el sentimiento dominante basado en la distribución de opiniones institucionales.
+                                <strong>Aggregation by Asset:</strong> Sentiments were grouped by asset class, determining the dominant sentiment based on the distribution of institutional opinions.
                             </p>
                             <p>
-                                <strong>Expectativas de Mercado:</strong> Se extrajeron las expectativas estratégicas de cada asset desde los resúmenes ejecutivos de los outlooks, proporcionando contexto sobre los factores clave que impulsan el sentimiento.
+                                <strong>Market Expectations:</strong> Strategic expectations for each asset were extracted from the executive summaries of the outlooks, providing context on the key factors driving sentiment.
                             </p>
                             <p>
-                                <strong>Cobertura Institucional:</strong> El análisis incluye perspectivas de las principales instituciones financieras globales, asegurando una representación equilibrada del consenso de mercado.
+                                <strong>Institutional Coverage:</strong> The analysis includes outlooks from major global financial institutions, ensuring a balanced representation of market consensus.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 {/* Footer */}
-                <footer className="py-12 text-center text-sm text-slate-400">
-                    <p>Informe de Análisis de Sentimiento 2026 • Perspectivas de Inversión Global</p>
-                    <p className="mt-2">Datos procesados desde {totalCalls} análisis de {totalInstitutions} instituciones financieras</p>
+                <footer className="py-8 text-center text-sm text-slate-400">
+                    <p>2026 Sentiment Analysis Report • Global Investment Outlooks</p>
+                    <p className="mt-2">Data processed from {totalCalls} analyses of {totalInstitutions} financial institutions</p>
                 </footer>
             </main>
         </div>

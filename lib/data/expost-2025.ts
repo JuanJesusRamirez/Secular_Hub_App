@@ -11,6 +11,7 @@ import inflationData from "./expost/2025/ranking_INFLATION_2025.json";
 import monetaryData from "./expost/2025/ranking_MONETARY POLICY_2025.json";
 import multiAssetData from "./expost/2025/ranking_MULTI ASSET_2025.json";
 import risksData from "./expost/2025/ranking_RISKS_2025.json";
+import bondsData from "./expost/2025/ranking_BONDS_2025.json";
 import stocksData from "./expost/2025/ranking_STOCKS_2025.json";
 import tariffsData from "./expost/2025/ranking_TARIFFS_2025.json";
 
@@ -91,6 +92,7 @@ export const MULTI_ASSET_THEME_DATA = createThemeData(multiAssetData, "MULTI ASS
 export const RISKS_THEME_DATA = createThemeData(risksData, "RISKS");
 export const STOCKS_THEME_DATA = createThemeData(stocksData, "STOCKS");
 export const TARIFFS_THEME_DATA = createThemeData(tariffsData, "TARIFFS");
+export const BONDS_THEME_DATA = createThemeData(bondsData, "BONDS");
 
 // All themes
 export const ALL_THEMES: ThemeData[] = [
@@ -104,6 +106,7 @@ export const ALL_THEMES: ThemeData[] = [
     TARIFFS_THEME_DATA,
     RISKS_THEME_DATA,
     STOCKS_THEME_DATA,
+    BONDS_THEME_DATA,
     CREDIT_THEME_DATA,
     ALT_ASSETS_THEME_DATA,
     COMMODITIES_THEME_DATA,
@@ -171,3 +174,95 @@ export const getMaterializedColor = (status: string): string => {
             return "text-gray-500 bg-gray-500/10";
     }
 };
+
+export interface AggregateRankingItem {
+    institution: string;
+    totalScore: number;
+    themesCount: number;
+    avgScore: number;
+    themeBreakdown: { theme: string; score: number }[];
+}
+
+export const getAggregateRanking = (themes: ThemeData[]): AggregateRankingItem[] => {
+    const aggregate: Record<string, { totalScore: number; themesCount: number; themeBreakdown: { theme: string; score: number }[] }> = {};
+
+    themes.forEach((theme) => {
+        // Find the best entry for each institution within THIS theme
+        const themeBest: Record<string, number> = {};
+        theme.items.forEach((item) => {
+            const inst = item.Institution;
+            if (!inst) return;
+            themeBest[inst] = Math.max(themeBest[inst] || 0, item.score);
+        });
+
+        // Add the best score from this theme to the global aggregate
+        Object.entries(themeBest).forEach(([inst, score]) => {
+            if (!aggregate[inst]) {
+                aggregate[inst] = { totalScore: 0, themesCount: 0, themeBreakdown: [] };
+            }
+            aggregate[inst].totalScore += score;
+            aggregate[inst].themesCount += 1;
+            aggregate[inst].themeBreakdown.push({ theme: theme.theme, score });
+        });
+    });
+
+    return Object.entries(aggregate)
+        .map(([institution, data]) => ({
+            institution,
+            totalScore: Math.round(data.totalScore * 10) / 10,
+            themesCount: data.themesCount,
+            avgScore: Math.round((data.totalScore / data.themesCount) * 10) / 10,
+            themeBreakdown: data.themeBreakdown.sort((a, b) => b.score - a.score),
+        }))
+        .sort((a, b) => b.totalScore - a.totalScore);
+};
+
+export const getAggregateThemeData = (themes: ThemeData[]): ThemeData => {
+    const aggregate = getAggregateRanking(themes);
+
+    // Create virtual ExPostItems for the aggregate view
+    const items: ExPostItem[] = aggregate.map((agg: AggregateRankingItem, idx: number) => ({
+        id: `global-${idx}`,
+        Institution: agg.institution,
+        Rank: idx + 1,
+        Original_Rank: 0, // Not applicable for global
+        Prediction_Text: `Institutional strategy performance across ${agg.themesCount} themes.`,
+        statements: [], // No global statements here
+        score: agg.totalScore,
+        classification: agg.avgScore >= 90 ? "EXCELLENT" : agg.avgScore >= 75 ? "GOOD" : agg.avgScore >= 60 ? "PARTIAL" : "WEAK" as any,
+        justification: `Top performer across ${agg.themesCount} different market themes. Average accuracy: ${agg.avgScore}%.`,
+        theme: "Global",
+        themeBreakdown: agg.themeBreakdown,
+        summary_stats: {
+            total_statements: agg.themesCount,
+            materialized_count: 0,
+            partial_count: 0,
+            failed_count: 0,
+        },
+    }));
+
+    return {
+        theme: "GLOBAL RANKING",
+        items,
+        themeStats: {
+            totalInstitutions: aggregate.length,
+            avgScore: Math.round((aggregate.reduce((acc: number, a: AggregateRankingItem) => acc + a.totalScore, 0) / aggregate.length) * 10) / 10,
+            excellentCount: items.filter(i => i.classification === "EXCELLENT").length,
+            goodCount: items.filter(i => i.classification === "GOOD").length,
+            partialCount: items.filter(i => i.classification === "PARTIAL").length,
+            weakCount: items.filter(i => i.classification === "WEAK").length,
+            failedCount: items.filter(i => i.classification === "FAILED").length,
+        }
+    };
+};
+
+export const GLOBAL_THEME_DATA = getAggregateThemeData(ALL_THEMES);
+
+// All themes including Global
+export const ALL_THEMES_WITH_GLOBAL: ThemeData[] = [
+    GLOBAL_THEME_DATA,
+    ...ALL_THEMES
+];
+
+export const TOP_5_INSTITUTIONS = getAggregateRanking(ALL_THEMES).slice(0, 5);
+

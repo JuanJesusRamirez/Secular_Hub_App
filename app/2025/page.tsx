@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import {
     Card,
     CardContent,
@@ -35,14 +35,12 @@ import {
     Layers,
     PieChart,
     Landmark,
-    Layout,
-    LineChart,
-    ShieldAlert,
-    CreditCard,
+    LayoutGrid,
+    ArrowRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
-    ALL_THEMES,
+    ALL_THEMES_WITH_GLOBAL,
     getClassificationColor,
     getClassificationBg,
     getMaterializedIcon,
@@ -178,12 +176,12 @@ const ReasoningRenderer = ({ text }: { text: string }) => {
 };
 
 export default function ExPost2025Page() {
-    const [activeThemeName, setActiveThemeName] = useState<string>(ALL_THEMES[0].theme);
+    const [activeThemeName, setActiveThemeName] = useState<string>(ALL_THEMES_WITH_GLOBAL[0].theme);
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedExPostItem, setSelectedExPostItem] = useState<ExPostItem | null>(null);
 
     const currentThemeData = useMemo(() =>
-        ALL_THEMES.find(t => t.theme === activeThemeName) || ALL_THEMES[0]
+        ALL_THEMES_WITH_GLOBAL.find(t => t.theme === activeThemeName) || ALL_THEMES_WITH_GLOBAL[0]
         , [activeThemeName]);
 
     const filteredItems = useMemo(() => {
@@ -192,6 +190,13 @@ export default function ExPost2025Page() {
             item.statements.some(s => s.statement.toLowerCase().includes(searchQuery.toLowerCase()))
         );
     }, [currentThemeData, searchQuery]);
+
+    // Automatically select the first firm when the theme changes or at startup
+    useEffect(() => {
+        if (filteredItems.length > 0) {
+            setSelectedExPostItem(filteredItems[0]);
+        }
+    }, [activeThemeName, currentThemeData]);
 
     const stats = currentThemeData.themeStats;
 
@@ -213,13 +218,13 @@ export default function ExPost2025Page() {
                 </div>
 
                 <div className="flex flex-wrap gap-3 max-w-3xl justify-end">
-                    {ALL_THEMES.map((themeData) => (
+                    {ALL_THEMES_WITH_GLOBAL.map((themeData) => (
                         <Button
                             key={themeData.theme}
                             variant={activeThemeName === themeData.theme ? "default" : "outline"}
                             onClick={() => {
                                 setActiveThemeName(themeData.theme);
-                                setSelectedExPostItem(null); // Reset selection when changing theme
+                                // No need to manually reset here as useEffect will handle it
                             }}
                             className="rounded-full px-4 h-9 text-xs font-bold uppercase tracking-wider"
                         >
@@ -229,6 +234,7 @@ export default function ExPost2025Page() {
                     ))}
                 </div>
             </div>
+
 
             {/* Stats Summary Area */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -280,18 +286,24 @@ export default function ExPost2025Page() {
                                     >
                                         <div className="flex items-center gap-3">
                                             <div className="flex flex-col items-center">
-                                                <span className="text-sm font-bold text-muted-foreground">#{index + 1}</span>
-                                                {item.Rank < item.Original_Rank ? (
-                                                    <ArrowUpRight className="h-3 w-3 text-green-500" />
-                                                ) : item.Rank > item.Original_Rank ? (
-                                                    <ArrowDownRight className="h-3 w-3 text-red-500" />
-                                                ) : (
-                                                    <Minus className="h-3 w-3 text-gray-400" />
+                                                <span className="text-sm font-bold text-muted-foreground">
+                                                    {activeThemeName === "GLOBAL RANKING" ? <Trophy className="h-3.5 w-3.5 text-yellow-500" /> : `#${index + 1}`}
+                                                </span>
+                                                {activeThemeName !== "GLOBAL RANKING" && (
+                                                    item.Rank < item.Original_Rank ? (
+                                                        <ArrowUpRight className="h-3 w-3 text-green-500" />
+                                                    ) : item.Rank > item.Original_Rank ? (
+                                                        <ArrowDownRight className="h-3 w-3 text-red-500" />
+                                                    ) : (
+                                                        <Minus className="h-3 w-3 text-gray-400" />
+                                                    )
                                                 )}
                                             </div>
                                             <div>
                                                 <p className="font-semibold text-sm line-clamp-1">{item.Institution}</p>
-                                                <p className="text-xs text-muted-foreground">Ex-Ante Rank: #{item.Original_Rank}</p>
+                                                {activeThemeName !== "GLOBAL RANKING" && (
+                                                    <p className="text-xs text-muted-foreground">Ex-Ante Rank: #{item.Original_Rank}</p>
+                                                )}
                                             </div>
                                         </div>
                                         <div className="text-right">
@@ -315,7 +327,19 @@ export default function ExPost2025Page() {
                             <p className="text-muted-foreground max-w-xs">Select an institution from the ranking to see their detailed ex-post analysis.</p>
                         </div>
                     ) : (
-                        <AnalysisDetail item={selectedExPostItem} />
+                        <AnalysisDetail
+                            item={selectedExPostItem}
+                            onNavigate={(theme, instName) => {
+                                const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
+                                if (targetTheme) {
+                                    setActiveThemeName(theme);
+                                    const targetItem = targetTheme.items.find(i => i.Institution === instName);
+                                    if (targetItem) {
+                                        setSelectedExPostItem(targetItem);
+                                    }
+                                }
+                            }}
+                        />
                     )}
                 </div>
             </div>
@@ -339,10 +363,22 @@ function StatCard({ title, value, icon: Icon, color }: any) {
     );
 }
 
-function AnalysisDetail({ item }: { item: ExPostItem }) {
+function AnalysisDetail({
+    item,
+    onNavigate
+}: {
+    item: ExPostItem,
+    onNavigate: (theme: string, institution: string) => void
+}) {
     return (
         <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500 pb-20">
-            {/* 1 & 2: Institutional Identity & Ranking Summary */}
+            {/* 1: Theme Header Context */}
+            <div className="flex items-center gap-2 text-[10px] font-black tracking-[0.2em] text-muted-foreground uppercase">
+                <Target className="h-3 w-3" />
+                {item.theme === "Global" ? "GLOBAL PERFORMANCE RECAP" : `2025 ${item.theme} AUDIT`}
+            </div>
+
+            {/* 2: The Ranking Card */}
             <Card className={cn("border-l-8 overflow-hidden", getClassificationBg(item.classification).split(' ')[1])}>
                 <CardHeader className="pb-4">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
@@ -354,33 +390,52 @@ function AnalysisDetail({ item }: { item: ExPostItem }) {
                             </div>
                             <CardTitle className="text-4xl font-black tracking-tight">{item.Institution}</CardTitle>
                         </div>
-                        <div className="flex items-center gap-4 bg-background/50 p-4 rounded-2xl border-2 shadow-sm">
-                            <div className="text-center px-4 border-r">
-                                <span className="text-[10px] uppercase font-black text-muted-foreground block mb-1">Final Score</span>
+                        {item.theme !== "Global" && (
+                            <div className="flex items-center gap-4 bg-background/50 p-4 rounded-2xl border-2 shadow-sm">
+                                <div className="text-center px-4 border-r">
+                                    <span className="text-[10px] uppercase font-black text-muted-foreground block mb-1">Final Score</span>
+                                    <span className={cn("text-4xl font-black", getClassificationColor(item.classification))}>{item.score} pts</span>
+                                </div>
+                                <div className="flex flex-col gap-1.5 px-2">
+                                    <div className="flex items-center gap-3">
+                                        <div className="h-6 w-6 rounded-full bg-muted flex items-center justify-center text-[10px] font-bold">#{item.Original_Rank}</div>
+                                        <span className="text-[10px] font-bold uppercase text-muted-foreground">EX-ANTE RANK</span>
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <div className="h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center text-[10px] font-bold text-primary">#{item.Rank}</div>
+                                        <span className="text-[10px] font-bold uppercase text-muted-foreground">EX-POST RANK</span>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        {item.theme === "Global" && (
+                            <div className="bg-background/50 p-4 rounded-2xl border-2 shadow-sm">
+                                <span className="text-[10px] uppercase font-black text-muted-foreground block mb-1">Aggregate Accuracy Score</span>
                                 <span className={cn("text-4xl font-black", getClassificationColor(item.classification))}>{item.score} pts</span>
                             </div>
-                            <div className="flex flex-col gap-1.5 px-2">
-                                <div className="flex items-center gap-3">
-                                    <div className="h-6 w-6 rounded-full bg-muted flex items-center justify-center text-[10px] font-bold">#{item.Original_Rank}</div>
-                                    <span className="text-[10px] font-bold uppercase text-muted-foreground">EX-ANTE RANK</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center text-[10px] font-bold text-primary">#{item.Rank}</div>
-                                    <span className="text-[10px] font-bold uppercase text-muted-foreground">EX-POST RANK</span>
-                                </div>
-                            </div>
-                        </div>
+                        )}
                     </div>
                 </CardHeader>
                 <CardContent className="bg-muted/5 py-4 border-t flex items-center justify-between">
                     <div className="flex gap-6">
-                        <OutcomeBadge label="YES" count={item.summary_stats.materialized_count} color="bg-green-500" />
-                        <OutcomeBadge label="PARTIAL" count={item.summary_stats.partial_count} color="bg-yellow-500" />
-                        <OutcomeBadge label="FAILED" count={item.summary_stats.failed_count} color="bg-red-500" />
+                        {item.theme === "Global" ? (
+                            <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-1.5 font-bold text-xs">
+                                    <Layers className="h-4 w-4 text-primary" />
+                                    <span>{item.summary_stats.total_statements} THEMES ANALYZED</span>
+                                </div>
+                            </div>
+                        ) : (
+                            <>
+                                <OutcomeBadge label="YES" count={item.summary_stats.materialized_count} color="bg-green-500" />
+                                <OutcomeBadge label="PARTIAL" count={item.summary_stats.partial_count} color="bg-yellow-500" />
+                                <OutcomeBadge label="FAILED" count={item.summary_stats.failed_count} color="bg-red-500" />
+                            </>
+                        )}
                     </div>
                     <div className="flex items-center gap-2 text-xs font-bold text-muted-foreground uppercase tracking-widest">
                         <Target className="h-3.5 w-3.5" />
-                        {item.theme} SECTOR
+                        {item.theme === "Global" ? "GLOBAL SCALE" : `${item.theme} SECTOR`}
                     </div>
                 </CardContent>
             </Card>
@@ -406,67 +461,103 @@ function AnalysisDetail({ item }: { item: ExPostItem }) {
                 </Card>
             </div>
 
-            {/* 4: The Claims (Evidence & Narrative Flow) */}
-            <div className="space-y-6 pt-4">
-                <div className="flex items-center justify-between">
+            {/* Global Thematic Breakdown */}
+            {item.theme === "Global" && item.themeBreakdown && (
+                <div className="space-y-6 pt-4">
                     <div className="flex items-center gap-2">
-                        <History className="h-5 w-5 text-primary" />
-                        <h3 className="text-xs font-black uppercase tracking-widest text-muted-foreground">Detailed Evidence (Comparison Board)</h3>
+                        <LayoutGrid className="h-5 w-5 text-primary" />
+                        <h3 className="text-xs font-black uppercase tracking-widest text-muted-foreground">Thematic Participation Breakdown</h3>
                     </div>
-                    <Badge variant="secondary" className="font-mono text-[10px] px-2 py-0.5">{item.statements.length} CLAIMS AUDITED</Badge>
-                </div>
-
-                <div className="space-y-12">
-                    {item.statements.map((stmt, idx) => (
-                        <div key={idx} className="relative group">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-8 items-stretch">
-                                {/* Left Side: The Original Claim */}
-                                <div className="relative pb-6 lg:pb-0">
-                                    <div className={cn(
-                                        "absolute -left-4 -top-4 h-10 w-10 rounded-full border-4 border-background flex items-center justify-center text-lg z-20 shadow-md",
-                                        getMaterializedColor(stmt.materialized).split(' ')[1]
-                                    )}>
-                                        {getMaterializedIcon(stmt.materialized)}
-                                    </div>
-                                    <div className="bg-card rounded-2xl border p-6 shadow-sm group-hover:shadow-md transition-all border-muted/50 h-full relative overflow-hidden flex flex-col justify-center min-h-[140px]">
-                                        <div className={cn("absolute top-0 left-0 w-1.5 h-full", getMaterializedColor(stmt.materialized).split(' ')[0])} />
-                                        <div className="flex items-center justify-between mb-3">
-                                            <h4 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Ex-Ante Claim #{idx + 1}</h4>
-                                            <Badge variant="outline" className={cn("text-[9px] uppercase font-bold px-2 py-0", getMaterializedColor(stmt.materialized).split(' ')[0])}>
-                                                Original Prediction
-                                            </Badge>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {item.themeBreakdown.map((tb, idx) => (
+                            <button
+                                key={idx}
+                                onClick={() => onNavigate(tb.theme, item.Institution)}
+                                className="p-4 rounded-2xl border-2 bg-card hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all text-left flex flex-col justify-between group h-full"
+                            >
+                                <div className="space-y-3">
+                                    <div className="flex items-center justify-between">
+                                        <div className="p-2 rounded-lg bg-primary/10">
+                                            <ThemeIcon theme={tb.theme} className="h-4 w-4 text-primary" />
                                         </div>
-                                        <p className={cn("text-xl font-bold leading-tight tracking-tight", getMaterializedColor(stmt.materialized).split(' ')[0])}>
-                                            {stmt.statement}
-                                        </p>
+                                        <Badge variant="outline" className="text-[10px] font-bold">{tb.score} PTS</Badge>
                                     </div>
-
-                                    {/* Link decoration for desktop */}
-                                    <div className="hidden lg:block absolute top-1/2 -right-6 w-4 h-[2px] bg-muted/30 -translate-y-1/2 z-0" />
+                                    <div>
+                                        <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mb-1">{tb.theme}</p>
+                                    </div>
                                 </div>
+                                <div className="flex items-center gap-1.5 text-[10px] font-black text-primary mt-6 uppercase tracking-widest group-hover:translate-x-1 transition-transform">
+                                    View Full Analysis <ArrowRight className="h-3 w-3" />
+                                </div>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
 
-                                {/* Right Side: The Reality Evidence */}
-                                <div className="bg-muted/10 rounded-2xl p-6 border border-muted/40 flex flex-col justify-center h-full relative">
-                                    <div className="space-y-4">
-                                        <div className="flex items-center justify-between border-b border-muted pb-2">
-                                            <div className="flex items-center gap-2">
-                                                <div className="p-1.5 rounded-full bg-background border flex items-center justify-center">
-                                                    <Search className="h-3 w-3 text-primary" />
-                                                </div>
-                                                <span className="text-[10px] font-black uppercase tracking-widest text-primary/70">Ex-Post Reality Check</span>
-                                            </div>
-                                            <Badge variant="secondary" className={cn("text-[9px] uppercase font-black tracking-widest px-2 py-0.5", getMaterializedColor(stmt.materialized).split(' ')[0])}>
-                                                {stmt.materialized}
-                                            </Badge>
+            {/* 4: The Claims (Evidence & Narrative Flow) - Only for individual themes */}
+            {item.theme !== "Global" && item.statements.length > 0 && (
+                <div className="space-y-6 pt-4">
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                            <History className="h-5 w-5 text-primary" />
+                            <h3 className="text-xs font-black uppercase tracking-widest text-muted-foreground">Detailed Evidence (Comparison Board)</h3>
+                        </div>
+                        <Badge variant="secondary" className="font-mono text-[10px] px-2 py-0.5">{item.statements.length} CLAIMS AUDITED</Badge>
+                    </div>
+
+                    <div className="space-y-12">
+                        {item.statements.map((stmt, idx) => (
+                            <div key={idx} className="relative group">
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-8 items-stretch">
+                                    {/* Left Side: The Original Claim */}
+                                    <div className="relative pb-6 lg:pb-0">
+                                        <div className={cn(
+                                            "absolute -left-4 -top-4 h-10 w-10 rounded-full border-4 border-background flex items-center justify-center text-lg z-20 shadow-md",
+                                            getMaterializedColor(stmt.materialized).split(' ')[1]
+                                        )}>
+                                            {getMaterializedIcon(stmt.materialized)}
                                         </div>
-                                        <ReasoningRenderer text={stmt.reasoning} />
+                                        <div className="bg-card rounded-2xl border p-6 shadow-sm group-hover:shadow-md transition-all border-muted/50 h-full relative overflow-hidden flex flex-col justify-center min-h-[140px]">
+                                            <div className={cn("absolute top-0 left-0 w-1.5 h-full", getMaterializedColor(stmt.materialized).split(' ')[0])} />
+                                            <div className="flex items-center justify-between mb-3">
+                                                <h4 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Ex-Ante Claim #{idx + 1}</h4>
+                                                <Badge variant="outline" className={cn("text-[9px] uppercase font-bold px-2 py-0", getMaterializedColor(stmt.materialized).split(' ')[0])}>
+                                                    Original Prediction
+                                                </Badge>
+                                            </div>
+                                            <p className={cn("text-xl font-bold leading-tight tracking-tight", getMaterializedColor(stmt.materialized).split(' ')[0])}>
+                                                {stmt.statement}
+                                            </p>
+                                        </div>
+
+                                        {/* Link decoration for desktop */}
+                                        <div className="hidden lg:block absolute top-1/2 -right-6 w-4 h-[2px] bg-muted/30 -translate-y-1/2 z-0" />
+                                    </div>
+
+                                    {/* Right Side: The Reality Evidence */}
+                                    <div className="bg-muted/10 rounded-2xl p-6 border border-muted/40 flex flex-col justify-center h-full relative">
+                                        <div className="space-y-4">
+                                            <div className="flex items-center justify-between border-b border-muted pb-2">
+                                                <div className="flex items-center gap-2">
+                                                    <div className="p-1.5 rounded-full bg-background border flex items-center justify-center">
+                                                        <Search className="h-3 w-3 text-primary" />
+                                                    </div>
+                                                    <span className="text-[10px] font-black uppercase tracking-widest text-primary/70">Ex-Post Reality Check</span>
+                                                </div>
+                                                <Badge variant="secondary" className={cn("text-[9px] uppercase font-black tracking-widest px-2 py-0.5", getMaterializedColor(stmt.materialized).split(' ')[0])}>
+                                                    {stmt.materialized}
+                                                </Badge>
+                                            </div>
+                                            <ReasoningRenderer text={stmt.reasoning} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 }
@@ -483,19 +574,16 @@ function OutcomeBadge({ label, count, color }: any) {
 
 function ThemeIcon({ theme, className }: { theme: string, className?: string }) {
     switch (theme.toUpperCase()) {
-        case "BASE CASE": return <Layout className={className} />;
-        case "GROWTH": return <LineChart className={className} />;
-        case "MONETARY POLICY": return <Landmark className={className} />;
-        case "INFLATION": return <TrendingUp className={className} />;
-        case "CURRENCIES": return <Coins className={className} />;
-        case "FISCAL": return <Wallet className={className} />;
+        case "GLOBAL RANKING": return <Trophy className={className} />;
         case "AI": return <Zap className={className} />;
-        case "TARIFFS": return <AlertTriangle className={className} />;
-        case "RISKS": return <ShieldAlert className={className} />;
         case "STOCKS": return <BarChart3 className={className} />;
-        case "CREDIT": return <CreditCard className={className} />;
-        case "ALTERNATIVE ASSETS": return <Layers className={className} />;
+        case "INFLATION": return <TrendingUp className={className} />;
+        case "MONETARY POLICY": return <Landmark className={className} />;
+        case "TARIFFS": return <AlertTriangle className={className} />;
+        case "CURRENCIES": return <Coins className={className} />;
         case "COMMODITIES": return <Package className={className} />;
+        case "FISCAL": return <Wallet className={className} />;
+        case "ALTERNATIVE ASSETS": return <Layers className={className} />;
         case "MULTI ASSET": return <PieChart className={className} />;
         default: return <Target className={className} />;
     }

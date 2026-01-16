@@ -26,6 +26,7 @@ export interface ExPostItem {
     classification: "EXCELLENT" | "GOOD" | "PARTIAL" | "WEAK" | "FAILED";
     justification: string;
     theme?: string; // AI, TARIFFS, etc.
+    themeBreakdown?: { theme: string; score: number }[];
 }
 
 export interface ThemeData {

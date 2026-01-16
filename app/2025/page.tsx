@@ -29,19 +29,26 @@ import {
     FileText,
     ExternalLink,
     Link as LinkIcon,
-    Home,
-    MoveLeft
+    Coins,
+    Package,
+    Wallet,
+    Layers,
+    PieChart,
+    Landmark,
+    Layout,
+    LineChart,
+    ShieldAlert,
+    CreditCard,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
-    AI_THEME_DATA,
-    TARIFFS_THEME_DATA,
+    ALL_THEMES,
     getClassificationColor,
     getClassificationBg,
     getMaterializedIcon,
     getMaterializedColor
 } from "@/lib/data/expost-2025";
-import { ExPostItem } from "@/types/expost";
+import { ExPostItem, ThemeData } from "@/types/expost";
 
 const ReasoningRenderer = ({ text }: { text: string }) => {
     // More robust regex: finds anything in parentheses that contains http
@@ -171,11 +178,13 @@ const ReasoningRenderer = ({ text }: { text: string }) => {
 };
 
 export default function ExPost2025Page() {
-    const [activeTheme, setActiveTheme] = useState<"AI" | "TARIFFS">("AI");
+    const [activeThemeName, setActiveThemeName] = useState<string>(ALL_THEMES[0].theme);
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedExPostItem, setSelectedExPostItem] = useState<ExPostItem | null>(null);
 
-    const currentThemeData = activeTheme === "AI" ? AI_THEME_DATA : TARIFFS_THEME_DATA;
+    const currentThemeData = useMemo(() =>
+        ALL_THEMES.find(t => t.theme === activeThemeName) || ALL_THEMES[0]
+        , [activeThemeName]);
 
     const filteredItems = useMemo(() => {
         return currentThemeData.items.filter(item =>
@@ -203,23 +212,21 @@ export default function ExPost2025Page() {
                     </p>
                 </div>
 
-                <div className="flex flex-wrap gap-3">
-                    <Button
-                        variant={activeTheme === "AI" ? "default" : "outline"}
-                        onClick={() => setActiveTheme("AI")}
-                        className="rounded-full px-6"
-                    >
-                        <Zap className="mr-2 h-4 w-4" />
-                        AI Revolution
-                    </Button>
-                    <Button
-                        variant={activeTheme === "TARIFFS" ? "default" : "outline"}
-                        onClick={() => setActiveTheme("TARIFFS")}
-                        className="rounded-full px-6"
-                    >
-                        <AlertTriangle className="mr-2 h-4 w-4" />
-                        Tariff Wars
-                    </Button>
+                <div className="flex flex-wrap gap-3 max-w-3xl justify-end">
+                    {ALL_THEMES.map((themeData) => (
+                        <Button
+                            key={themeData.theme}
+                            variant={activeThemeName === themeData.theme ? "default" : "outline"}
+                            onClick={() => {
+                                setActiveThemeName(themeData.theme);
+                                setSelectedExPostItem(null); // Reset selection when changing theme
+                            }}
+                            className="rounded-full px-4 h-9 text-xs font-bold uppercase tracking-wider"
+                        >
+                            <ThemeIcon theme={themeData.theme} className="mr-2 h-3.5 w-3.5" />
+                            {themeData.theme}
+                        </Button>
+                    ))}
                 </div>
             </div>
 
@@ -233,7 +240,7 @@ export default function ExPost2025Page() {
                 <Card className="bg-muted/30 border-dashed">
                     <CardContent className="p-4 flex flex-col justify-center h-full text-center">
                         <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Theme Hub</p>
-                        <p className="text-xl font-bold">{activeTheme}</p>
+                        <p className="text-xl font-bold truncate">{activeThemeName}</p>
                     </CardContent>
                 </Card>
             </div>
@@ -473,3 +480,24 @@ function OutcomeBadge({ label, count, color }: any) {
         </div>
     );
 }
+
+function ThemeIcon({ theme, className }: { theme: string, className?: string }) {
+    switch (theme.toUpperCase()) {
+        case "BASE CASE": return <Layout className={className} />;
+        case "GROWTH": return <LineChart className={className} />;
+        case "MONETARY POLICY": return <Landmark className={className} />;
+        case "INFLATION": return <TrendingUp className={className} />;
+        case "CURRENCIES": return <Coins className={className} />;
+        case "FISCAL": return <Wallet className={className} />;
+        case "AI": return <Zap className={className} />;
+        case "TARIFFS": return <AlertTriangle className={className} />;
+        case "RISKS": return <ShieldAlert className={className} />;
+        case "STOCKS": return <BarChart3 className={className} />;
+        case "CREDIT": return <CreditCard className={className} />;
+        case "ALTERNATIVE ASSETS": return <Layers className={className} />;
+        case "COMMODITIES": return <Package className={className} />;
+        case "MULTI ASSET": return <PieChart className={className} />;
+        default: return <Target className={className} />;
+    }
+}
+

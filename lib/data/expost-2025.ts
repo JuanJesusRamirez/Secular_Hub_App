@@ -1,6 +1,18 @@
 import { ExPostItem, ThemeData } from "@/types/expost";
-import aiData from "./expost/2025/ai.json";
-import tariffsData from "./expost/2025/tariffs.json";
+import aiData from "./expost/2025/ranking_AI_2025.json";
+import altAssetsData from "./expost/2025/ranking_ALTERNATIVE ASSETS_2025.json";
+import baseCaseData from "./expost/2025/ranking_BASE CASE_2025.json";
+import commoditiesData from "./expost/2025/ranking_COMMODITIES_2025.json";
+import creditData from "./expost/2025/ranking_CREDIT_2025.json";
+import currenciesData from "./expost/2025/ranking_CURRENCIES_2025.json";
+import fiscalData from "./expost/2025/ranking_FISCAL_2025.json";
+import growthData from "./expost/2025/ranking_GROWTH_2025.json";
+import inflationData from "./expost/2025/ranking_INFLATION_2025.json";
+import monetaryData from "./expost/2025/ranking_MONETARY POLICY_2025.json";
+import multiAssetData from "./expost/2025/ranking_MULTI ASSET_2025.json";
+import risksData from "./expost/2025/ranking_RISKS_2025.json";
+import stocksData from "./expost/2025/ranking_STOCKS_2025.json";
+import tariffsData from "./expost/2025/ranking_TARIFFS_2025.json";
 
 // Process and enrich the data with theme information
 const processData = (data: any[], theme: string): ExPostItem[] => {
@@ -17,14 +29,6 @@ const processData = (data: any[], theme: string): ExPostItem[] => {
         },
     }));
 };
-
-export const AI_DATA: ExPostItem[] = processData(aiData as any[], "AI");
-export const TARIFFS_DATA: ExPostItem[] = processData(tariffsData as any[], "TARIFFS");
-
-// Combined data sorted by Rank
-export const EXPOST_2025_ALL: ExPostItem[] = [...AI_DATA, ...TARIFFS_DATA].sort(
-    (a, b) => a.Rank - b.Rank
-);
 
 // Calculate conviction score for tiebreaking
 export const getConvictionScore = (item: ExPostItem): number => {
@@ -62,21 +66,50 @@ export const getThemeStats = (items: ExPostItem[]): ThemeData["themeStats"] => {
     };
 };
 
-// Pre-calculated theme data
-export const AI_THEME_DATA: ThemeData = {
-    theme: "AI",
-    items: getRankingWithConviction(AI_DATA),
-    themeStats: getThemeStats(AI_DATA),
+
+// Helper to create ThemeData
+const createThemeData = (data: any[], themeName: string): ThemeData => {
+    const processed = processData(data, themeName);
+    return {
+        theme: themeName,
+        items: getRankingWithConviction(processed),
+        themeStats: getThemeStats(processed),
+    };
 };
 
-export const TARIFFS_THEME_DATA: ThemeData = {
-    theme: "TARIFFS",
-    items: getRankingWithConviction(TARIFFS_DATA),
-    themeStats: getThemeStats(TARIFFS_DATA),
-};
+export const AI_THEME_DATA = createThemeData(aiData, "AI");
+export const ALT_ASSETS_THEME_DATA = createThemeData(altAssetsData, "ALTERNATIVE ASSETS");
+export const BASE_CASE_THEME_DATA = createThemeData(baseCaseData, "BASE CASE");
+export const COMMODITIES_THEME_DATA = createThemeData(commoditiesData, "COMMODITIES");
+export const CREDIT_THEME_DATA = createThemeData(creditData, "CREDIT");
+export const CURRENCIES_THEME_DATA = createThemeData(currenciesData, "CURRENCIES");
+export const FISCAL_THEME_DATA = createThemeData(fiscalData, "FISCAL");
+export const GROWTH_THEME_DATA = createThemeData(growthData, "GROWTH");
+export const INFLATION_THEME_DATA = createThemeData(inflationData, "INFLATION");
+export const MONETARY_THEME_DATA = createThemeData(monetaryData, "MONETARY POLICY");
+export const MULTI_ASSET_THEME_DATA = createThemeData(multiAssetData, "MULTI ASSET");
+export const RISKS_THEME_DATA = createThemeData(risksData, "RISKS");
+export const STOCKS_THEME_DATA = createThemeData(stocksData, "STOCKS");
+export const TARIFFS_THEME_DATA = createThemeData(tariffsData, "TARIFFS");
 
 // All themes
-export const ALL_THEMES: ThemeData[] = [AI_THEME_DATA, TARIFFS_THEME_DATA];
+export const ALL_THEMES: ThemeData[] = [
+    BASE_CASE_THEME_DATA,
+    GROWTH_THEME_DATA,
+    MONETARY_THEME_DATA,
+    INFLATION_THEME_DATA,
+    CURRENCIES_THEME_DATA,
+    FISCAL_THEME_DATA,
+    AI_THEME_DATA,
+    TARIFFS_THEME_DATA,
+    RISKS_THEME_DATA,
+    STOCKS_THEME_DATA,
+    CREDIT_THEME_DATA,
+    ALT_ASSETS_THEME_DATA,
+    COMMODITIES_THEME_DATA,
+    MULTI_ASSET_THEME_DATA,
+];
+
 
 // Get color for classification
 export const getClassificationColor = (classification: ExPostItem["classification"]): string => {

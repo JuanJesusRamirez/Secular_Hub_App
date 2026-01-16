@@ -7,7 +7,7 @@
         "reasoning": "This prediction materialized. The Trump administration implemented broad-based tariffs exceeding these thresholds. J.P. Morgan reported that 'the average effective U.S. tariff rate stands at 15.8% — a significant increase from the 2.3% rate at the end of 2024' (SOURCE: US Tariffs: What's the Impact?, J.P. Morgan Global Research, December 2025, https://links.message.bloomberg.com/s/c/8djF0q5zDvmV-Qp5fn4kXxdQmshH4Dj_673XGoRGDyRbrVmzIbya2dRMzi-7pIi4ilv1j8UmPtcaimLjWjLvBLq3ewPe34p3UU3FcBLevaj-hgWF1_YxK21pNw5FQt0gjy56BKA8y5MEY5wgUFJ5oPBN9srgOUb11lP6ObUmbFgvFVLkTmMt5hna0me-MuFhp-Wcz7E-kAyQ3YFpIOxCepCZxdIBETVVFuDVIxlXM5L261Uf7yfSloNIwJDZt05ZF3S4mJVqxT25aa2kQPX5sOe-GUt7dWMzI7bmIjuOuLG0KPEsN-Vz5ncFTdvnxceJ81AkiW_qid7hAvlZ4OjKUj9BUvLYXIwQc-xzaExD1Mt9n0YXRMevJ_rPxiesHYu7sfd3B0jFGed-PlQmxqAeEdhLPlKD0wf8CT1oQLw3iepPXLsdPJKOtMQJg1a34aFKyDs/RQbzMnzXCyWIB27p7Dz8gPcW0C69e6Bt/8). Additionally, the Atlantic Council noted that 'the world's largest economy hiked its tariff rates to the highest level in a century' (SOURCE: By the numbers: The global economy in 2025, Atlantic Council, December 2025, https://www.atlanticcouncil.org/dispatches/by-the-numbers-the-global-economy-in-2025/). China-specific tariffs were also implemented as part of the broader trade war."
       },
       {
-        "statement": "Trump's tariff proposals go well beyond what was implemented between 2018 and 2019, to the point that even half measures would probably cause a substantial global shock.",
+        "statement": "Trumpâs tariff proposals go well beyond what was implemented between 2018 and 2019, to the point that even half measures would probably cause a substantial global shock.",
         "materialized": "YES",
         "reasoning": "This prediction proved accurate. The tariff implementation in 2025 significantly exceeded 2018-2019 levels. The Atlantic Council confirmed that tariff rates reached 'the highest level in a century' (SOURCE: By the numbers: The global economy in 2025, Atlantic Council, December 2025, https://www.atlanticcouncil.org/dispatches/by-the-numbers-the-global-economy-in-2025/). The global shock materialized as evidenced by McKinsey's finding that 'trade policy changes were the top perceived risk to growth in the global economy' and that 'the share of respondents citing trade-related changes as one of the biggest disruptions to the global economy has more than doubled over the past six months' (SOURCE: Economic conditions outlook, December 2025, McKinsey, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook). German auto exports fell by 14% in the first three quarters of 2025 (SOURCE: German auto exports hit hard by Trump tariffs, study shows, Reuters, December 22, 2025, https://www.reuters.com/business/autos-transportation/german-auto-exports-hit-hard-by-trump-tariffs-study-shows-2025-12-22/)."
       }
@@ -24,7 +24,7 @@
     "justification": "BCA Research's predictions on tariff implementation were highly accurate, correctly anticipating both the magnitude and scope of Trump's tariff actions in 2025. They accurately forecasted that tariffs would exceed historical precedent and create substantial global disruption. The institution demonstrated strong foresight in recognizing that the proposed tariff levels would represent a significant escalation beyond 2018-2019 measures.",
     "id": "TARIFFS-BCA_RESEARCH-2-2025",
     "Original_Rank": 2,
-    "Prediction_Text": "\"We expect at least one major broad-based unilateral tariff next year: either a 10% tariff on all US imports or a large tariff on imports from China. Trump's tariff proposals go well beyond what was implemented between 2018 and 2019, to the point that even half measures would probably cause a substantial global shock.\"",
+    "Prediction_Text": "\"We expect at least one major broad-based unilateral tariff next year: either a 10% tariff on all US imports or a large tariff on imports from China. Trumpâs tariff proposals go well beyond what was implemented between 2018 and 2019, to the point that even half measures would probably cause a substantial global shock.\"",
     "Institution": "BCA RESEARCH",
     "Rank": 1
   },
@@ -529,7 +529,7 @@
   {
     "statements": [
       {
-        "statement": "Our back-of-an-envelope calculations suggest that Trump's proposed trade tariffs could reduce US GDP by as much as 0.3% this year (2025) and by far more in 2026 if more onerous tariffs are implanted.",
+        "statement": "Our back-of-an-envelope calculations suggest that Trumpâs proposed trade tariffs could reduce US GDP by as much as 0.3% this year (2025) and by far more in 2026 if more onerous tariffs are implanted.",
         "materialized": "NO",
         "reasoning": "This prediction did not materialize for 2025. SOURCE 16 (Bloomberg, December 31, 2025) reports 'the US economy looks set to turn in a solid year of growth for 2025,' contradicting the predicted 0.3% GDP reduction. SOURCE 15 (World Bank, December 2025) confirms 'Economic growth in 2025 has defied the gloomy expectations,' indicating actual growth exceeded the pessimistic tariff impact forecast. SOURCE 1 (Reuters, December 23, 2025) notes stocks 'recovered from April's \"Liberation Day\" tariffs' crash and have risen 21% in 2025,' suggesting the economy absorbed tariff shocks better than predicted. The 2026 outlook remains uncertain, but the 2025 prediction of 0.3% GDP reduction was clearly incorrect."
       },
@@ -551,7 +551,7 @@
     "justification": "First Abu Dhabi Bank's prediction was significantly inaccurate on the magnitude of tariff impacts in 2025. The institution's pessimistic 0.3% GDP reduction forecast was contradicted by actual solid growth and market resilience. While the bank correctly identified the potential offset mechanism (fiscal recycling), it failed to anticipate the economy's actual ability to absorb tariff shocks. The prediction demonstrated analytical rigor in considering offsetting factors but was overly pessimistic on the baseline tariff impact, missing the broader economic resilience that characterized 2025.",
     "id": "TARIFFS-FIRST_ABU_DHABI_BANK-20-2025",
     "Original_Rank": 20,
-    "Prediction_Text": "\"Our back-of-an-envelope calculations suggest that Trump's proposed trade tariffs could reduce US GDP by as much as 0.3% this year (2025) and by far more in 2026 if more onerous tariffs are implanted. The flip side to this scenario of course is that the impact could be less severe if all the associated tariff revenues are fully recycled into fiscal easing (tax cut) measures.\"",
+    "Prediction_Text": "\"Our back-of-an-envelope calculations suggest that Trumpâs proposed trade tariffs could reduce US GDP by as much as 0.3% this year (2025) and by far more in 2026 if more onerous tariffs are implanted. The flip side to this scenario of course is that the impact could be less severe if all the associated tariff revenues are fully recycled into fiscal easing (tax cut) measures.\"",
     "Institution": "FIRST ABU DHABI BANK",
     "Rank": 19
   },
@@ -563,7 +563,7 @@
         "reasoning": "This prediction did not materialize. SOURCE 5 (Reuters, December 17, 2025) reports that 'CFOs in Fed survey on average expect 4.2% price rise in 2026,' indicating inflation expectations are extending well beyond 2025. SOURCE 4 (J.P. Morgan, December 2025) notes that 'domestic prices have already been adjusting sharply higher in anticipation of the new tariffs' and that tariff rates reached 15.8% by year-end. SOURCE 13 (Bloomberg, December 24, 2025) explicitly states 'The Consequences of Trump's Trade War May Arrive in 2026,' suggesting inflationary pressures are not short-lived but rather building into the next year."
       },
       {
-        "statement": "Similarly, just as how companies and consumers adjusted after the trade war\" in Trump's first administration, we would expect the US economy to “move on” within a few quarters, following the announcement of new tariffs.",
+        "statement": "Similarly, just as how companies and consumers adjusted after the trade war\" in Trumpâs first administration, we would expect the US economy to âmove onâ within a few quarters, following the announcement of new tariffs.",
         "materialized": "NO",
         "reasoning": "This prediction did not materialize. SOURCE 11 (McKinsey, December 2025) reports that 'New tariffs are affecting 30 percent of global supply chain activities' and that 'Companies are not passing the full costs of tariffs on to their customers,' indicating structural adjustments rather than quick adaptation. SOURCE 9 (Reuters, December 1, 2025) states 'US manufacturing stuck in doldrums as tariff headwinds' continue, with 'A new 25% duty on imported medium- and heavy-duty trucks and parts came into effect on November 1.' SOURCE 7 (McKinsey, December 2025) notes that 'For the past two quarters, trade policy changes were the top perceived risk to growth,' suggesting ongoing disruption rather than quick resolution. The economy did not 'move on' within quarters as predicted."
       }
@@ -580,7 +580,7 @@
     "justification": "Barclays Private Bank's prediction was significantly inaccurate. The institution underestimated both the persistence of tariff-related inflation and the structural nature of supply chain adjustments required. Rather than a short-lived shock followed by quick adaptation, 2025 demonstrated that tariffs created sustained pricing pressures extending into 2026 and required fundamental supply chain reconfiguration. The historical analogy to Trump's first administration proved insufficient to capture the scale and scope of 2025's tariff implementation.",
     "id": "TARIFFS-BARCLAYS_PRIVATE_BANK-12-2025",
     "Original_Rank": 12,
-    "Prediction_Text": "\"Any tariffs-related inflation shock should be short-lived. Similarly, just as how companies and consumers adjusted after the trade war\" in Trump's first administration, we would expect the US economy to “move on” within a few quarters, following the announcement of new tariffs.\"\"\"",
+    "Prediction_Text": "\"Any tariffs-related inflation shock should be short-lived. Similarly, just as how companies and consumers adjusted after the trade war\" in Trumpâs first administration, we would expect the US economy to âmove onâ within a few quarters, following the announcement of new tariffs.\"\"\"",
     "Institution": "BARCLAYS PRIVATE BANK",
     "Rank": 20
   },

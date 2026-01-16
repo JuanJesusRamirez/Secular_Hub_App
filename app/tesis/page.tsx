@@ -20,7 +20,7 @@ export default function TesisPage() {
       try {
         setLoading(true);
         const response = await fetch('/api/tesis');
-        
+
         if (!response.ok) {
           throw new Error('Failed to fetch tesis data');
         }
@@ -41,9 +41,9 @@ export default function TesisPage() {
 
   if (loading) {
     return (
-      <div className="space-y-6">
+      <div className="space-y-4">
         <PageHeader
-          title="Tesis Agregadas"
+          title="Historical Analysis"
           description="Consensus Thesis vs Actual Outcomes by Year"
         />
         <Skeleton className="h-[600px] w-full" />
@@ -53,9 +53,9 @@ export default function TesisPage() {
 
   if (error) {
     return (
-      <div className="space-y-6">
+      <div className="space-y-4">
         <PageHeader
-          title="Tesis Agregadas"
+          title="Historical Analysis"
           description="Consensus Thesis vs Actual Outcomes by Year"
         />
         <Card>
@@ -68,9 +68,9 @@ export default function TesisPage() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <PageHeader
-        title="Tesis Agregadas"
+        title="Historical Analysis"
         description="Consensus Thesis vs Actual Outcomes by Year"
       />
 

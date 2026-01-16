@@ -1,0 +1,59 @@
+ARCHIVOS A COPIAR EN TU PROYECTO
+================================
+
+1. TIPOS TYPESCRIPT
+   Copiar: types-sentiment.ts
+   A: src/types/sentiment.ts
+
+2. UTILIDADES
+   Copiar: utils-sentiment.ts
+   A: src/utils/sentiment.ts
+
+3. HOOKS PERSONALIZADOS
+   Copiar: hooks-sentiment.ts
+   A: src/hooks/useSentiment.ts
+
+4. COMPONENTES REACT
+   Copiar: client/src/components/SentimentBadge.tsx
+   A: src/components/SentimentBadge.tsx
+   
+   Copiar: client/src/components/AssetCard.tsx
+   A: src/components/AssetCard.tsx
+   
+   Copiar: client/src/components/AssetsList.tsx
+   A: src/components/AssetsList.tsx
+
+5. DATOS JSON
+   Copiar: client/public/assets-data.json
+   A: public/assets-data.json
+
+6. DOCUMENTACIÓN
+   - BASES_MODULO_SENTIMIENTO.md (referencia técnica)
+   - GUIA_INTEGRACION.md (guía paso a paso)
+
+ESTRUCTURA FINAL EN TU PROYECTO
+================================
+src/
+├── types/
+│   └── sentiment.ts
+├── utils/
+│   └── sentiment.ts
+├── hooks/
+│   └── useSentiment.ts
+└── components/
+    ├── SentimentBadge.tsx
+    ├── AssetCard.tsx
+    └── AssetsList.tsx
+
+public/
+└── assets-data.json
+
+DEPENDENCIAS REQUERIDAS
+================================
+npm install lucide-react
+
+VERIFICAR CONFIGURACIÓN
+================================
+✓ tsconfig.json: Alias "@" configurado
+✓ tailwind.config.js: Colores primarios configurados
+✓ Tailwind CSS importado en CSS global

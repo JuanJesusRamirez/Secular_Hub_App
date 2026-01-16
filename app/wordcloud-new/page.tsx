@@ -127,7 +127,7 @@ export default function WordCloudNewPage() {
     };
 
     return (
-        <div className="space-y-6 animate-in fade-in duration-500" ref={containerRef}>
+        <div className="space-y-4 animate-in fade-in duration-500" ref={containerRef}>
             {/* Header */}
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                 <div>

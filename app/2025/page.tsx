@@ -37,8 +37,16 @@ import {
     Landmark,
     LayoutGrid,
     ArrowRight,
+    ChevronDown,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select";
 import {
     ALL_THEMES_WITH_GLOBAL,
     getClassificationColor,
@@ -187,9 +195,15 @@ const getGlobalScoreColor = (score: number) => {
 
 export default function ExPost2025Page() {
     const THEME_RANKING_LABEL = "THEME RANKING";
-    const [activeThemeName, setActiveThemeName] = useState<string>(ALL_THEMES_WITH_GLOBAL[0].theme);
+    // Initialize with BASE CASE (usually the second item in ALL_THEMES_WITH_GLOBAL, as first is GLOBAL)
+    // We look for it explicitly to be safe
+    const defaultTheme = useMemo(() =>
+        ALL_THEMES_WITH_GLOBAL.find(t => t.theme === "BASE CASE") || ALL_THEMES_WITH_GLOBAL[1] || ALL_THEMES_WITH_GLOBAL[0]
+        , []);
+
+    const [activeThemeName, setActiveThemeName] = useState<string>(defaultTheme.theme);
     const [searchQuery, setSearchQuery] = useState("");
-    const [selectedExPostItem, setSelectedExPostItem] = useState<ExPostItem | null>(ALL_THEMES_WITH_GLOBAL[0].items[0] || null);
+    const [selectedExPostItem, setSelectedExPostItem] = useState<ExPostItem | null>(defaultTheme.items[0] || null);
 
     const currentThemeData = useMemo(() =>
         ALL_THEMES_WITH_GLOBAL.find(t => t.theme === activeThemeName) || ALL_THEMES_WITH_GLOBAL[0]
@@ -225,35 +239,7 @@ export default function ExPost2025Page() {
                 </div>
 
                 <div className="flex flex-wrap gap-2 max-w-4xl justify-end">
-                    <Button
-                        variant={activeThemeName === THEME_RANKING_LABEL ? "default" : "outline"}
-                        onClick={() => {
-                            setActiveThemeName(THEME_RANKING_LABEL);
-                            setSelectedExPostItem(null);
-                        }}
-                        className={cn(
-                            "rounded-full px-4 h-9 text-xs font-bold uppercase tracking-wider",
-                            activeThemeName === THEME_RANKING_LABEL ? "" : "bg-primary/5 hover:bg-primary/10 border-primary/20"
-                        )}
-                    >
-                        <BarChart3 className="mr-2 h-3.5 w-3.5" />
-                        {THEME_RANKING_LABEL}
-                    </Button>
-                    <div className="w-[1px] h-6 bg-border mx-1 my-auto" />
-                    {ALL_THEMES_WITH_GLOBAL.map((themeData) => (
-                        <Button
-                            key={themeData.theme}
-                            variant={activeThemeName === themeData.theme ? "default" : "outline"}
-                            onClick={() => {
-                                setActiveThemeName(themeData.theme);
-                                setSelectedExPostItem(themeData.items[0] || null);
-                            }}
-                            className="rounded-full px-4 h-9 text-xs font-bold uppercase tracking-wider"
-                        >
-                            <ThemeIcon theme={themeData.theme} className="mr-2 h-3.5 w-3.5" />
-                            {themeData.theme}
-                        </Button>
-                    ))}
+                    {/* Theme selection buttons moved to sidebar */}
                 </div>
             </div>
 
@@ -333,8 +319,90 @@ export default function ExPost2025Page() {
             )}
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                {activeThemeName === THEME_RANKING_LABEL ? (
-                    <div className="lg:col-span-12">
+                {/* Left Navigation: Themes */}
+                <div className="lg:col-span-2 space-y-4">
+                    <div className="sticky top-8 space-y-4">
+                        <div className="flex flex-col gap-2">
+                            <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2 mb-2">Main Views</h3>
+
+                            {/* Global Ranking Button (Priority #1) */}
+                            {ALL_THEMES_WITH_GLOBAL[0] && (
+                                <Button
+                                    key={ALL_THEMES_WITH_GLOBAL[0].theme}
+                                    variant={activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "default" : "outline"}
+                                    onClick={() => {
+                                        setActiveThemeName(ALL_THEMES_WITH_GLOBAL[0].theme);
+                                        setSelectedExPostItem(ALL_THEMES_WITH_GLOBAL[0].items[0] || null);
+                                    }}
+                                    className={cn(
+                                        "justify-start px-4 h-11 text-xs font-bold uppercase tracking-wider transition-all",
+                                        activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme
+                                            ? "shadow-md scale-[1.02]"
+                                            : "hover:bg-muted"
+                                    )}
+                                >
+                                    <ThemeIcon theme={ALL_THEMES_WITH_GLOBAL[0].theme} className="mr-2 h-4 w-4" />
+                                    <span className="truncate">{ALL_THEMES_WITH_GLOBAL[0].theme}</span>
+                                </Button>
+                            )}
+
+                            {/* Theme Ranking Button */}
+                            <Button
+                                variant={activeThemeName === THEME_RANKING_LABEL ? "default" : "outline"}
+                                onClick={() => {
+                                    setActiveThemeName(THEME_RANKING_LABEL);
+                                    setSelectedExPostItem(null);
+                                }}
+                                className={cn(
+                                    "justify-start px-4 h-11 text-xs font-bold uppercase tracking-wider transition-all",
+                                    activeThemeName === THEME_RANKING_LABEL
+                                        ? "shadow-md scale-[1.02]"
+                                        : "bg-primary/5 hover:bg-primary/10 border-primary/20"
+                                )}
+                            >
+                                <BarChart3 className="mr-2 h-4 w-4" />
+                                {THEME_RANKING_LABEL}
+                            </Button>
+
+                            <div className="h-[1px] bg-border my-2" />
+
+                            <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2 mb-2">Market Themes</h3>
+
+                            <Select
+                                value={ALL_THEMES_WITH_GLOBAL.slice(1).some(t => t.theme === activeThemeName) ? activeThemeName : ""}
+                                onValueChange={(value) => {
+                                    const themeData = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === value);
+                                    if (themeData) {
+                                        setActiveThemeName(themeData.theme);
+                                        setSelectedExPostItem(themeData.items[0] || null);
+                                    }
+                                }}
+                            >
+                                <SelectTrigger className="w-full h-11 text-xs font-bold uppercase tracking-wider bg-primary/5 border-primary/20 focus:ring-1">
+                                    <SelectValue placeholder="SELECT THEME" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    {ALL_THEMES_WITH_GLOBAL.slice(1).map((themeData) => (
+                                        <SelectItem
+                                            key={themeData.theme}
+                                            value={themeData.theme}
+                                            className="text-xs font-bold uppercase tracking-wider"
+                                        >
+                                            <div className="flex items-center gap-2">
+                                                <ThemeIcon theme={themeData.theme} className="h-3 w-3" />
+                                                {themeData.theme}
+                                            </div>
+                                        </SelectItem>
+                                    ))}
+                                </SelectContent>
+                            </Select>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Right Content Area */}
+                <div className="lg:col-span-10">
+                    {activeThemeName === THEME_RANKING_LABEL ? (
                         <ThemePerformanceRanking
                             onNavigate={(theme, instName) => {
                                 const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
@@ -345,119 +413,119 @@ export default function ExPost2025Page() {
                                 }
                             }}
                         />
-                    </div>
-                ) : (
-                    <>
-                        {/* Sidebar: Ranking List */}
-                        <div className="lg:col-span-4 space-y-4">
-                            <div className="flex items-center gap-2 mb-4">
-                                <div className="relative flex-1">
-                                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                                    <Input
-                                        placeholder="Search firm..."
-                                        className="pl-9"
-                                        value={searchQuery}
-                                        onChange={(e) => setSearchQuery(e.target.value)}
-                                    />
-                                </div>
-                            </div>
-
-                            <Card className="max-h-[800px] overflow-auto">
-                                <CardHeader className={cn(
-                                    "pb-4",
-                                    activeThemeName === "GLOBAL RANKING" ? "bg-indigo-500/5" : "bg-muted/20"
-                                )}>
-                                    <div className="flex justify-between items-center">
-                                        <CardTitle className="text-sm font-bold uppercase tracking-wider">Performance Ranking</CardTitle>
-                                        <Badge
-                                            variant={activeThemeName === "GLOBAL RANKING" ? "default" : "outline"}
-                                            className={cn(
-                                                activeThemeName === "GLOBAL RANKING" && "bg-indigo-600 hover:bg-indigo-700"
-                                            )}
-                                        >
-                                            Score-Based
-                                        </Badge>
+                    ) : (
+                        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8">
+                            {/* Sidebar: Ranking List */}
+                            <div className="xl:col-span-4 space-y-4">
+                                <div className="flex items-center gap-2 mb-4">
+                                    <div className="relative flex-1">
+                                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                                        <Input
+                                            placeholder="Search firm..."
+                                            className="pl-9"
+                                            value={searchQuery}
+                                            onChange={(e) => setSearchQuery(e.target.value)}
+                                        />
                                     </div>
-                                </CardHeader>
-                                <CardContent className="p-0">
-                                    <div className="divide-y">
-                                        {filteredItems.map((item, index) => (
-                                            <button
-                                                key={item.id}
-                                                onClick={() => setSelectedExPostItem(item)}
+                                </div>
+
+                                <Card className="max-h-[800px] overflow-auto">
+                                    <CardHeader className={cn(
+                                        "pb-4",
+                                        activeThemeName === "GLOBAL RANKING" ? "bg-indigo-500/5" : "bg-muted/20"
+                                    )}>
+                                        <div className="flex justify-between items-center">
+                                            <CardTitle className="text-sm font-bold uppercase tracking-wider">Performance Ranking</CardTitle>
+                                            <Badge
+                                                variant={activeThemeName === "GLOBAL RANKING" ? "default" : "outline"}
                                                 className={cn(
-                                                    "w-full text-left p-4 hover:bg-muted/50 transition-colors flex items-center justify-between gap-4",
-                                                    selectedExPostItem?.id === item.id
-                                                        ? (activeThemeName === "GLOBAL RANKING" ? "bg-indigo-500/5 border-l-4 border-l-indigo-600" : "bg-primary/5 border-l-4 border-l-primary")
-                                                        : "border-l-4 border-l-transparent"
+                                                    activeThemeName === "GLOBAL RANKING" && "bg-indigo-600 hover:bg-indigo-700"
                                                 )}
                                             >
-                                                <div className="flex items-center gap-3">
-                                                    <div className="flex flex-col items-center">
-                                                        <span className="text-sm font-bold text-muted-foreground">
-                                                            {activeThemeName === "GLOBAL RANKING" ? <Trophy className="h-3.5 w-3.5 text-indigo-500" /> : `#${index + 1}`}
-                                                        </span>
-                                                        {activeThemeName !== "GLOBAL RANKING" && (
-                                                            item.Rank < item.Original_Rank ? (
-                                                                <ArrowUpRight className="h-3 w-3 text-green-500" />
-                                                            ) : item.Rank > item.Original_Rank ? (
-                                                                <ArrowDownRight className="h-3 w-3 text-red-500" />
-                                                            ) : (
-                                                                <Minus className="h-3 w-3 text-gray-400" />
-                                                            )
-                                                        )}
+                                                Score-Based
+                                            </Badge>
+                                        </div>
+                                    </CardHeader>
+                                    <CardContent className="p-0">
+                                        <div className="divide-y">
+                                            {filteredItems.map((item, index) => (
+                                                <button
+                                                    key={item.id}
+                                                    onClick={() => setSelectedExPostItem(item)}
+                                                    className={cn(
+                                                        "w-full text-left p-4 hover:bg-muted/50 transition-colors flex items-center justify-between gap-4",
+                                                        selectedExPostItem?.id === item.id
+                                                            ? (activeThemeName === "GLOBAL RANKING" ? "bg-indigo-500/5 border-l-4 border-l-indigo-600" : "bg-primary/5 border-l-4 border-l-primary")
+                                                            : "border-l-4 border-l-transparent"
+                                                    )}
+                                                >
+                                                    <div className="flex items-center gap-3">
+                                                        <div className="flex flex-col items-center">
+                                                            <span className="text-sm font-bold text-muted-foreground">
+                                                                {activeThemeName === "GLOBAL RANKING" ? <Trophy className="h-3.5 w-3.5 text-indigo-500" /> : `#${index + 1}`}
+                                                            </span>
+                                                            {activeThemeName !== "GLOBAL RANKING" && (
+                                                                item.Rank < item.Original_Rank ? (
+                                                                    <ArrowUpRight className="h-3 w-3 text-green-500" />
+                                                                ) : item.Rank > item.Original_Rank ? (
+                                                                    <ArrowDownRight className="h-3 w-3 text-red-500" />
+                                                                ) : (
+                                                                    <Minus className="h-3 w-3 text-gray-400" />
+                                                                )
+                                                            )}
+                                                        </div>
+                                                        <div>
+                                                            <p className={cn(
+                                                                "font-semibold text-sm line-clamp-1",
+                                                                activeThemeName === "GLOBAL RANKING" && selectedExPostItem?.id === item.id && "text-indigo-700"
+                                                            )}>{item.Institution}</p>
+                                                            {activeThemeName !== "GLOBAL RANKING" && (
+                                                                <p className="text-xs text-muted-foreground">Ex-Ante Rank: #{item.Original_Rank}</p>
+                                                            )}
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <p className={cn(
-                                                            "font-semibold text-sm line-clamp-1",
-                                                            activeThemeName === "GLOBAL RANKING" && selectedExPostItem?.id === item.id && "text-indigo-700"
-                                                        )}>{item.Institution}</p>
-                                                        {activeThemeName !== "GLOBAL RANKING" && (
-                                                            <p className="text-xs text-muted-foreground">Ex-Ante Rank: #{item.Original_Rank}</p>
-                                                        )}
+                                                    <div className="text-right">
+                                                        <div className={cn(
+                                                            "text-sm font-bold",
+                                                            activeThemeName === "GLOBAL RANKING"
+                                                                ? getGlobalScoreColor(item.score)
+                                                                : getClassificationColor(item.classification)
+                                                        )}>
+                                                            {item.score} pts
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div className="text-right">
-                                                    <div className={cn(
-                                                        "text-sm font-bold",
-                                                        activeThemeName === "GLOBAL RANKING"
-                                                            ? getGlobalScoreColor(item.score)
-                                                            : getClassificationColor(item.classification)
-                                                    )}>
-                                                        {item.score} pts
-                                                    </div>
-                                                </div>
-                                            </button>
-                                        ))}
-                                    </div>
-                                </CardContent>
-                            </Card>
-                        </div>
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </div>
 
-                        {/* Main Content: Analysis Detail */}
-                        <div className="lg:col-span-8 space-y-6">
-                            {!selectedExPostItem ? (
-                                <div className="h-full flex flex-col items-center justify-center p-12 text-center border-2 border-dashed rounded-xl bg-muted/10">
-                                    <FileText className="h-16 w-16 text-muted-foreground/20 mb-4" />
-                                    <h3 className="text-xl font-bold">Select a Firm</h3>
-                                    <p className="text-muted-foreground max-w-xs">Select an institution from the ranking to see their detailed ex-post analysis.</p>
-                                </div>
-                            ) : (
-                                <AnalysisDetail
-                                    item={selectedExPostItem}
-                                    onNavigate={(theme, instName) => {
-                                        const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
-                                        if (targetTheme) {
-                                            setActiveThemeName(theme);
-                                            const targetItem = targetTheme.items.find(i => i.Institution === instName);
-                                            setSelectedExPostItem(targetItem || targetTheme.items[0] || null);
-                                        }
-                                    }}
-                                />
-                            )}
+                            {/* Main Content: Analysis Detail */}
+                            <div className="xl:col-span-8 space-y-6">
+                                {!selectedExPostItem ? (
+                                    <div className="h-full flex flex-col items-center justify-center p-12 text-center border-2 border-dashed rounded-xl bg-muted/10">
+                                        <FileText className="h-16 w-16 text-muted-foreground/20 mb-4" />
+                                        <h3 className="text-xl font-bold">Select a Firm</h3>
+                                        <p className="text-muted-foreground max-w-xs">Select an institution from the ranking to see their detailed ex-post analysis.</p>
+                                    </div>
+                                ) : (
+                                    <AnalysisDetail
+                                        item={selectedExPostItem}
+                                        onNavigate={(theme, instName) => {
+                                            const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
+                                            if (targetTheme) {
+                                                setActiveThemeName(theme);
+                                                const targetItem = targetTheme.items.find(i => i.Institution === instName);
+                                                setSelectedExPostItem(targetItem || targetTheme.items[0] || null);
+                                            }
+                                        }}
+                                    />
+                                )}
+                            </div>
                         </div>
-                    </>
-                )}
+                    )}
+                </div>
             </div>
         </div>
     );

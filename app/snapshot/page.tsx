@@ -8,7 +8,7 @@ import { InstitutionGrid } from "@/components/snapshot/institution-grid";
 import { ThemeDetailModal } from "@/components/snapshot/theme-detail-modal";
 import { StatCard } from "@/components/ui/stat-card";
 import { useSnapshotData } from "@/lib/hooks/use-snapshot-data";
-import { OutlookItem } from "@/types/outlook";
+import { OutlookItem, OutlookCall } from "@/types/outlook";
 import { FileText, Building2 } from "lucide-react";
 import SnapshotLoading from "./loading";
 import { fallbackSentimentData } from "@/lib/mock-data";
@@ -32,7 +32,7 @@ export default function SnapshotPage() {
   }, [institutions, selectedInstitution]);
 
   const [selectedTheme, setSelectedTheme] = useState<string | null>(null);
-  const [modalCalls, setModalCalls] = useState<OutlookItem[]>([]);
+  const [modalCalls, setModalCalls] = useState<OutlookCall[]>([]);
   const [loadingModal, setLoadingModal] = useState(false);
 
   // Sentiment data - using fallback since explicit sentiment field is not in OutlookCall model

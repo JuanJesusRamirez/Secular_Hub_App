@@ -14,7 +14,7 @@ import {
   Filler,
 } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import type { ChartJSOrUndefined } from 'react-chartjs-2/dist/types';
+import { Chart } from 'chart.js';
 
 ChartJS.register(
   CategoryScale,
@@ -47,10 +47,10 @@ const FIRM_COLORS = [
 export function SP500Chart() {
   const [chartData, setChartData] = useState<any>(null);
   const [comments, setComments] = useState<{ [key: string]: string }>({});
-  const [firmProjections, setFirmProjections] = useState<Array<{firm: string, value: number, color: string, dataIndex: number}>>([]);
+  const [firmProjections, setFirmProjections] = useState<Array<{ firm: string, value: number, color: string, dataIndex: number }>>([]);
   const [loading, setLoading] = useState(true);
-  const [labelPositions, setLabelPositions] = useState<Array<{firm: string, x: number, y: number, value: number, color: string}>>([]);
-  const chartRef = useRef<ChartJSOrUndefined<'line'>>(null);
+  const [labelPositions, setLabelPositions] = useState<Array<{ firm: string, x: number, y: number, value: number, color: string }>>([]);
+  const chartRef = useRef<Chart<'line'> | null>(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -65,11 +65,11 @@ export function SP500Chart() {
             const day = parts[0].padStart(2, '0');
             const month = parts[1];
             const year = parts[2];
-            
-            const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 
-                               'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+
+            const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
+              'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
             const monthName = monthNames[parseInt(month) - 1];
-            
+
             // Return format: DD Mon YYYY (e.g., "02 Ene 2025")
             return `${day} ${monthName} ${year}`;
           }
@@ -142,7 +142,7 @@ export function SP500Chart() {
         });
 
         // Create datasets with grouped labels, ordered by highest to lowest
-        const firmProjectionsList: Array<{firm: string, value: number, color: string}> = [];
+        const firmProjectionsList: Array<{ firm: string, value: number, color: string, dataIndex: number }> = [];
         let colorIndex = 0;
         sortedFirms.forEach((firm) => {
           const { value: lastFirmValue, index: lastFirmIndex } = firmProjections[firm];
@@ -323,17 +323,17 @@ export function SP500Chart() {
   const updateLabelPositions = useCallback(() => {
     if (chartRef.current && firmProjections.length > 0) {
       const chart = chartRef.current;
-      const positions: Array<{firm: string, x: number, y: number, value: number, color: string}> = [];
-      
+      const positions: Array<{ firm: string, x: number, y: number, value: number, color: string }> = [];
+
       // Group firms by value
-      const firmsByValue: { [key: number]: Array<{firm: string, color: string, dataIndex: number}> } = {};
+      const firmsByValue: { [key: number]: Array<{ firm: string, color: string, dataIndex: number }> } = {};
       firmProjections.forEach(fp => {
         if (!firmsByValue[fp.value]) {
           firmsByValue[fp.value] = [];
         }
         firmsByValue[fp.value].push({ firm: fp.firm, color: fp.color, dataIndex: fp.dataIndex });
       });
-      
+
       // For each unique value, create one label position
       Object.entries(firmsByValue).forEach(([value, firms]) => {
         const firstFirm = firms[0];
@@ -353,7 +353,7 @@ export function SP500Chart() {
           }
         }
       });
-      
+
       setLabelPositions(positions);
     }
   }, [firmProjections]);
@@ -366,13 +366,13 @@ export function SP500Chart() {
       setTimeout(updateLabelPositions, 500),
       setTimeout(updateLabelPositions, 1000),
     ];
-    
+
     // Also update on window resize
     const handleResize = () => {
       setTimeout(updateLabelPositions, 100);
     };
     window.addEventListener('resize', handleResize);
-    
+
     return () => {
       timers.forEach(t => clearTimeout(t));
       window.removeEventListener('resize', handleResize);
@@ -384,10 +384,11 @@ export function SP500Chart() {
     if (chartRef.current) {
       const chart = chartRef.current;
       // Listen to chart animation complete
-      const originalAfterRender = chart.options.animation?.onComplete;
-      if (chart.options.animation) {
-        chart.options.animation.onComplete = function(animation: any) {
-          if (originalAfterRender) originalAfterRender.call(this, animation);
+      const animation = chart.options.animation;
+      if (animation && typeof animation === 'object') {
+        const originalAfterRender = animation.onComplete;
+        animation.onComplete = function (this: any, arg: any) {
+          if (originalAfterRender) (originalAfterRender as any).call(this, arg);
           updateLabelPositions();
         };
       }
@@ -414,17 +415,17 @@ export function SP500Chart() {
     <div className="w-full flex flex-col p-6">
       {/* Chart Section with interactive labels */}
       <div className="w-full mb-8 relative" style={{ height: '500px' }}>
-        <Line 
-          ref={chartRef} 
-          data={chartData} 
+        <Line
+          ref={chartRef}
+          data={chartData}
           options={options}
         />
-        
+
         {/* Interactive HTML labels for each firm */}
         {labelPositions.map(({ firm, x, y, value, color }) => {
           // Get all firms in this group
           const firmsInGroup = firm.split(', ');
-          
+
           return (
             <div
               key={firm}
@@ -440,13 +441,13 @@ export function SP500Chart() {
               <div className="flex flex-row items-center gap-1">
                 {firmsInGroup.map((singleFirm, idx) => (
                   <div key={singleFirm} className="relative group">
-                    <div 
+                    <div
                       className="text-[9px] font-bold cursor-pointer px-1 py-0.5 rounded whitespace-nowrap hover:bg-gray-100 transition-colors"
                       style={{ color: color }}
                     >
-                      {singleFirm}{idx === firmsInGroup.length - 1 ? ` ${Math.round(value).toLocaleString()}` : ','} 
+                      {singleFirm}{idx === firmsInGroup.length - 1 ? ` ${Math.round(value).toLocaleString()}` : ','}
                     </div>
-                    
+
                     {/* Tooltip */}
                     {comments[singleFirm] && (
                       <div className="absolute z-[100] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 left-full ml-2 top-1/2 -translate-y-1/2" style={{ width: '320px' }}>

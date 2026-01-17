@@ -14,7 +14,7 @@ import {
   Filler,
 } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import type { ChartJSOrUndefined } from 'react-chartjs-2/dist/types';
+import { Chart } from 'chart.js';
 
 ChartJS.register(
   CategoryScale,
@@ -47,10 +47,10 @@ const FIRM_COLORS = [
 export function XAUChart() {
   const [chartData, setChartData] = useState<any>(null);
   const [comments, setComments] = useState<{ [key: string]: string }>({});
-  const [firmProjectionsList, setFirmProjectionsList] = useState<Array<{firm: string, value: number, color: string, dataIndex: number}>>([]);
+  const [firmProjectionsList, setFirmProjectionsList] = useState<Array<{ firm: string, value: number, color: string, dataIndex: number }>>([]);
   const [loading, setLoading] = useState(true);
-  const [labelPositions, setLabelPositions] = useState<Array<{firm: string, x: number, y: number, value: number, color: string}>>([]);
-  const chartRef = useRef<ChartJSOrUndefined<'line'>>(null);
+  const [labelPositions, setLabelPositions] = useState<Array<{ firm: string, x: number, y: number, value: number, color: string }>>([]);
+  const chartRef = useRef<Chart<'line'> | null>(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -119,7 +119,7 @@ export function XAUChart() {
           return firmProjections[b].value - firmProjections[a].value;
         });
 
-        const projectionsList: Array<{firm: string, value: number, color: string, dataIndex: number}> = [];
+        const projectionsList: Array<{ firm: string, value: number, color: string, dataIndex: number }> = [];
         let colorIndex = 0;
         sortedFirms.forEach((firm) => {
           const { value: lastFirmValue, index: lastFirmIndex } = firmProjections[firm];
@@ -285,17 +285,17 @@ export function XAUChart() {
   const updateLabelPositions = useCallback(() => {
     if (chartRef.current && firmProjectionsList.length > 0) {
       const chart = chartRef.current;
-      const positions: Array<{firm: string, x: number, y: number, value: number, color: string}> = [];
-      
+      const positions: Array<{ firm: string, x: number, y: number, value: number, color: string }> = [];
+
       // Group firms by value
-      const firmsByValue: { [key: number]: Array<{firm: string, color: string, dataIndex: number}> } = {};
+      const firmsByValue: { [key: number]: Array<{ firm: string, color: string, dataIndex: number }> } = {};
       firmProjectionsList.forEach(fp => {
         if (!firmsByValue[fp.value]) {
           firmsByValue[fp.value] = [];
         }
         firmsByValue[fp.value].push({ firm: fp.firm, color: fp.color, dataIndex: fp.dataIndex });
       });
-      
+
       // For each unique value, create one label position
       Object.entries(firmsByValue).forEach(([value, firms]) => {
         const firstFirm = firms[0];
@@ -314,7 +314,7 @@ export function XAUChart() {
           }
         }
       });
-      
+
       setLabelPositions(positions);
     }
   }, [firmProjectionsList]);
@@ -326,12 +326,12 @@ export function XAUChart() {
       setTimeout(updateLabelPositions, 500),
       setTimeout(updateLabelPositions, 1000),
     ];
-    
+
     const handleResize = () => {
       setTimeout(updateLabelPositions, 100);
     };
     window.addEventListener('resize', handleResize);
-    
+
     return () => {
       timers.forEach(t => clearTimeout(t));
       window.removeEventListener('resize', handleResize);
@@ -357,16 +357,16 @@ export function XAUChart() {
   return (
     <div className="w-full flex flex-col p-6">
       <div className="w-full mb-8 relative" style={{ height: '500px' }}>
-        <Line 
-          ref={chartRef} 
-          data={chartData} 
+        <Line
+          ref={chartRef}
+          data={chartData}
           options={options}
         />
-        
+
         {/* Interactive HTML labels for each firm */}
         {labelPositions.map(({ firm, x, y, value, color }) => {
           const firmsInGroup = firm.split(', ');
-          
+
           return (
             <div
               key={firm}
@@ -381,13 +381,13 @@ export function XAUChart() {
               <div className="flex flex-row items-center gap-1">
                 {firmsInGroup.map((singleFirm, idx) => (
                   <div key={singleFirm} className="relative group">
-                    <div 
+                    <div
                       className="text-[9px] font-bold cursor-pointer px-1 py-0.5 rounded whitespace-nowrap hover:bg-gray-100 transition-colors"
                       style={{ color: color }}
                     >
-                      {singleFirm}{idx === firmsInGroup.length - 1 ? ` ${Math.round(value).toLocaleString()}` : ','} 
+                      {singleFirm}{idx === firmsInGroup.length - 1 ? ` ${Math.round(value).toLocaleString()}` : ','}
                     </div>
-                    
+
                     {/* Tooltip */}
                     {comments[singleFirm] && (
                       <div className="absolute z-[100] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 left-full ml-2 top-1/2 -translate-y-1/2" style={{ width: '320px' }}>

@@ -20,14 +20,14 @@ export function CallCard({ call, className }: CallCardProps) {
           <div className="font-semibold text-sm">{call.institution}</div>
           <Badge variant="outline" className={cn(
             "text-xs",
-            call.convictionTier === "High" ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100" :
-            call.convictionTier === "Medium" ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-100" :
-            "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+            call.convictionTier?.toLowerCase() === "high" ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100" :
+              call.convictionTier?.toLowerCase() === "medium" ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-100" :
+                "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
           )}>
             {call.convictionTier || "Neutral"}
           </Badge>
         </div>
-        
+
         <div className="text-sm text-muted-foreground">
           {call.themeCategory && <span className="font-medium text-foreground">{call.themeCategory}: </span>}
           {expanded ? call.callText : (
@@ -37,8 +37,8 @@ export function CallCard({ call, className }: CallCardProps) {
           )}
         </div>
 
-        <button 
-          onClick={() => setExpanded(!expanded)} 
+        <button
+          onClick={() => setExpanded(!expanded)}
           className="flex items-center text-xs text-primary hover:underline mt-1"
         >
           {expanded ? (

@@ -1,5 +1,6 @@
 
 import { OutlookItem } from "@/types/outlook";
+export { type OutlookItem };
 import enrichedData from "./outlook_2026_enriched.json";
 
 // The enriched JSON is a direct array of items

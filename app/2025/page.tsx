@@ -189,9 +189,18 @@ const ReasoningRenderer = ({ text }: { text: string }) => {
 };
 
 const getGlobalScoreColor = (score: number) => {
-    if (score >= 800) return "text-green-600";
-    if (score >= 650) return "text-slate-950"; // Black
-    if (score >= 450) return "text-yellow-600";
+    if (score >= 810) return "text-green-600"; // Excellent (90% of 900)
+    if (score >= 675) return "text-slate-950"; // Good (75% of 900)
+    if (score >= 540) return "text-yellow-600"; // Partial (60% of 900)
+    if (score >= 360) return "text-orange-500"; // Weak (40% of 900)
+    return "text-red-500"; // Failed
+};
+
+const getThemeScoreColor = (score: number) => {
+    if (score >= 90) return "text-green-600";
+    if (score >= 75) return "text-slate-950"; // Black (Good)
+    if (score >= 60) return "text-yellow-600";
+    if (score >= 40) return "text-orange-500";
     return "text-red-500";
 };
 
@@ -249,7 +258,7 @@ export default function ExPost2025Page() {
 
             {/* Stats Summary Area */}
             {activeThemeName !== THEME_RANKING_LABEL && activeThemeName !== METHODOLOGY_LABEL && (
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-8 gap-4">
                     <StatCard
                         title="Firms"
                         value={stats.totalFirms}
@@ -266,33 +275,39 @@ export default function ExPost2025Page() {
                         title={activeThemeName === "GLOBAL RANKING" ? "Global Score" : "Avg Score"}
                         value={`${stats.avgScore} pts`}
                         icon={TrendingUp}
-                        color={activeThemeName === "GLOBAL RANKING" ? getGlobalScoreColor(stats.avgScore) : "text-emerald-500"}
+                        color={activeThemeName === "GLOBAL RANKING" ? getGlobalScoreColor(stats.avgScore) : getThemeScoreColor(stats.avgScore)}
                     />
 
                     {activeThemeName === "GLOBAL RANKING" ? (
                         <>
                             <StatCard
-                                title="Alphas"
+                                title="Excellent"
                                 value={stats.excellentCount}
                                 icon={Zap}
                                 color="text-green-600"
                             />
                             <StatCard
-                                title="Leaders"
+                                title="Good"
                                 value={stats.goodCount}
                                 icon={Trophy}
                                 color="text-slate-950"
                             />
                             <StatCard
-                                title="Consistent"
+                                title="Partial"
                                 value={stats.partialCount}
                                 icon={CheckCircle2}
                                 color="text-yellow-600"
                             />
                             <StatCard
-                                title="Lagging"
+                                title="Weak"
                                 value={stats.weakCount}
                                 icon={AlertTriangle}
+                                color="text-orange-500"
+                            />
+                            <StatCard
+                                title="Failed"
+                                value={stats.failedCount}
+                                icon={XCircle}
                                 color="text-red-500"
                             />
                         </>
@@ -308,7 +323,7 @@ export default function ExPost2025Page() {
                                 title="Good"
                                 value={stats.goodCount}
                                 icon={CheckCircle2}
-                                color="text-emerald-500"
+                                color="text-slate-950"
                             />
                             <StatCard
                                 title="Partial"
@@ -318,7 +333,13 @@ export default function ExPost2025Page() {
                             />
                             <StatCard
                                 title="Weak"
-                                value={stats.weakCount + stats.failedCount}
+                                value={stats.weakCount}
+                                icon={AlertTriangle}
+                                color="text-orange-500"
+                            />
+                            <StatCard
+                                title="Failed"
+                                value={stats.failedCount}
                                 icon={XCircle}
                                 color="text-red-500"
                             />
@@ -482,7 +503,7 @@ export default function ExPost2025Page() {
                                                 </div>
                                                 <div className={cn(
                                                     "text-xs font-black",
-                                                    getClassificationColor(item.classification)
+                                                    activeThemeName === "GLOBAL RANKING" ? getGlobalScoreColor(item.score) : getClassificationColor(item.classification)
                                                 )}>
                                                     {item.score} <span className="opacity-60 text-[8px]">PTS</span>
                                                 </div>
@@ -635,6 +656,58 @@ function MethodologyDetailPage() {
                                     <p className="text-[11px] text-muted-foreground leading-relaxed font-medium">
                                         To ensure fairness across different report depths, we also provide a <strong>Per-Theme Classification</strong> (Excellent to Failed). This allows specialized boutique firms to stand out in their specific areas of expertise.
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+
+                {/* 3. Classification Scale & Colors */}
+                <Card className="border-l-4 border-l-slate-900 md:col-span-2">
+                    <CardHeader>
+                        <CardTitle className="text-sm font-black uppercase tracking-widest flex items-center gap-2">
+                            <LayoutGrid className="h-4 w-4 text-slate-950" />
+                            Performance Classification & Visual Language
+                        </CardTitle>
+                        <CardDescription className="text-xs font-bold uppercase tracking-tight">Standardized tiers and color mapping</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            {/* Theme-Specific Scale */}
+                            <div className="space-y-4">
+                                <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground border-b pb-2 mb-4">Theme Performance (0-100%)</h4>
+                                <div className="space-y-2">
+                                    {[
+                                        { label: "EXCELLENT", score: ">= 90", color: "text-green-500", bg: "bg-green-500/10", border: "border-green-500/30" },
+                                        { label: "GOOD", score: ">= 75", color: "text-slate-950", bg: "bg-slate-950/5", border: "border-slate-950/20" },
+                                        { label: "PARTIAL", score: ">= 60", color: "text-yellow-500", bg: "bg-yellow-500/10", border: "border-yellow-500/30" },
+                                        { label: "WEAK", score: ">= 40", color: "text-orange-500", bg: "bg-orange-500/10", border: "border-orange-500/30" },
+                                        { label: "FAILED", score: "< 40", color: "text-red-500", bg: "bg-red-500/10", border: "border-red-500/30" },
+                                    ].map((tier) => (
+                                        <div key={tier.label} className={cn("flex items-center justify-between p-2 rounded-xl border", tier.bg, tier.border)}>
+                                            <span className={cn("text-[10px] font-black uppercase tracking-widest", tier.color)}>{tier.label}</span>
+                                            <span className="text-[10px] font-bold font-mono">{tier.score}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Global Aggregation Scale */}
+                            <div className="space-y-4">
+                                <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground border-b pb-2 mb-4">Global Aggregation (PTS / 900 Ref)</h4>
+                                <div className="space-y-2">
+                                    {[
+                                        { label: "EXCELLENT", score: ">= 810", color: "text-green-600", bg: "bg-green-600/5", border: "border-green-600/20" },
+                                        { label: "GOOD", score: ">= 675", color: "text-slate-950", bg: "bg-slate-950/5", border: "border-slate-950/20" },
+                                        { label: "PARTIAL", score: ">= 540", color: "text-yellow-600", bg: "bg-yellow-600/5", border: "border-yellow-600/20" },
+                                        { label: "WEAK", score: ">= 360", color: "text-orange-500", bg: "bg-orange-500/5", border: "border-orange-500/20" },
+                                        { label: "FAILED", score: "< 360", color: "text-red-600", bg: "bg-red-600/5", border: "border-red-600/20" },
+                                    ].map((tier) => (
+                                        <div key={tier.label} className={cn("flex items-center justify-between p-2.5 rounded-xl border border-dashed", tier.bg, tier.border)}>
+                                            <span className={cn("text-[10px] font-black uppercase tracking-widest", tier.color)}>{tier.label}</span>
+                                            <span className="text-[10px] font-bold font-mono">{tier.score}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
@@ -838,12 +911,10 @@ function AnalysisDetail({
                                         <Badge
                                             variant="outline"
                                             className={cn(
-                                                "text-[10px] font-bold",
-                                                tb.score >= 90 ? "text-green-500 border-green-500/50 bg-green-500/10" :
-                                                    tb.score >= 75 ? "text-emerald-500 border-emerald-500/50 bg-emerald-500/10" :
-                                                        tb.score >= 60 ? "text-yellow-500 border-yellow-500/50 bg-yellow-500/10" :
-                                                            tb.score >= 40 ? "text-orange-500 border-orange-500/50 bg-orange-500/10" :
-                                                                "text-red-500 border-red-500/50 bg-red-500/10"
+                                                "text-[10px] font-black border-2",
+                                                getThemeScoreColor(tb.score),
+                                                getThemeScoreColor(tb.score).replace('text-', 'border-').replace('600', '500').replace('500', '500/50'),
+                                                getThemeScoreColor(tb.score).replace('text-', 'bg-').replace('600', '500').replace('500', '500/10')
                                             )}
                                         >
                                             {tb.score} PTS

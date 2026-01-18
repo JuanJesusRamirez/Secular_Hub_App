@@ -911,31 +911,31 @@ function AnalysisDetail({
                             <button
                                 key={idx}
                                 onClick={() => onNavigate(tb.theme, item.Institution)}
-                                className="p-4 rounded-2xl border-2 bg-card hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all text-left flex flex-col justify-between group h-full"
+                                className="p-4 rounded-2xl border bg-card hover:shadow-xl hover:-translate-y-2 transition-transform duration-200 text-left flex items-center gap-4 group h-full"
                             >
-                                <div className="space-y-3">
-                                    <div className="flex items-center justify-between">
-                                        <div className="p-2 rounded-lg bg-primary/10">
-                                            <ThemeIcon theme={tb.theme} className="h-4 w-4 text-primary" />
-                                        </div>
-                                        <Badge
-                                            variant="outline"
-                                            className={cn(
-                                                "text-[10px] font-black border-2",
-                                                getThemeScoreColor(tb.score),
-                                                getThemeScoreColor(tb.score).replace('text-', 'border-').replace('600', '500').replace('500', '500/50'),
-                                                getThemeScoreColor(tb.score).replace('text-', 'bg-').replace('600', '500').replace('500', '500/10')
-                                            )}
-                                        >
-                                            {tb.score} PTS
-                                        </Badge>
-                                    </div>
-                                    <div>
-                                        <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mb-1">{tb.theme}</p>
-                                    </div>
+                                {/* Score Circle */}
+                                <div className={cn("flex-shrink-0 h-16 w-16 rounded-full flex items-center justify-center shadow-md transform transition-transform duration-200 group-hover:scale-105",
+                                    getThemeScoreColor(tb.score).replace('text-', 'bg-').replace('600', '600/15').replace('500', '500/15'))}>
+                                    <span className={cn("text-2xl font-extrabold", getThemeScoreColor(tb.score))}>{tb.score}</span>
                                 </div>
-                                <div className="flex items-center gap-1.5 text-[10px] font-black text-primary mt-6 uppercase tracking-widest group-hover:translate-x-1 transition-transform">
-                                    View Full Analysis <ArrowRight className="h-3 w-3" />
+
+                                {/* Content */}
+                                <div className="flex-1 flex items-start justify-between">
+                                    <div className="min-w-0">
+                                        <p className="text-[11px] font-black uppercase tracking-widest text-muted-foreground mb-1 truncate">{tb.theme}</p>
+                                        <div className="flex flex-wrap gap-2">
+                                            {tb.exAnte !== undefined && (
+                                                <span className="text-[11px] font-bold px-2 py-1 rounded-md bg-muted/10 border border-muted/30">Ex-Ante #{tb.exAnte}</span>
+                                            )}
+                                            {tb.exPost !== undefined && (
+                                                <span className="text-[11px] font-bold px-2 py-1 rounded-md bg-muted/10 border border-muted/30">Ex-Post #{tb.exPost}</span>
+                                            )}
+                                        </div>
+                                    </div>
+
+                                    <div className="ml-4 flex items-center opacity-70 group-hover:opacity-100 transition-opacity">
+                                        <ArrowRight className="h-5 w-5 text-primary" />
+                                    </div>
                                 </div>
                             </button>
                         ))}

@@ -179,16 +179,23 @@ export const getMaterializedColor = (status: string): string => {
     }
 };
 
+export interface AggregateRankingThemeEntry {
+    theme: string;
+    score: number;
+    exAnte?: number;
+    exPost?: number;
+}
+
 export interface AggregateRankingItem {
     institution: string;
     totalScore: number;
     themesCount: number;
     avgScore: number;
-    themeBreakdown: { theme: string; score: number }[];
+    themeBreakdown: AggregateRankingThemeEntry[];
 }
 
 export const getAggregateRanking = (themes: ThemeData[]): AggregateRankingItem[] => {
-    const aggregate: Record<string, { totalScore: number; themesCount: number; themeBreakdown: { theme: string; score: number }[] }> = {};
+    const aggregate: Record<string, { totalScore: number; themesCount: number; themeBreakdown: AggregateRankingThemeEntry[] }> = {};
 
     themes.forEach((theme) => {
         // Find the best entry for each institution within THIS theme
@@ -206,7 +213,11 @@ export const getAggregateRanking = (themes: ThemeData[]): AggregateRankingItem[]
             }
             aggregate[inst].totalScore += score;
             aggregate[inst].themesCount += 1;
-            aggregate[inst].themeBreakdown.push({ theme: theme.theme, score });
+            // find the institution's record in the theme to extract positions
+            const matchedItem = theme.items.find(i => i.Institution === inst && i.score === score) || theme.items.find(i => i.Institution === inst);
+            const exAntePos = matchedItem && (matchedItem.Original_Rank || matchedItem.Original_Rank === 0) ? matchedItem.Original_Rank : undefined;
+            const exPostPos = matchedItem && (matchedItem.Rank || matchedItem.Rank === 0) ? matchedItem.Rank : undefined;
+            aggregate[inst].themeBreakdown.push({ theme: theme.theme, score, exAnte: exAntePos, exPost: exPostPos });
         });
     });
 

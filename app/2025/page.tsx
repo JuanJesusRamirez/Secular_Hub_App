@@ -398,6 +398,24 @@ export default function ExPost2025Page() {
 
                                 <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2">Market Exploration</h3>
                                 <div className="flex gap-2">
+                                    <Button
+                                        variant={activeThemeName === METHODOLOGY_LABEL ? "default" : "outline"}
+                                        size="icon"
+                                        onClick={() => {
+                                            setActiveThemeName(METHODOLOGY_LABEL);
+                                            setSelectedExPostItem(null);
+                                        }}
+                                        className={cn(
+                                            "h-11 w-11 shrink-0 transition-all",
+                                            activeThemeName === METHODOLOGY_LABEL
+                                                ? "shadow-md bg-indigo-600 hover:bg-indigo-700"
+                                                : "bg-muted/50 hover:bg-muted"
+                                        )}
+                                        title="Audit Methodology"
+                                    >
+                                        <BookOpen className="h-4 w-4" />
+                                    </Button>
+
                                     <Select
                                         value={ALL_THEMES_WITH_GLOBAL.slice(1).some(t => t.theme === activeThemeName) ? activeThemeName : ""}
                                         onValueChange={(value) => {
@@ -426,24 +444,6 @@ export default function ExPost2025Page() {
                                             ))}
                                         </SelectContent>
                                     </Select>
-
-                                    <Button
-                                        variant={activeThemeName === METHODOLOGY_LABEL ? "default" : "outline"}
-                                        size="icon"
-                                        onClick={() => {
-                                            setActiveThemeName(METHODOLOGY_LABEL);
-                                            setSelectedExPostItem(null);
-                                        }}
-                                        className={cn(
-                                            "h-11 w-11 shrink-0 transition-all",
-                                            activeThemeName === METHODOLOGY_LABEL
-                                                ? "shadow-md bg-indigo-600 hover:bg-indigo-700"
-                                                : "bg-muted/50 hover:bg-muted"
-                                        )}
-                                        title="Audit Methodology"
-                                    >
-                                        <BookOpen className="h-4 w-4" />
-                                    </Button>
                                 </div>
                             </div>
                         </div>
@@ -655,6 +655,16 @@ function MethodologyDetailPage() {
                                     <h4 className="text-xs font-black uppercase tracking-tight mb-1">Standardization</h4>
                                     <p className="text-[11px] text-muted-foreground leading-relaxed font-medium">
                                         To ensure fairness across different report depths, we also provide a <strong>Per-Theme Classification</strong> (Excellent to Failed). This allows specialized boutique firms to stand out in their specific areas of expertise.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex gap-4">
+                                <div className="h-8 w-8 shrink-0 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-600 font-bold text-xs ring-4 ring-amber-500/5">4</div>
+                                <div>
+                                    <h4 className="text-xs font-black uppercase tracking-tight mb-1">Tie-break by Conviction</h4>
+                                    <p className="text-[11px] text-muted-foreground leading-relaxed font-medium">
+                                        In the event of a tie in the Global Ranking, ties are resolved based on the editorial conviction level; the institution with the higher conviction is given priority.
                                     </p>
                                 </div>
                             </div>

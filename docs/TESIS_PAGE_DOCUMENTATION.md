@@ -48,6 +48,9 @@ Nueva página que muestra las **Tesis Agregadas** (Consensus Thesis vs Actual Ou
   - **Consensus Thesis**: Predicción original
   - **Actual Outcome (Tesis Ex Post)**: Lo que realmente sucedió (destacado en naranja)
 
+### Ranking y Desempate
+- **Desempate en el Global Ranking:** En caso de empate en el ranking global, el desempate se realiza en base al nivel de convicción (mayor convicción tiene prioridad).
+
 ### Código de Colores
 Los temas tienen colores consistentes con el resto de la aplicación:
 - BASE CASE: Gris

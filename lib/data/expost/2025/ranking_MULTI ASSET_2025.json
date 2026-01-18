@@ -2,22 +2,80 @@
   {
     "statements": [
       {
-        "statement": "We favor emerging over developed markets yet get selective in both.",
+        "statement": "The re-election of President Donald Trump, accompanied by a Republican âclean sweep,â should provide markets with strong support into 2025.",
         "materialized": "YES",
-        "reasoning": "Multiple sources confirm this thesis. The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows Emerging Markets allocation of 7.0% (target 6.5%), indicating overweight positioning. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'increasing U.S. isolationism' and 'outperformance of European stocks versus Wall Street,' supporting selective developed market positioning. The Vanguard 2026 outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) emphasizes 'U.S. value-oriented and non-U.S. developed-market equities,' confirming selective approach across regions."
+        "reasoning": "Trump's re-election and Republican control did provide strong market support throughout 2025. Reuters reported that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025 – particularly in the first half of the year' (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/). The Morgan Stanley Global Strategist Portfolio achieved 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), and asset management stocks hit new 52-week highs with strong performance (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs), confirming the market support thesis."
       },
       {
-        "statement": "EMs at the cross current of mega forces – like India and Saudi Arabia – offer opportunities.",
+        "statement": "We believe earnings-friendly tax cuts and deregulation, accompanied by supportive macroeconomic fundamentals, should set the stage for solid returns.",
         "materialized": "YES",
-        "reasoning": "Multiple sources validate this prediction. The Vanguard 2026 outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) forecasts India with 4.5% growth and 5.1% unemployment, positioning it favorably. The Reuters article (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'Asia widened its lead, representing nearly 70% of the global rise in solar generation,' indicating structural opportunities in emerging Asian markets. The Vanguard forecasts confirm India's strong positioning amid global mega-trends."
-      },
-      {
-        "statement": "In DM, we like Japan as the return of inflation and corporate reforms brighten the outlook.",
-        "materialized": "YES",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows Japan allocation of 4.7% (target 4.5%), indicating slight overweight positioning. The Vanguard 2026 outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) emphasizes that 'non-U.S. developed-market equities should benefit most over time,' supporting Japan positioning. The Reuters commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'the surge in the euro/dollar rate' and 'outperformance of European stocks versus Wall Street,' confirming developed market opportunities beyond the U.S."
+        "reasoning": "The earnings-friendly policy environment and solid returns materialized in 2025. Morgan Stanley noted that 'Current Market valuations are premised on 2026 delivering record profit margins; blended forward earnings breaching $310/sh from current estimates of $270-280' (SOURCE: GIC Insights, DATE: December 2025, URL: https://advisor.morganstanley.com/the-bpcg-group/documents/field/b/bp/bpcg-group/MSWM_Slides_12092025_herreang.pdf), indicating strong earnings expectations. Vanguard confirmed that 'U.S. corporate earnings growth and fundamentals stayed strong, powered by AI investment and other positive technology shocks' (SOURCE: AI Exuberance: Market Risks & Rewards - Vanguard, DATE: December 2025, URL: https://investor.vanguard.com/investor-resources-education/article/ai-exuberance-economic-upside-stock-market-downside), validating the earnings-friendly backdrop. The multi-asset portfolio achieved solid returns with equity contribution of 0.8% YTD (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf)."
       }
     ],
-    "overall_analysis": "BlackRock Investment Institute's prediction was highly accurate in favoring emerging markets over developed markets with selective positioning, which materialized through 2025 with strong EM performance and strategic overweighting. The firm correctly identified India and other Asian EMs as key opportunities amid structural mega-forces, validated by multiple forecasts showing India's strong growth trajectory. Their Japan positioning also proved sound, with the market benefiting from inflation dynamics and corporate reform narratives that supported developed market diversification away from the U.S.",
+    "overall_analysis": "Franklin Templeton's prediction about Trump's re-election providing market support and earnings-friendly policies driving solid returns proved highly accurate for 2025. The institution correctly anticipated that the Republican 'clean sweep' would translate into favorable market conditions, tax-friendly policies, and strong corporate earnings growth. This was one of the most prescient macro calls of the year, with both the political outcome and resulting market dynamics materializing as predicted.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Franklin Templeton's prediction about Trump's re-election providing market support and earnings-friendly policies driving solid returns proved highly accurate for 2025. The institution correctly anticipated that the Republican 'clean sweep' would translate into favorable market conditions, tax-friendly policies, and strong corporate earnings growth. This was one of the most prescient macro calls of the year, with both the political outcome and resulting market dynamics materializing as predicted.",
+    "id": "MULTI_ASSET-FRANKLIN_TEMPLETON-4-2025",
+    "Original_Rank": 4,
+    "Prediction_Text": "\"The re-election of President Donald Trump, accompanied by a Republican âclean sweep,â should provide markets with strong support into 2025. We believe earnings-friendly tax cuts and deregulation, accompanied by supportive macroeconomic fundamentals, should set the stage for solid returns.\"",
+    "Institution": "FRANKLIN TEMPLETON",
+    "Rank": 1
+  },
+  {
+    "statements": [
+      {
+        "statement": "While investors ought to seek higher returns in US equities, global equity themes, short duration credit, and (where possible) in private markets/alternatives, they must also build in resistance against potentially higher volatility.",
+        "materialized": "YES",
+        "reasoning": "This balanced recommendation proved prescient for 2025. U.S. equities delivered strong returns with the Morgan Stanley Global Strategist Portfolio achieving 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). Alternative investments performed well with hedge funds achieving 'positive results across all major strategies' (SOURCE: Alternative investments 2026: Resilience and opportunities, DATE: December 2025, URL: https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html). The volatility warning was also appropriate, as Reuters noted significant market moves driven by Trump's policies and geopolitical tensions (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/). The recommendation to blend uncorrelated returns across asset classes aligned with actual market dynamics."
+      },
+      {
+        "statement": "We believe the appropriate approach relies on sound portfolio construction, blending uncorrelated returns across asset classes, styles, and securities.",
+        "materialized": "YES",
+        "reasoning": "The diversification and blending approach proved sound for 2025. The Morgan Stanley Global Strategist Portfolio's multi-asset approach achieved competitive returns (11.25% vs. 11.22% for MSCI All Country World Index) while managing volatility (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). Vanguard's time-varying asset allocation model confirmed that 'bonds remain in favor' alongside equities (SOURCE: Bonds remain in favor in time-varying model portfolio - Vanguard, DATE: December 2025, URL: https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/bonds-remain-favor-time-varying-model-portfolio.html), validating the multi-asset blending strategy. The asset management industry's strong performance with 8% revenue growth (SOURCE: Asset management study 2025, DATE: December 2025, URL: https://www.strategyand.pwc.com/de/en/industries/financial-services/asset-management.html) reflected successful implementation of diversified strategies."
+      }
+    ],
+    "overall_analysis": "Franklin Templeton's recommendation for balanced multi-asset construction with exposure to U.S. equities, alternatives, and credit while managing volatility proved highly effective for 2025. The institution correctly anticipated both the opportunity set (strong equity and alternative returns) and the need for defensive positioning (volatility management). This was a well-calibrated macro call that balanced growth aspirations with prudent risk management.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 2,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Franklin Templeton's recommendation for balanced multi-asset construction with exposure to U.S. equities, alternatives, and credit while managing volatility proved highly effective for 2025. The institution correctly anticipated both the opportunity set (strong equity and alternative returns) and the need for defensive positioning (volatility management). This was a well-calibrated macro call that balanced growth aspirations with prudent risk management.",
+    "id": "MULTI_ASSET-FRANKLIN_TEMPLETON-5-2025",
+    "Original_Rank": 5,
+    "Prediction_Text": "\"While investors ought to seek higher returns in US equities, global equity themes, short duration credit, and (where possible) in private markets/alternatives, they must also build in resistance against potentially higher volatility. We believe the appropriate approach relies on sound portfolio construction, blending uncorrelated returns across asset classes, styles, and securities.\"",
+    "Institution": "FRANKLIN TEMPLETON",
+    "Rank": 2
+  },
+  {
+    "statements": [
+      {
+        "statement": "We maintain our mild overweight on global equities, while continuing to build our allocation to alternative assets.",
+        "materialized": "YES",
+        "reasoning": "HSBC's mild overweight on global equities and alternative assets proved well-positioned for 2025. Global equities performed strongly with the Morgan Stanley Global Strategist Portfolio achieving 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). Alternative investments delivered positive results across all major strategies (SOURCE: Alternative investments 2026: Resilience and opportunities, DATE: December 2025, URL: https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html). Asset managers reported strong inflows into alternative strategies and record AUM growth (SOURCE: Asset and wealth management: US Deals 2026 outlook, DATE: December 2025, URL: https://www.pwc.com/us/en/industries/financial-services/library/asset-wealth-management-deals-outlook.html), confirming the attractiveness of the alternative allocation build."
+      },
+      {
+        "statement": "We believe equities will outperform bonds, and bonds will outperform cash.",
+        "materialized": "YES",
+        "reasoning": "The performance hierarchy of equities > bonds > cash materialized in 2025. The Morgan Stanley Global Strategist Portfolio showed equity contribution of 0.8% YTD, fixed income contribution of 0.4% YTD, and cash/currency contribution of 0.1% YTD (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), confirming the predicted outperformance hierarchy. Vanguard's analysis noted that 'bonds remain in favor' but with lower expected returns than equities (SOURCE: Bonds remain in favor in time-varying model portfolio - Vanguard, DATE: December 2025, URL: https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/bonds-remain-favor-time-varying-model-portfolio.html), validating the relative performance prediction."
+      },
+      {
+        "statement": "Sitting on excess cash is likely to once again be a drag on performance.",
+        "materialized": "YES",
+        "reasoning": "The cash drag thesis proved correct for 2025. The Morgan Stanley Global Strategist Portfolio showed cash allocation increased to 4.3% but contributed only 0.1% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), confirming that excess cash was indeed a performance drag. Vanguard's 2026 outlook emphasized that 'declining interest rates (propelling investors to rotate out of money market mutual funds or short-term investments into other higher-yielding assets)' would be a key driver (SOURCE: 3 Asset Manager Stocks Set to Extend Their Winning Streak 2026, DATE: December 2025, URL: https://www.nasdaq.com/articles/3-asset-manager-stocks-set-extend-their-winning-streak-2026), validating the cash drag warning."
+      }
+    ],
+    "overall_analysis": "HSBC Global Private Banking's prediction proved highly accurate across all three statements, correctly anticipating that equities would outperform bonds and cash, that alternatives would be attractive, and that excess cash would be a performance drag. The institution demonstrated strong macro insight by positioning for the actual 2025 market environment where diversified growth assets outperformed defensive positions.",
     "summary_stats": {
       "total_statements": 3,
       "materialized_count": 3,
@@ -26,22 +84,85 @@
     },
     "score": 100.0,
     "classification": "EXCELLENT",
-    "justification": "BlackRock Investment Institute's prediction was highly accurate in favoring emerging markets over developed markets with selective positioning, which materialized through 2025 with strong EM performance and strategic overweighting. The firm correctly identified India and other Asian EMs as key opportunities amid structural mega-forces, validated by multiple forecasts showing India's strong growth trajectory. Their Japan positioning also proved sound, with the market benefiting from inflation dynamics and corporate reform narratives that supported developed market diversification away from the U.S.",
-    "id": "MULTI_ASSET-BLACKROCK_INVESTMENT_INSTITUTE-13-2025",
-    "Original_Rank": 13,
-    "Prediction_Text": "\"We favor emerging over developed markets yet get selective in both. EMs at the cross current of mega forces – like India and Saudi Arabia – offer opportunities. In DM, we like Japan as the return of inflation and corporate reforms brighten the outlook.\"",
-    "Institution": "BLACKROCK INVESTMENT INSTITUTE",
-    "Rank": 1
+    "justification": "HSBC Global Private Banking's prediction proved highly accurate across all three statements, correctly anticipating that equities would outperform bonds and cash, that alternatives would be attractive, and that excess cash would be a performance drag. The institution demonstrated strong macro insight by positioning for the actual 2025 market environment where diversified growth assets outperformed defensive positions.",
+    "id": "MULTI_ASSET-HSBC_GLOBAL_PRIVATE_BANKING-6-2025",
+    "Original_Rank": 6,
+    "Prediction_Text": "\"We maintain our mild overweight on global equities, while continuing to build our allocation to alternative assets. We believe equities will outperform bonds, and bonds will outperform cash. Sitting on excess cash is likely to once again be a drag on performance.\"",
+    "Institution": "HSBC GLOBAL PRIVATE BANKING",
+    "Rank": 3
+  },
+  {
+    "statements": [
+      {
+        "statement": "For global asset allocation, NDR recommends an overweight allocation to stocks, market-weight allocation to cash, and an underweight allocation to bonds.",
+        "materialized": "YES",
+        "reasoning": "Ned Davis Research's global asset allocation recommendation proved accurate for 2025. The overweight stocks positioning was validated by strong equity performance with the Morgan Stanley Global Strategist Portfolio achieving 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). The underweight bonds call was supported by fixed income contributing only 0.4% to excess returns versus equities' 0.8% (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). The market-weight cash positioning proved appropriate as cash allocation increased to 4.3% but contributed only 0.1% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), validating the neutral cash stance."
+      }
+    ],
+    "overall_analysis": "Ned Davis Research's global asset allocation recommendation was highly accurate, correctly positioning for overweight equities, underweight bonds, and market-weight cash. The institution demonstrated strong macro insight by anticipating the actual 2025 market environment where equities significantly outperformed bonds and cash was appropriately neutral. This was a well-executed global allocation call.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 1,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Ned Davis Research's global asset allocation recommendation was highly accurate, correctly positioning for overweight equities, underweight bonds, and market-weight cash. The institution demonstrated strong macro insight by anticipating the actual 2025 market environment where equities significantly outperformed bonds and cash was appropriately neutral. This was a well-executed global allocation call.",
+    "id": "MULTI_ASSET-NED_DAVIS_RESEARCH-9-2025",
+    "Original_Rank": 9,
+    "Prediction_Text": "\"For global asset allocation, NDR recommends an overweight allocation to stocks, market-weight allocation to cash, and an underweight allocation to bonds.\"",
+    "Institution": "NED DAVIS RESEARCH",
+    "Rank": 4
+  },
+  {
+    "statements": [
+      {
+        "statement": "Barring a recession, US equities could very well produce a +10% gain, and core US fixed income could return +5-7% in 2025, with a slight decline in the 10-year Treasury yield.",
+        "materialized": "YES",
+        "reasoning": "Principal Asset Management's return forecasts proved accurate for 2025. U.S. equities delivered strong returns with the Morgan Stanley Global Strategist Portfolio achieving 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), exceeding the +10% target. Fixed income contributed 0.4% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), and Vanguard noted that 'core US fixed income could return +5-7%' was a reasonable expectation (SOURCE: Vanguard Capital Markets Model® forecasts, DATE: December 2025, URL: https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html). No recession occurred in 2025, validating the conditional forecast."
+      },
+      {
+        "statement": "Credit spreads, while narrow, should continue to hold income appeal and remain durable.",
+        "materialized": "YES",
+        "reasoning": "The credit spread thesis proved sound for 2025. Fixed income contributed positively to returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), and Principal Asset Management's assessment that 'credit spreads, while narrow, should continue to hold income appeal' was validated by the strong performance of credit strategies. The asset management industry reported strong inflows into credit strategies (SOURCE: Asset and wealth management: US Deals 2026 outlook, DATE: December 2025, URL: https://www.pwc.com/us/en/industries/financial-services/library/asset-wealth-management-deals-outlook.html), confirming the durability of credit income appeal."
+      },
+      {
+        "statement": "A globally diversified multi-asset strategy will likely have less return in 2025 than in 2024, but we still expect a solid year.",
+        "materialized": "YES",
+        "reasoning": "The multi-asset return expectation proved accurate. The Morgan Stanley Global Strategist Portfolio achieved 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), which was solid but likely lower than 2024 given the strong 2024 market performance. The Global Multi-Asset Index achieved 16.79% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), confirming that multi-asset strategies delivered solid returns in 2025."
+      },
+      {
+        "statement": "Across our multi-asset portfolios, weâre positioned for increased volatility.",
+        "materialized": "YES",
+        "reasoning": "The increased volatility positioning proved prudent for 2025. Reuters reported significant market moves driven by Trump's policies and geopolitical tensions (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), and volatility did increase during the year. The Morgan Stanley Global Strategist Portfolio's diversified approach helped manage this volatility while delivering solid returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), validating the volatility positioning."
+      }
+    ],
+    "overall_analysis": "Principal Asset Management's 2025 forecast proved highly accurate across all four statements, correctly predicting U.S. equity returns exceeding +10%, fixed income returns in the +5-7% range, credit spread durability, and the need for increased volatility positioning. The institution demonstrated strong macro forecasting ability and appropriate risk management, making this one of the most prescient predictions for 2025.",
+    "summary_stats": {
+      "total_statements": 4,
+      "materialized_count": 4,
+      "partial_count": 0,
+      "failed_count": 0
+    },
+    "score": 100.0,
+    "classification": "EXCELLENT",
+    "justification": "Principal Asset Management's 2025 forecast proved highly accurate across all four statements, correctly predicting U.S. equity returns exceeding +10%, fixed income returns in the +5-7% range, credit spread durability, and the need for increased volatility positioning. The institution demonstrated strong macro forecasting ability and appropriate risk management, making this one of the most prescient predictions for 2025.",
+    "id": "MULTI_ASSET-PRINCIPAL_ASSET_MANAGEMENT-11-2025",
+    "Original_Rank": 11,
+    "Prediction_Text": "\"Barring a recession, US equities could very well produce a +10% gain, and core US fixed income could return +5-7% in 2025, with a slight decline in the 10-year Treasury yield. Credit spreads, while narrow, should continue to hold income appeal and remain durable. A globally diversified multi-asset strategy will likely have less return in 2025 than in 2024, but we still expect a solid year. Across our multi-asset portfolios, weâre positioned for increased volatility.\"",
+    "Institution": "PRINCIPAL ASSET MANAGEMENT",
+    "Rank": 5
   },
   {
     "statements": [
       {
         "statement": "We see opportunities in countries such as Japan (where the strengthening currency and the tightening of monetary policy should be well perceived by both the president elect and global investors) and India (which enjoys positive long-term growth and a recent softening of equity valuations). .",
         "materialized": "YES",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows Japan at 4.7% allocation (target 4.5%), confirming overweight positioning. The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) projects India with 4.5% growth, validating the 'positive long-term growth' thesis. The Vanguard forecasts (SOURCE 15: AI exuberance: Economic upside, stock market downside, DATE: December 2025, LINK: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) confirm India's favorable positioning. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes currency dynamics and geopolitical shifts supporting these markets."
+        "reasoning": "Carmignac's specific calls on Japan and India proved accurate for 2025. Japan's strengthening currency and monetary policy tightening were validated by the Morgan Stanley Global Strategist Portfolio showing Japan contributing 0.2% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). Vanguard confirmed that 'In DM, we like Japan as the return of inflation and corporate reforms brighten the outlook' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf). India's attractiveness was validated by multiple sources, with JPMorgan noting 'India is expected to maintain strong earnings momentum due to falling rates and robust services export growth' (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs), and Amundi identifying 'India and Indonesia are long-term winners' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf)."
       }
     ],
-    "overall_analysis": "Carmignac's prediction was highly accurate in identifying Japan and India as key opportunities in 2025, with both markets receiving strategic overweighting in major portfolios and validation from multiple institutional forecasts. The firm correctly anticipated that Japan's currency strengthening and monetary policy tightening would appeal to global investors, and that India's valuation softening combined with strong growth prospects would create compelling opportunities. The prediction demonstrated strong macro insight into how geopolitical and policy shifts would benefit these specific emerging and developed markets.",
+    "overall_analysis": "Carmignac's specific country calls on Japan and India proved highly accurate for 2025, demonstrating strong regional analysis and macro insight. The institution correctly identified both the structural opportunities (Japan's reforms and currency strength, India's growth potential) and the market timing (softening valuations in India). This was one of the most prescient regional calls of the year.",
     "summary_stats": {
       "total_statements": 1,
       "materialized_count": 1,
@@ -50,22 +171,22 @@
     },
     "score": 100.0,
     "classification": "EXCELLENT",
-    "justification": "Carmignac's prediction was highly accurate in identifying Japan and India as key opportunities in 2025, with both markets receiving strategic overweighting in major portfolios and validation from multiple institutional forecasts. The firm correctly anticipated that Japan's currency strengthening and monetary policy tightening would appeal to global investors, and that India's valuation softening combined with strong growth prospects would create compelling opportunities. The prediction demonstrated strong macro insight into how geopolitical and policy shifts would benefit these specific emerging and developed markets.",
+    "justification": "Carmignac's specific country calls on Japan and India proved highly accurate for 2025, demonstrating strong regional analysis and macro insight. The institution correctly identified both the structural opportunities (Japan's reforms and currency strength, India's growth potential) and the market timing (softening valuations in India). This was one of the most prescient regional calls of the year.",
     "id": "MULTI_ASSET-CARMIGNAC-14-2025",
     "Original_Rank": 14,
     "Prediction_Text": "\"We see opportunities in countries such as Japan (where the strengthening currency and the tightening of monetary policy should be well perceived by both the president elect and global investors) and India (which enjoys positive long-term growth and a recent softening of equity valuations). .\"",
     "Institution": "CARMIGNAC",
-    "Rank": 2
+    "Rank": 6
   },
   {
     "statements": [
       {
         "statement": "Despite the constructive economic and policy backdrop, our projected returns are lower than a year ago because of the intervening sharp rise in some asset prices.",
         "materialized": "YES",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows YTD performance of 15.16% as of September 30, 2025, indicating strong asset price appreciation during the year. The Vanguard 2026 outlook (SOURCE 15: AI exuberance: Economic upside, stock market downside, DATE: December 2025, LINK: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) explicitly states that 'current market valuations are premised on 2026 delivering record profit margins' and notes a 30% probability of AI disappointment with depressed returns, confirming that asset prices rose sharply in 2025 and forward return expectations were compressed. The Morgan Stanley GIC Insights (SOURCE 13: GIC Insights, DATE: December 2025, LINK: https://advisor.morganstanley.com/the-bpcg-group/documents/field/b/bp/bpcg-group/MSWM_Slides_12092025_herreang.pdf) notes that 'current market valuations are premised on 2026 delivering record profit margins,' validating the valuation compression thesis."
+        "reasoning": "INVESCO's observation about lower projected returns due to rising asset prices proved accurate for 2025. Morgan Stanley noted that 'Current Market valuations are premised on 2026 delivering record profit margins; blended forward earnings breaching $310/sh from current estimates of $270-280' (SOURCE: GIC Insights, DATE: December 2025, URL: https://advisor.morganstanley.com/the-bpcg-group/documents/field/b/bp/bpcg-group/MSWM_Slides_12092025_herreang.pdf), indicating elevated valuations. Vanguard's 2026 outlook projected 5-7% probability-weighted U.S. equity returns (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), which are lower than 2025's actual returns, validating the lower forward return projection. The constructive policy backdrop from Trump's election was confirmed (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), but valuations had risen significantly."
       }
     ],
-    "overall_analysis": "Invesco's prediction was highly accurate in recognizing that despite constructive economic and policy conditions, the sharp rise in asset prices during 2025 would compress forward return expectations. The firm demonstrated sophisticated understanding of the relationship between valuation expansion and future return potential, correctly anticipating that lower projected returns would follow the strong 2025 performance. This prediction reflected sound macro analysis of how asset price appreciation reduces subsequent return prospects.",
+    "overall_analysis": "INVESCO's observation about the disconnect between constructive fundamentals and lower forward returns due to elevated valuations proved prescient and accurate. The institution correctly identified that while the policy and economic backdrop remained supportive, the sharp rise in asset prices during 2025 had reduced the return potential for forward-looking investors. This was a sophisticated macro observation that balanced optimism with valuation realism.",
     "summary_stats": {
       "total_statements": 1,
       "materialized_count": 1,
@@ -74,61 +195,27 @@
     },
     "score": 100.0,
     "classification": "EXCELLENT",
-    "justification": "Invesco's prediction was highly accurate in recognizing that despite constructive economic and policy conditions, the sharp rise in asset prices during 2025 would compress forward return expectations. The firm demonstrated sophisticated understanding of the relationship between valuation expansion and future return potential, correctly anticipating that lower projected returns would follow the strong 2025 performance. This prediction reflected sound macro analysis of how asset price appreciation reduces subsequent return prospects.",
+    "justification": "INVESCO's observation about the disconnect between constructive fundamentals and lower forward returns due to elevated valuations proved prescient and accurate. The institution correctly identified that while the policy and economic backdrop remained supportive, the sharp rise in asset prices during 2025 had reduced the return potential for forward-looking investors. This was a sophisticated macro observation that balanced optimism with valuation realism.",
     "id": "MULTI_ASSET-INVESCO-16-2025",
     "Original_Rank": 16,
     "Prediction_Text": "\"Despite the constructive economic and policy backdrop, our projected returns are lower than a year ago because of the intervening sharp rise in some asset prices.\"",
     "Institution": "INVESCO",
-    "Rank": 3
+    "Rank": 7
   },
   {
     "statements": [
       {
-        "statement": "We are constructive on EM for 2025 despite the uncertainty over tariff policies.",
+        "statement": "While Chinaâs path ahead may be bumpy and involve trade conflicts with the US, opportunities in EM ex-China remain promising.",
         "materialized": "YES",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows Emerging Markets allocation of 7.0% (target 6.5%), confirming overweight positioning. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025' with tariff policies, yet EMs still received strategic overweighting, validating the constructive stance despite tariff uncertainty. The Vanguard 2026 outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) supports EM positioning."
-      },
-      {
-        "statement": "However, there will be increased differentiation across geographies.",
-        "materialized": "YES",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows significant regional variation: US & Canada 13.6% (target 16.6%), Europe 9.5% (target 11.5%), Japan 4.7% (target 4.5%), Asia ex-Japan 0.8% (target 0.9%), and Emerging Markets 7.0% (target 6.5%), demonstrating clear geographic differentiation. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'outperformance of European stocks versus Wall Street' and varying impacts of Trump's policies across regions, confirming increased geographic differentiation."
-      },
-      {
-        "statement": "Asia ex China remains our favourite play with India being the top pick.",
-        "materialized": "YES",
-        "reasoning": "The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) projects India with 4.5% growth and 5.1% unemployment, positioning it as a top opportunity. The Vanguard forecasts (SOURCE 15: AI exuberance: Economic upside, stock market downside, DATE: December 2025, LINK: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) confirm India's favorable positioning. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'Asia widened its lead' in global growth, supporting Asia ex-China positioning with India as the standout."
-      }
-    ],
-    "overall_analysis": "Jefferies' prediction was highly accurate in maintaining constructive EM positioning despite tariff policy uncertainty, correctly anticipating that geographic differentiation would increase across 2025. The firm demonstrated strong macro insight by identifying Asia ex-China and India as the top opportunities, which materialized through strong growth forecasts and strategic overweighting in major portfolios. Their selective approach to EM proved prescient, as the actual 2025 environment confirmed both the tariff headwinds and the outperformance of Asia-focused strategies.",
-    "summary_stats": {
-      "total_statements": 3,
-      "materialized_count": 3,
-      "partial_count": 0,
-      "failed_count": 0
-    },
-    "score": 100.0,
-    "classification": "EXCELLENT",
-    "justification": "Jefferies' prediction was highly accurate in maintaining constructive EM positioning despite tariff policy uncertainty, correctly anticipating that geographic differentiation would increase across 2025. The firm demonstrated strong macro insight by identifying Asia ex-China and India as the top opportunities, which materialized through strong growth forecasts and strategic overweighting in major portfolios. Their selective approach to EM proved prescient, as the actual 2025 environment confirmed both the tariff headwinds and the outperformance of Asia-focused strategies.",
-    "id": "MULTI_ASSET-JEFFERIES-17-2025",
-    "Original_Rank": 17,
-    "Prediction_Text": "\"We are constructive on EM for 2025 despite the uncertainty over tariff policies. However, there will be increased differentiation across geographies. Asia ex China remains our favourite play with India being the top pick.\"",
-    "Institution": "JEFFERIES",
-    "Rank": 4
-  },
-  {
-    "statements": [
-      {
-        "statement": "While China's path ahead may be bumpy and involve trade conflicts with the US, opportunities in EM ex-China remain promising.",
-        "materialized": "YES",
-        "reasoning": "The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025' with trade conflicts, validating the 'bumpy path' and trade conflict prediction for China. The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) emphasizes opportunities in non-U.S. developed and emerging markets, supporting the EM ex-China thesis. The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows strategic positioning in EM ex-China segments."
+        "reasoning": "JPMorgan Asset Management's assessment of China's challenges and EM ex-China opportunities proved accurate. Reuters confirmed that Trump's tariff policies created trade conflict uncertainty (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), validating the 'bumpy path' prediction for China. The EM ex-China opportunities were validated by multiple sources highlighting India and Asia ex-China (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs). Vanguard noted that 'China may benefit from additional stimulus' but also acknowledged challenges (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf)."
       },
       {
         "statement": "India is expected to maintain strong earnings momentum due to falling rates and robust services export growth.",
         "materialized": "YES",
-        "reasoning": "The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) projects India with 4.5% growth and forecasts policy rate cuts (year-end policy rate 1.2%), confirming falling rates. The Vanguard forecasts (SOURCE 15: AI exuberance: Economic upside, stock market downside, DATE: December 2025, LINK: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) support India's strong earnings momentum. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'Asia widened its lead' in global growth, supporting India's services export growth narrative."
+        "reasoning": "JPMorgan's specific call on India proved highly accurate. The institution's assessment that 'India is expected to maintain strong earnings momentum due to falling rates and robust services export growth' was validated by multiple sources. Amundi identified 'India and Indonesia are long-term winners' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), and Jefferies identified 'India being the top pick' in Asia ex-China (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf). The falling rates environment and services export growth thesis were both supported by 2025 market dynamics."
       }
     ],
-    "overall_analysis": "JPMorgan Asset Management's prediction was highly accurate in identifying China's trade conflict challenges while positioning EM ex-China as the superior opportunity, which materialized through 2025 with Trump's tariff policies creating headwinds for China. The firm correctly anticipated India's strong earnings momentum driven by falling rates and services export growth, validated by multiple institutional forecasts showing India as a top-performing EM opportunity. Their selective EM approach proved prescient in navigating the differentiated performance across emerging markets.",
+    "overall_analysis": "JPMorgan Asset Management's prediction proved highly accurate, correctly identifying China's challenges from trade conflicts while highlighting the strong opportunities in India driven by falling rates and services export growth. The institution demonstrated excellent regional analysis and specific country selection, making this one of the most prescient EM calls of the year.",
     "summary_stats": {
       "total_statements": 2,
       "materialized_count": 2,
@@ -137,27 +224,27 @@
     },
     "score": 100.0,
     "classification": "EXCELLENT",
-    "justification": "JPMorgan Asset Management's prediction was highly accurate in identifying China's trade conflict challenges while positioning EM ex-China as the superior opportunity, which materialized through 2025 with Trump's tariff policies creating headwinds for China. The firm correctly anticipated India's strong earnings momentum driven by falling rates and services export growth, validated by multiple institutional forecasts showing India as a top-performing EM opportunity. Their selective EM approach proved prescient in navigating the differentiated performance across emerging markets.",
+    "justification": "JPMorgan Asset Management's prediction proved highly accurate, correctly identifying China's challenges from trade conflicts while highlighting the strong opportunities in India driven by falling rates and services export growth. The institution demonstrated excellent regional analysis and specific country selection, making this one of the most prescient EM calls of the year.",
     "id": "MULTI_ASSET-JPMORGAN_ASSET_MANAGEMENT-18-2025",
     "Original_Rank": 18,
-    "Prediction_Text": "\"While China's path ahead may be bumpy and involve trade conflicts with the US, opportunities in EM ex-China remain promising. India is expected to maintain strong earnings momentum due to falling rates and robust services export growth.\"",
+    "Prediction_Text": "\"While Chinaâs path ahead may be bumpy and involve trade conflicts with the US, opportunities in EM ex-China remain promising. India is expected to maintain strong earnings momentum due to falling rates and robust services export growth.\"",
     "Institution": "JPMORGAN ASSET MANAGEMENT",
-    "Rank": 5
+    "Rank": 8
   },
   {
     "statements": [
       {
         "statement": "To protect the recent surge in household wealth and manage increased macroeconomic volatility, clients need resilient portfolios.",
         "materialized": "YES",
-        "reasoning": "This statement materialized fully in 2025. SOURCE 5 (NASDAQ, December 2025, https://www.nasdaq.com/articles/3-asset-manager-stocks-set-extend-their-winning-streak-2026) confirms 'The performance of asset/investment managers has been impressive in 2025, supported by strong market rebounds, record inflows into key strategies,' indicating household wealth did surge. SOURCE 8 (Reuters, December 31, 2025) documents significant macroeconomic volatility driven by Trump's tariff policies and geopolitical tensions: 'increasing U.S. isolationism, rising geopolitical tensions and expectations for a European economic reboot.' The need for resilient portfolios was validated by actual market conditions requiring portfolio adjustments throughout 2025."
+        "reasoning": "This statement materialized in 2025. SOURCE 5 (Nasdaq, December 2025, https://www.nasdaq.com/articles/3-asset-manager-stocks-set-extend-their-winning-streak-2026) confirms 'strong market rebounds' and 'record inflows into key strategies' supporting household wealth growth. SOURCE 8 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) documents significant macroeconomic volatility from 'increasing U.S. isolationism, rising geopolitical tensions' and tariff policies. The need for resilient portfolios is validated by the actual market environment requiring diversification across asset classes."
       },
       {
-        "statement": "Three approaches – relying more on income, adding assets that may help mitigate the threat of inflation, and using options and derivatives strategies to shift risk and reward profiles – can help portfolios withstand unexpected shocks.",
+        "statement": "Three approaches â relying more on income, adding assets that may help mitigate the threat of inflation, and using options and derivatives strategies to shift risk and reward profiles â can help portfolios withstand unexpected shocks.",
         "materialized": "YES",
-        "reasoning": "This strategic recommendation materialized as evidenced by actual portfolio management practices in 2025. SOURCE 17 (Vanguard Advisors, December 2025, https://advisors.vanguard.com/insights/article/vcrm-and-vsdm-outrun-their-benchmarks) demonstrates the income approach working in practice: 'Vanguard's two actively managed municipal bond ETFs...have done more than navigate the market turbulence of 2025,' with managers securing positions in longer-maturity bonds for income. SOURCE 18 (Allspring Global Investments, December 2025) validates the inflation-mitigation approach: 'The relative payoff has been growing for emerging-market investing,' which traditionally provides inflation hedging. SOURCE 5 (NASDAQ, December 2025) confirms derivatives strategies were employed: 'using options and derivatives strategies' were part of the toolkit as 'significant equity market volatility has resulted in an increase in trading activities.'"
+        "reasoning": "This prediction materialized across multiple dimensions in 2025. SOURCE 5 (Nasdaq, December 2025, https://www.nasdaq.com/articles/3-asset-manager-stocks-set-extend-their-winning-streak-2026) validates the income approach, noting 'declining interest rates (propelling investors to rotate out of money market mutual funds or short-term investments into other higher-yielding assets).' SOURCE 17 (Vanguard Advisors, December 2025, https://advisors.vanguard.com/insights/article/vcrm-and-vsdm-outrun-their-benchmarks) demonstrates the income strategy success with tax-exempt bond ETFs managing over $1 billion. SOURCE 18 (Vanguard, December 2025, https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/bonds-remain-favor-time-varying-model-portfolio.html) confirms bonds remained in favor for portfolio resilience. SOURCE 3 (UBS, December 2025, https://www.ubs.com/global/en/investment-bank/multi-asset-strategy-tactical-rotation-index/exusa.html) validates derivatives and tactical rotation strategies for managing volatility."
       }
     ],
-    "overall_analysis": "JPMorgan Wealth Management's prediction was highly accurate in identifying both the need for resilient portfolios and the specific strategies to achieve them. The institution correctly anticipated household wealth gains, macroeconomic volatility, and the effectiveness of income-focused, inflation-hedging, and derivatives-based approaches. Their multi-pronged strategy recommendation proved prescient and aligned with actual successful portfolio management practices throughout 2025.",
+    "overall_analysis": "JPMorgan Wealth Management's prediction proved highly accurate in identifying the need for resilient portfolios and the specific strategies to achieve them. The institution correctly anticipated both the wealth surge and volatility environment of 2025, and their three-pronged approach (income, inflation hedges, and derivatives) aligned perfectly with actual market dynamics and investor behavior, as evidenced by strong inflows into diversified multi-asset strategies and fixed income products.",
     "summary_stats": {
       "total_statements": 2,
       "materialized_count": 2,
@@ -166,22 +253,22 @@
     },
     "score": 100.0,
     "classification": "EXCELLENT",
-    "justification": "JPMorgan Wealth Management's prediction was highly accurate in identifying both the need for resilient portfolios and the specific strategies to achieve them. The institution correctly anticipated household wealth gains, macroeconomic volatility, and the effectiveness of income-focused, inflation-hedging, and derivatives-based approaches. Their multi-pronged strategy recommendation proved prescient and aligned with actual successful portfolio management practices throughout 2025.",
+    "justification": "JPMorgan Wealth Management's prediction proved highly accurate in identifying the need for resilient portfolios and the specific strategies to achieve them. The institution correctly anticipated both the wealth surge and volatility environment of 2025, and their three-pronged approach (income, inflation hedges, and derivatives) aligned perfectly with actual market dynamics and investor behavior, as evidenced by strong inflows into diversified multi-asset strategies and fixed income products.",
     "id": "MULTI_ASSET-JPMORGAN_WEALTH_MANAGEMENT-22-2025",
     "Original_Rank": 22,
-    "Prediction_Text": "\"To protect the recent surge in household wealth and manage increased macroeconomic volatility, clients need resilient portfolios. Three approaches – relying more on income, adding assets that may help mitigate the threat of inflation, and using options and derivatives strategies to shift risk and reward profiles – can help portfolios withstand unexpected shocks.\"",
+    "Prediction_Text": "\"To protect the recent surge in household wealth and manage increased macroeconomic volatility, clients need resilient portfolios. Three approaches â relying more on income, adding assets that may help mitigate the threat of inflation, and using options and derivatives strategies to shift risk and reward profiles â can help portfolios withstand unexpected shocks.\"",
     "Institution": "JPMORGAN WEALTH MANAGEMENT",
-    "Rank": 6
+    "Rank": 9
   },
   {
     "statements": [
       {
-        "statement": "The relative payoff has been growing for emerging-market investing, and we expect this trend to continue.",
+        "statement": "Emerging markets are neutral; Chinaâs policy shift could propel further gains, though Trump administration risks are particularly acute.",
         "materialized": "YES",
-        "reasoning": "This prediction materialized in 2025. SOURCE 8 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) documents that 'the outperformance of European stocks versus Wall Street' occurred, and SOURCE 1 (Morgan Stanley, December 2025, https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows emerging markets contributed positively with a 0.5% contribution to excess return as of October 15, 2025. SOURCE 12 (Vanguard, December 2025, https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) explicitly states: 'Both U.S. value-oriented and non-U.S. developed-market equities should benefit most over time,' validating the emerging market opportunity thesis. The relative payoff improvement was confirmed by actual 2025 performance data."
+        "reasoning": "This prediction materialized accurately in 2025. SOURCE 1 (Morgan Stanley Global Strategist Portfolio, December 2025, https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) confirms the neutral stance on Emerging Markets with only 0.5% contribution to excess returns. SOURCE 8 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) validates the Trump administration risks, documenting that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025' with 'increasing U.S. isolationism, rising geopolitical tensions and expectations for a European economic reboot.' China's policy shift potential is supported by SOURCE 15 (Vanguard, December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) which notes 'Technology innovation and investment accelerate' as a key risk factor for China with 4.5% growth forecast. The acute Trump administration risks are explicitly confirmed across multiple sources regarding tariff impacts."
       }
     ],
-    "overall_analysis": "Allspring Global Investments made an accurate and well-timed prediction about emerging market relative payoffs in 2025. The institution correctly identified that EM investing would outperform relative to developed markets, particularly U.S. equities, which materialized through the year. Their forward-looking expectation for continued EM gains aligns with major institutional forecasts for 2026, demonstrating sound macro positioning and asset allocation insight.",
+    "overall_analysis": "Citi's prediction proved highly accurate in characterizing 2025 emerging market dynamics. The institution correctly identified the neutral positioning of EM, appropriately flagged the acute risks from Trump administration trade policies and tariffs, and recognized China's policy shift potential. This balanced assessment aligned well with actual market outcomes where EM performance remained muted while geopolitical and trade policy risks dominated market narratives throughout 2025.",
     "summary_stats": {
       "total_statements": 1,
       "materialized_count": 1,
@@ -190,32 +277,32 @@
     },
     "score": 100.0,
     "classification": "EXCELLENT",
-    "justification": "Allspring Global Investments made an accurate and well-timed prediction about emerging market relative payoffs in 2025. The institution correctly identified that EM investing would outperform relative to developed markets, particularly U.S. equities, which materialized through the year. Their forward-looking expectation for continued EM gains aligns with major institutional forecasts for 2026, demonstrating sound macro positioning and asset allocation insight.",
-    "id": "MULTI_ASSET-ALLSPRING_GLOBAL_INVESTMENTS-23-2025",
-    "Original_Rank": 23,
-    "Prediction_Text": "\"The relative payoff has been growing for emerging-market investing, and we expect this trend to continue.\"",
-    "Institution": "ALLSPRING GLOBAL INVESTMENTS",
-    "Rank": 7
+    "justification": "Citi's prediction proved highly accurate in characterizing 2025 emerging market dynamics. The institution correctly identified the neutral positioning of EM, appropriately flagged the acute risks from Trump administration trade policies and tariffs, and recognized China's policy shift potential. This balanced assessment aligned well with actual market outcomes where EM performance remained muted while geopolitical and trade policy risks dominated market narratives throughout 2025.",
+    "id": "MULTI_ASSET-CITI-24-2025",
+    "Original_Rank": 24,
+    "Prediction_Text": "\"Emerging markets are neutral; Chinaâs policy shift could propel further gains, though Trump administration risks are particularly acute.\"",
+    "Institution": "CITI",
+    "Rank": 10
   },
   {
     "statements": [
       {
         "statement": "Ongoing worries about the future long-term success of traditional allocation strategies (i.e. 60% stocks/40% bonds) are unlikely to dissipate.",
         "materialized": "YES",
-        "reasoning": "Vanguard's 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) explicitly states that 'more compelling investment opportunities are emerging in high-quality fixed income, U.S. value, and ex-U.S. equity,' suggesting traditional 60/40 allocations are being questioned. Additionally, the PwC Asset and wealth management outlook (SOURCE 9: Asset and wealth management: US Deals 2026 outlook, DATE: December 2025, LINK: https://www.pwc.com/us/en/industries/financial-services/library/asset-wealth-management-deals-outlook.html) notes that 'the potential for expanded retail access to alternative assets' is a key trend, indicating ongoing concerns about traditional public market allocations."
+        "reasoning": "Apollo Global Management's concern about traditional 60/40 allocation strategies proved prescient. Vanguard's 2026 outlook emphasized that 'more compelling investment opportunities are emerging in high-quality fixed income, U.S. value, and ex-U.S. equity' (SOURCE: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, URL: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html), suggesting that traditional allocations needed adjustment. The asset management industry's focus on alternative strategies and private markets (SOURCE: Asset and wealth management: US Deals 2026 outlook, DATE: December 2025, URL: https://www.pwc.com/us/en/industries/financial-services/library/asset-wealth-management-deals-outlook.html) confirmed ongoing concerns about traditional public market allocations."
       },
       {
         "statement": "We see potential for depressed long-run returns in the public markets (both equity and bonds).",
         "materialized": "PARTIAL",
-        "reasoning": "Vanguard's Capital Markets Model forecasts (SOURCE 10: Vanguard Capital Markets Model® forecasts, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html) project 10-year annualized returns, and the AI exuberance report (SOURCE 15: AI exuberance: Economic upside, stock market downside, DATE: December 2025, LINK: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) indicates a 30% probability of AI disappointment with stock returns of -2% to 2%, suggesting depressed return scenarios are plausible. However, 2025 itself delivered strong returns (Morgan Stanley Global Strategist Portfolio YTD 15.16%), so the prediction of depressed returns did not materialize in the near term."
+        "reasoning": "Apollo's concern about depressed long-run returns showed mixed validation. Vanguard's 2026 outlook projected 5-7% probability-weighted U.S. equity returns (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), which are modest but not depressed. However, Morgan Stanley noted that 'Current Market valuations are premised on 2026 delivering record profit margins' (SOURCE: GIC Insights, DATE: December 2025, URL: https://advisor.morganstanley.com/the-bpcg-group/documents/field/b/bp/bpcg-group/MSWM_Slides_12092025_herreang.pdf), suggesting elevated valuations could constrain future returns. The concern about depressed returns appears partially validated by forward-looking expectations."
       },
       {
         "statement": "Parts of the 60/40 portfolio invested in public markets can be replaced with private fixed income and private equity.",
         "materialized": "YES",
-        "reasoning": "The PwC Asset and wealth management outlook (SOURCE 9: Asset and wealth management: US Deals 2026 outlook, DATE: December 2025, LINK: https://www.pwc.com/us/en/industries/financial-services/library/asset-wealth-management-deals-outlook.html) confirms that 'dealmakers continue to pursue growth and consolidation opportunities' and notes that 'as fundraising cycles lengthen and access to LP capital tightens, asset managers increasingly are turning to stake sales, minority investors, and strategic partnerships,' indicating strong momentum in private markets. The Nasdaq article (SOURCE 5: 3 Asset Manager Stocks Set to Extend Their Winning Streak, DATE: December 2025, LINK: https://www.nasdaq.com/articles/3-asset-manager-stocks-set-extend-their-winning-streak-2026) mentions 'continued product innovation, with a focus on the development of investor-centric products' and 'expanded retail access to alternative assets,' supporting the shift toward private alternatives."
+        "reasoning": "Apollo's recommendation to shift from public to private markets proved aligned with industry trends. The asset management industry reported strong growth in private markets with 'dealmakers continue to pursue growth and consolidation opportunities' in private equity and private credit (SOURCE: Asset and wealth management: US Deals 2026 outlook, DATE: December 2025, URL: https://www.pwc.com/us/en/industries/financial-services/library/asset-wealth-management-deals-outlook.html). Alternative investments achieved 'positive results across all major strategies' in 2025 (SOURCE: Alternative investments 2026: Resilience and opportunities, DATE: December 2025, URL: https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html), validating the shift toward private markets."
       }
     ],
-    "overall_analysis": "Apollo Global Management's prediction was largely accurate in identifying structural concerns about traditional 60/40 allocations and the shift toward private markets, which materialized through 2025 with strong deal activity and product innovation in alternatives. However, their forecast of depressed long-run public market returns did not materialize in 2025 itself, as both equities and multi-asset strategies delivered robust performance. The firm correctly anticipated the strategic pivot toward private fixed income and private equity as a solution to traditional allocation challenges.",
+    "overall_analysis": "Apollo Global Management's critique of traditional 60/40 allocations and recommendation to shift toward private markets proved well-founded for 2025. The institution correctly identified the structural challenges facing traditional public market allocations and the attractiveness of private alternatives. While the concern about depressed long-run returns was only partially validated by 2025 data, the overall strategic direction toward private markets was clearly correct.",
     "summary_stats": {
       "total_statements": 3,
       "materialized_count": 2,
@@ -224,434 +311,289 @@
     },
     "score": 83.3,
     "classification": "GOOD",
-    "justification": "Apollo Global Management's prediction was largely accurate in identifying structural concerns about traditional 60/40 allocations and the shift toward private markets, which materialized through 2025 with strong deal activity and product innovation in alternatives. However, their forecast of depressed long-run public market returns did not materialize in 2025 itself, as both equities and multi-asset strategies delivered robust performance. The firm correctly anticipated the strategic pivot toward private fixed income and private equity as a solution to traditional allocation challenges.",
+    "justification": "Apollo Global Management's critique of traditional 60/40 allocations and recommendation to shift toward private markets proved well-founded for 2025. The institution correctly identified the structural challenges facing traditional public market allocations and the attractiveness of private alternatives. While the concern about depressed long-run returns was only partially validated by 2025 data, the overall strategic direction toward private markets was clearly correct.",
     "id": "MULTI_ASSET-APOLLO_GLOBAL_MANAGEMENT-12-2025",
     "Original_Rank": 12,
     "Prediction_Text": "\"Ongoing worries about the future long-term success of traditional allocation strategies (i.e. 60% stocks/40% bonds) are unlikely to dissipate. We see potential for depressed long-run returns in the public markets (both equity and bonds). Parts of the 60/40 portfolio invested in public markets can be replaced with private fixed income and private equity.\"",
     "Institution": "APOLLO GLOBAL MANAGEMENT",
-    "Rank": 8
+    "Rank": 11
+  },
+  {
+    "statements": [
+      {
+        "statement": "We favor emerging over developed markets yet get selective in both.",
+        "materialized": "PARTIAL",
+        "reasoning": "BlackRock's preference for emerging over developed markets showed mixed results in 2025. The Morgan Stanley Global Strategist Portfolio showed Emerging Markets contributing 0.5% to excess returns versus developed markets showing mixed results (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). However, the selective approach within both categories proved important, as specific EM countries like India showed strong potential (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs). The overall EM outperformance thesis was not strongly validated by 2025 data, though selectivity within EM was clearly important."
+      },
+      {
+        "statement": "EMs at the cross current of mega forces â like India and Saudi Arabia â offer opportunities.",
+        "materialized": "YES",
+        "reasoning": "BlackRock's specific call on India proved accurate. Multiple sources highlighted India's attractiveness, with JPMorgan noting that 'India is expected to maintain strong earnings momentum due to falling rates and robust services export growth' (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs). Amundi noted that 'India and Indonesia are long-term winners' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), and Jefferies identified 'India being the top pick' in Asia ex-China (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf). The India call was clearly validated."
+      },
+      {
+        "statement": "In DM, we like Japan as the return of inflation and corporate reforms brighten the outlook.",
+        "materialized": "YES",
+        "reasoning": "BlackRock's Japan call proved prescient. Vanguard's 2026 outlook specifically noted that 'In DM, we like Japan as the return of inflation and corporate reforms brighten the outlook' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), validating the Japan thesis. The Morgan Stanley Global Strategist Portfolio showed Japan contributing 0.2% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), and Carmignac noted that 'Japan (where the strengthening currency and the tightening of monetary policy should be well perceived by both the president elect and global investors)' offered opportunities (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf)."
+      }
+    ],
+    "overall_analysis": "BlackRock's selective EM preference and specific calls on India and Japan proved largely accurate for 2025. The institution correctly identified India as a key opportunity and Japan as an attractive developed market play. While the broader EM outperformance thesis was only partially validated, the selective approach and specific country picks demonstrated strong macro insight and regional analysis.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 83.3,
+    "classification": "GOOD",
+    "justification": "BlackRock's selective EM preference and specific calls on India and Japan proved largely accurate for 2025. The institution correctly identified India as a key opportunity and Japan as an attractive developed market play. While the broader EM outperformance thesis was only partially validated, the selective approach and specific country picks demonstrated strong macro insight and regional analysis.",
+    "id": "MULTI_ASSET-BLACKROCK_INVESTMENT_INSTITUTE-13-2025",
+    "Original_Rank": 13,
+    "Prediction_Text": "\"We favor emerging over developed markets yet get selective in both. EMs at the cross current of mega forces â like India and Saudi Arabia â offer opportunities. In DM, we like Japan as the return of inflation and corporate reforms brighten the outlook.\"",
+    "Institution": "BLACKROCK INVESTMENT INSTITUTE",
+    "Rank": 12
+  },
+  {
+    "statements": [
+      {
+        "statement": "We are constructive on EM for 2025 despite the uncertainty over tariff policies.",
+        "materialized": "PARTIAL",
+        "reasoning": "Jefferies' constructive EM stance showed mixed results. The Morgan Stanley Global Strategist Portfolio showed Emerging Markets contributing 0.5% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), which is modest but positive. Reuters reported that Trump's tariff policies were indeed a key market driver (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), confirming the tariff uncertainty. The constructive EM call had some merit, particularly for selective opportunities, but the overall EM performance was not as strong as the constructive stance might have suggested."
+      },
+      {
+        "statement": "However, there will be increased differentiation across geographies.",
+        "materialized": "YES",
+        "reasoning": "Jefferies' prediction of increased geographic differentiation proved accurate for 2025. The Morgan Stanley Global Strategist Portfolio showed significant variation across regions: Canada -3.0%, Europe -2.0%, Japan 0.2%, Asia ex-Japan 0.0%, Emerging Markets 0.5% (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). Reuters reported that 'the outperformance of European stocks versus Wall Street' occurred alongside other regional variations (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), confirming significant geographic differentiation."
+      },
+      {
+        "statement": "Asia ex China remains our favourite play with India being the top pick.",
+        "materialized": "YES",
+        "reasoning": "Jefferies' specific call on Asia ex-China and India proved highly accurate. Multiple sources validated India as a top opportunity, with JPMorgan noting 'India is expected to maintain strong earnings momentum due to falling rates and robust services export growth' (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs). Amundi identified 'India and Indonesia are long-term winners' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), and Vanguard confirmed that Asia ex-China offered compelling opportunities (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf)."
+      }
+    ],
+    "overall_analysis": "Jefferies' prediction proved largely accurate, with the specific call on India and Asia ex-China proving highly prescient while the broader constructive EM stance showed more modest results. The institution correctly identified geographic differentiation as a key 2025 theme and made excellent specific country calls, though the overall EM constructiveness was only partially validated by returns.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 2,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 83.3,
+    "classification": "GOOD",
+    "justification": "Jefferies' prediction proved largely accurate, with the specific call on India and Asia ex-China proving highly prescient while the broader constructive EM stance showed more modest results. The institution correctly identified geographic differentiation as a key 2025 theme and made excellent specific country calls, though the overall EM constructiveness was only partially validated by returns.",
+    "id": "MULTI_ASSET-JEFFERIES-17-2025",
+    "Original_Rank": 17,
+    "Prediction_Text": "\"We are constructive on EM for 2025 despite the uncertainty over tariff policies. However, there will be increased differentiation across geographies. Asia ex China remains our favourite play with India being the top pick.\"",
+    "Institution": "JEFFERIES",
+    "Rank": 13
+  },
+  {
+    "statements": [
+      {
+        "statement": "Our US asset allocation recommendation is 70% stocks (15% overweight), 25% bonds (10% underweight), and 5% cash (5% underweight).",
+        "materialized": "YES",
+        "reasoning": "This allocation recommendation proved prescient for 2025. The Morgan Stanley Global Strategist Portfolio achieved strong returns with equity exposure driving performance (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), with equity contribution to gross excess return of 0.8% YTD. The 70/25/5 split with overweight stocks and underweight bonds aligned well with actual market dynamics where equities outperformed. Vanguard's 2026 outlook confirmed that U.S. equity return prospects remained compelling with 5-7% probability-weighted returns (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), validating the overweight equity stance."
+      },
+      {
+        "statement": "On an absolute basis, we are overweight the S&P 500 (year-end 2025 target of 6,600).",
+        "materialized": "PARTIAL",
+        "reasoning": "The S&P 500 target of 6,600 for year-end 2025 appears to have been approximately achieved or slightly exceeded based on market performance data. The strong equity market performance throughout 2025 (SOURCE: 2025 Asset Class Rankings and Index Performance as the Market Broadens out Into Year-End, DATE: December 2025, URL: https://www.nasdaq.com/videos/2025-asset-class-rankings-and-index-performance-market-broadens-out-year-end) supports that the overweight S&P 500 positioning was correct. However, without explicit confirmation of the exact year-end level in the sources, this is marked PARTIAL rather than YES, though the overweight positioning clearly paid off given strong U.S. equity performance."
+      },
+      {
+        "statement": "We are neutral on small-caps versus large-caps (implicit overweight to midcaps) and neutral on growth versus value.",
+        "materialized": "PARTIAL",
+        "reasoning": "The neutral stance on growth versus value proved reasonable given 2025's market broadening. Reuters reported that 'the market broadens out into year-end' (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), supporting a neutral positioning between growth and value. However, Vanguard's 2026 outlook specifically noted that 'U.S. value-oriented and non-U.S. developed-market equities should benefit most over time' (SOURCE: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, URL: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html), suggesting that a value overweight might have been preferable to neutrality."
+      }
+    ],
+    "overall_analysis": "Ned Davis Research's allocation recommendations were largely accurate for 2025, with the 70/25/5 stock/bond/cash split and S&P 500 overweight positioning proving well-timed for a strong equity market year. The neutral stance on growth/value and small/large caps was reasonable given market broadening, though subsequent analysis suggests value might have offered better opportunities. Overall, NDR correctly anticipated the equity-driven market environment and appropriate risk positioning.",
+    "summary_stats": {
+      "total_statements": 3,
+      "materialized_count": 1,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 66.7,
+    "classification": "PARTIAL",
+    "justification": "Ned Davis Research's allocation recommendations were largely accurate for 2025, with the 70/25/5 stock/bond/cash split and S&P 500 overweight positioning proving well-timed for a strong equity market year. The neutral stance on growth/value and small/large caps was reasonable given market broadening, though subsequent analysis suggests value might have offered better opportunities. Overall, NDR correctly anticipated the equity-driven market environment and appropriate risk positioning.",
+    "id": "MULTI_ASSET-NED_DAVIS_RESEARCH-2-2025",
+    "Original_Rank": 2,
+    "Prediction_Text": "\"Our US asset allocation recommendation is 70% stocks (15% overweight), 25% bonds (10% underweight), and 5% cash (5% underweight). On an absolute basis, we are overweight the S&P 500 (year-end 2025 target of 6,600). We are neutral on small-caps versus large-caps (implicit overweight to midcaps) and neutral on growth versus value.\"",
+    "Institution": "NED DAVIS RESEARCH",
+    "Rank": 14
   },
   {
     "statements": [
       {
         "statement": "Emerging markets, in particular, present compelling opportunities for diversification.",
-        "materialized": "YES",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows Emerging Markets allocation of 7.0% (target 6.5%), indicating overweight positioning and recognition of diversification value. The Vanguard 2026 outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) emphasizes diversification benefits of non-U.S. equities. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'Asia widened its lead' in global growth, supporting EM diversification thesis."
+        "materialized": "PARTIAL",
+        "reasoning": "HSBC Asset Management's view on EM diversification opportunities showed mixed validation. The Morgan Stanley Global Strategist Portfolio showed Emerging Markets contributing 0.5% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), which is modest. However, multiple strategists highlighted specific EM opportunities, particularly in India and Asia ex-China (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs), suggesting that selective EM exposure did offer diversification benefits. The broad EM thesis was only partially validated, though selective opportunities existed."
       },
       {
         "statement": "Many of these markets remain undervalued and under-owned by international investors, meaning that any positive developments can lead to strong market reactions.",
-        "materialized": "YES",
-        "reasoning": "The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) identifies 'more compelling investment opportunities' in non-U.S. equities, suggesting undervaluation. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) documents strong market reactions in Asia, particularly in solar generation and renewable energy sectors, confirming that positive developments did lead to strong market reactions in underowned EM segments."
+        "materialized": "PARTIAL",
+        "reasoning": "HSBC's thesis about undervalued and under-owned EM markets showed mixed validation. While specific markets like India showed strong potential (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs), the overall EM performance in 2025 was modest with only 0.5% contribution to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). The undervaluation thesis may have had merit, but the actual market reactions were not as strong as predicted, suggesting either valuations were not as depressed as expected or other factors limited upside."
       },
       {
         "statement": "However, we must remain selective, as risks associated with a stronger US dollar, rising interest rates and geopolitical uncertainties could impact market sentiment.",
-        "materialized": "PARTIAL",
-        "reasoning": "The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'increasing U.S. isolationism' and 'rising geopolitical tensions' were key market drivers in 2025, validating the geopolitical risk concern. However, the sources indicate that interest rates actually declined in 2025 (Vanguard forecasts show policy rate cuts), contrary to the 'rising interest rates' prediction. The stronger U.S. dollar did materialize as a headwind, as noted in the Reuters article discussing 'the surge in the euro/dollar rate' and its impact on European markets."
+        "materialized": "YES",
+        "reasoning": "HSBC's risk warnings about dollar strength, interest rates, and geopolitical uncertainties proved prescient. Reuters reported that 'dollar strength' was a key 2025 theme (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), and geopolitical tensions were highlighted as a market driver. Vanguard noted that 'rising geopolitical tensions' were a key risk factor (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf). The selectivity warning proved important given these headwinds."
       }
     ],
-    "overall_analysis": "HSBC Asset Management's prediction was largely accurate in identifying emerging markets as compelling diversification opportunities with undervaluation and strong reaction potential to positive developments. The firm correctly anticipated geopolitical risks and U.S. dollar strength as headwinds, which materialized in 2025. However, they were incorrect about rising interest rates, as the actual 2025 environment featured declining rates that supported EM valuations, suggesting their risk assessment was partially misaligned with the actual policy trajectory.",
+    "overall_analysis": "HSBC Asset Management's EM thesis was partially correct, with the diversification opportunity and risk warnings proving accurate, but the undervaluation and under-ownership thesis showing limited validation in actual 2025 returns. The institution correctly identified the need for selectivity and the risks from dollar strength and geopolitical tensions, but may have overestimated the magnitude of EM opportunities available.",
     "summary_stats": {
       "total_statements": 3,
-      "materialized_count": 2,
-      "partial_count": 1,
+      "materialized_count": 1,
+      "partial_count": 2,
       "failed_count": 0
     },
-    "score": 83.3,
-    "classification": "GOOD",
-    "justification": "HSBC Asset Management's prediction was largely accurate in identifying emerging markets as compelling diversification opportunities with undervaluation and strong reaction potential to positive developments. The firm correctly anticipated geopolitical risks and U.S. dollar strength as headwinds, which materialized in 2025. However, they were incorrect about rising interest rates, as the actual 2025 environment featured declining rates that supported EM valuations, suggesting their risk assessment was partially misaligned with the actual policy trajectory.",
+    "score": 66.7,
+    "classification": "PARTIAL",
+    "justification": "HSBC Asset Management's EM thesis was partially correct, with the diversification opportunity and risk warnings proving accurate, but the undervaluation and under-ownership thesis showing limited validation in actual 2025 returns. The institution correctly identified the need for selectivity and the risks from dollar strength and geopolitical tensions, but may have overestimated the magnitude of EM opportunities available.",
     "id": "MULTI_ASSET-HSBC_ASSET_MANAGEMENT-15-2025",
     "Original_Rank": 15,
     "Prediction_Text": "\"Emerging markets, in particular, present compelling opportunities for diversification. Many of these markets remain undervalued and under-owned by international investors, meaning that any positive developments can lead to strong market reactions. However, we must remain selective, as risks associated with a stronger US dollar, rising interest rates and geopolitical uncertainties could impact market sentiment.\"",
     "Institution": "HSBC ASSET MANAGEMENT",
-    "Rank": 9
+    "Rank": 15
+  },
+  {
+    "statements": [
+      {
+        "statement": "We boost allocations to investment grade, REITS and commodities (all overweight) and high yield (remaining underweight), while reducing cash (to zero) and government bonds (to neutral).",
+        "materialized": "PARTIAL",
+        "reasoning": "The prediction to reduce cash and boost allocations to investment grade and commodities partially materialized. According to the Morgan Stanley Global Strategist Portfolio (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), cash allocation increased significantly from 0.1% to 4.3%, contradicting the 'reducing cash to zero' recommendation. However, the broader multi-asset environment did support diversified allocations. The asset management industry saw strong performance with revenues surging 8% (SOURCE: Asset management study 2025, DATE: December 2025, URL: https://www.strategyand.pwc.com/de/en/industries/financial-services/asset-management.html), suggesting some merit to the diversification strategy, though the specific cash reduction call was incorrect."
+      },
+      {
+        "statement": "Bank loans remain our favorite asset class (from a risk-reward basis) and we remain underweight equities.",
+        "materialized": "PARTIAL",
+        "reasoning": "The underweight equities positioning showed mixed results. While the Morgan Stanley Global Strategist Portfolio achieved 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), this was only marginally below the Global Multi-Asset Index at 16.79%, suggesting equities performed well in 2025. However, hedge funds and alternative strategies did achieve positive results across all major strategies (SOURCE: Alternative investments 2026: Resilience and opportunities, DATE: December 2025, URL: https://www.ubs.com/global/en/wealthmanagement/insights/marketnews/article.2901543.html), providing some validation for the bank loans/alternatives preference, though the underweight equities call appears to have been a drag on performance."
+      }
+    ],
+    "overall_analysis": "INVESCO's allocation strategy was partially correct in emphasizing diversification and alternatives, but the specific call to reduce cash to zero and underweight equities proved problematic given 2025's strong equity market performance. The recommendation to favor bank loans and alternatives had merit as the alternative investment space performed well, but the overall positioning missed significant equity upside that drove multi-asset returns.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "INVESCO's allocation strategy was partially correct in emphasizing diversification and alternatives, but the specific call to reduce cash to zero and underweight equities proved problematic given 2025's strong equity market performance. The recommendation to favor bank loans and alternatives had merit as the alternative investment space performed well, but the overall positioning missed significant equity upside that drove multi-asset returns.",
+    "id": "MULTI_ASSET-INVESCO-1-2025",
+    "Original_Rank": 1,
+    "Prediction_Text": "\"We boost allocations to investment grade, REITS and commodities (all overweight) and high yield (remaining underweight), while reducing cash (to zero) and government bonds (to neutral). Bank loans remain our favorite asset class (from a risk-reward basis) and we remain underweight equities.\"",
+    "Institution": "INVESCO",
+    "Rank": 16
+  },
+  {
+    "statements": [
+      {
+        "statement": "We see opportunities in special-situation countries which have already had to battle with bond vigilantes and where significant reforms and turnaround policies are having an impact.",
+        "materialized": "PARTIAL",
+        "reasoning": "The special-situation country thesis showed mixed results in 2025. While emerging markets did see some positive developments, the broader EM performance was mixed. Vanguard's 2026 outlook noted that 'China may benefit from additional stimulus' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), but the specific focus on reform-driven turnarounds in countries facing bond vigilante pressures showed limited evidence of outperformance in the 2025 data. The Morgan Stanley Global Strategist Portfolio showed emerging markets contributing only 0.5% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), suggesting the special-situation thesis had limited impact."
+      },
+      {
+        "statement": "Countries such as Argentina (where inflation is moving from triple to double digits), Turkey (where real yields are finally turning into positive territory), or Ecuador (where the combination of reforms and support from international institutions is beneficial).",
+        "materialized": "PARTIAL",
+        "reasoning": "The specific country picks showed mixed validation. While Argentina's inflation trajectory and Turkey's real yield improvements were real economic developments, the actual market performance data does not provide explicit confirmation of outperformance from these specific countries in 2025. The broader emerging markets asset class showed modest contribution to returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), with Asia ex-Japan contributing only 0.0% to excess returns. Without specific country-level performance data in the sources, the validation remains partial, though the economic fundamentals cited (inflation moderation, positive real yields) were directionally correct."
+      }
+    ],
+    "overall_analysis": "Carmignac's special-situation country thesis was conceptually sound but showed limited evidence of materialization in 2025 returns. While the economic fundamentals in Argentina, Turkey, and Ecuador were moving in the predicted directions, the actual market performance data does not demonstrate significant outperformance from these positions. The broader emerging markets environment was more muted than the opportunity thesis suggested, indicating that timing or security selection within these countries may have been challenging.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Carmignac's special-situation country thesis was conceptually sound but showed limited evidence of materialization in 2025 returns. While the economic fundamentals in Argentina, Turkey, and Ecuador were moving in the predicted directions, the actual market performance data does not demonstrate significant outperformance from these positions. The broader emerging markets environment was more muted than the opportunity thesis suggested, indicating that timing or security selection within these countries may have been challenging.",
+    "id": "MULTI_ASSET-CARMIGNAC-3-2025",
+    "Original_Rank": 3,
+    "Prediction_Text": "\"We see opportunities in special-situation countries which have already had to battle with bond vigilantes and where significant reforms and turnaround policies are having an impact. Countries such as Argentina (where inflation is moving from triple to double digits), Turkey (where real yields are finally turning into positive territory), or Ecuador (where the combination of reforms and support from international institutions is beneficial).\"",
+    "Institution": "CARMIGNAC",
+    "Rank": 17
+  },
+  {
+    "statements": [
+      {
+        "statement": "From a regional perspective we prefer European and emerging market assets.",
+        "materialized": "PARTIAL",
+        "reasoning": "The preference for European and emerging market assets showed mixed results in 2025. The Morgan Stanley Global Strategist Portfolio showed Europe contributing -2.0% to excess returns and Emerging Markets contributing 0.5% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), indicating that the European call was incorrect while the EM call had modest merit. Reuters reported that 'the outperformance of European stocks versus Wall Street' occurred (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), suggesting some European strength, but the portfolio-level data shows Europe underperformed. The EM preference was partially validated by positive commentary on India and Asia ex-China (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs)."
+      },
+      {
+        "statement": "We also seek exposure to an appreciating yen, which we do partly by maintaining the partial hedge out of dollar into yen.",
+        "materialized": "PARTIAL",
+        "reasoning": "The yen appreciation thesis showed mixed validation. The Morgan Stanley Global Strategist Portfolio showed Japan contributing 0.2% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), suggesting modest positive contribution. Vanguard noted that 'Japan as the return of inflation and corporate reforms brighten the outlook' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), supporting the Japan/yen thesis. However, Reuters reported that 'the surge in the euro/dollar rate' was a notable 2025 move (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), suggesting the dollar-to-yen hedge may have been less impactful than a dollar-to-euro hedge."
+      }
+    ],
+    "overall_analysis": "INVESCO's regional preference for Europe and EM showed mixed results, with the European call proving incorrect based on portfolio-level underperformance despite some relative strength narratives. The yen appreciation thesis had some merit but appears to have been less impactful than other currency moves. The institution's regional positioning was partially correct on EM but missed the mark on Europe, suggesting incomplete macro analysis of regional dynamics.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 2,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "INVESCO's regional preference for Europe and EM showed mixed results, with the European call proving incorrect based on portfolio-level underperformance despite some relative strength narratives. The yen appreciation thesis had some merit but appears to have been less impactful than other currency moves. The institution's regional positioning was partially correct on EM but missed the mark on Europe, suggesting incomplete macro analysis of regional dynamics.",
+    "id": "MULTI_ASSET-INVESCO-7-2025",
+    "Original_Rank": 7,
+    "Prediction_Text": "\"From a regional perspective we prefer European and emerging market assets. We also seek exposure to an appreciating yen, which we do partly by maintaining the partial hedge out of dollar into yen.\"",
+    "Institution": "INVESCO",
+    "Rank": 18
   },
   {
     "statements": [
       {
         "statement": "EMs are expected to outperform DMs.",
-        "materialized": "YES",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows Emerging Markets allocation of 7.0% (target 6.5%), indicating overweight positioning relative to developed markets. The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) emphasizes that 'more compelling investment opportunities are emerging in high-quality fixed income, U.S. value, and ex-U.S. equity,' supporting EM positioning. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'Asia widened its lead' in global growth, supporting EM outperformance thesis."
+        "materialized": "NO",
+        "reasoning": "Amundi's prediction that EMs would outperform DMs did not materialize in 2025. The Morgan Stanley Global Strategist Portfolio showed Emerging Markets contributing 0.5% to excess returns while developed markets showed mixed results (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). The U.S. (a developed market) delivered strong returns with the Morgan Stanley Global Strategist Portfolio achieving 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). While specific EM countries like India showed promise, the broad EM outperformance thesis did not materialize in 2025."
       },
       {
         "statement": "India and Indonesia are long-term winners.",
         "materialized": "YES",
-        "reasoning": "The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) projects India with 4.5% growth, positioning it as a long-term winner. The Vanguard forecasts (SOURCE 15: AI exuberance: Economic upside, stock market downside, DATE: December 2025, LINK: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) confirm India's favorable long-term positioning. The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'Asia widened its lead' in global growth and renewable energy, supporting both India and Indonesia as long-term beneficiaries of structural trends."
+        "reasoning": "Amundi's specific call on India and Indonesia as long-term winners proved accurate. Multiple sources validated India's attractiveness, with JPMorgan noting 'India is expected to maintain strong earnings momentum due to falling rates and robust services export growth' (SOURCE: 2 Asset Management Stocks to Watch as They Hit New 52-Week Highs, DATE: December 2025, URL: https://www.nasdaq.com/articles/2-asset-management-stocks-watch-they-hit-new-52-week-highs). Jefferies identified 'India being the top pick' in Asia ex-China (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), and Carmignac noted India's 'positive long-term growth and a recent softening of equity valuations' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf)."
       },
       {
         "statement": "In the short term, China may benefit from additional stimulus.",
         "materialized": "PARTIAL",
-        "reasoning": "The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) projects China with 4.5% growth, suggesting some policy support. However, the Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) emphasizes that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025' with trade conflicts creating headwinds for China, suggesting that stimulus benefits may have been offset by trade tensions. The sources do not provide explicit confirmation of additional stimulus implementation in 2025."
+        "reasoning": "Amundi's prediction about China's short-term stimulus benefits showed mixed validation. Vanguard noted that 'China may benefit from additional stimulus' (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf), suggesting the stimulus thesis had merit. However, Reuters reported that Trump's tariff policies created significant headwinds for China (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), potentially offsetting stimulus benefits. The short-term stimulus benefit thesis was only partially validated."
       }
     ],
-    "overall_analysis": "Amundi Investment Institute's prediction was largely accurate in forecasting EM outperformance over DMs and identifying India and Indonesia as long-term winners, which materialized through 2025 with strategic overweighting in major portfolios and strong growth forecasts. The firm correctly anticipated structural opportunities in Asian EMs driven by demographic and economic trends. However, their prediction of short-term China stimulus benefits was only partially validated, as trade conflict headwinds appear to have offset stimulus benefits, suggesting their China outlook was less prescient than their broader EM thesis.",
+    "overall_analysis": "Amundi's prediction was partially accurate, with the specific calls on India and Indonesia as long-term winners proving correct, but the broader thesis that EMs would outperform DMs failing to materialize in 2025. The institution correctly identified specific country opportunities but misjudged the relative performance dynamics between EM and DM, likely underestimating the strength of U.S. equities and the impact of Trump's tariff policies on EM.",
     "summary_stats": {
       "total_statements": 3,
-      "materialized_count": 2,
+      "materialized_count": 1,
       "partial_count": 1,
-      "failed_count": 0
+      "failed_count": 1
     },
-    "score": 83.3,
-    "classification": "GOOD",
-    "justification": "Amundi Investment Institute's prediction was largely accurate in forecasting EM outperformance over DMs and identifying India and Indonesia as long-term winners, which materialized through 2025 with strategic overweighting in major portfolios and strong growth forecasts. The firm correctly anticipated structural opportunities in Asian EMs driven by demographic and economic trends. However, their prediction of short-term China stimulus benefits was only partially validated, as trade conflict headwinds appear to have offset stimulus benefits, suggesting their China outlook was less prescient than their broader EM thesis.",
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "Amundi's prediction was partially accurate, with the specific calls on India and Indonesia as long-term winners proving correct, but the broader thesis that EMs would outperform DMs failing to materialize in 2025. The institution correctly identified specific country opportunities but misjudged the relative performance dynamics between EM and DM, likely underestimating the strength of U.S. equities and the impact of Trump's tariff policies on EM.",
     "id": "MULTI_ASSET-AMUNDI_INVESTMENT_INSTITUTE-19-2025",
     "Original_Rank": 19,
     "Prediction_Text": "\"EMs are expected to outperform DMs. India and Indonesia are long-term winners. In the short term, China may benefit from additional stimulus.\"",
     "Institution": "AMUNDI INVESTMENT INSTITUTE",
-    "Rank": 10
-  },
-  {
-    "institution": "INVESCO",
-    "statements": [
-      {
-        "statement": "We boost allocations to investment grade, REITS and commodities (all overweight) and high yield (remaining underweight), while reducing cash (to zero) and government bonds (to neutral).",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "Bank loans remain our favorite asset class (from a risk-reward basis) and we remain underweight equities.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 2,
-      "materialized_count": 0,
-      "partial_count": 2,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 2 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-INVESCO-1-2025",
-    "Original_Rank": 1,
-    "Prediction_Text": "\"We boost allocations to investment grade, REITS and commodities (all overweight) and high yield (remaining underweight), while reducing cash (to zero) and government bonds (to neutral). Bank loans remain our favorite asset class (from a risk-reward basis) and we remain underweight equities.\"",
-    "Institution": "INVESCO",
-    "Rank": 11
-  },
-  {
-    "institution": "NED DAVIS RESEARCH",
-    "statements": [
-      {
-        "statement": "Our US asset allocation recommendation is 70% stocks (15% overweight), 25% bonds (10% underweight), and 5% cash (5% underweight).",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "On an absolute basis, we are overweight the S&P 500 (year-end 2025 target of 6,600).",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "We are neutral on small-caps versus large-caps (implicit overweight to midcaps) and neutral on growth versus value.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 3,
-      "materialized_count": 0,
-      "partial_count": 3,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 3 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-NED_DAVIS_RESEARCH-2-2025",
-    "Original_Rank": 2,
-    "Prediction_Text": "\"Our US asset allocation recommendation is 70% stocks (15% overweight), 25% bonds (10% underweight), and 5% cash (5% underweight). On an absolute basis, we are overweight the S&P 500 (year-end 2025 target of 6,600). We are neutral on small-caps versus large-caps (implicit overweight to midcaps) and neutral on growth versus value.\"",
-    "Institution": "NED DAVIS RESEARCH",
-    "Rank": 12
-  },
-  {
-    "institution": "CARMIGNAC",
-    "statements": [
-      {
-        "statement": "We see opportunities in special-situation countries which have already had to battle with bond vigilantes and where significant reforms and turnaround policies are having an impact.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "Countries such as Argentina (where inflation is moving from triple to double digits), Turkey (where real yields are finally turning into positive territory), or Ecuador (where the combination of reforms and support from international institutions is beneficial).",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 2,
-      "materialized_count": 0,
-      "partial_count": 2,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 2 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-CARMIGNAC-3-2025",
-    "Original_Rank": 3,
-    "Prediction_Text": "\"We see opportunities in special-situation countries which have already had to battle with bond vigilantes and where significant reforms and turnaround policies are having an impact. Countries such as Argentina (where inflation is moving from triple to double digits), Turkey (where real yields are finally turning into positive territory), or Ecuador (where the combination of reforms and support from international institutions is beneficial).\"",
-    "Institution": "CARMIGNAC",
-    "Rank": 13
-  },
-  {
-    "institution": "FRANKLIN TEMPLETON",
-    "statements": [
-      {
-        "statement": "The re-election of President Donald Trump, accompanied by a Republican “clean sweep,” should provide markets with strong support into 2025.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "We believe earnings-friendly tax cuts and deregulation, accompanied by supportive macroeconomic fundamentals, should set the stage for solid returns.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 2,
-      "materialized_count": 0,
-      "partial_count": 2,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 2 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-FRANKLIN_TEMPLETON-4-2025",
-    "Original_Rank": 4,
-    "Prediction_Text": "\"The re-election of President Donald Trump, accompanied by a Republican “clean sweep,” should provide markets with strong support into 2025. We believe earnings-friendly tax cuts and deregulation, accompanied by supportive macroeconomic fundamentals, should set the stage for solid returns.\"",
-    "Institution": "FRANKLIN TEMPLETON",
-    "Rank": 14
-  },
-  {
-    "institution": "FRANKLIN TEMPLETON",
-    "statements": [
-      {
-        "statement": "While investors ought to seek higher returns in US equities, global equity themes, short duration credit, and (where possible) in private markets/alternatives, they must also build in resistance against potentially higher volatility.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "We believe the appropriate approach relies on sound portfolio construction, blending uncorrelated returns across asset classes, styles, and securities.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 2,
-      "materialized_count": 0,
-      "partial_count": 2,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 2 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-FRANKLIN_TEMPLETON-5-2025",
-    "Original_Rank": 5,
-    "Prediction_Text": "\"While investors ought to seek higher returns in US equities, global equity themes, short duration credit, and (where possible) in private markets/alternatives, they must also build in resistance against potentially higher volatility. We believe the appropriate approach relies on sound portfolio construction, blending uncorrelated returns across asset classes, styles, and securities.\"",
-    "Institution": "FRANKLIN TEMPLETON",
-    "Rank": 15
-  },
-  {
-    "institution": "HSBC GLOBAL PRIVATE BANKING",
-    "statements": [
-      {
-        "statement": "We maintain our mild overweight on global equities, while continuing to build our allocation to alternative assets.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "We believe equities will outperform bonds, and bonds will outperform cash.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "Sitting on excess cash is likely to once again be a drag on performance.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 3,
-      "materialized_count": 0,
-      "partial_count": 3,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 3 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-HSBC_GLOBAL_PRIVATE_BANKING-6-2025",
-    "Original_Rank": 6,
-    "Prediction_Text": "\"We maintain our mild overweight on global equities, while continuing to build our allocation to alternative assets. We believe equities will outperform bonds, and bonds will outperform cash. Sitting on excess cash is likely to once again be a drag on performance.\"",
-    "Institution": "HSBC GLOBAL PRIVATE BANKING",
-    "Rank": 16
-  },
-  {
-    "institution": "INVESCO",
-    "statements": [
-      {
-        "statement": "From a regional perspective we prefer European and emerging market assets.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "We also seek exposure to an appreciating yen, which we do partly by maintaining the partial hedge out of dollar into yen.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 2,
-      "materialized_count": 0,
-      "partial_count": 2,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 2 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-INVESCO-7-2025",
-    "Original_Rank": 7,
-    "Prediction_Text": "\"From a regional perspective we prefer European and emerging market assets. We also seek exposure to an appreciating yen, which we do partly by maintaining the partial hedge out of dollar into yen.\"",
-    "Institution": "INVESCO",
-    "Rank": 17
-  },
-  {
-    "institution": "JPMORGAN CHASE & CO.",
-    "statements": [
-      {
-        "statement": "From a positioning point of view the most vulnerable asset classes are equities, the dollar and bitcoin and the least vulnerable are non-gold commodities.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "The elevated equity positioning calls for the careful consideration of equity tail hedges (such as put ratios), especially given that post Trump's election victory volatility and skew have normalized.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 2,
-      "materialized_count": 0,
-      "partial_count": 2,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 2 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-JPMORGAN_CHASE_&_CO.-8-2025",
-    "Original_Rank": 8,
-    "Prediction_Text": "\"From a positioning point of view the most vulnerable asset classes are equities, the dollar and bitcoin and the least vulnerable are non-gold commodities. The elevated equity positioning calls for the careful consideration of equity tail hedges (such as put ratios), especially given that post Trump's election victory volatility and skew have normalized.\"",
-    "Institution": "JPMORGAN CHASE & CO.",
-    "Rank": 18
-  },
-  {
-    "institution": "NED DAVIS RESEARCH",
-    "statements": [
-      {
-        "statement": "For global asset allocation, NDR recommends an overweight allocation to stocks, market-weight allocation to cash, and an underweight allocation to bonds.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 1,
-      "materialized_count": 0,
-      "partial_count": 1,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 1 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-NED_DAVIS_RESEARCH-9-2025",
-    "Original_Rank": 9,
-    "Prediction_Text": "\"For global asset allocation, NDR recommends an overweight allocation to stocks, market-weight allocation to cash, and an underweight allocation to bonds.\"",
-    "Institution": "NED DAVIS RESEARCH",
     "Rank": 19
   },
   {
-    "institution": "NED DAVIS RESEARCH",
     "statements": [
       {
-        "statement": "We are overweight the US, Canada, and Pacific ex-Japan; underweight emerging markets, the UK, and Japan; and makeweight Europe ex.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      },
-      {
-        "statement": "UK.",
-        "materialized": "PARTIAL",
-        "reasoning": "Statement not explicitly evaluated by LLM - marked as PARTIAL by default."
-      }
-    ],
-    "summary_stats": {
-      "total_statements": 2,
-      "materialized_count": 0,
-      "partial_count": 2,
-      "failed_count": 0
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Evaluated 2 statements for MULTI ASSET predictions in 2025. Score: 50.0/100 (PARTIAL).",
-    "id": "MULTI_ASSET-NED_DAVIS_RESEARCH-10-2025",
-    "Original_Rank": 10,
-    "Prediction_Text": "\"We are overweight the US, Canada, and Pacific ex-Japan; underweight emerging markets, the UK, and Japan; and makeweight Europe ex. UK.\"",
-    "Institution": "NED DAVIS RESEARCH",
-    "Rank": 20
-  },
-  {
-    "statements": [
-      {
-        "statement": "Barring a recession, US equities could very well produce a +10% gain, and core US fixed income could return +5-7% in 2025, with a slight decline in the 10-year Treasury yield.",
-        "materialized": "PARTIAL",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio showed YTD performance of 15.16% as of September 30, 2025 (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), which exceeded the +10% equity projection. However, the prediction's specific claim about a 'slight decline in the 10-year Treasury yield' cannot be directly verified from the provided sources. The sources indicate strong market performance overall but do not provide explicit confirmation of the Treasury yield trajectory or the specific +5-7% fixed income return."
-      },
-      {
-        "statement": "Credit spreads, while narrow, should continue to hold income appeal and remain durable.",
+        "statement": "Recent dollar strength has weighed on relative performance in Europe following Trumpâs re-election.",
         "materialized": "YES",
-        "reasoning": "The Strategy& Asset management study 2025 (SOURCE 4: Asset management study 2025, DATE: December 2025, LINK: https://www.strategyand.pwc.com/de/en/industries/financial-services/asset-management.html) notes that revenues surged by 8% in a 'comparatively robust market environment,' and the PwC Asset and wealth management outlook (SOURCE 9: Asset and wealth management: US Deals 2026 outlook, DATE: December 2025, LINK: https://www.pwc.com/us/en/industries/financial-services/library/asset-wealth-management-deals-outlook.html) indicates that 'improving financial conditions helped by expected interest rate cuts' supported deal activity, suggesting credit conditions remained stable and income-generating assets held appeal throughout 2025."
-      },
-      {
-        "statement": "A globally diversified multi-asset strategy will likely have less return in 2025 than in 2024, but we still expect a solid year.",
-        "materialized": "NO",
-        "reasoning": "The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) delivered a YTD return of 15.16% as of September 30, 2025, which represents a strong year. The Global Multi-Asset Index achieved 18.25% YTD return, indicating that multi-asset strategies performed robustly in 2025. Without explicit 2024 comparison data in the sources, the prediction's assertion of lower returns than 2024 cannot be confirmed, but the actual 2025 performance was indeed solid, partially validating the second part of the statement."
-      },
-      {
-        "statement": "Across our multi-asset portfolios, we're positioned for increased volatility.",
-        "materialized": "PARTIAL",
-        "reasoning": "The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that 'significant equity market volatility has resulted in an increase in trading activities' in 2025, confirming that volatility did materialize. However, the sources do not provide explicit confirmation that Principal Asset Management's specific positioning for volatility proved prescient or that their portfolio construction successfully navigated this volatility."
-      }
-    ],
-    "overall_analysis": "Principal Asset Management's prediction was moderately accurate in anticipating solid multi-asset returns and credit market durability, with actual 2025 performance exceeding their +10% equity projection. However, they underestimated the strength of globally diversified strategies, which delivered robust returns rather than underperformance versus 2024. The firm correctly anticipated increased volatility, which materialized through the year, though the sources do not confirm whether their positioning effectively managed this risk.",
-    "summary_stats": {
-      "total_statements": 4,
-      "materialized_count": 1,
-      "partial_count": 2,
-      "failed_count": 1
-    },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Principal Asset Management's prediction was moderately accurate in anticipating solid multi-asset returns and credit market durability, with actual 2025 performance exceeding their +10% equity projection. However, they underestimated the strength of globally diversified strategies, which delivered robust returns rather than underperformance versus 2024. The firm correctly anticipated increased volatility, which materialized through the year, though the sources do not confirm whether their positioning effectively managed this risk.",
-    "id": "MULTI_ASSET-PRINCIPAL_ASSET_MANAGEMENT-11-2025",
-    "Original_Rank": 11,
-    "Prediction_Text": "\"Barring a recession, US equities could very well produce a +10% gain, and core US fixed income could return +5-7% in 2025, with a slight decline in the 10-year Treasury yield. Credit spreads, while narrow, should continue to hold income appeal and remain durable. A globally diversified multi-asset strategy will likely have less return in 2025 than in 2024, but we still expect a solid year. Across our multi-asset portfolios, we're positioned for increased volatility.\"",
-    "Institution": "PRINCIPAL ASSET MANAGEMENT",
-    "Rank": 21
-  },
-  {
-    "statements": [
-      {
-        "statement": "Recent dollar strength has weighed on relative performance in Europe following Trump's re-election.",
-        "materialized": "YES",
-        "reasoning": "The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) explicitly confirms that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025' and notes 'the surge in the euro/dollar rate' and 'outperformance of European stocks versus Wall Street,' indicating that dollar strength did weigh on Europe's relative performance. The Morgan Stanley Global Strategist Portfolio (SOURCE 1: Global Strategist Portfolio, DATE: December 2025, LINK: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows Europe at 9.5% (target 11.5%), indicating underweight positioning relative to target, confirming relative underperformance."
+        "reasoning": "Evercore ISI's observation about dollar strength weighing on Europe proved accurate. Reuters reported that 'the surge in the euro/dollar rate' was a notable 2025 move and that 'dollar strength' was a key theme (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/). The Morgan Stanley Global Strategist Portfolio showed Europe contributing -2.0% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), confirming that Europe underperformed. The dollar strength following Trump's election was a key driver of this underperformance."
       },
       {
         "statement": "A moderation from near all-time dollar highs set in 2022 could ease headwinds.",
         "materialized": "PARTIAL",
-        "reasoning": "The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes 'the surge in the euro/dollar rate,' suggesting dollar strength continued rather than moderated from 2022 highs. The sources do not provide explicit confirmation that dollar strength moderated in 2025, making this prediction difficult to validate. However, the mention of 'surge in the euro/dollar rate' suggests the dollar may have peaked, potentially supporting future moderation."
+        "reasoning": "Evercore ISI's prediction about dollar moderation easing headwinds showed mixed validation. Reuters reported that 'the surge in the euro/dollar rate' occurred in 2025 (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), suggesting some moderation from peak dollar levels. However, Europe still underperformed with -2.0% contribution to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), indicating that dollar moderation alone was insufficient to ease European headwinds."
       },
       {
         "statement": "Moderating geopolitical tensions as well as a China recovery would bolster support as well.",
         "materialized": "NO",
-        "reasoning": "The Reuters market commentary (SOURCE 8: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, LINK: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) explicitly states that 'rising geopolitical tensions' were a key 2025 market theme, contradicting the prediction of moderating tensions. The Vanguard 2026 Economic and Market Outlook (SOURCE 12: Vanguard Releases 2026 Economic and Market Outlook, DATE: December 2025, LINK: https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) projects China with 4.5% growth but does not indicate a strong recovery. The sources suggest geopolitical tensions escalated rather than moderated in 2025, contrary to this prediction."
+        "reasoning": "Evercore ISI's prediction about moderating geopolitical tensions and China recovery providing support did not materialize in 2025. Reuters reported that 'rising geopolitical tensions' were a key 2025 theme (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), contradicting the moderation prediction. China faced trade conflict uncertainty from Trump's tariff policies (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), limiting recovery prospects. Europe continued to underperform despite these hoped-for developments."
       }
     ],
-    "overall_analysis": "Evercore ISI's prediction was partially accurate in identifying dollar strength as a headwind for Europe following Trump's re-election, which materialized in 2025. However, the firm was incorrect in predicting moderating geopolitical tensions, as the actual 2025 environment featured rising geopolitical tensions that continued to weigh on markets. Their China recovery thesis also did not materialize as a strong support factor for Europe. The prediction demonstrated good understanding of currency dynamics but failed to anticipate the escalation of geopolitical risks that characterized 2025.",
+    "overall_analysis": "Evercore ISI's prediction was partially accurate, correctly identifying dollar strength as a headwind for Europe but incorrectly predicting that geopolitical tensions would moderate and China would recover. The institution accurately diagnosed the dollar problem but was overly optimistic about the resolution of geopolitical tensions and China's recovery prospects, which would have been necessary to support European performance.",
     "summary_stats": {
       "total_statements": 3,
       "materialized_count": 1,
@@ -660,22 +602,22 @@
     },
     "score": 50.0,
     "classification": "PARTIAL",
-    "justification": "Evercore ISI's prediction was partially accurate in identifying dollar strength as a headwind for Europe following Trump's re-election, which materialized in 2025. However, the firm was incorrect in predicting moderating geopolitical tensions, as the actual 2025 environment featured rising geopolitical tensions that continued to weigh on markets. Their China recovery thesis also did not materialize as a strong support factor for Europe. The prediction demonstrated good understanding of currency dynamics but failed to anticipate the escalation of geopolitical risks that characterized 2025.",
+    "justification": "Evercore ISI's prediction was partially accurate, correctly identifying dollar strength as a headwind for Europe but incorrectly predicting that geopolitical tensions would moderate and China would recover. The institution accurately diagnosed the dollar problem but was overly optimistic about the resolution of geopolitical tensions and China's recovery prospects, which would have been necessary to support European performance.",
     "id": "MULTI_ASSET-EVERCORE_ISI-20-2025",
     "Original_Rank": 20,
-    "Prediction_Text": "\"Recent dollar strength has weighed on relative performance in Europe following Trump's re-election. A moderation from near all-time dollar highs set in 2022 could ease headwinds. Moderating geopolitical tensions as well as a China recovery would bolster support as well.\"",
+    "Prediction_Text": "\"Recent dollar strength has weighed on relative performance in Europe following Trumpâs re-election. A moderation from near all-time dollar highs set in 2022 could ease headwinds. Moderating geopolitical tensions as well as a China recovery would bolster support as well.\"",
     "Institution": "EVERCORE ISI",
-    "Rank": 22
+    "Rank": 20
   },
   {
     "statements": [
       {
         "statement": "In a resilient macro outlook with the Fed unable to deliver a complete cutting cycle, we are cautious across EM, leaving aside the additional risk potentially coming from tariff shock.",
         "materialized": "PARTIAL",
-        "reasoning": "The prediction correctly anticipated a resilient macro outlook and tariff shocks as key risks. SOURCE 8 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'Donald Trump's America First agenda proved to be a key market driver in 2025...as the U.S. president wasted no time delivering on his campaign promises to shift from free trade to fair trade,' validating the tariff shock concern. However, the cautious stance on emerging markets was only partially justified. SOURCE 18 (Allspring Global Investments, December 2025) suggests emerging market investing payoffs were growing, contradicting the blanket caution. The Fed cutting cycle aspect is partially supported by SOURCE 15 (Vanguard, December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) which shows policy rate forecasts indicating limited cuts ahead, though this is forward-looking rather than confirming 2025 outcomes."
+        "reasoning": "The prediction correctly anticipated a resilient macro outlook and tariff risks. SOURCE 8 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025' with shifts to 'fair trade' creating tariff shocks. However, the Fed cutting cycle aspect is partially validated—SOURCE 5 (Nasdaq, December 2025, https://www.nasdaq.com/articles/3-asset-manager-stocks-set-extend-their-winning-streak-2026) mentions 'declining interest rates' supporting asset managers, suggesting some cuts occurred. The caution on EM is partially supported: SOURCE 23 context indicates 'Emerging markets are neutral; China's policy shift could propel further gains, though Trump administration risks are particularly acute,' validating the tariff risk concern but showing mixed EM performance rather than clear underperformance."
       }
     ],
-    "overall_analysis": "JPMorgan Chase correctly identified tariff shocks as a material risk that materialized in 2025, and accurately assessed the Fed's limited cutting capacity. However, their blanket caution on emerging markets was overly pessimistic, as the relative payoff for EM investing actually improved during 2025. The institution got the macro resilience and tariff dynamics right but misjudged the opportunity set in emerging markets.",
+    "overall_analysis": "JPMorgan Chase correctly identified the tariff shock risk and resilient macro backdrop that materialized in 2025, particularly Trump's trade policy shifts. However, their caution on emerging markets appears overly pessimistic given that SOURCE 1 (Morgan Stanley, December 2025) shows Emerging Markets contributed 0.5% to excess returns and SOURCE 18 (AllSpring) suggests emerging market relative payoffs were growing. The Fed cutting cycle prediction was partially accurate but incomplete in capturing the actual rate environment.",
     "summary_stats": {
       "total_statements": 1,
       "materialized_count": 0,
@@ -684,35 +626,93 @@
     },
     "score": 50.0,
     "classification": "PARTIAL",
-    "justification": "JPMorgan Chase correctly identified tariff shocks as a material risk that materialized in 2025, and accurately assessed the Fed's limited cutting capacity. However, their blanket caution on emerging markets was overly pessimistic, as the relative payoff for EM investing actually improved during 2025. The institution got the macro resilience and tariff dynamics right but misjudged the opportunity set in emerging markets.",
+    "justification": "JPMorgan Chase correctly identified the tariff shock risk and resilient macro backdrop that materialized in 2025, particularly Trump's trade policy shifts. However, their caution on emerging markets appears overly pessimistic given that SOURCE 1 (Morgan Stanley, December 2025) shows Emerging Markets contributed 0.5% to excess returns and SOURCE 18 (AllSpring) suggests emerging market relative payoffs were growing. The Fed cutting cycle prediction was partially accurate but incomplete in capturing the actual rate environment.",
     "id": "MULTI_ASSET-JPMORGAN_CHASE_&_CO.-21-2025",
     "Original_Rank": 21,
     "Prediction_Text": "\"In a resilient macro outlook with the Fed unable to deliver a complete cutting cycle, we are cautious across EM, leaving aside the additional risk potentially coming from tariff shock.\"",
+    "Institution": "JPMORGAN CHASE & CO.",
+    "Rank": 21
+  },
+  {
+    "statements": [
+      {
+        "statement": "The relative payoff has been growing for emerging-market investing, and we expect this trend to continue.",
+        "materialized": "PARTIAL",
+        "reasoning": "This prediction shows mixed materialization in 2025. SOURCE 1 (Morgan Stanley Global Strategist Portfolio, December 2025, https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows Emerging Markets contributed only 0.5% to excess returns, suggesting modest relative payoff growth. However, SOURCE 8 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) documents Asia's strong performance with 'nearly 70% of the global rise in solar generation' and 'record 59% of all utility-supplied solar power,' indicating emerging market strength in specific sectors. SOURCE 12 (Vanguard, December 2025, https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-releases-2026-economic-and-market-outlook-121025.html) suggests 'non-U.S. developed-market equities should benefit most over time,' indicating future relative payoff potential rather than 2025 realization."
+      }
+    ],
+    "overall_analysis": "AllSpring Global Investments' prediction about emerging market relative payoffs was only partially validated in 2025. While specific emerging market sectors (particularly Asia in renewable energy) showed strong performance, overall EM contribution to multi-asset portfolios remained modest. The prediction appears more forward-looking than immediately materialized, with the relative payoff growth expected to accelerate in 2026 rather than having fully crystallized in 2025, particularly given geopolitical and tariff headwinds documented in the sources.",
+    "summary_stats": {
+      "total_statements": 1,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 0
+    },
+    "score": 50.0,
+    "classification": "PARTIAL",
+    "justification": "AllSpring Global Investments' prediction about emerging market relative payoffs was only partially validated in 2025. While specific emerging market sectors (particularly Asia in renewable energy) showed strong performance, overall EM contribution to multi-asset portfolios remained modest. The prediction appears more forward-looking than immediately materialized, with the relative payoff growth expected to accelerate in 2026 rather than having fully crystallized in 2025, particularly given geopolitical and tariff headwinds documented in the sources.",
+    "id": "MULTI_ASSET-ALLSPRING_GLOBAL_INVESTMENTS-23-2025",
+    "Original_Rank": 23,
+    "Prediction_Text": "\"The relative payoff has been growing for emerging-market investing, and we expect this trend to continue.\"",
+    "Institution": "ALLSPRING GLOBAL INVESTMENTS",
+    "Rank": 22
+  },
+  {
+    "statements": [
+      {
+        "statement": "From a positioning point of view the most vulnerable asset classes are equities, the dollar and bitcoin and the least vulnerable are non-gold commodities.",
+        "materialized": "NO",
+        "reasoning": "JPMorgan's vulnerability assessment proved largely incorrect for 2025. Equities were not the most vulnerable asset class; instead, they delivered strong returns with the Morgan Stanley Global Strategist Portfolio achieving 11.25% 1-year returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). The dollar did not prove particularly vulnerable, with Reuters noting 'the surge in the euro/dollar rate' but also that 'dollar strength' was a key 2025 theme (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/). Commodities showed minimal contribution with the Morgan Stanley portfolio showing commodities contributing 0.0% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf), contradicting the 'least vulnerable' assessment."
+      },
+      {
+        "statement": "The elevated equity positioning calls for the careful consideration of equity tail hedges (such as put ratios), especially given that post Trumpâs election victory volatility and skew have normalized.",
+        "materialized": "PARTIAL",
+        "reasoning": "The tail hedge recommendation showed mixed merit. While volatility did normalize post-election (SOURCE: What just happened? Ten charts to help make sense of markets 2025, DATE: December 2025, URL: https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/), the actual need for tail hedges was limited given that equities delivered strong positive returns throughout 2025. The Morgan Stanley Global Strategist Portfolio achieved 11.25% 1-year returns without requiring significant hedging (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). However, Principal Asset Management noted they were 'positioned for increased volatility' (SOURCE: Principal Asset Management, DATE: December 2025, URL: https://www.principal.com), suggesting some hedging consideration was prudent, making this a partial validation of the tail hedge thesis."
+      }
+    ],
+    "overall_analysis": "JPMorgan's vulnerability assessment proved largely incorrect, as equities were not the most vulnerable asset class in 2025 but rather delivered strong returns. The dollar and commodities also did not behave as predicted. While the tail hedge recommendation had some merit given normalized volatility, the actual market environment did not require significant hedging, making this a weak macro call overall. The institution appears to have been overly pessimistic on equities and misread the post-election market dynamics.",
+    "summary_stats": {
+      "total_statements": 2,
+      "materialized_count": 0,
+      "partial_count": 1,
+      "failed_count": 1
+    },
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "JPMorgan's vulnerability assessment proved largely incorrect, as equities were not the most vulnerable asset class in 2025 but rather delivered strong returns. The dollar and commodities also did not behave as predicted. While the tail hedge recommendation had some merit given normalized volatility, the actual market environment did not require significant hedging, making this a weak macro call overall. The institution appears to have been overly pessimistic on equities and misread the post-election market dynamics.",
+    "id": "MULTI_ASSET-JPMORGAN_CHASE_&_CO.-8-2025",
+    "Original_Rank": 8,
+    "Prediction_Text": "\"From a positioning point of view the most vulnerable asset classes are equities, the dollar and bitcoin and the least vulnerable are non-gold commodities. The elevated equity positioning calls for the careful consideration of equity tail hedges (such as put ratios), especially given that post Trumpâs election victory volatility and skew have normalized.\"",
     "Institution": "JPMORGAN CHASE & CO.",
     "Rank": 23
   },
   {
     "statements": [
       {
-        "statement": "Emerging markets are neutral; China's policy shift could propel further gains, though Trump administration risks are particularly acute.",
+        "statement": "We are overweight the US, Canada, and Pacific ex-Japan; underweight emerging markets, the UK, and Japan; and makeweight Europe ex.",
         "materialized": "PARTIAL",
-        "reasoning": "This prediction was partially accurate. The 'neutral' stance on emerging markets overall was contradicted by actual 2025 performance. SOURCE 18 (Allspring Global Investments, December 2025) states 'The relative payoff has been growing for emerging-market investing,' and SOURCE 1 (Morgan Stanley, December 2025, https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf) shows emerging markets with positive 0.5% contribution to excess return, suggesting EM was not neutral but positive. However, the prediction correctly identified China's policy shift potential and Trump administration risks. SOURCE 8 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms: 'Donald Trump's America First agenda proved to be a key market driver in 2025...shift from free trade to fair trade,' validating the acute Trump administration risk assessment. SOURCE 15 (Vanguard, December 2025) notes China's growth forecast at 4.5% with a key risk being 'Technology innovation and investment accelerate,' suggesting policy-driven upside potential."
+        "reasoning": "Ned Davis Research's regional positioning showed mixed results. The overweight U.S. call proved correct with strong U.S. equity performance (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). The Canada overweight was validated with Canada contributing -3.0% to excess returns, though this was negative (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf). The underweight Japan call proved incorrect, as Japan contributed 0.2% to excess returns and was highlighted as attractive by multiple strategists (SOURCE: AI exuberance: Economic upside, stock market downside, DATE: December 2025, URL: https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf). The underweight emerging markets call was partially incorrect, as EM contributed 0.5% to excess returns (SOURCE: Global Strategist Portfolio, DATE: December 2025, URL: https://www.morganstanley.com/im/publication/mutualfund/material/fa_mf_globalstrategist.pdf)."
+      },
+      {
+        "statement": "UK.",
+        "materialized": "INCOMPLETE",
+        "reasoning": "This statement appears to be incomplete or a formatting error, as it only contains 'UK.' without a complete thought or recommendation. It cannot be properly evaluated as a standalone statement."
       }
     ],
-    "overall_analysis": "Citi's prediction was partially correct but overly cautious on emerging markets. While the institution accurately identified Trump administration tariff risks as acute and China's policy shift as a potential catalyst, their 'neutral' stance on EM proved too pessimistic given the actual positive relative payoff that materialized in 2025. Citi correctly assessed geopolitical risks but underestimated the attractiveness of emerging market valuations and China's policy support measures.",
+    "overall_analysis": "Ned Davis Research's regional positioning was partially correct, with the U.S. overweight call proving accurate but the Japan underweight and EM underweight calls proving incorrect. The incomplete statement about the UK prevents full evaluation. Overall, the institution got the major call (U.S. overweight) right but missed opportunities in Japan and underestimated emerging markets potential.",
     "summary_stats": {
-      "total_statements": 1,
+      "total_statements": 2,
       "materialized_count": 0,
       "partial_count": 1,
       "failed_count": 0
     },
-    "score": 50.0,
-    "classification": "PARTIAL",
-    "justification": "Citi's prediction was partially correct but overly cautious on emerging markets. While the institution accurately identified Trump administration tariff risks as acute and China's policy shift as a potential catalyst, their 'neutral' stance on EM proved too pessimistic given the actual positive relative payoff that materialized in 2025. Citi correctly assessed geopolitical risks but underestimated the attractiveness of emerging market valuations and China's policy support measures.",
-    "id": "MULTI_ASSET-CITI-24-2025",
-    "Original_Rank": 24,
-    "Prediction_Text": "\"Emerging markets are neutral; China's policy shift could propel further gains, though Trump administration risks are particularly acute.\"",
-    "Institution": "CITI",
+    "score": 25.0,
+    "classification": "WEAK",
+    "justification": "Ned Davis Research's regional positioning was partially correct, with the U.S. overweight call proving accurate but the Japan underweight and EM underweight calls proving incorrect. The incomplete statement about the UK prevents full evaluation. Overall, the institution got the major call (U.S. overweight) right but missed opportunities in Japan and underestimated emerging markets potential.",
+    "id": "MULTI_ASSET-NED_DAVIS_RESEARCH-10-2025",
+    "Original_Rank": 10,
+    "Prediction_Text": "\"We are overweight the US, Canada, and Pacific ex-Japan; underweight emerging markets, the UK, and Japan; and makeweight Europe ex. UK.\"",
+    "Institution": "NED DAVIS RESEARCH",
     "Rank": 24
   }
 ]

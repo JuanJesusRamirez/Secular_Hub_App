@@ -244,7 +244,7 @@ export const getAggregateThemeData = (themes: ThemeData[]): ThemeData => {
         Prediction_Text: `Institutional strategy performance across ${agg.themesCount} themes.`,
         statements: [], // No global statements here
         score: agg.totalScore,
-        classification: agg.avgScore >= 90 ? "EXCELLENT" : agg.avgScore >= 75 ? "GOOD" : agg.avgScore >= 60 ? "PARTIAL" : agg.avgScore >= 40 ? "WEAK" : "FAILED" as any,
+        classification: agg.totalScore >= 810 ? "EXCELLENT" : agg.totalScore >= 675 ? "GOOD" : agg.totalScore >= 540 ? "PARTIAL" : agg.totalScore >= 360 ? "WEAK" : "FAILED" as any,
         justification: `Top performer across ${agg.themesCount} different market themes. Average accuracy: ${agg.avgScore}%.`,
         theme: "Global",
         themeBreakdown: agg.themeBreakdown,

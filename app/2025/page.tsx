@@ -479,7 +479,12 @@ export default function ExPost2025Page() {
                                                 <div className="flex items-center gap-3">
                                                     <div className="flex flex-col items-center min-w-[20px]">
                                                         <span className="text-[10px] font-black text-muted-foreground">
-                                                            {activeThemeName === "GLOBAL RANKING" ? <Trophy className="h-3 w-3 text-indigo-500" /> : `#${index + 1}`}
+                                                            {activeThemeName === "GLOBAL RANKING" ? (
+                                                                index === 0 ? <span className="text-lg">🥇</span> :
+                                                                    index === 1 ? <span className="text-lg">🥈</span> :
+                                                                        index === 2 ? <span className="text-lg">🥉</span> :
+                                                                            `#${index + 1}`
+                                                            ) : `#${index + 1}`}
                                                         </span>
                                                         {activeThemeName !== "GLOBAL RANKING" && (
                                                             item.Rank < item.Original_Rank ? (

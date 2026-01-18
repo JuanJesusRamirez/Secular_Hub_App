@@ -33,7 +33,9 @@ export interface ThemeData {
     theme: string;
     items: ExPostItem[];
     themeStats: {
-        totalInstitutions: number;
+        totalInstitutions: number; // For backward compatibility if needed, but we'll use totalFirms
+        totalFirms: number;
+        totalCallTexts: number;
         avgScore: number;
         excellentCount: number;
         goodCount: number;

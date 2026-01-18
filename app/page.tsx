@@ -143,62 +143,6 @@ export default async function Home() {
         </Card>
       </section>
 
-      {/* Ex-Post Analysis Highlight Section */}
-      <section className="space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="h-8 w-1 bg-emerald-500 rounded-full" />
-          <h2 className="text-2xl font-bold tracking-tight">Institutional Accuracy Tracking</h2>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-2">
-          <Link href="/2025" className="group">
-            <Card className="h-full border-emerald-500/30 bg-emerald-500/5 hover:border-emerald-500 transition-all cursor-pointer overflow-hidden relative">
-              <div className="absolute top-0 right-0 p-3">
-                <Badge variant="default" className="bg-emerald-500 hover:bg-emerald-600 animate-pulse">NEW: EX-POST 2025</Badge>
-              </div>
-              <CardHeader>
-                <div className="flex items-center gap-2 mb-2">
-                  <Trophy className="h-5 w-5 text-emerald-500" />
-                  <span className="text-xs font-bold uppercase tracking-widest text-emerald-600">Performance Dashboard</span>
-                </div>
-                <CardTitle className="text-2xl group-hover:text-emerald-700 transition-colors">2025 Ex-Post Analysis</CardTitle>
-                <CardDescription>
-                  Verifying how institutional base cases for AI and Tariffs materialized during 2025.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center justify-between mt-2">
-                  <div className="flex gap-4">
-                    <div className="text-center">
-                      <div className="text-xl font-bold text-emerald-700">62</div>
-                      <div className="text-[10px] uppercase text-muted-foreground font-bold">Firms Analyzed</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-xl font-bold text-emerald-700">84%</div>
-                      <div className="text-[10px] uppercase text-muted-foreground font-bold">Avg Materialization</div>
-                    </div>
-                  </div>
-                  <div className="h-10 w-10 rounded-full bg-emerald-500/20 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all">
-                    <ArrowRight className="h-5 w-5" />
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
-
-          <Card className="bg-muted/10 border-dashed flex flex-col justify-center p-6 space-y-4">
-            <h3 className="font-bold text-lg">Coming Soon: 2024 Retrospective</h3>
-            <p className="text-sm text-muted-foreground">
-              We are finalizing the ex-post analysis for the 2024 "Slowdown but No Recession" base case.
-              The dashboard will compare year-end realized GDP and inflation vs. institutional targets.
-            </p>
-            <div className="flex gap-2 opacity-50">
-              <Badge variant="secondary">In Progress</Badge>
-              <Badge variant="secondary">Data Validation</Badge>
-            </div>
-          </Card>
-        </div>
-      </section>
 
       {/* How Consensus is Built Section */}
       <section className="space-y-4">

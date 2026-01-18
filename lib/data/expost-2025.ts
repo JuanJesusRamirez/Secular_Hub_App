@@ -54,11 +54,14 @@ export const getRankingWithConviction = (items: ExPostItem[]): ExPostItem[] => {
 
 // Theme statistics
 export const getThemeStats = (items: ExPostItem[]): ThemeData["themeStats"] => {
-    const totalInstitutions = items.length;
-    const avgScore = items.reduce((acc, item) => acc + item.score, 0) / totalInstitutions;
+    const totalCallTexts = items.length;
+    const distinctFirms = new Set(items.map(i => i.Institution).filter(Boolean)).size;
+    const avgScore = items.reduce((acc, item) => acc + item.score, 0) / totalCallTexts;
 
     return {
-        totalInstitutions,
+        totalInstitutions: distinctFirms, // Maintain totalInstitutions as distinct count
+        totalFirms: distinctFirms,
+        totalCallTexts,
         avgScore: Math.round(avgScore * 10) / 10,
         excellentCount: items.filter((i) => i.classification === "EXCELLENT").length,
         goodCount: items.filter((i) => i.classification === "GOOD").length,
@@ -247,6 +250,8 @@ export const getAggregateThemeData = (themes: ThemeData[]): ThemeData => {
         items,
         themeStats: {
             totalInstitutions: aggregate.length,
+            totalFirms: aggregate.length,
+            totalCallTexts: themes.reduce((acc, t) => acc + t.items.length, 0),
             avgScore: Math.round((aggregate.reduce((acc: number, a: AggregateRankingItem) => acc + a.totalScore, 0) / aggregate.length) * 10) / 10,
             excellentCount: items.filter(i => i.score >= 800).length,
             goodCount: items.filter(i => i.score >= 650 && i.score < 800).length,

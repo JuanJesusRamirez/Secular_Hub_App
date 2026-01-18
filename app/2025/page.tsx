@@ -38,6 +38,8 @@ import {
     LayoutGrid,
     ArrowRight,
     ChevronDown,
+    BookOpen,
+    Hash,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
@@ -195,6 +197,7 @@ const getGlobalScoreColor = (score: number) => {
 
 export default function ExPost2025Page() {
     const THEME_RANKING_LABEL = "THEME RANKING";
+    const METHODOLOGY_LABEL = "METHODOLOGY";
     // Initialize with BASE CASE (usually the second item in ALL_THEMES_WITH_GLOBAL, as first is GLOBAL)
     // We look for it explicitly to be safe
     const defaultTheme = useMemo(() =>
@@ -245,13 +248,19 @@ export default function ExPost2025Page() {
 
 
             {/* Stats Summary Area */}
-            {activeThemeName !== THEME_RANKING_LABEL && (
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {activeThemeName !== THEME_RANKING_LABEL && activeThemeName !== METHODOLOGY_LABEL && (
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
                     <StatCard
-                        title="Total Firms"
-                        value={stats.totalInstitutions}
+                        title="Firms"
+                        value={stats.totalFirms}
                         icon={Target}
                         color={activeThemeName === "GLOBAL RANKING" ? "text-indigo-600" : "text-blue-500"}
+                    />
+                    <StatCard
+                        title="Call Texts"
+                        value={stats.totalCallTexts}
+                        icon={Hash}
+                        color="text-slate-500"
                     />
                     <StatCard
                         title={activeThemeName === "GLOBAL RANKING" ? "Global Score" : "Avg Score"}
@@ -263,13 +272,13 @@ export default function ExPost2025Page() {
                     {activeThemeName === "GLOBAL RANKING" ? (
                         <>
                             <StatCard
-                                title="Market Alphas"
+                                title="Alphas"
                                 value={stats.excellentCount}
                                 icon={Zap}
                                 color="text-green-600"
                             />
                             <StatCard
-                                title="Market Leaders"
+                                title="Leaders"
                                 value={stats.goodCount}
                                 icon={Trophy}
                                 color="text-slate-950"
@@ -296,112 +305,198 @@ export default function ExPost2025Page() {
                                 color="text-green-500"
                             />
                             <StatCard
-                                title="Good/Partial"
-                                value={stats.goodCount + stats.partialCount}
+                                title="Good"
+                                value={stats.goodCount}
                                 icon={CheckCircle2}
+                                color="text-emerald-500"
+                            />
+                            <StatCard
+                                title="Partial"
+                                value={stats.partialCount}
+                                icon={Minus}
                                 color="text-yellow-500"
                             />
                             <StatCard
-                                title="Weak/Failed"
+                                title="Weak"
                                 value={stats.weakCount + stats.failedCount}
                                 icon={XCircle}
                                 color="text-red-500"
                             />
-                            <Card className="bg-muted/30 border-dashed">
-                                <CardContent className="p-4 flex flex-col justify-center h-full text-center">
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Theme Hub</p>
-                                    <p className="text-xl font-bold truncate">{activeThemeName}</p>
-                                </CardContent>
-                            </Card>
                         </>
                     )}
                 </div>
             )}
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                {/* Left Navigation: Themes */}
-                <div className="lg:col-span-2 space-y-4">
-                    <div className="sticky top-8 space-y-4">
-                        <div className="flex flex-col gap-2">
-                            <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2 mb-2">Main Views</h3>
-
-                            {/* Global Ranking Button (Priority #1) */}
-                            {ALL_THEMES_WITH_GLOBAL[0] && (
-                                <Button
-                                    key={ALL_THEMES_WITH_GLOBAL[0].theme}
-                                    variant={activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "default" : "outline"}
-                                    onClick={() => {
-                                        setActiveThemeName(ALL_THEMES_WITH_GLOBAL[0].theme);
-                                        setSelectedExPostItem(ALL_THEMES_WITH_GLOBAL[0].items[0] || null);
-                                    }}
-                                    className={cn(
-                                        "justify-start px-4 h-11 text-xs font-bold uppercase tracking-wider transition-all",
-                                        activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme
-                                            ? "shadow-md scale-[1.02]"
-                                            : "hover:bg-muted"
-                                    )}
-                                >
-                                    <ThemeIcon theme={ALL_THEMES_WITH_GLOBAL[0].theme} className="mr-2 h-4 w-4" />
-                                    <span className="truncate">{ALL_THEMES_WITH_GLOBAL[0].theme}</span>
-                                </Button>
-                            )}
-
-                            {/* Theme Ranking Button */}
-                            <Button
-                                variant={activeThemeName === THEME_RANKING_LABEL ? "default" : "outline"}
-                                onClick={() => {
-                                    setActiveThemeName(THEME_RANKING_LABEL);
-                                    setSelectedExPostItem(null);
-                                }}
-                                className={cn(
-                                    "justify-start px-4 h-11 text-xs font-bold uppercase tracking-wider transition-all",
-                                    activeThemeName === THEME_RANKING_LABEL
-                                        ? "shadow-md scale-[1.02]"
-                                        : "bg-primary/5 hover:bg-primary/10 border-primary/20"
-                                )}
-                            >
-                                <BarChart3 className="mr-2 h-4 w-4" />
-                                {THEME_RANKING_LABEL}
-                            </Button>
-
-                            <div className="h-[1px] bg-border my-2" />
-
-                            <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2 mb-2">Market Themes</h3>
-
-                            <Select
-                                value={ALL_THEMES_WITH_GLOBAL.slice(1).some(t => t.theme === activeThemeName) ? activeThemeName : ""}
-                                onValueChange={(value) => {
-                                    const themeData = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === value);
-                                    if (themeData) {
-                                        setActiveThemeName(themeData.theme);
-                                        setSelectedExPostItem(themeData.items[0] || null);
-                                    }
-                                }}
-                            >
-                                <SelectTrigger className="w-full h-11 text-xs font-bold uppercase tracking-wider bg-primary/5 border-primary/20 focus:ring-1">
-                                    <SelectValue placeholder="SELECT THEME" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    {ALL_THEMES_WITH_GLOBAL.slice(1).map((themeData) => (
-                                        <SelectItem
-                                            key={themeData.theme}
-                                            value={themeData.theme}
-                                            className="text-xs font-bold uppercase tracking-wider"
+                {/* Sidebar: Navigation & Ranking */}
+                <div className="lg:col-span-4 xl:col-span-3 space-y-6">
+                    <div className="sticky top-8 space-y-6">
+                        <div className="space-y-4">
+                            <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2">Main Views</h3>
+                            <div className="space-y-2">
+                                <div className="grid grid-cols-2 gap-2">
+                                    {/* Global Ranking Button */}
+                                    {ALL_THEMES_WITH_GLOBAL[0] && (
+                                        <Button
+                                            key={ALL_THEMES_WITH_GLOBAL[0].theme}
+                                            variant={activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "default" : "outline"}
+                                            onClick={() => {
+                                                setActiveThemeName(ALL_THEMES_WITH_GLOBAL[0].theme);
+                                                setSelectedExPostItem(ALL_THEMES_WITH_GLOBAL[0].items[0] || null);
+                                            }}
+                                            className={cn(
+                                                "justify-center h-11 text-xs font-bold uppercase tracking-wider transition-all",
+                                                activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "shadow-md" : "hover:bg-muted"
+                                            )}
                                         >
-                                            <div className="flex items-center gap-2">
-                                                <ThemeIcon theme={themeData.theme} className="h-3 w-3" />
-                                                {themeData.theme}
-                                            </div>
-                                        </SelectItem>
-                                    ))}
-                                </SelectContent>
-                            </Select>
+                                            <Trophy className="mr-2 h-4 w-4 shrink-0" />
+                                            <span className="truncate">Global</span>
+                                        </Button>
+                                    )}
+
+                                    {/* Theme Ranking Button */}
+                                    <Button
+                                        variant={activeThemeName === THEME_RANKING_LABEL ? "default" : "outline"}
+                                        onClick={() => {
+                                            setActiveThemeName(THEME_RANKING_LABEL);
+                                            setSelectedExPostItem(null);
+                                        }}
+                                        className={cn(
+                                            "justify-center h-11 text-xs font-bold uppercase tracking-wider transition-all px-2",
+                                            activeThemeName === THEME_RANKING_LABEL
+                                                ? "shadow-md"
+                                                : "bg-primary/5 hover:bg-primary/10 border-primary/20"
+                                        )}
+                                    >
+                                        <BarChart3 className="mr-2 h-4 w-4 shrink-0" />
+                                        <span className="truncate">Themes</span>
+                                    </Button>
+                                </div>
+
+                                <div className="h-[1px] bg-border my-2" />
+
+                                <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2">Market Exploration</h3>
+                                <div className="flex gap-2">
+                                    <Select
+                                        value={ALL_THEMES_WITH_GLOBAL.slice(1).some(t => t.theme === activeThemeName) ? activeThemeName : ""}
+                                        onValueChange={(value) => {
+                                            const themeData = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === value);
+                                            if (themeData) {
+                                                setActiveThemeName(themeData.theme);
+                                                setSelectedExPostItem(themeData.items[0] || null);
+                                            }
+                                        }}
+                                    >
+                                        <SelectTrigger className="flex-1 h-11 text-xs font-bold uppercase tracking-wider bg-primary/5 border-primary/20 focus:ring-1">
+                                            <SelectValue placeholder="SELECT THEME" />
+                                        </SelectTrigger>
+                                        <SelectContent>
+                                            {ALL_THEMES_WITH_GLOBAL.slice(1).map((themeData) => (
+                                                <SelectItem
+                                                    key={themeData.theme}
+                                                    value={themeData.theme}
+                                                    className="text-xs font-bold uppercase tracking-wider"
+                                                >
+                                                    <div className="flex items-center gap-2">
+                                                        <ThemeIcon theme={themeData.theme} className="h-3 w-3" />
+                                                        {themeData.theme}
+                                                    </div>
+                                                </SelectItem>
+                                            ))}
+                                        </SelectContent>
+                                    </Select>
+
+                                    <Button
+                                        variant={activeThemeName === METHODOLOGY_LABEL ? "default" : "outline"}
+                                        size="icon"
+                                        onClick={() => {
+                                            setActiveThemeName(METHODOLOGY_LABEL);
+                                            setSelectedExPostItem(null);
+                                        }}
+                                        className={cn(
+                                            "h-11 w-11 shrink-0 transition-all",
+                                            activeThemeName === METHODOLOGY_LABEL
+                                                ? "shadow-md bg-indigo-600 hover:bg-indigo-700"
+                                                : "bg-muted/50 hover:bg-muted"
+                                        )}
+                                        title="Audit Methodology"
+                                    >
+                                        <BookOpen className="h-4 w-4" />
+                                    </Button>
+                                </div>
+                            </div>
                         </div>
+
+                        {activeThemeName !== THEME_RANKING_LABEL && activeThemeName !== METHODOLOGY_LABEL && (
+                            <div className="space-y-4 pt-4 border-t">
+                                <div className="flex items-center justify-between px-2">
+                                    <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Firm Ranking</h3>
+                                    <Badge variant="outline" className="text-[9px] font-bold py-0">{filteredItems.length}</Badge>
+                                </div>
+                                <div className="relative">
+                                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground" />
+                                    <Input
+                                        placeholder="Search firm..."
+                                        className="pl-9 h-10 text-xs font-bold"
+                                        value={searchQuery}
+                                        onChange={(e) => setSearchQuery(e.target.value)}
+                                    />
+                                </div>
+                                <Card className="max-h-[500px] overflow-auto custom-scrollbar border-2">
+                                    <CardContent className="p-0 divide-y">
+                                        {filteredItems.map((item, index) => (
+                                            <button
+                                                key={item.id}
+                                                onClick={() => setSelectedExPostItem(item)}
+                                                className={cn(
+                                                    "w-full text-left p-4 hover:bg-muted/50 transition-all flex items-center justify-between gap-4 border-l-4",
+                                                    selectedExPostItem?.id === item.id
+                                                        ? "bg-primary/5 border-l-primary"
+                                                        : "border-l-transparent"
+                                                )}
+                                            >
+                                                <div className="flex items-center gap-3">
+                                                    <div className="flex flex-col items-center min-w-[20px]">
+                                                        <span className="text-[10px] font-black text-muted-foreground">
+                                                            {activeThemeName === "GLOBAL RANKING" ? <Trophy className="h-3 w-3 text-indigo-500" /> : `#${index + 1}`}
+                                                        </span>
+                                                        {activeThemeName !== "GLOBAL RANKING" && (
+                                                            item.Rank < item.Original_Rank ? (
+                                                                <ArrowUpRight className="h-2.5 w-2.5 text-green-500" />
+                                                            ) : item.Rank > item.Original_Rank ? (
+                                                                <ArrowDownRight className="h-2.5 w-2.5 text-red-500" />
+                                                            ) : (
+                                                                <Minus className="h-2.5 w-2.5 text-gray-400 opacity-40" />
+                                                            )
+                                                        )}
+                                                    </div>
+                                                    <div>
+                                                        <p className={cn(
+                                                            "font-bold text-xs uppercase tracking-tight line-clamp-1",
+                                                            selectedExPostItem?.id === item.id && "text-primary"
+                                                        )}>{item.Institution}</p>
+                                                        {activeThemeName !== "GLOBAL RANKING" && (
+                                                            <p className="text-[9px] font-bold text-muted-foreground uppercase tracking-widest">Ex-Ante: #{item.Original_Rank}</p>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                                <div className={cn(
+                                                    "text-xs font-black",
+                                                    getClassificationColor(item.classification)
+                                                )}>
+                                                    {item.score} <span className="opacity-60 text-[8px]">PTS</span>
+                                                </div>
+                                            </button>
+                                        ))}
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        )}
                     </div>
                 </div>
 
-                {/* Right Content Area */}
-                <div className="lg:col-span-10">
+                {/* Main Content Area */}
+                <div className="lg:col-span-8 xl:col-span-9">
                     {activeThemeName === THEME_RANKING_LABEL ? (
                         <ThemePerformanceRanking
                             onNavigate={(theme, instName) => {
@@ -413,119 +508,194 @@ export default function ExPost2025Page() {
                                 }
                             }}
                         />
+                    ) : activeThemeName === METHODOLOGY_LABEL ? (
+                        <MethodologyDetailPage />
                     ) : (
-                        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8">
-                            {/* Sidebar: Ranking List */}
-                            <div className="xl:col-span-4 space-y-4">
-                                <div className="flex items-center gap-2 mb-4">
-                                    <div className="relative flex-1">
-                                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                                        <Input
-                                            placeholder="Search firm..."
-                                            className="pl-9"
-                                            value={searchQuery}
-                                            onChange={(e) => setSearchQuery(e.target.value)}
-                                        />
+                        <div className="animate-in fade-in slide-in-from-right-4 duration-700">
+                            {!selectedExPostItem ? (
+                                <div className="h-full min-h-[500px] flex flex-col items-center justify-center p-12 text-center border-2 border-dashed rounded-3xl bg-muted/5">
+                                    <div className="p-6 rounded-full bg-muted/20 mb-6">
+                                        <FileText className="h-12 w-12 text-muted-foreground/30" />
                                     </div>
+                                    <h3 className="text-xl font-black uppercase tracking-[0.2em] mb-4">Select an Institution</h3>
+                                    <p className="text-muted-foreground text-sm max-w-xs mx-auto mb-8">Click on a firm from the ranking list to see their detailed performance evidence and ex-post analysis.</p>
                                 </div>
-
-                                <Card className="max-h-[800px] overflow-auto">
-                                    <CardHeader className={cn(
-                                        "pb-4",
-                                        activeThemeName === "GLOBAL RANKING" ? "bg-indigo-500/5" : "bg-muted/20"
-                                    )}>
-                                        <div className="flex justify-between items-center">
-                                            <CardTitle className="text-sm font-bold uppercase tracking-wider">Performance Ranking</CardTitle>
-                                            <Badge
-                                                variant={activeThemeName === "GLOBAL RANKING" ? "default" : "outline"}
-                                                className={cn(
-                                                    activeThemeName === "GLOBAL RANKING" && "bg-indigo-600 hover:bg-indigo-700"
-                                                )}
-                                            >
-                                                Score-Based
-                                            </Badge>
-                                        </div>
-                                    </CardHeader>
-                                    <CardContent className="p-0">
-                                        <div className="divide-y">
-                                            {filteredItems.map((item, index) => (
-                                                <button
-                                                    key={item.id}
-                                                    onClick={() => setSelectedExPostItem(item)}
-                                                    className={cn(
-                                                        "w-full text-left p-4 hover:bg-muted/50 transition-colors flex items-center justify-between gap-4",
-                                                        selectedExPostItem?.id === item.id
-                                                            ? (activeThemeName === "GLOBAL RANKING" ? "bg-indigo-500/5 border-l-4 border-l-indigo-600" : "bg-primary/5 border-l-4 border-l-primary")
-                                                            : "border-l-4 border-l-transparent"
-                                                    )}
-                                                >
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="flex flex-col items-center">
-                                                            <span className="text-sm font-bold text-muted-foreground">
-                                                                {activeThemeName === "GLOBAL RANKING" ? <Trophy className="h-3.5 w-3.5 text-indigo-500" /> : `#${index + 1}`}
-                                                            </span>
-                                                            {activeThemeName !== "GLOBAL RANKING" && (
-                                                                item.Rank < item.Original_Rank ? (
-                                                                    <ArrowUpRight className="h-3 w-3 text-green-500" />
-                                                                ) : item.Rank > item.Original_Rank ? (
-                                                                    <ArrowDownRight className="h-3 w-3 text-red-500" />
-                                                                ) : (
-                                                                    <Minus className="h-3 w-3 text-gray-400" />
-                                                                )
-                                                            )}
-                                                        </div>
-                                                        <div>
-                                                            <p className={cn(
-                                                                "font-semibold text-sm line-clamp-1",
-                                                                activeThemeName === "GLOBAL RANKING" && selectedExPostItem?.id === item.id && "text-indigo-700"
-                                                            )}>{item.Institution}</p>
-                                                            {activeThemeName !== "GLOBAL RANKING" && (
-                                                                <p className="text-xs text-muted-foreground">Ex-Ante Rank: #{item.Original_Rank}</p>
-                                                            )}
-                                                        </div>
-                                                    </div>
-                                                    <div className="text-right">
-                                                        <div className={cn(
-                                                            "text-sm font-bold",
-                                                            activeThemeName === "GLOBAL RANKING"
-                                                                ? getGlobalScoreColor(item.score)
-                                                                : getClassificationColor(item.classification)
-                                                        )}>
-                                                            {item.score} pts
-                                                        </div>
-                                                    </div>
-                                                </button>
-                                            ))}
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            </div>
-
-                            {/* Main Content: Analysis Detail */}
-                            <div className="xl:col-span-8 space-y-6">
-                                {!selectedExPostItem ? (
-                                    <div className="h-full flex flex-col items-center justify-center p-12 text-center border-2 border-dashed rounded-xl bg-muted/10">
-                                        <FileText className="h-16 w-16 text-muted-foreground/20 mb-4" />
-                                        <h3 className="text-xl font-bold">Select a Firm</h3>
-                                        <p className="text-muted-foreground max-w-xs">Select an institution from the ranking to see their detailed ex-post analysis.</p>
-                                    </div>
-                                ) : (
-                                    <AnalysisDetail
-                                        item={selectedExPostItem}
-                                        onNavigate={(theme, instName) => {
-                                            const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
-                                            if (targetTheme) {
-                                                setActiveThemeName(theme);
-                                                const targetItem = targetTheme.items.find(i => i.Institution === instName);
-                                                setSelectedExPostItem(targetItem || targetTheme.items[0] || null);
-                                            }
-                                        }}
-                                    />
-                                )}
-                            </div>
+                            ) : (
+                                <AnalysisDetail
+                                    item={selectedExPostItem}
+                                    onNavigate={(theme, instName) => {
+                                        const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
+                                        if (targetTheme) {
+                                            setActiveThemeName(theme);
+                                            const targetItem = targetTheme.items.find(i => i.Institution === instName);
+                                            setSelectedExPostItem(targetItem || targetTheme.items[0] || null);
+                                        }
+                                    }}
+                                />
+                            )}
                         </div>
                     )}
                 </div>
+            </div>
+        </div>
+    );
+}
+
+function MethodologyDetailPage() {
+    return (
+        <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 space-y-8">
+            <div className="flex flex-col gap-2">
+                <div className="flex items-center gap-3">
+                    <div className="bg-indigo-600 p-2 rounded-lg text-white shadow-lg">
+                        <BookOpen className="h-6 w-6" />
+                    </div>
+                    <h2 className="text-3xl font-black tracking-tight uppercase">Audit Methodology</h2>
+                </div>
+                <p className="text-muted-foreground font-medium max-w-2xl">
+                    A transparent, defensible system for evaluating institutional accuracy across 2025's most critical market predictions.
+                </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* 1. Scoring System */}
+                <Card className="border-l-4 border-l-indigo-500">
+                    <CardHeader>
+                        <CardTitle className="text-sm font-black uppercase tracking-widest flex items-center gap-2">
+                            <Target className="h-4 w-4 text-indigo-500" />
+                            The 1.0 Point System
+                        </CardTitle>
+                        <CardDescription className="text-xs font-bold uppercase tracking-tight">How individual claims are scored</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-6">
+                        <div className="grid grid-cols-3 gap-4">
+                            <div className="p-4 rounded-2xl bg-green-500/5 border border-green-500/10 text-center">
+                                <span className="text-2xl mb-1 block">✅</span>
+                                <p className="text-xs font-black text-green-600">HIT</p>
+                                <p className="text-lg font-black">1.0 <span className="text-[10px] opacity-60">PTS</span></p>
+                            </div>
+                            <div className="p-4 rounded-2xl bg-yellow-500/5 border border-yellow-500/10 text-center">
+                                <span className="text-2xl mb-1 block">🔶</span>
+                                <p className="text-xs font-black text-yellow-600">PARTIAL</p>
+                                <p className="text-lg font-black">0.5 <span className="text-[10px] opacity-60">PTS</span></p>
+                            </div>
+                            <div className="p-4 rounded-2xl bg-red-500/5 border border-red-500/10 text-center">
+                                <span className="text-2xl mb-1 block">❌</span>
+                                <p className="text-xs font-black text-red-600">MISS</p>
+                                <p className="text-lg font-black">0 <span className="text-[10px] opacity-60">PTS</span></p>
+                            </div>
+                        </div>
+                        <div className="bg-muted/30 p-4 rounded-xl space-y-3">
+                            <p className="text-[10px] font-black uppercase text-muted-foreground tracking-widest border-b pb-1">Accuracy Formula</p>
+                            <div className="flex items-center justify-between">
+                                <span className="text-lg font-mono font-bold">(Σ Points / Total Claims) × 100</span>
+                                <Badge className="bg-indigo-100 text-indigo-700 border-indigo-200">Defensible Alpha</Badge>
+                            </div>
+                            <p className="text-[10px] text-muted-foreground font-medium leading-relaxed italic">
+                                This formula ensures that a firm with 10 claims is normalized against a firm with 2, focusing fresh qualitative success rather than quantity alone.
+                            </p>
+                        </div>
+                    </CardContent>
+                </Card>
+
+                {/* 2. Global Ranking Rules */}
+                <Card className="border-l-4 border-l-amber-500">
+                    <CardHeader>
+                        <CardTitle className="text-sm font-black uppercase tracking-widest flex items-center gap-2">
+                            <Trophy className="h-4 w-4 text-amber-500" />
+                            Global Ranking Logic
+                        </CardTitle>
+                        <CardDescription className="text-xs font-bold uppercase tracking-tight">Aggregating performance across themes</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                        <div className="space-y-4">
+                            <div className="flex gap-4">
+                                <div className="h-8 w-8 shrink-0 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-600 font-bold text-xs ring-4 ring-amber-500/5">1</div>
+                                <div>
+                                    <h4 className="text-xs font-black uppercase tracking-tight mb-1">Best-Foot-Forward Rule</h4>
+                                    <p className="text-[11px] text-muted-foreground leading-relaxed font-medium">
+                                        In cases where an institution provides multiple call texts or variations for a single market theme (e.g., Stocks), <strong>only the highest-scoring record is counted</strong> for the Global Ranking. This prevents dilution from minor contradictory notes.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex gap-4">
+                                <div className="h-8 w-8 shrink-0 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-600 font-bold text-xs ring-4 ring-amber-500/5">2</div>
+                                <div>
+                                    <h4 className="text-xs font-black uppercase tracking-tight mb-1">Breadth Optimization</h4>
+                                    <p className="text-[11px] text-muted-foreground leading-relaxed font-medium">
+                                        Firms that cover 10 themes have more opportunities to accumulate points than those covering only 2. The Global Ranking <strong>rewards intellectual coverage breadth</strong>, identifying who correctly navigated the most sectors of the 2025 market.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex gap-4">
+                                <div className="h-8 w-8 shrink-0 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-600 font-bold text-xs ring-4 ring-amber-500/5">3</div>
+                                <div>
+                                    <h4 className="text-xs font-black uppercase tracking-tight mb-1">Standardization</h4>
+                                    <p className="text-[11px] text-muted-foreground leading-relaxed font-medium">
+                                        To ensure fairness across different report depths, we also provide a <strong>Per-Theme Classification</strong> (Excellent to Failed). This allows specialized boutique firms to stand out in their specific areas of expertise.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+
+                {/* 3. Theme Performance Ranking */}
+                <Card className="border-l-4 border-l-emerald-500 md:col-span-2">
+                    <CardHeader>
+                        <CardTitle className="text-sm font-black uppercase tracking-widest flex items-center gap-2">
+                            <BarChart3 className="h-4 w-4 text-emerald-500" />
+                            Theme Performance & Conviction
+                        </CardTitle>
+                        <CardDescription className="text-xs font-bold uppercase tracking-tight">The "Theme Alpha" indicator</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div className="space-y-4">
+                                <p className="text-[11px] text-muted-foreground leading-relaxed font-medium">
+                                    Our <strong>Theme Ranking</strong> view compares two critical metrics to identify market surprises:
+                                </p>
+                                <ul className="space-y-3">
+                                    <li className="flex items-start gap-3">
+                                        <div className="p-1 rounded bg-emerald-500/10 mt-0.5">
+                                            <TrendingUp className="h-3 w-3 text-emerald-600" />
+                                        </div>
+                                        <p className="text-[10px] font-bold uppercase text-muted-foreground tracking-tight">
+                                            <span className="text-foreground block mb-0.5">Bloomberg Conviction Level</span>
+                                            The editorial order in which Bloomberg News prioritized the themes (Editorial expectation).
+                                        </p>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <div className="p-1 rounded bg-indigo-500/10 mt-0.5">
+                                            <CheckCircle2 className="h-3 w-3 text-indigo-600" />
+                                        </div>
+                                        <p className="text-[10px] font-bold uppercase text-muted-foreground tracking-tight">
+                                            <span className="text-foreground block mb-0.5">Average Realized Accuracy</span>
+                                            The mean score across all 60+ institutions for that specific theme.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div className="p-4 bg-muted/20 border-l-2 border-emerald-500 rounded-r-xl">
+                                    <p className="text-xs font-bold text-foreground mb-1">Why this matters?</p>
+                                    <p className="text-[11px] text-muted-foreground leading-relaxed">
+                                        By mapping these two against each other, we can see if the "highest conviction" topics actually materialized more reliably than the "fringe" topics. If a low-conviction theme has high average accuracy, it indicates a <strong>Consensus Blindspot</strong> that actually worked out.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="bg-emerald-500/5 rounded-3xl p-6 border-2 border-emerald-500/10 relative overflow-hidden h-full flex flex-col justify-center text-center">
+                                <div className="absolute top-0 right-0 p-4 opacity-5">
+                                    <BarChart3 className="h-32 w-32" />
+                                </div>
+                                <h4 className="text-4xl font-black text-emerald-600 mb-2">Alpha Audit</h4>
+                                <p className="text-sm font-bold uppercase tracking-widest text-emerald-800/60 mb-6">Defensibility Protocol</p>
+                                <p className="text-xs text-muted-foreground font-medium max-w-sm mx-auto">
+                                    This methodology transforms raw journalistic synthesis into a structured, quantitative audit that holds institutions accountable for their 2025 visibility.
+                                </p>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
             </div>
         </div>
     );
@@ -546,6 +716,7 @@ function StatCard({ title, value, icon: Icon, color }: any) {
         </Card>
     );
 }
+
 
 function AnalysisDetail({
     item,
@@ -633,10 +804,7 @@ function AnalysisDetail({
                     <BarChart3 className="h-5 w-5 text-primary" />
                     <h3 className="text-xs font-black uppercase tracking-widest text-muted-foreground">Executive Verdict & Justification</h3>
                 </div>
-                <Card className="bg-foreground text-background shadow-xl overflow-hidden relative group">
-                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:scale-110 transition-transform duration-700">
-                        <Trophy className="h-32 w-32" />
-                    </div>
+                <Card className="bg-muted text-card-foreground border-2 shadow-xl overflow-hidden relative group">
                     <CardHeader className="pb-2">
                         <CardTitle className="text-[10px] opacity-60 uppercase font-black tracking-widest">Post-Event Summary Analysis</CardTitle>
                     </CardHeader>
@@ -705,21 +873,21 @@ function AnalysisDetail({
                         <Badge variant="secondary" className="font-mono text-[10px] px-2 py-0.5">{item.statements.length} CLAIMS AUDITED</Badge>
                     </div>
 
-                    <div className="space-y-12">
+                    <div className="space-y-6">
                         {item.statements.map((stmt, idx) => (
                             <div key={idx} className="relative group">
-                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-8 items-stretch">
+                                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
                                     {/* Left Side: The Original Claim */}
-                                    <div className="relative pb-6 lg:pb-0">
+                                    <div className="relative lg:col-span-5">
                                         <div className={cn(
                                             "absolute -left-4 -top-4 h-10 w-10 rounded-full border-4 border-background flex items-center justify-center text-lg z-20 shadow-md",
                                             getMaterializedColor(stmt.materialized).split(' ')[1]
                                         )}>
                                             {getMaterializedIcon(stmt.materialized)}
                                         </div>
-                                        <div className="bg-card rounded-2xl border p-6 shadow-sm group-hover:shadow-md transition-all border-muted/50 h-full relative overflow-hidden flex flex-col justify-center min-h-[140px]">
+                                        <div className="bg-card rounded-2xl border pt-4 px-4 pb-3 shadow-sm group-hover:shadow-md transition-all border-muted/50 relative overflow-hidden flex flex-col">
                                             <div className={cn("absolute top-0 left-0 w-1.5 h-full", getMaterializedColor(stmt.materialized).split(' ')[0])} />
-                                            <div className="flex items-center justify-between mb-3">
+                                            <div className="flex items-center justify-between mb-2">
                                                 <h4 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Ex-Ante Claim #{idx + 1}</h4>
                                                 <Badge variant="outline" className={cn("text-[9px] uppercase font-bold px-2 py-0", getMaterializedColor(stmt.materialized).split(' ')[0])}>
                                                     Original Prediction
@@ -729,13 +897,10 @@ function AnalysisDetail({
                                                 {stmt.statement}
                                             </p>
                                         </div>
-
-                                        {/* Link decoration for desktop */}
-                                        <div className="hidden lg:block absolute top-1/2 -right-6 w-4 h-[2px] bg-muted/30 -translate-y-1/2 z-0" />
                                     </div>
 
-                                    {/* Right Side: The Reality Evidence */}
-                                    <div className="bg-muted/10 rounded-2xl p-6 border border-muted/40 flex flex-col justify-center h-full relative">
+                                    {/* Right Side: The Reality Evidence (AS AN EXPANDER) */}
+                                    <div className="bg-muted/10 rounded-2xl p-4 border border-muted/40 h-full relative lg:col-span-7">
                                         <div className="space-y-4">
                                             <div className="flex items-center justify-between border-b border-muted pb-2">
                                                 <div className="flex items-center gap-2">

@@ -263,7 +263,7 @@ export default function ExPost2025Page() {
 
 
             {/* Filter & Navigation Bar - RELOCATED */}
-            <div className="bg-background border rounded-lg p-2 mb-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 sticky top-4 z-30">
+            <div className="bg-background border rounded-lg p-2 mb-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
                  {/* Main Views Controls */}
                  <div className="flex items-center gap-2 w-full md:w-auto">
                      {ALL_THEMES_WITH_GLOBAL[0] && (
@@ -1001,8 +1001,10 @@ const THEME_COLORS: Record<string, string> = {
 
 function ThemePerformanceRanking({ onNavigate }: { onNavigate: (theme: string, institution: string) => void }) {
     return (
-        <div className="pt-4">
-            <RankMigrationChart onNavigate={onNavigate} />
+        <div className="pt-4 flex justify-center px-4">
+            <div className="w-full max-w-6xl mx-auto">
+                <RankMigrationChart onNavigate={onNavigate} />
+            </div>
         </div>
     );
 }

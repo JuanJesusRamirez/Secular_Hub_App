@@ -69,7 +69,7 @@ export function Sidebar() {
             "transition-all duration-300 whitespace-nowrap",
             collapsed ? "opacity-0 w-0" : "opacity-100"
           )}>
-            SF Hub
+            Secular Forum Hub
           </span>
         </div>
       </div>

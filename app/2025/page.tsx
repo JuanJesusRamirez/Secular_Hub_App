@@ -262,200 +262,152 @@ export default function ExPost2025Page() {
             </div>
 
 
-            {/* Stats Summary Area */}
-            {activeThemeName !== THEME_RANKING_LABEL && activeThemeName !== METHODOLOGY_LABEL && (
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 xl:grid-cols-8 gap-4">
-                    <StatCard
-                        title="Firms"
-                        value={stats.totalFirms}
-                        icon={Target}
-                        color={activeThemeName === "GLOBAL RANKING" ? "text-indigo-600" : "text-blue-500"}
-                    />
-                    <StatCard
-                        title="Call Texts"
-                        value={stats.totalCallTexts}
-                        icon={Hash}
-                        color="text-slate-500"
-                    />
-                    <StatCard
-                        title={activeThemeName === "GLOBAL RANKING" ? "Global Score" : "Avg Score"}
-                        value={`${stats.avgScore} pts`}
-                        icon={TrendingUp}
-                        color={activeThemeName === "GLOBAL RANKING" ? getGlobalScoreColor(stats.avgScore) : getThemeScoreColor(stats.avgScore)}
-                    />
-
-                    {activeThemeName === "GLOBAL RANKING" ? (
-                        <>
-                            <StatCard
-                                title="Excellent"
-                                value={stats.excellentCount}
-                                icon={Zap}
-                                color="text-green-600"
-                            />
-                            <StatCard
-                                title="Good"
-                                value={stats.goodCount}
-                                icon={Trophy}
-                                color="text-slate-950"
-                            />
-                            <StatCard
-                                title="Partial"
-                                value={stats.partialCount}
-                                icon={CheckCircle2}
-                                color="text-yellow-600"
-                            />
-                            <StatCard
-                                title="Weak"
-                                value={stats.weakCount}
-                                icon={AlertTriangle}
-                                color="text-orange-500"
-                            />
-                            <StatCard
-                                title="Failed"
-                                value={stats.failedCount}
-                                icon={XCircle}
-                                color="text-red-500"
-                            />
-                        </>
-                    ) : (
-                        <>
-                            <StatCard
-                                title="Excellent"
-                                value={stats.excellentCount}
-                                icon={Trophy}
-                                color="text-green-500"
-                            />
-                            <StatCard
-                                title="Good"
-                                value={stats.goodCount}
-                                icon={CheckCircle2}
-                                color="text-slate-950"
-                            />
-                            <StatCard
-                                title="Partial"
-                                value={stats.partialCount}
-                                icon={Minus}
-                                color="text-yellow-500"
-                            />
-                            <StatCard
-                                title="Weak"
-                                value={stats.weakCount}
-                                icon={AlertTriangle}
-                                color="text-orange-500"
-                            />
-                            <StatCard
-                                title="Failed"
-                                value={stats.failedCount}
-                                icon={XCircle}
-                                color="text-red-500"
-                            />
-                        </>
+            {/* Filter & Navigation Bar - RELOCATED */}
+            <div className="bg-background border rounded-lg p-2 mb-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 sticky top-4 z-30">
+                 {/* Main Views Controls */}
+                 <div className="flex items-center gap-2 w-full md:w-auto">
+                     {ALL_THEMES_WITH_GLOBAL[0] && (
+                        <Button
+                            key={ALL_THEMES_WITH_GLOBAL[0].theme}
+                            variant={activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "default" : "outline"}
+                            onClick={() => {
+                                setActiveThemeName(ALL_THEMES_WITH_GLOBAL[0].theme);
+                                setSelectedExPostItem(ALL_THEMES_WITH_GLOBAL[0].items[0] || null);
+                            }}
+                            className={cn(
+                                "h-10 text-xs font-bold uppercase tracking-wider flex-1 md:flex-none justify-center",
+                                activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "shadow-md" : "hover:bg-muted"
+                            )}
+                        >
+                            <Trophy className="mr-2 h-4 w-4 shrink-0" />
+                            <span className="truncate">Global</span>
+                        </Button>
                     )}
+                    <Button
+                        variant={activeThemeName === THEME_RANKING_LABEL ? "default" : "outline"}
+                        onClick={() => {
+                            setActiveThemeName(THEME_RANKING_LABEL);
+                            setSelectedExPostItem(null);
+                        }}
+                        className={cn(
+                            "h-10 text-xs font-bold uppercase tracking-wider flex-1 md:flex-none justify-center",
+                            activeThemeName === THEME_RANKING_LABEL
+                                ? "shadow-md"
+                                : "hover:bg-primary/10"
+                        )}
+                    >
+                        <BarChart3 className="mr-2 h-4 w-4 shrink-0" />
+                        <span className="truncate">Themes</span>
+                    </Button>
+                 </div>
+
+                 {/* Market Exploration Controls */}
+                 <div className="flex items-center gap-2 w-full md:w-auto">
+                     <Select
+                        value={ALL_THEMES_WITH_GLOBAL.slice(1).some(t => t.theme === activeThemeName) ? activeThemeName : ""}
+                        onValueChange={(value) => {
+                            const themeData = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === value);
+                            if (themeData) {
+                                setActiveThemeName(themeData.theme);
+                                setSelectedExPostItem(themeData.items[0] || null);
+                            }
+                        }}
+                    >
+                        <SelectTrigger className="w-full md:w-[240px] h-10 text-xs font-bold uppercase tracking-wider bg-muted/30 focus:ring-1">
+                            <SelectValue placeholder="SELECT THEME" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            {ALL_THEMES_WITH_GLOBAL.slice(1).map((themeData) => (
+                                <SelectItem
+                                    key={themeData.theme}
+                                    value={themeData.theme}
+                                    className="text-xs font-bold uppercase tracking-wider"
+                                >
+                                    <div className="flex items-center gap-2">
+                                        <ThemeIcon theme={themeData.theme} className="h-3 w-3" />
+                                        {themeData.theme}
+                                    </div>
+                                </SelectItem>
+                            ))}
+                        </SelectContent>
+                    </Select>
+
+                    <Button
+                        variant={activeThemeName === METHODOLOGY_LABEL ? "default" : "outline"}
+                        size="icon"
+                        onClick={() => {
+                            setActiveThemeName(METHODOLOGY_LABEL);
+                            setSelectedExPostItem(null);
+                        }}
+                        className={cn(
+                            "h-10 w-10 shrink-0 transition-all",
+                            activeThemeName === METHODOLOGY_LABEL
+                                ? "shadow-md bg-indigo-600 hover:bg-indigo-700"
+                                : "hover:bg-muted"
+                        )}
+                        title="Audit Methodology"
+                    >
+                        <BookOpen className="h-4 w-4" />
+                    </Button>
+                 </div>
+            </div>
+
+            {/* Stats Summary Area - IMPROVED LAYOUT */}
+            {activeThemeName !== THEME_RANKING_LABEL && activeThemeName !== METHODOLOGY_LABEL && (
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+                    {/* Left Group: Key Stats */}
+                    <div className="lg:col-span-5 grid grid-cols-3 gap-4">
+                        <StatCard
+                            title="Firms"
+                            value={stats.totalFirms}
+                            icon={Target}
+                            color={activeThemeName === "GLOBAL RANKING" ? "text-indigo-600" : "text-blue-500"}
+                        />
+                        <StatCard
+                            title="Call Texts"
+                            value={stats.totalCallTexts}
+                            icon={Hash}
+                            color="text-slate-500"
+                        />
+                        <StatCard
+                            title={activeThemeName === "GLOBAL RANKING" ? "Global Score" : "Avg Score"}
+                            value={`${stats.avgScore} pts`}
+                            icon={TrendingUp}
+                            color={activeThemeName === "GLOBAL RANKING" ? getGlobalScoreColor(stats.avgScore) : getThemeScoreColor(stats.avgScore)}
+                        />
+                    </div>
+                
+                     {/* Right Group: Breakdown */}
+                    <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                         {activeThemeName === "GLOBAL RANKING" ? (
+                            <>
+                                <StatCard title="Excellent" value={stats.excellentCount} icon={Zap} color="text-green-600" />
+                                <StatCard title="Good" value={stats.goodCount} icon={Trophy} color="text-slate-950" />
+                                <StatCard title="Partial" value={stats.partialCount} icon={CheckCircle2} color="text-yellow-600" />
+                                <StatCard title="Weak" value={stats.weakCount} icon={AlertTriangle} color="text-orange-500" />
+                                <StatCard title="Failed" value={stats.failedCount} icon={XCircle} color="text-red-500" />
+                            </>
+                         ) : (
+                            <>
+                                <StatCard title="Excellent" value={stats.excellentCount} icon={Trophy} color="text-green-500" />
+                                <StatCard title="Good" value={stats.goodCount} icon={CheckCircle2} color="text-slate-950" />
+                                <StatCard title="Partial" value={stats.partialCount} icon={Minus} color="text-yellow-500" />
+                                <StatCard title="Weak" value={stats.weakCount} icon={AlertTriangle} color="text-orange-500" />
+                                <StatCard title="Failed" value={stats.failedCount} icon={XCircle} color="text-red-500" />
+                            </>
+                         )}
+                    </div>
                 </div>
             )}
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                {/* Sidebar: Navigation & Ranking */}
+                {/* Sidebar: Ranking List Only */}
                 <div className="lg:col-span-4 xl:col-span-3 space-y-6">
-                    <div className="sticky top-8 space-y-6">
-                        <div className="space-y-4">
-                            <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2">Main Views</h3>
-                            <div className="space-y-2">
-                                <div className="grid grid-cols-2 gap-2">
-                                    {/* Global Ranking Button */}
-                                    {ALL_THEMES_WITH_GLOBAL[0] && (
-                                        <Button
-                                            key={ALL_THEMES_WITH_GLOBAL[0].theme}
-                                            variant={activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "default" : "outline"}
-                                            onClick={() => {
-                                                setActiveThemeName(ALL_THEMES_WITH_GLOBAL[0].theme);
-                                                setSelectedExPostItem(ALL_THEMES_WITH_GLOBAL[0].items[0] || null);
-                                            }}
-                                            className={cn(
-                                                "justify-center h-11 text-xs font-bold uppercase tracking-wider transition-all",
-                                                activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "shadow-md" : "hover:bg-muted"
-                                            )}
-                                        >
-                                            <Trophy className="mr-2 h-4 w-4 shrink-0" />
-                                            <span className="truncate">Global</span>
-                                        </Button>
-                                    )}
-
-                                    {/* Theme Ranking Button */}
-                                    <Button
-                                        variant={activeThemeName === THEME_RANKING_LABEL ? "default" : "outline"}
-                                        onClick={() => {
-                                            setActiveThemeName(THEME_RANKING_LABEL);
-                                            setSelectedExPostItem(null);
-                                        }}
-                                        className={cn(
-                                            "justify-center h-11 text-xs font-bold uppercase tracking-wider transition-all px-2",
-                                            activeThemeName === THEME_RANKING_LABEL
-                                                ? "shadow-md"
-                                                : "bg-primary/5 hover:bg-primary/10 border-primary/20"
-                                        )}
-                                    >
-                                        <BarChart3 className="mr-2 h-4 w-4 shrink-0" />
-                                        <span className="truncate">Themes</span>
-                                    </Button>
-                                </div>
-
-                                <div className="h-[1px] bg-border my-2" />
-
-                                <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground px-2">Market Exploration</h3>
-                                <div className="flex gap-2">
-                                    <Button
-                                        variant={activeThemeName === METHODOLOGY_LABEL ? "default" : "outline"}
-                                        size="icon"
-                                        onClick={() => {
-                                            setActiveThemeName(METHODOLOGY_LABEL);
-                                            setSelectedExPostItem(null);
-                                        }}
-                                        className={cn(
-                                            "h-11 w-11 shrink-0 transition-all",
-                                            activeThemeName === METHODOLOGY_LABEL
-                                                ? "shadow-md bg-indigo-600 hover:bg-indigo-700"
-                                                : "bg-muted/50 hover:bg-muted"
-                                        )}
-                                        title="Audit Methodology"
-                                    >
-                                        <BookOpen className="h-4 w-4" />
-                                    </Button>
-
-                                    <Select
-                                        value={ALL_THEMES_WITH_GLOBAL.slice(1).some(t => t.theme === activeThemeName) ? activeThemeName : ""}
-                                        onValueChange={(value) => {
-                                            const themeData = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === value);
-                                            if (themeData) {
-                                                setActiveThemeName(themeData.theme);
-                                                setSelectedExPostItem(themeData.items[0] || null);
-                                            }
-                                        }}
-                                    >
-                                        <SelectTrigger className="flex-1 h-11 text-xs font-bold uppercase tracking-wider bg-primary/5 border-primary/20 focus:ring-1">
-                                            <SelectValue placeholder="SELECT THEME" />
-                                        </SelectTrigger>
-                                        <SelectContent>
-                                            {ALL_THEMES_WITH_GLOBAL.slice(1).map((themeData) => (
-                                                <SelectItem
-                                                    key={themeData.theme}
-                                                    value={themeData.theme}
-                                                    className="text-xs font-bold uppercase tracking-wider"
-                                                >
-                                                    <div className="flex items-center gap-2">
-                                                        <ThemeIcon theme={themeData.theme} className="h-3 w-3" />
-                                                        {themeData.theme}
-                                                    </div>
-                                                </SelectItem>
-                                            ))}
-                                        </SelectContent>
-                                    </Select>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div className="sticky top-20 space-y-6">
+                        {/* Controls moved to top bar */}
+                        
                         {activeThemeName !== THEME_RANKING_LABEL && activeThemeName !== METHODOLOGY_LABEL && (
-                            <div className="space-y-4 pt-4 border-t">
+                            <div className="space-y-4">
                                 <div className="flex items-center justify-between px-2">
                                     <h3 className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Firm Ranking</h3>
                                     <Badge variant="outline" className="text-[9px] font-bold py-0">{filteredItems.length}</Badge>
@@ -797,14 +749,14 @@ function MethodologyDetailPage() {
 
 function StatCard({ title, value, icon: Icon, color }: any) {
     return (
-        <Card className="bg-card hover:shadow-md transition-shadow">
-            <CardContent className="p-4 flex items-center gap-4">
-                <div className={cn("p-2 rounded-lg bg-muted/50", color.replace('text', 'bg-').replace('500', '500/10'))}>
-                    <Icon className={cn("h-5 w-5", color)} />
-                </div>
-                <div>
-                    <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">{title}</p>
-                    <p className={cn("text-lg font-extrabold line-clamp-1", color)}>{value}</p>
+        <Card className="bg-card hover:shadow-md transition-all h-full">
+            <CardContent className="p-2.5 flex flex-col items-center justify-center h-full gap-2 min-h-[85px]">
+                <p className="text-[9px] uppercase font-black text-muted-foreground tracking-widest text-center w-full leading-tight">{title}</p>
+                <div className="flex items-center gap-2 mt-auto mb-auto">
+                    <div className={cn("p-1 rounded-md bg-muted/30", color.replace('text', 'bg-').replace('500', '500/10'))}>
+                        <Icon className={cn("h-3.5 w-3.5", color)} />
+                    </div>
+                    <p className={cn("text-base font-black tracking-tight", color)}>{value}</p>
                 </div>
             </CardContent>
         </Card>

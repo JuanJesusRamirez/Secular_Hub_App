@@ -1966,97 +1966,97 @@
     "id": 19,
     "question": "What are the biggest market risks for the next 12 months?",
     "stats": {
-      "Fragmentación geopolítica, tensiones comerciales y vulnerabilidad financiera por apalancamiento": 1,
-      "“Desorden controlado”: inflación estructural, transición energética y fragmentación comercial": 1,
-      "Deuda pública elevada, tensiones comerciales y volatilidad macroeconómica ,": 1,
-      "Vulnerabilidad sistémica por gasto masivo en IA y riesgos de financiamiento": 1,
-      "Fricciones comerciales, incertidumbre monetaria y concentración en tecnología": 1,
-      "Shocks financieros en crédito privado, correcciones bursátiles y riesgos fiscales": 1,
-      "Tensiones comerciales, riesgos políticos y volatilidad en mercados emergentes": 1,
-      "Inflación persistente, concentración en IA y riesgos de burbuja tecnológica": 1,
-      "Volatilidad por ajustes monetarios, riesgos fiscales y tensiones geopolíticas ,": 1,
-      "Riesgos de proteccionismo, fragmentación comercial y concentración tecnológica": 1,
-      "Corrección en acciones tecnológicas, riesgos de concentración y reequilibrio global": 1,
-      "Altos aranceles, desaceleración en segunda mitad del año y riesgos de crédito": 1,
-      "Riesgos por valuaciones elevadas, volatilidad macro y ajustes monetarios": 1,
-      "Sostenibilidad fiscal, ajustes monetarios y tensiones comerciales": 1,
-      "Tensiones comerciales, riesgos energéticos y volatilidad en mercados emergentes": 1,
-      "Fragmentación geopolítica, riesgos estructurales y volatilidad en crédito": 1,
-      "Burbuja tecnológica, persistencia inflacionaria y riesgos fiscales": 1,
-      "Deuda elevada, riesgos de concentración en IA y tensiones comerciales": 1
+      "Geopolitical fragmentation, trade tensions and financial vulnerability due to leverage": 1,
+      "\"Controlled disorder\": structural inflation, energy transition and trade fragmentation": 1,
+      "High public debt, trade tensions and macroeconomic volatility": 1,
+      "Systemic vulnerability due to massive AI spending and financing risks": 1,
+      "Trade frictions, monetary uncertainty and technology concentration": 1,
+      "Financial shocks in private credit, stock market corrections and fiscal risks": 1,
+      "Trade tensions, political risks and volatility in emerging markets": 1,
+      "Persistent inflation, AI concentration and tech bubble risks": 1,
+      "Volatility due to monetary adjustments, fiscal risks and geopolitical tensions": 1,
+      "Protectionism risks, trade fragmentation and technological concentration": 1,
+      "Tech stock correction, concentration risks and global rebalancing": 1,
+      "High tariffs, slowdown in the second half of the year and credit risks": 1,
+      "Risks from high valuations, macro volatility and monetary adjustments": 1,
+      "Fiscal sustainability, monetary adjustments and trade tensions": 1,
+      "Trade tensions, energy risks and volatility in emerging markets": 1,
+      "Geopolitical fragmentation, structural risks and credit volatility": 1,
+      "Tech bubble, inflationary persistence and fiscal risks": 1,
+      "High debt, AI concentration risks and trade tensions": 1
     },
     "responses": [
       {
         "institution": "ABN AMRO",
-        "answer": "Fragmentación geopolítica, tensiones comerciales y vulnerabilidad financiera por apalancamiento"
+        "answer": "Geopolitical fragmentation, trade tensions and financial vulnerability due to leverage"
       },
       {
         "institution": "Amundi",
-        "answer": "“Desorden controlado”: inflación estructural, transición energética y fragmentación comercial"
+        "answer": "\"Controlled disorder\": structural inflation, energy transition and trade fragmentation"
       },
       {
         "institution": "Barclays",
-        "answer": "Deuda pública elevada, tensiones comerciales y volatilidad macroeconómica ,"
+        "answer": "High public debt, trade tensions and macroeconomic volatility"
       },
       {
         "institution": "BlackRock",
-        "answer": "Vulnerabilidad sistémica por gasto masivo en IA y riesgos de financiamiento"
+        "answer": "Systemic vulnerability due to massive AI spending and financing risks"
       },
       {
         "institution": "BNP Paribas",
-        "answer": "Fricciones comerciales, incertidumbre monetaria y concentración en tecnología"
+        "answer": "Trade frictions, monetary uncertainty and technology concentration"
       },
       {
         "institution": "Capital Economics",
-        "answer": "Shocks financieros en crédito privado, correcciones bursátiles y riesgos fiscales"
+        "answer": "Financial shocks in private credit, stock market corrections and fiscal risks"
       },
       {
         "institution": "Deutsche Bank",
-        "answer": "Tensiones comerciales, riesgos políticos y volatilidad en mercados emergentes"
+        "answer": "Trade tensions, political risks and volatility in emerging markets"
       },
       {
         "institution": "Fidelity",
-        "answer": "Inflación persistente, concentración en IA y riesgos de burbuja tecnológica"
+        "answer": "Persistent inflation, AI concentration and tech bubble risks"
       },
       {
         "institution": "Goldman Sachs",
-        "answer": "Volatilidad por ajustes monetarios, riesgos fiscales y tensiones geopolíticas ,"
+        "answer": "Volatility due to monetary adjustments, fiscal risks and geopolitical tensions"
       },
       {
         "institution": "HSBC",
-        "answer": "Riesgos de proteccionismo, fragmentación comercial y concentración tecnológica"
+        "answer": "Protectionism risks, trade fragmentation and technological concentration"
       },
       {
         "institution": "Invesco",
-        "answer": "Corrección en acciones tecnológicas, riesgos de concentración y reequilibrio global"
+        "answer": "Tech stock correction, concentration risks and global rebalancing"
       },
       {
         "institution": "JP Morgan",
-        "answer": "Altos aranceles, desaceleración en segunda mitad del año y riesgos de crédito"
+        "answer": "High tariffs, slowdown in the second half of the year and credit risks"
       },
       {
         "institution": "Morgan Stanley",
-        "answer": "Riesgos por valuaciones elevadas, volatilidad macro y ajustes monetarios"
+        "answer": "Risks from high valuations, macro volatility and monetary adjustments"
       },
       {
         "institution": "NatWest",
-        "answer": "Sostenibilidad fiscal, ajustes monetarios y tensiones comerciales"
+        "answer": "Fiscal sustainability, monetary adjustments and trade tensions"
       },
       {
         "institution": "Robeco",
-        "answer": "Tensiones comerciales, riesgos energéticos y volatilidad en mercados emergentes"
+        "answer": "Trade tensions, energy risks and volatility in emerging markets"
       },
       {
         "institution": "State Street",
-        "answer": "Fragmentación geopolítica, riesgos estructurales y volatilidad en crédito"
+        "answer": "Geopolitical fragmentation, structural risks and credit volatility"
       },
       {
         "institution": "T. Rowe Price",
-        "answer": "Burbuja tecnológica, persistencia inflacionaria y riesgos fiscales"
+        "answer": "Tech bubble, inflationary persistence and fiscal risks"
       },
       {
         "institution": "UBS",
-        "answer": "Deuda elevada, riesgos de concentración en IA y tensiones comerciales"
+        "answer": "High debt, AI concentration risks and trade tensions"
       }
     ]
   }

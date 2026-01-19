@@ -32,7 +32,7 @@ export function TesisSpotlight({ theme, year, data, onClose }: TesisSpotlightPro
             <X className="w-4 h-4" />
           </Button>
         </div>
-        <p className="text-muted-foreground text-center">No hay datos disponibles para el año {year}</p>
+        <p className="text-muted-foreground text-center">No data available for year {year}</p>
       </Card>
     );
   }
@@ -42,8 +42,8 @@ export function TesisSpotlight({ theme, year, data, onClose }: TesisSpotlightPro
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <h3 className="text-xl font-semibold">{theme}</h3>
-          <Badge variant="outline">Año: {yearData.year}</Badge>
-          <Badge variant="outline">Rango: #{yearData.rank}</Badge>
+          <Badge variant="outline">Year: {yearData.year}</Badge>
+          <Badge variant="outline">Rank: #{yearData.rank}</Badge>
         </div>
         <Button variant="ghost" size="icon" onClick={onClose}>
           <X className="w-4 h-4" />
@@ -52,11 +52,11 @@ export function TesisSpotlight({ theme, year, data, onClose }: TesisSpotlightPro
 
       <div className="grid grid-cols-3 gap-4">
         <Card className="p-4 bg-muted/30">
-          <div className="text-sm text-muted-foreground mb-1">Año</div>
+          <div className="text-sm text-muted-foreground mb-1">Year</div>
           <div className="text-2xl font-bold">{yearData.year}</div>
         </Card>
         <Card className="p-4 bg-muted/30">
-          <div className="text-sm text-muted-foreground mb-1">Rango</div>
+          <div className="text-sm text-muted-foreground mb-1">Rank</div>
           <div className="text-2xl font-bold">#{yearData.rank}</div>
         </Card>
         <Card className="p-4 bg-muted/30">

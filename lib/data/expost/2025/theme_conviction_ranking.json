@@ -1,62 +1,62 @@
 [
-    {
-        "theme": "BASE CASE",
-        "rank": 1
-    },
-    {
-        "theme": "GROWTH",
-        "rank": 2
-    },
-    {
-        "theme": "INFLATION",
-        "rank": 3
-    },
-    {
-        "theme": "MONETARY POLICY",
-        "rank": 4
-    },
-    {
-        "theme": "FISCAL",
-        "rank": 5
-    },
-    {
-        "theme": "TARIFFS",
-        "rank": 6
-    },
-    {
-        "theme": "STOCKS",
-        "rank": 7
-    },
-    {
-        "theme": "BONDS",
-        "rank": 8
-    },
-    {
-        "theme": "CREDIT",
-        "rank": 9
-    },
-    {
-        "theme": "COMMODITIES",
-        "rank": 10
-    },
-    {
-        "theme": "CURRENCIES",
-        "rank": 11
-    },
-    {
-        "theme": "ALTERNATIVE ASSETS",
-        "rank": 12
-    },
-    {
-        "theme": "MULTI ASSET",
-        "rank": 13
-    },
-    {
-        "theme": "AI",
-        "rank": 14
-    },
-    {
-        "theme": "RISKS",
-        "rank": 15
-    }
+  {
+    "theme": "BASE CASE",
+    "rank": 1
+  },
+  {
+    "theme": "GROWTH",
+    "rank": 2
+  },
+  {
+    "theme": "INFLATION",
+    "rank": 3
+  },
+  {
+    "theme": "MONETARY POLICY",
+    "rank": 4
+  },
+  {
+    "theme": "FISCAL",
+    "rank": 5
+  },
+  {
+    "theme": "TARIFFS",
+    "rank": 6
+  },
+  {
+    "theme": "STOCKS",
+    "rank": 7
+  },
+  {
+    "theme": "BONDS",
+    "rank": 8
+  },
+  {
+    "theme": "CREDIT",
+    "rank": 9
+  },
+  {
+    "theme": "COMMODITIES",
+    "rank": 10
+  },
+  {
+    "theme": "CURRENCIES",
+    "rank": 11
+  },
+  {
+    "theme": "ALTERNATIVE ASSETS",
+    "rank": 12
+  },
+  {
+    "theme": "MULTI ASSET",
+    "rank": 13
+  },
+  {
+    "theme": "AI",
+    "rank": 14
+  },
+  {
+    "theme": "RISKS",
+    "rank": 15
+  }
 ]

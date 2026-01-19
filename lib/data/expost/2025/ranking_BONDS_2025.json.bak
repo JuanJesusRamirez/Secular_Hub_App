@@ -137,7 +137,7 @@
   {
     "statements": [
       {
-        "statement": "We think yields on fixed income remain attractive by the historical standards that matter – the memories of current market participants.",
+        "statement": "We think yields on fixed income remain attractive by the historical standards that matter â the memories of current market participants.",
         "materialized": "YES",
         "reasoning": "This prediction is confirmed. The sources extensively validate that fixed-income yields remained attractive in 2025. Vanguard's Q3 2025 report (SOURCE: Active Fixed Income Perspectives Q3 2025 - Vanguard, URL: https://corporate.vanguard.com/content/dam/corp/articles/pdf/afi_perspectives_q3_2025_the_power_of_income.pdf, DATE: December 2025) shows that as of June 30, 2025, the U.S. aggregate starting yield was 4.5%, which is significantly higher than the 1.8% yield at the end of 2021, making yields attractive by recent historical standards. The sources confirm that yields remained elevated throughout 2025, supporting the attractiveness narrative."
       },
@@ -159,7 +159,7 @@
     "justification": "LGIM's prediction on attractive fixed-income yields and resulting inflows was highly accurate and well-supported by 2025 market dynamics. The institution correctly identified that elevated yields relative to recent history would attract investor interest, and the strong bond market performance throughout 2025 validated this thesis. The prediction demonstrated sound understanding of yield-driven investor behavior and market mechanics.",
     "id": "BONDS-LGIM-19-2025",
     "Original_Rank": 19,
-    "Prediction_Text": "\"We think yields on fixed income remain attractive by the historical standards that matter – the memories of current market participants. We consider this to likely be positive for fixed income strategies as we expect significant inflows in search of these yields.\"",
+    "Prediction_Text": "\"We think yields on fixed income remain attractive by the historical standards that matter â the memories of current market participants. We consider this to likely be positive for fixed income strategies as we expect significant inflows in search of these yields.\"",
     "Institution": "LGIM",
     "Rank": 6
   },
@@ -219,12 +219,12 @@
   {
     "statements": [
       {
-        "statement": "We simply won't know where the Trump bond and equity puts are struck for some time, or for that matter, whether Trump's reaction function to bond and stock movements is itself a moving target.",
+        "statement": "We simply wonât know where the Trump bond and equity puts are struck for some time, or for that matter, whether Trumpâs reaction function to bond and stock movements is itself a moving target.",
         "materialized": "YES",
         "reasoning": "Tallbacken Capital's observation about uncertainty regarding Trump's policy responses and their market impact materialized throughout 2025. Evidence: (1) Morgan Stanley's November 2025 report (SOURCE: The BEAT | November 2025, URL: https://www.morganstanley.com/im/publication/insights/articles/article_thebeatnovember2025.pdf, DATE: December 2025) explicitly states 'The market responded to the Trump election victory with increased volatility, and although it cut rates at its December meeting, the Fed's less dovish tone coming out of the meeting grabbed investors' attention.' (2) Morgan Stanley's fixed income outlook (SOURCE: Is 2025 (finally) the Year of the Bond?, URL: https://www.morganstanley.com/im/en-be/intermediary-investor/insights/articles/is-2025-the-year-of-the-bond.html, DATE: December 2025) notes 'As the agenda unfolds and the market waits for more clarity on U.S. tariff policies and responses from global governments,' indicating ongoing uncertainty about policy implementation. (3) The same report mentions 'upside surprises to growth and inflation are still possible,' reflecting the unpredictability of policy outcomes. (4) Schwab's 2026 outlook (SOURCE: 2026 Outlook: Treasury Bonds and Fixed Income, URL: https://www.schwab.com/learn/story/fixed-income-outlook, DATE: December 2025) discusses tariff policy uncertainty as an ongoing concern."
       },
       {
-        "statement": "This discovery process means volatility — first and foremost in the bond market.",
+        "statement": "This discovery process means volatility â first and foremost in the bond market.",
         "materialized": "YES",
         "reasoning": "Tallbacken Capital's prediction that policy uncertainty would drive bond market volatility materialized clearly in 2025. Evidence: (1) Vanguard's Q4 2025 report (SOURCE: Q4 2025: Markets continue to climb a wall of worry, URL: https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry, DATE: December 2025) describes the year as occurring 'against this backdrop of volatility,' with the report emphasizing volatility as a persistent market characteristic. (2) Morgan Stanley's analysis (SOURCE: Is 2025 (finally) the Year of the Bond?, URL: https://www.morganstanley.com/im/en-be/intermediary-investor/insights/articles/is-2025-the-year-of-the-bond.html, DATE: December 2025) states 'The market responded to the Trump election victory with increased volatility' and notes that 'fiscal policies are likely to further increase fundamental dispersion...as well as volatility in interest rates and spreads.' (3) Morgan Stanley's sector outlook (SOURCE: Fixed Income Outlook 2025: Sector Picks, URL: https://www.morganstanley.com/insights/articles/bond-market-outlook-fixed-income-2025-sector-picks, DATE: December 2025) emphasizes that 'bond investors should prioritize the active selection of both sectors and individual securities' due to increased volatility. (4) The bond market's strong returns (approximately 7% per Bloomberg Aggregate) occurred despite this volatility, confirming volatility was indeed a feature of the bond market throughout the year."
       }
@@ -241,7 +241,7 @@
     "justification": "Tallbacken Capital's predictions were highly accurate in identifying the key source of 2025 market dynamics—policy uncertainty under the Trump administration and its cascading effects on bond market volatility. The institution correctly anticipated that the 'discovery process' of understanding Trump's actual policy implementation would create sustained volatility, particularly in fixed income markets. Their macro framework proved prescient in capturing the year's dominant theme.",
     "id": "BONDS-TALLBACKEN_CAPITAL-53-2025",
     "Original_Rank": 53,
-    "Prediction_Text": "\"We simply won't know where the Trump bond and equity puts are struck for some time, or for that matter, whether Trump's reaction function to bond and stock movements is itself a moving target. This discovery process means volatility — first and foremost in the bond market.\"",
+    "Prediction_Text": "\"We simply wonât know where the Trump bond and equity puts are struck for some time, or for that matter, whether Trumpâs reaction function to bond and stock movements is itself a moving target. This discovery process means volatility â first and foremost in the bond market.\"",
     "Institution": "TALLBACKEN CAPITAL",
     "Rank": 9
   },
@@ -325,7 +325,7 @@
   {
     "statements": [
       {
-        "statement": "We see emerging-market bonds – particularly those denominated in local currencies – as a better place to take interest-rate risk.",
+        "statement": "We see emerging-market bonds â particularly those denominated in local currencies â as a better place to take interest-rate risk.",
         "materialized": "YES",
         "reasoning": "BNP Paribas Asset Management's preference for emerging-market bonds, particularly local-currency denominated, materialized as an excellent call in 2025. Evidence: (1) Morningstar's Q3 2025 report (SOURCE: Bond Markets End Q3 on a High Note, URL: https://www.morningstar.com/bonds/bond-markets-end-q3-high-note, DATE: December 2025) states 'The Morningstar Emerging Markets Sovereign Bond Index...gained 4.93% over the quarter, while...the category's 15.07% return for the year to date through September 2025 surpassed all fixed-income sectors thanks primarily to a weakening US dollar amid trade policy uncertainty and economic cooling.' (2) The same report specifically notes 'emerging-market local-currency bond funds faced headwinds in July 2025 when the US dollar strengthened for a brief period,' but recovered strongly, demonstrating the resilience of the strategy. (3) Morningstar's Q1 2025 report (SOURCE: A Closer Look at Bond Investors' Cautious Approach in Q1, URL: https://www.morningstar.com/bonds/closer-look-bond-investors-cautious-approach-during-q1, DATE: December 2025) highlights 'Bronze-rated Pimco Emerging Markets Local Currency Bond's PELBX 4.93% gain during the quarter beat 90% of its emerging-markets bond local-currency Morningstar Category peers,' showing that local-currency EM bonds significantly outperformed. (4) Barclays' statement (DATA_ID 57) confirms 'emerging-market debt provides a vast pool of opportunities for investors to improve a portfolio's risk-return profile,' validating BNP Paribas' thesis."
       },
@@ -347,7 +347,7 @@
     "justification": "BNP Paribas Asset Management's predictions about emerging-market bonds were highly accurate and prescient. The institution correctly identified that local-currency EM bonds would outperform other fixed-income sectors in 2025, with the category delivering 15.07% returns year-to-date through September—surpassing all other fixed-income sectors. Their emphasis on country selection proved critical, as currency dynamics and fiscal policy differences created significant performance dispersion. This was one of the most successful macro calls of 2025.",
     "id": "BONDS-BNP_PARIBAS_ASSET_MANAGEMENT-59-2025",
     "Original_Rank": 59,
-    "Prediction_Text": "\"We see emerging-market bonds – particularly those denominated in local currencies – as a better place to take interest-rate risk. Country selection is of course important\"",
+    "Prediction_Text": "\"We see emerging-market bonds â particularly those denominated in local currencies â as a better place to take interest-rate risk. Country selection is of course important\"",
     "Institution": "BNP PARIBAS ASSET MANAGEMENT",
     "Rank": 13
   },
@@ -485,7 +485,7 @@
         "reasoning": "Barclays' recommendation about securitized credit and BB-rated segments had mixed validation in 2025. Evidence supporting securitized credit: (1) Morningstar's Q3 2025 report (SOURCE: Bond Markets End Q3 on a High Note, URL: https://www.morningstar.com/bonds/bond-markets-end-q3-high-note, DATE: December 2025) shows various credit sectors delivered positive returns, with 'Morningstar US Corporate Bond Index...returned 2.64% during the quarter' and 'Morningstar US High-Yield Bond Index gained 2.44%.' (2) Schwab's 2026 outlook (SOURCE: 2026 Outlook: Corporate Credit, URL: https://www.schwab.com/learn/story/corporate-bond-outlook, DATE: December 2025) notes 'securitised credit could be a useful diversification tool,' directly validating Barclays' recommendation. However, evidence on BB-rated segment: (3) Morgan Stanley's November 2025 report (SOURCE: The BEAT | November 2025, URL: https://www.morganstanley.com/im/publication/insights/articles/article_thebeatnovember2025.pdf, DATE: December 2025) shows 'We Prefer Higher-Yielding Credit, Relative to Investment Grade,' suggesting BB-rated (high-yield) credit was favored. (4) However, Schwab's 2026 outlook (SOURCE: 2026 Outlook: Corporate Credit, URL: https://www.schwab.com/learn/story/corporate-bond-outlook, DATE: December 2025) notes 'Credit concerns have weighed on the prices of some of the riskier bond investments like high-yield bonds,' suggesting BB-rated segments faced headwinds. The recommendation was partially correct—securitized credit worked well, but BB-rated segments faced more challenges than anticipated."
       },
       {
-        "statement": "Finally, emerging-market debt provides a vast pool of opportunities for investors to improve a portfolio's risk-return profile.",
+        "statement": "Finally, emerging-market debt provides a vast pool of opportunities for investors to improve a portfolioâs risk-return profile.",
         "materialized": "YES",
         "reasoning": "Barclays' prediction about emerging-market debt opportunities materialized strongly in 2025. Evidence: (1) Morningstar's Q3 2025 report (SOURCE: Bond Markets End Q3 on a High Note, URL: https://www.morningstar.com/bonds/bond-markets-end-q3-high-note, DATE: December 2025) states 'The Morningstar Emerging Markets Sovereign Bond Index...gained 4.93% over the quarter, while...the category's 15.07% return for the year to date through September 2025 surpassed all fixed-income sectors thanks primarily to a weakening US dollar amid trade policy uncertainty and economic cooling.' (2) The same report notes that 'emerging-market local-currency bond funds faced headwinds in July 2025 when the US dollar strengthened for a brief period,' but recovered strongly, demonstrating the opportunity set. (3) Morningstar's Q1 2025 report (SOURCE: A Closer Look at Bond Investors' Cautious Approach in Q1, URL: https://www.morningstar.com/bonds/closer-look-bond-investors-cautious-approach-during-q1, DATE: December 2025) highlights 'Bronze-rated Pimco Emerging Markets Local Currency Bond's PELBX 4.93% gain during the quarter beat 90% of its emerging-markets bond local-currency Morningstar Category peers,' showing strong performance. (4) BNP Paribas' statement (DATA_ID 62) confirms 'We see emerging-market bonds – particularly those denominated in local currencies – as a better place to take interest-rate risk,' validating the opportunity thesis."
       }
@@ -502,7 +502,7 @@
     "justification": "Barclays Private Bank's predictions were largely accurate for 2025. The institution correctly identified that a neutral duration stance with selective extension based on volatility would be appropriate, and this proved sound given the year's volatile environment. Their recommendations on securitized credit and emerging-market debt were validated by strong performance, though BB-rated credit faced more headwinds than anticipated. Overall, Barclays demonstrated strong tactical positioning for the year's market dynamics.",
     "id": "BONDS-BARCLAYS_PRIVATE_BANK-58-2025",
     "Original_Rank": 58,
-    "Prediction_Text": "\"A neutral duration stance seems appropriate, and investors should be on the lookout for rate volatility, as a signal to extend duration selectively. In the credit market, securitised credit could be a useful diversification tool, while relative value and carry options abound in the BB-rated segment. Finally, emerging-market debt provides a vast pool of opportunities for investors to improve a portfolio's risk-return profile.\"",
+    "Prediction_Text": "\"A neutral duration stance seems appropriate, and investors should be on the lookout for rate volatility, as a signal to extend duration selectively. In the credit market, securitised credit could be a useful diversification tool, while relative value and carry options abound in the BB-rated segment. Finally, emerging-market debt provides a vast pool of opportunities for investors to improve a portfolioâs risk-return profile.\"",
     "Institution": "BARCLAYS PRIVATE BANK",
     "Rank": 18
   },
@@ -664,7 +664,7 @@
         "reasoning": "Nuveen's neutral duration stance with a recommendation to lengthen from cash was partially validated. The strong bond performance in 2025 (Source 2, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry, December 2025, showing ~7% returns for the Bloomberg U.S. Aggregate Bond Index) supports the case for moving out of cash. However, Morgan Stanley's November 2025 positioning (Source 4, https://www.morganstanley.com/im/publication/insights/articles/article_thebeatnovember2025.pdf) showed an underweight on U.S. Duration, suggesting that a neutral stance faced headwinds from post-election volatility. The recommendation was reasonable but faced tactical challenges."
       },
       {
-        "statement": "While the Federal Reserve and other central banks are cutting rates, we don't anticipate quick or dramatic declines.",
+        "statement": "While the Federal Reserve and other central banks are cutting rates, we donât anticipate quick or dramatic declines.",
         "materialized": "YES",
         "reasoning": "Nuveen's prediction about gradual rather than dramatic rate cuts was validated by 2025 outcomes. Source 2 (https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry, December 2025) noted that 'evidence of a weakening job market was enough to send bond yields lower' but also that the Fed maintained a 'less dovish tone' in December. Source 8 (https://www.morganstanley.com/im/en-be/intermediary-investor/insights/articles/is-2025-the-year-of-the-bond.html, December 2025) confirmed that 'the Fed's less dovish tone coming out of the meeting grabbed investors' attention,' validating the expectation of measured rather than aggressive rate cuts."
       }
@@ -681,7 +681,7 @@
     "justification": "Nuveen's measured outlook on rate cuts was accurate, correctly anticipating that central banks would proceed cautiously rather than aggressively. The neutral duration stance was reasonable but faced execution challenges from post-election volatility. The firm's macro view was sound, though the tactical implementation of the neutral stance required flexibility given market dynamics.",
     "id": "BONDS-NUVEEN-46-2025",
     "Original_Rank": 46,
-    "Prediction_Text": "\"It makes sense to stick with an overall neutral duration stance (and investors still holding high levels of cash should consider lengthening duration). While the Federal Reserve and other central banks are cutting rates, we don't anticipate quick or dramatic declines.\"",
+    "Prediction_Text": "\"It makes sense to stick with an overall neutral duration stance (and investors still holding high levels of cash should consider lengthening duration). While the Federal Reserve and other central banks are cutting rates, we donât anticipate quick or dramatic declines.\"",
     "Institution": "NUVEEN",
     "Rank": 24
   },
@@ -693,7 +693,7 @@
         "reasoning": "Pictet's prediction about benign but not outsized bond returns was validated by 2025 outcomes. Source 2 (https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry, December 2025) showed that the Bloomberg U.S. Aggregate Bond Index returned approximately 7%, which is solid but not exceptional. Source 5 (https://global.morningstar.com/en-gb/markets/markets-brief-solid-year-bonds-6040-portfolios, December 2025) described 2025 as 'a good year for the bond market' with 'solid gains,' confirming the moderate positive returns without outsized performance. The overall environment was indeed favorable rather than hostile."
       },
       {
-        "statement": "Based on our base-case scenario – which is for benign growth and moderating inflation — we expect benchmark bond yields to stay range-bound, but real rates will be positive for most developed government bonds.",
+        "statement": "Based on our base-case scenario â which is for benign growth and moderating inflation â we expect benchmark bond yields to stay range-bound, but real rates will be positive for most developed government bonds.",
         "materialized": "PARTIAL",
         "reasoning": "Pictet's base-case scenario was partially validated. The benign growth and moderating inflation expectations were broadly consistent with 2025 outcomes, as Source 2 (https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry, December 2025) noted 'resilient consumer spending' and evidence of moderating labor markets. However, the rangebound yield expectation was challenged by post-election volatility. Source 8 (https://www.morganstanley.com/im/en-be/intermediary-investor/insights/articles/is-2025-the-year-of-the-bond.html, December 2025) noted that 'rates continued to rise' post-election, suggesting yields moved higher rather than remaining rangebound. The positive real rates expectation is reasonable but not fully validated in the available evidence."
       }
@@ -710,7 +710,7 @@
     "justification": "Pictet's measured outlook on bond returns was accurate, correctly anticipating solid but not exceptional performance in a benign environment. The firm's base-case scenario of moderate growth and inflation was directionally correct. However, the prediction about rangebound yields was challenged by post-election volatility, suggesting the firm underestimated the potential for yield movement despite the benign macro backdrop.",
     "id": "BONDS-PICTET_ASSET_MANAGEMENT-48-2025",
     "Original_Rank": 48,
-    "Prediction_Text": "\"While bonds may not deliver outsized returns next year, the investment landscape is unlikely to be hostile for fixed income assets. Based on our base-case scenario – which is for benign growth and moderating inflation — we expect benchmark bond yields to stay range-bound, but real rates will be positive for most developed government bonds.\"",
+    "Prediction_Text": "\"While bonds may not deliver outsized returns next year, the investment landscape is unlikely to be hostile for fixed income assets. Based on our base-case scenario â which is for benign growth and moderating inflation â we expect benchmark bond yields to stay range-bound, but real rates will be positive for most developed government bonds.\"",
     "Institution": "PICTET ASSET MANAGEMENT",
     "Rank": 25
   },
@@ -775,7 +775,7 @@
   {
     "statements": [
       {
-        "statement": "We have a neutral stance across almost all bonds' segments, apart from the Japanese government bonds, where we retain an underweight position.",
+        "statement": "We have a neutral stance across almost all bondsâ segments, apart from the Japanese government bonds, where we retain an underweight position.",
         "materialized": "PARTIAL",
         "reasoning": "The neutral stance across bond segments is broadly consistent with 2025 outcomes, where various bond categories performed reasonably well without extreme divergence. The Bloomberg U.S. Aggregate Bond Index returned approximately 7% (Source 2: Q4 2025: Markets continue to climb a wall of worry, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry), and multiple bond categories showed positive returns (Source 3: Bond Markets End Q3 on a High Note, December 2025, https://www.morningstar.com/bonds/bond-markets-end-q3-high-note). However, specific validation of the Japanese government bond underweight position is not provided in the available sources."
       },
@@ -797,7 +797,7 @@
     "justification": "HSBC Global Private Banking's prediction was largely accurate, particularly regarding corporate credit's role in portfolio diversification and income generation. The institution correctly identified that elevated yields in investment-grade and high-yield bonds would provide attractive returns, and this materialized throughout 2025. The neutral stance across most bond segments also proved appropriate given the broad-based strength in fixed income.",
     "id": "BONDS-HSBC_GLOBAL_PRIVATE_BANKING-63-2025",
     "Original_Rank": 63,
-    "Prediction_Text": "\"We have a neutral stance across almost all bonds' segments, apart from the Japanese government bonds, where we retain an underweight position. However, we continue to see corporate credit, including dollar investment grade bonds and global high yield as a good way of diversifying multi-asset portfolios and generating income by locking in elevated yields.\"",
+    "Prediction_Text": "\"We have a neutral stance across almost all bondsâ segments, apart from the Japanese government bonds, where we retain an underweight position. However, we continue to see corporate credit, including dollar investment grade bonds and global high yield as a good way of diversifying multi-asset portfolios and generating income by locking in elevated yields.\"",
     "Institution": "HSBC GLOBAL PRIVATE BANKING",
     "Rank": 28
   },
@@ -843,7 +843,7 @@
         "reasoning": "This prediction materialized decisively. The 2025 outcomes confirmed that bonds had a strong year, with the Bloomberg U.S. Aggregate Bond Index returning approximately 7% (Source 2: Q4 2025: Markets continue to climb a wall of worry, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry), described as 'the best year since 2020' (Source 7: Bonds Are Heading for the Best Year Since 2020, December 2025, https://www.wsj.com/finance/bonds-are-heading-for-the-best-year-since-2020-02c5738b). Multiple sources confirmed that 2025 was 'a good year for the bond market' and 'a solid year for bonds and 60/40 portfolios' (Source 5: Markets Brief: A Solid Year for Bonds and 60/40 Portfolios, December 2025, https://global.morningstar.com/en-gb/markets/markets-brief-solid-year-bonds-6040-portfolios)."
       },
       {
-        "statement": "Over the next decade, we expect 4.3%–5.3% annualized returns for both US and global ex-US currency-hedged bonds.",
+        "statement": "Over the next decade, we expect 4.3%â5.3% annualized returns for both US and global ex-US currency-hedged bonds.",
         "materialized": "PARTIAL",
         "reasoning": "Vanguard's long-term return forecast of 4.3%-5.3% annualized returns for the next decade cannot be fully validated from 2025 data alone, as this is a 10-year forward-looking statement. However, the starting point for this forecast appears reasonable given that the U.S. aggregate bond yield was 4.5% as of mid-2025 (Source 15: Active Fixed Income Perspectives Q3 2025 - Vanguard, December 2025, https://corporate.vanguard.com/content/dam/corp/articles/pdf/afi_perspectives_q3_2025_the_power_of_income.pdf), which aligns with the lower end of the forecast range. The prediction is directionally sound but requires future validation."
       },
@@ -865,14 +865,14 @@
     "justification": "Vanguard's prediction was highly accurate and prescient, correctly identifying that higher starting yields had improved the risk-return tradeoff and that bonds would have a strong year in 2025. The institution's characterization of 'bonds are back' proved definitively correct, with bonds delivering their best returns in five years. The long-term return forecast of 4.3%-5.3% appears reasonable given starting yields, and the acknowledgment of near-term risks was appropriately cautious. This was one of the most successful predictions about 2025 bond market dynamics.",
     "id": "BONDS-VANGUARD-70-2025",
     "Original_Rank": 70,
-    "Prediction_Text": "\"Higher starting yields have greatly improved the risk-return tradeoff in fixed income. Bonds are still back. Over the next decade, we expect 4.3%–5.3% annualized returns for both US and global ex-US currency-hedged bonds. This view reflects a gradual normalization in policy rates and yield curves, though important near-term risks remain.\"",
+    "Prediction_Text": "\"Higher starting yields have greatly improved the risk-return tradeoff in fixed income. Bonds are still back. Over the next decade, we expect 4.3%â5.3% annualized returns for both US and global ex-US currency-hedged bonds. This view reflects a gradual normalization in policy rates and yield curves, though important near-term risks remain.\"",
     "Institution": "VANGUARD",
     "Rank": 30
   },
   {
     "statements": [
       {
-        "statement": "US inflation is trending down towards the Fed's 2% target.",
+        "statement": "US inflation is trending down towards the Fedâs 2% target.",
         "materialized": "PARTIAL",
         "reasoning": "Source 5 (Morningstar, December 2025) states 'evidence of a weakening job market was enough to send bond yields lower—and prices higher—over the course of the year,' suggesting economic cooling that could support disinflation. Source 8 (Morgan Stanley, December 2025) notes 'markets are in a better place than in 2024 with regard to expectations on monetary policy and the economy (no recession priced; no material increases in unemployment rates expected; better growth outside of the U.S. beginning; and continued Chinese economic stimulus),' indicating improved inflation expectations. However, Source 8 also states 'upside surprises to growth and inflation are still possible' and 'rates continued to rise along with the U.S. dollar,' suggesting inflation concerns persisted. The sources do not provide explicit inflation data for 2025, making it difficult to confirm whether inflation actually trended toward 2%."
       },
@@ -894,7 +894,7 @@
     "justification": "Capital Group's prediction about bonds fulfilling their traditional diversification role was validated by 2025 outcomes, with both stocks and bonds delivering strong returns simultaneously. However, the inflation trend prediction is only partially supported by available sources, which indicate improved inflation expectations but do not provide explicit confirmation that inflation trended toward the Fed's 2% target. The institution correctly anticipated the portfolio diversification benefit but lacked explicit validation on the inflation trajectory.",
     "id": "BONDS-CAPITAL_GROUP-74-2025",
     "Original_Rank": 74,
-    "Prediction_Text": "\"US inflation is trending down towards the Fed's 2% target. Using history as a guide, this would suggest we might be entering an environment in which bonds could continue to fulfil their traditional role as a portfolio diversifier.\"",
+    "Prediction_Text": "\"US inflation is trending down towards the Fedâs 2% target. Using history as a guide, this would suggest we might be entering an environment in which bonds could continue to fulfil their traditional role as a portfolio diversifier.\"",
     "Institution": "CAPITAL GROUP",
     "Rank": 31
   },
@@ -1526,7 +1526,7 @@
   {
     "statements": [
       {
-        "statement": "With the yield curve set to structurally steepen, fixed-income returns will increasingly hinge on income components rather than capital appreciation — although less inflation risk and more pronounced growth risks in Europe support the case for duration assets there.",
+        "statement": "With the yield curve set to structurally steepen, fixed-income returns will increasingly hinge on income components rather than capital appreciation â although less inflation risk and more pronounced growth risks in Europe support the case for duration assets there.",
         "materialized": "PARTIAL",
         "reasoning": "The prediction about yield curve steepening and income-focused returns is partially supported. Morgan Stanley noted in November 2025 that they have a 'Duration: U/W in U.S. With Yield Curve Steepening Bias' (Source 4: The BEAT | November 2025, December 2025, https://www.morganstanley.com/im/publication/insights/articles/article_thebeatnovember2025.pdf), confirming steepening expectations. Neuberger Berman also predicted 'moderately steeper yield curves' (Source 66 statement). However, the actual 2025 bond returns of approximately 7% for the Bloomberg U.S. Aggregate Bond Index (Source 2: Q4 2025: Markets continue to climb a wall of worry, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) included significant capital appreciation from falling yields, not just income. The European duration thesis is not directly validated in the provided sources."
       }
@@ -1543,7 +1543,7 @@
     "justification": "HSBC Asset Management correctly anticipated yield curve steepening and the shift toward income-focused strategies, but underestimated the capital appreciation component of 2025 bond returns. The prediction was directionally sound on curve dynamics but incomplete in capturing the full return picture, as falling yields in the first half of 2025 provided substantial price gains alongside income.",
     "id": "BONDS-HSBC_ASSET_MANAGEMENT-62-2025",
     "Original_Rank": 62,
-    "Prediction_Text": "\"With the yield curve set to structurally steepen, fixed-income returns will increasingly hinge on income components rather than capital appreciation — although less inflation risk and more pronounced growth risks in Europe support the case for duration assets there.\"",
+    "Prediction_Text": "\"With the yield curve set to structurally steepen, fixed-income returns will increasingly hinge on income components rather than capital appreciation â although less inflation risk and more pronounced growth risks in Europe support the case for duration assets there.\"",
     "Institution": "HSBC ASSET MANAGEMENT",
     "Rank": 52
   },
@@ -1647,7 +1647,7 @@
         "reasoning": "The statement is difficult to fully validate from the provided sources as they focus primarily on broader bond market performance rather than specific money market fund inflation-adjusted returns. However, Source 2 (Vanguard, December 2025) notes that 'U.S. bond markets, as measured by Bloomberg U.S. Aggregate Bond Index, also had a strong year with returns of approximately 7%' and Source 5 (Morningstar, December 2025) states 'it has also been a good year for the bond market.' The sources do not provide explicit data on money market fund performance relative to inflation or comparative analysis to prior years, making full validation impossible. The broader bond market performed well in 2025, which could suggest short-term instruments also benefited, but this is not directly confirmed."
       },
       {
-        "statement": "We favor extending maturities using a laddered strategy, investing first in intermediate maturities (3 – 7 years), next in longer-dated maturities, and finally shorter maturities.",
+        "statement": "We favor extending maturities using a laddered strategy, investing first in intermediate maturities (3 â 7 years), next in longer-dated maturities, and finally shorter maturities.",
         "materialized": "PARTIAL",
         "reasoning": "Source 4 (Morgan Stanley, November 2025) states 'Duration: U/W in U.S. With Yield Curve Steepening Bias' and 'We Prefer Higher-Yielding Credit, Relative to Investment Grade,' suggesting a preference for credit over duration extension. However, Source 15 (Vanguard, Q3 2025) presents modeling showing 'Higher yields mean bonds hold more potential upside than downside' with positive returns across multiple interest rate scenarios, which could support maturity extension. Source 3 (Morningstar, December 2025) notes that 'A typical long-term bond Morningstar Category fund...gained 3.66% during the quarter,' showing strong performance in longer maturities. The evidence partially supports the strategy's appeal but does not confirm it was the dominant recommendation across the market."
       }
@@ -1664,7 +1664,7 @@
     "justification": "Wells Fargo's prediction about money market funds providing less inflation benefit is difficult to validate from available sources, which focus on broader bond performance rather than money market specifics. The maturity extension strategy appears partially supported by strong performance in intermediate and longer-dated bonds during 2025, though Morgan Stanley's November positioning suggested underweighting duration in the U.S., indicating mixed market sentiment on this approach.",
     "id": "BONDS-WELLS_FARGO_INVESTMENT_INSTITUTE-71-2025",
     "Original_Rank": 71,
-    "Prediction_Text": "\"Money market funds and other short-term fixed-income instruments likely will provide less benefit over inflation than in recent years. We favor extending maturities using a laddered strategy, investing first in intermediate maturities (3 – 7 years), next in longer-dated maturities, and finally shorter maturities.\"",
+    "Prediction_Text": "\"Money market funds and other short-term fixed-income instruments likely will provide less benefit over inflation than in recent years. We favor extending maturities using a laddered strategy, investing first in intermediate maturities (3 â 7 years), next in longer-dated maturities, and finally shorter maturities.\"",
     "Institution": "WELLS FARGO INVESTMENT INSTITUTE",
     "Rank": 56
   },
@@ -1748,7 +1748,7 @@
   {
     "statements": [
       {
-        "statement": "Modest growth and falling inflation will allow most other major central banks to ease further, led by the European Central Bank, the Bank of England, and the People's Bank of China.",
+        "statement": "Modest growth and falling inflation will allow most other major central banks to ease further, led by the European Central Bank, the Bank of England, and the Peopleâs Bank of China.",
         "materialized": "PARTIAL",
         "reasoning": "Source 8 (Morgan Stanley, December 2025) states 'markets are in a better place than in 2024 with regard to expectations on monetary policy and the economy...better growth outside of the U.S. beginning; and continued Chinese economic stimulus,' suggesting that central banks outside the U.S. were positioned to ease. However, the sources do not provide explicit confirmation that the ECB, Bank of England, and People's Bank of China actually eased further in 2025, or that growth was 'modest' and inflation was 'falling' in these regions. Source 3 (Morningstar, December 2025) notes that 'Non-U.S. equity markets far outpaced their U.S. counterparts, delivering robust returns of approximately 32% for the year,' suggesting stronger growth outside the U.S., which could contradict the 'modest growth' characterization."
       },
@@ -1770,7 +1770,7 @@
     "justification": "Franklin Templeton's prediction about non-U.S. central bank easing and dollar strength appears partially validated by 2025 outcomes, with evidence of continued stimulus and dollar appreciation. However, the characterization of 'modest growth' outside the U.S. appears inconsistent with the 32% return on non-U.S. equities reported in 2025. The institution correctly anticipated currency dynamics but may have underestimated growth momentum outside the U.S.",
     "id": "BONDS-FRANKLIN_TEMPLETON-77-2025",
     "Original_Rank": 77,
-    "Prediction_Text": "\"Modest growth and falling inflation will allow most other major central banks to ease further, led by the European Central Bank, the Bank of England, and the People's Bank of China. But because European sovereign debt typically moves in tandem with Treasuries, European yield curves could steepen, and the euro may depreciate further.\"",
+    "Prediction_Text": "\"Modest growth and falling inflation will allow most other major central banks to ease further, led by the European Central Bank, the Bank of England, and the Peopleâs Bank of China. But because European sovereign debt typically moves in tandem with Treasuries, European yield curves could steepen, and the euro may depreciate further.\"",
     "Institution": "FRANKLIN TEMPLETON",
     "Rank": 60
   },
@@ -1864,7 +1864,7 @@
         "reasoning": "The prediction that bond yields would remain elevated is supported by SOURCE 8 (Morgan Stanley, December 2025, https://www.morganstanley.com/im/en-be/intermediary-investor/insights/articles/is-2025-the-year-of-the-bond.html), which states 'rates continued to rise along with the U.S. dollar' following the Fed's December meeting. However, the specific 10-year Treasury yield range of 3.75%-4.25% cannot be directly validated from the provided sources, as they do not specify the exact yield levels achieved in 2025. The sources confirm elevated yields and upward pressure but do not provide precise yield data to confirm whether the range was accurate."
       },
       {
-        "statement": "Over the next 12 months, we see roughly equal upside and downside risks to yields as the markets grapple with the true impacts of budget deficits, increasing Treasury supply, and the scope of the Fed's current easing cycle.",
+        "statement": "Over the next 12 months, we see roughly equal upside and downside risks to yields as the markets grapple with the true impacts of budget deficits, increasing Treasury supply, and the scope of the Fedâs current easing cycle.",
         "materialized": "PARTIAL",
         "reasoning": "This statement about balanced upside/downside risks is partially supported. SOURCE 8 (Morgan Stanley, December 2025, https://www.morganstanley.com/im/en-be/intermediary-investor/insights/articles/is-2025-the-year-of-the-bond.html) notes 'upside surprises to growth and inflation are still possible,' suggesting uncertainty and balanced risks. Additionally, SOURCE 12 (Morgan Stanley, December 2025, https://www.morganstanley.com/insights/articles/bond-market-outlook-fixed-income-2025-sector-picks) mentions that 'fiscal policies are likely to further increase fundamental dispersion...as well as volatility in interest rates and spreads,' confirming the concern about budget deficits and Treasury supply. However, the sources do not explicitly confirm that risks were truly balanced or equal throughout 2025."
       },
@@ -1886,7 +1886,7 @@
     "justification": "LPL Financial correctly identified that bond yields would remain elevated and that fiscal concerns would create volatility, which materialized in 2025 as rates rose and policy uncertainty persisted. The recommendation to focus on income generation and duration management proved sound given the strong bond returns in 2025. However, the specific 10-year Treasury yield range of 3.75%-4.25% and the assertion about five-year maturity being most attractive lack clear validation in the available data, suggesting the prediction was directionally correct but imprecise on specific targets.",
     "id": "BONDS-LPL_FINANCIAL-82-2025",
     "Original_Rank": 82,
-    "Prediction_Text": "\"Bond yields are expected to remain elevated, with the 10-year Treasury yield likely to remain between 3.75% and 4.25%. Over the next 12 months, we see roughly equal upside and downside risks to yields as the markets grapple with the true impacts of budget deficits, increasing Treasury supply, and the scope of the Fed's current easing cycle. For fixed income investors, a focus on income generation and duration management is advised and we believe the most attractive opportunities lie in the five-year maturity range.\"",
+    "Prediction_Text": "\"Bond yields are expected to remain elevated, with the 10-year Treasury yield likely to remain between 3.75% and 4.25%. Over the next 12 months, we see roughly equal upside and downside risks to yields as the markets grapple with the true impacts of budget deficits, increasing Treasury supply, and the scope of the Fedâs current easing cycle. For fixed income investors, a focus on income generation and duration management is advised and we believe the most attractive opportunities lie in the five-year maturity range.\"",
     "Institution": "LPL FINANCIAL",
     "Rank": 64
   },
@@ -2190,7 +2190,7 @@
     "institution": "SCHRODERS",
     "statements": [
       {
-        "statement": "The old-fashioned reason for owning bonds — to generate income — is back and we continue to argue for their inclusion in portfolios.",
+        "statement": "The old-fashioned reason for owning bonds â to generate income â is back and we continue to argue for their inclusion in portfolios.",
         "materialized": "PARTIAL",
         "reasoning": "Retry evaluation failed due to JSON parsing error: Expecting ',' delimiter: line 41 column 41 (char 5790)",
         "position": 0
@@ -2219,7 +2219,7 @@
     "justification": "Evaluated 3 statements for BONDS predictions in 2025. Score: 0.0/100 (FAILED).",
     "id": "BONDS-SCHRODERS-27-2025",
     "Original_Rank": 27,
-    "Prediction_Text": "\"The old-fashioned reason for owning bonds — to generate income — is back and we continue to argue for their inclusion in portfolios. Divergent fiscal and monetary policies around the world will also provide cross-market opportunities in fixed income and currency. Strong corporate balance sheets support the yield offered by credit markets.\"",
+    "Prediction_Text": "\"The old-fashioned reason for owning bonds â to generate income â is back and we continue to argue for their inclusion in portfolios. Divergent fiscal and monetary policies around the world will also provide cross-market opportunities in fixed income and currency. Strong corporate balance sheets support the yield offered by credit markets.\"",
     "Institution": "SCHRODERS",
     "Rank": 75
   },
@@ -2349,7 +2349,7 @@
     "institution": "ALLSPRING GLOBAL INVESTMENTS",
     "statements": [
       {
-        "statement": "If the Fed's 2% inflation target is achieved, then the federal funds rate will likely be 3–3.5% by the end of 2025.",
+        "statement": "If the Fedâs 2% inflation target is achieved, then the federal funds rate will likely be 3â3.5% by the end of 2025.",
         "materialized": "PARTIAL",
         "reasoning": "Statement could not be matched with retry evaluation - insufficient evidence in sources"
       },
@@ -2359,7 +2359,7 @@
         "reasoning": "Partial materialization with mixed evidence. SOURCE 4 (Morgan Stanley BEAT, November 2025) explicitly shows 'Duration: U/W in U.S. With Yield Curve Steepening Bias,' confirming yield curve steepening occurred. SOURCE 8 (Morgan Stanley, December 2025) notes 'rates continued to rise along with the U.S. dollar' following the Trump election and Fed's December meeting, supporting the vulnerability of longer-maturity bonds to higher yields. However, SOURCE 2 (Vanguard, December 2025) indicates bonds delivered strong 7% returns for 2025, suggesting longer-maturity bonds did not experience the severe losses predicted if inflation remained elevated. The steepening materialized, but the predicted vulnerability to higher yields was partially offset by actual positive returns."
       },
       {
-        "statement": "We believe bonds should deliver \"bond-like\" returns in 2025.",
+        "statement": "We believe bonds should deliver âbond-likeâ returns in 2025.",
         "materialized": "PARTIAL",
         "reasoning": "Statement could not be matched with retry evaluation - insufficient evidence in sources"
       }
@@ -2375,7 +2375,7 @@
     "justification": "Evaluated 3 statements for BONDS predictions in 2025. Score: 0.0/100 (FAILED).",
     "id": "BONDS-ALLSPRING_GLOBAL_INVESTMENTS-32-2025",
     "Original_Rank": 32,
-    "Prediction_Text": "\"If the Fed's 2% inflation target is achieved, then the federal funds rate will likely be 3–3.5% by the end of 2025. The Treasury yield curve will likely normalize and steepen as a result, but longer-maturity bonds are vulnerable to higher yields if inflation remains elevated and/or fiscal impulses strengthen. We believe bonds should deliver \"bond-like\" returns in 2025.\"",
+    "Prediction_Text": "\"If the Fedâs 2% inflation target is achieved, then the federal funds rate will likely be 3â3.5% by the end of 2025. The Treasury yield curve will likely normalize and steepen as a result, but longer-maturity bonds are vulnerable to higher yields if inflation remains elevated and/or fiscal impulses strengthen. We believe bonds should deliver âbond-likeâ returns in 2025.\"",
     "Institution": "ALLSPRING GLOBAL INVESTMENTS",
     "Rank": 80
   },
@@ -2412,7 +2412,7 @@
         "reasoning": "This statement materialized throughout 2025. SOURCE 1 (Morningstar, December 2025) highlights the 'Bronze-rated Vanguard Short-Term Investment-Grade Bond Fund' as 'the best-performing of these funds' among largest active bond funds in Q2 2025. SOURCE 1 also notes the 'Gold-rated Vanguard Intermediate-Term Corporate Bond ETF' finished in the 5th percentile with 2.6% return and ranked in the 11th percentile with 5.3% average annual return. SOURCE 3 (Morningstar, December 2025) confirms 'The Morningstar US Core Bond Index...gained 2.04% during the quarter' and intermediate core bond funds 'on average gained 2.63% during the quarter.' SOURCE 19 (Morningstar, December 2025) states 'The intermediate core bond funds...on average gained 2.63% during the quarter' with 'strong fundamentals and higher starting yields.' These results confirm short and intermediate maturity bonds performed healthily throughout 2025."
       },
       {
-        "statement": "We see yields as fairly valued given the interest rate outlook – so much so that investors are unlikely to experience similar duration shocks to those seen in 2022 and 2023.",
+        "statement": "We see yields as fairly valued given the interest rate outlook â so much so that investors are unlikely to experience similar duration shocks to those seen in 2022 and 2023.",
         "materialized": "PARTIAL",
         "reasoning": "Statement could not be matched with retry evaluation - insufficient evidence in sources"
       }
@@ -2428,7 +2428,7 @@
     "justification": "Evaluated 2 statements for BONDS predictions in 2025. Score: 0.0/100 (FAILED).",
     "id": "BONDS-AXA_INVESTMENT_MANAGERS-34-2025",
     "Original_Rank": 34,
-    "Prediction_Text": "\"For short and intermediate maturities, the bond market looks healthy. We see yields as fairly valued given the interest rate outlook – so much so that investors are unlikely to experience similar duration shocks to those seen in 2022 and 2023.\"",
+    "Prediction_Text": "\"For short and intermediate maturities, the bond market looks healthy. We see yields as fairly valued given the interest rate outlook â so much so that investors are unlikely to experience similar duration shocks to those seen in 2022 and 2023.\"",
     "Institution": "AXA INVESTMENT MANAGERS",
     "Rank": 82
   },
@@ -2460,7 +2460,7 @@
     "institution": "BLACKROCK INVESTMENT INSTITUTE",
     "statements": [
       {
-        "statement": "We are underweight long-term Treasuries on both a tactical and strategic horizon – and we see risks to our upbeat view from any spike in long-term bond yields.",
+        "statement": "We are underweight long-term Treasuries on both a tactical and strategic horizon â and we see risks to our upbeat view from any spike in long-term bond yields.",
         "materialized": "PARTIAL",
         "reasoning": "Statement could not be matched with retry evaluation - insufficient evidence in sources"
       }
@@ -2476,7 +2476,7 @@
     "justification": "Evaluated 1 statements for BONDS predictions in 2025. Score: 0.0/100 (FAILED).",
     "id": "BONDS-BLACKROCK_INVESTMENT_INSTITUTE-36-2025",
     "Original_Rank": 36,
-    "Prediction_Text": "\"We are underweight long-term Treasuries on both a tactical and strategic horizon – and we see risks to our upbeat view from any spike in long-term bond yields.\"",
+    "Prediction_Text": "\"We are underweight long-term Treasuries on both a tactical and strategic horizon â and we see risks to our upbeat view from any spike in long-term bond yields.\"",
     "Institution": "BLACKROCK INVESTMENT INSTITUTE",
     "Rank": 84
   },
@@ -2494,7 +2494,7 @@
         "reasoning": "The underweight long-term Treasuries positioning is supported by SOURCE 4 (Morgan Stanley, November 2025) which confirms 'Duration: U/W in U.S.' However, specific validation of UK gilts outperformance is not directly addressed in the provided sources. SOURCE 2 (Vanguard, December 2025) discusses broad international outperformance but doesn't isolate UK gilts specifically. The first part of the statement (underweight Treasuries) is validated, but the specific preference for UK gilts cannot be fully confirmed from the available data."
       },
       {
-        "statement": "We also prefer European credit – both investment grade and high yield – over the US on cheaper valuations.",
+        "statement": "We also prefer European credit â both investment grade and high yield â over the US on cheaper valuations.",
         "materialized": "PARTIAL",
         "reasoning": "Statement could not be matched with retry evaluation - insufficient evidence in sources"
       }
@@ -2510,7 +2510,7 @@
     "justification": "Evaluated 3 statements for BONDS predictions in 2025. Score: 0.0/100 (FAILED).",
     "id": "BONDS-BLACKROCK_INVESTMENT_INSTITUTE-37-2025",
     "Original_Rank": 37,
-    "Prediction_Text": "\"Persistent deficits and sticky inflation in the US make us more positive on fixed income elsewhere, notably Europe. We are underweight long-term Treasuries and like UK gilts instead. We also prefer European credit – both investment grade and high yield – over the US on cheaper valuations.\"",
+    "Prediction_Text": "\"Persistent deficits and sticky inflation in the US make us more positive on fixed income elsewhere, notably Europe. We are underweight long-term Treasuries and like UK gilts instead. We also prefer European credit â both investment grade and high yield â over the US on cheaper valuations.\"",
     "Institution": "BLACKROCK INVESTMENT INSTITUTE",
     "Rank": 85
   },

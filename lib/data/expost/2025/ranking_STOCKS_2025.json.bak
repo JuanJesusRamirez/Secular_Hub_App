@@ -7,7 +7,7 @@
         "reasoning": "This prediction materialized. The statement about every sector delivering positive earnings growth in 2025 is confirmed - JPMorgan Wealth Management explicitly states 'every sector in the S&P 500 is expected to deliver positive earnings growth in 2025. This hasn't happened since 2018' (Source 6: DATA_ID 6). The concern about index concentration in big tech is validated by the sources, which note that large-cap and growth equities outperformed (Source 1: Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/). The 36% concentration figure for the top 10 companies is consistent with the characterization of high concentration in the sources."
       },
       {
-        "statement": "This hasn't happened since 2018.",
+        "statement": "This hasnât happened since 2018.",
         "materialized": "YES",
         "reasoning": "This historical reference is confirmed by the source material. JPMorgan Wealth Management's statement that 'This hasn't happened since 2018' regarding all S&P 500 sectors delivering positive earnings growth is presented as factual context (Source 6: DATA_ID 6). The statement serves as a historical benchmark and is not contradicted by any source material."
       }
@@ -24,7 +24,7 @@
     "justification": "JPMorgan Wealth Management's prediction was highly accurate on both the broad-based earnings growth across all sectors and the concern about tech concentration. The institution correctly identified a rare occurrence (all sectors posting positive earnings growth) and appropriately flagged the concentration risk, demonstrating strong fundamental analysis and accurate forecasting of 2025 market dynamics.",
     "id": "STOCKS-JPMORGAN_WEALTH_MANAGEMENT-7-2025",
     "Original_Rank": 7,
-    "Prediction_Text": "\"While index concentration in big tech firms remains a concern (the top 10 companies account for 36% of S&P 500 market capitalization, the highest on record), every sector in the S&P 500 is expected to deliver positive earnings growth in 2025. This hasn't happened since 2018.\"",
+    "Prediction_Text": "\"While index concentration in big tech firms remains a concern (the top 10 companies account for 36% of S&P 500 market capitalization, the highest on record), every sector in the S&P 500 is expected to deliver positive earnings growth in 2025. This hasnât happened since 2018.\"",
     "Institution": "JPMORGAN WEALTH MANAGEMENT",
     "Rank": 1
   },
@@ -55,12 +55,12 @@
   {
     "statements": [
       {
-        "statement": "The broadly shared pessimistic sentiment towards Europe means some great quality assets – less exposed to economic and political uncertainty — can be bought at discount compared to their American peers, providing a great portfolio diversifier.",
+        "statement": "The broadly shared pessimistic sentiment towards Europe means some great quality assets â less exposed to economic and political uncertainty â can be bought at discount compared to their American peers, providing a great portfolio diversifier.",
         "materialized": "YES",
         "reasoning": "This prediction proved accurate. SOURCE 3 (CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) states that 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains, ranking among the world's top performers,' and SOURCE 6 (Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) confirms that 'Non-U.S. equity markets far outpaced their U.S. counterparts, delivering robust returns of approximately 32% for the year.' European assets purchased at discount did indeed provide strong diversification benefits."
       },
       {
-        "statement": "We are not expecting fireworks in growth given what is happening – or rather not happening – on the old continent, but several factors could play in favor of European equities.",
+        "statement": "We are not expecting fireworks in growth given what is happening â or rather not happening â on the old continent, but several factors could play in favor of European equities.",
         "materialized": "YES",
         "reasoning": "This cautious but optimistic assessment proved accurate. SOURCE 3 (CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes that 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target, and interest rates settled at levels that are highly supportive for bank profitability,' validating that several factors did indeed play in favor of European equities despite modest growth expectations."
       },
@@ -82,7 +82,7 @@
     "justification": "Carmignac's contrarian call on European equities proved highly accurate in 2025. The institution correctly identified that pessimistic sentiment had created valuation opportunities in European markets, and their prediction that several factors would support European equities materialized through upside economic surprises, favorable interest rates, and strong bank profitability. This was one of the most prescient predictions, as European markets significantly outperformed expectations and US equities.",
     "id": "STOCKS-CARMIGNAC-28-2025",
     "Original_Rank": 28,
-    "Prediction_Text": "\"The broadly shared pessimistic sentiment towards Europe means some great quality assets – less exposed to economic and political uncertainty — can be bought at discount compared to their American peers, providing a great portfolio diversifier. We are not expecting fireworks in growth given what is happening – or rather not happening – on the old continent, but several factors could play in favor of European equities. There are many global leaders to be found at a very reasonable price.\"",
+    "Prediction_Text": "\"The broadly shared pessimistic sentiment towards Europe means some great quality assets â less exposed to economic and political uncertainty â can be bought at discount compared to their American peers, providing a great portfolio diversifier. We are not expecting fireworks in growth given what is happening â or rather not happening â on the old continent, but several factors could play in favor of European equities. There are many global leaders to be found at a very reasonable price.\"",
     "Institution": "CARMIGNAC",
     "Rank": 3
   },
@@ -128,7 +128,7 @@
         "reasoning": "This statement materialized in 2025. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms that 'Large cap and growth equities outperformed' and that 'innovation-driven themes such as solar and digital finance recorded strong growth.' SOURCE 4 (Nasdaq, December 2025, https://www.nasdaq.com/articles/here-are-top-performing-sp-500-stocks-2025) highlights technology stocks with exceptional returns (290%+ and 250%+ gains), validating Information Technology outperformance. Consumer Discretionary benefited from the broader growth equity outperformance trend."
       },
       {
-        "statement": "Exposure to secular AI trends – as either Enablers or Adopters – features prominently in our selection.",
+        "statement": "Exposure to secular AI trends â as either Enablers or Adopters â features prominently in our selection.",
         "materialized": "YES",
         "reasoning": "This statement materialized in 2025. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) explicitly states that 'innovation-driven themes such as solar and digital finance recorded strong growth,' and SOURCE 4 (Nasdaq, December 2025, https://www.nasdaq.com/articles/here-are-top-performing-sp-500-stocks-2025) highlights that top performers included companies offering 'solid state drives (SSDs)' and other technology products, which are AI-enabler products. The sources confirm that AI-related exposure was a key driver of outperformance in 2025."
       }
@@ -145,7 +145,7 @@
     "justification": "Evercore ISI's sector selection proved highly accurate for 2025. The institution correctly identified that Communication Services, Consumer Discretionary, and Information Technology would outperform, and the emphasis on AI exposure—both as enablers and adopters—was precisely aligned with actual market dynamics. This prediction demonstrated excellent sector rotation insight and was validated by the exceptional performance of technology stocks and innovation-driven themes throughout 2025.",
     "id": "STOCKS-EVERCORE_ISI-37-2025",
     "Original_Rank": 37,
-    "Prediction_Text": "\"Our outperform rated sectors are Communication Services, Consumer Discretionary, and Information Technology. Exposure to secular AI trends – as either Enablers or Adopters – features prominently in our selection.\"",
+    "Prediction_Text": "\"Our outperform rated sectors are Communication Services, Consumer Discretionary, and Information Technology. Exposure to secular AI trends â as either Enablers or Adopters â features prominently in our selection.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 5
   },
@@ -239,7 +239,7 @@
   {
     "statements": [
       {
-        "statement": "We expect the equity bull market — which still trails the typical up cycle in both price and duration — to be sustained by an ongoing economic expansion that boosts corporate profits, easing monetary policy, and continued fiscal support.",
+        "statement": "We expect the equity bull market â which still trails the typical up cycle in both price and duration â to be sustained by an ongoing economic expansion that boosts corporate profits, easing monetary policy, and continued fiscal support.",
         "materialized": "YES",
         "reasoning": "This prediction materialized. Vanguard (December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) confirms that 'equities reached new all-time highs on 39 separate occasions' and that 'annual returns well above their historical average' were achieved, supporting the bull market continuation thesis. Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'Equities ended 2025 stronger than many expected after a volatile first half,' and CNBC (December 30, 2025, https://www.cnbc.com/2025/12/30/were-pretty-upbeat-stock-market-experts-expect-continued-growth-bolstered-by-ai-in-2026.html) confirms that 'it will mark the third consecutive year of double-digit returns for investors in the broad U.S. stock market,' validating the sustained bull market thesis driven by economic expansion and corporate profit growth."
       }
@@ -256,7 +256,7 @@
     "justification": "Truist Wealth's prediction was accurate and well-validated. The institution correctly anticipated that the equity bull market would be sustained by ongoing economic expansion, corporate profit growth, and supportive policy conditions. The 2025 outcomes confirmed this thesis with equities reaching 39 all-time highs and delivering above-average annual returns, demonstrating that Truist Wealth had a sound understanding of the fundamental drivers supporting equity performance.",
     "id": "STOCKS-TRUIST_WEALTH-79-2025",
     "Original_Rank": 79,
-    "Prediction_Text": "\"We expect the equity bull market — which still trails the typical up cycle in both price and duration — to be sustained by an ongoing economic expansion that boosts corporate profits, easing monetary policy, and continued fiscal support.\"",
+    "Prediction_Text": "\"We expect the equity bull market â which still trails the typical up cycle in both price and duration â to be sustained by an ongoing economic expansion that boosts corporate profits, easing monetary policy, and continued fiscal support.\"",
     "Institution": "TRUIST WEALTH",
     "Rank": 9
   },
@@ -287,7 +287,7 @@
   {
     "statements": [
       {
-        "statement": "In addition to solid corporate and economic fundamentals, the new administration's focus on business-friendly policies, including the potential reduction of the corporate tax rate and reduced regulation, should support the US equity market's move higher.",
+        "statement": "In addition to solid corporate and economic fundamentals, the new administrationâs focus on business-friendly policies, including the potential reduction of the corporate tax rate and reduced regulation, should support the US equity marketâs move higher.",
         "materialized": "YES",
         "reasoning": "This prediction proved accurate. Reuters (December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025.' Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'equities ended 2025 stronger than many expected,' with performance driven by patterns echoing 2017, Trump's first term. The sources confirm that business-friendly policies and regulatory relief supported market performance. U.S. equities did move higher in 2025, validating the prediction's core thesis about policy support."
       },
@@ -314,7 +314,7 @@
     "justification": "BNY's prediction about U.S. equity support from business-friendly policies and rate cuts proved highly accurate for 2025. The firm correctly anticipated that Trump's policy agenda would drive market performance, that rate cuts would support equity advances without triggering recession, and that double-digit returns would materialize. This was one of the most successful predictions evaluated, as all three components of the thesis were validated by actual market outcomes.",
     "id": "STOCKS-BNY-99-2025",
     "Original_Rank": 99,
-    "Prediction_Text": "\"In addition to solid corporate and economic fundamentals, the new administration's focus on business-friendly policies, including the potential reduction of the corporate tax rate and reduced regulation, should support the US equity market's move higher. History tells us that stocks tend to advance following an initial rate cut as long as a recession is avoided, which is our expectation. In fact, under these circumstances, stocks tend to earn double-digit returns.\"",
+    "Prediction_Text": "\"In addition to solid corporate and economic fundamentals, the new administrationâs focus on business-friendly policies, including the potential reduction of the corporate tax rate and reduced regulation, should support the US equity marketâs move higher. History tells us that stocks tend to advance following an initial rate cut as long as a recession is avoided, which is our expectation. In fact, under these circumstances, stocks tend to earn double-digit returns.\"",
     "Institution": "BNY",
     "Rank": 11
   },
@@ -326,7 +326,7 @@
         "reasoning": "This prediction materialized as evidenced by market volatility in 2025. SOURCE 17 (Vanguard, December 2025, https://ukd-ics.ecs.itlp.c1.vanguard.com/articles/latest-thoughts/investing-success/the-biggest-investing-lesson-of-2025-keep-your-cool) documents 'global stock markets dropping 17% from their February peak to April's low,' corresponding to the period of tariff policy uncertainty. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) describes 'a volatile first half,' and SOURCE 16 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms Trump's policy agenda 'proved to be a key market driver in 2025 – particularly in the first half of the year.' The intersection of policy uncertainty and elevated valuations did indeed produce volatility."
       },
       {
-        "statement": "While long term \"buy and hold\" investors will be best served by looking through the volatility, active investors will be able to take advantage of ebbs and flows in sentiment and positioning.",
+        "statement": "While long term âbuy and holdâ investors will be best served by looking through the volatility, active investors will be able to take advantage of ebbs and flows in sentiment and positioning.",
         "materialized": "YES",
         "reasoning": "This prediction materialized as validated by actual 2025 outcomes. SOURCE 17 (Vanguard, December 2025, https://ukd-ics.ecs.itlp.c1.vanguard.com/articles/latest-thoughts/investing-success/the-biggest-investing-lesson-of-2025-keep-your-cool) explicitly demonstrates this dynamic: 'if an investor sold their investments and moved to cash on 8 April and then re-entered the market on 12 May – after the recovery was underway – they would be far worse off than if they'd stayed invested throughout.' This validates that buy-and-hold investors were rewarded while those trying to time the volatility were penalized. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms 'Equities ended 2025 stronger than many expected after a volatile first half,' supporting the thesis that staying invested through volatility was the optimal strategy."
       }
@@ -343,7 +343,7 @@
     "justification": "Evercore ISI's prediction about volatility and investor behavior proved highly accurate. They correctly anticipated that U.S. policy uncertainty would create volatility, and their guidance that buy-and-hold investors would be rewarded while active traders would struggle was validated by the April drawdown and subsequent recovery. The institution demonstrated sound understanding of market dynamics and investor psychology in 2025.",
     "id": "STOCKS-EVERCORE_ISI-107-2025",
     "Original_Rank": 107,
-    "Prediction_Text": "\"Volatility will rise given the unknown knowns of US policy changes intersecting with historically elevated valuations. While long term \"buy and hold\" investors will be best served by looking through the volatility, active investors will be able to take advantage of ebbs and flows in sentiment and positioning.\"",
+    "Prediction_Text": "\"Volatility will rise given the unknown knowns of US policy changes intersecting with historically elevated valuations. While long term âbuy and holdâ investors will be best served by looking through the volatility, active investors will be able to take advantage of ebbs and flows in sentiment and positioning.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 12
   },
@@ -495,7 +495,7 @@
   {
     "statements": [
       {
-        "statement": "While numerous challenges and risks persist — most notably ongoing economic weakness in Europe and parts of Asia — the depressed valuations in these regions create attractive entry points for long-term investors in firms generating resilient economic returns.",
+        "statement": "While numerous challenges and risks persist â most notably ongoing economic weakness in Europe and parts of Asia â the depressed valuations in these regions create attractive entry points for long-term investors in firms generating resilient economic returns.",
         "materialized": "YES",
         "reasoning": "This prediction materialized significantly in 2025. According to CNBC's 'Global stock markets' winners and losers of 2025' (December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html), 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains' and 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target.' Additionally, Reuters' 'Global demand for US stocks isn't waning' (December 2, 2025, https://www.reuters.com/markets/us/global-demand-us-stocks-isnt-waning-its-increasing-2025-12-02/) notes that 'the MSCI Asia ex-Japan index has increased nearly 25%,' validating that depressed valuations in these regions did indeed create attractive entry points that generated strong returns for long-term investors."
       }
@@ -512,7 +512,7 @@
     "justification": "Principal Asset Management's prediction about attractive valuations in Europe and Asia proving to be entry points for long-term investors was highly accurate. The institution correctly anticipated that despite economic challenges, these regions would deliver strong returns, with Europe and Asia significantly outperforming U.S. equities in 2025, validating the contrarian positioning in overlooked markets.",
     "id": "STOCKS-PRINCIPAL_ASSET_MANAGEMENT-132-2025",
     "Original_Rank": 132,
-    "Prediction_Text": "\"While numerous challenges and risks persist — most notably ongoing economic weakness in Europe and parts of Asia — the depressed valuations in these regions create attractive entry points for long-term investors in firms generating resilient economic returns.\"",
+    "Prediction_Text": "\"While numerous challenges and risks persist â most notably ongoing economic weakness in Europe and parts of Asia â the depressed valuations in these regions create attractive entry points for long-term investors in firms generating resilient economic returns.\"",
     "Institution": "PRINCIPAL ASSET MANAGEMENT",
     "Rank": 18
   },
@@ -771,7 +771,7 @@
   {
     "statements": [
       {
-        "statement": "In equities, US valuations are well above average and stocks' upside will thus mainly depend on EPS growth.",
+        "statement": "In equities, US valuations are well above average and stocksâ upside will thus mainly depend on EPS growth.",
         "materialized": "YES",
         "reasoning": "This statement was validated by 2025 outcomes. Bloomberg's December 2025 report (https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms that 'Large cap and growth equities outperformed' and that 'companies with strong earnings resilience continued to attract investor interest,' indicating that EPS growth was indeed the primary driver of returns. Nasdaq's December 2025 article (https://www.nasdaq.com/articles/here-are-top-performing-sp-500-stocks-2025) documents exceptional returns for stocks with strong earnings revisions, supporting the EPS-driven thesis."
       },
@@ -803,7 +803,7 @@
     "justification": "HSBC Global Private Banking's prediction was largely accurate in identifying EPS growth as the key driver and the importance of innovation and structural trends, which materialized strongly in 2025. However, the institution's principal overweight on US equities proved suboptimal, as international markets significantly outperformed. The diversification strategy into multiple sectors was sound and aligned with actual market performance, but the geographic allocation was misguided.",
     "id": "STOCKS-HSBC_GLOBAL_PRIVATE_BANKING-47-2025",
     "Original_Rank": 47,
-    "Prediction_Text": "\"In equities, US valuations are well above average and stocks' upside will thus mainly depend on EPS growth. So we look for companies that can innovate and be well-positioned for structural trends. The US remains our principal equities overweight, together with the UK, India, Singapore and Japan. We remain overweight on technology but continue to diversify into communication services, financials, industrials, healthcare, and utilities.\"",
+    "Prediction_Text": "\"In equities, US valuations are well above average and stocksâ upside will thus mainly depend on EPS growth. So we look for companies that can innovate and be well-positioned for structural trends. The US remains our principal equities overweight, together with the UK, India, Singapore and Japan. We remain overweight on technology but continue to diversify into communication services, financials, industrials, healthcare, and utilities.\"",
     "Institution": "HSBC GLOBAL PRIVATE BANKING",
     "Rank": 27
   },
@@ -912,7 +912,7 @@
   {
     "statements": [
       {
-        "statement": "Europe's growth outlook is subdued, although equities could get some support from lower interest rates and the improvement in real incomes via lower inflation.",
+        "statement": "Europeâs growth outlook is subdued, although equities could get some support from lower interest rates and the improvement in real incomes via lower inflation.",
         "materialized": "YES",
         "reasoning": "This prediction proved accurate. CNBC's December 31, 2025 report (https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target, and interest rates settled at levels that are highly supportive for bank profitability.' The report notes that 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains, ranking among the world's top performers,' validating the prediction that lower rates and inflation would support European equities despite subdued growth. The mechanism described—support from lower rates and improved real incomes—directly matches the actual market dynamics."
       },
@@ -939,7 +939,7 @@
     "justification": "AXA Investment Managers' European equity analysis proved largely accurate for 2025. The firm correctly anticipated that lower interest rates and inflation would support European equities despite subdued growth, and the prediction about more attractive valuations was validated by strong European market performance. However, the specific claim about earnings growth differentials cannot be fully confirmed from the available data, making this a partially successful prediction that correctly identified the key drivers of European outperformance.",
     "id": "STOCKS-AXA_INVESTMENT_MANAGERS-93-2025",
     "Original_Rank": 93,
-    "Prediction_Text": "\"Europe's growth outlook is subdued, although equities could get some support from lower interest rates and the improvement in real incomes via lower inflation. European stocks benefit from more attractive valuations than in the US, and they boast a higher dividend yield. But expected earnings growth is only about half that forecast for the US.\"",
+    "Prediction_Text": "\"Europeâs growth outlook is subdued, although equities could get some support from lower interest rates and the improvement in real incomes via lower inflation. European stocks benefit from more attractive valuations than in the US, and they boast a higher dividend yield. But expected earnings growth is only about half that forecast for the US.\"",
     "Institution": "AXA INVESTMENT MANAGERS",
     "Rank": 31
   },
@@ -985,12 +985,12 @@
         "reasoning": "This prediction materialized in 2025. Bloomberg's 'Looking back at 2025: Equities' (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms that 'Large cap and growth equities outperformed,' implying that mega-cap valuations were indeed stretched. More importantly, the same source notes that 'International equities outpaced the U.S. amid broad global strength,' validating the prediction that valuations outside the U.S. were more reasonable. CNBC's 'Global stock markets' winners and losers of 2025' (December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) documents that 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains' and that 'South Korea's stock market was a standout performer,' confirming that valuations outside the U.S. and away from mega-caps offered better opportunities."
       },
       {
-        "statement": "Equity investors have grown used to a small number of large companies powering the stock market's gains; however, this pattern is already changing.",
+        "statement": "Equity investors have grown used to a small number of large companies powering the stock marketâs gains; however, this pattern is already changing.",
         "materialized": "YES",
         "reasoning": "This prediction materialized in 2025. Bloomberg's 'Looking back at 2025: Equities' (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) explicitly states that 'Large cap and growth equities outperformed,' but also notes that 'The equity style leadership pattern from 2017 repeated, with investors rewarding earnings durability and high-quality balance sheets,' suggesting a broadening beyond just mega-cap dominance. Vanguard's 'Q4 2025: Markets continue to climb a wall of worry' (December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) notes that 'Non-U.S. equity markets far outpaced their U.S. counterparts, delivering robust returns of approximately 32% for the year,' indicating that the pattern of mega-cap dominance was indeed changing as international markets gained prominence."
       },
       {
-        "statement": "We think there is potential for markets to broaden out further in the US, particularly given Trump's focus on deregulation and corporate tax cuts.",
+        "statement": "We think there is potential for markets to broaden out further in the US, particularly given Trumpâs focus on deregulation and corporate tax cuts.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. Reuters' 'What just happened? Ten charts to help make sense of markets 2025' (December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025,' supporting the thesis that Trump's policies influenced market dynamics. However, the evidence regarding broadening within the U.S. market is limited. While Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'Large cap and growth equities outperformed,' suggesting continued concentration rather than broadening, the sources do not provide specific evidence that deregulation and tax cuts led to meaningful broadening within U.S. equities, only that international markets outpaced the U.S."
       }
@@ -1007,7 +1007,7 @@
     "justification": "Schroders' prediction about expensive mega-cap valuations and more reasonable valuations outside the U.S. proved highly accurate, as international equities significantly outperformed U.S. equities in 2025. The institution correctly identified the shift away from mega-cap dominance, though the specific prediction about U.S. market broadening driven by Trump's deregulation and tax cuts is less clearly validated by available evidence, suggesting the international call was stronger than the domestic broadening thesis.",
     "id": "STOCKS-SCHRODERS-137-2025",
     "Original_Rank": 137,
-    "Prediction_Text": "\"The S&P 500 is looking expensive but valuations away from the mega caps and outside of the US appear more reasonable. Equity investors have grown used to a small number of large companies powering the stock market's gains; however, this pattern is already changing. We think there is potential for markets to broaden out further in the US, particularly given Trump's focus on deregulation and corporate tax cuts.\"",
+    "Prediction_Text": "\"The S&P 500 is looking expensive but valuations away from the mega caps and outside of the US appear more reasonable. Equity investors have grown used to a small number of large companies powering the stock marketâs gains; however, this pattern is already changing. We think there is potential for markets to broaden out further in the US, particularly given Trumpâs focus on deregulation and corporate tax cuts.\"",
     "Institution": "SCHRODERS",
     "Rank": 33
   },
@@ -1126,7 +1126,7 @@
   {
     "statements": [
       {
-        "statement": "Broad based earnings growth, a \"still easing\" Fed, generative AI and a business-friendly Trump administration support S&P 500 upside in 2025.",
+        "statement": "Broad based earnings growth, a âstill easingâ Fed, generative AI and a business-friendly Trump administration support S&P 500 upside in 2025.",
         "materialized": "YES",
         "reasoning": "This prediction materialized across multiple dimensions. Broad-based earnings growth occurred - JPMorgan Wealth Management noted that every sector in the S&P 500 is expected to deliver positive earnings growth in 2025, which hasn't happened since 2018 (Source 6: DATA_ID 6). The Fed easing and Trump administration's business-friendly policies were confirmed as market drivers (Source 16: Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/). AI remained a key driver of market performance throughout 2025 (Source 1: Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/). The S&P 500 delivered positive returns despite volatility."
       },
@@ -1148,7 +1148,7 @@
     "justification": "Evercore ISI's prediction was strong on identifying the key drivers of market performance (broad earnings growth, Fed easing, AI, Trump policies) but overestimated the S&P 500 price target at 6,800. The institution correctly anticipated the fundamental support for equities and provided reasonable earnings growth estimates, but their price target proved too optimistic, suggesting they may have overestimated valuation multiple expansion.",
     "id": "STOCKS-EVERCORE_ISI-4-2025",
     "Original_Rank": 4,
-    "Prediction_Text": "\"Broad based earnings growth, a \"still easing\" Fed, generative AI and a business-friendly Trump administration support S&P 500 upside in 2025. Evercore ISI Strategy forecasts a year-end 2025 S&P 500 price target of 6,800. 2025e EPS is forecast to rise 9.6% to $263 while 2026e EPS is forecast to increase 9% to $287.\"",
+    "Prediction_Text": "\"Broad based earnings growth, a âstill easingâ Fed, generative AI and a business-friendly Trump administration support S&P 500 upside in 2025. Evercore ISI Strategy forecasts a year-end 2025 S&P 500 price target of 6,800. 2025e EPS is forecast to rise 9.6% to $263 while 2026e EPS is forecast to increase 9% to $287.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 37
   },
@@ -1436,7 +1436,7 @@
   {
     "statements": [
       {
-        "statement": "Conditions appear favorable for broader market participation to continue, boosted by incoming President-elect Donald Trump's business-friendly policy agenda.",
+        "statement": "Conditions appear favorable for broader market participation to continue, boosted by incoming President-elect Donald Trumpâs business-friendly policy agenda.",
         "materialized": "YES",
         "reasoning": "This prediction proved accurate. Reuters (December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025 – particularly in the first half of the year.' Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'equities ended 2025 stronger than many expected,' with broad market participation evidenced by the fact that 'equities reached new all-time highs on 39 separate occasions.' The business-friendly policy agenda did support broader market participation throughout 2025."
       },
@@ -1458,14 +1458,14 @@
     "justification": "Capital Group's prediction about favorable conditions from Trump's business-friendly policies proved largely accurate, as the policy agenda did drive market performance in 2025. However, the specific claim about regulatory easing for particular sectors and defense spending increases lacks explicit validation in the available sources. The firm correctly identified the broad policy support theme but provided sector-specific details that cannot be fully confirmed from the market outcome data provided.",
     "id": "STOCKS-CAPITAL_GROUP-100-2025",
     "Original_Rank": 100,
-    "Prediction_Text": "\"Conditions appear favorable for broader market participation to continue, boosted by incoming President-elect Donald Trump's business-friendly policy agenda. Priorities include easing regulations for banks, energy and health care companies, as well as increasing defense spending.\"",
+    "Prediction_Text": "\"Conditions appear favorable for broader market participation to continue, boosted by incoming President-elect Donald Trumpâs business-friendly policy agenda. Priorities include easing regulations for banks, energy and health care companies, as well as increasing defense spending.\"",
     "Institution": "CAPITAL GROUP",
     "Rank": 47
   },
   {
     "statements": [
       {
-        "statement": "The build-out of data centres, a rebound in global travel demand and new energy sources are creating growth opportunities for Europe's industrial titans.",
+        "statement": "The build-out of data centres, a rebound in global travel demand and new energy sources are creating growth opportunities for Europeâs industrial titans.",
         "materialized": "PARTIAL",
         "reasoning": "The prediction about growth opportunities for European industrial companies partially materialized. According to SOURCE 3 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html), European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains, and 'economic growth in Europe surprised to the upside.' However, the sources do not specifically validate the three cited drivers (data centres, travel demand, new energy sources) as the primary catalysts. SOURCE 16 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) mentions that 'Asia widened its lead, representing nearly 70% of the global rise in solar generation,' suggesting new energy growth was concentrated in Asia rather than Europe. The prediction was directionally correct about European opportunity but the specific drivers are not fully validated."
       },
@@ -1487,7 +1487,7 @@
     "justification": "Capital Group correctly anticipated that European companies would face headwinds from U.S. tariff policies, which materialized as a significant market driver in 2025. However, their specific identification of data centres, travel demand, and new energy sources as primary growth drivers for European industrials was only partially validated, with evidence suggesting new energy growth was concentrated in Asia rather than Europe. The institution's cautious monitoring stance proved prudent given the actual tariff-driven volatility that emerged.",
     "id": "STOCKS-CAPITAL_GROUP-101-2025",
     "Original_Rank": 101,
-    "Prediction_Text": "\"The build-out of data centres, a rebound in global travel demand and new energy sources are creating growth opportunities for Europe's industrial titans. Although, tariff proposals in the US could pose headwinds for European companies so we are monitoring developments closely.\"",
+    "Prediction_Text": "\"The build-out of data centres, a rebound in global travel demand and new energy sources are creating growth opportunities for Europeâs industrial titans. Although, tariff proposals in the US could pose headwinds for European companies so we are monitoring developments closely.\"",
     "Institution": "CAPITAL GROUP",
     "Rank": 48
   },
@@ -1499,7 +1499,7 @@
         "reasoning": "This prediction materialized strongly. Reuters' December 31, 2025 article (https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) explicitly states: 'When we look back on 2025, international stock markets dominated U.S. equity performance.' Vanguard's Q4 2025 report (December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) confirms 'Non-U.S. equity markets far outpaced their U.S. counterparts, delivering robust returns of approximately 32% for the year, as of December 31,' compared to U.S. returns of approximately 15-20%, validating the convergence thesis."
       },
       {
-        "statement": "Neglected parts of global stock markets — such as value stocks — have an opportunity to catch up.",
+        "statement": "Neglected parts of global stock markets â such as value stocks â have an opportunity to catch up.",
         "materialized": "PARTIAL",
         "reasoning": "While value stocks did see some recovery, the evidence is mixed. Bloomberg's December 2025 'Looking back at 2025: Equities' (https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'Large cap and growth equities outperformed' and 'companies with strong earnings resilience continued to attract investor interest even as shareholder-yield strategies lagged.' This suggests value and dividend-focused strategies underperformed relative to growth, contradicting the catch-up thesis. However, the article also mentions that the 2017 pattern repeated with 'investors rewarding earnings durability,' which could partially support value recovery in select segments."
       }
@@ -1516,7 +1516,7 @@
     "justification": "HSBC Asset Management's prediction was substantially correct on international outperformance, accurately forecasting that non-U.S. markets would significantly outpace U.S. equities in 2025. However, the institution was incorrect about value stock catch-up, as growth and large-cap equities continued to dominate performance. The prediction demonstrated strong insight into geographic diversification benefits but missed the continued momentum advantage of growth over value.",
     "id": "STOCKS-HSBC_ASSET_MANAGEMENT-112-2025",
     "Original_Rank": 112,
-    "Prediction_Text": "\"We expect GDP and profit growth to converge in advanced economies, suggesting that investment markets outside of the US have room to perform. Neglected parts of global stock markets — such as value stocks — have an opportunity to catch up.\"",
+    "Prediction_Text": "\"We expect GDP and profit growth to converge in advanced economies, suggesting that investment markets outside of the US have room to perform. Neglected parts of global stock markets â such as value stocks â have an opportunity to catch up.\"",
     "Institution": "HSBC ASSET MANAGEMENT",
     "Rank": 49
   },
@@ -1552,7 +1552,7 @@
   {
     "statements": [
       {
-        "statement": "A shift in sentiment and earnings for European equities will depend largely on a rebound in China, a manufacturing upturn or stronger consumer spending — all challenging to overcome in 2025.",
+        "statement": "A shift in sentiment and earnings for European equities will depend largely on a rebound in China, a manufacturing upturn or stronger consumer spending â all challenging to overcome in 2025.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially correct but overly pessimistic. While the conditions identified (China rebound, manufacturing upturn, consumer spending) were indeed challenging, European equities actually delivered strong performance despite these headwinds. CNBC's December 31, 2025 article (https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) states 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains' with 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target.' The prediction correctly identified the challenges but underestimated European resilience and domestic growth drivers."
       },
@@ -1574,7 +1574,7 @@
     "justification": "JPMorgan Asset Management's prediction was partially accurate, correctly identifying European valuation opportunities and the importance of buybacks/dividends, which did drive strong performance. However, the institution was overly pessimistic about European earnings prospects, underestimating the continent's ability to deliver growth despite China headwinds and manufacturing challenges. The prediction's tactical recommendations on sector selection proved sound, but the macro earnings outlook was too conservative.",
     "id": "STOCKS-JPMORGAN_ASSET_MANAGEMENT-117-2025",
     "Original_Rank": 117,
-    "Prediction_Text": "\"A shift in sentiment and earnings for European equities will depend largely on a rebound in China, a manufacturing upturn or stronger consumer spending — all challenging to overcome in 2025. However sector-level discounts, combined with healthy buybacks and dividend yields, present compelling opportunities in select European companies.\"",
+    "Prediction_Text": "\"A shift in sentiment and earnings for European equities will depend largely on a rebound in China, a manufacturing upturn or stronger consumer spending â all challenging to overcome in 2025. However sector-level discounts, combined with healthy buybacks and dividend yields, present compelling opportunities in select European companies.\"",
     "Institution": "JPMORGAN ASSET MANAGEMENT",
     "Rank": 51
   },
@@ -1610,7 +1610,7 @@
   {
     "statements": [
       {
-        "statement": "Energy demand is growing exponentially, but supply and transmission aren't keeping pace.",
+        "statement": "Energy demand is growing exponentially, but supply and transmission arenât keeping pace.",
         "materialized": "YES",
         "reasoning": "This prediction materialized in 2025. The evidence confirms that energy demand dynamics were a significant market theme. Asia widened its lead with nearly 70% of the global rise in solar generation in 2025 and a record 59% of all utility-supplied solar power (SOURCE: 'What just happened? Ten charts to help make sense of markets 2025', Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/). Solar was identified as one of the innovation-driven themes that recorded strong growth (SOURCE: 'Looking back at 2025: Equities | Insights', Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/), indicating that energy supply-demand imbalances were indeed a market driver."
       },
@@ -1632,7 +1632,7 @@
     "justification": "Nuveen's energy thesis was partially validated in 2025. Their identification of energy supply-demand imbalances proved accurate, and green energy technologies did indeed record strong growth. However, the prediction lacked specificity on nuclear and natural gas performance, and the actual market focus was more heavily weighted toward solar and renewable technologies rather than a balanced energy portfolio approach.",
     "id": "STOCKS-NUVEEN-128-2025",
     "Original_Rank": 128,
-    "Prediction_Text": "\"Energy demand is growing exponentially, but supply and transmission aren't keeping pace. This imbalance suggests investing in green energy technologies, nuclear power and natural gas production to help fill the supply/demand gap as renewables ramp up.\"",
+    "Prediction_Text": "\"Energy demand is growing exponentially, but supply and transmission arenât keeping pace. This imbalance suggests investing in green energy technologies, nuclear power and natural gas production to help fill the supply/demand gap as renewables ramp up.\"",
     "Institution": "NUVEEN",
     "Rank": 53
   },
@@ -1673,7 +1673,7 @@
         "reasoning": "This prediction materialized in 2025. Bloomberg's 'Looking back at 2025: Equities' (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) confirms that 'companies with strong earnings resilience continued to attract investor interest,' validating the earnings support thesis. CNBC's 'Stock market news for Dec. 18, 2025' (December 18, 2025, https://www.cnbc.com/2025/12/17/stock-market-today-live-updates.html) documents strong U.S. earnings results, with companies beating analyst expectations. Additionally, Vanguard's 'Q4 2025: Markets continue to climb a wall of worry' (December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) notes that 'equities reached new all-time highs on 39 separate occasions,' indicating that the resilient economic backdrop did indeed support earnings and equity valuations."
       },
       {
-        "statement": "Outside the US, we expect Japanese equities to move sideways due to potential volatility, while Chinese equities may struggle in sustaining higher growth and strong performance despite the short-term relief from the country's stimulus program.",
+        "statement": "Outside the US, we expect Japanese equities to move sideways due to potential volatility, while Chinese equities may struggle in sustaining higher growth and strong performance despite the short-term relief from the countryâs stimulus program.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. The Japanese equities call is difficult to assess from available sources, as the data does not provide specific performance metrics for Japanese equities in 2025. However, BlackRock's '2026 Investment Outlook' (December 2025, https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/outlook) indicates an 'Overweight' position on Japan, suggesting potential for movement beyond sideways. Regarding Chinese equities, State Street's prediction about struggling growth appears partially validated. Reuters' 'Markets in 2025: Gold, Goldilocks and the dollar bears' (December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) notes that 'Asia widened its lead,' but does not specifically address China's performance relative to stimulus expectations. The sources do not provide sufficient granular data on China's equity performance to fully validate or refute this specific prediction."
       }
@@ -1690,7 +1690,7 @@
     "justification": "State Street's prediction about resilient earnings support in the U.S. proved accurate and was validated by strong corporate results throughout 2025. However, the specific regional calls for Japan and China lack sufficient supporting evidence in the available sources, making it difficult to assess whether the institution correctly anticipated these markets' performance, suggesting the U.S. earnings call was more reliable than the regional forecasts.",
     "id": "STOCKS-STATE_STREET-139-2025",
     "Original_Rank": 139,
-    "Prediction_Text": "\"Within global equity markets, the resilient economic backdrop provides support for earnings, particularly in the US. Outside the US, we expect Japanese equities to move sideways due to potential volatility, while Chinese equities may struggle in sustaining higher growth and strong performance despite the short-term relief from the country's stimulus program.\"",
+    "Prediction_Text": "\"Within global equity markets, the resilient economic backdrop provides support for earnings, particularly in the US. Outside the US, we expect Japanese equities to move sideways due to potential volatility, while Chinese equities may struggle in sustaining higher growth and strong performance despite the short-term relief from the countryâs stimulus program.\"",
     "Institution": "STATE STREET",
     "Rank": 55
   },
@@ -1726,7 +1726,7 @@
   {
     "statements": [
       {
-        "statement": "We don't think pricey US equity valuations alone will trigger a near-term reassessment.",
+        "statement": "We donât think pricey US equity valuations alone will trigger a near-term reassessment.",
         "materialized": "YES",
         "reasoning": "This prediction proved accurate. Despite elevated U.S. equity valuations, markets did not experience a significant near-term reassessment in 2025. Source 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'Equities ended 2025 stronger than many expected after a volatile first half,' indicating that valuations did not trigger a sustained market correction. Source 6 (Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) confirms that 'equities reached new all-time highs on 39 separate occasions,' demonstrating that high valuations did not prevent continued market appreciation."
       },
@@ -1748,7 +1748,7 @@
     "justification": "BlackRock's prediction that elevated U.S. valuations alone would not trigger a near-term reassessment proved accurate, as markets continued to reach new highs throughout 2025. Their cautious stance about being ready to adjust if markets became overexuberant appears reasonable given the actual market dynamics, though the sources do not provide specific evidence of tactical adjustments made during the year. The institution correctly anticipated that valuation concerns would not derail the 2025 bull market.",
     "id": "STOCKS-BLACKROCK_INVESTMENT_INSTITUTE-155-2025",
     "Original_Rank": 155,
-    "Prediction_Text": "\"We don't think pricey US equity valuations alone will trigger a near-term reassessment. But we are ready to adjust if markets become overexuberant.\"",
+    "Prediction_Text": "\"We donât think pricey US equity valuations alone will trigger a near-term reassessment. But we are ready to adjust if markets become overexuberant.\"",
     "Institution": "BLACKROCK INVESTMENT INSTITUTE",
     "Rank": 57
   },
@@ -1847,7 +1847,7 @@
         "reasoning": "This statement materialized strongly. Source 5 (Reuters, December 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) explicitly states 'When we look back on 2025, international stock markets dominated U.S. equity performance.' Source 6 (Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) confirms 'Non-U.S. equity markets far outpaced their U.S. counterparts, delivering robust returns of approximately 32% for the year, as of December 31.' Source 3 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes that 'The MSCI All Country World Index...has climbed over 21% since the start of the year' and highlights strong performance in European markets and South Korea."
       },
       {
-        "statement": "China's policy support will need to continue if it is to meet the magnitude of the country's economic challenges.",
+        "statement": "Chinaâs policy support will need to continue if it is to meet the magnitude of the countryâs economic challenges.",
         "materialized": "YES",
         "reasoning": "This statement materialized as an accurate assessment. Source 3 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes that 'Deutsche Bank said that Asia's outlook will depend on policy flexibility, currency trends and the sustainability of AI-related demand, warning that earnings expectations in parts of the region may be vulnerable as global trade momentum fades.' This confirms that China's continued policy support remained critical for addressing economic challenges, validating Janus Henderson's forward-looking assessment."
       },
@@ -1874,7 +1874,7 @@
     "justification": "Janus Henderson's prediction to look beyond the U.S. proved exceptionally prescient, as international markets significantly outperformed U.S. equities in 2025. The institution correctly identified the importance of policy support in Asia and the attractiveness of non-U.S. markets with lower valuations. However, the specific mechanisms through which European exporters would benefit from China support and the precise impact of India and Japan reforms remain partially validated, suggesting the institution's geographic diversification call was sound even if some of the underlying rationales were incomplete.",
     "id": "STOCKS-JANUS_HENDERSON-163-2025",
     "Original_Rank": 163,
-    "Prediction_Text": "\"Outside of the US, lower premiums and upside potential warrant a second look. China's policy support will need to continue if it is to meet the magnitude of the country's economic challenges. This, in turn, could support select European companies that export to China. Other areas of interest include India, where reforms are helping create a high-growth backdrop, and Japan, where supportive corporate governance reforms are being enacted.\"",
+    "Prediction_Text": "\"Outside of the US, lower premiums and upside potential warrant a second look. Chinaâs policy support will need to continue if it is to meet the magnitude of the countryâs economic challenges. This, in turn, could support select European companies that export to China. Other areas of interest include India, where reforms are helping create a high-growth backdrop, and Japan, where supportive corporate governance reforms are being enacted.\"",
     "Institution": "JANUS HENDERSON",
     "Rank": 61
   },
@@ -2070,12 +2070,12 @@
   {
     "statements": [
       {
-        "statement": "Europe's domestic productivity woes do not mean that investors should ignore the top European companies.",
+        "statement": "Europeâs domestic productivity woes do not mean that investors should ignore the top European companies.",
         "materialized": "YES",
         "reasoning": "The prediction correctly noted that despite Europe's productivity challenges, top European companies remained worthy of investor attention. This proved accurate in 2025. Source 3 (CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) documents that European markets delivered strong gains, and Source 16 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that European stock outperformance was driven by 'increasing U.S. isolationism' and expectations for a 'European economic reboot.' The top European companies clearly attracted investor interest and delivered strong returns, validating the prediction's assertion."
       },
       {
-        "statement": "The 50 largest European companies derive only about 40% of their revenues from Europe, and the \"national champions\" within this cohort are dominant global players and best-in-class operators.",
+        "statement": "The 50 largest European companies derive only about 40% of their revenues from Europe, and the ânational championsâ within this cohort are dominant global players and best-in-class operators.",
         "materialized": "YES",
         "reasoning": "This statement provided factual context about European multinational companies' global revenue exposure. While the sources do not directly verify the 40% figure, the broader point about European companies being global players is supported by the strong performance of European equities in 2025. Source 3 (CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that European markets outperformed despite regional challenges, suggesting that the global nature of these companies' operations did indeed provide resilience. The characterization of these companies as 'best-in-class operators' is supported by their actual market performance in 2025."
       },
@@ -2097,7 +2097,7 @@
     "justification": "JPMorgan Wealth Management demonstrated strong analytical insight into the quality of European multinational companies and their global revenue exposure, correctly identifying that European companies deserved investor attention despite regional productivity challenges. However, the bank's ultimate recommendation to prefer U.S. equities over European equities in 2025 proved to be a significant forecasting error, as European equities substantially outperformed U.S. equities. The prediction's fundamental analysis was sound, but the tactical allocation decision was wrong.",
     "id": "STOCKS-JPMORGAN_WEALTH_MANAGEMENT-54-2025",
     "Original_Rank": 54,
-    "Prediction_Text": "\"Europe's domestic productivity woes do not mean that investors should ignore the top European companies. The 50 largest European companies derive only about 40% of their revenues from Europe, and the \"national champions\" within this cohort are dominant global players and best-in-class operators. That said, we prefer US equities to European equities in 2025.\"",
+    "Prediction_Text": "\"Europeâs domestic productivity woes do not mean that investors should ignore the top European companies. The 50 largest European companies derive only about 40% of their revenues from Europe, and the ânational championsâ within this cohort are dominant global players and best-in-class operators. That said, we prefer US equities to European equities in 2025.\"",
     "Institution": "JPMORGAN WEALTH MANAGEMENT",
     "Rank": 68
   },
@@ -2138,7 +2138,7 @@
   {
     "statements": [
       {
-        "statement": "Banks are our preferred soft-landing play – we expect strong loan growth in a benign growth environment given healthy private sector balance sheets; valuations also remain very attractive.",
+        "statement": "Banks are our preferred soft-landing play â we expect strong loan growth in a benign growth environment given healthy private sector balance sheets; valuations also remain very attractive.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 3 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that 'interest rates settled at levels that are highly supportive for bank profitability,' supporting the soft-landing thesis for banks. However, SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) indicates that 'Large cap and growth equities outperformed,' suggesting that financial stocks may not have significantly outperformed. SOURCE 16 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that 'Financial stocks fall as Trump's credit card rate cap plan rattles investors,' indicating that banks faced headwinds from policy concerns despite the favorable rate environment."
       },
@@ -2165,7 +2165,7 @@
     "justification": "Pictet Asset Management's sector predictions were mixed in their accuracy. The institution correctly identified communication services as a beneficiary of AI and digitalization trends, but overestimated the outperformance of banks and utilities in 2025. While the soft-landing thesis for banks was partially supported by favorable rate conditions, policy headwinds (credit card rate caps) and the dominance of mega-cap growth stocks limited financial sector outperformance.",
     "id": "STOCKS-PICTET_ASSET_MANAGEMENT-68-2025",
     "Original_Rank": 68,
-    "Prediction_Text": "\"Banks are our preferred soft-landing play – we expect strong loan growth in a benign growth environment given healthy private sector balance sheets; valuations also remain very attractive. Utilities are our favourite defensive sector that typically benefits from lower bond yields and has a strong tailwind from increased electricity demand. In communication services we see continued strong earnings dynamics and exposure to secular growth themes of AI and digitalisation.\"",
+    "Prediction_Text": "\"Banks are our preferred soft-landing play â we expect strong loan growth in a benign growth environment given healthy private sector balance sheets; valuations also remain very attractive. Utilities are our favourite defensive sector that typically benefits from lower bond yields and has a strong tailwind from increased electricity demand. In communication services we see continued strong earnings dynamics and exposure to secular growth themes of AI and digitalisation.\"",
     "Institution": "PICTET ASSET MANAGEMENT",
     "Rank": 70
   },
@@ -2381,7 +2381,7 @@
         "reasoning": "The prediction aligns partially with 2025 outcomes. Bloomberg's December 2025 report notes that 'companies with strong earnings resilience continued to attract investor interest' and that 'the equity style leadership pattern from 2017 repeated, with investors rewarding earnings durability and high-quality balance sheets.' However, the data shows international equities significantly outpaced U.S. equities, with non-U.S. markets delivering ~32% returns versus U.S. performance, suggesting a more complex dynamic than a simple 'pre-GFC regime' transition. SOURCE: Bloomberg Professional Insights, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/"
       },
       {
-        "statement": "Earnings, not P/E expansion, will define next year's rally.",
+        "statement": "Earnings, not P/E expansion, will define next yearâs rally.",
         "materialized": "YES",
         "reasoning": "This prediction materialized strongly. Bloomberg's December 2025 report explicitly states that 'Large cap and growth equities outperformed, momentum remained a key factor in market performance' and that earnings durability was rewarded throughout volatility. Wells Fargo's actual 2025 outlook (DATA_ID 18) also emphasized 'Earnings should be the primary driver of 2025 prices.' The market's recovery from April lows and achievement of 39 all-time highs in 2025 was driven by earnings resilience rather than multiple expansion. SOURCE: Bloomberg Professional Insights, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/"
       },
@@ -2408,7 +2408,7 @@
     "justification": "Tallbacken Capital's prediction demonstrated strong accuracy on the earnings-driven rally thesis, which materialized throughout 2025 as companies with earnings resilience outperformed. However, the prediction underestimated the significant outperformance of international equities and the complexity of market dynamics beyond a simple 'pre-GFC regime' transition. The forward-looking margin expansion thesis for 2026 remains uncertain pending actual earnings results and policy implementation.",
     "id": "STOCKS-TALLBACKEN_CAPITAL-11-2025",
     "Original_Rank": 11,
-    "Prediction_Text": "\"The transition to a pre-GFC regime continues for older economy companies. Earnings, not P/E expansion, will define next year's rally. We estimate 5% growth in the SPX Equal Weight Index in 2025 and up to 8% from 2025 to 2026. Our presumption is that de-regulation and AI will help boost margins in 2026.\"",
+    "Prediction_Text": "\"The transition to a pre-GFC regime continues for older economy companies. Earnings, not P/E expansion, will define next yearâs rally. We estimate 5% growth in the SPX Equal Weight Index in 2025 and up to 8% from 2025 to 2026. Our presumption is that de-regulation and AI will help boost margins in 2026.\"",
     "Institution": "TALLBACKEN CAPITAL",
     "Rank": 77
   },
@@ -2672,7 +2672,7 @@
         "reasoning": "This prediction materialized strongly throughout 2025. Bloomberg's December 2025 report confirms that 'companies with strong earnings resilience continued to attract investor interest' and that 'the equity style leadership pattern from 2017 repeated, with investors rewarding earnings durability and high-quality balance sheets throughout bouts of market volatility.' The market's recovery from April lows and achievement of 39 all-time highs was driven by earnings strength rather than multiple expansion. SOURCE: Bloomberg Professional Insights, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/"
       },
       {
-        "statement": "We expect that a broadening and acceleration of economic growth, spurred on by a Fed easing cycle, significant new deregulation, and resilient consumer, should fuel healthy top-line sales growth while the past two years' focus on cost control should help turn revenue growth into profit growth.",
+        "statement": "We expect that a broadening and acceleration of economic growth, spurred on by a Fed easing cycle, significant new deregulation, and resilient consumer, should fuel healthy top-line sales growth while the past two yearsâ focus on cost control should help turn revenue growth into profit growth.",
         "materialized": "PARTIAL",
         "reasoning": "The prediction's components show mixed results. Trump's deregulation agenda was confirmed as a key market driver per Reuters (December 31, 2025), and consumer resilience was evident in earnings beats. However, the 'Fed easing cycle' component is ambiguous—while the Fed did ease, long-dated yields rose significantly (30-year yield reached 4.8670%, its highest since early September per Reuters December 15, 2025). Economic growth acceleration is not clearly documented; Vanguard's 2026 forecast projects only 2.25% U.S. growth. The profit growth from cost control appears to have occurred, but the broader economic acceleration thesis is not fully supported. SOURCE: Reuters, December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/; Reuters, December 15, 2025, https://www.reuters.com/markets/us/global-markets-charts-roi-column-graphics-2025-12-15/; Vanguard, December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf"
       },
@@ -2694,7 +2694,7 @@
     "justification": "Wells Fargo Investment Institute correctly identified earnings as the primary driver of 2025 equity performance, which materialized throughout the year. However, the institution's broader economic growth acceleration thesis was only partially realized, and the specific S&P 500 year-end target of 6,600 was missed. The prediction demonstrated strong insight into earnings dynamics but overestimated the magnitude of economic acceleration and failed to accurately forecast the precise index level.",
     "id": "STOCKS-WELLS_FARGO_INVESTMENT_INSTITUTE-13-2025",
     "Original_Rank": 13,
-    "Prediction_Text": "\"Earnings should be the primary driver of 2025 prices across equity asset classes. We expect that a broadening and acceleration of economic growth, spurred on by a Fed easing cycle, significant new deregulation, and resilient consumer, should fuel healthy top-line sales growth while the past two years' focus on cost control should help turn revenue growth into profit growth. Year-end 2025 S&P 500 Index midpoint of 6,600.\"",
+    "Prediction_Text": "\"Earnings should be the primary driver of 2025 prices across equity asset classes. We expect that a broadening and acceleration of economic growth, spurred on by a Fed easing cycle, significant new deregulation, and resilient consumer, should fuel healthy top-line sales growth while the past two yearsâ focus on cost control should help turn revenue growth into profit growth. Year-end 2025 S&P 500 Index midpoint of 6,600.\"",
     "Institution": "WELLS FARGO INVESTMENT INSTITUTE",
     "Rank": 86
   },
@@ -3031,7 +3031,7 @@
         "reasoning": "This statement was partially correct. SOURCE 16 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) mentions that 'oil off almost 17%,' suggesting Energy sector weakness. However, the sources do not provide comprehensive sector performance data to fully validate or refute the underperformance of Industrials and Materials. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) focuses on large cap and growth equities outperforming, which would be consistent with traditional sectors underperforming, but specific sector data is limited."
       },
       {
-        "statement": "These sectors have lower exposure to the secular AI trends and higher exposure to a slower global economy, particularly sluggish Manufacturing – resulting in less favorable earnings growth and revision profiles and are more sensitive to a strong dollar and weak China.",
+        "statement": "These sectors have lower exposure to the secular AI trends and higher exposure to a slower global economy, particularly sluggish Manufacturing â resulting in less favorable earnings growth and revision profiles and are more sensitive to a strong dollar and weak China.",
         "materialized": "PARTIAL",
         "reasoning": "This reasoning was partially validated. SOURCE 16 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'the U.S. dollar (.DXY) is down nearly 10%,' contradicting the prediction about a strong dollar headwind. However, SOURCE 3 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes concerns about 'global trade momentum fades,' which could support the sluggish manufacturing thesis. The AI exposure differential is supported by SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) which highlights that 'innovation-driven themes' outperformed, but the strong dollar assumption was incorrect."
       }
@@ -3048,7 +3048,7 @@
     "justification": "Evercore ISI's sector underperformance call on Energy, Industrials, and Materials was directionally correct, particularly for Energy given the 17% decline in oil prices. However, the reasoning was partially flawed—the prediction assumed a strong dollar headwind that did not materialize (the dollar actually weakened by nearly 10%), though the AI exposure differential and manufacturing concerns were validated. The prediction got the right sectors but some of the supporting logic was incorrect.",
     "id": "STOCKS-EVERCORE_ISI-35-2025",
     "Original_Rank": 35,
-    "Prediction_Text": "\"Underperform rated sectors are Energy, Industrials, and Materials. These sectors have lower exposure to the secular AI trends and higher exposure to a slower global economy, particularly sluggish Manufacturing – resulting in less favorable earnings growth and revision profiles and are more sensitive to a strong dollar and weak China.\"",
+    "Prediction_Text": "\"Underperform rated sectors are Energy, Industrials, and Materials. These sectors have lower exposure to the secular AI trends and higher exposure to a slower global economy, particularly sluggish Manufacturing â resulting in less favorable earnings growth and revision profiles and are more sensitive to a strong dollar and weak China.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 97
   },
@@ -3287,12 +3287,12 @@
         "reasoning": "This prediction was partially correct. SOURCE 3 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes that 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains, ranking among the world's top performers,' but does not specifically highlight the UK as a top performer. SOURCE 10 (Reuters, December 2, 2025, https://www.reuters.com/markets/us/global-demand-us-stocks-isnt-waning-its-increasing-2025-12-02/) mentions that 'Britain's FTSE 100 are up' but does not provide specific performance data. The evidence suggests the UK market may have performed adequately but was not among the standout performers like other European markets, making this a partially correct but not fully validated prediction."
       },
       {
-        "statement": "The UK is less exposed to US tariff hikes than the euro zone because it is more focused on services (which are unlikely to be impacted by Trump's measures) and has no goods trade surplus with the US.",
+        "statement": "The UK is less exposed to US tariff hikes than the euro zone because it is more focused on services (which are unlikely to be impacted by Trumpâs measures) and has no goods trade surplus with the US.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 3 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that 'Despite worries over trade tensions and a stronger euro, economic growth in Europe surprised to the upside,' suggesting that European markets did face trade tension concerns. SOURCE 16 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) notes that 'This price move speaks to many of this year's global themes, including increasing U.S. isolationism, rising geopolitical tensions and expectations for a European economic reboot,' supporting the thesis that the UK's service-focused economy would be less impacted. However, the specific claim about the UK outperforming the eurozone due to tariff exposure is not directly validated in the available evidence."
       },
       {
-        "statement": "The dominance of energy stocks and defensive sectors in the FTSE 100 also makes it an attractive hedge for stagflation – which we see as the biggest risk to our base case scenario.",
+        "statement": "The dominance of energy stocks and defensive sectors in the FTSE 100 also makes it an attractive hedge for stagflation â which we see as the biggest risk to our base case scenario.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 13 (Reuters, December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) notes that 'Gold, the ultimate safe port in a storm, is set for its best year since 1979,' suggesting that defensive assets and hedges against stagflation were indeed valuable in 2025. However, there is no specific evidence in the sources that the FTSE 100's energy and defensive sectors significantly outperformed or provided the expected stagflation hedge. The prediction was theoretically sound but not explicitly validated by 2025 performance data."
       }
@@ -3309,7 +3309,7 @@
     "justification": "Pictet Asset Management's UK equity prediction was partially correct but not strongly validated by 2025 outcomes. While the institution's reasoning about the UK's service-focused economy being less exposed to tariffs was sound, and defensive assets did prove valuable in 2025, the UK market was not among the standout performers. The prediction demonstrated good analytical thinking but failed to deliver the expected outperformance relative to other European markets.",
     "id": "STOCKS-PICTET_ASSET_MANAGEMENT-67-2025",
     "Original_Rank": 67,
-    "Prediction_Text": "\"Our wild card pick for 2025 is the unloved UK equity market. The UK is less exposed to US tariff hikes than the euro zone because it is more focused on services (which are unlikely to be impacted by Trump's measures) and has no goods trade surplus with the US. The dominance of energy stocks and defensive sectors in the FTSE 100 also makes it an attractive hedge for stagflation – which we see as the biggest risk to our base case scenario.\"",
+    "Prediction_Text": "\"Our wild card pick for 2025 is the unloved UK equity market. The UK is less exposed to US tariff hikes than the euro zone because it is more focused on services (which are unlikely to be impacted by Trumpâs measures) and has no goods trade surplus with the US. The dominance of energy stocks and defensive sectors in the FTSE 100 also makes it an attractive hedge for stagflation â which we see as the biggest risk to our base case scenario.\"",
     "Institution": "PICTET ASSET MANAGEMENT",
     "Rank": 106
   },
@@ -3321,7 +3321,7 @@
         "reasoning": "This statement proved incorrect. According to CNBC (December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html), 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains, ranking among the world's top performers' and 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target.' Additionally, Reuters (December 31, 2025, https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) notes that 'international stock markets dominated U.S. equity performance,' with non-U.S. equities delivering approximately 32% returns versus U.S. performance."
       },
       {
-        "statement": "We expect a rise in European multiples, given the continent's positive earnings surprises and relatively lower discount rates creating multiple expansion, lowering the existing historically large discount on P/E basis versus the US.",
+        "statement": "We expect a rise in European multiples, given the continentâs positive earnings surprises and relatively lower discount rates creating multiple expansion, lowering the existing historically large discount on P/E basis versus the US.",
         "materialized": "YES",
         "reasoning": "This prediction materialized. CNBC (December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) confirms that European markets benefited from 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target, and interest rates settled at levels that are highly supportive for bank profitability.' Reuters (December 23, 2025, https://www.reuters.com/world/china/global-markets-performance-pix-graphics-2025-12-23/) notes that the outperformance of European stocks versus Wall Street was a notable 2025 market move, supporting the multiple expansion thesis through lower discount rates and positive earnings surprises."
       }
@@ -3338,7 +3338,7 @@
     "justification": "ROBECO's prediction was mixed: they correctly anticipated European multiple expansion driven by positive earnings surprises and supportive rate environments, but they were wrong about Europe trailing the U.S. in the cycle. In fact, Europe outperformed the U.S. in 2025, contradicting their cyclical positioning. The institution correctly identified the fundamental drivers of European strength but misread the relative cycle positioning between regions.",
     "id": "STOCKS-ROBECO-72-2025",
     "Original_Rank": 72,
-    "Prediction_Text": "\"Europe trails behind the US in the cycle. We expect a rise in European multiples, given the continent's positive earnings surprises and relatively lower discount rates creating multiple expansion, lowering the existing historically large discount on P/E basis versus the US.\"",
+    "Prediction_Text": "\"Europe trails behind the US in the cycle. We expect a rise in European multiples, given the continentâs positive earnings surprises and relatively lower discount rates creating multiple expansion, lowering the existing historically large discount on P/E basis versus the US.\"",
     "Institution": "ROBECO",
     "Rank": 107
   },
@@ -3471,7 +3471,7 @@
   {
     "statements": [
       {
-        "statement": "Interest rate-sensitive and consumer-focused sectors should continue to perform well, with some potential upside for industrials – provided the global industrial cycle shows signs of an upturn and if the worst fears of a trade war do not materialize.",
+        "statement": "Interest rate-sensitive and consumer-focused sectors should continue to perform well, with some potential upside for industrials â provided the global industrial cycle shows signs of an upturn and if the worst fears of a trade war do not materialize.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction is partially validated with important caveats. The sources confirm that interest rates declined and supported market performance, which would benefit rate-sensitive sectors. Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) notes that 'companies with strong earnings resilience continued to attract investor interest,' suggesting consumer-focused sectors performed well. However, the conditional nature of the prediction—requiring 'signs of an upturn' in the industrial cycle and avoidance of 'worst fears of a trade war'—is only partially met. Reuters (December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) indicates that trade tensions and 'increasing U.S. isolationism' did occur, though perhaps not reaching 'worst fears' levels. The industrial cycle upturn is not clearly evidenced in the sources."
       }
@@ -3488,7 +3488,7 @@
     "justification": "AXA Investment Managers' sector prediction was partially correct but relied on conditions that were only partially met. While interest rate-sensitive sectors did benefit from declining rates, the prediction's conditional language about avoiding trade war fears and achieving industrial cycle upturns was only partially satisfied. The firm correctly identified the interest rate tailwind but may have underestimated the actual trade tensions that materialized in 2025.",
     "id": "STOCKS-AXA_INVESTMENT_MANAGERS-94-2025",
     "Original_Rank": 94,
-    "Prediction_Text": "\"Interest rate-sensitive and consumer-focused sectors should continue to perform well, with some potential upside for industrials – provided the global industrial cycle shows signs of an upturn and if the worst fears of a trade war do not materialize.\"",
+    "Prediction_Text": "\"Interest rate-sensitive and consumer-focused sectors should continue to perform well, with some potential upside for industrials â provided the global industrial cycle shows signs of an upturn and if the worst fears of a trade war do not materialize.\"",
     "Institution": "AXA INVESTMENT MANAGERS",
     "Rank": 112
   },
@@ -4075,7 +4075,7 @@
         "reasoning": "The prediction expected 'modest' stock market gains in 2025. However, actual results were significantly stronger than modest. Source 6 (Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry/) documents that 'equities reached new all-time highs on 39 separate occasions' and that 'annual returns [were] well above their historical average.' Source 3 (CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes that 'The MSCI All Country World Index...has climbed over 21% since the start of the year.' The S&P 500 delivered approximately 15-20% returns (Source 10: Reuters, December 2, 2025, https://www.reuters.com/markets/us/global-demand-us-stocks-isnt-waning-its-increasing-2025-12-02/). These are well above 'modest' gains. The prediction significantly underestimated market returns."
       },
       {
-        "statement": "With stocks pricing in a lot of good news, positive surprises may be tougher to come by, so a repeat of 2024's performance is unlikely.",
+        "statement": "With stocks pricing in a lot of good news, positive surprises may be tougher to come by, so a repeat of 2024âs performance is unlikely.",
         "materialized": "NO",
         "reasoning": "The prediction stated that a repeat of 2024's performance was unlikely due to elevated expectations. However, 2025 actually delivered strong performance comparable to 2024. Source 6 (Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry/) notes that 2025 marked 'the third consecutive year of double-digit returns for investors in the broad U.S. stock market,' and Source 12 (Nasdaq, December 2025, https://www.nasdaq.com/articles/index-monthly-scorecard-december-2025) confirms that the Nasdaq-100 'closed the year with a strong gain of 20.2% marking its third consecutive year' of strong performance. The prediction that positive surprises would be limited and performance would lag 2024 proved incorrect."
       },
@@ -4102,7 +4102,7 @@
     "justification": "LPL Financial significantly underestimated equity market performance in 2025, predicting 'modest' gains when the market actually delivered strong double-digit returns comparable to 2024. The bank correctly anticipated volatility and provided sound advice to buy on pullbacks, which proved valuable given the spring drawdown. However, the core prediction of modest gains and the specific S&P 500 target range of 6,275-6,375 proved too conservative, suggesting the firm was overly cautious about 2025 market prospects despite acknowledging supportive economic and policy fundamentals.",
     "id": "STOCKS-LPL_FINANCIAL-60-2025",
     "Original_Rank": 60,
-    "Prediction_Text": "\"Expect modest stock market gains in 2025, supported by a stable economy, solid corporate profits, a Fed that is no longer hawkish, and some potential deregulation tailwinds. With stocks pricing in a lot of good news, positive surprises may be tougher to come by, so a repeat of 2024's performance is unlikely. With the bull market another year older, interest-rate risk rising, valuations elevated, and still significant geopolitical threats, be prepared for bouts of volatility in 2025, and consider buying equities on market pullbacks. Our S&P 500 fair value target range for 2025 is 6,275 to 6,375.\"",
+    "Prediction_Text": "\"Expect modest stock market gains in 2025, supported by a stable economy, solid corporate profits, a Fed that is no longer hawkish, and some potential deregulation tailwinds. With stocks pricing in a lot of good news, positive surprises may be tougher to come by, so a repeat of 2024âs performance is unlikely. With the bull market another year older, interest-rate risk rising, valuations elevated, and still significant geopolitical threats, be prepared for bouts of volatility in 2025, and consider buying equities on market pullbacks. Our S&P 500 fair value target range for 2025 is 6,275 to 6,375.\"",
     "Institution": "LPL FINANCIAL",
     "Rank": 133
   },
@@ -4148,7 +4148,7 @@
         "reasoning": "This statement was validated by 2025 outcomes. Vanguard's December 2025 report (https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) confirms that 'equities reached new all-time highs on 39 separate occasions' and that 'annual returns well above their historical average,' indicating a positive backdrop for risky assets. Reuters' December 31, 2025 report (https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) notes that 'US stocks clinch double-digit annual gains,' further validating the positive macro backdrop."
       },
       {
-        "statement": "In our view it's still a US vs Europe story with US exceptionalism to continue and Trump tariffs hurting European growth.",
+        "statement": "In our view itâs still a US vs Europe story with US exceptionalism to continue and Trump tariffs hurting European growth.",
         "materialized": "NO",
         "reasoning": "This statement was contradicted by 2025 outcomes. CNBC's December 31, 2025 article (https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) explicitly states that 'European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains, ranking among the world's top performers' and notes that 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target.' Reuters' December 31, 2025 report (https://www.reuters.com/world/china/global-markets-wrapup-1-2025-12-31/) confirms that 'international stock markets dominated U.S. equity performance,' directly contradicting the US exceptionalism thesis."
       },
@@ -4170,14 +4170,14 @@
     "justification": "Jefferies' prediction on a positive macro backdrop for risky assets proved correct, but the institution significantly misjudged the relative performance dynamics between US and European equities, predicting US exceptionalism when Europe actually outperformed. The S&P 500 price target of 6,500 was also too optimistic, as the index fell short of this level. The prediction captured the right sentiment on risk appetite but missed critical regional performance dynamics and specific valuation targets.",
     "id": "STOCKS-JEFFERIES-48-2025",
     "Original_Rank": 48,
-    "Prediction_Text": "\"We continue to find the macro backdrop as positive for risky assets. In our view it's still a US vs Europe story with US exceptionalism to continue and Trump tariffs hurting European growth. We see S&P reaching 6,500 in 2025 but expect greater volatility in the price action.\"",
+    "Prediction_Text": "\"We continue to find the macro backdrop as positive for risky assets. In our view itâs still a US vs Europe story with US exceptionalism to continue and Trump tariffs hurting European growth. We see S&P reaching 6,500 in 2025 but expect greater volatility in the price action.\"",
     "Institution": "JEFFERIES",
     "Rank": 135
   },
   {
     "statements": [
       {
-        "statement": "We see ultimately a stagflationary twist emerging from Trump's policy agenda.",
+        "statement": "We see ultimately a stagflationary twist emerging from Trumpâs policy agenda.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 16 (Reuters, December 31, 2025, https://www.reuters.com/markets/what-just-happened-ten-charts-help-make-sense-markets-2025-2025-12-31/) confirms that 'Donald Trump's \"America First\" agenda proved to be a key market driver in 2025,' supporting the thesis that Trump's policies would have significant economic effects. However, SOURCE 3 (CNBC, December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes that 'inflation cooled closer to the European Central Bank's 2% target,' suggesting that stagflation (high inflation with stagnant growth) did not materialize. The prediction captured the policy risk correctly but stagflation did not actually emerge in 2025."
       },
@@ -4204,7 +4204,7 @@
     "justification": "Robeco's prediction was largely incorrect regarding 2025 market outcomes. While the institution correctly identified that Trump's policy agenda would create volatility and that tariff concerns would emerge, it significantly underestimated equity returns and failed to anticipate the strong recovery after the spring drawdown. The prediction of mid-single-digit S&P 500 returns and multiple compression was particularly inaccurate, as equities delivered double-digit returns with resilient valuations.",
     "id": "STOCKS-ROBECO-70-2025",
     "Original_Rank": 70,
-    "Prediction_Text": "\"We see ultimately a stagflationary twist emerging from Trump's policy agenda. After the initial hope phase, equities could face headwinds as the implications of a tariff wave become more tangible. In our base case, we expect mid-single-digit returns for the S&P 500 with 9% EPS growth, but higher real yields will likely reduce the high US equity multiples throughout 2025.\"",
+    "Prediction_Text": "\"We see ultimately a stagflationary twist emerging from Trumpâs policy agenda. After the initial hope phase, equities could face headwinds as the implications of a tariff wave become more tangible. In our base case, we expect mid-single-digit returns for the S&P 500 with 9% EPS growth, but higher real yields will likely reduce the high US equity multiples throughout 2025.\"",
     "Institution": "ROBECO",
     "Rank": 136
   },
@@ -4618,7 +4618,7 @@
         "reasoning": "This prediction proved incorrect. European equities significantly outperformed expectations in 2025. European markets such as Hungary, Spain, Austria and the Czech Republic delivered solid gains, ranking among the world's top performers (SOURCE: 'Global stock markets' winners and losers of 2025', CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html). Additionally, non-U.S. equity markets, which include Europe, delivered approximately 32% returns, far outpacing U.S. performance (SOURCE: 'Q4 2025: Markets continue to climb a wall of worry', Vanguard, December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry). A neutral outlook significantly underestimated European equity performance."
       },
       {
-        "statement": "Europe is growing more slowly than the US, and it's exposed to tariff risks and further slowing in China, which faces continuing deflationary pressures.",
+        "statement": "Europe is growing more slowly than the US, and itâs exposed to tariff risks and further slowing in China, which faces continuing deflationary pressures.",
         "materialized": "PARTIAL",
         "reasoning": "The prediction correctly identified structural challenges facing Europe (slower growth, tariff risks, China exposure), but these headwinds did not prevent strong European performance. The evidence shows that 'economic growth in Europe surprised to the upside, inflation cooled closer to the European Central Bank's 2% target, and interest rates settled at levels that are highly supportive for bank profitability' (SOURCE: 'Global stock markets' winners and losers of 2025', CNBC, December 31, 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html). While the structural challenges identified were real, they were offset by positive surprises in growth and monetary conditions, making this analysis incomplete."
       }
@@ -4635,7 +4635,7 @@
     "justification": "Morgan Stanley's European outlook proved significantly too pessimistic. While they correctly identified structural headwinds like slower growth and tariff exposure, they failed to anticipate that economic surprises and supportive monetary conditions would drive strong European equity performance. The neutral rating substantially underestimated European market attractiveness in 2025.",
     "id": "STOCKS-MORGAN_STANLEY-124-2025",
     "Original_Rank": 124,
-    "Prediction_Text": "\"The outlook moves European equities to neutral. Europe is growing more slowly than the US, and it's exposed to tariff risks and further slowing in China, which faces continuing deflationary pressures.\"",
+    "Prediction_Text": "\"The outlook moves European equities to neutral. Europe is growing more slowly than the US, and itâs exposed to tariff risks and further slowing in China, which faces continuing deflationary pressures.\"",
     "Institution": "MORGAN STANLEY",
     "Rank": 150
   },
@@ -5000,7 +5000,7 @@
         "reasoning": "This prediction did not materialize. Rather than broadening beyond mega-cap growth stocks, market concentration actually persisted or intensified. Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) states that 'Large cap and growth equities outperformed,' indicating continued dominance by large-cap stocks. The Nasdaq-100 (heavily weighted toward mega-cap tech) gained 20.2% (Nasdaq, December 2025, https://www.nasdaq.com/articles/index-monthly-scorecard-december-2025), while broader market indices showed more modest gains, suggesting concentration remained high rather than broadening as predicted."
       },
       {
-        "statement": "It's also likely that we'll see many of the value-focused sectors continue to outperform.",
+        "statement": "Itâs also likely that weâll see many of the value-focused sectors continue to outperform.",
         "materialized": "NO",
         "reasoning": "This prediction did not materialize. Value-focused sectors did not outperform in 2025. Bloomberg (December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) explicitly notes that 'Large cap and growth equities outperformed,' which is the opposite of value outperformance. The source also states that 'shareholder-yield strategies lagged,' further confirming that value-oriented approaches underperformed growth-oriented ones throughout 2025."
       }
@@ -5017,7 +5017,7 @@
     "justification": "AllSpring Global Investments' prediction that market breadth would widen and value sectors would outperform proved incorrect. The 2025 market continued to be dominated by mega-cap growth stocks, particularly in technology, with value and broader market participation failing to materialize as expected. The institution underestimated the persistence of mega-cap concentration and the continued strength of growth over value in the AI-driven market environment.",
     "id": "STOCKS-ALLSPRING_GLOBAL_INVESTMENTS-88-2025",
     "Original_Rank": 88,
-    "Prediction_Text": "\"The breadth of the US equity market should continue to widen beyond the handful of mega-cap growth stocks that have pushed index concentrations to unprecedented levels. It's also likely that we'll see many of the value-focused sectors continue to outperform.\"",
+    "Prediction_Text": "\"The breadth of the US equity market should continue to widen beyond the handful of mega-cap growth stocks that have pushed index concentrations to unprecedented levels. Itâs also likely that weâll see many of the value-focused sectors continue to outperform.\"",
     "Institution": "ALLSPRING GLOBAL INVESTMENTS",
     "Rank": 163
   },
@@ -5106,7 +5106,7 @@
   {
     "statements": [
       {
-        "statement": "While tech is expected to lead EPS growth, broad based growth across all sectors will lessen the index's discomfiting reliance on a handful of stocks.",
+        "statement": "While tech is expected to lead EPS growth, broad based growth across all sectors will lessen the indexâs discomfiting reliance on a handful of stocks.",
         "materialized": "NO",
         "reasoning": "This prediction did not materialize. While tech did lead EPS growth as expected, broad-based growth did not occur. SOURCE 1 (Bloomberg, December 2025, https://www.bloomberg.com/professional/insights/markets/looking-back-at-2025-equities/) states 'Large cap and growth equities outperformed,' indicating continued concentration. SOURCE 4 (Nasdaq, December 2025, https://www.nasdaq.com/articles/here-are-top-performing-sp-500-stocks-2025) highlights individual mega-cap stocks with 250-290% returns, demonstrating extreme concentration rather than broadening. The sources do not provide evidence of broad-based sector growth reducing index reliance on a handful of stocks; instead, concentration appears to have intensified."
       }
@@ -5123,7 +5123,7 @@
     "justification": "Evercore ISI's prediction about broadening participation across sectors failed to materialize in 2025. While tech leadership was correctly anticipated, the expected reduction in index concentration did not occur. Instead, mega-cap growth stocks dominated returns, suggesting the institution underestimated the persistence of market concentration despite expectations for diversification.",
     "id": "STOCKS-EVERCORE_ISI-106-2025",
     "Original_Rank": 106,
-    "Prediction_Text": "\"While tech is expected to lead EPS growth, broad based growth across all sectors will lessen the index's discomfiting reliance on a handful of stocks.\"",
+    "Prediction_Text": "\"While tech is expected to lead EPS growth, broad based growth across all sectors will lessen the indexâs discomfiting reliance on a handful of stocks.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 167
   },

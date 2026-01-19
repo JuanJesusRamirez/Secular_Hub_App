@@ -7,7 +7,7 @@
         "reasoning": "This paradoxical statement proved accurate on both counts. Forbes (December 2025, https://www.forbes.com/sites/esade/2025/12/17/the-700-billion-question-of-ai-investment/) notes 'Even as investment accelerates, uncertainty grows. Companies know they can't ignore AI. But they also know they don't yet fully understand how to use it.' Gartner (September 2025, https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025) reported worldwide AI spending reached $1.5 trillion in 2025, with projections for $2.5 trillion in 2026, demonstrating massive scale. Simultaneously, McKinsey's State of AI (December 2025, https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) shows only 1% of organizations describe their gen AI rollouts as mature, indicating hype exceeds current realized value."
       },
       {
-        "statement": "The so-called hyperscalers — Alphabet, Amazon, Meta, and Microsoft — are spending about half of their capex budget on technology and half on buying land, constructing as many data centers as possible near reliable power and locking in long-term contracts with energy suppliers.",
+        "statement": "The so-called hyperscalers â Alphabet, Amazon, Meta, and Microsoft â are spending about half of their capex budget on technology and half on buying land, constructing as many data centers as possible near reliable power and locking in long-term contracts with energy suppliers.",
         "materialized": "YES",
         "reasoning": "This prediction materialized precisely. CNBC (February 2025, https://www.cnbc.com/2025/02/08/tech-megacaps-to-spend-more-than-300-billion-in-2025-to-win-in-ai.html) reports Meta, Amazon, Alphabet and Microsoft intend to spend as much as $320 billion combined on AI technologies and datacenter buildouts in 2025. Forbes (November 2025, https://www.forbes.com/sites/roomykhan/2025/11/03/all-roads-lead-to-nvidia-bankrolling-its-own-ai-gold-rush/) documents nearly $1 trillion in AI infrastructure commitments through October 2025, including $500 billion from Stargate alone. McKinsey (December 2025, https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-next-big-shifts-in-ai-workloads-and-hyperscaler-strategies) confirms hyperscalers are adopting 'power-first and energy-anchored site selection models' and partnering directly with utility providers for long-term power supply contracts."
       },
@@ -29,7 +29,7 @@
     "justification": "Capital Group's prediction proved remarkably prescient on all three counts. The firm correctly identified the paradox of AI being simultaneously overhyped and transformative, accurately predicted the massive capex shift toward data center infrastructure and power contracts by hyperscalers, and correctly anticipated multi-year investment opportunities in energy and infrastructure. The prediction captured the essential dynamic of 2025: massive capital deployment toward AI infrastructure with significant uncertainty about near-term returns.",
     "id": "AI-CAPITAL_GROUP-2-2025",
     "Original_Rank": 2,
-    "Prediction_Text": "\"AI may be overhyped and bigger than you think. The so-called hyperscalers — Alphabet, Amazon, Meta, and Microsoft — are spending about half of their capex budget on technology and half on buying land, constructing as many data centers as possible near reliable power and locking in long-term contracts with energy suppliers. That should provide investment opportunity for years.\"",
+    "Prediction_Text": "\"AI may be overhyped and bigger than you think. The so-called hyperscalers â Alphabet, Amazon, Meta, and Microsoft â are spending about half of their capex budget on technology and half on buying land, constructing as many data centers as possible near reliable power and locking in long-term contracts with energy suppliers. That should provide investment opportunity for years.\"",
     "Institution": "CAPITAL GROUP",
     "Rank": 1
   },
@@ -94,7 +94,7 @@
   {
     "statements": [
       {
-        "statement": "Investing in task-specific AI applications within fields where AI unlocks productivity gains, by automating a large share of an occupation's tasks, appears more promising to us than banking on breakthrough\" developments from the competing producers of frontier models.",
+        "statement": "Investing in task-specific AI applications within fields where AI unlocks productivity gains, by automating a large share of an occupationâs tasks, appears more promising to us than banking on breakthrough\" developments from the competing producers of frontier models.",
         "materialized": "YES",
         "reasoning": "This prediction has materialized strongly in 2025. McKinsey's State of AI report (December 2025, https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) shows organizations are 'beginning to create the structures and processes that lead to meaningful value from gen AI' with focus on practical use cases. PwC's 2025 Global Annual Review (December 2025, https://www.pwc.com/gx/en/global-annual-review/highlights.html) reports the firm invested $3.1 billion in 'AI & technology – including Next Generation Audit, consulting, business strategy and tax,' demonstrating enterprise focus on task-specific applications. McKinsey's most-read insights (December 2025, https://www.mckinsey.com/featured-insights/year-in-review/year-in-insights) highlight 'reimagining productivity and the workforce' and 'unlocking new sources of value' through practical AI deployment rather than frontier model development."
       }
@@ -111,7 +111,7 @@
     "justification": "Barclays' prediction proved prescient. The 2025 market clearly favored practical, task-specific AI implementations over speculative frontier model investments. Organizations demonstrated this through concrete capital allocation to productivity-enhancing applications in audit, consulting, and business functions, validating the thesis that incremental AI improvements in specific domains deliver more tangible ROI than betting on breakthrough model developments.",
     "id": "AI-BARCLAYS_PRIVATE_BANK-11-2025",
     "Original_Rank": 11,
-    "Prediction_Text": "\"Investing in task-specific AI applications within fields where AI unlocks productivity gains, by automating a large share of an occupation's tasks, appears more promising to us than banking on breakthrough\" developments from the competing producers of frontier models.\"\"\"",
+    "Prediction_Text": "\"Investing in task-specific AI applications within fields where AI unlocks productivity gains, by automating a large share of an occupationâs tasks, appears more promising to us than banking on breakthrough\" developments from the competing producers of frontier models.\"\"\"",
     "Institution": "BARCLAYS PRIVATE BANK",
     "Rank": 4
   },
@@ -123,7 +123,7 @@
         "reasoning": "This prediction materialized comprehensively across 2025. Gartner's AI spending forecast (September 2025, https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025) reports 'worldwide spending on AI is forecast to total nearly $1.5 trillion in 2025.' McKinsey's Global Materials Perspective (December 2025, https://www.mckinsey.com/industries/energy-and-materials/our-insights/global-materials-perspective) documents 'accelerated demand from the expansion of AI technologies' and energy transition impacts. McKinsey's infrastructure analysis (December 2025, https://www.mckinsey.com/industries/infrastructure/our-insights/the-infrastructure-moment) estimates 'a cumulative $106 trillion in investment will be necessary through 2040' with digital infrastructure ($19 trillion) and energy/power ($23 trillion) as major components."
       },
       {
-        "statement": "The \"hyperscalers\" are accelerating capex to upwards of $200 billion this year and 2025 is set to be another year of significant investment.",
+        "statement": "The âhyperscalersâ are accelerating capex to upwards of $200 billion this year and 2025 is set to be another year of significant investment.",
         "materialized": "YES",
         "reasoning": "This prediction is validated by actual 2025 capex data. CNBC (February 2025, https://www.cnbc.com/2025/02/08/tech-megacaps-to-spend-more-than-300-billion-in-2025-to-win-in-ai.html) reports 'Meta, Amazon, Alphabet and Microsoft intend to spend as much as $320 billion combined on AI technologies and datacenter buildouts in 2025.' Microsoft alone allocated '$80 billion in the 2025 fiscal year to create AI workloads data centers,' and Meta set 'AI capex budget at $60 billion to $65 billion.' Micron Technology's Q4 2025 earnings (December 2025, https://fortune.com/company/micron-technology/earnings/q4-2025/) shows 'combined revenue from HBM, high-capacity DIMMs, and LP server DRAM reached $10 billion, more than a five-fold increase,' reflecting massive hyperscaler infrastructure buildout."
       },
@@ -145,7 +145,7 @@
     "justification": "JPMorgan Asset Management's prediction proved exceptionally accurate across all dimensions. The firm correctly anticipated the magnitude of hyperscaler capex ($320B+ vs. their $200B+ estimate), the breadth of beneficiary sectors from data centers to nuclear power, and the secular tailwinds from AI and energy transition. Their infrastructure-focused thesis captured one of 2025's strongest investment themes.",
     "id": "AI-JPMORGAN_ASSET_MANAGEMENT-13-2025",
     "Original_Rank": 13,
-    "Prediction_Text": "\"Secular spending on AI, the energy transition and diversifying supply chains are also providing sizable tailwind for the market. The \"hyperscalers\" are accelerating capex to upwards of $200 billion this year and 2025 is set to be another year of significant investment. This spending will benefit areas of the market like data center real estate, engineering and construction, nuclear and renewable power, energy transmission, gas-powered electricity, cooling technologies and the electrical components that connect it all.\"",
+    "Prediction_Text": "\"Secular spending on AI, the energy transition and diversifying supply chains are also providing sizable tailwind for the market. The âhyperscalersâ are accelerating capex to upwards of $200 billion this year and 2025 is set to be another year of significant investment. This spending will benefit areas of the market like data center real estate, engineering and construction, nuclear and renewable power, energy transmission, gas-powered electricity, cooling technologies and the electrical components that connect it all.\"",
     "Institution": "JPMORGAN ASSET MANAGEMENT",
     "Rank": 5
   },
@@ -210,7 +210,7 @@
   {
     "statements": [
       {
-        "statement": "We think that the new US administration's focus on deregulation and tariff-based policies could reduce market concentration, potentially supporting active-manager outperformance.",
+        "statement": "We think that the new US administrationâs focus on deregulation and tariff-based policies could reduce market concentration, potentially supporting active-manager outperformance.",
         "materialized": "PARTIAL",
         "reasoning": "This statement is partially supported but with mixed results. McKinsey's 2025 year in charts (December 2025, https://www.mckinsey.com/featured-insights/year-in-review/year-in-charts) shows a scatterplot illustrating 'the relative difficulties that different sectors faced in the wake of US tariffs announced early in the year,' indicating tariff policies did create sector-specific impacts. However, Morningstar's Q4 2025 outlook (December 2025, https://global.morningstar.com/en-ca/markets/q4-2025-us-stock-market-outlook-no-margin-error) notes that 'AI has absorbed all the oxygen in the market this year,' suggesting concentration actually increased rather than decreased, with mega-cap tech stocks dominating returns despite tariff policies."
       },
@@ -237,7 +237,7 @@
     "justification": "Russell Investments' prediction was largely correct on AI adoption across sectors and productivity gains, with strong validation from investor surveys and enterprise spending patterns. However, their expectation that deregulation and tariffs would reduce market concentration proved overly optimistic—instead, AI concentration in mega-cap tech actually intensified in 2025, with these companies capturing disproportionate returns despite tariff headwinds.",
     "id": "AI-RUSSELL_INVESTMENTS-12-2025",
     "Original_Rank": 12,
-    "Prediction_Text": "\"We think that the new US administration's focus on deregulation and tariff-based policies could reduce market concentration, potentially supporting active-manager outperformance. We and our active managers are focused on sectors where AI adoption is accelerating, such as industrials, healthcare, and consumer goods. We believe companies leveraging AI for productivity improvements are well-positioned to gain a lasting competitive edge and generate strong returns.\"",
+    "Prediction_Text": "\"We think that the new US administrationâs focus on deregulation and tariff-based policies could reduce market concentration, potentially supporting active-manager outperformance. We and our active managers are focused on sectors where AI adoption is accelerating, such as industrials, healthcare, and consumer goods. We believe companies leveraging AI for productivity improvements are well-positioned to gain a lasting competitive edge and generate strong returns.\"",
     "Institution": "RUSSELL INVESTMENTS",
     "Rank": 8
   },
@@ -327,7 +327,7 @@
         "reasoning": "This prediction showed mixed results. Information Technology clearly outperformed, driven by AI-related gains. McKinsey's year-in-review (December 2025, https://www.mckinsey.com/featured-insights/year-in-review) highlights technology as the dominant sector. However, Morningstar's Q4 2025 outlook (December 2025, https://global.morningstar.com/en-ca/markets/q4-2025-us-stock-market-outlook-no-margin-error) notes that while growth stocks (which include tech) traded at 12% premium, the market showed significant concentration in mega-cap tech. Communication Services and Consumer Discretionary showed more mixed performance. Morningstar (December 2025, https://global.morningstar.com/en-ca/markets/q4-2025-us-stock-market-outlook-no-margin-error) indicates value stocks remained undervalued at 3% discount, suggesting not all recommended sectors outperformed equally."
       },
       {
-        "statement": "Exposure to secular AI trends – as either Enablers or Adopters – features prominently in our selection.",
+        "statement": "Exposure to secular AI trends â as either Enablers or Adopters â features prominently in our selection.",
         "materialized": "YES",
         "reasoning": "This prediction materialized strongly. McKinsey's State of AI (December 2025, https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) documents that high-performing organizations are more likely to expect enterprise-wide transformative change from AI and have taken AI agents to scaling phase. PwC's Global Investor Survey (December 2025, https://www.pwc.com/gx/en/news-room/press-releases/2025/pwc-2025-global-investor-survey.html) shows 61% of investors say technology will attract the most investment over the next three years, with companies realizing gains from AI adoption. McKinsey's Technology Trends Outlook (December 2025, https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech) highlights agentic AI as a major trend with equity investments increasing in 10 of 13 technology trends in 2024. Both enablers (semiconductor, infrastructure companies) and adopters (across sectors) showed strong performance."
       }
@@ -344,7 +344,7 @@
     "justification": "Evercore ISI's prediction was largely accurate on the importance of AI exposure, with both enablers and adopters showing strong performance in 2025. However, the sector-specific outperform ratings showed uneven results, with Information Technology clearly winning while Communication Services and Consumer Discretionary had more mixed outcomes. The firm correctly identified the secular AI trend as the dominant investment theme but may have overestimated the breadth of outperformance across their recommended sectors.",
     "id": "AI-EVERCORE_ISI-3-2025",
     "Original_Rank": 3,
-    "Prediction_Text": "\"Our outperform rated sectors are Communication Services, Consumer Discretionary, and Information Technology. Exposure to secular AI trends – as either Enablers or Adopters – features prominently in our selection.\"",
+    "Prediction_Text": "\"Our outperform rated sectors are Communication Services, Consumer Discretionary, and Information Technology. Exposure to secular AI trends â as either Enablers or Adopters â features prominently in our selection.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 11
   },
@@ -448,7 +448,7 @@
         "reasoning": "This prediction materialized strongly in 2025. Multiple sources confirm AI drove significant earnings growth and margin expansion. PwC's Global Annual Review 2025 (December 2025, https://www.pwc.com/gx/en/global-annual-review/2025/pwc-global-annual-review-2025.pdf) reports PwC invested $3.1 billion in AI & technology capabilities with revenue growth of 2.9-3.0%. McKinsey's State of AI (December 2025, https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) documents organizations beginning to create structures for meaningful AI value. Microsoft Q4 2025 earnings (December 2025, https://fortune.com/company/microsoft/earnings/q4-2025/) showed better than expected revenue growth with margin expansion driven by AI focus. Micron Technology Q4 2025 (December 2025, https://fortune.com/company/micron-technology/earnings/q4-2025/) reported record revenue of $11.3 billion, up 46% year-over-year, driven by AI infrastructure demand."
       },
       {
-        "statement": "We believe AI's role in the world will surpass that of other technologies that propelled earlier periods of tidal change, such as the internet, mobile phones and the cloud.",
+        "statement": "We believe AIâs role in the world will surpass that of other technologies that propelled earlier periods of tidal change, such as the internet, mobile phones and the cloud.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction shows mixed evidence. McKinsey's Technology Trends Outlook 2025 (December 2025, https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech) highlights agentic AI as a major emerging trend with rapid interest, suggesting AI's transformative potential. However, McKinsey's State of AI (December 2025, https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) shows only 1% of C-suite respondents describe their gen AI rollouts as mature, and no more than 10% report scaling AI agents in any individual function, indicating AI adoption remains early-stage. Gartner (November 2025, https://www.gartner.com/en/newsroom/press-releases/2025-11-10-gartner-survey-finds-artificial-intelligence-will-touch-all-information-technology-work-by-2030) projects AI will touch all IT work by 2030, but this is future-looking, not yet materialized."
       },
@@ -475,7 +475,7 @@
     "justification": "BNY's prediction was largely accurate on AI driving earnings growth and margin improvements, which materialized across technology and infrastructure sectors in 2025. However, the claim that AI's impact would surpass prior technological revolutions and distribute broadly across sectors proved only partially true, as adoption remained concentrated in technology and select sectors with only 1% mature implementations by year-end. The large-cap overweight recommendation faced headwinds as valuations became stretched, though U.S. equities did outperform.",
     "id": "AI-BNY-1-2025",
     "Original_Rank": 1,
-    "Prediction_Text": "\"We expect technology to continue to drive profit margin improvements and earnings growth as AI ramps up and increasingly impacts our lives. We believe AI's role in the world will surpass that of other technologies that propelled earlier periods of tidal change, such as the internet, mobile phones and the cloud. Gains will not be limited to technology companies; productivity enhancements will be distributed across all sectors as other industries embrace new business practices. We continue to recommend an overweight to US large cap stocks in 2025.\"",
+    "Prediction_Text": "\"We expect technology to continue to drive profit margin improvements and earnings growth as AI ramps up and increasingly impacts our lives. We believe AIâs role in the world will surpass that of other technologies that propelled earlier periods of tidal change, such as the internet, mobile phones and the cloud. Gains will not be limited to technology companies; productivity enhancements will be distributed across all sectors as other industries embrace new business practices. We continue to recommend an overweight to US large cap stocks in 2025.\"",
     "Institution": "BNY",
     "Rank": 15
   },
@@ -492,12 +492,12 @@
         "reasoning": "This is a rhetorical question, not a testable prediction statement. It serves as a transition to the following statements rather than making a specific claim about market outcomes."
       },
       {
-        "statement": "Transitioning to AI's next investment phase.",
+        "statement": "Transitioning to AIâs next investment phase.",
         "materialized": "YES",
         "reasoning": "This prediction materialized as evidenced by multiple sources documenting the shift from early-stage AI investment to infrastructure and implementation focus. McKinsey's Technology Trends Outlook (December 2025, https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech) highlights agentic AI as the next frontier. PwC's 2026 AI Business Predictions (December 2025, https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html) discusses AI studios and orchestration layers for scaling. Deloitte's 2026 TMT Predictions (December 2025, https://www.deloitte.com/global/en/about/press-room/2026-tmt-predictions.html) forecasts $100 billion in sovereign AI compute investment in 2026. The market clearly transitioned from pure AI model development to infrastructure, implementation, and agentic AI applications."
       },
       {
-        "statement": "Innovative \"linchpin\" companies—with strong fundamentals—offer strongest growth prospects.",
+        "statement": "Innovative âlinchpinâ companiesâwith strong fundamentalsâoffer strongest growth prospects.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction showed partial materialization. Companies with strong fundamentals in AI infrastructure did outperform significantly. Micron Technology Q4 2025 (December 2025, https://fortune.com/company/micron-technology/earnings/q4-2025/) reported record revenue up 46% year-over-year with strong fundamentals. However, Morningstar's Q4 2025 outlook (December 2025, https://global.morningstar.com/en-ca/markets/q4-2025-us-stock-market-outlook-no-margin-error) notes that mega-cap growth stocks traded at 12% premium to fair value, suggesting valuations became stretched even for strong fundamental companies. The prediction was directionally correct but may have underestimated valuation risks for even high-quality companies in the concentrated AI rally."
       }
@@ -514,14 +514,14 @@
     "justification": "T. Rowe Price's prediction accurately captured the transition from AI's initial rapid growth phase to a more mature implementation phase focused on infrastructure and agentic AI. The firm correctly identified that AI remains a powerful productivity enhancer and that the investment focus would shift to implementation and infrastructure. However, the prediction on 'linchpin' companies with strong fundamentals offering strongest growth proved only partially accurate, as even quality companies faced valuation pressures from the concentrated mega-cap rally.",
     "id": "AI-T._ROWE_PRICE-8-2025",
     "Original_Rank": 8,
-    "Prediction_Text": "\"While the initial rapid growth phase may be over, AI remains a powerful productivity enhancer for the global economy. What does that mean for investors? Transitioning to AI's next investment phase. Innovative \"linchpin\" companies—with strong fundamentals—offer strongest growth prospects.\"",
+    "Prediction_Text": "\"While the initial rapid growth phase may be over, AI remains a powerful productivity enhancer for the global economy. What does that mean for investors? Transitioning to AIâs next investment phase. Innovative âlinchpinâ companiesâwith strong fundamentalsâoffer strongest growth prospects.\"",
     "Institution": "T. ROWE PRICE",
     "Rank": 16
   },
   {
     "statements": [
       {
-        "statement": "As AI tools move beyond the confines of chatroom applications and enter the arenas where goods and services get produced through the proliferation of Autonomous Agents and Robotics, Generative AI's applications will become increasingly apparent.",
+        "statement": "As AI tools move beyond the confines of chatroom applications and enter the arenas where goods and services get produced through the proliferation of Autonomous Agents and Robotics, Generative AIâs applications will become increasingly apparent.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction showed partial materialization in 2025. McKinsey's Technology Trends Outlook (December 2025, https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech) highlights agentic AI as a major emerging trend with rapid interest. McKinsey's State of AI (December 2025, https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) shows no more than 10% of respondents report scaling AI agents in any individual function, indicating early-stage deployment. Deloitte's 2026 TMT Predictions (December 2025, https://www.deloitte.com/global/en/about/press-room/2026-tmt-predictions.html) forecasts the global agentic AI market could reach $45 billion by 2030, suggesting significant future growth. However, McKinsey's State of AI also notes that agentic AI scaling remains limited, with most organizations still in pilot or early implementation phases. The movement beyond chatbots is occurring but remains nascent."
       }
@@ -538,7 +538,7 @@
     "justification": "Evercore ISI's prediction on agentic AI and robotics moving beyond chatroom applications proved directionally accurate but premature in timing. While 2025 saw significant interest and investment in agentic AI as a major trend, actual deployment and scaling remained limited, with less than 10% of organizations reporting meaningful agent scaling. The prediction correctly identified the next frontier for AI but underestimated the time required for widespread implementation in production environments.",
     "id": "AI-EVERCORE_ISI-9-2025",
     "Original_Rank": 9,
-    "Prediction_Text": "\"As AI tools move beyond the confines of chatroom applications and enter the arenas where goods and services get produced through the proliferation of Autonomous Agents and Robotics, Generative AI's applications will become increasingly apparent.\"",
+    "Prediction_Text": "\"As AI tools move beyond the confines of chatroom applications and enter the arenas where goods and services get produced through the proliferation of Autonomous Agents and Robotics, Generative AIâs applications will become increasingly apparent.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 17
   }

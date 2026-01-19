@@ -94,7 +94,7 @@
         "reasoning": "Market conditions proved generally favorable throughout 2025. RBC GAM stated 'We forecast an environment of moderate economic growth with inflation subsiding sufficiently to motivate continued interest-rate cuts' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail). CIBC noted 'Credit markets remain buoyant, with investment-grade and high-yield spreads compressing to multi-year lows' (SOURCE: CIBC, December 2025, https://www.cibc.com/en/asset-management/insights/fixed-income/fixed-income-investing-as-rates-fall.html), confirming the generally positive market backdrop."
       },
       {
-        "statement": "The Fed's easing cycle is ongoing amid disinflation and low recession risks, earnings growth is solid, and the rally is broadening.",
+        "statement": "The Fedâs easing cycle is ongoing amid disinflation and low recession risks, earnings growth is solid, and the rally is broadening.",
         "materialized": "YES",
         "reasoning": "All components of this statement materialized. Scotiabank confirmed 'the Fed cut rates 175bps from the 5.5% peak last year and 75bps since September' (SOURCE: Scotiabank, December 10, 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html). RBC GAM noted 'inflation subsiding' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail). J.P. Morgan's December 2025 outlook noted a 35% recession probability, confirming low recession risks (SOURCE: J.P. Morgan Global Research, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook)."
       },
@@ -116,14 +116,14 @@
     "justification": "Ned Davis Research's 2025 prediction proved highly accurate across all dimensions—correctly identifying clear market skies, the easing cycle, broadening rallies, and the outperformance of US equities and AI-related themes. The institution successfully anticipated the key drivers of market performance and the sectoral rotation toward cyclicals and technology.",
     "id": "BASE_CASE-NED_DAVIS_RESEARCH-6-2025",
     "Original_Rank": 6,
-    "Prediction_Text": "\"The skies appear mostly clear for the financial markets heading into 2025. The Fed's easing cycle is ongoing amid disinflation and low recession risks, earnings growth is solid, and the rally is broadening. Against that backdrop, we enter the year bullish on US stocks on an absolute basis and relative to bonds and cash, favor cyclical over defensive sectors, and are focused on crypto, software AI, and durable goods themes.\"",
+    "Prediction_Text": "\"The skies appear mostly clear for the financial markets heading into 2025. The Fedâs easing cycle is ongoing amid disinflation and low recession risks, earnings growth is solid, and the rally is broadening. Against that backdrop, we enter the year bullish on US stocks on an absolute basis and relative to bonds and cash, favor cyclical over defensive sectors, and are focused on crypto, software AI, and durable goods themes.\"",
     "Institution": "NED DAVIS RESEARCH",
     "Rank": 4
   },
   {
     "statements": [
       {
-        "statement": "In 2025, the combination of the Fed's continued easing, US economic strength and the potential boost from pro-growth policies under the new administration will bring the runway for moderate growth into sight.",
+        "statement": "In 2025, the combination of the Fedâs continued easing, US economic strength and the potential boost from pro-growth policies under the new administration will bring the runway for moderate growth into sight.",
         "materialized": "YES",
         "reasoning": "All components of this prediction materialized. Scotiabank confirmed the Fed cut rates 175bps and noted 'the economy in really good shape' (SOURCE: Scotiabank, December 10, 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html). RBC GAM stated 'stronger-than-expected U.S. economic growth' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail). CIBC noted 'fiscal expansion across several major economies' (SOURCE: CIBC, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025), confirming pro-growth policy support."
       },
@@ -150,7 +150,7 @@
     "justification": "BNY's 2025 prediction proved highly accurate across all dimensions, correctly identifying the combination of Fed easing, US strength, and pro-growth policies as drivers of moderate growth and attractive investment opportunities. The institution successfully anticipated the transmission of monetary policy to economic activity and the broad-based asset class performance.",
     "id": "BASE_CASE-BNY-10-2025",
     "Original_Rank": 10,
-    "Prediction_Text": "\"In 2025, the combination of the Fed's continued easing, US economic strength and the potential boost from pro-growth policies under the new administration will bring the runway for moderate growth into sight. Lower short-term interest rates will reduce borrowing costs for many consumers and businesses, helping to bolster consumer spending and economic activity. This backdrop should present attractive opportunities across asset classes for investors.\"",
+    "Prediction_Text": "\"In 2025, the combination of the Fedâs continued easing, US economic strength and the potential boost from pro-growth policies under the new administration will bring the runway for moderate growth into sight. Lower short-term interest rates will reduce borrowing costs for many consumers and businesses, helping to bolster consumer spending and economic activity. This backdrop should present attractive opportunities across asset classes for investors.\"",
     "Institution": "BNY",
     "Rank": 5
   },
@@ -191,7 +191,7 @@
   {
     "statements": [
       {
-        "statement": "Northern Trust Asset Management's base case economic outlook for 2025 is a US soft landing.",
+        "statement": "Northern Trust Asset Managementâs base case economic outlook for 2025 is a US soft landing.",
         "materialized": "YES",
         "reasoning": "The soft landing scenario materialized throughout 2025. Scotiabank noted 'the economy in really good shape with low inflation and a strong labour market' (SOURCE: Scotiabank, December 10, 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html). RBC GAM stated 'moderate economic growth with inflation subsiding' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail). J.P. Morgan noted only a 35% recession probability (SOURCE: J.P. Morgan Global Research, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook), confirming the soft landing scenario."
       },
@@ -213,7 +213,7 @@
     "justification": "Northern Trust's 2025 prediction proved highly accurate, correctly identifying the soft landing scenario, modest growth deceleration, inflation easing, and gradual Fed rate cuts. The institution successfully anticipated the key macro dynamics that characterized 2025 performance.",
     "id": "BASE_CASE-NORTHERN_TRUST_ASSET_MANAGEMENT-17-2025",
     "Original_Rank": 17,
-    "Prediction_Text": "\"Northern Trust Asset Management's base case economic outlook for 2025 is a US soft landing. NTAM expects economic growth to settle slightly below 2024 levels, inflation to ease further toward 2% and the Federal Reserve to proceed gradually cutting rates.\"",
+    "Prediction_Text": "\"Northern Trust Asset Managementâs base case economic outlook for 2025 is a US soft landing. NTAM expects economic growth to settle slightly below 2024 levels, inflation to ease further toward 2% and the Federal Reserve to proceed gradually cutting rates.\"",
     "Institution": "NORTHERN TRUST ASSET MANAGEMENT",
     "Rank": 7
   },
@@ -307,12 +307,12 @@
   {
     "statements": [
       {
-        "statement": "The world's major economies look to be headed down divergent paths in 2025, and America's role as the chief driver of global growth figures could expand even further.",
+        "statement": "The worldâs major economies look to be headed down divergent paths in 2025, and Americaâs role as the chief driver of global growth figures could expand even further.",
         "materialized": "YES",
         "reasoning": "The reality context confirms divergent paths and US growth leadership. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms US equity and economic outperformance. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) discusses 'fiscal expansion across several major economies' and policy divergence. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) references US economic strength relative to other regions, confirming US growth leadership."
       },
       {
-        "statement": "The Fed's rate cutting cycle could be a powerful tailwind for investors in what is shaping up to be a healthy environment for both stock and bond markets.",
+        "statement": "The Fedâs rate cutting cycle could be a powerful tailwind for investors in what is shaping up to be a healthy environment for both stock and bond markets.",
         "materialized": "YES",
         "reasoning": "The reality context confirms the Fed's rate cuts provided tailwind for both asset classes. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) states 'Improved liquidity and reserves lends greater support to risky assets and improves monetary policy transmission effects' following 175bps of cumulative cuts. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms 'stocks will continue to outperform bonds' in the easing environment, validating the healthy market environment prediction."
       }
@@ -329,7 +329,7 @@
     "justification": "Capital Group accurately predicted the divergent economic paths between the US and other major economies, with the US emerging as the chief growth driver in 2025. Their characterization of the Fed's rate-cutting cycle as a powerful tailwind for both stocks and bonds proved prescient, as the easing cycle did support both asset classes and created a healthy investment environment throughout 2025.",
     "id": "BASE_CASE-CAPITAL_GROUP-38-2025",
     "Original_Rank": 38,
-    "Prediction_Text": "\"The world's major economies look to be headed down divergent paths in 2025, and America's role as the chief driver of global growth figures could expand even further. The Fed's rate cutting cycle could be a powerful tailwind for investors in what is shaping up to be a healthy environment for both stock and bond markets.\"",
+    "Prediction_Text": "\"The worldâs major economies look to be headed down divergent paths in 2025, and Americaâs role as the chief driver of global growth figures could expand even further. The Fedâs rate cutting cycle could be a powerful tailwind for investors in what is shaping up to be a healthy environment for both stock and bond markets.\"",
     "Institution": "CAPITAL GROUP",
     "Rank": 11
   },
@@ -346,7 +346,7 @@
         "reasoning": "This characterization materialized as confirmed by multiple sources. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) notes 'slowdown in hiring, combined with weaker wage inflation' alongside 'improved liquidity and reserves lends greater support to risky assets.' SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) states 'growth remains positive if modest,' indicating resilience despite weakness signals. SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) confirms this mixed picture with 35% recession probability but continued economic activity."
       },
       {
-        "statement": "Our stance remains: ceci n'est pas un landing.",
+        "statement": "Our stance remains: ceci nâest pas un landing.",
         "materialized": "YES",
         "reasoning": "This philosophical stance was validated by the actual economic environment. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) describes an environment where 'growth remains positive if modest, inflation stays elevated but doesn't accelerate and central banks reach neutral policy stances,' defying traditional landing categorizations. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) forecasts 'moderate economic growth' with continued rate cuts, confirming the non-traditional nature. The mixed signals of weakness and resilience support this characterization."
       }
@@ -363,7 +363,7 @@
     "justification": "Robeco's pessimistic characterization of a treacherous macro climate with idiosyncratic crosswinds proved prescient and accurate. Their insight that data would blur broader economic resilience was validated by the actual mixed signals of labor market weakness alongside continued growth and rate cuts. Their refusal to categorize the environment as a traditional landing was well-founded, as the actual 2025 environment defied easy classification with its combination of moderate growth, elevated inflation, and divergent sector performance.",
     "id": "BASE_CASE-ROBECO-47-2025",
     "Original_Rank": 47,
-    "Prediction_Text": "\"In our view, 2025 will be another year of a treacherous macro climate with many idiosyncratic cross winds. By occasionally signaling some economic weakness, the data will blur broader economic resilience. Our stance remains: ceci n'est pas un landing.\"",
+    "Prediction_Text": "\"In our view, 2025 will be another year of a treacherous macro climate with many idiosyncratic cross winds. By occasionally signaling some economic weakness, the data will blur broader economic resilience. Our stance remains: ceci nâest pas un landing.\"",
     "Institution": "ROBECO",
     "Rank": 12
   },
@@ -443,7 +443,7 @@
         "reasoning": "Capital Economics explicitly validated this characterization: 'This would be comparatively weak by past standards but would not be a disaster in the circumstances' (SOURCE: Capital Economics, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025). The modest growth proved manageable given the easing cycle and structural support."
       },
       {
-        "statement": "Notably, it is unlikely to be so weak that \"risky\" assets are prevented from making further gains.",
+        "statement": "Notably, it is unlikely to be so weak that âriskyâ assets are prevented from making further gains.",
         "materialized": "YES",
         "reasoning": "Risk assets performed well despite modest growth. RBC GAM stated 'stocks will continue to outperform bonds' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail). CIBC noted 'Credit markets remain buoyant, with investment-grade and high-yield spreads compressing to multi-year lows' (SOURCE: CIBC, December 2025, https://www.cibc.com/en/asset-management/insights/fixed-income/fixed-income-investing-as-rates-fall.html), confirming that modest growth did not prevent risk asset gains."
       }
@@ -460,7 +460,7 @@
     "justification": "Capital Economics' 2025 prediction proved highly accurate, correctly forecasting 3% global growth, characterizing it as weak by historical standards but manageable, and identifying that risk assets would continue to perform despite modest growth. The institution successfully balanced concerns about trade tensions with the reality that they would not spiral into a full-scale war.",
     "id": "BASE_CASE-CAPITAL_ECONOMICS-11-2025",
     "Original_Rank": 11,
-    "Prediction_Text": "\"Warnings about a spiral into a global trade war next year are overdone. We expect the world economy to grow by around 3% in 2025, similar to the rate of growth this year. This would be comparatively weak by past standards but would not be a disaster in the circumstances. Notably, it is unlikely to be so weak that \"risky\" assets are prevented from making further gains.\"",
+    "Prediction_Text": "\"Warnings about a spiral into a global trade war next year are overdone. We expect the world economy to grow by around 3% in 2025, similar to the rate of growth this year. This would be comparatively weak by past standards but would not be a disaster in the circumstances. Notably, it is unlikely to be so weak that âriskyâ assets are prevented from making further gains.\"",
     "Institution": "CAPITAL ECONOMICS",
     "Rank": 15
   },
@@ -472,7 +472,7 @@
         "reasoning": "This prediction materialized as confirmed by multiple sources. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) documents 175bps of cumulative cuts from the 5.5% peak and 75bps since September. SOURCE 2 (BMO, December 2025, https://economics.bmo.com/en/publications/detail/685c5e7c-6d31-4967-8b02-67505755a9f6/) confirms Bank of Canada rate cuts. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) states the Fed continued 'interest-rate cuts.'"
       },
       {
-        "statement": "This should boost both equities – as shorter-term financing costs fall – and fixed income, as the policy rate component of bond yields declines.",
+        "statement": "This should boost both equities â as shorter-term financing costs fall â and fixed income, as the policy rate component of bond yields declines.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) states 'stocks will continue to outperform bonds,' confirming equity support. SOURCE 7 (CIBC, December 2025, https://www.cibc.com/en/asset-management/insights/fixed-income/fixed-income-investing-as-rates-fall.html) notes 'front-end yields to fall,' confirming fixed income support. However, SOURCE 1 also notes 'potential for outsized gains has diminished,' suggesting the boost was less substantial than anticipated. SOURCE 7 notes 'long-end yields remain anchored by fiscal concerns,' indicating limited fixed income gains."
       },
@@ -499,7 +499,7 @@
     "justification": "BNP Paribas Asset Management's nuanced framework proved insightful and well-calibrated to the actual 2025 environment. Their recognition that rate cuts alone do not guarantee positive returns and that economic growth is the more important driver was validated by the sources. Their cautionary stance about recession risks during rate-cutting cycles proved prescient, with J.P. Morgan forecasting 35% recession probability. However, their prediction of equity support from rate cuts was only partially realized, as gains were more modest than the mechanism alone would suggest.",
     "id": "BASE_CASE-BNP_PARIBAS_ASSET_MANAGEMENT-53-2025",
     "Original_Rank": 53,
-    "Prediction_Text": "\"Developed market central banks are cutting policy rates. This should boost both equities – as shorter-term financing costs fall – and fixed income, as the policy rate component of bond yields declines. Of course, anticipating the reaction of markets is not as simple as that because the other, arguably more important, factor driving asset prices is economic growth. Investors should initially be circumspect in anticipating positive equity returns during a rate-cutting cycle given that four out of the last five such cycles in the US coincided with a recession.\"",
+    "Prediction_Text": "\"Developed market central banks are cutting policy rates. This should boost both equities â as shorter-term financing costs fall â and fixed income, as the policy rate component of bond yields declines. Of course, anticipating the reaction of markets is not as simple as that because the other, arguably more important, factor driving asset prices is economic growth. Investors should initially be circumspect in anticipating positive equity returns during a rate-cutting cycle given that four out of the last five such cycles in the US coincided with a recession.\"",
     "Institution": "BNP PARIBAS ASSET MANAGEMENT",
     "Rank": 16
   },
@@ -550,7 +550,7 @@
         "reasoning": "This cautionary stance was validated by multiple sources. SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) forecasts 35% recession probability and notes 'sticky inflation will likely remain a prevailing theme.' SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) highlights 'uncertain AI productivity impacts' and 'inflation running above historical averages.' SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) notes 'potential for outsized gains has diminished after this year's strong run lifted valuations to extremes.'"
       },
       {
-        "statement": "Broadly speaking, markets have been quick to price in the cycle's extension, leaving valuations vulnerable to downgrades if risks increase.",
+        "statement": "Broadly speaking, markets have been quick to price in the cycleâs extension, leaving valuations vulnerable to downgrades if risks increase.",
         "materialized": "YES",
         "reasoning": "This assessment materialized as confirmed by SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) stating 'valuations to extremes in some areas' and 'potential for outsized gains has diminished.' SOURCE 7 (CIBC, December 2025, https://www.cibc.com/en/asset-management/insights/fixed-income/fixed-income-investing-as-rates-fall.html) notes 'tight credit spreads and potential market volatility.' SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) expects 'moderately wider spreads of 110 bp in U.S. high-grade by year-end 2026,' indicating vulnerability to downgrades."
       }
@@ -567,7 +567,7 @@
     "justification": "Janus Henderson's cautious stance on risk and valuation vulnerability proved prescient and materialized throughout 2025. Their warning about elevated valuations and the need for caution was validated by multiple sources documenting extreme valuations and compressed spreads. However, their expectation of global economic support from rate cuts and stimulus was only partially realized, as growth remained modest rather than robust, suggesting they may have overestimated the stimulative impact.",
     "id": "BASE_CASE-JANUS_HENDERSON-42-2025",
     "Original_Rank": 42,
-    "Prediction_Text": "\"The combination of rate cuts and other potential accommodative policy in the US and stimulus in China should lend support to the global economy. Still, there are forces at play that make it imperative to apply caution when adding risk. Broadly speaking, markets have been quick to price in the cycle's extension, leaving valuations vulnerable to downgrades if risks increase.\"",
+    "Prediction_Text": "\"The combination of rate cuts and other potential accommodative policy in the US and stimulus in China should lend support to the global economy. Still, there are forces at play that make it imperative to apply caution when adding risk. Broadly speaking, markets have been quick to price in the cycleâs extension, leaving valuations vulnerable to downgrades if risks increase.\"",
     "Institution": "JANUS HENDERSON",
     "Rank": 18
   },
@@ -579,12 +579,12 @@
         "reasoning": "This characterization materialized as confirmed by multiple sources. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) describes 'crosscurrents from fiscal expansion, elevated inflation and uncertain AI productivity impacts' that 'balance out.' SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) forecasts 'moderate economic growth' with continued rate cuts, defying traditional soft or hard landing categories. SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) notes 'a U.S. economy balancing robust capex with soft labor demand,' confirming the mixed nature."
       },
       {
-        "statement": "It's one in which inflation and monetary policy rates settle but stay structurally higher than they were pre-Covid.",
+        "statement": "Itâs one in which inflation and monetary policy rates settle but stay structurally higher than they were pre-Covid.",
         "materialized": "YES",
         "reasoning": "This prediction materialized as confirmed by multiple sources. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) states 'inflation running above historical averages in most markets' and 'central banks reaching neutral policy stances' by 2026-2027, implying rates settle higher than pre-Covid. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) notes inflation 'should peak in Q1 roughly or so' but remain elevated. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms 'inflation subsiding sufficiently' but not returning to pre-Covid levels."
       },
       {
-        "statement": "And while this landing may lack a label, it's replete with opportunity for investors willing to adjust their portfolio itineraries.",
+        "statement": "And while this landing may lack a label, itâs replete with opportunity for investors willing to adjust their portfolio itineraries.",
         "materialized": "PARTIAL",
         "reasoning": "Opportunities existed but were constrained by valuations. SOURCE 7 (CIBC, December 2025, https://www.cibc.com/en/asset-management/insights/fixed-income/fixed-income-investing-as-rates-fall.html) identifies opportunities in 'active relative value positioning — particularly in the BBB segment.' SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) notes 'On the upside, AI productivity gains could materialize faster than expected.' However, SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) warns 'potential for outsized gains has diminished after this year's strong run lifted valuations to extremes,' suggesting opportunities were more limited than the statement implies."
       }
@@ -601,7 +601,7 @@
     "justification": "Nuveen's characterization of a unique, uncategorizable landing proved accurate and insightful, correctly identifying the structural shift to higher inflation and rates compared to pre-Covid levels. Their framework of a different kind of landing that defies traditional categorization was validated by the actual mixed economic environment. However, their optimism about abundant opportunities for investors was somewhat overstated given the valuation constraints and compressed spreads that limited return potential.",
     "id": "BASE_CASE-NUVEEN-45-2025",
     "Original_Rank": 45,
-    "Prediction_Text": "\"The economy is experiencing a different kind of landing that defies easy categorization. It's one in which inflation and monetary policy rates settle but stay structurally higher than they were pre-Covid. And while this landing may lack a label, it's replete with opportunity for investors willing to adjust their portfolio itineraries.\"",
+    "Prediction_Text": "\"The economy is experiencing a different kind of landing that defies easy categorization. Itâs one in which inflation and monetary policy rates settle but stay structurally higher than they were pre-Covid. And while this landing may lack a label, itâs replete with opportunity for investors willing to adjust their portfolio itineraries.\"",
     "Institution": "NUVEEN",
     "Rank": 19
   },
@@ -642,7 +642,7 @@
   {
     "statements": [
       {
-        "statement": "Policy forecasts at this stage are still highly speculative, but they don't seem to spell disaster for the economy or markets in the short run.",
+        "statement": "Policy forecasts at this stage are still highly speculative, but they donât seem to spell disaster for the economy or markets in the short run.",
         "materialized": "YES",
         "reasoning": "This measured assessment materialized as confirmed by multiple sources. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) forecasts 'moderate economic growth,' indicating no disaster. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) emphasizes economic stability despite policy uncertainty. However, SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) forecasts 35% recession probability, indicating some disaster risk exists, though not in the 'short run' as specified."
       },
@@ -669,7 +669,7 @@
     "justification": "JPMorgan Asset Management's balanced assessment of stability tempered by vigilance proved well-calibrated to the actual 2025 environment. Their recognition that policy forecasts are speculative but not immediately disastrous was validated by the sources. However, their characterization of a 'gradual return to normal' was somewhat optimistic, as the sources indicate ongoing challenges including labor market softness and elevated inflation. Their emphasis on vigilance regarding fragility proved prescient given the 35% recession probability and valuation extremes.",
     "id": "BASE_CASE-JPMORGAN_ASSET_MANAGEMENT-55-2025",
     "Original_Rank": 55,
-    "Prediction_Text": "\"Policy forecasts at this stage are still highly speculative, but they don't seem to spell disaster for the economy or markets in the short run. The economy remains on stable footing as we enter the new year, with a gradual return to normal across many fronts. However, investors should remain vigilant, considering the fragility of the economic expansion that underpins a bullish fervor in markets.\"",
+    "Prediction_Text": "\"Policy forecasts at this stage are still highly speculative, but they donât seem to spell disaster for the economy or markets in the short run. The economy remains on stable footing as we enter the new year, with a gradual return to normal across many fronts. However, investors should remain vigilant, considering the fragility of the economic expansion that underpins a bullish fervor in markets.\"",
     "Institution": "JPMORGAN ASSET MANAGEMENT",
     "Rank": 21
   },
@@ -725,7 +725,7 @@
         "reasoning": "US economic strength was confirmed throughout 2025. RBC GAM stated 'stronger-than-expected U.S. economic growth' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail). Scotiabank noted 'the economy in really good shape with low inflation and a strong labour market' (SOURCE: Scotiabank, December 10, 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html). J.P. Morgan's December 2025 outlook noted only a 35% recession probability, confirming low slowdown risks (SOURCE: J.P. Morgan Global Research, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook)."
       },
       {
-        "statement": "We continue to see interest rates staying higher for longer on a relative basis, regardless of the Federal Reserve's ongoing monetary easing campaign.",
+        "statement": "We continue to see interest rates staying higher for longer on a relative basis, regardless of the Federal Reserveâs ongoing monetary easing campaign.",
         "materialized": "PARTIAL",
         "reasoning": "Interest rate dynamics were more complex than this statement suggests. While Scotiabank noted the Fed cut rates 175bps from peak (SOURCE: Scotiabank, December 10, 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html), RBC GAM noted 'the dollar's modest rally since September stems from a view that stronger-than-expected U.S. economic growth...will underpin Treasury yields, at least in the short term' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail). CIBC noted 'long-end yields remain anchored by fiscal concerns' (SOURCE: CIBC, December 2025, https://www.cibc.com/en/asset-management/insights/fixed-income/fixed-income-investing-as-rates-fall.html), suggesting yields did not fall as much as easing might suggest, partially validating the 'higher for longer' thesis."
       }
@@ -742,7 +742,7 @@
     "justification": "Apollo's prediction proved accurate on US economic strength but only partially correct on the 'higher for longer' rates thesis. The institution correctly identified the resilience of the US economy but underestimated the extent of yield compression that occurred despite fiscal concerns anchoring long-end yields.",
     "id": "BASE_CASE-APOLLO_GLOBAL_MANAGEMENT-9-2025",
     "Original_Rank": 9,
-    "Prediction_Text": "\"The outlook for the US economy remains strong with no signs of a major slowdown going into 2025. We continue to see interest rates staying higher for longer on a relative basis, regardless of the Federal Reserve's ongoing monetary easing campaign.\"",
+    "Prediction_Text": "\"The outlook for the US economy remains strong with no signs of a major slowdown going into 2025. We continue to see interest rates staying higher for longer on a relative basis, regardless of the Federal Reserveâs ongoing monetary easing campaign.\"",
     "Institution": "APOLLO GLOBAL MANAGEMENT",
     "Rank": 23
   },
@@ -865,7 +865,7 @@
   {
     "statements": [
       {
-        "statement": "Given the importance of the US for global growth and weakness in Europe and China, we expect global growth to remain stable at some 2.8% in 2025, broadly its trend rate – assuming our base case for Trump's policies.",
+        "statement": "Given the importance of the US for global growth and weakness in Europe and China, we expect global growth to remain stable at some 2.8% in 2025, broadly its trend rate â assuming our base case for Trumpâs policies.",
         "materialized": "PARTIAL",
         "reasoning": "The reality context shows global growth near this level but with uncertainty about the Trump policy assumptions. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) states 'growth remains positive if modest' without specifying exact 2.8% figure. The prediction's 2.8% global growth estimate aligns with consensus, but SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) forecasts '35% probability of a U.S. and global recession in 2026,' suggesting downside risks to the stable growth assumption."
       },
@@ -887,7 +887,7 @@
     "justification": "Pictet Asset Management accurately predicted the global growth trajectory near 2.8% and correctly anticipated equity outperformance over bonds with US leadership in 2025. However, their assumption of 'resilient growth' continuing may be overly optimistic given the significant recession risks for 2026 evident in December 2025 forecasts, suggesting they underestimated downside risks to their base case.",
     "id": "BASE_CASE-PICTET_ASSET_MANAGEMENT-32-2025",
     "Original_Rank": 32,
-    "Prediction_Text": "\"Given the importance of the US for global growth and weakness in Europe and China, we expect global growth to remain stable at some 2.8% in 2025, broadly its trend rate – assuming our base case for Trump's policies. Resilient growth and falling interest rates should help equities outperform bonds next year, with US in the lead.\"",
+    "Prediction_Text": "\"Given the importance of the US for global growth and weakness in Europe and China, we expect global growth to remain stable at some 2.8% in 2025, broadly its trend rate â assuming our base case for Trumpâs policies. Resilient growth and falling interest rates should help equities outperform bonds next year, with US in the lead.\"",
     "Institution": "PICTET ASSET MANAGEMENT",
     "Rank": 28
   },
@@ -1010,7 +1010,7 @@
   {
     "statements": [
       {
-        "statement": "Our outlook for 2025 is marked by cautious optimism: a macro environment characterized by lower interest rates and positive economic growth will support risk appetite, as the tightening cycle has replenished central banks' toolboxes, creating room for bold action if needed.",
+        "statement": "Our outlook for 2025 is marked by cautious optimism: a macro environment characterized by lower interest rates and positive economic growth will support risk appetite, as the tightening cycle has replenished central banksâ toolboxes, creating room for bold action if needed.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms lower interest rates and 'moderate economic growth,' supporting risk appetite. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) documents rate cuts and improved liquidity. However, SOURCE 1 notes 'potential for outsized gains has diminished,' and SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) forecasts 35% recession probability, suggesting risk appetite was more constrained than the statement implies."
       },
@@ -1032,7 +1032,7 @@
     "justification": "UniCredit's cautiously optimistic outlook with appropriate caveats proved well-balanced and largely accurate. Their recognition that lower rates and positive growth support risk appetite was validated, though the actual support was more modest than anticipated. Their important caveat that good returns do not translate into an all-clear for markets proved prescient, as the sources document significant recession risks, valuation extremes, and compressed spreads that constrained the positive environment.",
     "id": "BASE_CASE-UNICREDIT-56-2025",
     "Original_Rank": 56,
-    "Prediction_Text": "\"Our outlook for 2025 is marked by cautious optimism: a macro environment characterized by lower interest rates and positive economic growth will support risk appetite, as the tightening cycle has replenished central banks' toolboxes, creating room for bold action if needed. This is good news for equity and bond returns in 2025, but it will not necessarily translate into an all-clear for global markets.\"",
+    "Prediction_Text": "\"Our outlook for 2025 is marked by cautious optimism: a macro environment characterized by lower interest rates and positive economic growth will support risk appetite, as the tightening cycle has replenished central banksâ toolboxes, creating room for bold action if needed. This is good news for equity and bond returns in 2025, but it will not necessarily translate into an all-clear for global markets.\"",
     "Institution": "UNICREDIT",
     "Rank": 33
   },
@@ -1073,7 +1073,7 @@
         "reasoning": "This prediction was partially validated. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms the tension between 'moderate economic growth' and 'valuations to extremes in some areas.' SOURCE 1 also states 'stocks will continue to outperform bonds,' supporting modest positive returns. However, SOURCE 1 notes 'potential for outsized gains has diminished,' and SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) forecasts 35% recession probability, suggesting returns were more constrained than 'modest positive' implies."
       },
       {
-        "statement": "The challenge is that tail risks are greater than before, and the new administration's policy agenda creates a wider distribution of potential outcomes.",
+        "statement": "The challenge is that tail risks are greater than before, and the new administrationâs policy agenda creates a wider distribution of potential outcomes.",
         "materialized": "YES",
         "reasoning": "This assessment materialized as confirmed by multiple sources. SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) explicitly states 'tail risks are greater than before' and notes 'the new administrationâs policy agenda creates a wider distribution of potential outcomes.' SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) describes 'crosscurrents' and uncertain outcomes. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) warns 'potential for outsized gains has diminished,' confirming greater tail risks."
       }
@@ -1090,7 +1090,7 @@
     "justification": "Goldman Sachs's recognition of tension between macro forecasts and valuations proved insightful and accurate. Their acknowledgment of greater tail risks and wider distribution of outcomes was validated by multiple sources and proved prescient. However, their forecast of modest positive returns across asset classes was somewhat optimistic given the 35% recession probability and valuation extremes documented by other sources. The prediction correctly identified the key challenges but may have underestimated the downside risks.",
     "id": "BASE_CASE-GOLDMAN_SACHS-59-2025",
     "Original_Rank": 59,
-    "Prediction_Text": "\"Despite heightened tension between our baseline macro forecasts and high valuations and markets that have moved to reflect the better US growth picture, we still forecast modest positive returns across the key asset classes. The challenge is that tail risks are greater than before, and the new administration's policy agenda creates a wider distribution of potential outcomes.\"",
+    "Prediction_Text": "\"Despite heightened tension between our baseline macro forecasts and high valuations and markets that have moved to reflect the better US growth picture, we still forecast modest positive returns across the key asset classes. The challenge is that tail risks are greater than before, and the new administrationâs policy agenda creates a wider distribution of potential outcomes.\"",
     "Institution": "GOLDMAN SACHS",
     "Rank": 35
   },
@@ -1194,7 +1194,7 @@
   {
     "statements": [
       {
-        "statement": "US President-elect Donald Trump's radical policy agenda has created some financial market uncertainty, in terms of the outlook for investment returns.",
+        "statement": "US President-elect Donald Trumpâs radical policy agenda has created some financial market uncertainty, in terms of the outlook for investment returns.",
         "materialized": "YES",
         "reasoning": "The reality context confirms market uncertainty regarding Trump policies. SOURCE 3 (J.P. Morgan Global Research, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) explicitly discusses 'multidimensional polarization' in equity markets and notes that policy uncertainty impacts market outlook. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) references tariff announcements affecting inflation expectations, confirming policy-driven uncertainty materialized."
       },
@@ -1221,7 +1221,7 @@
     "justification": "AXA Investment Managers correctly identified policy uncertainty and the general favorable macro backdrop for risk assets, but underestimated the persistence of elevated inflation and downside recession risks. The prediction was directionally correct on lower rates supporting markets, but the characterization of 'stable inflation' was overly optimistic given actual outcomes showing inflation remaining well above historical averages through 2025.",
     "id": "BASE_CASE-AXA_INVESTMENT_MANAGERS-21-2025",
     "Original_Rank": 21,
-    "Prediction_Text": "\"US President-elect Donald Trump's radical policy agenda has created some financial market uncertainty, in terms of the outlook for investment returns. Nevertheless, we believe the central macroeconomic outlook remains favorable for bonds and equities. Growth, stable inflation and lower interest rates should support markets.\"",
+    "Prediction_Text": "\"US President-elect Donald Trumpâs radical policy agenda has created some financial market uncertainty, in terms of the outlook for investment returns. Nevertheless, we believe the central macroeconomic outlook remains favorable for bonds and equities. Growth, stable inflation and lower interest rates should support markets.\"",
     "Institution": "AXA INVESTMENT MANAGERS",
     "Rank": 39
   },
@@ -1306,12 +1306,12 @@
         "reasoning": "Industrial policy and government intervention materialized throughout 2025. CIBC noted 'The global economy continues to show resilience amid three notable developments: fiscal expansion across several major economies...and substantial AI-related investment' (SOURCE: CIBC, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025). Scotiabank referenced tariff announcements and policy impacts (SOURCE: Scotiabank, December 10, 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html), confirming active industrial policy."
       },
       {
-        "statement": "If inflation can be contained — and we think it can — central banks can stand aside and allow economies to run a little warm.",
+        "statement": "If inflation can be contained â and we think it can â central banks can stand aside and allow economies to run a little warm.",
         "materialized": "PARTIAL",
         "reasoning": "Inflation containment proved challenging. CIBC noted 'Inflation in the U.S., U.K. and Japan has remained well above rolling 30-year averages and central bank targets' (SOURCE: CIBC, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025). However, central banks did proceed with easing—Scotiabank confirmed the Fed cut rates 175bps (SOURCE: Scotiabank, December 10, 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html). So while inflation remained sticky, central banks did ease despite this."
       },
       {
-        "statement": "That is a recipe for above-trend US GDP growth, which could drag some of the world's other economies with it.",
+        "statement": "That is a recipe for above-trend US GDP growth, which could drag some of the worldâs other economies with it.",
         "materialized": "PARTIAL",
         "reasoning": "US growth strength was confirmed but above-trend characterization is questionable. RBC GAM noted 'stronger-than-expected U.S. economic growth' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail), suggesting US outperformance. However, CIBC's base case saw 'growth remains positive if modest' globally (SOURCE: CIBC, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025), indicating the global drag-along effect was limited."
       }
@@ -1328,7 +1328,7 @@
     "justification": "Neuberger Berman's prediction was partially correct on industrial policy continuation and central bank easing, but overstated the magnitude of above-trend growth. The institution correctly identified the policy backdrop and structural trends but underestimated the persistence of inflation and the modest nature of global growth expansion.",
     "id": "BASE_CASE-NEUBERGER_BERMAN-7-2025",
     "Original_Rank": 7,
-    "Prediction_Text": "\"A year of above-trend growth. While the politics may change, industrial policy aimed at influencing domestic production patterns will continue, whether achieved via government spending and investment, tax policy, trade policy, deregulation or other means. If inflation can be contained — and we think it can — central banks can stand aside and allow economies to run a little warm. That is a recipe for above-trend US GDP growth, which could drag some of the world's other economies with it.\"",
+    "Prediction_Text": "\"A year of above-trend growth. While the politics may change, industrial policy aimed at influencing domestic production patterns will continue, whether achieved via government spending and investment, tax policy, trade policy, deregulation or other means. If inflation can be contained â and we think it can â central banks can stand aside and allow economies to run a little warm. That is a recipe for above-trend US GDP growth, which could drag some of the worldâs other economies with it.\"",
     "Institution": "NEUBERGER BERMAN",
     "Rank": 42
   },
@@ -1350,12 +1350,12 @@
         "reasoning": "Technology trends were indeed constructive but with caveats. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) mentions 'substantial AI-related investment with uncertain productivity payoffs.' SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) notes 'continued technology investments will underpin Treasury yields.' However, SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) highlights 'equity markets split between AI and non-AI sectors,' indicating uneven technology benefits."
       },
       {
-        "statement": "Plus, potential tax policy and deregulation efforts in 2025 could provide some semblance of a tailwind — particularly from an economic perspective.",
+        "statement": "Plus, potential tax policy and deregulation efforts in 2025 could provide some semblance of a tailwind â particularly from an economic perspective.",
         "materialized": "PARTIAL",
         "reasoning": "Tax policy and deregulation potential was mentioned but with limited confirmation of actual impact. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) references Chair Powell's intent to 'turn this job over to whomever takes over with the economy in really good shape,' suggesting policy continuity rather than dramatic shifts. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) does not emphasize tax or deregulation tailwinds, suggesting these were speculative rather than realized."
       },
       {
-        "statement": "While growth asset returns are not expected to be as robust as 2024, 2025's investment environment should prove to be favorable for investors.",
+        "statement": "While growth asset returns are not expected to be as robust as 2024, 2025âs investment environment should prove to be favorable for investors.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially accurate. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms 'stocks will continue to outperform bonds' and 'moderate economic growth,' supporting a favorable environment. However, SOURCE 1 also notes 'potential for outsized gains has diminished after this year's strong run lifted valuations to extremes,' and SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) forecasts 35% recession probability, suggesting the environment was less favorable than anticipated."
       }
@@ -1372,7 +1372,7 @@
     "justification": "LPL Financial's cautiously optimistic stance was appropriately calibrated to the actual 2025 environment, correctly identifying both constructive technology trends and the need for caution. Their recognition that market environments are temporary and subject to change proved prescient given the volatility and divergence between AI and non-AI sectors. However, they may have overestimated the tailwinds from tax policy and deregulation, and underestimated the degree to which valuations would constrain returns relative to 2024.",
     "id": "BASE_CASE-LPL_FINANCIAL-44-2025",
     "Original_Rank": 44,
-    "Prediction_Text": "\"We remain cautiously optimistic. Cautious because we know that no market environment is ever permanent, and that change is always potentially around the corner. Optimistic because we recognize constructive long-term technology trends are in place. Plus, potential tax policy and deregulation efforts in 2025 could provide some semblance of a tailwind — particularly from an economic perspective. While growth asset returns are not expected to be as robust as 2024, 2025's investment environment should prove to be favorable for investors.\"",
+    "Prediction_Text": "\"We remain cautiously optimistic. Cautious because we know that no market environment is ever permanent, and that change is always potentially around the corner. Optimistic because we recognize constructive long-term technology trends are in place. Plus, potential tax policy and deregulation efforts in 2025 could provide some semblance of a tailwind â particularly from an economic perspective. While growth asset returns are not expected to be as robust as 2024, 2025âs investment environment should prove to be favorable for investors.\"",
     "Institution": "LPL FINANCIAL",
     "Rank": 43
   },
@@ -1427,12 +1427,12 @@
   {
     "statements": [
       {
-        "statement": "We believe markets are mispricing a host of risks – and opportunities – regarding the outlook for 2025.",
+        "statement": "We believe markets are mispricing a host of risks â and opportunities â regarding the outlook for 2025.",
         "materialized": "PARTIAL",
         "reasoning": "Markets did misprice certain risks and opportunities, though the specific nature is complex. RBC GAM noted 'potential for outsized gains has diminished after this year's strong run lifted valuations to extremes in some areas' (SOURCE: RBC Global Asset Management, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail), suggesting some mispricing of valuations. However, the sources do not provide comprehensive validation of LGIM's specific risk/opportunity mispricing claims."
       },
       {
-        "statement": "The current market consensus is complacent and mistakenly extrapolating the reflationary effects from Trump's policies during his first administration.",
+        "statement": "The current market consensus is complacent and mistakenly extrapolating the reflationary effects from Trumpâs policies during his first administration.",
         "materialized": "PARTIAL",
         "reasoning": "The reflationary thesis proved more complex than simple extrapolation. CIBC noted 'Inflation in the U.S., U.K. and Japan has remained well above rolling 30-year averages and central bank targets' (SOURCE: CIBC, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025), suggesting inflation concerns were justified. However, Scotiabank noted 'If there are no new major tariff announcements then inflation from goods should peak in Q1 roughly or so' (SOURCE: Scotiabank, December 10, 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html), indicating inflation dynamics were more nuanced than simple reflationary extrapolation."
       },
@@ -1454,7 +1454,7 @@
     "justification": "LGIM's prediction was partially correct in identifying market mispricing and inflation concerns, but the specific claims about consensus complacency and tariff underestimation are not clearly validated by the sources. The institution raised valid concerns about inflation and tariffs, but the evidence suggests these risks were more widely recognized than the prediction implied.",
     "id": "BASE_CASE-LGIM-14-2025",
     "Original_Rank": 14,
-    "Prediction_Text": "\"We believe markets are mispricing a host of risks – and opportunities – regarding the outlook for 2025. The current market consensus is complacent and mistakenly extrapolating the reflationary effects from Trump's policies during his first administration. Consensus could also be underestimating both the extent of tariffs and the impact for any given tariff level.\"",
+    "Prediction_Text": "\"We believe markets are mispricing a host of risks â and opportunities â regarding the outlook for 2025. The current market consensus is complacent and mistakenly extrapolating the reflationary effects from Trumpâs policies during his first administration. Consensus could also be underestimating both the extent of tariffs and the impact for any given tariff level.\"",
     "Institution": "LGIM",
     "Rank": 46
   },
@@ -1567,7 +1567,7 @@
   {
     "statements": [
       {
-        "statement": "The potential for exceptionally positive policy and geopolitical outcomes as well as for increases in tension and frictions set the table for a rollercoaster, yet ultimately bullish continuation of the past two years' \"Roaring 20%'s\" rally in 2025.",
+        "statement": "The potential for exceptionally positive policy and geopolitical outcomes as well as for increases in tension and frictions set the table for a rollercoaster, yet ultimately bullish continuation of the past two yearsâ âRoaring 20%âsâ rally in 2025.",
         "materialized": "PARTIAL",
         "reasoning": "The reality context confirms the bullish continuation but with caveats on the 'rollercoaster' characterization. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms stocks 'will continue to outperform bonds' and references 'this year's strong run,' validating the bullish continuation. SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) discusses 'multidimensional polarization' and policy uncertainty, supporting the 'rollercoaster' characterization. However, SOURCE 1 also notes 'potential for outsized gains has diminished,' suggesting the rally was less exceptional than the 'Roaring 20%'s' continuation implied."
       }
@@ -1584,7 +1584,7 @@
     "justification": "Evercore ISI correctly anticipated the continuation of the bull market in 2025 and appropriately flagged the dual potential for positive and negative policy outcomes creating volatility. However, they may have overestimated the magnitude of gains relative to the prior two years, as valuations became 'extreme in some areas' and the breadth of outperformance narrowed to AI-concentrated sectors rather than broad-based 'Roaring 20%'s' style gains.",
     "id": "BASE_CASE-EVERCORE_ISI-27-2025",
     "Original_Rank": 27,
-    "Prediction_Text": "\"The potential for exceptionally positive policy and geopolitical outcomes as well as for increases in tension and frictions set the table for a rollercoaster, yet ultimately bullish continuation of the past two years' \"Roaring 20%'s\" rally in 2025.\"",
+    "Prediction_Text": "\"The potential for exceptionally positive policy and geopolitical outcomes as well as for increases in tension and frictions set the table for a rollercoaster, yet ultimately bullish continuation of the past two yearsâ âRoaring 20%âsâ rally in 2025.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 51
   },
@@ -1639,12 +1639,12 @@
   {
     "statements": [
       {
-        "statement": "For equities to continue their exceptional performance we would need geopolitical risks to stabilize; growth, but not too much; steady but low inflation so rates can come down … a lot has to go right.",
+        "statement": "For equities to continue their exceptional performance we would need geopolitical risks to stabilize; growth, but not too much; steady but low inflation so rates can come down â¦ a lot has to go right.",
         "materialized": "PARTIAL",
         "reasoning": "The reality context shows mixed validation of these conditions. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) states 'Inflation in the U.S., U.K. and Japan has remained well above rolling 30-year averages,' contradicting 'steady but low inflation.' SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) confirms rates did come down with 175bps of cuts. SOURCE 4 also notes 'growing policy uncertainty and geopolitical tensions,' suggesting geopolitical risks did not fully stabilize. The conditions were partially met but with elevated inflation persisting."
       },
       {
-        "statement": "So although we expect gains, we wouldn't expect a continuation of the 20%-25% growth in the US stock market.",
+        "statement": "So although we expect gains, we wouldnât expect a continuation of the 20%-25% growth in the US stock market.",
         "materialized": "PARTIAL",
         "reasoning": "The reality context shows this prediction was partially correct but may have underestimated gains. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) references 'this year's strong run' in 2025 and notes 'potential for outsized gains has diminished,' suggesting gains continued but at a slower pace than prior years. The exact magnitude of 2025 gains is not specified in the sources, but the characterization of moderating gains appears directionally correct, though the actual performance may have exceeded the cautious expectation."
       }
@@ -1661,7 +1661,7 @@
     "justification": "Columbia Threadneedle appropriately cautioned against expecting a continuation of exceptional equity gains and correctly identified the multiple conditions required for sustained outperformance. However, they underestimated the resilience of equity markets despite elevated inflation and geopolitical tensions, as the bull market continued stronger than their cautious stance suggested, though their concern about moderating gains relative to prior years proved accurate.",
     "id": "BASE_CASE-COLUMBIA_THREADNEEDLE-39-2025",
     "Original_Rank": 39,
-    "Prediction_Text": "\"For equities to continue their exceptional performance we would need geopolitical risks to stabilize; growth, but not too much; steady but low inflation so rates can come down … a lot has to go right. So although we expect gains, we wouldn't expect a continuation of the 20%-25% growth in the US stock market.\"",
+    "Prediction_Text": "\"For equities to continue their exceptional performance we would need geopolitical risks to stabilize; growth, but not too much; steady but low inflation so rates can come down â¦ a lot has to go right. So although we expect gains, we wouldnât expect a continuation of the 20%-25% growth in the US stock market.\"",
     "Institution": "COLUMBIA THREADNEEDLE",
     "Rank": 54
   },
@@ -1697,7 +1697,7 @@
   {
     "statements": [
       {
-        "statement": "In 2025, we believe the world we will live in will increasingly resemble a story with four new chapters: new US policy, China's reflation plans, the unwinding of the yen carry trade and an end to the German debt-brake rule.",
+        "statement": "In 2025, we believe the world we will live in will increasingly resemble a story with four new chapters: new US policy, Chinaâs reflation plans, the unwinding of the yen carry trade and an end to the German debt-brake rule.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. New US policy was evident but not dramatically transformative. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) references Chair Powell's comments about the incoming administration but emphasizes economic stability. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) mentions 'fiscal expansion across several major economies' but does not specifically highlight the four chapters mentioned. The sources do not provide specific confirmation of China's reflation plans, yen carry trade unwinding, or German debt-brake changes as major themes in 2025."
       },
@@ -1719,7 +1719,7 @@
     "justification": "Societe Generale's framework of four new chapters driving 2025 was only partially validated by the actual market environment. While new US policy and fiscal expansion were evident, the sources do not confirm the specific emphasis on China's reflation, yen carry trade unwinding, or German debt-brake changes as major drivers. Their characterization of three chapters as risk-on was overstated, as the actual environment proved more mixed with significant recession risks and valuation constraints limiting risk appetite.",
     "id": "BASE_CASE-SOCIETE_GENERALE-48-2025",
     "Original_Rank": 48,
-    "Prediction_Text": "\"In 2025, we believe the world we will live in will increasingly resemble a story with four new chapters: new US policy, China's reflation plans, the unwinding of the yen carry trade and an end to the German debt-brake rule. Three of these are risk-on.\"\"\"\"",
+    "Prediction_Text": "\"In 2025, we believe the world we will live in will increasingly resemble a story with four new chapters: new US policy, Chinaâs reflation plans, the unwinding of the yen carry trade and an end to the German debt-brake rule. Three of these are risk-on.\"\"\"\"",
     "Institution": "SOCIETE GENERALE",
     "Rank": 56
   },
@@ -1736,7 +1736,7 @@
         "reasoning": "Central banks did cut rates, but the pace and recovery were less dramatic than predicted. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) documents 175bps of cumulative cuts and 75bps since September, confirming rate cuts. However, SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) forecasts only 'moderate economic growth' rather than a 'fast recovery,' and SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) states 'growth remains positive if modest,' suggesting recovery was gradual rather than fast."
       },
       {
-        "statement": "We expect a shift from services to manufacturing — the result of a global push towards renewable energy and the rise of AI.",
+        "statement": "We expect a shift from services to manufacturing â the result of a global push towards renewable energy and the rise of AI.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) mentions 'substantial AI-related investment' and SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) notes 'continued technology investments.' However, the sources do not specifically confirm a shift from services to manufacturing or emphasize renewable energy as a major driver. The focus is more on AI and technology broadly rather than the specific sectoral shift predicted."
       },
@@ -1758,7 +1758,7 @@
     "justification": "T. Rowe Price's prediction of a slowdown followed by rapid recovery proved overly optimistic. While central banks did cut rates substantially, the recovery was gradual and moderate rather than fast, and growth remained modest throughout 2025. Their expectation of a services-to-manufacturing shift driven by renewable energy and AI was not clearly validated by the sources, which emphasized AI investment more broadly. The prediction captured some elements of the actual environment but overestimated the pace of recovery and the magnitude of sectoral shifts.",
     "id": "BASE_CASE-T._ROWE_PRICE-49-2025",
     "Original_Rank": 49,
-    "Prediction_Text": "\"There is strong potential for a slowdown in global growth in early 2025. But central banks are poised to respond with rapid rate cuts, paving the way for a fast recovery. We expect a shift from services to manufacturing — the result of a global push towards renewable energy and the rise of AI. These factors are, in part, fueling infrastructure spending.\"",
+    "Prediction_Text": "\"There is strong potential for a slowdown in global growth in early 2025. But central banks are poised to respond with rapid rate cuts, paving the way for a fast recovery. We expect a shift from services to manufacturing â the result of a global push towards renewable energy and the rise of AI. These factors are, in part, fueling infrastructure spending.\"",
     "Institution": "T. ROWE PRICE",
     "Rank": 57
   },
@@ -1770,7 +1770,7 @@
         "reasoning": "US growth did stabilize but at a modest level rather than accelerating. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) forecasts 'moderate economic growth,' and SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) documents 175bps of cumulative rate cuts, confirming the transmission mechanism. However, SOURCE 5 also notes 'slowdown in hiring, combined with weaker wage inflation,' suggesting stabilization was at a lower level than anticipated. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) states 'growth remains positive if modest.'"
       },
       {
-        "statement": "Lower mortgage rates and robust real earnings should underpin a growth rate of 2–3%.",
+        "statement": "Lower mortgage rates and robust real earnings should underpin a growth rate of 2â3%.",
         "materialized": "PARTIAL",
         "reasoning": "Lower mortgage rates materialized as confirmed by SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) documenting rate cuts. However, robust real earnings were not clearly confirmed. SOURCE 5 notes 'weaker wage inflation' and SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) does not emphasize robust earnings growth. The specific 2-3% growth rate prediction is not directly confirmed by the sources, which describe only 'moderate' growth."
       },
@@ -1780,7 +1780,7 @@
         "reasoning": "Fiscal stimulus potential was mentioned but not clearly materialized as a major growth driver. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) mentions 'fiscal expansion across several major economies,' but does not specifically attribute this to Republican policies or confirm it as a major growth driver. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) does not emphasize fiscal stimulus as a key factor. The sources suggest fiscal expansion exists but do not confirm it as a significant growth booster."
       },
       {
-        "statement": "Economic weakness internationally probably won't meaningfully affect the US.",
+        "statement": "Economic weakness internationally probably wonât meaningfully affect the US.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) notes 'stocks will continue to outperform bonds' and emphasizes US strength. However, SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) forecasts 35% recession probability for 'U.S. and global recession,' suggesting global weakness could affect the US. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) describes 'crosscurrents' affecting the global economy, implying some spillover effects."
       }
@@ -1797,7 +1797,7 @@
     "justification": "AllSpring Global Investments' prediction of US growth stabilization was partially validated, though the actual growth proved more modest than anticipated. Their expectation of 2-3% growth supported by lower mortgage rates and robust earnings was not clearly confirmed, with sources emphasizing only 'moderate' growth and weaker wage inflation. Their optimism about fiscal stimulus and US insulation from international weakness was overstated, as the sources indicate more modest fiscal impacts and potential global spillover effects.",
     "id": "BASE_CASE-ALLSPRING_GLOBAL_INVESTMENTS-51-2025",
     "Original_Rank": 51,
-    "Prediction_Text": "\"US growth will likely stabilize in 2025 as the effects of lower interest rates make their way through the economy. Lower mortgage rates and robust real earnings should underpin a growth rate of 2–3%. Additional fiscal stimulus from a Republican sweep will likely boost economic growth further. Economic weakness internationally probably won't meaningfully affect the US.\"",
+    "Prediction_Text": "\"US growth will likely stabilize in 2025 as the effects of lower interest rates make their way through the economy. Lower mortgage rates and robust real earnings should underpin a growth rate of 2â3%. Additional fiscal stimulus from a Republican sweep will likely boost economic growth further. Economic weakness internationally probably wonât meaningfully affect the US.\"",
     "Institution": "ALLSPRING GLOBAL INVESTMENTS",
     "Rank": 58
   },
@@ -1828,7 +1828,7 @@
   {
     "statements": [
       {
-        "statement": "We think the global economic recovery will be strongest in the US, because of structural advantages — such as stronger fiscal stimulus, a vibrant technology sector, and less dependence on exports — compared with emerging markets and other developed markets.",
+        "statement": "We think the global economic recovery will be strongest in the US, because of structural advantages â such as stronger fiscal stimulus, a vibrant technology sector, and less dependence on exports â compared with emerging markets and other developed markets.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) notes 'continued technology investments' supporting US strength. SOURCE 4 (CBRE, December 2025, https://www.cbreim.com/insights/articles/macro-house-view-q4-2025) mentions 'fiscal expansion across several major economies,' though not specifically emphasizing US advantage. However, SOURCE 3 (J.P. Morgan, December 2025, https://www.jpmorgan.com/insights/global-research/outlook/market-outlook) forecasts 35% recession probability for 'U.S. and global recession,' suggesting US strength was not as pronounced as predicted. The sources do not clearly confirm US outperformance relative to other developed markets."
       },
@@ -1850,7 +1850,7 @@
     "justification": "Wells Fargo Investment Institute's prediction of US-led recovery with structural advantages was only partially validated. While US technology strength and fiscal expansion were evident, the sources do not clearly confirm US outperformance relative to other developed markets. Their expectation of broader earnings growth and higher equity prices was partially realized, but the actual gains were more modest than anticipated due to valuation constraints and recession risks. The prediction captured some elements of the actual environment but overestimated the magnitude of US outperformance and equity price appreciation.",
     "id": "BASE_CASE-WELLS_FARGO_INVESTMENT_INSTITUTE-57-2025",
     "Original_Rank": 57,
-    "Prediction_Text": "\"We think the global economic recovery will be strongest in the US, because of structural advantages — such as stronger fiscal stimulus, a vibrant technology sector, and less dependence on exports — compared with emerging markets and other developed markets. An economic rebound, reinforced by lower short-term interest rates, should promote broader earnings growth and higher equity prices through year-end 2025.\"",
+    "Prediction_Text": "\"We think the global economic recovery will be strongest in the US, because of structural advantages â such as stronger fiscal stimulus, a vibrant technology sector, and less dependence on exports â compared with emerging markets and other developed markets. An economic rebound, reinforced by lower short-term interest rates, should promote broader earnings growth and higher equity prices through year-end 2025.\"",
     "Institution": "WELLS FARGO INVESTMENT INSTITUTE",
     "Rank": 60
   },
@@ -1925,7 +1925,7 @@
         "reasoning": "The reality context contradicts this prediction. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms 'stocks will continue to outperform bonds' and 'inflation subsiding sufficiently to motivate continued interest-rate cuts,' indicating the classic soft-landing outcome did occur. SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) confirms 175bps of rate cuts, supporting lower bond yields. The soft landing with higher stock prices and lower yields materialized contrary to the prediction."
       },
       {
-        "statement": "At the same time, Trump's election does increase the odds of a bullish outcome for stocks in 2025, albeit with higher government bond yields.",
+        "statement": "At the same time, Trumpâs election does increase the odds of a bullish outcome for stocks in 2025, albeit with higher government bond yields.",
         "materialized": "PARTIAL",
         "reasoning": "The reality context partially validates this prediction. SOURCE 1 (RBC GAM, December 2025, https://www.rbcgam.com/en/ca/article/executive-summary-new-year-2026/detail) confirms bullish stock outcomes in 2025. However, SOURCE 7 (CIBC, December 2025, https://www.cibc.com/en/asset-management/insights/fixed-income/fixed-income-investing-as-rates-fall.html) states 'front-end yields to fall,' and SOURCE 5 (Scotiabank, December 2025, https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-december-10--2025--1.html) confirms rate cuts, contradicting the 'higher government bond yields' characterization. The bullish stock outcome materialized, but with lower rather than higher yields."
       }
@@ -1942,7 +1942,7 @@
     "justification": "BCA Research significantly misjudged the 2025 market outcome, incorrectly predicting that the classic soft-landing scenario was 'very unlikely' when it actually materialized with higher stock prices and lower bond yields. While they correctly anticipated Trump's bullish effect on stocks, they were wrong about the direction of bond yields, suggesting their macro framework underestimated the disinflationary forces and Fed easing that dominated 2025.",
     "id": "BASE_CASE-BCA_RESEARCH-37-2025",
     "Original_Rank": 37,
-    "Prediction_Text": "\"We now see the classic soft-landing outcome that investors have been betting on (higher stock prices and lower bond yields) as very unlikely to occur. At the same time, Trump's election does increase the odds of a bullish outcome for stocks in 2025, albeit with higher government bond yields.\"",
+    "Prediction_Text": "\"We now see the classic soft-landing outcome that investors have been betting on (higher stock prices and lower bond yields) as very unlikely to occur. At the same time, Trumpâs election does increase the odds of a bullish outcome for stocks in 2025, albeit with higher government bond yields.\"",
     "Institution": "BCA RESEARCH",
     "Rank": 63
   }

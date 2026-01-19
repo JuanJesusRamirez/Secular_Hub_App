@@ -2,7 +2,7 @@
   {
     "statements": [
       {
-        "statement": "We think yields on fixed income remain attractive by the historical standards that matter – the memories of current market participants.",
+        "statement": "We think yields on fixed income remain attractive by the historical standards that matter â the memories of current market participants.",
         "materialized": "YES",
         "reasoning": "This prediction materialized well. Source 1 (Guggenheim, December 2025) shows 'US Fixed Income Yields Are Competitive to Those Abroad,' confirming attractive yield levels. Source 4 (Schwab, December 2025) emphasizes bonds' income-generating function. Source 2 (SLC Management, Q2 2025) notes 'investors increasingly turning to private credit for its yield premium,' indicating yields remained attractive relative to recent history. Source 8 (PineBridge, December 2025) discusses the easing cycle creating yield opportunities. Fixed income yields remained attractive by historical standards in 2025, validating LGIM's assessment."
       },
@@ -24,7 +24,7 @@
     "justification": "LGIM's prediction that attractive fixed income yields would drive significant inflows into credit strategies proved highly accurate and materialized well in 2025. Their assessment of yield attractiveness by historical standards was validated by multiple sources, and the resulting inflows into private credit and other yield-seeking strategies were documented across the market. The institution correctly anticipated both the yield environment and the behavioral response from investors, making this one of the most prescient predictions in the dataset.",
     "id": "CREDIT-LGIM-9-2025",
     "Original_Rank": 9,
-    "Prediction_Text": "\"We think yields on fixed income remain attractive by the historical standards that matter – the memories of current market participants. We consider this to likely be positive for fixed income strategies as we expect significant inflows in search of these yields.\"",
+    "Prediction_Text": "\"We think yields on fixed income remain attractive by the historical standards that matter â the memories of current market participants. We consider this to likely be positive for fixed income strategies as we expect significant inflows in search of these yields.\"",
     "Institution": "LGIM",
     "Rank": 1
   },
@@ -297,7 +297,7 @@
         "reasoning": "Source 7 (Morgan Stanley, December 2025) explicitly states: 'Similar to bank loans, however, the majority of private credit lending is in the form of floating-rate investments that change as rates change, providing real-time interest rate protection compared to investments like fixed-rate bonds.' Source 56 (HSBC, December 2025) confirms: 'They benefit from a higher-for-longer scenario given their floating rate nature.' Source 8 (PineBridge, December 2025) discusses the Fed's rate-cutting cycle but also acknowledges policy uncertainty, supporting the higher-for-longer scenario. The floating-rate benefit is fully validated."
       },
       {
-        "statement": "Securitised credits have high starting income levels and exhibit low correlations to traditional fixed income – making them a useful diversifier for portfolios.",
+        "statement": "Securitised credits have high starting income levels and exhibit low correlations to traditional fixed income â making them a useful diversifier for portfolios.",
         "materialized": "YES",
         "reasoning": "Source 6 (Voya, December 2025) states: 'Historically, securitized credit has offered a spread premium to similarly rated corporate bonds due to its securities' structural complexity.' Source 10 (PIMCO, December 2025) confirms: 'Our research, using a public market equivalent (PME) approach finds that the risk-adjusted returns of ABF are attractive and exhibit lower correlation to equities compared with corporate direct lending.' Source 56 (HSBC, December 2025) directly validates: 'Securitised credits have high starting income levels and exhibit low correlations to traditional fixed income – making them a useful diversifier for portfolios.' All three components of the statement are confirmed."
       }
@@ -314,7 +314,7 @@
     "justification": "HSBC Asset Management's prediction was highly accurate across all three statements. The institution correctly identified the attractiveness of shorter-duration, floating-rate securitized credits in a higher-for-longer rate environment and accurately characterized their diversification benefits and income generation potential. The recommendation proved well-founded given the evidence of spread premiums, low correlations, and attractive risk-adjusted returns documented in 2025 sources.",
     "id": "CREDIT-HSBC_ASSET_MANAGEMENT-56-2025",
     "Original_Rank": 56,
-    "Prediction_Text": "\"We think shorter duration credits, like asset-backed securities, look interesting. They benefit from a higher-for-longer scenario given their floating rate nature. Securitised credits have high starting income levels and exhibit low correlations to traditional fixed income – making them a useful diversifier for portfolios.\"",
+    "Prediction_Text": "\"We think shorter duration credits, like asset-backed securities, look interesting. They benefit from a higher-for-longer scenario given their floating rate nature. Securitised credits have high starting income levels and exhibit low correlations to traditional fixed income â making them a useful diversifier for portfolios.\"",
     "Institution": "HSBC ASSET MANAGEMENT",
     "Rank": 11
   },
@@ -452,7 +452,7 @@
   {
     "statements": [
       {
-        "statement": "A diversified portfolio of dollar-denominated investment-grade fixed income bonds with intermediate (5- to 10-year) maturities has the potential to generate 6–7.5% total return over the next 12 months if interest rates fall approximately 50 basis points.",
+        "statement": "A diversified portfolio of dollar-denominated investment-grade fixed income bonds with intermediate (5- to 10-year) maturities has the potential to generate 6â7.5% total return over the next 12 months if interest rates fall approximately 50 basis points.",
         "materialized": "PARTIAL",
         "reasoning": "The prediction assumes a 50 basis point rate decline would drive 6-7.5% returns. However, the reality context shows mixed outcomes. Source 4 (Schwab, December 2025) indicates that 'Credit concerns have weighed on the prices of some of the riskier bond investments like high-yield bonds, bank loans, and preferred securities,' suggesting credit spreads widened rather than tightened. Source 3 (Barclays, April 2025) explicitly states 'Credit spreads, or the premium paid by issuers of corporate credit over that on equivalent government bonds, have started to widen.' This widening of spreads would have offset some gains from rate declines, making the 6-7.5% return target difficult to achieve. The prediction is partially correct in that rates did decline and bonds benefited, but the magnitude was likely constrained by credit deterioration."
       },
@@ -474,7 +474,7 @@
     "justification": "Allspring's quality bias recommendation proved prescient and materialized well, as evidenced by improving high-yield bond quality metrics and analyst preference for higher-rated credits. However, their return assumptions for intermediate investment-grade bonds appear optimistic, as widening credit spreads in 2025 (per Barclays and Schwab) would have constrained total returns despite rate declines. The institution correctly identified the credit cycle dynamics but may have underestimated spread widening headwinds.",
     "id": "CREDIT-ALLSPRING_GLOBAL_INVESTMENTS-1-2025",
     "Original_Rank": 1,
-    "Prediction_Text": "\"A diversified portfolio of dollar-denominated investment-grade fixed income bonds with intermediate (5- to 10-year) maturities has the potential to generate 6–7.5% total return over the next 12 months if interest rates fall approximately 50 basis points. A higher-quality bias is appropriate as the business/credit cycle advances and credit risk premiums remain compressed.\"",
+    "Prediction_Text": "\"A diversified portfolio of dollar-denominated investment-grade fixed income bonds with intermediate (5- to 10-year) maturities has the potential to generate 6â7.5% total return over the next 12 months if interest rates fall approximately 50 basis points. A higher-quality bias is appropriate as the business/credit cycle advances and credit risk premiums remain compressed.\"",
     "Institution": "ALLSPRING GLOBAL INVESTMENTS",
     "Rank": 16
   },
@@ -597,7 +597,7 @@
   {
     "statements": [
       {
-        "statement": "We have a neutral stance across almost all bonds' segments, apart from the Japanese government bonds, where we retain an underweight position.",
+        "statement": "We have a neutral stance across almost all bondsâ segments, apart from the Japanese government bonds, where we retain an underweight position.",
         "materialized": "PARTIAL",
         "reasoning": "The sources do not provide explicit information about Japanese government bond performance or validation of an underweight stance in 2025. The Guggenheim source (December 2025, https://www.guggenheiminvestments.com/perspectives/sector-views/high-yield-and-bank-loan-outlook-february-2025) focuses on US credit markets and does not address Japanese bonds. The PineBridge source (December 2025, https://www.pinebridge.com/en/insights/investment-strategy-insights-public-credit-resilience-private-debt) discusses global credit but does not specifically validate a JGB underweight. The neutral stance across other segments aligns with the cautious tone of other market participants, but the JGB-specific recommendation cannot be validated from the available sources."
       },
@@ -619,7 +619,7 @@
     "justification": "HSBC Global Private Banking's prediction was partially accurate. The institution correctly identified corporate credit as a diversification tool with attractive yields for income-seeking investors, which was validated by actual market conditions. However, the neutral stance across most bond segments was somewhat contradicted by the actual need for more selective positioning, and the JGB underweight recommendation could not be validated from available sources.",
     "id": "CREDIT-HSBC_GLOBAL_PRIVATE_BANKING-37-2025",
     "Original_Rank": 37,
-    "Prediction_Text": "\"We have a neutral stance across almost all bonds' segments, apart from the Japanese government bonds, where we retain an underweight position. However, we continue to see corporate credit, including dollar investment grade bonds and global high yield as a good way of diversifying multi-asset portfolios and generating income by locking in elevated yields.\"",
+    "Prediction_Text": "\"We have a neutral stance across almost all bondsâ segments, apart from the Japanese government bonds, where we retain an underweight position. However, we continue to see corporate credit, including dollar investment grade bonds and global high yield as a good way of diversifying multi-asset portfolios and generating income by locking in elevated yields.\"",
     "Institution": "HSBC GLOBAL PRIVATE BANKING",
     "Rank": 21
   },
@@ -845,7 +845,7 @@
         "reasoning": "The Voya source (December 2025, https://institutional.voya.com/system/files?file=system/files/article/file/guide-securitized-credit_0.pdf) confirms that 'securitized credit has offered a spread premium to similarly rated corporate bonds due to its securities' structural complexity,' supporting its use as a diversification tool. The PIMCO source (December 2025, https://www.pimco.com/ca/en/insights/asset-based-finance-quantifying-diversification-benefits-and-return-potential) validates that asset-based finance (securitized credit) exhibits 'lower correlation to equities compared with corporate direct lending,' confirming diversification benefits. The Guggenheim report (December 2025, https://www.guggenheiminvestments.com/perspectives/sector-views/high-yield-and-bank-loan-outlook-february-2025) discusses spread opportunities in leveraged credit markets."
       },
       {
-        "statement": "Finally, emerging-market debt provides a vast pool of opportunities for investors to improve a portfolio's risk-return profile.",
+        "statement": "Finally, emerging-market debt provides a vast pool of opportunities for investors to improve a portfolioâs risk-return profile.",
         "materialized": "PARTIAL",
         "reasoning": "The PineBridge source (December 2025, https://www.pinebridge.com/en/insights/investment-strategy-insights-public-credit-resilience-private-debt) states 'Global credit forecasts remain negative, with slight improvement in developed markets and deterioration in emerging markets, leading to a relative preference of DM over EM.' This contradicts the optimistic view of EM debt opportunities, as the source explicitly recommends underweighting EM credit due to expected deterioration. The statement is only partially supported, as EM debt opportunities exist but are constrained by deteriorating fundamentals."
       }
@@ -862,7 +862,7 @@
     "justification": "Barclays' prediction was partially accurate. The securitized credit and diversification recommendations proved sound, supported by actual market dynamics showing securitized credit's structural benefits and lower equity correlation. However, the emerging-market debt recommendation was contradicted by actual 2025 developments, which saw EM credit fundamentals deteriorate relative to developed markets, making the DM preference more appropriate than the EM opportunity thesis.",
     "id": "CREDIT-BARCLAYS_PRIVATE_BANK-31-2025",
     "Original_Rank": 31,
-    "Prediction_Text": "\"A neutral duration stance seems appropriate, and investors should be on the lookout for rate volatility, as a signal to extend duration selectively. In the credit market, securitised credit could be a useful diversification tool, while relative value and carry options abound in the BB-rated segment. Finally, emerging-market debt provides a vast pool of opportunities for investors to improve a portfolio's risk-return profile.\"",
+    "Prediction_Text": "\"A neutral duration stance seems appropriate, and investors should be on the lookout for rate volatility, as a signal to extend duration selectively. In the credit market, securitised credit could be a useful diversification tool, while relative value and carry options abound in the BB-rated segment. Finally, emerging-market debt provides a vast pool of opportunities for investors to improve a portfolioâs risk-return profile.\"",
     "Institution": "BARCLAYS PRIVATE BANK",
     "Rank": 28
   },
@@ -1459,7 +1459,7 @@
         "reasoning": "This prediction did not materialize as expected. Source 3 (Barclays, April 2025) explicitly states 'Credit spreads, or the premium paid by issuers of corporate credit over that on equivalent government bonds, have started to widen,' contradicting the assumption that spreads would remain contained. Source 4 (Schwab, December 2025) notes 'Credit concerns have weighed on the prices of some of the riskier bond investments,' indicating deteriorating credit conditions. Source 1 (Guggenheim, December 2025) shows 'Spread Percentiles Show High-Quality Credit Looks Somewhat Rich,' suggesting limited upside from spread compression. While economic growth remained steady per Source 8 (PineBridge), widening spreads prevented investment-grade credit from outperforming government bonds."
       },
       {
-        "statement": "While spreads are narrow – both in the US and in the euro zone, and both for investment grade and high yield – they are relatively better for euro zone investment-grade credit, and we see this asset class as offering the best risk-adjusted returns.",
+        "statement": "While spreads are narrow â both in the US and in the euro zone, and both for investment grade and high yield â they are relatively better for euro zone investment-grade credit, and we see this asset class as offering the best risk-adjusted returns.",
         "materialized": "PARTIAL",
         "reasoning": "The observation about narrow spreads is confirmed, but the performance outcome is unclear. Source 1 (Guggenheim, December 2025) documents tight spreads with 'Spread Percentiles Show High-Quality Credit Looks Somewhat Rich.' Source 3 (Barclays, April 2025) confirms spreads are 'narrow' but notes they 'have started to widen,' suggesting the narrow environment was transitional. Source 8 (PineBridge, December 2025) states 'Global credit forecasts remain negative, with slight improvement in developed markets and deterioration in emerging markets, leading to a relative preference of DM over EM,' which partially supports the euro zone preference. However, the claim that euro zone investment-grade credit offered the best risk-adjusted returns cannot be fully validated from the provided sources."
       }
@@ -1476,7 +1476,7 @@
     "justification": "BNP Paribas's prediction that investment-grade credit would outperform government bonds did not materialize, as widening spreads (documented by Barclays and Schwab) offset any benefits from steady economic growth. Their observation about narrow spreads was accurate, but their optimism about superior returns proved misplaced. The euro zone preference is partially supported by developed market outperformance trends, but the overall prediction underestimated credit spread widening risks.",
     "id": "CREDIT-BNP_PARIBAS_ASSET_MANAGEMENT-4-2025",
     "Original_Rank": 4,
-    "Prediction_Text": "\"Investment-grade credit should provide superior returns relative to government bonds as spreads remain contained alongside steady economic growth. While spreads are narrow – both in the US and in the euro zone, and both for investment grade and high yield – they are relatively better for euro zone investment-grade credit, and we see this asset class as offering the best risk-adjusted returns.\"",
+    "Prediction_Text": "\"Investment-grade credit should provide superior returns relative to government bonds as spreads remain contained alongside steady economic growth. While spreads are narrow â both in the US and in the euro zone, and both for investment grade and high yield â they are relatively better for euro zone investment-grade credit, and we see this asset class as offering the best risk-adjusted returns.\"",
     "Institution": "BNP PARIBAS ASSET MANAGEMENT",
     "Rank": 49
   },
@@ -1484,7 +1484,7 @@
     "institution": "SCHRODERS",
     "statements": [
       {
-        "statement": "The old-fashioned reason for owning bonds — to generate income — is back and we continue to argue for their inclusion in portfolios.",
+        "statement": "The old-fashioned reason for owning bonds â to generate income â is back and we continue to argue for their inclusion in portfolios.",
         "materialized": "PARTIAL",
         "reasoning": "Retry evaluation failed due to JSON parsing error: Expecting ',' delimiter: line 33 column 41 (char 3019)",
         "position": 0
@@ -1513,7 +1513,7 @@
     "justification": "Evaluated 3 statements for CREDIT predictions in 2025. Score: 0.0/100 (FAILED).",
     "id": "CREDIT-SCHRODERS-11-2025",
     "Original_Rank": 11,
-    "Prediction_Text": "\"The old-fashioned reason for owning bonds — to generate income — is back and we continue to argue for their inclusion in portfolios. Divergent fiscal and monetary policies around the world will also provide cross-market opportunities in fixed income and currency. Strong corporate balance sheets support the yield offered by credit markets.\"",
+    "Prediction_Text": "\"The old-fashioned reason for owning bonds â to generate income â is back and we continue to argue for their inclusion in portfolios. Divergent fiscal and monetary policies around the world will also provide cross-market opportunities in fixed income and currency. Strong corporate balance sheets support the yield offered by credit markets.\"",
     "Institution": "SCHRODERS",
     "Rank": 50
   },
@@ -1620,7 +1620,7 @@
         "position": 1
       },
       {
-        "statement": "We also prefer European credit – both investment grade and high yield – over the US on cheaper valuations.",
+        "statement": "We also prefer European credit â both investment grade and high yield â over the US on cheaper valuations.",
         "materialized": "PARTIAL",
         "reasoning": "Retry evaluation failed due to JSON parsing error: Expecting ',' delimiter: line 33 column 41 (char 3019)",
         "position": 2
@@ -1637,7 +1637,7 @@
     "justification": "Evaluated 3 statements for CREDIT predictions in 2025. Score: 0.0/100 (FAILED).",
     "id": "CREDIT-BLACKROCK_INVESTMENT_INSTITUTE-15-2025",
     "Original_Rank": 15,
-    "Prediction_Text": "\"Persistent deficits and sticky inflation in the US make us more positive on fixed income elsewhere, notably Europe. We are underweight long-term Treasuries and like UK gilts instead. We also prefer European credit – both investment grade and high yield – over the US on cheaper valuations.\"",
+    "Prediction_Text": "\"Persistent deficits and sticky inflation in the US make us more positive on fixed income elsewhere, notably Europe. We are underweight long-term Treasuries and like UK gilts instead. We also prefer European credit â both investment grade and high yield â over the US on cheaper valuations.\"",
     "Institution": "BLACKROCK INVESTMENT INSTITUTE",
     "Rank": 54
   },

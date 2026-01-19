@@ -36,7 +36,7 @@
         "reasoning": "Multiple sources confirm eurozone weakness in 2025. Goldman Sachs revised down GDP growth forecast to 1.7% from 2.3% due to tariff impacts (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). BNP Paribas cut their 2025 GDP growth outlook for the euro zone with downside risks (SOURCE: BNP PARIBAS statement, December 2025). Vanguard noted growth expected to remain below trend (SOURCE: Morningstar's Q3 2025 US Market Outlook, December 2025, https://www.morningstar.com/markets/morningstars-q3-2025-us-market-outlook-has-storm-passed-or-are-we-eye-hurricane)."
       },
       {
-        "statement": "Although economic growth appears to be stabilising, it is still lacklustre and could be significantly impacted by Trump's tariffs (particularly in manufacturing-heavy Germany).",
+        "statement": "Although economic growth appears to be stabilising, it is still lacklustre and could be significantly impacted by Trumpâs tariffs (particularly in manufacturing-heavy Germany).",
         "materialized": "YES",
         "reasoning": "Goldman Sachs explicitly noted the sizable increase in US effective tariff rate led to downward GDP growth revision, with tariff rate at 16% and ISG expected range of 15-20% (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). TD Securities confirmed Europe will be hit by US tariffs (SOURCE: TD SECURITIES statement, December 2025). The Energy and Materials sectors lagged with year-over-year declines due to lower oil prices and weaker performance (SOURCE: August 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/august-2025-review-and-outlook)."
       },
@@ -63,7 +63,7 @@
     "justification": "Pictet Asset Management's cautious eurozone stance proved highly accurate. The institution correctly anticipated tariff impacts on manufacturing-heavy Germany, the region's tech disadvantage relative to the US during the AI boom, and political fragmentation preventing coordinated policy responses. All four statements materialized as predicted, with actual 2025 data confirming eurozone growth remained subdued, tariffs created headwinds, and the US's AI-driven outperformance widened the divergence.",
     "id": "GROWTH-PICTET_ASSET_MANAGEMENT-22-2025",
     "Original_Rank": 22,
-    "Prediction_Text": "\"We are more cautious on the euro zone. Although economic growth appears to be stabilising, it is still lacklustre and could be significantly impacted by Trump's tariffs (particularly in manufacturing-heavy Germany). The region is also less focused on tech and related industries than the US, so may lag as the AI revolution continues. Moreover, political uncertainty in both France and Germany means it is unlikely that the region would, in the near term, be able to produce a coherent and credible growth strategy.\"",
+    "Prediction_Text": "\"We are more cautious on the euro zone. Although economic growth appears to be stabilising, it is still lacklustre and could be significantly impacted by Trumpâs tariffs (particularly in manufacturing-heavy Germany). The region is also less focused on tech and related industries than the US, so may lag as the AI revolution continues. Moreover, political uncertainty in both France and Germany means it is unlikely that the region would, in the near term, be able to produce a coherent and credible growth strategy.\"",
     "Institution": "PICTET ASSET MANAGEMENT",
     "Rank": 2
   },
@@ -162,7 +162,7 @@
   {
     "statements": [
       {
-        "statement": "For now, we don't expect a recession in 2025 which should help deliver positive equity returns, while credit markets should provide attractive income opportunities.",
+        "statement": "For now, we donât expect a recession in 2025 which should help deliver positive equity returns, while credit markets should provide attractive income opportunities.",
         "materialized": "YES",
         "reasoning": "AXA Investment Managers' prediction directly states this outlook (SOURCE: AXA INVESTMENT MANAGERS statement, December 2025). Multiple sources confirm no recession and positive equity returns: the S&P 500 and Nasdaq set fresh record highs multiple times (SOURCE: August 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/august-2025-review-and-outlook). The September review noted 'the stock market has stormed back to record highs with healthy breadth' despite spring volatility (SOURCE: September, Third Quarter 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/september-third-quarter-2025-review-and-outlook). Amundi confirmed 'For now, we don't expect a recession in 2025' (SOURCE: AMUNDI INVESTMENT INSTITUTE statement, December 2025). Morningstar's rebalancing recommendations included bond funds for income (SOURCE: The Best Funds to Rebalance Your Portfolio in 2026, Morningstar, December 2025, https://www.morningstar.com/funds/best-funds-rebalance-your-portfolio-2026)."
       }
@@ -179,14 +179,14 @@
     "justification": "AXA Investment Managers' 2025 outlook proved accurate. The institution correctly anticipated no recession and positive equity returns, with sources confirming record highs and healthy market breadth throughout the year. The prediction demonstrated sound macro judgment and appropriate risk assessment for the 2025 environment.",
     "id": "GROWTH-AXA_INVESTMENT_MANAGERS-34-2025",
     "Original_Rank": 34,
-    "Prediction_Text": "\"For now, we don't expect a recession in 2025 which should help deliver positive equity returns, while credit markets should provide attractive income opportunities.\"",
+    "Prediction_Text": "\"For now, we donât expect a recession in 2025 which should help deliver positive equity returns, while credit markets should provide attractive income opportunities.\"",
     "Institution": "AXA INVESTMENT MANAGERS",
     "Rank": 6
   },
   {
     "statements": [
       {
-        "statement": "We anticipate that China's economic growth will continue to slow, as headwinds, including real estate, demographics and geopolitical uncertainty, persist.",
+        "statement": "We anticipate that Chinaâs economic growth will continue to slow, as headwinds, including real estate, demographics and geopolitical uncertainty, persist.",
         "materialized": "YES",
         "reasoning": "BNY Mellon's statement directly predicts China's continued slowdown (SOURCE: BNY statement, December 2025). The sources confirm persistent Chinese headwinds: Capital Economics noted 'Economic growth will slow in many emerging markets' with China facing structural issues (SOURCE: CAPITAL ECONOMICS statement, December 2025). Principal Asset Management noted 'China's growth is set to underperform once again' with 'deflationary risks, high unemployment, consumer caution and property market weakness' (SOURCE: PRINCIPAL ASSET MANAGEMENT statement, December 2025). The real estate, demographic, and geopolitical challenges all materialized as predicted."
       }
@@ -203,7 +203,7 @@
     "justification": "BNY Mellon's China prediction proved accurate. The institution correctly anticipated continued economic slowdown driven by persistent real estate weakness, demographic challenges, and geopolitical uncertainty. The prediction demonstrated sound understanding of China's structural economic challenges that persisted throughout 2025.",
     "id": "GROWTH-BNY-37-2025",
     "Original_Rank": 37,
-    "Prediction_Text": "\"We anticipate that China's economic growth will continue to slow, as headwinds, including real estate, demographics and geopolitical uncertainty, persist.\"",
+    "Prediction_Text": "\"We anticipate that Chinaâs economic growth will continue to slow, as headwinds, including real estate, demographics and geopolitical uncertainty, persist.\"",
     "Institution": "BNY",
     "Rank": 7
   },
@@ -529,7 +529,7 @@
         "reasoning": "This prediction materialized. Multiple sources confirm EM challenges in 2025. UBS stated 'China's growth is likely to slow, with reactive fiscal stimulus measures unlikely to be sufficient to fully offset the impact of tariffs and structural challenges' (SOURCE: UBS statement, December 2025). BNP Paribas noted Beijing's stimulus 'does not look likely there will be a major change in economic policy' and questioned whether stimulus would generate sufficient growth (SOURCE: BNP Paribas Asset Management statement, December 2025). Allspring noted 'Potential Trump administration-induced tariffs could hit growth in China and Europe over-proportionately' (SOURCE: Allspring Global Investments statement, December 2025)."
       },
       {
-        "statement": "Most importantly, China confronts a crisis of consumer confidence (only slightly eased by the government's recently announced stimulus package).",
+        "statement": "Most importantly, China confronts a crisis of consumer confidence (only slightly eased by the governmentâs recently announced stimulus package).",
         "materialized": "YES",
         "reasoning": "This prediction materialized. Multiple sources confirm China's consumer confidence crisis and the limited impact of stimulus. UBS stated 'China's growth is likely to slow, with reactive fiscal stimulus measures unlikely to be sufficient to fully offset the impact of tariffs and structural challenges' (SOURCE: UBS statement, December 2025). BNP Paribas noted Beijing's stimulus 'does not look likely there will be a major change in economic policy; Beijing will probably continue to focus on investment in new, developing industries rather than nurturing household consumption' (SOURCE: BNP Paribas Asset Management statement, December 2025). JPMorgan's characterization of stimulus as 'only slightly easing' the crisis proved accurate."
       }
@@ -546,14 +546,14 @@
     "justification": "JPMorgan Wealth Management demonstrated strong analytical insight by correctly anticipating developed market outperformance, China's consumer confidence crisis, and the limited efficacy of Chinese stimulus measures. Their cautious stance on emerging markets proved well-founded, as EM economies faced significant headwinds from tariffs and structural challenges. The institution accurately identified the divergence between historical EM rate-cutting cycle benefits and 2025's actual outcomes, showing sophisticated understanding of structural constraints.",
     "id": "GROWTH-JPMORGAN_WEALTH_MANAGEMENT-68-2025",
     "Original_Rank": 68,
-    "Prediction_Text": "\"In past rate-cutting cycles, falling rates have supported emerging market assets through higher growth, increased capital flows and weaker currencies that boost exports. But we take a more cautious view. We expect developed market equities to outperform their EM counterparts in 2025, as they have for eight of the past 10 years. EM economies face a host of challenges. Most importantly, China confronts a crisis of consumer confidence (only slightly eased by the government's recently announced stimulus package).\"",
+    "Prediction_Text": "\"In past rate-cutting cycles, falling rates have supported emerging market assets through higher growth, increased capital flows and weaker currencies that boost exports. But we take a more cautious view. We expect developed market equities to outperform their EM counterparts in 2025, as they have for eight of the past 10 years. EM economies face a host of challenges. Most importantly, China confronts a crisis of consumer confidence (only slightly eased by the governmentâs recently announced stimulus package).\"",
     "Institution": "JPMORGAN WEALTH MANAGEMENT",
     "Rank": 19
   },
   {
     "statements": [
       {
-        "statement": "Japan's economic growth in 2024 was unspectacular, but wage gains that may support consumer spending are spreading across the economy and those gains may continue into 2025.",
+        "statement": "Japanâs economic growth in 2024 was unspectacular, but wage gains that may support consumer spending are spreading across the economy and those gains may continue into 2025.",
         "materialized": "YES",
         "reasoning": "This prediction materialized. Multiple sources confirm wage gains spreading across Japan's economy and supporting consumer spending. BNY stated 'We expect a weaker yen to support greater exports and an increase in wages to drive consumer spending' (SOURCE: BNY statement, December 2025). Charles Schwab confirmed 'should the outlook for inflation remain above 2% supported by wage increases' (SOURCE: Charles Schwab statement, December 2025), validating the continuation of wage gains into 2025. Northern Trust's own statement confirms 'wage gains that may support consumer spending are spreading across the economy and those gains may continue into 2025' (SOURCE: Northern Trust Asset Management statement, December 2025)."
       }
@@ -570,14 +570,14 @@
     "justification": "Northern Trust Asset Management accurately predicted the continuation of wage gains across Japan's economy into 2025, which materialized through confirmed wage increases supporting consumer spending. The institution correctly identified Japan's transition from unspectacular growth to wage-driven consumption support, demonstrating accurate understanding of Japan's economic dynamics. This prediction proved prescient in identifying a key growth driver for Japan in 2025.",
     "id": "GROWTH-NORTHERN_TRUST_ASSET_MANAGEMENT-70-2025",
     "Original_Rank": 70,
-    "Prediction_Text": "\"Japan's economic growth in 2024 was unspectacular, but wage gains that may support consumer spending are spreading across the economy and those gains may continue into 2025.\"",
+    "Prediction_Text": "\"Japanâs economic growth in 2024 was unspectacular, but wage gains that may support consumer spending are spreading across the economy and those gains may continue into 2025.\"",
     "Institution": "NORTHERN TRUST ASSET MANAGEMENT",
     "Rank": 20
   },
   {
     "statements": [
       {
-        "statement": "China's growth is likely to slow, with reactive fiscal stimulus measures unlikely to be sufficient to fully offset the impact of tariffs and structural challenges.",
+        "statement": "Chinaâs growth is likely to slow, with reactive fiscal stimulus measures unlikely to be sufficient to fully offset the impact of tariffs and structural challenges.",
         "materialized": "YES",
         "reasoning": "This prediction materialized accurately. Multiple sources confirm China's growth slowdown and stimulus insufficiency. UBS's own statement validates this prediction (SOURCE: UBS statement, December 2025). BNP Paribas confirmed 'While we anticipate more stimulus from Beijing, it does not look likely there will be a major change in economic policy' and questioned whether stimulus would generate sufficient growth (SOURCE: BNP Paribas Asset Management statement, December 2025). JPMorgan Wealth Management noted 'China confronts a crisis of consumer confidence (only slightly eased by the government's recently announced stimulus package)' (SOURCE: JPMorgan Wealth Management statement, December 2025). Allspring noted 'Potential Trump administration-induced tariffs could hit growth in China and Europe over-proportionately' (SOURCE: Allspring Global Investments statement, December 2025)."
       },
@@ -599,7 +599,7 @@
     "justification": "UBS demonstrated strong analytical differentiation by correctly identifying China's growth slowdown and stimulus insufficiency while simultaneously recognizing India's robust growth potential. Their prediction accurately captured the divergence between struggling China (facing tariffs, consumer confidence crisis, and structural challenges) and resilient India. The institution showed sophisticated understanding of regional dynamics and policy limitations in addressing structural economic challenges.",
     "id": "GROWTH-UBS-72-2025",
     "Original_Rank": 72,
-    "Prediction_Text": "\"China's growth is likely to slow, with reactive fiscal stimulus measures unlikely to be sufficient to fully offset the impact of tariffs and structural challenges. India is expected to continue to deliver more robust growth.\"",
+    "Prediction_Text": "\"Chinaâs growth is likely to slow, with reactive fiscal stimulus measures unlikely to be sufficient to fully offset the impact of tariffs and structural challenges. India is expected to continue to deliver more robust growth.\"",
     "Institution": "UBS",
     "Rank": 21
   },
@@ -611,7 +611,7 @@
         "reasoning": "This prediction materialized. Multiple sources confirm international growth trending lower and European struggles. Allspring's own statement validates this prediction (SOURCE: Allspring Global Investments statement, December 2025). Goldman Sachs confirmed that 'international growth will trend lower' with revised GDP growth forecasts (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). HSBC noted 'We continue to see better opportunities in the US than in Europe' (SOURCE: HSBC Global Private Banking statement, December 2025). The characterization of European struggles due to fiscal and monetary policy constraints proved accurate."
       },
       {
-        "statement": "Potential Trump administration–induced tariffs could hit growth in China and Europe over-proportionately.",
+        "statement": "Potential Trump administrationâinduced tariffs could hit growth in China and Europe over-proportionately.",
         "materialized": "YES",
         "reasoning": "This prediction materialized. Allspring's own statement confirms this prediction (SOURCE: Allspring Global Investments statement, December 2025). Goldman Sachs noted tariff implementation at 16% and revised down GDP growth forecasts (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). UBS confirmed 'China's growth is likely to slow' due to tariffs (SOURCE: UBS statement, December 2025). Goldman Sachs Asset Management noted 'more expansive, universal US tariffs may act as a drag on European economic growth' (SOURCE: Goldman Sachs Asset Management statement, December 2025). The disproportionate impact on China and Europe materialized as predicted."
       }
@@ -628,14 +628,14 @@
     "justification": "Allspring Global Investments demonstrated prescient forecasting by correctly identifying that international growth would trend lower through mid-2025, with Europe particularly struggling due to policy constraints. Their prediction that Trump-induced tariffs would disproportionately impact China and Europe proved accurate, showing sophisticated understanding of trade policy transmission mechanisms. The institution successfully anticipated both the timing and geographic distribution of tariff impacts.",
     "id": "GROWTH-ALLSPRING_GLOBAL_INVESTMENTS-73-2025",
     "Original_Rank": 73,
-    "Prediction_Text": "\"We anticipate international growth will trend lower until mid-2025 as a number of countries, especially in Europe, continue struggling due to tighter fiscal policy and not-loose-enough monetary policy. Potential Trump administration–induced tariffs could hit growth in China and Europe over-proportionately.\"",
+    "Prediction_Text": "\"We anticipate international growth will trend lower until mid-2025 as a number of countries, especially in Europe, continue struggling due to tighter fiscal policy and not-loose-enough monetary policy. Potential Trump administrationâinduced tariffs could hit growth in China and Europe over-proportionately.\"",
     "Institution": "ALLSPRING GLOBAL INVESTMENTS",
     "Rank": 22
   },
   {
     "statements": [
       {
-        "statement": "Many leaders across developed economies are constrained – by inflation, low political support and, outside the US, lack of growth.",
+        "statement": "Many leaders across developed economies are constrained â by inflation, low political support and, outside the US, lack of growth.",
         "materialized": "YES",
         "reasoning": "This prediction materialized. Multiple sources confirm constraints on developed economy leaders. Goldman Sachs noted that 'international growth will trend lower' with Europe struggling due to 'tighter fiscal policy and not-loose-enough monetary policy' (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). Allspring confirmed 'a number of countries, especially in Europe, continue struggling due to tighter fiscal policy' (SOURCE: Allspring Global Investments statement, December 2025). While inflation did moderate through 2025, the constraints from low political support and lack of growth outside the U.S. were evident in policy responses and economic outcomes."
       },
@@ -657,7 +657,7 @@
     "justification": "BlackRock Investment Institute accurately anticipated that developed economy leaders would face constraints from inflation, low political support, and lack of growth outside the U.S., which materialized through policy responses and economic outcomes. Their prediction of a sharp focus on national economic and security priorities proved prescient, as evidenced by tariff implementation, AI initiatives, and crypto policy discussions. The institution demonstrated sophisticated understanding of geopolitical and economic dynamics shaping 2025 policy.",
     "id": "GROWTH-BLACKROCK_INVESTMENT_INSTITUTE-75-2025",
     "Original_Rank": 75,
-    "Prediction_Text": "\"Many leaders across developed economies are constrained – by inflation, low political support and, outside the US, lack of growth. We expect a sharp focus on national economic and security priorities, potentially at the expense of others.\"",
+    "Prediction_Text": "\"Many leaders across developed economies are constrained â by inflation, low political support and, outside the US, lack of growth. We expect a sharp focus on national economic and security priorities, potentially at the expense of others.\"",
     "Institution": "BLACKROCK INVESTMENT INSTITUTE",
     "Rank": 23
   },
@@ -703,7 +703,7 @@
         "reasoning": "This prediction materialized. BNY's own statement confirms both components (SOURCE: BNY statement, December 2025). The weaker yen supporting exports and wage increases driving consumer spending both occurred. Northern Trust confirmed 'wage gains that may support consumer spending are spreading across the economy' (SOURCE: Northern Trust Asset Management statement, December 2025). Charles Schwab noted inflation 'supported by wage increases' (SOURCE: Charles Schwab statement, December 2025). The combination of yen weakness and wage growth supporting consumption materialized as predicted."
       },
       {
-        "statement": "However, structural headwinds such as labor shortages and aging demographics will persist and limit the country's growth potential.",
+        "statement": "However, structural headwinds such as labor shortages and aging demographics will persist and limit the countryâs growth potential.",
         "materialized": "YES",
         "reasoning": "This prediction materialized. BNY's own statement confirms this assessment (SOURCE: BNY statement, December 2025). The sources do not provide specific evidence of labor shortages or demographic challenges being resolved in 2025, and BNY's caveat about structural headwinds persisting proved accurate. The prediction correctly identified that while cyclical improvements occurred (wage growth, yen weakness), structural constraints would limit Japan's growth potential."
       }
@@ -720,7 +720,7 @@
     "justification": "BNY demonstrated balanced forecasting by correctly identifying both the positive cyclical factors (BOJ inflation-fighting, yen weakness, wage growth) and the persistent structural headwinds (labor shortages, aging demographics) constraining Japan's growth. Their prediction accurately captured Japan's economic dynamics in 2025, with improvements in consumption and exports offset by structural limitations. The institution showed sophisticated understanding of Japan's dual-track economic challenges.",
     "id": "GROWTH-BNY-77-2025",
     "Original_Rank": 77,
-    "Prediction_Text": "\"We believe the BOJ will continue its efforts to slow inflation while growth improves next year. We expect a weaker yen to support greater exports and an increase in wages to drive consumer spending. However, structural headwinds such as labor shortages and aging demographics will persist and limit the country's growth potential.\"",
+    "Prediction_Text": "\"We believe the BOJ will continue its efforts to slow inflation while growth improves next year. We expect a weaker yen to support greater exports and an increase in wages to drive consumer spending. However, structural headwinds such as labor shortages and aging demographics will persist and limit the countryâs growth potential.\"",
     "Institution": "BNY",
     "Rank": 25
   },
@@ -780,7 +780,7 @@
   {
     "statements": [
       {
-        "statement": "Growth, inflation and interest rates across the world's biggest economies are liable to head in very different directions in the months ahead and there is far more doubt about those paths.",
+        "statement": "Growth, inflation and interest rates across the worldâs biggest economies are liable to head in very different directions in the months ahead and there is far more doubt about those paths.",
         "materialized": "YES",
         "reasoning": "This statement fully materialized throughout 2025. The Goldman Sachs Summer Review (SOURCE 12, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf, December 2025) demonstrates divergent paths: US GDP growth revised down to 1.7%, while the July 2025 Review (SOURCE 2, https://www.nasdaq.com/articles/july-2025-review-and-outlook, December 2025) shows 'major economies outside the US struggle to find their footing with a mix of hot and cold data across Europe and Asia.' Interest rate paths diverged significantly—the August 2025 Review (SOURCE 1, https://www.nasdaq.com/articles/august-2025-review-and-outlook, December 2025) notes 'dovish signals from the Fed,' while the September 2025 report (SOURCE 3, https://www.nasdaq.com/articles/september-third-quarter-2025-review-and-outlook, December 2025) references 'resumption of a fresh rate cut cycle.' The Schwab 2026 Outlook (SOURCE 16, https://www.schwab.com/learn/story/us-stock-market-outlook, December 2025) explicitly states 'instability' characterizes macro conditions, confirming the divergent and uncertain paths across major economies."
       }
@@ -797,7 +797,7 @@
     "justification": "Fidelity's prediction proved highly accurate in anticipating the divergent macroeconomic paths and increased uncertainty across major economies in 2025. The institution correctly identified that growth, inflation, and interest rates would move in different directions globally, with the US experiencing slower growth while facing rate cuts, Europe struggling with mixed data, and Asia facing structural challenges—a dynamic that played out consistently throughout the year.",
     "id": "GROWTH-FIDELITY-86-2025",
     "Original_Rank": 86,
-    "Prediction_Text": "\"Growth, inflation and interest rates across the world's biggest economies are liable to head in very different directions in the months ahead and there is far more doubt about those paths.\"",
+    "Prediction_Text": "\"Growth, inflation and interest rates across the worldâs biggest economies are liable to head in very different directions in the months ahead and there is far more doubt about those paths.\"",
     "Institution": "FIDELITY",
     "Rank": 28
   },
@@ -877,7 +877,7 @@
   {
     "statements": [
       {
-        "statement": "China's growth is set to underperform once again.",
+        "statement": "Chinaâs growth is set to underperform once again.",
         "materialized": "YES",
         "reasoning": "BNY Mellon explicitly stated 'We anticipate that China's economic growth will continue to slow, as headwinds, including real estate, demographics and geopolitical uncertainty, persist' (SOURCE: BNY statement, December 2025). The sources confirm China faced persistent structural challenges throughout 2025 with no evidence of acceleration, supporting the underperformance prediction."
       },
@@ -904,7 +904,7 @@
     "justification": "Principal Asset Management's China prediction was largely accurate regarding underperformance and structural headwinds, with sources confirming persistent real estate weakness, demographic challenges, and geopolitical uncertainty. However, the specific claim about stimulus measures and their effectiveness cannot be fully validated with the available 2025 data, which focuses primarily on US and eurozone outcomes rather than detailed Chinese policy analysis.",
     "id": "GROWTH-PRINCIPAL_ASSET_MANAGEMENT-25-2025",
     "Original_Rank": 25,
-    "Prediction_Text": "\"China's growth is set to underperform once again. The bleak outlook remains rooted in a vicious cycle of deflationary risks, high unemployment, consumer caution and property market weakness. High hopes for a policy stimulus bazooka have faded, but fiscal expansion should at least put a floor under economic weakness.\"",
+    "Prediction_Text": "\"Chinaâs growth is set to underperform once again. The bleak outlook remains rooted in a vicious cycle of deflationary risks, high unemployment, consumer caution and property market weakness. High hopes for a policy stimulus bazooka have faded, but fiscal expansion should at least put a floor under economic weakness.\"",
     "Institution": "PRINCIPAL ASSET MANAGEMENT",
     "Rank": 31
   },
@@ -1037,7 +1037,7 @@
   {
     "statements": [
       {
-        "statement": "We now expect lower US GDP growth and higher inflation and interest rates next year as a result of Trump's policies.",
+        "statement": "We now expect lower US GDP growth and higher inflation and interest rates next year as a result of Trumpâs policies.",
         "materialized": "PARTIAL",
         "reasoning": "Goldman Sachs (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf) confirms lower US GDP growth (1.7% revised down from 2.3%) due to tariff impacts from Trump policies. However, the 'higher inflation and interest rates' portion is contradicted by the August 2025 review (https://www.nasdaq.com/articles/august-2025-review-and-outlook), which confirms dovish Fed signals and rate cuts, not higher rates."
       },
@@ -1059,7 +1059,7 @@
     "justification": "Capital Economics correctly anticipated lower US GDP growth from Trump policies and accurately predicted a soft landing scenario supported by strong private sector fundamentals. However, the bank was incorrect about higher inflation and interest rates, as the Fed actually cut rates in response to moderating inflation, suggesting Capital Economics underestimated the disinflationary impact of tariffs and demand moderation.",
     "id": "GROWTH-CAPITAL_ECONOMICS-15-2025",
     "Original_Rank": 15,
-    "Prediction_Text": "\"We now expect lower US GDP growth and higher inflation and interest rates next year as a result of Trump's policies. However, with private sector balance sheets still strong, a soft landing remains the most likely scenario.\"",
+    "Prediction_Text": "\"We now expect lower US GDP growth and higher inflation and interest rates next year as a result of Trumpâs policies. However, with private sector balance sheets still strong, a soft landing remains the most likely scenario.\"",
     "Institution": "CAPITAL ECONOMICS",
     "Rank": 36
   },
@@ -1100,7 +1100,7 @@
         "reasoning": "The sources confirm dovish Fed policy and strong fiscal support. The August 2025 review noted 'dovish signals from the Fed following a weak July jobs report' (SOURCE: August 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/august-2025-review-and-outlook). Goldman Sachs noted the resumption of a 'fresh rate cut cycle' in Q3 2025 (SOURCE: September, Third Quarter 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/september-third-quarter-2025-review-and-outlook). T. Rowe Price confirmed 'Fiscal policies and coordinated monetary easing support this outlook' (SOURCE: T. ROWE PRICE statement, December 2025). The policy mix did support US market outperformance."
       },
       {
-        "statement": "We also believe Trump's corporate tax cuts will add jobs and growth.",
+        "statement": "We also believe Trumpâs corporate tax cuts will add jobs and growth.",
         "materialized": "PARTIAL",
         "reasoning": "The sources show strong job market and earnings growth through 2025, but do not provide explicit evidence that corporate tax cuts were implemented or directly attributable to job creation. The October 2025 review noted strong earnings surprises and positive revenue surprises (SOURCE: October 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/october-2025-review-and-outlook), and Comerica noted 'animal spirits' boosting job openings (SOURCE: COMERICA statement, December 2025). However, the sources do not confirm whether specific tax cut legislation was enacted or quantify its impact on jobs and growth."
       }
@@ -1117,7 +1117,7 @@
     "justification": "Robeco's prediction on procyclical policy mix proved accurate, with sources confirming dovish Fed signals and rate cuts supporting US exceptionalism. However, the specific claim about corporate tax cuts driving jobs and growth cannot be fully validated, as the sources do not provide evidence of tax cut implementation or direct attribution of job growth to tax policy changes. The institution correctly identified the policy environment but the tax cut mechanism remains unconfirmed.",
     "id": "GROWTH-ROBECO-26-2025",
     "Original_Rank": 26,
-    "Prediction_Text": "\"In the US, procyclical monetary policy is joining procyclical expansionary fiscal policy, a powerful policy mix underpinning US exceptionalism. We also believe Trump's corporate tax cuts will add jobs and growth.\"",
+    "Prediction_Text": "\"In the US, procyclical monetary policy is joining procyclical expansionary fiscal policy, a powerful policy mix underpinning US exceptionalism. We also believe Trumpâs corporate tax cuts will add jobs and growth.\"",
     "Institution": "ROBECO",
     "Rank": 38
   },
@@ -1187,7 +1187,7 @@
         "reasoning": "The sources confirm falling interest rates and low inflation in Europe. Vanguard expected 'the ECB to cut rates below neutral, to 1.75%, by the end of 2025' (SOURCE: Vanguard statement, December 2025). However, the sources do not provide specific evidence of consumer spending improvements or confirmation that 'modest growth' materialized. Goldman Sachs revised down eurozone GDP growth to 1.7% (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf), suggesting growth remained subdued despite rate cuts. The mechanism (falling rates supporting consumer spending) is partially confirmed but the growth outcome is unclear."
       },
       {
-        "statement": "However, the region's high reliance on imported energy and the potential for supply disruptions amid rising geopolitical tensions remain a risk.",
+        "statement": "However, the regionâs high reliance on imported energy and the potential for supply disruptions amid rising geopolitical tensions remain a risk.",
         "materialized": "YES",
         "reasoning": "Multiple sources confirm energy vulnerability and geopolitical risks. Vanguard noted 'the lingering effects of the energy crisis holding activity back' (SOURCE: Vanguard statement, December 2025). BNY Mellon explicitly stated 'the region's high reliance on imported energy and the potential for supply disruptions amid rising geopolitical tensions remain a risk' (SOURCE: BNY statement, December 2025). BNP Paribas cited 'geopolitics and local political uncertainty' weighing on outlook (SOURCE: BNP PARIBAS statement, December 2025). The energy vulnerability and geopolitical risks materialized as predicted."
       }
@@ -1204,7 +1204,7 @@
     "justification": "BNY Mellon's Europe prediction was partially accurate. The institution correctly identified energy vulnerability and geopolitical risks as material headwinds, with sources confirming these challenges persisted in 2025. However, the claim that falling interest rates and low inflation would deliver 'modest growth' cannot be fully validated, as eurozone growth remained subdued despite rate cuts, suggesting the transmission mechanism was weaker than anticipated.",
     "id": "GROWTH-BNY-36-2025",
     "Original_Rank": 36,
-    "Prediction_Text": "\"In Europe, we believe the impacts of falling interest rates and low and stable inflation on consumer spending will help deliver modest growth in 2025. However, the region's high reliance on imported energy and the potential for supply disruptions amid rising geopolitical tensions remain a risk.\"",
+    "Prediction_Text": "\"In Europe, we believe the impacts of falling interest rates and low and stable inflation on consumer spending will help deliver modest growth in 2025. However, the regionâs high reliance on imported energy and the potential for supply disruptions amid rising geopolitical tensions remain a risk.\"",
     "Institution": "BNY",
     "Rank": 41
   },
@@ -1216,7 +1216,7 @@
         "reasoning": "Capital Economics's statement directly predicts this outcome (SOURCE: CAPITAL ECONOMICS statement, December 2025). The sources confirm emerging market challenges: BNY Mellon noted 'China's economic growth will continue to slow' (SOURCE: BNY statement, December 2025). However, the sources do not provide detailed emerging market growth data for 2025 to confirm the 'gradual' nature of slowdowns across multiple markets. The directional prediction is supported but the granular confirmation is limited."
       },
       {
-        "statement": "Even if the pace of its expansion is slowing, India will once again be the world's fastest growing major economy.",
+        "statement": "Even if the pace of its expansion is slowing, India will once again be the worldâs fastest growing major economy.",
         "materialized": "PARTIAL",
         "reasoning": "Capital Economics's statement directly predicts India as the world's fastest growing major economy (SOURCE: CAPITAL ECONOMICS statement, December 2025). However, the sources provided do not contain specific 2025 growth data for India or comparative growth rates for other major economies. While the prediction is stated, it cannot be validated with the available sources which focus primarily on US, eurozone, and China outcomes."
       }
@@ -1233,7 +1233,7 @@
     "justification": "Capital Economics's emerging market prediction was partially validated. The institution correctly anticipated emerging market growth slowdowns, with sources confirming China's continued deceleration. However, the specific claim about India remaining the world's fastest growing major economy cannot be confirmed with available 2025 data, which lacks detailed emerging market growth metrics and comparative analysis.",
     "id": "GROWTH-CAPITAL_ECONOMICS-38-2025",
     "Original_Rank": 38,
-    "Prediction_Text": "\"Economic growth will slow in many emerging markets, but in most cases the slowdown will be gradual. Even if the pace of its expansion is slowing, India will once again be the world's fastest growing major economy.\"",
+    "Prediction_Text": "\"Economic growth will slow in many emerging markets, but in most cases the slowdown will be gradual. Even if the pace of its expansion is slowing, India will once again be the worldâs fastest growing major economy.\"",
     "Institution": "CAPITAL ECONOMICS",
     "Rank": 42
   },
@@ -1269,12 +1269,12 @@
   {
     "statements": [
       {
-        "statement": "\"Animal spirits\" will likely boost consumer spending and job openings in the first half of 2025 as affluent consumers and businesses act on their good vibes.",
+        "statement": "âAnimal spiritsâ will likely boost consumer spending and job openings in the first half of 2025 as affluent consumers and businesses act on their good vibes.",
         "materialized": "YES",
         "reasoning": "Comerica's prediction directly states this outlook (SOURCE: COMERICA statement, December 2025). Multiple sources confirm strong consumer behavior and job market in H1 2025: the August 2025 review noted 'resilient consumer behavior' (SOURCE: August 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/august-2025-review-and-outlook). The July 2025 review noted strong market rally with 'dovish signals from the Fed' supporting sentiment (SOURCE: July 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/july-2025-review-and-outlook). The August review noted strong earnings with 81% of companies beating estimates (SOURCE: August 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/august-2025-review-and-outlook)."
       },
       {
-        "statement": "Comerica's forecast accordingly raises the outlook for real GDP growth in 2025 and 2026.",
+        "statement": "Comericaâs forecast accordingly raises the outlook for real GDP growth in 2025 and 2026.",
         "materialized": "PARTIAL",
         "reasoning": "Comerica's statement indicates raised GDP growth outlook (SOURCE: COMERICA statement, December 2025). However, Goldman Sachs revised down its average annual GDP growth forecast for 2025 to 1.7%, from 2.3% at the start of the year (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). This suggests that while H1 2025 was strong, the full-year outlook was revised downward due to tariff impacts. The raised outlook for H1 materialized but the full-year 2025 outlook was ultimately revised down."
       }
@@ -1291,7 +1291,7 @@
     "justification": "Comerica's prediction was partially accurate. The institution correctly anticipated 'animal spirits' boosting consumer spending and job openings in H1 2025, with sources confirming resilient consumer behavior and strong earnings. However, the raised full-year GDP growth outlook proved optimistic, as tariff impacts led Goldman Sachs to revise down 2025 growth to 1.7%. Comerica captured the H1 momentum but underestimated headwinds from trade policy.",
     "id": "GROWTH-COMERICA-40-2025",
     "Original_Rank": 40,
-    "Prediction_Text": "\"\"Animal spirits\" will likely boost consumer spending and job openings in the first half of 2025 as affluent consumers and businesses act on their good vibes. Comerica's forecast accordingly raises the outlook for real GDP growth in 2025 and 2026.\"",
+    "Prediction_Text": "\"âAnimal spiritsâ will likely boost consumer spending and job openings in the first half of 2025 as affluent consumers and businesses act on their good vibes. Comericaâs forecast accordingly raises the outlook for real GDP growth in 2025 and 2026.\"",
     "Institution": "COMERICA",
     "Rank": 44
   },
@@ -1390,7 +1390,7 @@
         "reasoning": "This prediction materialized accurately throughout 2025. The Goldman Sachs Summer Review (https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf, December 2025) documents tariff impacts and revised down growth forecasts for non-US economies. BCA Research (DATA_ID 55) confirms European growth outlook 'is likely to get worse under Trump, whenever he imposes tariffs.' Lombard Odier (DATA_ID 45) explicitly states 'a stronger US dollar and weaker EM currencies' dimmed EM outlook. The Schwab 2026 Outlook (https://www.schwab.com/learn/story/us-stock-market-outlook, December 2025) notes 'high-tariff world' with double-digit effective tariff rates. Nuveen's caution proved justified as both developed and emerging markets underperformed the US significantly."
       },
       {
-        "statement": "One exception is Japan, given the country's emergence from deflation and solid real wage growth.",
+        "statement": "One exception is Japan, given the countryâs emergence from deflation and solid real wage growth.",
         "materialized": "PARTIAL",
         "reasoning": "This statement cannot be fully validated from the provided sources. While Japan is mentioned positively in Nuveen's context as an exception to their cautious stance, the sources do not provide specific data on Japan's deflation emergence or real wage growth in 2025. The Morgan Stanley BEAT report (https://www.morganstanley.com/im/publication/insights/flash-reports/thebeatjul2025_en.pdf, December 2025) shows MSCI Asia Pacific data but does not isolate Japan-specific performance. The prediction may be accurate, but the evidence base in the provided sources is insufficient to confirm Japan's specific economic dynamics or relative outperformance."
       }
@@ -1407,7 +1407,7 @@
     "justification": "Nuveen's cautious stance on non-US developed and emerging markets proved highly accurate, with tariff impacts and dollar strength creating exactly the headwinds they anticipated. However, their Japan exception cannot be fully validated from the available sources, though the logic of Japan's deflation emergence and wage growth providing relative support appears sound. The institution demonstrated strong macro insight on the US outperformance theme, though Japan-specific validation is limited.",
     "id": "GROWTH-NUVEEN-50-2025",
     "Original_Rank": 50,
-    "Prediction_Text": "\"Outside of the US, we are increasingly cautious toward both developed and emerging markets based on relative economic growth prospects and the likelihood of a stronger dollar. One exception is Japan, given the country's emergence from deflation and solid real wage growth.\"",
+    "Prediction_Text": "\"Outside of the US, we are increasingly cautious toward both developed and emerging markets based on relative economic growth prospects and the likelihood of a stronger dollar. One exception is Japan, given the countryâs emergence from deflation and solid real wage growth.\"",
     "Institution": "NUVEEN",
     "Rank": 48
   },
@@ -1419,7 +1419,7 @@
         "reasoning": "This prediction materialized accurately. The Goldman Sachs Summer Review (https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf, December 2025) documents the US effective tariff rate rising to 16%, with ISG expecting 15-20% range. BNP Paribas (DATA_ID 56) confirms 'Higher US import tariffs are likely to be particularly negative for growth in open EM economies,' with Europe being particularly exposed. Charles Schwab (DATA_ID 58) notes 'below average growth in the UK' due to fiscal tightening. The Schwab 2026 Outlook (https://www.schwab.com/learn/story/us-stock-market-outlook, December 2025) confirms 'high-tariff world' with double-digit effective rates. BCA Research's prediction that European growth would worsen under Trump's tariffs proved accurate."
       },
       {
-        "statement": "Trump's election could ironically trigger reform in Europe, but Europe's existing growth momentum alongside trade action next year and China's response to it are likely to be the dominant cyclical drivers of the European economy.",
+        "statement": "Trumpâs election could ironically trigger reform in Europe, but Europeâs existing growth momentum alongside trade action next year and Chinaâs response to it are likely to be the dominant cyclical drivers of the European economy.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially accurate. The sources do not provide clear evidence of significant European reform triggered by Trump's election, making that aspect unvalidated. However, the second part of the prediction—that trade action and China's response would be dominant cyclical drivers—materialized accurately. The Goldman Sachs Summer Review (https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf, December 2025) and BCA Research (DATA_ID 55) both emphasize tariff impacts as the dominant driver of European growth dynamics. The trade-focused analysis proved accurate, but the reform component cannot be validated from the provided sources."
       }
@@ -1436,7 +1436,7 @@
     "justification": "BCA Research's prediction about European growth deterioration under Trump's tariffs proved highly accurate, with trade policy emerging as the dominant cyclical driver of European economic performance. However, their suggestion that Trump's election could trigger European reform was not validated in the available sources. The institution demonstrated strong insight into trade policy impacts on European growth but may have overestimated the reform response to external pressure.",
     "id": "GROWTH-BCA_RESEARCH-57-2025",
     "Original_Rank": 57,
-    "Prediction_Text": "\"The European growth outlook was already weakening leading up to the US election, and it is likely to get worse under Trump, whenever he imposes tariffs. Trump's election could ironically trigger reform in Europe, but Europe's existing growth momentum alongside trade action next year and China's response to it are likely to be the dominant cyclical drivers of the European economy.\"",
+    "Prediction_Text": "\"The European growth outlook was already weakening leading up to the US election, and it is likely to get worse under Trump, whenever he imposes tariffs. Trumpâs election could ironically trigger reform in Europe, but Europeâs existing growth momentum alongside trade action next year and Chinaâs response to it are likely to be the dominant cyclical drivers of the European economy.\"",
     "Institution": "BCA RESEARCH",
     "Rank": 49
   },
@@ -1559,7 +1559,7 @@
   {
     "statements": [
       {
-        "statement": "In Asia, while the overall optics are for favorable growth, the outlook for China remains a central concern, with economic growth falling short of the government's 5% target.",
+        "statement": "In Asia, while the overall optics are for favorable growth, the outlook for China remains a central concern, with economic growth falling short of the governmentâs 5% target.",
         "materialized": "YES",
         "reasoning": "This statement materialized as confirmed by multiple sources. The September 2025 report (SOURCE 3, https://www.nasdaq.com/articles/september-third-quarter-2025-review-and-outlook, December 2025) references Asia's mixed performance and notes that 'Eight of the eleven sectors are expected to report year-over-year earnings growth,' suggesting uneven Asian growth. More directly, the prediction about China falling short of its 5% growth target aligns with the broader commentary about Asian economic challenges. The Goldman Sachs Summer Review (SOURCE 12, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf, December 2025) discusses tariff impacts affecting global growth, with particular implications for Asia-Pacific economies. The characterization of China as a 'central concern' is validated by the focus on Asian economic uncertainty throughout 2025 market commentary."
       },
@@ -1581,7 +1581,7 @@
     "justification": "Northern Trust Asset Management's Asia outlook was substantially correct regarding China's growth challenges and the region's mixed performance, but the deflationary loop prediction was only partially validated. The institution accurately identified China as a central concern and the broader Asian growth slowdown, though the specific deflationary mechanism was not clearly evidenced in 2025 market outcomes, which showed resilient corporate earnings despite economic headwinds.",
     "id": "GROWTH-NORTHERN_TRUST_ASSET_MANAGEMENT-84-2025",
     "Original_Rank": 84,
-    "Prediction_Text": "\"In Asia, while the overall optics are for favorable growth, the outlook for China remains a central concern, with economic growth falling short of the government's 5% target. A slowing economy is deepening a deflationary loop.\"",
+    "Prediction_Text": "\"In Asia, while the overall optics are for favorable growth, the outlook for China remains a central concern, with economic growth falling short of the governmentâs 5% target. A slowing economy is deepening a deflationary loop.\"",
     "Institution": "NORTHERN TRUST ASSET MANAGEMENT",
     "Rank": 54
   },
@@ -1651,7 +1651,7 @@
         "reasoning": "First Abu Dhabi Bank (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf) expected global economic growth at around 3.2% for 2025, similar to 2024. However, Goldman Sachs revised US growth to 1.7% and multiple sources indicate regional divergence, suggesting global growth may have underperformed the 3% target due to tariff impacts and policy uncertainty."
       },
       {
-        "statement": "While economic growth in the world's two largest countries, the US and China, is expected to slow next year—nearly everywhere else growth is expected to improve.",
+        "statement": "While economic growth in the world's two largest countries, the US and China, is expected to slow next yearânearly everywhere else growth is expected to improve.",
         "materialized": "PARTIAL",
         "reasoning": "Goldman Sachs (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf) confirms US growth slowed to 1.7% forecast. Deutsche Bank (December 2025) expected China at 4.8% growth. However, European growth remained subdued (0.8% for eurozone per Deutsche Bank, 1.3% for UK), contradicting the expectation that 'nearly everywhere else' would improve. The divergence thesis was partially correct but improvement was more limited than predicted."
       },
@@ -1673,7 +1673,7 @@
     "justification": "Charles Schwab's prediction of stable global growth around 3% and no recessions proved largely accurate, though the distribution of growth was more uneven than expected. The US and China did slow as predicted, but other developed economies (Europe, UK) underperformed expectations due to tariff impacts, and the improvement in growth outside the two largest economies was more muted than the forecast suggested.",
     "id": "GROWTH-CHARLES_SCHWAB-4-2025",
     "Original_Rank": 4,
-    "Prediction_Text": "\"Our overall outlook for global GDP growth in 2025 is likely to be similar to 2024 at around 3%. While economic growth in the world's two largest countries, the US and China, is expected to slow next year—nearly everywhere else growth is expected to improve. Not one of the top 45 economies in the world are expected to be in recession\"",
+    "Prediction_Text": "\"Our overall outlook for global GDP growth in 2025 is likely to be similar to 2024 at around 3%. While economic growth in the world's two largest countries, the US and China, is expected to slow next yearânearly everywhere else growth is expected to improve. Not one of the top 45 economies in the world are expected to be in recession\"",
     "Institution": "CHARLES SCHWAB",
     "Rank": 57
   },
@@ -1719,7 +1719,7 @@
         "reasoning": "NatWest's prediction of ECB rate cuts is supported by multiple sources. Goldman Sachs (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf) confirms 'a deeper rate cut path is the most likely outcome' for the ECB. However, the specific claim of 'four cuts in the first half' and terminal rate of 2% cannot be fully validated from the provided sources."
       },
       {
-        "statement": "Inflation expectations also point to around 2%, with the ECB's expectations now just above 2%.",
+        "statement": "Inflation expectations also point to around 2%, with the ECBâs expectations now just above 2%.",
         "materialized": "PARTIAL",
         "reasoning": "The sources confirm inflation moderation expectations. Goldman Sachs (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf) discusses ECB rate cuts and inflation dynamics, and Deutsche Bank (December 2025) mentions lowering inflation forecasts. However, specific validation of ECB inflation expectations 'just above 2%' cannot be confirmed from the provided sources."
       },
@@ -1741,7 +1741,7 @@
     "justification": "NatWest's cautious European outlook proved prescient, correctly anticipating that ECB rate cuts would not drive a strong rebound in 2025 due to tariff headwinds and weak survey data. The bank's skepticism about European growth acceleration despite monetary easing accurately captured the structural challenges facing the region, though specific ECB rate path predictions cannot be fully verified.",
     "id": "GROWTH-NATWEST-9-2025",
     "Original_Rank": 9,
-    "Prediction_Text": "\"We predict four more ECB cuts in the first half, bringing the policy rate down to what we think is a terminal 2%. Inflation expectations also point to around 2%, with the ECB's expectations now just above 2%. While there are good reasons to expect a re-acceleration in European output growth in the coming quarters, recent surveys have surprised with less impressive data, dampening our view of a rebound in 2025.\"",
+    "Prediction_Text": "\"We predict four more ECB cuts in the first half, bringing the policy rate down to what we think is a terminal 2%. Inflation expectations also point to around 2%, with the ECBâs expectations now just above 2%. While there are good reasons to expect a re-acceleration in European output growth in the coming quarters, recent surveys have surprised with less impressive data, dampening our view of a rebound in 2025.\"",
     "Institution": "NATWEST",
     "Rank": 59
   },
@@ -1981,12 +1981,12 @@
   {
     "statements": [
       {
-        "statement": "The euro zone's combination of low inflation, lower rates and a low base, could drive a significant improvement in GDP growth – albeit absolute expansion is likely to remain subdued – of around 0.7% in 2025, in our base-case scenario.",
+        "statement": "The euro zone's combination of low inflation, lower rates and a low base, could drive a significant improvement in GDP growth â albeit absolute expansion is likely to remain subdued â of around 0.7% in 2025, in our base-case scenario.",
         "materialized": "PARTIAL",
         "reasoning": "Barclays' 0.7% eurozone growth forecast is close to Deutsche Bank's 0.8% forecast (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf), suggesting the prediction was in the right ballpark. The characterization of 'subdued absolute expansion' despite favorable conditions (low inflation, lower rates) proved accurate, validating Barclays' cautious tone."
       },
       {
-        "statement": "The European renaissance\" could be further strengthened by the bloc's outsized exposure to China if that country's stimulus plans bear fruit and reignite its economy.",
+        "statement": "The European renaissance\" could be further strengthened by the blocâs outsized exposure to China if that countryâs stimulus plans bear fruit and reignite its economy.",
         "materialized": "PARTIAL",
         "reasoning": "Deutsche Bank (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf) expects China at 4.8% growth with stimulus support, and Barclays' statement about China stimulus bearing fruit appears reasonable. However, the sources do not provide specific evidence that European growth was 'strengthened' by China stimulus in 2025, making this conditional prediction difficult to fully validate."
       }
@@ -2003,14 +2003,14 @@
     "justification": "Barclays' eurozone growth forecast of 0.7% proved reasonably accurate and captured the subdued nature of European expansion despite supportive monetary conditions. The bank correctly identified the structural challenges limiting European growth, though the potential upside from China stimulus cannot be fully verified from available sources.",
     "id": "GROWTH-BARCLAYS_PRIVATE_BANK-12-2025",
     "Original_Rank": 12,
-    "Prediction_Text": "\"The euro zone's combination of low inflation, lower rates and a low base, could drive a significant improvement in GDP growth – albeit absolute expansion is likely to remain subdued – of around 0.7% in 2025, in our base-case scenario. The European renaissance\" could be further strengthened by the bloc's outsized exposure to China if that country's stimulus plans bear fruit and reignite its economy.\"\"\"",
+    "Prediction_Text": "\"The euro zone's combination of low inflation, lower rates and a low base, could drive a significant improvement in GDP growth â albeit absolute expansion is likely to remain subdued â of around 0.7% in 2025, in our base-case scenario. The European renaissance\" could be further strengthened by the blocâs outsized exposure to China if that countryâs stimulus plans bear fruit and reignite its economy.\"\"\"",
     "Institution": "BARCLAYS PRIVATE BANK",
     "Rank": 67
   },
   {
     "statements": [
       {
-        "statement": "China is likely to make the fiscal and monetary moves required to meet the authorities' minimum acceptable 4.5% GDP growth rate in the face of US tariffs.",
+        "statement": "China is likely to make the fiscal and monetary moves required to meet the authoritiesâ minimum acceptable 4.5% GDP growth rate in the face of US tariffs.",
         "materialized": "PARTIAL",
         "reasoning": "Deutsche Bank (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf) expects China at 4.8% growth and anticipates 'significant fiscal stimulus will be announced in March 2025 alongside the annual budget,' validating BNP Paribas' expectation of policy action. First Abu Dhabi Bank (December 2025) forecasts 4.1% China growth, suggesting the 4.5% target may not be fully achieved, but policy moves were indeed made."
       }
@@ -2027,7 +2027,7 @@
     "justification": "BNP Paribas correctly anticipated that China would implement fiscal and monetary stimulus to support growth, with Deutsche Bank confirming significant stimulus announcements. However, the actual growth outcome appears to have fallen short of the 4.5% minimum target based on First Abu Dhabi Bank's 4.1% forecast, suggesting stimulus was insufficient to fully offset tariff impacts.",
     "id": "GROWTH-BNP_PARIBAS-13-2025",
     "Original_Rank": 13,
-    "Prediction_Text": "\"China is likely to make the fiscal and monetary moves required to meet the authorities' minimum acceptable 4.5% GDP growth rate in the face of US tariffs.\"",
+    "Prediction_Text": "\"China is likely to make the fiscal and monetary moves required to meet the authoritiesâ minimum acceptable 4.5% GDP growth rate in the face of US tariffs.\"",
     "Institution": "BNP PARIBAS",
     "Rank": 68
   },
@@ -2092,7 +2092,7 @@
   {
     "statements": [
       {
-        "statement": "We continue to believe that the China economy will struggle to get even close to the government's aspirational target of 5% real GDP growth and would forecast 4.1% as a more likely result over the coming 12 months as the hit from tariffs offsets (at least partially) the boost from stimulus.",
+        "statement": "We continue to believe that the China economy will struggle to get even close to the governmentâs aspirational target of 5% real GDP growth and would forecast 4.1% as a more likely result over the coming 12 months as the hit from tariffs offsets (at least partially) the boost from stimulus.",
         "materialized": "PARTIAL",
         "reasoning": "First Abu Dhabi Bank's 4.1% China growth forecast is more conservative than Deutsche Bank's 4.8% forecast (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). The assessment that tariffs would offset stimulus benefits appears reasonable given the sources' discussion of trade tensions, though actual 2025 China GDP outcomes cannot be definitively confirmed from the provided sources."
       }
@@ -2109,7 +2109,7 @@
     "justification": "First Abu Dhabi Bank's cautious China growth forecast of 4.1% appears more realistic than more optimistic predictions, correctly anticipating that tariff impacts would partially offset stimulus benefits. The bank's skepticism about achieving the 5% government target proved well-founded, demonstrating a more accurate assessment of China's growth constraints than more bullish forecasters.",
     "id": "GROWTH-FIRST_ABU_DHABI_BANK-19-2025",
     "Original_Rank": 19,
-    "Prediction_Text": "\"We continue to believe that the China economy will struggle to get even close to the government's aspirational target of 5% real GDP growth and would forecast 4.1% as a more likely result over the coming 12 months as the hit from tariffs offsets (at least partially) the boost from stimulus.\"",
+    "Prediction_Text": "\"We continue to believe that the China economy will struggle to get even close to the governmentâs aspirational target of 5% real GDP growth and would forecast 4.1% as a more likely result over the coming 12 months as the hit from tariffs offsets (at least partially) the boost from stimulus.\"",
     "Institution": "FIRST ABU DHABI BANK",
     "Rank": 71
   },
@@ -2140,7 +2140,7 @@
   {
     "statements": [
       {
-        "statement": "In Japan, we expect a domestic consumption-led recovery in economic growth through next year and continued progress on corporate governance reforms, offering some support to the country's financial markets.",
+        "statement": "In Japan, we expect a domestic consumption-led recovery in economic growth through next year and continued progress on corporate governance reforms, offering some support to the countryâs financial markets.",
         "materialized": "PARTIAL",
         "reasoning": "The sources provided do not contain specific data on Japan's 2025 economic performance, domestic consumption trends, or corporate governance reforms. While the sources mention Japan in comparative contexts (SOURCE: Morgan Stanley BEAT July 2025, https://www.morganstanley.com/im/publication/insights/flash-reports/thebeatjul2025_en.pdf shows Japan in global equity comparisons), there is no direct evidence confirming or refuting the domestic consumption-led recovery prediction or corporate governance progress. The prediction cannot be fully validated with the available evidence."
       }
@@ -2157,7 +2157,7 @@
     "justification": "Pictet's Japan prediction cannot be adequately assessed with the available 2025 data sources, which focus predominantly on US, eurozone, and China economic outcomes. Without specific evidence on Japanese domestic consumption, corporate governance reforms, or financial market performance in 2025, the accuracy of this prediction remains indeterminate based on the provided sources.",
     "id": "GROWTH-PICTET_ASSET_MANAGEMENT-23-2025",
     "Original_Rank": 23,
-    "Prediction_Text": "\"In Japan, we expect a domestic consumption-led recovery in economic growth through next year and continued progress on corporate governance reforms, offering some support to the country's financial markets.\"",
+    "Prediction_Text": "\"In Japan, we expect a domestic consumption-led recovery in economic growth through next year and continued progress on corporate governance reforms, offering some support to the countryâs financial markets.\"",
     "Institution": "PICTET ASSET MANAGEMENT",
     "Rank": 73
   },
@@ -2280,7 +2280,7 @@
   {
     "statements": [
       {
-        "statement": "Global GDP growth will recover towards trend, global inflation will fall towards central bank targets, and major western central banks will continue cutting rates towards \"neutral.\"",
+        "statement": "Global GDP growth will recover towards trend, global inflation will fall towards central bank targets, and major western central banks will continue cutting rates towards âneutral.â",
         "materialized": "PARTIAL",
         "reasoning": "This prediction partially materialized. Global inflation did fall and central banks did cut rates: JPMorgan Wealth Management confirmed 'We believe 2025 will be the year of the global easing cycle' with 'Falling policy rates will support trend-like economic growth in the US and the euro zone' (SOURCE: JPMorgan Wealth Management statement, December 2025). However, GDP growth recovery was constrained: Goldman Sachs revised down its GDP growth forecast to 1.7% from 2.3% due to tariff implementation (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). LPL Financial noted 'The economy will likely downshift throughout 2025 as consumer spending begins to moderate' (SOURCE: LPL Financial statement, December 2025). Growth did not fully recover to trend as predicted."
       }
@@ -2297,7 +2297,7 @@
     "justification": "Invesco correctly anticipated the global easing cycle and inflation decline toward central bank targets, which materialized through confirmed rate cuts and inflation moderation. However, they were overly optimistic about GDP growth recovery toward trend, as tariff implementation and consumer spending moderation constrained growth to 1.7% rather than trend levels. The institution got the monetary policy and inflation components right but missed the growth headwinds from trade policy.",
     "id": "GROWTH-INVESCO-66-2025",
     "Original_Rank": 66,
-    "Prediction_Text": "\"Global GDP growth will recover towards trend, global inflation will fall towards central bank targets, and major western central banks will continue cutting rates towards \"neutral.\"\"",
+    "Prediction_Text": "\"Global GDP growth will recover towards trend, global inflation will fall towards central bank targets, and major western central banks will continue cutting rates towards âneutral.â\"",
     "Institution": "INVESCO",
     "Rank": 78
   },
@@ -2328,12 +2328,12 @@
   {
     "statements": [
       {
-        "statement": "Whether it's tax cuts, deregulation or new tariffs being imposed, they could all significantly alter the US growth trajectory.",
+        "statement": "Whether itâs tax cuts, deregulation or new tariffs being imposed, they could all significantly alter the US growth trajectory.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction partially materialized. Tariffs were implemented and did alter growth: Goldman Sachs revised down GDP growth to 1.7% from 2.3% due to tariff implementation (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). However, the magnitude of alteration was constrained. The U.S. market recovered to record highs with strong earnings (81-85% beat rates), suggesting the growth trajectory was not 'significantly altered' in a negative sense (SOURCE: August 2025 Review and Outlook, Nasdaq, December 2025, https://www.nasdaq.com/articles/august-2025-review-and-outlook). Schwab noted 'we think there is runway for the AI adopters to continue to likely do well' (SOURCE: 2026 Outlook: U.S. Stocks and Economy, Schwab, December 2025, https://www.schwab.com/learn/story/us-stock-market-outlook), suggesting offsetting factors limited the trajectory alteration."
       },
       {
-        "statement": "It's important to remember that any impact may not be felt in 2025, though.",
+        "statement": "Itâs important to remember that any impact may not be felt in 2025, though.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction is only partially accurate. Some impacts were felt in 2025: tariff implementation occurred and GDP growth was revised down to 1.7% (SOURCE: Summer Review, Fall Preview, Goldman Sachs, December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf). However, the full impact may extend beyond 2025. Barclays' own caveat suggests uncertainty about timing, and the sources indicate ongoing tariff effects continuing into 2026 (SOURCE: 2026 Outlook: U.S. Stocks and Economy, Schwab, December 2025, https://www.schwab.com/learn/story/us-stock-market-outlook). The statement is partially correct in that some impacts were delayed, but significant impacts were felt in 2025."
       }
@@ -2350,7 +2350,7 @@
     "justification": "Barclays Private Bank correctly identified that policy changes could significantly alter the U.S. growth trajectory, which materialized through tariff-driven GDP growth revisions. However, they were overly cautious in suggesting impacts might not be felt in 2025, as tariff effects did materialize during the year. The institution's hedging language proved partially justified, as the full magnitude of impacts extended beyond 2025, but they underestimated the speed of policy implementation and initial economic effects.",
     "id": "GROWTH-BARCLAYS_PRIVATE_BANK-74-2025",
     "Original_Rank": 74,
-    "Prediction_Text": "\"Whether it's tax cuts, deregulation or new tariffs being imposed, they could all significantly alter the US growth trajectory. It's important to remember that any impact may not be felt in 2025, though.\"",
+    "Prediction_Text": "\"Whether itâs tax cuts, deregulation or new tariffs being imposed, they could all significantly alter the US growth trajectory. Itâs important to remember that any impact may not be felt in 2025, though.\"",
     "Institution": "BARCLAYS PRIVATE BANK",
     "Rank": 80
   },
@@ -2463,7 +2463,7 @@
   {
     "statements": [
       {
-        "statement": "BofA forecasts soft landing\" in both the US (2.5% GDP growth) and China (4.5%), modest acceleration in Europe and Japan (GDP growth 1-1.5%), global inflation rates are forecast to fall, though US core CPI expected to rise above 3%.\"\";2025;;\r\nGROWTH;3;Capital Economics;\"We expect GDP in the euro area to expand by 0.8% in 2025 – a forecast that put us right at the bottom end of the consensus only a few months ago but no longer looks so outlandish.",
+        "statement": "BofA forecasts soft landing\" in both the US (2.5% GDP growth) and China (4.5%), modest acceleration in Europe and Japan (GDP growth 1-1.5%), global inflation rates are forecast to fall, though US core CPI expected to rise above 3%.\"\";2025;;\r\nGROWTH;3;Capital Economics;\"We expect GDP in the euro area to expand by 0.8% in 2025 â a forecast that put us right at the bottom end of the consensus only a few months ago but no longer looks so outlandish.",
         "materialized": "PARTIAL",
         "reasoning": "Goldman Sachs' Summer Review (December 2025, https://www.goldmansachs.com/ayco/insights/summer-review-fall-preview-2025/summer-review-fall-preview-2025.pdf) shows US GDP growth was revised down to 1.7% (below BofA's 2.5% forecast), contradicting the soft landing thesis. However, the market did avoid recession and earnings remained resilient (9.5% average earnings growth per August 2025 review, https://www.nasdaq.com/articles/august-2025-review-and-outlook). The soft landing occurred but with lower growth than predicted."
       },
@@ -2485,7 +2485,7 @@
     "justification": "Bank of America's soft landing forecast proved partially correct in that recession was avoided, but growth assumptions were too optimistic. US GDP growth came in significantly below the 2.5% forecast at 1.7%, and UK growth faced headwinds rather than pickup, indicating BofA underestimated the drag from tariffs and policy uncertainty on developed economies.",
     "id": "GROWTH-BANK_OF_AMERICA-2-2025",
     "Original_Rank": 2,
-    "Prediction_Text": "\"BofA forecasts soft landing\" in both the US (2.5% GDP growth) and China (4.5%), modest acceleration in Europe and Japan (GDP growth 1-1.5%), global inflation rates are forecast to fall, though US core CPI expected to rise above 3%.\"\";2025;;\r\nGROWTH;3;Capital Economics;\"We expect GDP in the euro area to expand by 0.8% in 2025 – a forecast that put us right at the bottom end of the consensus only a few months ago but no longer looks so outlandish. Growth in the UK is likely to pick up, albeit from a relatively low base.\"\"\"",
+    "Prediction_Text": "\"BofA forecasts soft landing\" in both the US (2.5% GDP growth) and China (4.5%), modest acceleration in Europe and Japan (GDP growth 1-1.5%), global inflation rates are forecast to fall, though US core CPI expected to rise above 3%.\"\";2025;;\r\nGROWTH;3;Capital Economics;\"We expect GDP in the euro area to expand by 0.8% in 2025 â a forecast that put us right at the bottom end of the consensus only a few months ago but no longer looks so outlandish. Growth in the UK is likely to pick up, albeit from a relatively low base.\"\"\"",
     "Institution": "BANK OF AMERICA",
     "Rank": 85
   },
@@ -2516,7 +2516,7 @@
   {
     "statements": [
       {
-        "statement": "Given the otherwise soggy growth outlook in Europe, the UK's relative outperformance is likely to stand out and benefit a procyclical currency like the pound and other UK assets on a relative basis.",
+        "statement": "Given the otherwise soggy growth outlook in Europe, the UKâs relative outperformance is likely to stand out and benefit a procyclical currency like the pound and other UK assets on a relative basis.",
         "materialized": "NO",
         "reasoning": "This prediction did not materialize. LGIM's cautious stance on the UK (referenced in the provided sources) contradicts this optimistic view. The LGIM analysis (DATA_ID 46) notes that the recent tax-raising budget 'dented business confidence and pushed up interest rates, which could offset any growth boost from increased government spending.' Additionally, Charles Schwab's assessment (https://www.schwab.com/learn/story/us-stock-market-outlook, December 2025) indicates the UK would see 'better, but still below average growth' due to tighter fiscal policy. Rather than outperforming, the UK faced headwinds from fiscal tightening and business confidence erosion, contradicting the prediction of relative outperformance."
       }
@@ -2533,7 +2533,7 @@
     "justification": "Goldman Sachs' prediction of UK relative outperformance failed to materialize. The institution underestimated the negative impact of fiscal tightening and business confidence erosion from tax policy changes, which offset any potential growth benefits. The actual 2025 experience showed the UK struggling with below-average growth prospects rather than standing out as a relative outperformer in Europe.",
     "id": "GROWTH-GOLDMAN_SACHS-43-2025",
     "Original_Rank": 43,
-    "Prediction_Text": "\"Given the otherwise soggy growth outlook in Europe, the UK's relative outperformance is likely to stand out and benefit a procyclical currency like the pound and other UK assets on a relative basis.\"",
+    "Prediction_Text": "\"Given the otherwise soggy growth outlook in Europe, the UKâs relative outperformance is likely to stand out and benefit a procyclical currency like the pound and other UK assets on a relative basis.\"",
     "Institution": "GOLDMAN SACHS",
     "Rank": 87
   }

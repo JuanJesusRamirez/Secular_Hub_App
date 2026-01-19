@@ -7,7 +7,7 @@
         "reasoning": "This prediction materialized. Vanguard's Q4 2025 report (December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) confirms 'Against this backdrop of volatility, equities reached new all-time highs,' explicitly acknowledging heightened volatility. McKinsey's Economic Conditions Outlook (December 2025, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook) documents policy uncertainty around trade policy changes and tariffs as major concerns throughout 2025."
       },
       {
-        "statement": "In our view, tail risks shouldn't be ignored.",
+        "statement": "In our view, tail risks shouldnât be ignored.",
         "materialized": "YES",
         "reasoning": "This prediction materialized as relevant throughout 2025. Vanguard's 2026 outlook (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) assigns a 30% probability to an AI disappointment scenario with negative returns (-2% to 2%), and identifies 'AI optimism collapses' as a key risk. BlackRock's Geopolitical Risk Dashboard (December 2025, https://www.blackrock.com/corporate/insights/blackrock-investment-institute/interactive-charts/geopolitical-risk-dashboard) identifies multiple tail risks including U.S.-China competition and cyber attacks."
       },
@@ -34,7 +34,7 @@
     "justification": "HSBC Asset Management's prediction was substantially correct in identifying heightened volatility, policy uncertainty, and tail risks as key features of 2025. The firm accurately noted that markets were pricing in optimistic scenarios around AI and policy support. However, the specific concern about higher long-term rates weighing on fundamentals did not materialize as predicted, as bond markets remained supportive and rates did not spike as the firm implied.",
     "id": "RISKS-HSBC_ASSET_MANAGEMENT-8-2025",
     "Original_Rank": 8,
-    "Prediction_Text": "\"From an investment standpoint, next year is likely to be marked by heightened volatility and policy uncertainty. In our view, tail risks shouldn't be ignored. Currently, markets seem to prefer an optimistic outlook, focusing on assumptions around tax cuts, deregulation and their expected impact on future profits. What market valuations may not yet capture is a scenario of higher long-term rates and declining global trade, which could ultimately weigh on company fundamentals.\"",
+    "Prediction_Text": "\"From an investment standpoint, next year is likely to be marked by heightened volatility and policy uncertainty. In our view, tail risks shouldnât be ignored. Currently, markets seem to prefer an optimistic outlook, focusing on assumptions around tax cuts, deregulation and their expected impact on future profits. What market valuations may not yet capture is a scenario of higher long-term rates and declining global trade, which could ultimately weigh on company fundamentals.\"",
     "Institution": "HSBC ASSET MANAGEMENT",
     "Rank": 1
   },
@@ -225,7 +225,7 @@
   {
     "statements": [
       {
-        "statement": "The US economy, like others, appears poised to achieve a rare soft landing – moderating growth and inflation without recession.",
+        "statement": "The US economy, like others, appears poised to achieve a rare soft landing â moderating growth and inflation without recession.",
         "materialized": "YES",
         "reasoning": "PIMCO's soft landing prediction materialized in 2025. Vanguard's December 2025 report (https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) confirmed that markets reached 39 all-time highs in 2025 with strong returns, indicating no recession. Vanguard's economic forecast (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) projected US growth at 2.25% with core inflation at 2.6%, consistent with soft landing dynamics. The World Bank (December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) noted that 'The United States drove most of the recovery with strong AI investment and fiscal support,' confirming moderate growth without recession. McKinsey (December 2025, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook) reported that 'respondents' expectations for the next six months have improved modestly since March,' supporting the soft landing narrative."
       },
@@ -247,7 +247,7 @@
     "justification": "PIMCO's soft landing prediction proved accurate for 2025, correctly anticipating moderate growth without recession despite multiple headwinds. The institution appropriately identified tariffs and trade as material risks that did materialize, but overestimated the threat from inflation and economic growth slowdown. Overall, PIMCO demonstrated sound macro judgment by correctly calling the soft landing outcome while appropriately flagging trade-related risks that became increasingly relevant.",
     "id": "RISKS-PIMCO-25-2025",
     "Original_Rank": 25,
-    "Prediction_Text": "\"The US economy, like others, appears poised to achieve a rare soft landing – moderating growth and inflation without recession. But there are risks, such as tariffs, trade, fiscal policy, inflation, and economic growth.\"",
+    "Prediction_Text": "\"The US economy, like others, appears poised to achieve a rare soft landing â moderating growth and inflation without recession. But there are risks, such as tariffs, trade, fiscal policy, inflation, and economic growth.\"",
     "Institution": "PIMCO",
     "Rank": 8
   },
@@ -346,12 +346,12 @@
   {
     "statements": [
       {
-        "statement": "A combination of stronger US demand, courtesy of surging business investment, tax cuts and fiscal easing, may not be accompanied by an increase in the economy's supply side, especially if a combination of tariffs and immigration restrictions reduce foreign inputs of goods and labor supply.",
+        "statement": "A combination of stronger US demand, courtesy of surging business investment, tax cuts and fiscal easing, may not be accompanied by an increase in the economyâs supply side, especially if a combination of tariffs and immigration restrictions reduce foreign inputs of goods and labor supply.",
         "materialized": "PARTIAL",
         "reasoning": "The prediction correctly identified that US demand was supported by business investment and fiscal factors. However, the supply-side constraint aspect was only partially realized. According to Deloitte's US Economic Forecast (December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html), tariff rates rose to approximately 10% by August 2025 and were expected to reach 15% by Q1 2026, with firms absorbing costs. The World Bank blog (December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) noted that economic growth defied gloomy expectations, suggesting supply-side disruptions were less severe than feared. Vanguard's outlook (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) forecasted US growth at 2.25%, indicating moderate rather than severely constrained growth."
       },
       {
-        "statement": "The support equity markets have garnered from falling inflation and falling interest rates could erode over the next 12–24 months.",
+        "statement": "The support equity markets have garnered from falling inflation and falling interest rates could erode over the next 12â24 months.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially correct but timing-dependent. Vanguard's Q4 2025 report (December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) noted that equities reached 39 all-time highs in 2025 despite volatility, with US bond returns of approximately 7%. However, Vanguard's 2026 outlook (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) identified AI optimism collapse as a key risk, with a 30% probability of disappointing AI returns (-2% to 2% annualized). Deloitte (December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) noted that consumer sentiment hit all-time lows in Q4 2025 despite strong consumption, suggesting erosion of support mechanisms was beginning."
       },
@@ -373,7 +373,7 @@
     "justification": "Franklin Templeton's prediction demonstrated solid understanding of the dual-edged nature of 2025's economic support mechanisms, correctly identifying that fiscal stimulus and falling rates would eventually face headwinds. However, the institution underestimated the resilience of markets in 2025 itself—equities delivered strong returns despite the identified risks, and the erosion of support mechanisms was more gradual than anticipated. The prediction was directionally correct for 2026 risks but mistimed the urgency of these concerns.",
     "id": "RISKS-FRANKLIN_TEMPLETON-21-2025",
     "Original_Rank": 21,
-    "Prediction_Text": "\"A combination of stronger US demand, courtesy of surging business investment, tax cuts and fiscal easing, may not be accompanied by an increase in the economy's supply side, especially if a combination of tariffs and immigration restrictions reduce foreign inputs of goods and labor supply. The support equity markets have garnered from falling inflation and falling interest rates could erode over the next 12–24 months. That is a risk factor we think investors should consider across equities and fixed income portfolio holdings.\"",
+    "Prediction_Text": "\"A combination of stronger US demand, courtesy of surging business investment, tax cuts and fiscal easing, may not be accompanied by an increase in the economyâs supply side, especially if a combination of tariffs and immigration restrictions reduce foreign inputs of goods and labor supply. The support equity markets have garnered from falling inflation and falling interest rates could erode over the next 12â24 months. That is a risk factor we think investors should consider across equities and fixed income portfolio holdings.\"",
     "Institution": "FRANKLIN TEMPLETON",
     "Rank": 12
   },
@@ -452,7 +452,7 @@
   {
     "statements": [
       {
-        "statement": "US tariffs will reinforce Europe's competitiveness issues and increase the need for the EU to coalesce around its own strategic policy shift.",
+        "statement": "US tariffs will reinforce Europeâs competitiveness issues and increase the need for the EU to coalesce around its own strategic policy shift.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. McKinsey's Economic Conditions Outlook (December 2025, https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/economic-conditions-outlook) confirms that trade policy changes became a major concern, and CNBC's global markets report (December 2025, https://www.cnbc.com/2025/12/31/global-stock-markets-2025-best-worst-performers-asia-europe-us-americas.html) notes that 'Despite worries over trade tensions,' European markets delivered solid gains. This suggests that while tariffs did create pressure, Europe's competitiveness issues were not as severe as Deutsche Bank predicted, and policy coalescence was not urgently required."
       },
@@ -474,19 +474,19 @@
     "justification": "Deutsche Bank correctly identified that U.S. tariffs would create challenges for Europe and that policy fragmentation could constrain Europe's response. However, the firm's prediction that these factors would pose a 'huge' risk proved overstated—European markets actually delivered solid gains in 2025 despite trade tensions, and economic growth surprised to the upside, suggesting Europe proved more resilient than Deutsche Bank anticipated.",
     "id": "RISKS-DEUTSCHE_BANK-18-2025",
     "Original_Rank": 18,
-    "Prediction_Text": "\"US tariffs will reinforce Europe's competitiveness issues and increase the need for the EU to coalesce around its own strategic policy shift. A maximalist Trump trade agenda and a Europe constrained to act because of fragmentation is a huge but realistic risk for the continent.\"",
+    "Prediction_Text": "\"US tariffs will reinforce Europeâs competitiveness issues and increase the need for the EU to coalesce around its own strategic policy shift. A maximalist Trump trade agenda and a Europe constrained to act because of fragmentation is a huge but realistic risk for the continent.\"",
     "Institution": "DEUTSCHE BANK",
     "Rank": 16
   },
   {
     "statements": [
       {
-        "statement": "Our bias is still to worry that the US growth environment might be \"too hot\" rather than \"too cold\".",
+        "statement": "Our bias is still to worry that the US growth environment might be âtoo hotâ rather than âtoo coldâ.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. Deloitte's forecast (December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) notes that 'the University of Michigan's consumer sentiment index for current conditions hit an all-time low in the fourth quarter,' suggesting growth concerns shifted toward 'too cold' rather than 'too hot.' However, Vanguard's 2026 outlook (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) notes that 'AI investment's outsized contribution to economic growth represents the key risk factor,' suggesting growth could still be 'too hot' if AI investment continues."
       },
       {
-        "statement": "Curbs on immigration and policies to boost the corporate sector could increase the risk of domestic inflation, curbing the Federal Reserve's abilities to deliver rate cuts.",
+        "statement": "Curbs on immigration and policies to boost the corporate sector could increase the risk of domestic inflation, curbing the Federal Reserveâs abilities to deliver rate cuts.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. Deloitte's forecast (December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) documents that tariffs have been implemented and consumption has decelerated, suggesting inflation pressures did emerge. However, Vanguard's 2026 outlook (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) forecasts core inflation of 2.6% and a policy rate of 3.5% year-end 2026, suggesting the Fed did maintain easing capacity despite inflation concerns, contradicting Schroders' prediction that inflation would 'curb' rate cuts."
       }
@@ -503,7 +503,7 @@
     "justification": "Schroders' prediction that U.S. growth might be 'too hot' proved partially correct, though by year-end consumer sentiment concerns shifted the narrative toward growth being 'too cold.' The firm's concern about immigration and corporate policies driving inflation was partially validated, but the Fed maintained more easing capacity than Schroders predicted, suggesting the firm overestimated the inflation constraint on monetary policy.",
     "id": "RISKS-SCHRODERS-16-2025",
     "Original_Rank": 16,
-    "Prediction_Text": "\"Our bias is still to worry that the US growth environment might be \"too hot\" rather than \"too cold\". Curbs on immigration and policies to boost the corporate sector could increase the risk of domestic inflation, curbing the Federal Reserve's abilities to deliver rate cuts.\"",
+    "Prediction_Text": "\"Our bias is still to worry that the US growth environment might be âtoo hotâ rather than âtoo coldâ. Curbs on immigration and policies to boost the corporate sector could increase the risk of domestic inflation, curbing the Federal Reserveâs abilities to deliver rate cuts.\"",
     "Institution": "SCHRODERS",
     "Rank": 17
   },
@@ -534,7 +534,7 @@
   {
     "statements": [
       {
-        "statement": "Apart from stretched valuations for some assets, there a number of other reasons for the cautious approach: fiscal consolidation is needed in many countries and this could dampen growth; the global economy may be too fragile to shrug off a potential trade war; inflation may pick up earlier than expected as economies accelerate and, finally, a worsening of an already extreme fiscal position in the US could push treasury yields even higher and weaken the dollar (especially if the Fed's independence is called into question).",
+        "statement": "Apart from stretched valuations for some assets, there a number of other reasons for the cautious approach: fiscal consolidation is needed in many countries and this could dampen growth; the global economy may be too fragile to shrug off a potential trade war; inflation may pick up earlier than expected as economies accelerate and, finally, a worsening of an already extreme fiscal position in the US could push treasury yields even higher and weaken the dollar (especially if the Fedâs independence is called into question).",
         "materialized": "PARTIAL",
         "reasoning": "Invesco's multi-faceted risk assessment was partially validated. Regarding valuations, Vanguard (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) identified AI exuberance with a 30% downside scenario where valuations fall markedly. On fiscal consolidation, Capital Economics (December 2025, https://www.morganstanley.com/insights/articles/stock-market-outlook-bull-market-risks-2026) warned that fiscal vulnerabilities constrain governments. Trade war concerns were partially realized—Deloitte (December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) documented tariff rates rising to 10% by August and expected to reach 15% by Q1 2026. However, the global economy proved more resilient than 'too fragile'—the World Bank (December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) noted growth defied expectations. Inflation did not pick up earlier as feared; Vanguard forecasted core inflation at 2.6% for 2026. Treasury yields and dollar dynamics were less extreme than predicted."
       }
@@ -551,7 +551,7 @@
     "justification": "Invesco's cautious framework identified legitimate risks that partially materialized in 2025, particularly around valuations and trade tensions, but significantly overestimated the fragility of the global economy and the severity of inflation resurgence. The institution correctly flagged fiscal vulnerabilities and trade war risks, but underestimated the resilience of growth and the effectiveness of policy support in offsetting these headwinds. The prediction was too pessimistic relative to actual 2025 outcomes.",
     "id": "RISKS-INVESCO-23-2025",
     "Original_Rank": 23,
-    "Prediction_Text": "\"Apart from stretched valuations for some assets, there a number of other reasons for the cautious approach: fiscal consolidation is needed in many countries and this could dampen growth; the global economy may be too fragile to shrug off a potential trade war; inflation may pick up earlier than expected as economies accelerate and, finally, a worsening of an already extreme fiscal position in the US could push treasury yields even higher and weaken the dollar (especially if the Fed's independence is called into question).\"",
+    "Prediction_Text": "\"Apart from stretched valuations for some assets, there a number of other reasons for the cautious approach: fiscal consolidation is needed in many countries and this could dampen growth; the global economy may be too fragile to shrug off a potential trade war; inflation may pick up earlier than expected as economies accelerate and, finally, a worsening of an already extreme fiscal position in the US could push treasury yields even higher and weaken the dollar (especially if the Fedâs independence is called into question).\"",
     "Institution": "INVESCO",
     "Rank": 19
   },
@@ -805,7 +805,7 @@
   {
     "statements": [
       {
-        "statement": "Signs of economic weakness would derail equities' current trajectory.",
+        "statement": "Signs of economic weakness would derail equitiesâ current trajectory.",
         "materialized": "NO",
         "reasoning": "This prediction did not materialize. Despite signs of economic weakness (consumer sentiment hitting all-time lows per Deloitte, December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html), equities did not derail. Vanguard's Q4 2025 report (December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) shows equities reached 39 all-time highs in 2025, including December 23-24, demonstrating that weakness signals did not derail the bull market."
       },
@@ -815,7 +815,7 @@
         "reasoning": "This prediction was partially validated. Deloitte's forecast (December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) documents that tariffs did increase and consumption decelerated, suggesting some growth impact. However, Vanguard's 2026 outlook (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) forecasts U.S. growth of 2.25%, and the World Bank blog (December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) notes growth 'defied gloomy expectations,' suggesting the combined 0.8%pt drag may have been overstated."
       },
       {
-        "statement": "Yet benign bond market conditions (10 year yield is rangebound between 4% and 4.5%) and credit spreads which remain near their \"tights\" do not acknowledge the threat to growth or inflation which Trump v2.0 prospectively poses.",
+        "statement": "Yet benign bond market conditions (10 year yield is rangebound between 4% and 4.5%) and credit spreads which remain near their âtightsâ do not acknowledge the threat to growth or inflation which Trump v2.0 prospectively poses.",
         "materialized": "PARTIAL",
         "reasoning": "This prediction was partially validated. Ned Davis Research (December 2025) forecasts 10-year yields at 4.625% fair value, which is slightly above Evercore's predicted 4%-4.5% range, suggesting yields did move higher than Evercore expected. However, Vanguard's Q4 2025 report (December 2025, https://advisors.vanguard.com/insights/article/q4-2025-markets-continue-to-climb-a-wall-of-worry) notes that 'U.S. bond markets...had a strong year with returns of approximately 7%,' indicating bond markets did not remain as 'benign' as Evercore predicted—they actually tightened."
       }
@@ -832,7 +832,7 @@
     "justification": "Evercore ISI correctly identified that tariffs and immigration posed growth risks and that bond market pricing may not fully reflect these threats. However, the firm's prediction that economic weakness would derail equities proved incorrect—markets reached 39 all-time highs in 2025 despite weakness signals. The firm also overestimated the degree to which bond markets would remain benign, as yields moved higher than predicted.",
     "id": "RISKS-EVERCORE_ISI-19-2025",
     "Original_Rank": 19,
-    "Prediction_Text": "\"Signs of economic weakness would derail equities' current trajectory. Tariffs and immigration could each weigh 0.4%pts on real GDP growth in 2025. Yet benign bond market conditions (10 year yield is rangebound between 4% and 4.5%) and credit spreads which remain near their \"tights\" do not acknowledge the threat to growth or inflation which Trump v2.0 prospectively poses.\"",
+    "Prediction_Text": "\"Signs of economic weakness would derail equitiesâ current trajectory. Tariffs and immigration could each weigh 0.4%pts on real GDP growth in 2025. Yet benign bond market conditions (10 year yield is rangebound between 4% and 4.5%) and credit spreads which remain near their âtightsâ do not acknowledge the threat to growth or inflation which Trump v2.0 prospectively poses.\"",
     "Institution": "EVERCORE ISI",
     "Rank": 28
   },
@@ -1004,7 +1004,7 @@
   {
     "statements": [
       {
-        "statement": "Fiscal vulnerabilities constrain governments over the coming year – indeed, this is a key reason why we do not expect the Trump administration to enact the additional deficit-financed tax cuts that many now anticipate.",
+        "statement": "Fiscal vulnerabilities constrain governments over the coming year â indeed, this is a key reason why we do not expect the Trump administration to enact the additional deficit-financed tax cuts that many now anticipate.",
         "materialized": "NO",
         "reasoning": "Capital Economics's prediction that fiscal vulnerabilities would constrain the Trump administration from enacting additional deficit-financed tax cuts did not materialize. The World Bank (December 2025, https://blogs.worldbank.org/en/developmenttalk/economic-growth-in-2025-has-defied-the-gloomy-expectations) noted that 'The United States drove most of the recovery with strong AI investment and fiscal support,' indicating that fiscal support was indeed enacted. Vanguard (December 2025, https://corporate.vanguard.com/content/dam/corp/research/pdf/isg_vemo_2026.pdf) forecasted US growth at 2.25%, supported by fiscal factors. Deloitte (December 2025, https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html) noted that 'The rise in prices has been gradual so far since firms are absorbing the impact of tariffs,' suggesting fiscal support was offsetting tariff impacts. The administration did pursue fiscal expansion despite acknowledged vulnerabilities, contradicting Capital Economics's expectation that constraints would prevent such action."
       },
@@ -1026,7 +1026,7 @@
     "justification": "Capital Economics's prediction that fiscal vulnerabilities would constrain the Trump administration and that bond vigilantes would return if fiscal expansion occurred proved incorrect on both counts. The administration did pursue fiscal expansion despite acknowledged vulnerabilities, yet bond markets remained supportive with positive returns and yields well below vigilante-triggering levels. The institution's framework was theoretically sound but significantly mistimed the market's tolerance for fiscal expansion and overestimated the sensitivity of bond markets to deficit concerns. The prediction reflected excessive pessimism about fiscal constraints and bond market discipline.",
     "id": "RISKS-CAPITAL_ECONOMICS-34-2025",
     "Original_Rank": 34,
-    "Prediction_Text": "\"Fiscal vulnerabilities constrain governments over the coming year – indeed, this is a key reason why we do not expect the Trump administration to enact the additional deficit-financed tax cuts that many now anticipate. If governments attempt to delay the fiscal tightening that the markets have already factored in, or push through fiscal expansion that adds to already large deficits, then 2025 could be the year when the bond vigilantes\" make their proper return.\"\"\"",
+    "Prediction_Text": "\"Fiscal vulnerabilities constrain governments over the coming year â indeed, this is a key reason why we do not expect the Trump administration to enact the additional deficit-financed tax cuts that many now anticipate. If governments attempt to delay the fiscal tightening that the markets have already factored in, or push through fiscal expansion that adds to already large deficits, then 2025 could be the year when the bond vigilantes\" make their proper return.\"\"\"",
     "Institution": "CAPITAL ECONOMICS",
     "Rank": 34
   }

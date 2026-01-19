@@ -38,7 +38,7 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: "Methodology", href: "/", icon: LayoutDashboard },
   { name: "2026 Outlook", href: "/overview", icon: Briefcase },
-  { name: "2025 Accuracy Review", href: "/2025", icon: History, badge: "NEW" },
+  { name: "2025 Accuracy Review", href: "/2025", icon: History },
 
   //  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
   { name: "Semantic Trends", href: "/wordcloud-new", icon: CloudRain },
@@ -125,40 +125,6 @@ export function Sidebar() {
           })}
         </nav>
       </div>
-
-      {/* Settings */}
-      <div className="border-t border-primary-foreground/10 p-2">
-        {collapsed ? (
-          <Tooltip delayDuration={0}>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                className="w-full justify-center px-2 text-primary-foreground/60 hover:text-white hover:bg-primary/50"
-              >
-                <Settings className="h-5 w-5" />
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={10}>
-              Settings
-            </TooltipContent>
-          </Tooltip>
-        ) : (
-          <Button
-            variant="ghost"
-            className="w-full justify-start text-primary-foreground/60 hover:text-white hover:bg-primary/50"
-          >
-            <Settings className="mr-3 h-5 w-5" />
-            Settings
-          </Button>
-        )}
-      </div>
-
-      {/* Version Info */}
-      {!collapsed && (
-        <div className="px-6 py-2 pb-4 text-[10px] text-primary-foreground/40 border-t border-primary-foreground/5">
-          v2.0.0 - PostgreSQL Powered
-        </div>
-      )}
 
       {/* Collapse Toggle Button */}
       <button

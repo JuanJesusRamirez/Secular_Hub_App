@@ -152,20 +152,20 @@ export default function WordCloudNewPage() {
                                 <SelectValue placeholder="Select Year" />
                             </SelectTrigger>
                             <SelectContent>
-                        {(data?.availableYears || [0, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]).map(year => (
-                            <SelectItem key={year} value={year === 0 ? "all" : year.toString()}>
-                                {year === 0 ? "All Years (2019-2026)" : year}
-                            </SelectItem>
-                        ))}
-                    </SelectContent>
-                </Select>
+                                {(data?.availableYears || [0, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]).map(year => (
+                                    <SelectItem key={year} value={year === 0 ? "all" : year.toString()}>
+                                        {year === 0 ? "All Years (2019-2026)" : year}
+                                    </SelectItem>
+                                ))}
+                            </SelectContent>
+                        </Select>
                     </div>
                 </div>
                 <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-primary/5 blur-3xl"></div>
             </div>
 
             {/* Stats Row */}
-            <div className="grid gap-4 md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-2">
                 <Card>
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                         <CardTitle className="text-sm font-medium">{mode === 'phrases' ? 'Unique Phrases' : 'Unique Terms'}</CardTitle>
@@ -190,19 +190,6 @@ export default function WordCloudNewPage() {
                             </Select>
                         </div>
                         <p className="text-xs text-muted-foreground mt-1">distinct {mode === 'phrases' ? 'phrases' : 'terms'} analyzed</p>
-                    </CardContent>
-                </Card>
-
-                <Card>
-                    <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                        <CardTitle className="text-sm font-medium">Source</CardTitle>
-                        <Building2 className="h-4 w-4 text-muted-foreground" />
-                    </CardHeader>
-                    <CardContent>
-                        <div className="text-2xl font-bold">PostgreSQL</div>
-                        <p className="text-xs text-muted-foreground">
-                            {mode === 'phrases' ? `phrase_analysis` : `word_analysis`} table
-                        </p>
                     </CardContent>
                 </Card>
 

@@ -57,7 +57,9 @@ import {
     getMaterializedColor,
     getThemeRanking,
     getThemeRankingByConviction,
-    ALL_THEMES
+    ALL_THEMES,
+    THEME_CATEGORIES,
+    getCategoryForTheme
 } from "@/lib/data/expost-2025";
 import { ExPostItem, ThemeData } from "@/types/expost";
 
@@ -1057,15 +1059,53 @@ function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, instit
     const convictionData = useMemo(() => getThemeRankingByConviction(), []);
     const accuracyData = useMemo(() => getThemeRanking(), []);
     const [hoveredTheme, setHoveredTheme] = useState<string | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string>("All Themes");
+
+    // Filter themes by selected category
+    const filteredConvictionData = useMemo(() => {
+        if (selectedCategory === "All Themes") return convictionData;
+        const categoryThemes = THEME_CATEGORIES[selectedCategory as keyof typeof THEME_CATEGORIES] || [];
+        return convictionData.filter(t => categoryThemes.includes(t.theme));
+    }, [convictionData, selectedCategory]);
+
+    const filteredAccuracyData = useMemo(() => {
+        if (selectedCategory === "All Themes") return accuracyData;
+        const categoryThemes = THEME_CATEGORIES[selectedCategory as keyof typeof THEME_CATEGORIES] || [];
+        return accuracyData.filter(t => categoryThemes.includes(t.theme));
+    }, [accuracyData, selectedCategory]);
 
     const THEME_HEIGHT = 45;
-    const SVG_HEIGHT = convictionData.length * THEME_HEIGHT + 100;
+    const SVG_HEIGHT = filteredConvictionData.length * THEME_HEIGHT + 100;
     const SVG_WIDTH = 1000;
     const COLUMN_WIDTH = 250;
 
     return (
         <Card className="min-h-[600px] overflow-hidden bg-background/50 border-2">
-            <CardHeader className="bg-muted/10 border-b">
+            <CardHeader className="bg-muted/10 border-b space-y-4">
+                {/* Category Filter */}
+                <div className="flex items-center justify-center gap-2">
+                    <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Filter by Category:</span>
+                    <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                        <SelectTrigger className="w-[280px] h-9 text-xs font-bold">
+                            <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="All Themes" className="text-xs font-bold">All Themes ({convictionData.length})</SelectItem>
+                            {Object.keys(THEME_CATEGORIES).map((category) => {
+                                const count = convictionData.filter(t =>
+                                    THEME_CATEGORIES[category as keyof typeof THEME_CATEGORIES].includes(t.theme)
+                                ).length;
+                                return (
+                                    <SelectItem key={category} value={category} className="text-xs font-bold">
+                                        {category} ({count})
+                                    </SelectItem>
+                                );
+                            })}
+                        </SelectContent>
+                    </Select>
+                </div>
+
+                {/* Column Headers */}
                 <div className="flex justify-between items-center">
                     <div className="text-center w-[250px]">
                         <Badge variant="outline" className="mb-1">EX-ANTE</Badge>
@@ -1083,9 +1123,9 @@ function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, instit
             <CardContent className="p-8">
                 <svg viewBox={`0 0 ${SVG_WIDTH} ${SVG_HEIGHT}`} className="w-full h-auto overflow-visible select-none">
                     {/* Connecting Lines */}
-                    {convictionData.map((exAnte, exAnteIdx) => {
-                        const exPostIdx = accuracyData.findIndex(t => t.theme === exAnte.theme);
-                        const exPost = accuracyData[exPostIdx];
+                    {filteredConvictionData.map((exAnte, exAnteIdx) => {
+                        const exPostIdx = filteredAccuracyData.findIndex(t => t.theme === exAnte.theme);
+                        const exPost = filteredAccuracyData[exPostIdx];
                         const color = THEME_COLORS[exAnte.theme] || THEME_COLORS["DEFAULT"];
                         const isHovered = hoveredTheme === exAnte.theme;
 
@@ -1108,7 +1148,7 @@ function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, instit
                     })}
 
                     {/* Left Column (Conviction) */}
-                    {convictionData.map((t, idx) => (
+                    {filteredConvictionData.map((t, idx) => (
                         <g
                             key={`left-${t.theme}`}
                             className="cursor-pointer group"
@@ -1143,7 +1183,7 @@ function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, instit
                     ))}
 
                     {/* Right Column (Accuracy) */}
-                    {accuracyData.map((t, idx) => (
+                    {filteredAccuracyData.map((t, idx) => (
                         <g
                             key={`right-${t.theme}`}
                             className="cursor-pointer"

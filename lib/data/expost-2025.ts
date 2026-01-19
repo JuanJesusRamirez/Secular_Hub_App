@@ -117,6 +117,39 @@ export const ALL_THEMES: ThemeData[] = [
     MULTI_ASSET_THEME_DATA,
 ];
 
+// Theme Categories for filtering
+export const THEME_CATEGORIES = {
+    "Asset Classes & Strategy": [
+        "AI",
+        "ALTERNATIVE ASSETS",
+        "MULTI ASSET",
+        "COMMODITIES",
+        "STOCKS",
+        "CREDIT",
+        "BONDS",
+        "CURRENCIES"
+    ],
+    "Macro Policy": [
+        "FISCAL",
+        "MONETARY POLICY",
+        "TARIFFS"
+    ],
+    "Macro Drivers & Forecast": [
+        "GROWTH",
+        "BASE CASE",
+        "INFLATION",
+        "RISKS"
+    ]
+};
+
+export const getCategoryForTheme = (theme: string): string => {
+    for (const [category, themes] of Object.entries(THEME_CATEGORIES)) {
+        if (themes.includes(theme)) return category;
+    }
+    return "Other";
+};
+
+
 
 // Get color for classification
 export const getClassificationColor = (classification: ExPostItem["classification"]): string => {

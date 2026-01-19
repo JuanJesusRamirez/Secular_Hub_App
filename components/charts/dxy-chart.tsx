@@ -55,8 +55,67 @@ export function DXYChart() {
         const response = await fetch('/api/dxy');
         const result: DXYResponse = await response.json();
 
+        const endOfMonthData = (() => {
+          const lastByMonth = new Map<string, DXYData>();
+          result.data.forEach((d) => {
+            const dateObj = new Date(d.date);
+            if (isNaN(dateObj.getTime())) return;
+            const key = `${dateObj.getFullYear()}-${dateObj.getMonth()}`;
+            lastByMonth.set(key, d);
+          });
+
+          const filtered = result.data.filter((d) => {
+            const dateObj = new Date(d.date);
+            if (isNaN(dateObj.getTime())) return false;
+            const key = `${dateObj.getFullYear()}-${dateObj.getMonth()}`;
+            return lastByMonth.get(key) === d;
+          });
+
+          return filtered.length ? filtered : result.data;
+        })();
+
+        const normalizedData = (() => {
+          const data = [...endOfMonthData];
+          const anchorDate = new Date("2025-12-31");
+          const anchorKey = anchorDate.toISOString().slice(0, 10);
+
+          const lastHistorical = [...data]
+            .filter(d => {
+              const dateObj = new Date(d.date);
+              return !isNaN(dateObj.getTime()) && dateObj <= anchorDate && d.DXY !== null && d.DXY !== undefined;
+            })
+            .at(-1)?.DXY ?? null;
+
+          const hasAnchor = data.some(d => d.date === anchorKey);
+          const hasProjection = data.some(d => d.Median !== null || d.High !== null || d.Low !== null);
+
+          if (!hasAnchor && lastHistorical !== null && hasProjection) {
+            data.push({
+              date: anchorKey,
+              DXY: lastHistorical,
+              Median: lastHistorical,
+              High: lastHistorical,
+              Low: lastHistorical
+            });
+          } else if (hasAnchor && lastHistorical !== null) {
+            data.forEach(d => {
+              if (d.date === anchorKey) {
+                d.Median = d.Median ?? lastHistorical;
+                d.High = d.High ?? lastHistorical;
+                d.Low = d.Low ?? lastHistorical;
+              }
+            });
+          }
+
+          return data.sort((a, b) => {
+            const da = new Date(a.date).getTime();
+            const db = new Date(b.date).getTime();
+            return da - db;
+          });
+        })();
+
         // Parse dates YYYY-MM-DD
-        const labels = result.data.map(d => {
+        const labels = normalizedData.map(d => {
             const dateObj = new Date(d.date);
             if (isNaN(dateObj.getTime())) return d.date;
             
@@ -72,7 +131,7 @@ export function DXYChart() {
         const datasets = [];
 
         // Historical DXY
-        const dxyData = result.data.map(d => d.DXY);
+        const dxyData = normalizedData.map(d => d.DXY);
         datasets.push({
           label: 'DXY Historical',
           data: dxyData,
@@ -87,7 +146,7 @@ export function DXYChart() {
 
         // Projections
         // Median
-        const medianData = result.data.map(d => d.Median);
+        const medianData = normalizedData.map(d => d.Median);
         datasets.push({
             label: 'Median Consensus',
             data: medianData,
@@ -101,7 +160,7 @@ export function DXYChart() {
         });
 
         // High
-        const highData = result.data.map(d => d.High);
+        const highData = normalizedData.map(d => d.High);
         datasets.push({
             label: 'High Estimate',
             data: highData,
@@ -115,7 +174,7 @@ export function DXYChart() {
         });
         
          // Low
-        const lowData = result.data.map(d => d.Low);
+        const lowData = normalizedData.map(d => d.Low);
         datasets.push({
             label: 'Low Estimate',
             data: lowData,

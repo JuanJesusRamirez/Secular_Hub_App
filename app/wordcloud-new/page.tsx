@@ -137,7 +137,7 @@ export default function WordCloudNewPage() {
                                 <Cloud className="w-6 h-6" />
                             </div>
                             <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground">
-                                Semantic Trends
+                                Word Analysis
                             </h1>
                         </div>
                         <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-2xl">

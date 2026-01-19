@@ -37,13 +37,13 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Methodology", href: "/", icon: LayoutDashboard },
-  { name: "2026 Outlook", href: "/overview", icon: Briefcase },
-  { name: "2025 Accuracy Review", href: "/2025", icon: History },
+  { name: "2025 Reality Check", href: "/2025", icon: History },
 
   //  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
-  { name: "Semantic Trends", href: "/wordcloud-new", icon: CloudRain },
+  { name: "Word Analysis", href: "/wordcloud-new", icon: CloudRain },
 
   { name: "Historical Evolution", href: "/tesis", icon: History },
+  { name: "2026 Outlook", href: "/overview", icon: Briefcase },
   { name: "Survey - DF", href: "/encuesta-df", icon: FileText },
 ];
 
@@ -64,7 +64,6 @@ export function Sidebar() {
           "flex items-center gap-2 font-bold text-xl overflow-hidden",
           collapsed && "justify-center"
         )}>
-          <div className="h-8 w-8 rounded bg-accent flex-shrink-0" />
           <span className={cn(
             "transition-all duration-300 whitespace-nowrap",
             collapsed ? "opacity-0 w-0" : "opacity-100"

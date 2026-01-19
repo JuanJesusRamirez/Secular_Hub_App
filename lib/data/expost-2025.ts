@@ -134,7 +134,7 @@ export const THEME_CATEGORIES = {
         "MONETARY POLICY",
         "TARIFFS"
     ],
-    "Macro Drivers & Forecast": [
+    "Economy": [
         "GROWTH",
         "BASE CASE",
         "INFLATION",

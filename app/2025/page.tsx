@@ -216,6 +216,7 @@ export default function ExPost2025Page() {
         , []);
 
     const [activeThemeName, setActiveThemeName] = useState<string>(defaultTheme.theme);
+    const [themesFullscreenRequest, setThemesFullscreenRequest] = useState(0);
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedExPostItem, setSelectedExPostItem] = useState<ExPostItem | null>(defaultTheme.items[0] || null);
 
@@ -246,7 +247,7 @@ export default function ExPost2025Page() {
                                 <History className="w-6 h-6" />
                             </div>
                             <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground">
-                                2025 Accuracy Review
+                                2025 Reality Check
                             </h1>
                         </div>
                         <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-2xl">
@@ -286,8 +287,7 @@ export default function ExPost2025Page() {
                     <Button
                         variant={activeThemeName === THEME_RANKING_LABEL ? "default" : "outline"}
                         onClick={() => {
-                            setActiveThemeName(THEME_RANKING_LABEL);
-                            setSelectedExPostItem(null);
+                            setThemesFullscreenRequest((prev) => prev + 1);
                         }}
                         className={cn(
                             "h-10 text-xs font-bold uppercase tracking-wider flex-1 md:flex-none justify-center",
@@ -314,7 +314,7 @@ export default function ExPost2025Page() {
                         }}
                     >
                         <SelectTrigger className="w-full md:w-[240px] h-10 text-xs font-bold uppercase tracking-wider bg-muted/30 focus:ring-1">
-                            <SelectValue placeholder="SELECT THEME" />
+                            <SelectValue placeholder="Select Individual Theme" />
                         </SelectTrigger>
                         <SelectContent>
                             {ALL_THEMES_WITH_GLOBAL.slice(1).map((themeData) => (
@@ -481,18 +481,7 @@ export default function ExPost2025Page() {
 
                 {/* Main Content Area */}
                 <div className="lg:col-span-8 xl:col-span-9">
-                    {activeThemeName === THEME_RANKING_LABEL ? (
-                        <ThemePerformanceRanking
-                            onNavigate={(theme, instName) => {
-                                const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
-                                if (targetTheme) {
-                                    setActiveThemeName(theme);
-                                    const targetItem = targetTheme.items.find(i => i.Institution === instName);
-                                    setSelectedExPostItem(targetItem || targetTheme.items[0] || null);
-                                }
-                            }}
-                        />
-                    ) : activeThemeName === METHODOLOGY_LABEL ? (
+                    {activeThemeName === METHODOLOGY_LABEL ? (
                         <MethodologyDetailPage />
                     ) : (
                         <div className="animate-in fade-in slide-in-from-right-4 duration-700">
@@ -520,6 +509,18 @@ export default function ExPost2025Page() {
                         </div>
                     )}
                 </div>
+                <ThemePerformanceRanking
+                    inlineVisible={false}
+                    fullscreenRequest={themesFullscreenRequest}
+                    onNavigate={(theme, instName) => {
+                        const targetTheme = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === theme);
+                        if (targetTheme) {
+                            setActiveThemeName(theme);
+                            const targetItem = targetTheme.items.find(i => i.Institution === instName);
+                            setSelectedExPostItem(targetItem || targetTheme.items[0] || null);
+                        }
+                    }}
+                />
             </div>
         </div>
     );
@@ -528,16 +529,22 @@ export default function ExPost2025Page() {
 function MethodologyDetailPage() {
     return (
         <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 space-y-8">
-            <div className="flex flex-col gap-2">
-                <div className="flex items-center gap-3">
-                    <div className="bg-indigo-600 p-2 rounded-lg text-white shadow-lg">
-                        <BookOpen className="h-6 w-6" />
+            <div className="w-full relative overflow-hidden rounded-xl border bg-gradient-to-r from-primary/10 via-background to-background p-6 md:p-8 shadow-sm">
+                <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-3">
+                            <div className="bg-primary/20 p-2.5 rounded-lg text-primary">
+                                <BookOpen className="w-6 h-6" />
+                            </div>
+                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground">
+                                Audit Methodology
+                            </h2>
+                        </div>
+                        <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-2xl">
+                            A transparent, defensible system for evaluating institutional accuracy across 2025's most critical market predictions.
+                        </p>
                     </div>
-                    <h2 className="text-3xl font-black tracking-tight uppercase">Audit Methodology</h2>
                 </div>
-                <p className="text-muted-foreground font-medium max-w-2xl">
-                    A transparent, defensible system for evaluating institutional accuracy across 2025's most critical market predictions.
-                </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -999,21 +1006,48 @@ const THEME_COLORS: Record<string, string> = {
     "DEFAULT": "#94a3b8"
 };
 
-function ThemePerformanceRanking({ onNavigate }: { onNavigate: (theme: string, institution: string) => void }) {
+function ThemePerformanceRanking({
+    onNavigate,
+    fullscreenRequest,
+    inlineVisible = true
+}: {
+    onNavigate: (theme: string, institution: string) => void;
+    fullscreenRequest: number;
+    inlineVisible?: boolean;
+}) {
     return (
-        <div className="pt-4 flex justify-center px-4">
-            <div className="w-full max-w-6xl mx-auto">
-                <RankMigrationChart onNavigate={onNavigate} />
+        <div className="pt-4 flex justify-center pl-0 pr-4">
+            <div className="w-full max-w-[98%] mx-auto">
+                <RankMigrationChart
+                    onNavigate={onNavigate}
+                    fullscreenRequest={fullscreenRequest}
+                    inlineVisible={inlineVisible}
+                />
             </div>
         </div>
     );
 }
 
-function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, institution: string) => void }) {
+function RankMigrationChart({
+    onNavigate,
+    fullscreenRequest,
+    inlineVisible = true
+}: {
+    onNavigate: (theme: string, institution: string) => void;
+    fullscreenRequest: number;
+    inlineVisible?: boolean;
+}) {
     const convictionData = useMemo(() => getThemeRankingByConviction(), []);
     const accuracyData = useMemo(() => getThemeRanking(), []);
     const [hoveredTheme, setHoveredTheme] = useState<string | null>(null);
     const [selectedCategory, setSelectedCategory] = useState<string>("All Themes");
+    const [isFullScreen, setIsFullScreen] = useState(false);
+
+    useEffect(() => {
+        if (fullscreenRequest > 0) {
+            setIsFullScreen(true);
+        }
+    }, [fullscreenRequest]);
 
     // Filter themes by selected category
     const filteredConvictionData = useMemo(() => {
@@ -1028,35 +1062,50 @@ function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, instit
         return accuracyData.filter(t => categoryThemes.includes(t.theme));
     }, [accuracyData, selectedCategory]);
 
-    const THEME_HEIGHT = 45;
-    const SVG_HEIGHT = filteredConvictionData.length * THEME_HEIGHT + 100;
-    const SVG_WIDTH = 1000;
-    const COLUMN_WIDTH = 250;
+    const THEME_HEIGHT = 60;
+    const SVG_HEIGHT = filteredConvictionData.length * THEME_HEIGHT + 110;
+    const SVG_WIDTH = 1400;
+    const COLUMN_WIDTH = 360;
 
-    return (
-        <Card className="min-h-[600px] overflow-hidden bg-background/50 border-2">
+    const handleNavigate = (theme: string, institution: string) => {
+        setIsFullScreen(false);
+        onNavigate(theme, institution);
+    };
+
+    const renderChartCard = (fullscreenMode: boolean) => (
+        <Card className="min-h-[680px] overflow-hidden bg-background/50 border-2">
             <CardHeader className="bg-muted/10 border-b space-y-4">
                 {/* Category Filter */}
-                <div className="flex items-center justify-center gap-2">
-                    <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Filter by Category:</span>
-                    <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                        <SelectTrigger className="w-[280px] h-9 text-xs font-bold">
-                            <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectItem value="All Themes" className="text-xs font-bold">All Themes ({convictionData.length})</SelectItem>
-                            {Object.keys(THEME_CATEGORIES).map((category) => {
-                                const count = convictionData.filter(t =>
-                                    THEME_CATEGORIES[category as keyof typeof THEME_CATEGORIES].includes(t.theme)
-                                ).length;
-                                return (
-                                    <SelectItem key={category} value={category} className="text-xs font-bold">
-                                        {category} ({count})
-                                    </SelectItem>
-                                );
-                            })}
-                        </SelectContent>
-                    </Select>
+                <div className="flex items-center justify-between gap-2">
+                    <div className="flex items-center justify-center gap-2 flex-1">
+                        <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Filter by Category:</span>
+                        <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                            <SelectTrigger className="w-[280px] h-9 text-xs font-bold">
+                                <SelectValue />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectItem value="All Themes" className="text-xs font-bold">All Themes ({convictionData.length})</SelectItem>
+                                {Object.keys(THEME_CATEGORIES).map((category) => {
+                                    const count = convictionData.filter(t =>
+                                        THEME_CATEGORIES[category as keyof typeof THEME_CATEGORIES].includes(t.theme)
+                                    ).length;
+                                    return (
+                                        <SelectItem key={category} value={category} className="text-xs font-bold">
+                                            {category} ({count})
+                                        </SelectItem>
+                                    );
+                                })}
+                            </SelectContent>
+                        </Select>
+                    </div>
+                    <Button
+                        variant="outline"
+                        size="sm"
+                        className="text-xs font-bold uppercase"
+                        onClick={() => setIsFullScreen(!fullscreenMode)}
+                    >
+                        {fullscreenMode ? "Exit Full Screen" : "Full Screen"}
+                    </Button>
                 </div>
 
                 {/* Column Headers */}
@@ -1108,25 +1157,25 @@ function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, instit
                             className="cursor-pointer group"
                             onMouseEnter={() => setHoveredTheme(t.theme)}
                             onMouseLeave={() => setHoveredTheme(null)}
-                            onClick={() => onNavigate(t.theme, "")}
+                            onClick={() => handleNavigate(t.theme, "")}
                         >
                             <rect
                                 x={0}
                                 y={idx * THEME_HEIGHT + 30}
                                 width={COLUMN_WIDTH}
-                                height={36}
+                                height={44}
                                 rx={8}
                                 fill={hoveredTheme === t.theme ? THEME_COLORS[t.theme] : "white"}
                                 stroke={THEME_COLORS[t.theme] || THEME_COLORS["DEFAULT"]}
-                                strokeWidth={1}
+                                strokeWidth={2}
                                 className="transition-all duration-200"
                                 opacity={hoveredTheme && hoveredTheme !== t.theme ? 0.3 : 1}
                             />
                             <text
                                 x={15}
-                                y={idx * THEME_HEIGHT + 53}
+                                y={idx * THEME_HEIGHT + 57}
                                 className={cn(
-                                    "text-[10px] font-black uppercase transition-colors",
+                                    "text-[13px] font-black uppercase transition-colors",
                                     hoveredTheme === t.theme ? "fill-white" : "fill-foreground"
                                 )}
                                 opacity={hoveredTheme && hoveredTheme !== t.theme ? 0.3 : 1}
@@ -1143,25 +1192,25 @@ function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, instit
                             className="cursor-pointer"
                             onMouseEnter={() => setHoveredTheme(t.theme)}
                             onMouseLeave={() => setHoveredTheme(null)}
-                            onClick={() => onNavigate(t.theme, "")}
+                            onClick={() => handleNavigate(t.theme, "")}
                         >
                             <rect
                                 x={SVG_WIDTH - COLUMN_WIDTH}
                                 y={idx * THEME_HEIGHT + 30}
                                 width={COLUMN_WIDTH}
-                                height={36}
+                                height={44}
                                 rx={8}
                                 fill={hoveredTheme === t.theme ? THEME_COLORS[t.theme] : "white"}
                                 stroke={THEME_COLORS[t.theme] || THEME_COLORS["DEFAULT"]}
-                                strokeWidth={1}
+                                strokeWidth={2}
                                 className="transition-all duration-200"
                                 opacity={hoveredTheme && hoveredTheme !== t.theme ? 0.3 : 1}
                             />
                             <text
                                 x={SVG_WIDTH - COLUMN_WIDTH + 15}
-                                y={idx * THEME_HEIGHT + 53}
+                                y={idx * THEME_HEIGHT + 57}
                                 className={cn(
-                                    "text-[10px] font-black uppercase transition-colors",
+                                    "text-[13px] font-black uppercase transition-colors",
                                     hoveredTheme === t.theme ? "fill-white" : "fill-foreground"
                                 )}
                                 opacity={hoveredTheme && hoveredTheme !== t.theme ? 0.3 : 1}
@@ -1173,6 +1222,27 @@ function RankMigrationChart({ onNavigate }: { onNavigate: (theme: string, instit
                 </svg>
             </CardContent>
         </Card>
+    );
+
+    return (
+        <>
+            {inlineVisible && renderChartCard(false)}
+            {isFullScreen && (
+                <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm p-6">
+                    <div className="flex h-full flex-col">
+                        <div className="flex items-center justify-between pb-4">
+                            <div className="text-sm font-semibold">Themes — Full Screen</div>
+                            <Button variant="outline" size="sm" onClick={() => setIsFullScreen(false)}>
+                                Close
+                            </Button>
+                        </div>
+                        <div className="flex-1 overflow-auto">
+                            {renderChartCard(true)}
+                        </div>
+                    </div>
+                </div>
+            )}
+        </>
     );
 }
 

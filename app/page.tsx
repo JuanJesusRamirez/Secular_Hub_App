@@ -34,26 +34,21 @@ export default async function Home() {
     <div className="space-y-12 pb-12">
       {/* Hero Section */}
       <section className="space-y-6 pt-4">
-        <div className="flex items-start justify-between gap-8">
-          <div className="flex-1 space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight">
-              Detailed Methodology
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl">
-              How are institutional outlooks ranked, compared, and validated?
-            </p>
-          </div>
-
-          {/* Animated Bull */}
-          <div className="flex-shrink-0 hidden md:block">
-            <video
-              src="/images/Animated_Bull_Eyes_Blink_Only.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-32 w-auto rounded-lg"
-            />
+        <div className="w-full relative overflow-hidden rounded-xl border bg-gradient-to-r from-primary/10 via-background to-background p-6 md:p-8 shadow-sm">
+          <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-3">
+                <div className="bg-primary/20 p-2.5 rounded-lg text-primary">
+                  <FileText className="w-6 h-6" />
+                </div>
+                <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground">
+                  Detailed Methodology
+                </h1>
+              </div>
+              <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-3xl">
+                How are institutional outlooks ranked, compared, and validated?
+              </p>
+            </div>
           </div>
         </div>
 

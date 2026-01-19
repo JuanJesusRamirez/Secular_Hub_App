@@ -180,38 +180,48 @@ export default function Dashboard2026() {
     return (
         <div className="space-y-6 pb-12 w-full max-w-[1920px] mx-auto">
             {/* Header Area */}
-            <div className="flex flex-col xl:flex-row gap-6 justify-between items-start xl:items-center border-b pb-8 bg-background/50 backdrop-blur-sm sticky top-0 z-10 px-1 pt-4">
-                <div>
-                    <h1 className="text-4xl font-extrabold tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                        2026 Global Outlook
-                    </h1>
-                    <p className="text-lg text-muted-foreground mt-2">
-                        Comprehensive institutional views & consensus database
-                    </p>
-                </div>
+            <div className="sticky top-0 z-10 pt-4 pb-8 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+                 <div className="w-full relative overflow-hidden rounded-xl border bg-gradient-to-r from-primary/10 via-background to-background p-6 md:p-8 shadow-sm">
+                    <div className="relative z-10 flex flex-col xl:flex-row gap-6 justify-between items-start xl:items-center">
+                        <div className="flex flex-col gap-2">
+                            <div className="flex items-center gap-3">
+                                <div className="bg-primary/20 p-2.5 rounded-lg text-primary">
+                                    <Globe className="w-6 h-6" />
+                                </div>
+                                <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground">
+                                    2026 Global Outlook
+                                </h1>
+                            </div>
+                            <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-2xl">
+                                Comprehensive institutional views & consensus database
+                            </p>
+                        </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 w-full xl:w-auto">
-                    <div className="relative flex-1 sm:w-64">
-                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                        <Input
-                            placeholder="Search keywords or firms..."
-                            className="pl-9"
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                        />
+                        <div className="flex flex-col sm:flex-row gap-4 w-full xl:w-auto mt-4 xl:mt-0">
+                            <div className="relative flex-1 sm:w-64">
+                                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                                <Input
+                                    placeholder="Search keywords or firms..."
+                                    className="pl-9 bg-background/50"
+                                    value={searchQuery}
+                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                />
+                            </div>
+                            <Select value={selectedInstitution} onValueChange={setSelectedInstitution}>
+                                <SelectTrigger className="w-full sm:w-[200px] bg-background/50">
+                                    <Filter className="mr-2 h-4 w-4 text-muted-foreground" />
+                                    <SelectValue placeholder="Filter by Firm" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    <SelectItem value="all">All Firms</SelectItem>
+                                    {institutions.map(inst => (
+                                        <SelectItem key={inst} value={inst}>{inst}</SelectItem>
+                                    ))}
+                                </SelectContent>
+                            </Select>
+                        </div>
                     </div>
-                    <Select value={selectedInstitution} onValueChange={setSelectedInstitution}>
-                        <SelectTrigger className="w-full sm:w-[200px]">
-                            <Filter className="mr-2 h-4 w-4 text-muted-foreground" />
-                            <SelectValue placeholder="Filter by Firm" />
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectItem value="all">All Firms</SelectItem>
-                            {institutions.map(inst => (
-                                <SelectItem key={inst} value={inst}>{inst}</SelectItem>
-                            ))}
-                        </SelectContent>
-                    </Select>
+                    <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-primary/5 blur-3xl"></div>
                 </div>
             </div>
 

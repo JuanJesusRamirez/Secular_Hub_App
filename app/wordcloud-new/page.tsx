@@ -129,30 +129,29 @@ export default function WordCloudNewPage() {
     return (
         <div className="space-y-4 animate-in fade-in duration-500" ref={containerRef}>
             {/* Header */}
-            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-                <div>
-                    <div className="flex items-center gap-2">
-                        <h1 className="text-2xl font-bold tracking-tight flex items-center gap-2">
-                            <Cloud className="h-6 w-6 text-primary" />
-                            Word Cloud Analysis
-                        </h1>
-                        <CardTitle className="flex items-center gap-2">
-                            <Sparkles className="h-5 w-5 text-amber-500" />
-                            Pre-calculated Analysis
-                        </CardTitle>
+            <div className="relative overflow-hidden rounded-xl border bg-gradient-to-r from-primary/10 via-background to-background p-6 md:p-8 shadow-sm mb-6">
+                <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+                    <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-3">
+                            <div className="bg-primary/20 p-2.5 rounded-lg text-primary">
+                                <Cloud className="w-6 h-6" />
+                            </div>
+                            <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground">
+                                Semantic Trends
+                            </h1>
+                        </div>
+                        <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-2xl">
+                            Which narratives and semantic signals dominate institutional outlooks over time?
+                        </p>
                     </div>
-                    <p className="text-sm text-muted-foreground mt-1">
-                        Visualizing semantic data from <code className="bg-muted px-1 rounded">PostgreSQL</code>.
-                        <span className="hidden sm:inline"> {mode === 'phrases' ? 'Phrase' : 'Word'} size indicates importance (TF-IDF).</span>
-                    </p>
-                </div>
 
-                <Select value={selectedYear} onValueChange={setSelectedYear}>
-                    <SelectTrigger className="w-[180px] bg-card border-border/50">
-                        <Calendar className="mr-2 h-4 w-4 opacity-50" />
-                        <SelectValue placeholder="Select Year" />
-                    </SelectTrigger>
-                    <SelectContent>
+                    <div className="flex items-center gap-4 ml-[3.25rem] md:ml-0">
+                        <Select value={selectedYear} onValueChange={setSelectedYear}>
+                            <SelectTrigger className="w-[180px] bg-background/50 border-primary/20 backdrop-blur-sm">
+                                <Calendar className="mr-2 h-4 w-4 opacity-50" />
+                                <SelectValue placeholder="Select Year" />
+                            </SelectTrigger>
+                            <SelectContent>
                         {(data?.availableYears || [0, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]).map(year => (
                             <SelectItem key={year} value={year === 0 ? "all" : year.toString()}>
                                 {year === 0 ? "All Years (2019-2026)" : year}
@@ -160,6 +159,9 @@ export default function WordCloudNewPage() {
                         ))}
                     </SelectContent>
                 </Select>
+                    </div>
+                </div>
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-primary/5 blur-3xl"></div>
             </div>
 
             {/* Stats Row */}

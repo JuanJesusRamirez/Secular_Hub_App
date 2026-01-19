@@ -70,7 +70,7 @@ export function TesisDetailModal({ record, onClose }: TesisDetailModalProps) {
           {record.tesisExPost && (
             <div>
               <h3 className="text-sm font-semibold text-orange-600 dark:text-orange-400 mb-3 uppercase tracking-wide">
-                ✅ Actual Outcome (Tesis Ex Post)
+                ✅ Actual Outcome (Ex-Post Thesis)
               </h3>
               <div className="bg-orange-50 dark:bg-orange-950/30 border-l-4 border-orange-500 rounded-lg p-4">
                 <p className="text-sm leading-relaxed text-orange-900 dark:text-orange-200 whitespace-pre-wrap">

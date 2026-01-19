@@ -5,8 +5,9 @@ import { useState } from "react";
 import { SP500Chart } from "@/components/charts/sp500-chart";
 import { XAUChart } from "@/components/charts/xau-chart";
 import { FEDRateChart } from "@/components/charts/fed-rate-chart";
+import { DXYChart } from "@/components/charts/dxy-chart";
 
-type Asset = 'sp500' | 'xau' | 'fed-rate';
+type Asset = 'sp500' | 'xau' | 'fed-rate' | 'dxy';
 
 export default function AssetsDashboard() {
     const [selectedAsset, setSelectedAsset] = useState<Asset>('sp500');
@@ -43,6 +44,15 @@ export default function AssetsDashboard() {
                     >
                         FED Rate
                     </button>
+                    <button
+                        onClick={() => setSelectedAsset('dxy')}
+                        className={`px-6 py-2 rounded-lg font-semibold transition-all ${selectedAsset === 'dxy'
+                            ? 'bg-blue-600 text-white shadow-md'
+                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            }`}
+                    >
+                        DXY
+                    </button>
                 </div>
             </div>
 
@@ -51,6 +61,7 @@ export default function AssetsDashboard() {
                 {selectedAsset === 'sp500' && <SP500Chart />}
                 {selectedAsset === 'xau' && <XAUChart />}
                 {selectedAsset === 'fed-rate' && <FEDRateChart />}
+                {selectedAsset === 'dxy' && <DXYChart />}
             </div>
         </div>
     );

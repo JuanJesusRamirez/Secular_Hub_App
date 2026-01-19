@@ -125,7 +125,21 @@ export function TesisGrid({ data, onCellClick, className }: TesisGridProps) {
     return connections;
   };
 
-  const getDisplayName = (theme: string) => {
+  const getDisplayName = (theme: string, year?: number) => {
+    if (theme.toUpperCase() === 'BASE CASE' && year) {
+      const baseCaseTitles: Record<number, string> = {
+        2019: "The Bull Market's|Last Hurrah",
+        2020: "The Great Moderation|of Returns",
+        2021: "Vaccine-Driven|Global Revival",
+        2022: "Inflationary Pressures|& Policy Shifts",
+        2023: "Bracing for the|Anticipated Recession",
+        2024: "Soft-ish Landing|& Policy Pivot",
+        2025: "America First|(Again)",
+        2026: "Capex + Policy|= Growth"
+      };
+      if (baseCaseTitles[year]) return baseCaseTitles[year];
+    }
+
     const abbrevThemes: Record<string, string> = {
       'QUANTITATIVE TIGHTENING': 'QT',
       'QUANTITATIVE EASING': 'QE',
@@ -174,9 +188,12 @@ export function TesisGrid({ data, onCellClick, className }: TesisGridProps) {
                 x={rankLabelWidth - 6}
                 y={getY(rank) + 3}
                 textAnchor="end"
-                className="fill-muted-foreground text-[10px] font-medium"
+                className={cn(
+                  "fill-muted-foreground font-medium",
+                  rank === 1 ? "text-[10px] uppercase font-bold tracking-tight" : "text-[10px]"
+                )}
               >
-                {rank}
+                {rank === 1 ? 'Base Case' : rank}
               </text>
             );
           })}
@@ -249,7 +266,9 @@ export function TesisGrid({ data, onCellClick, className }: TesisGridProps) {
                 const boxWidth = cellWidth - 4;
                 const boxHeight = cellHeight - 3;
 
-                const displayText = getDisplayName(record.themesAssets);
+                const rawDisplayText = getDisplayName(record.themesAssets, record.year);
+                const displayLines = rawDisplayText.split('|');
+                const isTwoLines = displayLines.length > 1;
 
                 return (
                   <g
@@ -273,16 +292,24 @@ export function TesisGrid({ data, onCellClick, className }: TesisGridProps) {
                     />
                     <text
                       x={x}
-                      y={y + 1}
+                      y={y}
                       textAnchor="middle"
                       dominantBaseline="middle"
                       className={cn(
-                        "text-[9px] font-semibold pointer-events-none select-none",
+                        "font-semibold pointer-events-none select-none",
+                        isTwoLines ? "text-[8px] leading-tight" : "text-[9px]",
                         isDimmed ? "fill-muted-foreground" : "fill-white"
                       )}
                       style={{ textShadow: isDimmed ? 'none' : '0 1px 2px rgba(0,0,0,0.5)' }}
                     >
-                      {displayText}
+                      {isTwoLines ? (
+                        <>
+                          <tspan x={x} dy="-0.4em">{displayLines[0]}</tspan>
+                          <tspan x={x} dy="1.1em">{displayLines[1]}</tspan>
+                        </>
+                      ) : (
+                        rawDisplayText
+                      )}
                     </text>
                   </g>
                 );

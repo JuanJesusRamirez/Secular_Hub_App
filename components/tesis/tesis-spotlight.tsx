@@ -60,7 +60,7 @@ export function TesisSpotlight({ theme, year, data, onClose }: TesisSpotlightPro
           <div className="text-2xl font-bold">#{yearData.rank}</div>
         </Card>
         <Card className="p-4 bg-muted/30">
-          <div className="text-sm text-muted-foreground mb-1">Apariciones Totales</div>
+          <div className="text-sm text-muted-foreground mb-1">Total Appearances</div>
           <div className="text-2xl font-bold">{themeData.length}</div>
         </Card>
       </div>
@@ -69,20 +69,20 @@ export function TesisSpotlight({ theme, year, data, onClose }: TesisSpotlightPro
         <Card className="p-5 border-blue-200 dark:border-blue-800">
           <h4 className="font-semibold mb-3 flex items-center gap-2">
             <TrendingUp className="w-5 h-5 text-blue-500" />
-            Tesis Consenso
+            Consensus Thesis
           </h4>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            {yearData.consensusThesis || 'No disponible'}
+            {yearData.consensusThesis || 'Not available'}
           </p>
         </Card>
 
         <Card className="p-5 border-purple-200 dark:border-purple-800">
           <h4 className="font-semibold mb-3 flex items-center gap-2">
             <TrendingDown className="w-5 h-5 text-purple-500" />
-            Resultado Ex-Post
+            Ex-Post Outcome
           </h4>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            {yearData.tesisExPost || 'No disponible'}
+            {yearData.tesisExPost || 'Not available'}
           </p>
         </Card>
       </div>

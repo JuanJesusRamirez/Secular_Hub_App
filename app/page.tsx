@@ -37,11 +37,10 @@ export default async function Home() {
         <div className="flex items-start justify-between gap-8">
           <div className="flex-1 space-y-4">
             <h1 className="text-4xl font-bold tracking-tight">
-              Eight Years of Wall Street Consensus
+              Detailed Methodology
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
-              Secular and cyclical trend context, built from the collection of investment views
-              published in annual outlooks by the world&apos;s largest financial institutions.
+              How are institutional outlooks ranked, compared, and validated?
             </p>
           </div>
 

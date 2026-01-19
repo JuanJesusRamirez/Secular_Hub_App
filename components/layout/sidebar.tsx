@@ -36,14 +36,15 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Home", href: "/", icon: LayoutDashboard },
-  { name: "Outlook 2026", href: "/overview", icon: Briefcase },
-  { name: "2025 Ex-Post", href: "/2025", icon: History, badge: "NEW" },
+  { name: "Methodology", href: "/", icon: LayoutDashboard },
+  { name: "2026 Outlook", href: "/overview", icon: Briefcase },
+  { name: "2025 Accuracy Review", href: "/2025", icon: History, badge: "NEW" },
 
   //  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
-  { name: "Word Analysis", href: "/wordcloud-new", icon: CloudRain },
+  { name: "Semantic Trends", href: "/wordcloud-new", icon: CloudRain },
 
-  { name: "Historical", href: "/tesis", icon: History },
+  { name: "Historical Evolution", href: "/tesis", icon: History },
+  { name: "Survey - DF", href: "/encuesta-df", icon: FileText },
 ];
 
 export function Sidebar() {

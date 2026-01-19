@@ -223,24 +223,28 @@ export default function ExPost2025Page() {
 
     return (
         <div className="container mx-auto py-8 space-y-8 max-w-[1600px]">
-            {/* Header Section */}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b pb-8">
-                <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                        <div className="bg-primary/10 p-2 rounded-lg">
-                            <History className="h-6 w-6 text-primary" />
+            {/* Header / Title Section */}
+            <div className="w-full relative overflow-hidden rounded-xl border bg-gradient-to-r from-primary/10 via-background to-background p-6 md:p-8 shadow-sm mb-8">
+                <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-3">
+                            <div className="bg-primary/20 p-2.5 rounded-lg text-primary">
+                                <History className="w-6 h-6" />
+                            </div>
+                            <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground">
+                                2025 Accuracy Review
+                            </h1>
                         </div>
-                        <h1 className="text-4xl font-extrabold tracking-tight">2025 Ex-Post Analysis</h1>
-                        <Badge variant="secondary" className="font-mono text-[10px] px-1.5 py-0">ACCURACY AUDIT</Badge>
+                        <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-2xl">
+                            How accurate were 2025 institutional outlooks?
+                        </p>
                     </div>
-                    <p className="text-lg text-muted-foreground">
-                        Verifying institutional predictions against real-world 2025 outcomes.
-                    </p>
-                </div>
 
-                <div className="flex flex-wrap gap-2 max-w-4xl justify-end">
-                    {/* Theme selection buttons moved to sidebar */}
+                    <div className="flex flex-wrap gap-2 max-w-4xl justify-end">
+                        {/* Theme selection buttons moved to sidebar */}
+                    </div>
                 </div>
+                <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-primary/5 blur-3xl"></div>
             </div>
 
 

@@ -58,7 +58,18 @@ export function XAUChart() {
         const response = await fetch('/api/xau');
         const result: XAUResponse = await response.json();
 
-        const labels = result.data.map(d => d.date);
+        const labels = result.data.map(d => {
+          const parts = d.date.split('/');
+          if (parts.length === 3) {
+            const month = parts[1];
+            const year = parts[2];
+            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+              'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            const monthName = monthNames[parseInt(month) - 1];
+            return `${monthName} ${year}`;
+          }
+          return d.date;
+        });
         const datasets = [];
 
         const xauData = result.data.map(d => d['AUX/USD']);
@@ -266,7 +277,7 @@ export function XAUChart() {
         },
         title: {
           display: true,
-          text: 'Fecha (Frecuencia Diaria)',
+          text: 'Date',
           font: {
             size: 12,
             weight: 'bold' as const,
@@ -341,7 +352,7 @@ export function XAUChart() {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-full">
-        <div className="text-muted-foreground">Cargando datos...</div>
+        <div className="text-muted-foreground">Loading data...</div>
       </div>
     );
   }
@@ -349,7 +360,7 @@ export function XAUChart() {
   if (!chartData) {
     return (
       <div className="flex items-center justify-center h-full">
-        <div className="text-muted-foreground">Error al cargar los datos</div>
+        <div className="text-muted-foreground">Error loading data</div>
       </div>
     );
   }

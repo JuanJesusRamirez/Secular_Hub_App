@@ -4,7 +4,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { ExecutiveBriefing } from "@/components/overview/executive-briefing";
 import { OverviewResponse } from "@/lib/db/queries";
-import { Info, ArrowLeft } from "lucide-react";
+import { Info, ArrowLeft, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ManusReport from "@/components/manus/ManusReport";
 import AssetsDashboard from "@/components/assets/AssetsDashboard";
@@ -53,23 +53,36 @@ function OverviewContent() {
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <h1 className="text-2xl font-bold tracking-tight">Outlook 2026</h1>
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                <Info className="h-4 w-4 text-muted-foreground cursor-help" />
-              </TooltipTrigger>
-              <TooltipContent className="max-w-xs">
-                <p className="text-sm">
-                  Aggregated analysis of Wall Street year-ahead outlook reports.
-                  Conviction Index weighted by high (100), medium (50), and low (0) tier calls.
-                </p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+      <div className="w-full relative overflow-hidden rounded-xl border bg-gradient-to-r from-primary/10 via-background to-background p-6 md:p-8 shadow-sm mb-8">
+        <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-3">
+              <div className="bg-primary/20 p-2.5 rounded-lg text-primary">
+                <BarChart3 className="w-6 h-6" />
+              </div>
+              <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground flex items-center gap-2">
+                Overview 2026
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Info className="h-5 w-5 text-muted-foreground/60 cursor-help" />
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-xs">
+                      <p className="text-sm">
+                        Aggregated analysis of Wall Street year-ahead outlook reports.
+                        Conviction Index weighted by high (100), medium (50), and low (0) tier calls.
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </h1>
+            </div>
+            <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-2xl">
+              Where do institutions converge (and diverge) on the 2026 outlook?
+            </p>
+          </div>
         </div>
+        <div className="absolute top-0 right-0 -mt-4 -mr-4 h-32 w-32 rounded-full bg-primary/5 blur-3xl"></div>
       </div>
 
       {/* Error State */}

@@ -128,7 +128,7 @@ export default function AssetCard({
                         <div className="mt-6 pt-6 border-t border-border space-y-4">
 
 
-                            {/* Instituciones principales */}
+                            {/* Main institutions */}
                             {institutions.length > 0 && (
                                 <div>
                                     <p className="text-xs font-medium text-muted-foreground uppercase tracking-widest mb-2">

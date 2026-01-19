@@ -151,7 +151,7 @@ export function TesisTable({ data, selectedYear, onYearSelect }: TesisTableProps
                     {record.tesisExPost && (
                       <div>
                         <h4 className="text-sm font-semibold text-muted-foreground mb-2">
-                          Actual Outcome (Tesis Ex Post)
+                          Actual Outcome (Ex-Post Thesis)
                         </h4>
                         <p className="text-sm leading-relaxed text-orange-700 dark:text-orange-300">
                           {record.tesisExPost}

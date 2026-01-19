@@ -102,7 +102,7 @@ export default function AssetsList({
                         : 'bg-red-50 text-red-700 hover:bg-red-100 border border-red-200'
                         }`}
                 >
-                    📉 Bearish ({sentimentCounts.Bearish})
+                    📉 Risks ({sentimentCounts.Bearish})
                 </button>
             </div>
 

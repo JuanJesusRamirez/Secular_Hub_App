@@ -55,7 +55,7 @@ export default function ManusReport() {
         );
     }
 
-    // Calcular estadísticas
+    // Calculate statistics
     const values = Object.values(assets);
     const bullishCount = values.filter((a) => a.sentiment === 'Bullish').length;
     const bearishCount = values.filter((a) => a.sentiment === 'Bearish').length;
@@ -113,10 +113,10 @@ export default function ManusReport() {
                     </div>
                 </section>
 
-                {/* Divisor sutil */}
+                {/* Subtle divider */}
                 <div className="h-px bg-slate-100 my-4" />
 
-                {/* Lista de assets con sentimiento */}
+                {/* Asset list with sentiment */}
                 <AssetsList
                     assets={assets}
                     title="Asset Analysis by Sentiment"

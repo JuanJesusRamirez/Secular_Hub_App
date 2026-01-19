@@ -66,12 +66,12 @@ export function SP500Chart() {
             const month = parts[1];
             const year = parts[2];
 
-            const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
-              'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+              'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
             const monthName = monthNames[parseInt(month) - 1];
 
-            // Return format: DD Mon YYYY (e.g., "02 Ene 2025")
-            return `${day} ${monthName} ${year}`;
+            // Return format: Mon YYYY (e.g., "Jan 2025")
+            return `${monthName} ${year}`;
           }
           return d.date;
         });
@@ -278,7 +278,7 @@ export function SP500Chart() {
         },
         title: {
           display: true,
-          text: 'Índice S&P 500',
+          text: 'S&P 500 Index',
           font: {
             size: 12,
             weight: 'bold' as const,
@@ -304,7 +304,7 @@ export function SP500Chart() {
         },
         title: {
           display: true,
-          text: 'Fecha (Frecuencia Diaria)',
+          text: 'Date',
           font: {
             size: 12,
             weight: 'bold' as const,
@@ -398,7 +398,7 @@ export function SP500Chart() {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-full">
-        <div className="text-muted-foreground">Cargando datos...</div>
+        <div className="text-muted-foreground">Loading data...</div>
       </div>
     );
   }
@@ -406,7 +406,7 @@ export function SP500Chart() {
   if (!chartData) {
     return (
       <div className="flex items-center justify-center h-full">
-        <div className="text-muted-foreground">Error al cargar los datos</div>
+        <div className="text-muted-foreground">Error loading data</div>
       </div>
     );
   }

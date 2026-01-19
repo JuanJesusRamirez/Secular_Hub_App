@@ -54,11 +54,14 @@ export const getRankingWithConviction = (items: ExPostItem[]): ExPostItem[] => {
 
 // Theme statistics
 export const getThemeStats = (items: ExPostItem[]): ThemeData["themeStats"] => {
-    const totalInstitutions = items.length;
-    const avgScore = items.reduce((acc, item) => acc + item.score, 0) / totalInstitutions;
+    const totalCallTexts = items.length;
+    const distinctFirms = new Set(items.map(i => i.Institution).filter(Boolean)).size;
+    const avgScore = items.reduce((acc, item) => acc + item.score, 0) / totalCallTexts;
 
     return {
-        totalInstitutions,
+        totalInstitutions: distinctFirms, // Maintain totalInstitutions as distinct count
+        totalFirms: distinctFirms,
+        totalCallTexts,
         avgScore: Math.round(avgScore * 10) / 10,
         excellentCount: items.filter((i) => i.classification === "EXCELLENT").length,
         goodCount: items.filter((i) => i.classification === "GOOD").length,
@@ -121,7 +124,7 @@ export const getClassificationColor = (classification: ExPostItem["classificatio
         case "EXCELLENT":
             return "text-green-500";
         case "GOOD":
-            return "text-emerald-400";
+            return "text-slate-950";
         case "PARTIAL":
             return "text-yellow-500";
         case "WEAK":
@@ -138,7 +141,7 @@ export const getClassificationBg = (classification: ExPostItem["classification"]
         case "EXCELLENT":
             return "bg-green-500/10 border-green-500/30";
         case "GOOD":
-            return "bg-emerald-400/10 border-emerald-400/30";
+            return "bg-slate-900/5 border-slate-900/20";
         case "PARTIAL":
             return "bg-yellow-500/10 border-yellow-500/30";
         case "WEAK":
@@ -176,16 +179,23 @@ export const getMaterializedColor = (status: string): string => {
     }
 };
 
+export interface AggregateRankingThemeEntry {
+    theme: string;
+    score: number;
+    exAnte?: number;
+    exPost?: number;
+}
+
 export interface AggregateRankingItem {
     institution: string;
     totalScore: number;
     themesCount: number;
     avgScore: number;
-    themeBreakdown: { theme: string; score: number }[];
+    themeBreakdown: AggregateRankingThemeEntry[];
 }
 
 export const getAggregateRanking = (themes: ThemeData[]): AggregateRankingItem[] => {
-    const aggregate: Record<string, { totalScore: number; themesCount: number; themeBreakdown: { theme: string; score: number }[] }> = {};
+    const aggregate: Record<string, { totalScore: number; themesCount: number; themeBreakdown: AggregateRankingThemeEntry[] }> = {};
 
     themes.forEach((theme) => {
         // Find the best entry for each institution within THIS theme
@@ -203,7 +213,11 @@ export const getAggregateRanking = (themes: ThemeData[]): AggregateRankingItem[]
             }
             aggregate[inst].totalScore += score;
             aggregate[inst].themesCount += 1;
-            aggregate[inst].themeBreakdown.push({ theme: theme.theme, score });
+            // find the institution's record in the theme to extract positions
+            const matchedItem = theme.items.find(i => i.Institution === inst && i.score === score) || theme.items.find(i => i.Institution === inst);
+            const exAntePos = matchedItem && (matchedItem.Original_Rank || matchedItem.Original_Rank === 0) ? matchedItem.Original_Rank : undefined;
+            const exPostPos = matchedItem && (matchedItem.Rank || matchedItem.Rank === 0) ? matchedItem.Rank : undefined;
+            aggregate[inst].themeBreakdown.push({ theme: theme.theme, score, exAnte: exAntePos, exPost: exPostPos });
         });
     });
 
@@ -230,7 +244,7 @@ export const getAggregateThemeData = (themes: ThemeData[]): ThemeData => {
         Prediction_Text: `Institutional strategy performance across ${agg.themesCount} themes.`,
         statements: [], // No global statements here
         score: agg.totalScore,
-        classification: agg.avgScore >= 90 ? "EXCELLENT" : agg.avgScore >= 75 ? "GOOD" : agg.avgScore >= 60 ? "PARTIAL" : "WEAK" as any,
+        classification: agg.totalScore >= 810 ? "EXCELLENT" : agg.totalScore >= 675 ? "GOOD" : agg.totalScore >= 540 ? "PARTIAL" : agg.totalScore >= 360 ? "WEAK" : "FAILED" as any,
         justification: `Top performer across ${agg.themesCount} different market themes. Average accuracy: ${agg.avgScore}%.`,
         theme: "Global",
         themeBreakdown: agg.themeBreakdown,
@@ -247,12 +261,14 @@ export const getAggregateThemeData = (themes: ThemeData[]): ThemeData => {
         items,
         themeStats: {
             totalInstitutions: aggregate.length,
+            totalFirms: aggregate.length,
+            totalCallTexts: themes.reduce((acc, t) => acc + t.items.length, 0),
             avgScore: Math.round((aggregate.reduce((acc: number, a: AggregateRankingItem) => acc + a.totalScore, 0) / aggregate.length) * 10) / 10,
-            excellentCount: items.filter(i => i.score >= 800).length,
-            goodCount: items.filter(i => i.score >= 650 && i.score < 800).length,
-            partialCount: items.filter(i => i.score >= 450 && i.score < 650).length,
-            weakCount: items.filter(i => i.score < 450).length,
-            failedCount: 0,
+            excellentCount: items.filter(i => i.score >= 810).length,
+            goodCount: items.filter(i => i.score >= 675 && i.score < 810).length,
+            partialCount: items.filter(i => i.score >= 540 && i.score < 675).length,
+            weakCount: items.filter(i => i.score >= 360 && i.score < 540).length,
+            failedCount: items.filter(i => i.score < 360).length,
         }
     };
 };

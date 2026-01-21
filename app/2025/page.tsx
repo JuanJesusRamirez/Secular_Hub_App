@@ -265,9 +265,9 @@ export default function ExPost2025Page() {
 
             {/* Filter & Navigation Bar - RELOCATED */}
             <div className="bg-background border rounded-lg p-2 mb-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
-                 {/* Main Views Controls */}
-                 <div className="flex items-center gap-2 w-full md:w-auto">
-                     {ALL_THEMES_WITH_GLOBAL[0] && (
+                {/* Main Views Controls */}
+                <div className="flex items-center gap-2 w-full md:w-auto">
+                    {ALL_THEMES_WITH_GLOBAL[0] && (
                         <Button
                             key={ALL_THEMES_WITH_GLOBAL[0].theme}
                             variant={activeThemeName === ALL_THEMES_WITH_GLOBAL[0].theme ? "default" : "outline"}
@@ -299,11 +299,11 @@ export default function ExPost2025Page() {
                         <BarChart3 className="mr-2 h-4 w-4 shrink-0" />
                         <span className="truncate">Themes</span>
                     </Button>
-                 </div>
+                </div>
 
-                 {/* Market Exploration Controls */}
-                 <div className="flex items-center gap-2 w-full md:w-auto">
-                     <Select
+                {/* Market Exploration Controls */}
+                <div className="flex items-center gap-2 w-full md:w-auto">
+                    <Select
                         value={ALL_THEMES_WITH_GLOBAL.slice(1).some(t => t.theme === activeThemeName) ? activeThemeName : ""}
                         onValueChange={(value) => {
                             const themeData = ALL_THEMES_WITH_GLOBAL.find(t => t.theme === value);
@@ -349,7 +349,7 @@ export default function ExPost2025Page() {
                     >
                         <BookOpen className="h-4 w-4" />
                     </Button>
-                 </div>
+                </div>
             </div>
 
             {/* Stats Summary Area - IMPROVED LAYOUT */}
@@ -376,10 +376,10 @@ export default function ExPost2025Page() {
                             color={activeThemeName === "GLOBAL RANKING" ? getGlobalScoreColor(stats.avgScore) : getThemeScoreColor(stats.avgScore)}
                         />
                     </div>
-                
-                     {/* Right Group: Breakdown */}
+
+                    {/* Right Group: Breakdown */}
                     <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-                         {activeThemeName === "GLOBAL RANKING" ? (
+                        {activeThemeName === "GLOBAL RANKING" ? (
                             <>
                                 <StatCard title="Excellent" value={stats.excellentCount} icon={Zap} color="text-green-600" />
                                 <StatCard title="Good" value={stats.goodCount} icon={Trophy} color="text-slate-950" />
@@ -387,7 +387,7 @@ export default function ExPost2025Page() {
                                 <StatCard title="Weak" value={stats.weakCount} icon={AlertTriangle} color="text-orange-500" />
                                 <StatCard title="Failed" value={stats.failedCount} icon={XCircle} color="text-red-500" />
                             </>
-                         ) : (
+                        ) : (
                             <>
                                 <StatCard title="Excellent" value={stats.excellentCount} icon={Trophy} color="text-green-500" />
                                 <StatCard title="Good" value={stats.goodCount} icon={CheckCircle2} color="text-slate-950" />
@@ -395,7 +395,7 @@ export default function ExPost2025Page() {
                                 <StatCard title="Weak" value={stats.weakCount} icon={AlertTriangle} color="text-orange-500" />
                                 <StatCard title="Failed" value={stats.failedCount} icon={XCircle} color="text-red-500" />
                             </>
-                         )}
+                        )}
                     </div>
                 </div>
             )}
@@ -405,7 +405,7 @@ export default function ExPost2025Page() {
                 <div className="lg:col-span-4 xl:col-span-3 space-y-6">
                     <div className="sticky top-20 space-y-6">
                         {/* Controls moved to top bar */}
-                        
+
                         {activeThemeName !== THEME_RANKING_LABEL && activeThemeName !== METHODOLOGY_LABEL && (
                             <div className="space-y-4">
                                 <div className="flex items-center justify-between px-2">
@@ -899,9 +899,6 @@ function AnalysisDetail({
                                         <div className="flex flex-wrap gap-2">
                                             {tb.exAnte !== undefined && (
                                                 <span className="text-[11px] font-bold px-2 py-1 rounded-md bg-muted/10 border border-muted/30">Ex-Ante #{tb.exAnte}</span>
-                                            )}
-                                            {tb.exPost !== undefined && (
-                                                <span className="text-[11px] font-bold px-2 py-1 rounded-md bg-muted/10 border border-muted/30">Ex-Post #{tb.exPost}</span>
                                             )}
                                         </div>
                                     </div>

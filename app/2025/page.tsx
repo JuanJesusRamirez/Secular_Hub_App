@@ -809,10 +809,6 @@ function AnalysisDetail({
                                         <div className="h-6 w-6 rounded-full bg-muted flex items-center justify-center text-[10px] font-bold">#{item.Original_Rank}</div>
                                         <span className="text-[10px] font-bold uppercase text-muted-foreground">EX-ANTE RANK</span>
                                     </div>
-                                    <div className="flex items-center gap-3">
-                                        <div className="h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center text-[10px] font-bold text-primary">#{item.Rank}</div>
-                                        <span className="text-[10px] font-bold uppercase text-muted-foreground">EX-POST RANK</span>
-                                    </div>
                                 </div>
                             </div>
                         )}
@@ -1076,7 +1072,7 @@ function RankMigrationChart({
         <Card className="min-h-[680px] overflow-hidden bg-background/50 border-2">
             <CardHeader className="bg-muted/10 border-b space-y-4">
                 {/* Category Filter */}
-                <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center justify-center gap-2">
                     <div className="flex items-center justify-center gap-2 flex-1">
                         <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Filter by Category:</span>
                         <Select value={selectedCategory} onValueChange={setSelectedCategory}>
@@ -1098,14 +1094,6 @@ function RankMigrationChart({
                             </SelectContent>
                         </Select>
                     </div>
-                    <Button
-                        variant="outline"
-                        size="sm"
-                        className="text-xs font-bold uppercase"
-                        onClick={() => setIsFullScreen(!fullscreenMode)}
-                    >
-                        {fullscreenMode ? "Exit Full Screen" : "Full Screen"}
-                    </Button>
                 </div>
 
                 {/* Column Headers */}

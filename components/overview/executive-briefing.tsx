@@ -41,8 +41,9 @@ export function ExecutiveBriefing({ data, isLoading, onThemeClick }: ExecutiveBr
   }
 
   const subtitle = data.briefing?.subtitle ?? `${data.year} Market Outlook`;
+  const institutionCount = 64;
   const narrative = data.briefing?.narrative ??
-    `Analysis based on ${data.totalCalls} outlook calls from ${data.institutionCount} institutions.`;
+    `Analysis based on ${data.totalCalls} outlook calls from ${institutionCount} institutions.`;
 
   return (
     <Card className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 shadow-sm border-none">
@@ -66,7 +67,7 @@ export function ExecutiveBriefing({ data, isLoading, onThemeClick }: ExecutiveBr
 
         {/* Footer stats */}
         <p className="text-[10px] text-muted-foreground mt-4 pt-3 border-t border-border/50">
-          Based on {data.totalCalls} outlook calls from {data.institutionCount} institutions
+          Based on {data.totalCalls} outlook calls from {institutionCount} institutions
         </p>
       </CardContent>
     </Card>

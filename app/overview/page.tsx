@@ -43,7 +43,7 @@ function OverviewContent() {
   }, [yearNum]);
 
   const handleThemeClick = (theme: string) => {
-    if (theme === "OUTLOOK ANALYSIS") {
+    if (theme === "SENTIMENT ANALYSIS") {
       setViewMode('manus');
     } else if (theme === "INTEREST TOPICS") {
       setViewMode('assets');
@@ -61,7 +61,7 @@ function OverviewContent() {
                 <BarChart3 className="w-6 h-6" />
               </div>
               <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground flex items-center gap-2">
-                Overview 2026
+                Outlook 2026
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger>
@@ -109,7 +109,7 @@ function OverviewContent() {
             size="lg"
             className="min-w-[200px] font-semibold"
           >
-            OUTLOOK ANALYSIS
+            SENTIMENT ANALYSIS
           </Button>
           <Button
             onClick={() => setViewMode('assets')}

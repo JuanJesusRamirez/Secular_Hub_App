@@ -1,8 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
 import {
-  ArrowRight,
   Calendar,
   Building2,
   FileText,
@@ -203,19 +201,15 @@ export default async function Home() {
 
         <div className="grid gap-3">
           {yearsData.map((yearData: typeof yearsData[number], index: number) => (
-            <Link
-              key={yearData.year}
-              href={`/snapshot?year=${yearData.year}`}
-              className="group"
-            >
-              <Card className={`transition-all hover:bg-muted/50 hover:border-primary/50 ${index === 0 ? 'border-primary/30 bg-primary/5' : ''}`}>
+            <div key={yearData.year}>
+              <Card className={`transition-all ${index === 0 ? 'border-primary/30 bg-primary/5' : ''}`}>
                 <CardContent className="py-4 px-6">
                   <div className="flex items-center justify-between gap-4">
                     <div className="flex items-center gap-6">
                       <div className="text-2xl font-bold w-16">{yearData.year}</div>
                       <div className="hidden sm:block h-8 w-px bg-border" />
                       <div>
-                        <div className="font-medium group-hover:text-primary transition-colors">
+                        <div className="font-medium">
                           {yearData.baseCase}
                         </div>
                         <div className="text-sm text-muted-foreground hidden md:block">
@@ -228,12 +222,11 @@ export default async function Home() {
                         <div className="text-sm font-medium">{yearData.callCount.toLocaleString()}</div>
                         <div className="text-xs text-muted-foreground">views</div>
                       </div>
-                      <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                     </div>
                   </div>
                 </CardContent>
               </Card>
-            </Link>
+            </div>
           ))}
         </div>
       </section>

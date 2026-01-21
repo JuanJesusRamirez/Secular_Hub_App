@@ -67,19 +67,19 @@ export default function ManusReport() {
 
     const stats = [
         {
-            number: String(bullishCount),
-            label: 'Bullish Assets',
-            description: 'Positive market sentiment'
+            number: '15',
+            label: 'Total Themes',
+            description: 'Bloomberg themes'
         },
         {
             number: String(totalCalls),
-            label: 'Total Analyses',
+            label: 'Outlook Thesis',
             description: 'Investment Outlooks'
         },
         {
-            number: String(totalInstitutions),
+            number: '64',
             label: 'Institutions',
-            description: 'Global Coverage'
+            description: ''
         }
     ];
 

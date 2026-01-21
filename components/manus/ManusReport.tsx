@@ -73,7 +73,7 @@ export default function ManusReport() {
         },
         {
             number: String(totalCalls),
-            label: 'Outlook Thesis',
+            label: 'CALLS',
             description: 'Investment Outlooks'
         },
         {

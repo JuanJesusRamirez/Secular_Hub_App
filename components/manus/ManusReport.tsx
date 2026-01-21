@@ -107,7 +107,7 @@ export default function ManusReport() {
                                 Sentiment analysis has been extracted using natural language processing from investment outlooks, identifying patterns of optimism, caution, and pessimism. The sentiment distribution reflects the institutional consensus on the outlook for each asset for the coming year.
                             </p>
                             <p className="text-center font-medium">
-                                Overall Sentiment: <span className="font-semibold text-green-700">{bullishCount} bullish assets</span>, <span className="font-semibold text-slate-700">{neutralCount} neutral</span>, and <span className="font-semibold text-red-700">{bearishCount} bearish</span>.
+                                Overall Sentiment: <span className="font-semibold text-green-700">{bullishCount} bullish assets</span>, <span className="font-semibold text-slate-700">{neutralCount} neutral</span>, and <span className="font-semibold text-red-700">Risks</span>.
                             </p>
                         </div>
                     </div>

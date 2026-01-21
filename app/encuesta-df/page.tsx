@@ -144,7 +144,7 @@ export default function EncuestaDFPage() {
   if (loading) {
     return (
       <div className="container mx-auto py-8">
-        <h1 className="text-3xl font-bold mb-6">Survey - DF</h1>
+        <h1 className="text-3xl font-bold mb-6">Survey</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <Skeleton className="h-[400px] w-full rounded-xl" />
           <Skeleton className="h-[400px] w-full rounded-xl" />
@@ -164,7 +164,7 @@ export default function EncuestaDFPage() {
                 <PieChartIcon className="w-6 h-6" />
               </div>
               <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl text-foreground">
-                Survey - DF
+                Survey
               </h1>
             </div>
             <p className="text-lg text-muted-foreground ml-[3.25rem] max-w-2xl">

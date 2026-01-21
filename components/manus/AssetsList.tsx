@@ -61,7 +61,7 @@ export default function AssetsList({
                         The sentiment distribution reflects the institutional consensus on the outlook for each asset for the coming year.
                     </p>
                     <p className="font-medium text-slate-900 border-t border-slate-100 pt-4">
-                        Overall Sentiment: <span className="text-green-600 font-bold">{stats.bullish} bullish assets</span>, {stats.neutral} neutral, and <span className="text-red-600 font-bold">{stats.bearish} bearish</span>.
+                        Overall Sentiment: <span className="text-green-600 font-bold">{stats.bullish} bullish assets</span>, {stats.neutral} neutral, and <span className="text-red-600 font-bold">Risks</span>.
                     </p>
                 </div>
             </div>

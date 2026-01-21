@@ -55,7 +55,7 @@ export default function AssetCard({
                                 <h3 className="text-lg font-semibold text-foreground">
                                     {theme}
                                 </h3>
-                                <SentimentBadge sentiment={sentiment} size="sm" />
+                                {theme !== "RISKS" && <SentimentBadge sentiment={sentiment} size="sm" />}
                             </div>
 
                             {/* Descripción */}

@@ -44,7 +44,7 @@ const navigation: NavigationItem[] = [
 
   { name: "Historical Evolution", href: "/tesis", icon: History },
   { name: "2026 Outlook", href: "/overview", icon: Briefcase },
-  { name: "Survey - DF", href: "/encuesta-df", icon: FileText },
+  { name: "Survey", href: "/encuesta-df", icon: FileText },
 ];
 
 export function Sidebar() {

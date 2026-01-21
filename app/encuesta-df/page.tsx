@@ -307,8 +307,6 @@ export default function EncuestaDFPage() {
               <h3 className="font-semibold text-sm">Methodology Note</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 This survey analysis was conducted by consulting the 2026 Outlook reports available on our internal SharePoint.
-                The ordering of institutions in the visualizations and tooltips strictly follows their position in the
-                <strong> Bloomberg Base Case Conviction Ranking (2026)</strong>.
               </p>
             </div>
           </CardContent>

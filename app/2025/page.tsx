@@ -547,12 +547,6 @@ function MethodologyDetailPage() {
                 </div>
             </div>
 
-            <div className="bg-muted/20 border border-muted/40 rounded-xl p-4">
-                <p className="text-xs font-bold text-foreground mb-1">Category Note</p>
-                <p className="text-[11px] text-muted-foreground leading-relaxed">
-                    Because <strong>Risk</strong> is a persistent bearish signal across institutions, it is excluded from the bearish bucket and reported separately as its own Risk category. This leaves <strong>7 bearish</strong> and <strong>7 neutral</strong> themes in the sentiment split.
-                </p>
-            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* 1. Scoring System */}

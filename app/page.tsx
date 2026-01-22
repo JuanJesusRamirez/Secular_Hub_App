@@ -10,18 +10,16 @@ import {
   Trophy
 } from "lucide-react";
 
-import { getHomeStats, getBaseCasesByYear } from "@/lib/db/queries";
+import { getHomeStats } from "@/lib/db/queries";
+import baseCasesData from "@/lib/data/base-cases-by-year.json";
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
-  const [stats, baseCases] = await Promise.all([
-    getHomeStats(),
-    getBaseCasesByYear(),
-  ]);
+  const stats = await getHomeStats();
 
   // Merge base cases with year stats
-  const yearsData = baseCases.map((bc: { year: number; baseCase: string; description: string }) => ({
+  const yearsData = baseCasesData.map((bc: { year: number; baseCase: string; description: string }) => ({
     year: bc.year,
     baseCase: bc.baseCase,
     description: bc.description,

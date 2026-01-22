@@ -1,0 +1,42 @@
+[
+  {
+    "year": 2026,
+    "baseCase": "Capex + Policy = Growth",
+    "description": "Wall Street is modestly optimistic for 2026. Global and US growth are expected to continue to demonstrate resilience even as some geopolitical and trade concerns linger. Policy support, both fiscal and monetary, combined with unprecedented capital expenditure for AI adoption are key to the extension of the cycle. AI's broadening boost to productivity is also positive. The elevated starting point of many assets curtails gains. There's no bubble yet."
+  },
+  {
+    "year": 2025,
+    "baseCase": "America First (Again)",
+    "description": "Lower rates and pro-growth policies should support a modest global expansion with the US largely leading the way. Risks abound - not least the unpredictability of the new American administration - but solid, not exceptional, returns are the base case for most of Wall Street. Call it cautious optimism."
+  },
+  {
+    "year": 2024,
+    "baseCase": "Soft-ish Landing and the Policy Pivot",
+    "description": "The outlook for 2024 is defined by a \"middle-of-the-road\" scenario where the global economy experiences a benign slowdown rather than a severe crash. After a humbling 2023 for forecasters, the consensus now points to a \"soft-ish\" landing, where elevated interest rates finally curb inflation enough to allow central banks to pivot toward easier policies. While stock and bond returns are expected to be positive but moderate, the landscape remains delicate due to the \"election super-cycle\"'specifically the unpredictable US election'and the ongoing challenge of navigating the final stage of the battle against inflation."
+  },
+  {
+    "year": 2023,
+    "baseCase": "Bracing for the Anticipated Recession",
+    "description": "The 2023 outlook is defined by a global economy preparing for a widely expected downturn following the most aggressive central bank tightening in decades. With a \"hard landing\" seen as likely across the Atlantic, the consensus points to a period of economic contraction and highly volatile equity returns. As speculative bubbles in assets like crypto burst, the focus shifts toward a resurgence in the bond market and the potential global impact of China's high-risk reopening."
+  },
+  {
+    "year": 2022,
+    "baseCase": "Inflationary Pressures & Policy Shifts",
+    "description": "The central theme for 2022 is the transition from a post-pandemic rally to an era of persistent inflation and tightening monetary policy. While global economic conditions remain generally positive, the rapid growth of previous years is expected to fade, replaced by moderate, single-digit returns. With asset valuations at historic highs, the primary market risk shifts toward potential central bank policy errors and rising interest rates as the world moves toward an endemic phase."
+  },
+  {
+    "year": 2021,
+    "baseCase": "Vaccine-Driven Global Revival",
+    "description": "Driven by an \"oversupply of optimism,\" the outlook for 2021 centers on a total post-pandemic revival. After the chaos of the previous year, the consensus among major firms is that the rollout of COVID-19 vaccines will act as a catalyst for a \"Great Reset.\" This scenario anticipates a synchronized global recovery and a market rotation that sets the stage for a new period of sustained economic growth and rising asset prices."
+  },
+  {
+    "year": 2020,
+    "baseCase": "The Great Moderation of Returns",
+    "description": "Following a historic year of \"once-a-decade\" performance, the outlook for 2020 is defined by a significant cooling of expectations. The consensus among market experts is that the double-digit returns of 2019 are unsustainable and highly unlikely to be repeated. Consequently, this scenario anticipates a shift toward much lower earnings and a more conservative growth trajectory, as even the most optimistic bulls prepare for a return to reality after an exceptional period of market gains."
+  },
+  {
+    "year": 2019,
+    "baseCase": "The Bull Market's Last Hurrah",
+    "description": "This scenario anticipates the final stage of a historic growth cycle. Major financial institutions expect 2019 to be a transitional \"turning point\" where markets find their floor, allowing investors to push back against bearish sentiment and capture remaining gains before the economic cycle eventually reaches its peak."
+  }
+]

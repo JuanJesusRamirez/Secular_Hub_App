@@ -70,6 +70,15 @@ def fix_mangled_encoding(text):
         'Â ': ' ',
         'Â': '',
         
+        # Casos adicionales: â standalone (común en "Europeâs" -> "Europe's")
+        'âs ': "'s ",
+        'ât ': "'t ",
+        'âre ': "'re ",
+        'âll ': "'ll ",
+        'âve ': "'ve ",
+        'âd ': "'d ",
+        ' â ': ' — ',  # â rodeado de espacios = em dash
+        
         # Limpiar caracteres de control huérfanos
         '\x80': '',
         '\x93': '',

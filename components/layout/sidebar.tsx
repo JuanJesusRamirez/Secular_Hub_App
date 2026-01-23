@@ -36,12 +36,9 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Methodology", href: "/", icon: LayoutDashboard },
-  { name: "2025 Reality Check", href: "/2025", icon: History },
-
-  //  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
-  { name: "Semantic Analysis", href: "/wordcloud-new", icon: CloudRain },
-
   { name: "Thematic Evolution", href: "/tesis", icon: History },
+  { name: "Semantic Analysis", href: "/wordcloud-new", icon: CloudRain },
+  { name: "2025 Reality Check", href: "/2025", icon: History },
   { name: "2026 Outlook", href: "/overview", icon: Briefcase },
 ];
 

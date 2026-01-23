@@ -3,20 +3,16 @@
     "id": 1,
     "question": "Will US GDP growth surprise to the upside in 2026?",
     "stats": {
-      "Yes": 14,
-      "No": 4
+      "No": 7,
+      "Yes": 7
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "No"
-      },
       {
         "institution": "Amundi",
         "answer": "No"
       },
       {
-        "institution": "Barclays",
+        "institution": "T. Rowe Price",
         "answer": "Yes"
       },
       {
@@ -24,60 +20,48 @@
         "answer": "Yes"
       },
       {
-        "institution": "BNP Paribas",
+        "institution": "State Street",
         "answer": "Yes"
       },
       {
-        "institution": "Capital Economics",
+        "institution": "BNP Paribas",
         "answer": "No"
       },
       {
-        "institution": "Deutsche Bank",
-        "answer": "Yes"
+        "institution": "JP Morgan",
+        "answer": "No"
       },
       {
-        "institution": "Fidelity",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Yes"
+        "institution": "Invesco",
+        "answer": "No"
       },
       {
         "institution": "HSBC",
         "answer": "Yes"
       },
       {
-        "institution": "Invesco",
-        "answer": "Yes"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Yes"
-      },
-      {
-        "institution": "NatWest",
+        "institution": "Goldman Sachs",
         "answer": "No"
       },
       {
-        "institution": "Robeco",
+        "institution": "Fidelity",
         "answer": "Yes"
       },
       {
-        "institution": "State Street",
+        "institution": "Deutsche Bank",
         "answer": "Yes"
       },
       {
-        "institution": "T. Rowe Price",
+        "institution": "ABN AMRO",
         "answer": "Yes"
       },
       {
         "institution": "UBS",
-        "answer": "Yes"
+        "answer": "No"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "No"
       }
     ]
   },
@@ -85,32 +69,48 @@
     "id": 2,
     "question": "Will the US unemployment rate be higher than expected?",
     "stats": {
-      "No": 14,
-      "Yes": 4
+      "Yes": 9,
+      "No": 5
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "Yes"
-      },
       {
         "institution": "Amundi",
         "answer": "Yes"
       },
       {
-        "institution": "Barclays",
+        "institution": "T. Rowe Price",
         "answer": "No"
       },
       {
         "institution": "BlackRock",
-        "answer": "No"
+        "answer": "Yes"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Yes"
       },
       {
         "institution": "BNP Paribas",
+        "answer": "Yes"
+      },
+      {
+        "institution": "JP Morgan",
         "answer": "No"
       },
       {
-        "institution": "Capital Economics",
+        "institution": "Invesco",
+        "answer": "Yes"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "No"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Fidelity",
         "answer": "Yes"
       },
       {
@@ -118,48 +118,16 @@
         "answer": "No"
       },
       {
-        "institution": "Fidelity",
-        "answer": "No"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "No"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "No"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "No"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "No"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "No"
-      },
-      {
-        "institution": "NatWest",
+        "institution": "ABN AMRO",
         "answer": "Yes"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "No"
-      },
-      {
-        "institution": "State Street",
-        "answer": "No"
-      },
-      {
-        "institution": "T. Rowe Price",
-        "answer": "No"
       },
       {
         "institution": "UBS",
         "answer": "No"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Yes"
       }
     ]
   },
@@ -167,72 +135,12 @@
     "id": 3,
     "question": "Will US inflation surprise to the upside in 2026?",
     "stats": {
-      "Yes": 13,
+      "Yes": 9,
       "No": 5
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "No"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Yes"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Yes"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "No"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "No"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "No"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Yes"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "No"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Yes"
-      },
-      {
-        "institution": "State Street",
         "answer": "Yes"
       },
       {
@@ -240,7 +148,51 @@
         "answer": "Yes"
       },
       {
+        "institution": "BlackRock",
+        "answer": "Yes"
+      },
+      {
+        "institution": "State Street",
+        "answer": "No"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Yes"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "No"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "No"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "No"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Yes"
+      },
+      {
         "institution": "UBS",
+        "answer": "No"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Yes"
       }
     ]
@@ -249,52 +201,28 @@
     "id": 4,
     "question": "Will the FED rate surprise to the upside?",
     "stats": {
-      "No": 11,
-      "Yes": 7
+      "Yes": 6,
+      "No": 8
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "No"
-      },
       {
         "institution": "Amundi",
         "answer": "Yes"
       },
       {
-        "institution": "Barclays",
-        "answer": "No"
+        "institution": "T. Rowe Price",
+        "answer": "Yes"
       },
       {
         "institution": "BlackRock",
         "answer": "Yes"
       },
       {
+        "institution": "State Street",
+        "answer": "No"
+      },
+      {
         "institution": "BNP Paribas",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "No"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "No"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "No"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Invesco",
         "answer": "No"
       },
       {
@@ -302,27 +230,35 @@
         "answer": "No"
       },
       {
-        "institution": "Morgan Stanley",
+        "institution": "Invesco",
         "answer": "No"
       },
       {
-        "institution": "NatWest",
+        "institution": "HSBC",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "No"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "No"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "No"
+      },
+      {
+        "institution": "UBS",
         "answer": "No"
       },
       {
         "institution": "Robeco",
-        "answer": "No"
-      },
-      {
-        "institution": "State Street",
-        "answer": "No"
-      },
-      {
-        "institution": "T. Rowe Price",
-        "answer": "Yes"
-      },
-      {
-        "institution": "UBS",
         "answer": "Yes"
       }
     ]
@@ -331,72 +267,11 @@
     "id": 5,
     "question": "Will the US enter a recession in 2026?",
     "stats": {
-      "No": 17,
-      "Yes": 1
+      "No": 14
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "No"
-      },
-      {
         "institution": "Amundi",
-        "answer": "No"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "No"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "No"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "No"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "No"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "No"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "No"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "No"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "No"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "No"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "No"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "No"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "No"
-      },
-      {
-        "institution": "State Street",
         "answer": "No"
       },
       {
@@ -404,7 +279,51 @@
         "answer": "No"
       },
       {
+        "institution": "BlackRock",
+        "answer": "No"
+      },
+      {
+        "institution": "State Street",
+        "answer": "No"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "No"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "No"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "No"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "No"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "No"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "No"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "No"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "No"
+      },
+      {
         "institution": "UBS",
+        "answer": "No"
+      },
+      {
+        "institution": "Robeco",
         "answer": "No"
       }
     ]
@@ -413,23 +332,24 @@
     "id": 6,
     "question": "Will US Treasury yields increase or decrease?",
     "stats": {
-      "Decrease": 18
+      "Decrease": 7,
+      "Increase": 7
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "Decrease"
-      },
       {
         "institution": "Amundi",
         "answer": "Decrease"
       },
       {
-        "institution": "Barclays",
-        "answer": "Decrease"
+        "institution": "T. Rowe Price",
+        "answer": "Increase"
       },
       {
         "institution": "BlackRock",
+        "answer": "Increase"
+      },
+      {
+        "institution": "State Street",
         "answer": "Decrease"
       },
       {
@@ -437,15 +357,15 @@
         "answer": "Decrease"
       },
       {
-        "institution": "Capital Economics",
+        "institution": "JP Morgan",
         "answer": "Decrease"
       },
       {
-        "institution": "Deutsche Bank",
-        "answer": "Decrease"
+        "institution": "Invesco",
+        "answer": "Increase"
       },
       {
-        "institution": "Fidelity",
+        "institution": "HSBC",
         "answer": "Decrease"
       },
       {
@@ -453,40 +373,24 @@
         "answer": "Decrease"
       },
       {
-        "institution": "HSBC",
-        "answer": "Decrease"
+        "institution": "Fidelity",
+        "answer": "Increase"
       },
       {
-        "institution": "Invesco",
-        "answer": "Decrease"
+        "institution": "Deutsche Bank",
+        "answer": "Increase"
       },
       {
-        "institution": "JP Morgan",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "State Street",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "T. Rowe Price",
-        "answer": "Decrease"
+        "institution": "ABN AMRO",
+        "answer": "Increase"
       },
       {
         "institution": "UBS",
         "answer": "Decrease"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Increase"
       }
     ]
   },
@@ -494,72 +398,11 @@
     "id": 7,
     "question": "Will the S&P 500 increase or decrease?",
     "stats": {
-      "Increase": 16,
-      "Decrease": 2
+      "Increase": 14
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Increase"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Increase"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Increase"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Increase"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Increase"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Increase"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Increase"
-      },
-      {
-        "institution": "State Street",
         "answer": "Increase"
       },
       {
@@ -567,7 +410,51 @@
         "answer": "Increase"
       },
       {
+        "institution": "BlackRock",
+        "answer": "Increase"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Increase"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Increase"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Increase"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Increase"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Increase"
+      },
+      {
         "institution": "UBS",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Increase"
       }
     ]
@@ -576,72 +463,11 @@
     "id": 8,
     "question": "Will the USD appreciate or depreciate?",
     "stats": {
-      "Depreciate": 17,
-      "Appreciate": 1
+      "Depreciate": 14
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Depreciate"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Appreciate"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Depreciate"
-      },
-      {
-        "institution": "State Street",
         "answer": "Depreciate"
       },
       {
@@ -649,7 +475,51 @@
         "answer": "Depreciate"
       },
       {
+        "institution": "BlackRock",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Depreciate"
+      },
+      {
         "institution": "UBS",
+        "answer": "Depreciate"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Depreciate"
       }
     ]
@@ -658,72 +528,12 @@
     "id": 9,
     "question": "Will the price of gold increase or decrease?",
     "stats": {
-      "Increase": 17,
+      "Increase": 13,
       "Decrease": 1
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Increase"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Increase"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Increase"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Increase"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Increase"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Increase"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Increase"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Increase"
-      },
-      {
-        "institution": "State Street",
         "answer": "Increase"
       },
       {
@@ -731,7 +541,51 @@
         "answer": "Increase"
       },
       {
+        "institution": "BlackRock",
+        "answer": "Increase"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Increase"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Increase"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Decrease"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Increase"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Increase"
+      },
+      {
         "institution": "UBS",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Increase"
       }
     ]
@@ -740,67 +594,20 @@
     "id": 10,
     "question": "Will the price of oil increase or decrease?",
     "stats": {
-      "Decrease": 18
+      "Decrease": 11,
+      "Increase": 2
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "Decrease"
-      },
       {
         "institution": "Amundi",
         "answer": "Decrease"
       },
       {
-        "institution": "Barclays",
-        "answer": "Decrease"
+        "institution": "T. Rowe Price",
+        "answer": "Increase"
       },
       {
         "institution": "BlackRock",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Decrease"
-      },
-      {
-        "institution": "Robeco",
         "answer": "Decrease"
       },
       {
@@ -808,11 +615,39 @@
         "answer": "Decrease"
       },
       {
-        "institution": "T. Rowe Price",
+        "institution": "BNP Paribas",
+        "answer": "Decrease"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Decrease"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Decrease"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Decrease"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Decrease"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Decrease"
+      },
+      {
+        "institution": "ABN AMRO",
         "answer": "Decrease"
       },
       {
         "institution": "UBS",
+        "answer": "Increase"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Decrease"
       }
     ]
@@ -821,81 +656,65 @@
     "id": 11,
     "question": "Will credit spreads widen or tighten?",
     "stats": {
-      "Widen": 9,
-      "Tighten": 9
+      "Estrecharan": 9,
+      "Ampliaran": 5
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Widen"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Tighten"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Widen"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Widen"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Tighten"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Widen"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Tighten"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Tighten"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Widen"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Tighten"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Tighten"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Widen"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Tighten"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Widen"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Tighten"
-      },
-      {
-        "institution": "State Street",
-        "answer": "Widen"
+        "answer": "Estrecharan"
       },
       {
         "institution": "T. Rowe Price",
-        "answer": "Widen"
+        "answer": "Estrecharan"
+      },
+      {
+        "institution": "BlackRock",
+        "answer": "Ampliaran"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Estrecharan"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Estrecharan"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Estrecharan"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Estrecharan"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Ampliaran"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Estrecharan"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Ampliaran"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Ampliaran"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Ampliaran"
       },
       {
         "institution": "UBS",
-        "answer": "Tighten"
+        "answer": "Estrecharan"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Estrecharan"
       }
     ]
   },
@@ -903,72 +722,12 @@
     "id": 12,
     "question": "What is your risk sentiment for the next 12 months?",
     "stats": {
-      "Risk-on": 14,
-      "Risk-off": 4
+      "Risk-on": 13,
+      "Risk-off": 1
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Risk-off"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Risk-off"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Risk-off"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Risk-off"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Risk-on"
-      },
-      {
-        "institution": "State Street",
         "answer": "Risk-on"
       },
       {
@@ -976,7 +735,51 @@
         "answer": "Risk-on"
       },
       {
+        "institution": "BlackRock",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Risk-off"
+      },
+      {
         "institution": "UBS",
+        "answer": "Risk-on"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Risk-on"
       }
     ]
@@ -985,68 +788,20 @@
     "id": 13.1,
     "question": "Positioning in Cash (Next 12M)",
     "stats": {
-      "Underweight": 16,
+      "Underweight": 12,
       "Overweight": 2
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "Underweight"
-      },
       {
         "institution": "Amundi",
         "answer": "Underweight"
       },
       {
-        "institution": "Barclays",
-        "answer": "Underweight"
+        "institution": "T. Rowe Price",
+        "answer": "Overweight"
       },
       {
         "institution": "BlackRock",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Robeco",
         "answer": "Underweight"
       },
       {
@@ -1054,11 +809,43 @@
         "answer": "Underweight"
       },
       {
-        "institution": "T. Rowe Price",
+        "institution": "BNP Paribas",
         "answer": "Underweight"
       },
       {
+        "institution": "JP Morgan",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Overweight"
+      },
+      {
         "institution": "UBS",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Underweight"
       }
     ]
@@ -1067,23 +854,24 @@
     "id": 13.2,
     "question": "Positioning in US Treasuries (Next 12M)",
     "stats": {
-      "Overweight": 18
+      "Underweight": 9,
+      "Overweight": 5
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Overweight"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Overweight"
+        "answer": "Underweight"
       },
       {
-        "institution": "Barclays",
-        "answer": "Overweight"
+        "institution": "T. Rowe Price",
+        "answer": "Underweight"
       },
       {
         "institution": "BlackRock",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "State Street",
         "answer": "Overweight"
       },
       {
@@ -1091,56 +879,40 @@
         "answer": "Overweight"
       },
       {
-        "institution": "Capital Economics",
+        "institution": "JP Morgan",
         "answer": "Overweight"
       },
       {
-        "institution": "Deutsche Bank",
-        "answer": "Overweight"
+        "institution": "Invesco",
+        "answer": "Underweight"
       },
       {
-        "institution": "Fidelity",
-        "answer": "Overweight"
+        "institution": "HSBC",
+        "answer": "Underweight"
       },
       {
         "institution": "Goldman Sachs",
         "answer": "Overweight"
       },
       {
-        "institution": "HSBC",
-        "answer": "Overweight"
+        "institution": "Fidelity",
+        "answer": "Underweight"
       },
       {
-        "institution": "Invesco",
-        "answer": "Overweight"
+        "institution": "Deutsche Bank",
+        "answer": "Underweight"
       },
       {
-        "institution": "JP Morgan",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "State Street",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "T. Rowe Price",
-        "answer": "Overweight"
+        "institution": "ABN AMRO",
+        "answer": "Underweight"
       },
       {
         "institution": "UBS",
         "answer": "Overweight"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Underweight"
       }
     ]
   },
@@ -1148,72 +920,12 @@
     "id": 13.3,
     "question": "Positioning in TIPS (Next 12M)",
     "stats": {
-      "Overweight": 17,
-      "Underweight": 1
+      "Overweight": 11,
+      "Underweight": 3
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Overweight"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "State Street",
         "answer": "Overweight"
       },
       {
@@ -1221,7 +933,51 @@
         "answer": "Overweight"
       },
       {
+        "institution": "BlackRock",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Overweight"
+      },
+      {
         "institution": "UBS",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Overweight"
       }
     ]
@@ -1230,67 +986,20 @@
     "id": 13.4,
     "question": "Positioning in SSA (Next 12M)",
     "stats": {
-      "Overweight": 18
+      "Overweight": 12,
+      "Underweight": 2
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "Overweight"
-      },
       {
         "institution": "Amundi",
         "answer": "Overweight"
       },
       {
-        "institution": "Barclays",
-        "answer": "Overweight"
+        "institution": "T. Rowe Price",
+        "answer": "Underweight"
       },
       {
         "institution": "BlackRock",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Robeco",
         "answer": "Overweight"
       },
       {
@@ -1298,11 +1007,43 @@
         "answer": "Overweight"
       },
       {
-        "institution": "T. Rowe Price",
+        "institution": "BNP Paribas",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "ABN AMRO",
         "answer": "Overweight"
       },
       {
         "institution": "UBS",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Robeco",
         "answer": "Overweight"
       }
     ]
@@ -1311,71 +1052,12 @@
     "id": 13.5,
     "question": "Positioning in Agency MBS (Next 12M)",
     "stats": {
-      "Underweight": 18
+      "Underweight": 7,
+      "Overweight": 7
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Underweight"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "State Street",
         "answer": "Underweight"
       },
       {
@@ -1383,8 +1065,52 @@
         "answer": "Underweight"
       },
       {
-        "institution": "UBS",
+        "institution": "BlackRock",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "HSBC",
         "answer": "Underweight"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "UBS",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Overweight"
       }
     ]
   },
@@ -1392,72 +1118,12 @@
     "id": 13.6,
     "question": "Positioning in Corporate Debt (Next 12M)",
     "stats": {
-      "Overweight": 16,
-      "Underweight": 2
+      "Overweight": 9,
+      "Underweight": 5
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Overweight"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "State Street",
         "answer": "Overweight"
       },
       {
@@ -1465,8 +1131,52 @@
         "answer": "Overweight"
       },
       {
+        "institution": "BlackRock",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Underweight"
+      },
+      {
         "institution": "UBS",
         "answer": "Overweight"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Underweight"
       }
     ]
   },
@@ -1474,72 +1184,12 @@
     "id": 13.7,
     "question": "Positioning in US Equity (Next 12M)",
     "stats": {
-      "Overweight": 14,
-      "Underweight": 4
+      "Overweight": 11,
+      "Underweight": 3
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Overweight"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Underweight"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Overweight"
-      },
-      {
-        "institution": "State Street",
         "answer": "Overweight"
       },
       {
@@ -1547,8 +1197,52 @@
         "answer": "Overweight"
       },
       {
+        "institution": "BlackRock",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "State Street",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Underweight"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Overweight"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Underweight"
+      },
+      {
         "institution": "UBS",
         "answer": "Overweight"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Underweight"
       }
     ]
   },
@@ -1556,80 +1250,64 @@
     "id": 14,
     "question": "Will Trump's tariffs be higher on average by year-end?",
     "stats": {
-      "Yes": 12,
-      "No": 6
+      "Yes": 5,
+      "No": 9
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "Yes"
-      },
       {
         "institution": "Amundi",
         "answer": "Yes"
       },
       {
-        "institution": "Barclays",
-        "answer": "Yes"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Yes"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Capital Economics",
+        "institution": "T. Rowe Price",
         "answer": "No"
       },
       {
-        "institution": "Deutsche Bank",
+        "institution": "BlackRock",
+        "answer": "No"
+      },
+      {
+        "institution": "State Street",
+        "answer": "No"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "No"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "No"
+      },
+      {
+        "institution": "Invesco",
         "answer": "Yes"
       },
       {
-        "institution": "Fidelity",
-        "answer": "Yes"
+        "institution": "HSBC",
+        "answer": "No"
       },
       {
         "institution": "Goldman Sachs",
         "answer": "No"
       },
       {
-        "institution": "HSBC",
+        "institution": "Fidelity",
         "answer": "Yes"
       },
       {
-        "institution": "Invesco",
+        "institution": "Deutsche Bank",
         "answer": "No"
       },
       {
-        "institution": "JP Morgan",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "No"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "No"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Yes"
-      },
-      {
-        "institution": "State Street",
-        "answer": "Yes"
-      },
-      {
-        "institution": "T. Rowe Price",
+        "institution": "ABN AMRO",
         "answer": "Yes"
       },
       {
         "institution": "UBS",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Robeco",
         "answer": "No"
       }
     ]
@@ -1638,72 +1316,11 @@
     "id": 15,
     "question": "Will the AI bubble burst?",
     "stats": {
-      "No": 15,
-      "Yes": 3
+      "No": 14
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "No"
-      },
-      {
         "institution": "Amundi",
-        "answer": "No"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "No"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "No"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "No"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "No"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "No"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "No"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "No"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Yes"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "No"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "No"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "No"
-      },
-      {
-        "institution": "State Street",
         "answer": "No"
       },
       {
@@ -1711,7 +1328,51 @@
         "answer": "No"
       },
       {
+        "institution": "BlackRock",
+        "answer": "No"
+      },
+      {
+        "institution": "State Street",
+        "answer": "No"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "No"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "No"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "No"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "No"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "No"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "No"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "No"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "No"
+      },
+      {
         "institution": "UBS",
+        "answer": "No"
+      },
+      {
+        "institution": "Robeco",
         "answer": "No"
       }
     ]
@@ -1720,81 +1381,65 @@
     "id": 16,
     "question": "Will the FED end its rate cutting cycle in 2026?",
     "stats": {
-      "Yes": 17,
-      "No": 1
+      "No": 11,
+      "Yes": 3
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Yes"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Yes"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Yes"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Yes"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Yes"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Yes"
-      },
-      {
-        "institution": "NatWest",
         "answer": "No"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Yes"
-      },
-      {
-        "institution": "State Street",
-        "answer": "Yes"
       },
       {
         "institution": "T. Rowe Price",
         "answer": "Yes"
       },
       {
-        "institution": "UBS",
+        "institution": "BlackRock",
+        "answer": "No"
+      },
+      {
+        "institution": "State Street",
+        "answer": "No"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "No"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "No"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "No"
+      },
+      {
+        "institution": "HSBC",
         "answer": "Yes"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "No"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "No"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Yes"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "No"
+      },
+      {
+        "institution": "UBS",
+        "answer": "No"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "No"
       }
     ]
   },
@@ -1802,72 +1447,12 @@
     "id": 17,
     "question": "Will de-dollarization accelerate?",
     "stats": {
-      "Yes": 13,
-      "No": 5
+      "Yes": 11,
+      "No": 3
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Yes"
-      },
-      {
         "institution": "Amundi",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "Yes"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Yes"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "No"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "No"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "No"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "No"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Yes"
-      },
-      {
-        "institution": "State Street",
         "answer": "Yes"
       },
       {
@@ -1875,8 +1460,52 @@
         "answer": "Yes"
       },
       {
-        "institution": "UBS",
+        "institution": "BlackRock",
         "answer": "No"
+      },
+      {
+        "institution": "State Street",
+        "answer": "No"
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "No"
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Invesco",
+        "answer": "Yes"
+      },
+      {
+        "institution": "HSBC",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Yes"
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Yes"
+      },
+      {
+        "institution": "UBS",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Yes"
       }
     ]
   },
@@ -1884,20 +1513,16 @@
     "id": 18,
     "question": "Will more 'cockroaches' appear in the credit market?",
     "stats": {
-      "Yes": 9,
-      "No": 9
+      "No": 7,
+      "Yes": 7
     },
     "responses": [
-      {
-        "institution": "ABN AMRO",
-        "answer": "Yes"
-      },
       {
         "institution": "Amundi",
         "answer": "No"
       },
       {
-        "institution": "Barclays",
+        "institution": "T. Rowe Price",
         "answer": "Yes"
       },
       {
@@ -1905,27 +1530,15 @@
         "answer": "Yes"
       },
       {
+        "institution": "State Street",
+        "answer": "No"
+      },
+      {
         "institution": "BNP Paribas",
-        "answer": "No"
-      },
-      {
-        "institution": "Capital Economics",
         "answer": "Yes"
       },
       {
-        "institution": "Deutsche Bank",
-        "answer": "No"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "No"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Yes"
-      },
-      {
-        "institution": "HSBC",
+        "institution": "JP Morgan",
         "answer": "No"
       },
       {
@@ -1933,32 +1546,32 @@
         "answer": "No"
       },
       {
-        "institution": "JP Morgan",
-        "answer": "Yes"
-      },
-      {
-        "institution": "Morgan Stanley",
+        "institution": "HSBC",
         "answer": "No"
       },
       {
-        "institution": "NatWest",
+        "institution": "Goldman Sachs",
         "answer": "Yes"
       },
       {
-        "institution": "Robeco",
+        "institution": "Fidelity",
+        "answer": "Yes"
+      },
+      {
+        "institution": "Deutsche Bank",
         "answer": "No"
       },
       {
-        "institution": "State Street",
-        "answer": "Yes"
-      },
-      {
-        "institution": "T. Rowe Price",
+        "institution": "ABN AMRO",
         "answer": "Yes"
       },
       {
         "institution": "UBS",
         "answer": "No"
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Yes"
       }
     ]
   },
@@ -1966,97 +1579,77 @@
     "id": 19,
     "question": "What are the biggest market risks for the next 12 months?",
     "stats": {
-      "Geopolitical fragmentation, trade tensions and financial vulnerability due to leverage": 1,
-      "\"Controlled disorder\": structural inflation, energy transition and trade fragmentation": 1,
-      "High public debt, trade tensions and macroeconomic volatility": 1,
-      "Systemic vulnerability due to massive AI spending and financing risks": 1,
-      "Trade frictions, monetary uncertainty and technology concentration": 1,
-      "Financial shocks in private credit, stock market corrections and fiscal risks": 1,
-      "Trade tensions, political risks and volatility in emerging markets": 1,
-      "Persistent inflation, AI concentration and tech bubble risks": 1,
-      "Volatility due to monetary adjustments, fiscal risks and geopolitical tensions": 1,
-      "Protectionism risks, trade fragmentation and technological concentration": 1,
-      "Tech stock correction, concentration risks and global rebalancing": 1,
-      "High tariffs, slowdown in the second half of the year and credit risks": 1,
-      "Risks from high valuations, macro volatility and monetary adjustments": 1,
-      "Fiscal sustainability, monetary adjustments and trade tensions": 1,
-      "Trade tensions, energy risks and volatility in emerging markets": 1,
-      "Geopolitical fragmentation, structural risks and credit volatility": 1,
-      "Tech bubble, inflationary persistence and fiscal risks": 1,
-      "High debt, AI concentration risks and trade tensions": 1
+      "Los riesgos principales identificados son: (1) \"Valuation and concentration risks, and extreme euphoria\"; (2) \"Financial repression and fiscal dominance\"; (3) \"Geopolitical risks amid controlled disorder\" (en escenario downside 30%: \"Political instability, a de-anchoring of inflation expectations, tightening liquidity, credit events, or earnings/capex disappointments in a concentrated, expensive market could trigger a downturn\"). Además, 35% de profesionales ve \"Higher inflation\" como principal disrupción.": 1,
+      "\"The age of speculation is giving way to real‑world results, but investors must be mindful that old challenges—valuation, inflation, and geopolitical uncertainty—remain firmly in play.\" También: \"Inflation remains an overarching risk... Geopolitical uncertainty—from trade tensions to the war in Ukraine—adds further complexity to the global outlook.\"": 1,
+      "Los principales riesgos identificados son: (1) \"Bond yield spikes could pose a risk to this financing\" (spikes en yields de bonos), (2) \"A more leveraged system also creates vulnerabilities to shocks such as bond yield spikes tied to fiscal concerns or policy tensions between managing inflation and debt servicing costs,\" (3) Restricciones físicas: \"AI data centers could use 15-20% of current U.S. electricity demand by 2030...Rising power demand collides with a backlog of projects waiting to connect with the electric grid,\" (4) \"Retail flows into semi-liquid private credit products are likely to be pro-cyclical and may amplify volatility during periods of stress.\"": 1,
+      "\"Despite fading market shocks, ongoing geopolitical tensions and elevated gold volatility signal that concerns about global risks may linger in 2026...the market-relevant potential for the largest short-term surprises stem from: the US-China trade and diplomatic front; Russian provocations and sabotage in Europe; US military confrontation in Latin America; a renewed war between Israel and Iran.\" Adicionalmente: \"An unexpected slowdown, especially among hyperscalers, could disrupt the market rally that has been rooted in earnings growth.\" \"US yields are close to the lower end of the range seen over the past twelve months...A correction in yields would not be that surprising.\" \"high and rising debt levels...are raising debt sustainability risks\"": 1,
+      "\"Catalysts for  are weaker economic data, equity market volatility or evidence of growing credit stresses in either private or public markets... Tariffs and the impact of immigration controls on labour supply could combine to keep inflation higher for longer... Geographically, US markets are most at risk from any deviation from the benign core scenario... If growth also turns out to be weaker, investors could also focus on the US fiscal outlook, again widening spreads in the US rates and credit markets.\"": 1,
+      "\"The biggest risk for investors remains the elevated starting point for risk assets, especially in the United States, and how offsides portfolios have been to the broadening of asset class returns underway\"": 1,
+      "\"The global economic and political landscape is shifting rapidly, marked by a broad reordering of trade relations and political alliances around the globe. At the same time, fiscal sustainability and questions over central bank independence are top of mind.\" Tabla completa de riesgos en página 12.": 1,
+      "\"Nevertheless, we remain mindful of policy and macro uncertainty. The US Federal Reserve could end its rate-cutting cycle sooner than expected, and data-centre construction could face delays due to labour shortages – not to mention the potential for escalating geopolitical tensions in any region.\"": 1,
+      "Riesgos clave identificados por Goldman Sachs: (1) Labor market deterioration could trigger hard landing if sustained; (2) Tariff cost pass-through to consumers could depress spending; (3) Fiscal deficit concerns - \"pinpointing the exact moment when fiscal anxieties will emerge or peak is impossible\"; (4) Geopolitical escalation - \"Despite steps closer to peace in the Middle East, geopolitical risks remain high. Russia and Ukraine remain far apart\"; (5) AI capex sustainability - \"return on investment visibility remains low\"; (6) Market concentration risk - \"top 10 US companies represent ~40% of S&P 500's market cap\"; (7) Credit events and bank exposure to NDFIs; (8) Real estate stress - \"$57 billion of distressed assets in the US\" mainly office.": 1,
+      "Los principales riesgos identificados son: (1) fragmentación global y volatilidad geopolítica, (2) inflación más alta que lo esperado, (3) incertidumbre sobre independencia de la FED, (4) concentración de mercado en tecnología/AI, (5) deterioro adicional en el mercado laboral, (6) monetización incierta de AI": 1,
+      "Los mayores riesgos incluyen: (1) inestabilidad del mercado laboral estadounidense con posibles layoffs acelerados, (2) corrección del mercado de acciones del 20%+ que podría desencadenar pérdidas de crédito, (3) impingement en la independencia de la FED, (4) riesgos fiscales si los ingresos por aranceles caen, (5) impacto negativo de IA en empleo, y (6) geopolítica (guerra en Ucrania, tensiones US-China).": 1,
+      "Los mayores riesgos incluyen: (1) erosión de instituciones de EE.UU. y pérdida de confianza en el dólar, (2) corrección en mercados de IA tras inversión especulativa, (3) fragmentación política (Hungría, Francia, posible reforma Fed), (4) escalada de conflictos por \"chokepoints\" (rareza de tierras, semiconductores), (5) insostenibilidad fiscal de Francia y riesgos de crisis de bonos, (6) divergencia en economía de EE.UU. entre AI \"haves\" y Main Street creando vulnerabilidades": 1,
+      "\"While political headlines will remain front and center in 2026, history suggests their impact on financial markets is often short-lived. However, there are risks that could bring markets back to earth in the year ahead, including: 1) a potential disappointment in AI progress or adoption, 2) a resurgence or persistence of inflation, 3) a more entrenched phase of US-China strategic rivalry, and 4) the (re-) emergence of sovereign or private sector debt concerns.\"": 1,
+      "Table 2 lista: \"1. US recession due to a breaking rather than bending labor market; 2. A high-pressure global economy and captured Fed; 3. AI ecosystem implosion, gold crash; 4. Renewed trade-related uncertainty (Supreme court rulings, US-China deal breakdown); 5. European NATO member calls in Article 5; 6. The potential for systemic events stemming from private (credit) markets\"": 1
     },
     "responses": [
       {
-        "institution": "ABN AMRO",
-        "answer": "Geopolitical fragmentation, trade tensions and financial vulnerability due to leverage"
-      },
-      {
         "institution": "Amundi",
-        "answer": "\"Controlled disorder\": structural inflation, energy transition and trade fragmentation"
-      },
-      {
-        "institution": "Barclays",
-        "answer": "High public debt, trade tensions and macroeconomic volatility"
-      },
-      {
-        "institution": "BlackRock",
-        "answer": "Systemic vulnerability due to massive AI spending and financing risks"
-      },
-      {
-        "institution": "BNP Paribas",
-        "answer": "Trade frictions, monetary uncertainty and technology concentration"
-      },
-      {
-        "institution": "Capital Economics",
-        "answer": "Financial shocks in private credit, stock market corrections and fiscal risks"
-      },
-      {
-        "institution": "Deutsche Bank",
-        "answer": "Trade tensions, political risks and volatility in emerging markets"
-      },
-      {
-        "institution": "Fidelity",
-        "answer": "Persistent inflation, AI concentration and tech bubble risks"
-      },
-      {
-        "institution": "Goldman Sachs",
-        "answer": "Volatility due to monetary adjustments, fiscal risks and geopolitical tensions"
-      },
-      {
-        "institution": "HSBC",
-        "answer": "Protectionism risks, trade fragmentation and technological concentration"
-      },
-      {
-        "institution": "Invesco",
-        "answer": "Tech stock correction, concentration risks and global rebalancing"
-      },
-      {
-        "institution": "JP Morgan",
-        "answer": "High tariffs, slowdown in the second half of the year and credit risks"
-      },
-      {
-        "institution": "Morgan Stanley",
-        "answer": "Risks from high valuations, macro volatility and monetary adjustments"
-      },
-      {
-        "institution": "NatWest",
-        "answer": "Fiscal sustainability, monetary adjustments and trade tensions"
-      },
-      {
-        "institution": "Robeco",
-        "answer": "Trade tensions, energy risks and volatility in emerging markets"
-      },
-      {
-        "institution": "State Street",
-        "answer": "Geopolitical fragmentation, structural risks and credit volatility"
+        "answer": "Los riesgos principales identificados son: (1) \"Valuation and concentration risks, and extreme euphoria\"; (2) \"Financial repression and fiscal dominance\"; (3) \"Geopolitical risks amid controlled disorder\" (en escenario downside 30%: \"Political instability, a de-anchoring of inflation expectations, tightening liquidity, credit events, or earnings/capex disappointments in a concentrated, expensive market could trigger a downturn\"). Además, 35% de profesionales ve \"Higher inflation\" como principal disrupción."
       },
       {
         "institution": "T. Rowe Price",
-        "answer": "Tech bubble, inflationary persistence and fiscal risks"
+        "answer": "\"The age of speculation is giving way to real‑world results, but investors must be mindful that old challenges—valuation, inflation, and geopolitical uncertainty—remain firmly in play.\" También: \"Inflation remains an overarching risk... Geopolitical uncertainty—from trade tensions to the war in Ukraine—adds further complexity to the global outlook.\""
+      },
+      {
+        "institution": "BlackRock",
+        "answer": "Los principales riesgos identificados son: (1) \"Bond yield spikes could pose a risk to this financing\" (spikes en yields de bonos), (2) \"A more leveraged system also creates vulnerabilities to shocks such as bond yield spikes tied to fiscal concerns or policy tensions between managing inflation and debt servicing costs,\" (3) Restricciones físicas: \"AI data centers could use 15-20% of current U.S. electricity demand by 2030...Rising power demand collides with a backlog of projects waiting to connect with the electric grid,\" (4) \"Retail flows into semi-liquid private credit products are likely to be pro-cyclical and may amplify volatility during periods of stress.\""
+      },
+      {
+        "institution": "State Street",
+        "answer": "\"Despite fading market shocks, ongoing geopolitical tensions and elevated gold volatility signal that concerns about global risks may linger in 2026...the market-relevant potential for the largest short-term surprises stem from: the US-China trade and diplomatic front; Russian provocations and sabotage in Europe; US military confrontation in Latin America; a renewed war between Israel and Iran.\" Adicionalmente: \"An unexpected slowdown, especially among hyperscalers, could disrupt the market rally that has been rooted in earnings growth.\" \"US yields are close to the lower end of the range seen over the past twelve months...A correction in yields would not be that surprising.\" \"high and rising debt levels...are raising debt sustainability risks\""
+      },
+      {
+        "institution": "BNP Paribas",
+        "answer": "\"Catalysts for  are weaker economic data, equity market volatility or evidence of growing credit stresses in either private or public markets... Tariffs and the impact of immigration controls on labour supply could combine to keep inflation higher for longer... Geographically, US markets are most at risk from any deviation from the benign core scenario... If growth also turns out to be weaker, investors could also focus on the US fiscal outlook, again widening spreads in the US rates and credit markets.\""
+      },
+      {
+        "institution": "JP Morgan",
+        "answer": "\"The biggest risk for investors remains the elevated starting point for risk assets, especially in the United States, and how offsides portfolios have been to the broadening of asset class returns underway\""
+      },
+      {
+        "institution": "Invesco",
+        "answer": "\"The global economic and political landscape is shifting rapidly, marked by a broad reordering of trade relations and political alliances around the globe. At the same time, fiscal sustainability and questions over central bank independence are top of mind.\" Tabla completa de riesgos en página 12."
+      },
+      {
+        "institution": "HSBC",
+        "answer": "\"Nevertheless, we remain mindful of policy and macro uncertainty. The US Federal Reserve could end its rate-cutting cycle sooner than expected, and data-centre construction could face delays due to labour shortages – not to mention the potential for escalating geopolitical tensions in any region.\""
+      },
+      {
+        "institution": "Goldman Sachs",
+        "answer": "Riesgos clave identificados por Goldman Sachs: (1) Labor market deterioration could trigger hard landing if sustained; (2) Tariff cost pass-through to consumers could depress spending; (3) Fiscal deficit concerns - \"pinpointing the exact moment when fiscal anxieties will emerge or peak is impossible\"; (4) Geopolitical escalation - \"Despite steps closer to peace in the Middle East, geopolitical risks remain high. Russia and Ukraine remain far apart\"; (5) AI capex sustainability - \"return on investment visibility remains low\"; (6) Market concentration risk - \"top 10 US companies represent ~40% of S&P 500's market cap\"; (7) Credit events and bank exposure to NDFIs; (8) Real estate stress - \"$57 billion of distressed assets in the US\" mainly office."
+      },
+      {
+        "institution": "Fidelity",
+        "answer": "Los principales riesgos identificados son: (1) fragmentación global y volatilidad geopolítica, (2) inflación más alta que lo esperado, (3) incertidumbre sobre independencia de la FED, (4) concentración de mercado en tecnología/AI, (5) deterioro adicional en el mercado laboral, (6) monetización incierta de AI"
+      },
+      {
+        "institution": "Deutsche Bank",
+        "answer": "Los mayores riesgos incluyen: (1) inestabilidad del mercado laboral estadounidense con posibles layoffs acelerados, (2) corrección del mercado de acciones del 20%+ que podría desencadenar pérdidas de crédito, (3) impingement en la independencia de la FED, (4) riesgos fiscales si los ingresos por aranceles caen, (5) impacto negativo de IA en empleo, y (6) geopolítica (guerra en Ucrania, tensiones US-China)."
+      },
+      {
+        "institution": "ABN AMRO",
+        "answer": "Los mayores riesgos incluyen: (1) erosión de instituciones de EE.UU. y pérdida de confianza en el dólar, (2) corrección en mercados de IA tras inversión especulativa, (3) fragmentación política (Hungría, Francia, posible reforma Fed), (4) escalada de conflictos por \"chokepoints\" (rareza de tierras, semiconductores), (5) insostenibilidad fiscal de Francia y riesgos de crisis de bonos, (6) divergencia en economía de EE.UU. entre AI \"haves\" y Main Street creando vulnerabilidades"
       },
       {
         "institution": "UBS",
-        "answer": "High debt, AI concentration risks and trade tensions"
+        "answer": "\"While political headlines will remain front and center in 2026, history suggests their impact on financial markets is often short-lived. However, there are risks that could bring markets back to earth in the year ahead, including: 1) a potential disappointment in AI progress or adoption, 2) a resurgence or persistence of inflation, 3) a more entrenched phase of US-China strategic rivalry, and 4) the (re-) emergence of sovereign or private sector debt concerns.\""
+      },
+      {
+        "institution": "Robeco",
+        "answer": "Table 2 lista: \"1. US recession due to a breaking rather than bending labor market; 2. A high-pressure global economy and captured Fed; 3. AI ecosystem implosion, gold crash; 4. Renewed trade-related uncertainty (Supreme court rulings, US-China deal breakdown); 5. European NATO member calls in Article 5; 6. The potential for systemic events stemming from private (credit) markets\""
       }
     ]
   }

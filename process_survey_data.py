@@ -23,6 +23,10 @@ def process_data():
         # Assign column names: 0 -> Numero, 1 -> Pregunta
         df_questions.columns = ['Numero', 'Pregunta']
         
+        if 'Numero' not in df_responses.columns and 'Pregunta' in df_responses.columns:
+            print("Renaming 'Pregunta' column to 'Numero' in responses...")
+            df_responses.rename(columns={'Pregunta': 'Numero'}, inplace=True)
+
         # Responses: 'Numero' column must exist
         if 'Numero' not in df_responses.columns:
             print("Error: 'Numero' column not found in responses.")
@@ -45,9 +49,6 @@ def process_data():
         df_responses['MatchId'] = df_responses['Numero'].apply(normalize_id)
         df_questions['MatchId'] = df_questions['Numero'].apply(normalize_id)
         
-        # print("Unique IDs in Responses:", df_responses['MatchId'].unique())
-        # print("Unique IDs in Questions:", df_questions['MatchId'].unique())
-
         # Define allowed firms (Ranking)
         allowed_firms = [
             "Goldman Sachs",
@@ -70,10 +71,22 @@ def process_data():
             "T. Rowe Price"
         ]
         
-        # Filter to keep only allowed firms
+        # Normalize Firm Names
+        firm_replacements = {
+            "Fidelity International": "Fidelity",
+            "S&P Global Ratings": "S&P Global", 
+        }
+        df_responses['Firma'] = df_responses['Firma'].replace(firm_replacements)
+        
+        # Drop duplicates keeping the last entry
         original_count = len(df_responses)
+        df_responses = df_responses.drop_duplicates(subset=['Numero', 'Firma'], keep='last')
+        print(f"Dropped duplicates. Rows: {original_count} -> {len(df_responses)}")
+
+        # Filter to keep only allowed firms
+        original_count_after_dedup = len(df_responses)
         df_responses = df_responses[df_responses['Firma'].isin(allowed_firms)]
-        print(f"Filtered firms (kept only ranking). Rows: {original_count} -> {len(df_responses)}")
+        print(f"Filtered firms (kept only ranking). Rows: {original_count_after_dedup} -> {len(df_responses)}")
 
         # Cleaning function to remove brackets [ ... ]
         def clean_text(val):
@@ -115,17 +128,28 @@ def process_data():
 
         answer_map = {
             "Sí": "Yes",
+            "Si": "Yes",
+            "S": "Yes", # Encoding artifact
             "No": "No",
             "Aumentará": "Increase",
             "Aumentarán": "Increase",
+            "Aumentara": "Increase", 
             "Bajará": "Decrease",
             "Bajarán": "Decrease",
+            "Disminuirá": "Decrease", 
+            "Bajara": "Decrease", 
+            "Disminuira": "Decrease", 
             "Se mantendrá": "Remain the same",
             "Se mantendrán": "Remain the same",
+            "Se mantendra": "Remain the same",
             "Se apreciará": "Appreciate",
             "Se depreciará": "Depreciate",
+            "Se apreciara": "Appreciate",
+            "Se depreciara": "Depreciate",
             "Se ampliarán": "Widen",
             "Se estrecharán": "Tighten",
+            "Se ampliaran": "Widen",
+            "Se estrecharan": "Tighten",
             "Neutral": "Neutral",
             "OW": "Overweight",
             "UW": "Underweight",
@@ -133,25 +157,17 @@ def process_data():
             "Risk-off": "Risk-off"
         }
 
-        # Translate columns if possible
-        # Since I iterate q_text, I can translate it there.
-        # But for answers, it's inside response_list
-        
         merged_data = []
 
         # Iterate through questions
         for _, q_row in df_questions.iterrows():
             q_id_str = q_row['MatchId']
-            # q_row['Pregunta'] could have extra spaces or newline chars, let's strip
             q_text_raw = str(q_row['Pregunta']).strip()
             
             # Simple fuzzy lookup or direct
             q_text = question_map.get(q_text_raw, q_text_raw)
-            # Try matching matching without newlines if failed
             if q_text == q_text_raw:
-                # remove newlines/multispaces
                 clean_q = " ".join(q_text_raw.split())
-                # Try finding from map keys cleaned
                 for k, v in question_map.items():
                     if " ".join(k.split()) == clean_q or k.startswith(clean_q[:20]):
                          q_text = v
@@ -163,10 +179,6 @@ def process_data():
             if responses_for_q.empty:
                 continue
             
-            # Calculate stats (Translate keys first)
-            # Better to translate responses before counting
-            # But response is in row['Respuesta']
-            
             # Format responses list and translate answers
             response_list = []
             translated_answers = []
@@ -175,14 +187,44 @@ def process_data():
                 raw_ans = r_row['Respuesta']
                 # Try map
                 final_ans = answer_map.get(raw_ans, raw_ans)
-                # If question 19 (Open ended), maybe we translate? No, usually open ended is left as is unless I use AI. 
-                # But the user asked "traduce toda la info". 
-                # Open ended answers in Spanish are hard to translate deterministically without an AI call for each. 
-                # The user prompts suggest I should handle it. 
-                # However, looking at the previous answers, they were already in Spanish. 
-                # I'll leave open ended answers in Spanish for now as I can't robustly translate 18 unique paragraphs in this script without an external API or hardcoding.
-                # All "Close ended" answers are in answer_map.
                 
+                # Special handling for "S" which often happens with encoding issues in "Sí"
+                if str(raw_ans).strip() == "S":
+                    final_ans = "Yes"
+
+                # Filter out Neutral/Remain the same to enforce binary options (as requested by user)
+                if final_ans in ["Neutral", "Remain the same"]:
+                    continue
+
+                # Context-aware normalization
+                q_lower = q_text.lower()
+                
+                # Group 1: Increase/Decrease expected (Prices, Yields, S&P)
+                if any(x in q_lower for x in ["price", "yields", "s&p", "rate", "inflation", "gdp"]) and "surrprise" not in q_lower and "surprise" not in q_lower and "recession" not in q_lower and "unemployment" not in q_lower:
+                     # Note: GDP/Inflation/Unemployment questions are often Yes/No "Surprise to upside?" or "Higher than expected?"
+                     # But "Will US Treasury yields increase or decrease?" is Inc/Dec.
+                     # "Will the S&P 500 increase or decrease?" is Inc/Dec.
+                     # "Will the price of..." is Inc/Dec.
+                     
+                     if "increase" in q_lower or "decrease" in q_lower:
+                        if final_ans in ["Depreciate", "Widen"]: final_ans = "Decrease" # Widen spreads is different but for price/yield context
+                        if final_ans in ["Appreciate", "Tighten"]: final_ans = "Increase"
+                        
+                        # Fix "Yes" in Inc/Dec questions - usually garbage or misinterpretation. 
+                        # If we can't map it, drop it to avoid polluting the chart.
+                        if final_ans in ["Yes", "No"]:
+                             continue
+
+                # Group 2: Appreciate/Depreciate (USD)
+                if "usd" in q_lower and ("appreciate" in q_lower or "depreciate" in q_lower):
+                     if final_ans == "Increase": final_ans = "Appreciate"
+                     if final_ans == "Decrease": final_ans = "Depreciate"
+                     
+                # Group 3: Widen/Tighten (Spreads)
+                if "spreads" in q_lower:
+                     if final_ans == "Increase": final_ans = "Widen"
+                     if final_ans == "Decrease": final_ans = "Tighten" 
+
                 translated_answers.append(final_ans)
                 
                 response_list.append({

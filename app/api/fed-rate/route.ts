@@ -11,9 +11,16 @@ export async function GET() {
     
     const headers = lines[0].split(';');
     
-    let commentsLine = null;
-    if (lines.length >= 1463) {
-      commentsLine = lines[1462]; // Last line with comments
+    let commentsLine: string | null = null;
+    for (let i = lines.length - 1; i >= 0; i--) {
+      const columns = lines[i].split(';');
+      const firstCol = columns[0];
+      if (!firstCol || !firstCol.includes('/')) {
+        if (columns.length > 1) {
+          commentsLine = lines[i];
+          break;
+        }
+      }
     }
     
     const comments: { [key: string]: string } = {};

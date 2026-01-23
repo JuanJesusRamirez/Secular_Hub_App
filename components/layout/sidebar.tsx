@@ -39,9 +39,9 @@ const navigation: NavigationItem[] = [
   { name: "2025 Reality Check", href: "/2025", icon: History },
 
   //  { name: "Word Cloud", href: "/wordcloud", icon: Cloud },
-  { name: "Word Analysis", href: "/wordcloud-new", icon: CloudRain },
+  { name: "Semantic Analysis", href: "/wordcloud-new", icon: CloudRain },
 
-  { name: "Historical Evolution", href: "/tesis", icon: History },
+  { name: "Thematic Evolution", href: "/tesis", icon: History },
   { name: "2026 Outlook", href: "/overview", icon: Briefcase },
 ];
 

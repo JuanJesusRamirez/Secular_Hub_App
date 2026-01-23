@@ -23,7 +23,6 @@ import {
   Sparkles,
   Cloud,
   CloudRain,
-  FileText,
   BookOpen,
   Calendar,
 } from "lucide-react";
@@ -44,7 +43,6 @@ const navigation: NavigationItem[] = [
 
   { name: "Historical Evolution", href: "/tesis", icon: History },
   { name: "2026 Outlook", href: "/overview", icon: Briefcase },
-  { name: "Survey", href: "/encuesta-df", icon: FileText },
 ];
 
 export function Sidebar() {
